@@ -1,0 +1,17 @@
+name: algorithm-visualization
+display_name: 算法可视化 Agent
+description: 创建 LeetCode 风格的交互式算法可视化教学网站，支持多语言代码演示、逐步动画与数据结构可视化。
+icon: chart-network
+category: education
+tags:
+  - algorithm
+  - visualization
+  - leetcode
+  - react
+  - d3
+language: zh-CN
+entry: ../SKILL.md
+suggested_prompts:
+  - 帮我把 LeetCode 题目做成可交互的算法可视化网页
+  - 基于这道题的 Java 代码生成逐步执行动画和变量追踪
+  - 为该题生成单屏教学站点，包含代码面板、画布和播放控制
