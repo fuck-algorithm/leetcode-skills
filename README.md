@@ -1,11 +1,11 @@
-# Windsurf Skills for Algorithm Visualization
+# Claude Code Skills for Algorithm Visualization
 
 [![npm version](https://img.shields.io/npm/v/@fuck-algorithm/skills.svg)](https://www.npmjs.com/package/@fuck-algorithm/skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-可安装的 Windsurf Skills 集合，用于创建交互式算法可视化教学网站。
+专为 **Claude Code** 设计的 Skills 集合，用于创建交互式算法可视化教学网站。
 
-> 🎯 **目标**: 让任何人都能快速为 LeetCode 题目创建专业的算法演示网站
+> **目标**: 让任何人都能快速为 LeetCode 题目创建专业的算法演示网站
 
 ---
 
@@ -29,14 +29,13 @@
 ```bash
 # 1. 克隆本仓库
 git clone https://github.com/fuck-algorithm/leetcode-skills.git
-cd skills
+cd leetcode-skills
 
 # 2. 安装 Skills 到你的算法项目
 ./install.sh /path/to/your/leetcode-solutions
 
-# 3. 在 Windsurf 中打开项目，使用 Skill
-# 在 Cascade 中输入:
-@algorithm-visualization 帮我为 LeetCode 第 1 题两数之和创建算法演示网站
+# 3. 在 Claude Code 中打开项目，直接使用 Skill
+/algorithm-visualization 帮我为 LeetCode 第 1 题两数之和创建算法演示网站
 ```
 
 ---
@@ -49,16 +48,16 @@ cd skills
 
 | 功能 | 描述 |
 |------|------|
-| 🎨 **完整页面框架** | TypeScript + React + D3.js，单屏幕应用 |
-| 📱 **响应式布局** | 紧凑设计，无滚动条，自适应不同屏幕 |
-| 🔗 **LeetCode 集成** | 标题可跳转题目页，返回 Hot 100 链接 |
-| ⭐ **GitHub 集成** | 徽标 + Star 数（API + IndexedDB 1小时缓存）|
-| 💡 **算法思路** | 弹窗展示解题思路和复杂度分析 |
-| 📝 **数据输入** | 自定义输入 + 3个内置样例 + 随机生成（带校验）|
-| 💻 **代码展示** | Java/Python/Go/JS 四语言，语法高亮，变量值追踪 |
-| 🎬 **动画演示** | D3.js 画布，分步骤分镜，数据流动画 |
-| 🎮 **播放控制** | 播放/暂停/步进/可拖拽进度条/速度调节 |
-| 💬 **交流群** | 微信群悬浮球，扫码加入算法交流 |
+| **完整页面框架** | TypeScript + React + D3.js，单屏幕应用 |
+| **响应式布局** | 紧凑设计，无滚动条，自适应不同屏幕 |
+| **LeetCode 集成** | 标题可跳转题目页，返回 Hot 100 链接 |
+| **GitHub 集成** | 徽标 + Star 数（API + IndexedDB 1小时缓存）|
+| **算法思路** | 弹窗展示解题思路和复杂度分析 |
+| **数据输入** | 自定义输入 + 3个内置样例 + 随机生成（带校验）|
+| **代码展示** | Java/Python/Go/JS 四语言，语法高亮，变量值追踪 |
+| **动画演示** | D3.js 画布，分步骤分镜，数据流动画 |
+| **播放控制** | 播放/暂停/步进/可拖拽进度条/速度调节 |
+| **交流群** | 微信群悬浮球，扫码加入算法交流 |
 
 ---
 
@@ -70,7 +69,7 @@ cd skills
 # 在你的算法项目中安装
 npm install --save-dev @fuck-algorithm/skills
 
-# 安装脚本会自动将 Skills 复制到 .windsurf/skills/
+# 安装脚本会自动将 Skills 复制到 .claude/skills/
 ```
 
 ### 方法 2: 脚本安装（适合快速试用）
@@ -78,7 +77,7 @@ npm install --save-dev @fuck-algorithm/skills
 ```bash
 # 克隆本仓库
 git clone https://github.com/fuck-algorithm/leetcode-skills.git
-cd skills
+cd leetcode-skills
 
 # 安装到指定项目
 ./install.sh /path/to/your/project
@@ -94,7 +93,7 @@ cd skills
 git clone https://github.com/fuck-algorithm/leetcode-skills.git
 
 # 复制 skills 到你的算法项目
-cp -r skills/skills/* /path/to/your/project/.windsurf/skills/
+cp -r skills/skills/* /path/to/your/project/.claude/skills/
 ```
 
 ### 方法 4: Git Submodule（适合版本控制）
@@ -118,7 +117,7 @@ chmod +x .git/hooks/post-checkout
 
 ### 基本使用
 
-安装完成后，在 Windsurf 的 Cascade 面板中：
+安装完成后，在 Claude Code 中直接输入：
 
 **方式 1: 自动调用**（推荐）
 ```
@@ -128,7 +127,7 @@ chmod +x .git/hooks/post-checkout
 
 **方式 2: 手动调用**（明确指定）
 ```
-@algorithm-visualization 帮我创建第 3 题无重复字符的最长子串的演示
+/algorithm-visualization 帮我创建第 3 题无重复字符的最长子串的演示
 ```
 
 ### 需要提供的信息
@@ -163,12 +162,12 @@ cd your-project
 npm install --save-dev @fuck-algorithm/skills
 ```
 
-### 步骤 2: 在 Windsurf 中使用
+### 步骤 2: 在 Claude Code 中使用
 
-在 Cascade 中输入：
+在 Claude Code 对话中输入：
 
 ```
-@algorithm-visualization 帮我创建 LeetCode 第 1 题"两数之和"的算法演示网站
+/algorithm-visualization 帮我创建 LeetCode 第 1 题"两数之和"的算法演示网站
 
 题目信息：
 - 题号: 1
@@ -400,6 +399,8 @@ git push origin your-branch
 skills/                          # Skills 源代码目录
 └── algorithm-visualization/     # 算法可视化 Skill
     ├── SKILL.md                 # Skill 定义和使用指南
+    ├── agents/                  # Claude Code 元数据
+    ├── references/              # 详细参考文档
     └── templates/               # 模板文件目录
         ├── App.tsx              # 主应用组件模板
         ├── main.tsx             # 入口文件模板
@@ -411,22 +412,22 @@ skills/                          # Skills 源代码目录
         └── gitignore            # .gitignore 模板
 
 install.sh                       # Bash 安装脚本
-install.js                         # Node.js 安装脚本
-package.json                       # npm 包配置
-README.md                          # 本文件
+install.js                       # Node.js 安装脚本
+package.json                     # npm 包配置
+README.md                        # 本文件
 ```
 
 ---
 
 ## 常见问题
 
-### Q: 安装后 Cascade 没有识别到 Skill？
+### Q: 安装后 Claude Code 没有识别到 Skill？
 
 **A**: 检查以下几点：
-1. Skills 是否安装在 `.windsurf/skills/` 目录
+1. Skills 是否安装在 `.claude/skills/` 目录
 2. `SKILL.md` 文件是否存在
-3. 重启 Windsurf 编辑器
-4. 尝试手动调用: `@algorithm-visualization`
+3. 重启 Claude Code
+4. 尝试手动调用: `/algorithm-visualization`
 
 ### Q: 如何更新已安装的 Skill？
 
@@ -436,7 +437,7 @@ README.md                          # 本文件
 npm update @fuck-algorithm/skills
 
 # 如果你使用脚本
-cd skills-repo
+cd leetcode-skills
 ./install.sh /path/to/your/project
 ```
 
@@ -446,7 +447,7 @@ cd skills-repo
 
 ### Q: 如何调试 Skill 是否生效？
 
-**A**: 在 Cascade 中输入：
+**A**: 在 Claude Code 中输入：
 ```
 请列出当前可用的所有 skills
 ```
@@ -478,7 +479,7 @@ cd skills-repo
 
 ### 描述字段编写
 
-`description` 是 Cascade 判断是否调用此 skill 的关键：
+`description` 是 Claude Code 判断是否调用此 skill 的关键：
 
 ```yaml
 ---
@@ -497,7 +498,7 @@ description: 创建 LeetCode 风格的算法演示网站，包含代码展示、
 
 ## 相关链接
 
-- [Windsurf Skills 官方文档](https://docs.windsurf.com/windsurf/cascade/skills)
+- [Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code/skills)
 - [LeetCode Hot 100 可视化](https://fuck-algorithm.github.io/leetcode-hot-100/)
 - [算法交流群](https://github.com/fuck-algorithm/.github/blob/main/profile/README.md)
 - [Issues & PRs](https://github.com/fuck-algorithm/leetcode-skills/issues)
@@ -531,4 +532,4 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Coding! **
