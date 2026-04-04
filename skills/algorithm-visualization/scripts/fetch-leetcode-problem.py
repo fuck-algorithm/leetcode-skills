@@ -78,8 +78,8 @@ def extract_constraints(description: str) -> list[str]:
         if in_constraints:
             if stripped.startswith("示例") or stripped.startswith("输入") or stripped.startswith("Output") or stripped.startswith("Follow") or stripped.startswith("进阶"):
                 in_constraints = False
-            elif stripped != "":
-                constraints.append(stripped.lstrip("-* \t"))
+            elif stripped != "" and stripped != "&nbsp;":
+                constraints.append(stripped.lstrip("* \t"))
     return constraints
 
 
