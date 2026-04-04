@@ -21,12 +21,12 @@ const docRequiredSnippets = {
   ],
   'docs/TEST_PLAN.md': [
     '失败分流与回归策略',
-    'AC-001~AC-018',
+    'AC-001~AC-022',
     'B1-B7'
   ],
   'docs/ACCEPTANCE_CHECKLIST.md': [
     'AC-001',
-    'AC-018',
+    'AC-022',
     '必过规则'
   ],
   'docs/ACCEPTANCE_REPORT_TEMPLATE.md': [
