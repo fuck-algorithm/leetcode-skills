@@ -28,7 +28,7 @@
 
 ```bash
 # 1. 克隆本仓库
-git clone https://github.com/fuck-algorithm/skills.git
+git clone https://github.com/fuck-algorithm/leetcode-skills.git
 cd skills
 
 # 2. 安装 Skills 到你的算法项目
@@ -77,7 +77,7 @@ npm install --save-dev @fuck-algorithm/skills
 
 ```bash
 # 克隆本仓库
-git clone https://github.com/fuck-algorithm/skills.git
+git clone https://github.com/fuck-algorithm/leetcode-skills.git
 cd skills
 
 # 安装到指定项目
@@ -91,7 +91,7 @@ cd skills
 
 ```bash
 # 克隆仓库
-git clone https://github.com/fuck-algorithm/skills.git
+git clone https://github.com/fuck-algorithm/leetcode-skills.git
 
 # 复制 skills 到你的算法项目
 cp -r skills/skills/* /path/to/your/project/.windsurf/skills/
@@ -101,7 +101,7 @@ cp -r skills/skills/* /path/to/your/project/.windsurf/skills/
 
 ```bash
 # 在你的算法项目中添加 submodule
-git submodule add https://github.com/fuck-algorithm/skills.git .skills
+git submodule add https://github.com/fuck-algorithm/leetcode-skills.git .skills
 git submodule update --init
 
 # 安装 Skills
@@ -500,7 +500,7 @@ description: 创建 LeetCode 风格的算法演示网站，包含代码展示、
 - [Windsurf Skills 官方文档](https://docs.windsurf.com/windsurf/cascade/skills)
 - [LeetCode Hot 100 可视化](https://fuck-algorithm.github.io/leetcode-hot-100/)
 - [算法交流群](https://github.com/fuck-algorithm/.github/blob/main/profile/README.md)
-- [Issues & PRs](https://github.com/fuck-algorithm/skills/issues)
+- [Issues & PRs](https://github.com/fuck-algorithm/leetcode-skills/issues)
 
 ---
 
