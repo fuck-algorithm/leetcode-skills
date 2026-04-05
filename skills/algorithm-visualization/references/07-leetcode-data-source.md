@@ -3,12 +3,13 @@
 ## 快速使用（Claude Code 可执行）
 
 ```bash
-python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py {slug}
+python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py {slug_or_number}
 ```
 
 **示例：**
 ```bash
 python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py two-sum
+python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py 1
 ```
 
 **输出格式：**
@@ -23,6 +24,8 @@ python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py two-sum
 }
 ```
 
+**获取顺序**：`本地缓存` → `远程抓取` → `用户输入 fallback`。本地缓存未命中时才会联网。
+
 ---
 
 ## 目标
@@ -35,13 +38,18 @@ python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py two-sum
 
 脚本位置：`skills/algorithm-visualization/scripts/fetch-leetcode-problem.py`
 
-**工作原理：**
-1. 调用 GraphQL API 获取题号、英文标题、中文描述、难度
-2. 抓取 HTML 页面标题获取中文标题（格式：`1. 两数之和 - 力扣（LeetCode）`）
-3. 从描述文本中提取约束条件
+**工作原理（缓存优先）：**
+1. 读取 `assets/leetcode-problems/index.json`：若输入是纯数字题号，则解析为 slug
+2. 检查本地缓存 `assets/leetcode-problems/{slug}.json`，命中则直接返回 JSON
+3. 缓存未命中时，调用 GraphQL API 获取描述、难度等；如需要再抓取 HTML 标题获取中文标题
+4. 从描述文本中提取约束条件，并将结果回写本地缓存
+
+**缓存相关文件：**
+- `assets/leetcode-problems/index.json`：由 `build-problem-cache.py` 生成，包含 `bySlug`（slug → 元信息）和 `byNumber`（题号 → slug）两张映射表
+- `assets/leetcode-problems/{slug}.json`：单题完整数据结构，作为运行时优先读取的缓存
 
 **注意：**
-- leetcode.cn 的 GraphQL 没有 `titleCn` 字段，中文标题必须从 HTML 抓取
+- leetcode.cn 的 GraphQL 没有 `titleCn` 字段，中文标题通常从 HTML 抓取（全量预抓取时已存入缓存，日常使用无需再抓）
 - 需要设置 `User-Agent` 头避免 403
 - 约束条件以 "提示:" 或 "Constraints:" 开头
 
@@ -94,17 +102,19 @@ curl -s 'https://leetcode.cn/graphql/' \
 
 | 字段 | 自动获取来源 | 用户输入 fallback |
 |------|-------------|------------------|
-| 题号 | API `questionFrontendId` | 必需 |
-| 中文标题 | HTML 页面 title | 必需 |
-| slug | 用户输入或 URL | 必需 |
-| 题目描述 | API `translatedContent` | 可选 |
-| 输入约束 | 描述中的 "提示:" 部分 | 可选 |
+| 题号 | 本地缓存 `number` 字段 / API `questionFrontendId` | 必需 |
+| 中文标题 | 本地缓存 `title_cn` 字段 / HTML 页面 title | 必需 |
+| slug | 本地 `index.json`（byNumber 映射）/ 用户输入 | 必需 |
+| 题目描述 | 本地缓存 `description` 字段 / API `translatedContent` | 可选 |
+| 输入约束 | 本地缓存 `constraints` 字段 / 描述中的 "提示:" | 可选 |
 | 示例 | 描述中的示例部分 | 可选 |
 
 ## 使用流程
 
 1. **识别题目标识**：从用户输入中提取题号或 slug
-2. **执行抓取脚本**：运行 `fetch-leetcode-problem.py`
+2. **执行抓取脚本（本地优先）**：运行 `fetch-leetcode-problem.py`
+   - 脚本自动读取 `index.json` 解析 slug
+   - 命中本地缓存则直接返回，无需联网
 3. **解析并填充**：提取字段，填入模板变量
 4. **确认缺失项**：如有字段缺失，一次性向用户确认
 5. **继续后续流程**：信息完整后进入项目骨架初始化
@@ -153,3 +163,32 @@ match = re.search(r"<title[^>]*>(.*?)</title>", html)
 - 题目描述中的 HTML 标签需要清理为纯文本
 - 约束条件通常在描述底部，以 "提示:" 开头
 - 获取失败时明确告知用户原因，并提供手动输入选项
+
+## 全量预抓取与索引生成
+
+为了提升稳定性和速度，skill 已预抓取全部 ~4280 道题目到 `assets/leetcode-problems/` 并生成 `index.json`。
+
+**索引文件结构** (`index.json`)：
+```json
+{
+  "bySlug": {
+    "two-sum": {
+      "number": "1",
+      "slug": "two-sum",
+      "title_cn": "两数之和",
+      "title_en": "Two Sum",
+      "difficulty": "Easy"
+    },
+    ...
+  },
+  "byNumber": {
+    "1": "two-sum",
+    ...
+  }
+}
+```
+
+**重新生成索引**（如有新题）：
+```bash
+python3 skills/algorithm-visualization/scripts/build-problem-cache.py
+```

@@ -1,11 +1,50 @@
 #!/usr/bin/env python3
-"""从 LeetCode 中文站抓取题目信息。"""
+"""从 LeetCode 中文站抓取题目信息（支持本地缓存优先）。
+
+用法：
+  python3 fetch-leetcode-problem.py two-sum   # 按 slug
+  python3 fetch-leetcode-problem.py 1          # 按题号
+"""
 
 import argparse
 import json
+import os
 import re
 import sys
 import urllib.request
+from pathlib import Path
+
+CACHE_DIR = Path(__file__).resolve().parent.parent / "assets" / "leetcode-problems"
+INDEX_FILE = CACHE_DIR / "index.json"
+
+
+def load_index():
+    if INDEX_FILE.exists():
+        with open(INDEX_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"bySlug": {}, "byNumber": {}}
+
+
+def get_slug_from_input(inp: str) -> str:
+    index = load_index()
+    if inp.isdigit():
+        return index.get("byNumber", {}).get(inp, inp)
+    return inp
+
+
+def load_from_cache(slug: str):
+    path = CACHE_DIR / f"{slug}.json"
+    if path.exists():
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
+
+
+def save_to_cache(slug: str, data: dict):
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    path = CACHE_DIR / f"{slug}.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 def fetch_graphql(slug: str) -> dict:
@@ -31,7 +70,6 @@ def fetch_graphql(slug: str) -> dict:
 
 
 def fetch_html_title(slug: str):
-    """从 HTML 页面标题提取中文标题。"""
     url = f"https://leetcode.cn/problems/{slug}/description/"
     req = urllib.request.Request(
         url,
@@ -45,7 +83,6 @@ def fetch_html_title(slug: str):
         match = re.search(r"<title[^>]*>(.*?)</title>", html, re.IGNORECASE)
         if match:
             title_text = match.group(1)
-            # 格式通常为: "1. 两数之和 - 力扣（LeetCode）"
             title_text = title_text.replace(" - 力扣（LeetCode）", "").strip()
             parts = title_text.split(". ", 1)
             if len(parts) == 2:
@@ -83,33 +120,49 @@ def extract_constraints(description: str) -> list[str]:
     return constraints
 
 
+def fetch_online(slug: str):
+    result = fetch_graphql(slug)
+    question = result.get("data", {}).get("question")
+    if not question:
+        raise ValueError("question not found in response")
+    raw_desc = question.get("translatedContent") or question.get("content") or ""
+    description = clean_html(raw_desc)
+    constraints = extract_constraints(description)
+    title_cn = fetch_html_title(slug) or question.get("title")
+    return {
+        "number": question.get("questionFrontendId"),
+        "title_cn": title_cn,
+        "title_en": question.get("title"),
+        "slug": slug,
+        "difficulty": question.get("difficulty"),
+        "description": description,
+        "constraints": constraints,
+    }
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Fetch LeetCode CN problem info")
-    parser.add_argument("slug", help="Problem slug, e.g. two-sum")
+    parser = argparse.ArgumentParser(description="Fetch LeetCode CN problem info (cache-first)")
+    parser.add_argument("input", help="Problem slug or number, e.g. 'two-sum' or '1'")
     args = parser.parse_args()
 
+    raw_input = args.input.strip()
+    slug = get_slug_from_input(raw_input)
+
+    if raw_input.isdigit() and slug == raw_input:
+        print(json.dumps({"error": f"Number {raw_input} not found in index"}, ensure_ascii=False))
+        sys.exit(1)
+
+    # Try cache first
+    cached = load_from_cache(slug)
+    if cached:
+        print(json.dumps(cached, ensure_ascii=False, indent=2))
+        sys.exit(0)
+
+    # Fetch online and cache
     try:
-        result = fetch_graphql(args.slug)
-        question = result.get("data", {}).get("question")
-        if not question:
-            print(json.dumps({"error": "question not found"}, ensure_ascii=False))
-            sys.exit(1)
-
-        raw_desc = question.get("translatedContent") or question.get("content") or ""
-        description = clean_html(raw_desc)
-        constraints = extract_constraints(description)
-
-        title_cn = fetch_html_title(args.slug) or question.get("title")
-
-        output = {
-            "number": question.get("questionFrontendId"),
-            "title_cn": title_cn,
-            "slug": args.slug,
-            "difficulty": question.get("difficulty"),
-            "description": description,
-            "constraints": constraints,
-        }
-        print(json.dumps(output, ensure_ascii=False, indent=2))
+        data = fetch_online(slug)
+        save_to_cache(slug, data)
+        print(json.dumps(data, ensure_ascii=False, indent=2))
     except Exception as e:
         print(json.dumps({"error": str(e)}, ensure_ascii=False))
         sys.exit(1)
