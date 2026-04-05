@@ -1,0 +1,9 @@
+{
+  "number": "3711",
+  "title_cn": "不出现负余额的最大交易额",
+  "title_en": "Maximum Transactions Without Negative Balance",
+  "slug": "maximum-transactions-without-negative-balance",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

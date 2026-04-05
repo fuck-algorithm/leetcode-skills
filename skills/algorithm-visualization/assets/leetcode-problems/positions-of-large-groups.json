@@ -1,0 +1,12 @@
+{
+  "number": "830",
+  "title_cn": "较大分组的位置",
+  "title_en": "Positions of Large Groups",
+  "slug": "positions-of-large-groups",
+  "difficulty": "Easy",
+  "description": "在一个由小写字母构成的字符串 s 中，包含由一些连续的相同字符所构成的分组。\n\n例如，在字符串 s = \"abbxxxxzyy\" 中，就含有 \"a\", \"bb\", \"xxxx\", \"z\" 和 \"yy\" 这样的一些分组。\n\n分组可以用区间 [start, end] 表示，其中 start 和 end 分别表示该分组的起始和终止位置的下标。上例中的 \"xxxx\" 分组用区间表示为 [3,6] 。\n\n我们称所有包含大于或等于三个连续字符的分组为 较大分组 。\n\n找到每一个 较大分组 的区间，按起始位置下标递增顺序排序后，返回结果。\n\n示例 1：\n\n输入：s = \"abbxxxxzzy\"\n输出：[[3,6]]\n解释：\"xxxx\" 是一个起始于 3 且终止于 6 的较大分组。\n\n示例 2：\n\n输入：s = \"abc\"\n输出：[]\n解释：\"a\",\"b\" 和 \"c\" 均不是符合要求的较大分组。\n\n示例 3：\n\n输入：s = \"abcdddeeeeaabbbcd\"\n输出：[[3,5],[6,9],[12,14]]\n解释：较大分组为 \"ddd\", \"eeee\" 和 \"bbb\"\n\n示例 4：\n\n输入：s = \"aba\"\n输出：[]\n\n提示：\n\n\t1 \n\ts 仅含小写英文字母",
+  "constraints": [
+    "1",
+    "s 仅含小写英文字母"
+  ]
+}

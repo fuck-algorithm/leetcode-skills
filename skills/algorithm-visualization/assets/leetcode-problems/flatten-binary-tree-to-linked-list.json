@@ -1,0 +1,12 @@
+{
+  "number": "114",
+  "title_cn": "二叉树展开为链表",
+  "title_en": "Flatten Binary Tree to Linked List",
+  "slug": "flatten-binary-tree-to-linked-list",
+  "difficulty": "Medium",
+  "description": "给你二叉树的根结点 root ，请你将它展开为一个单链表：\n\n\t展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。\n\t展开后的单链表应该与二叉树 先序遍历 顺序相同。\n\n示例 1：\n\n输入：root = [1,2,5,3,4,null,6]\n输出：[1,null,2,null,3,null,4,null,5,null,6]\n\n示例 2：\n\n输入：root = []\n输出：[]\n\n示例 3：\n\n输入：root = [0]\n输出：[0]\n\n提示：\n\n\t树中结点数在范围 [0, 2000] 内\n\t-100 \n\n进阶：你可以使用原地算法（O(1) 额外空间）展开这棵树吗？",
+  "constraints": [
+    "树中结点数在范围 [0, 2000] 内",
+    "-100"
+  ]
+}

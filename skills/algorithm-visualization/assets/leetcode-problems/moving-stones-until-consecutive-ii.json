@@ -1,0 +1,13 @@
+{
+  "number": "1040",
+  "title_cn": "移动石子直到连续 II",
+  "title_en": "Moving Stones Until Consecutive II",
+  "slug": "moving-stones-until-consecutive-ii",
+  "difficulty": "Medium",
+  "description": "在 X 轴上有一些不同位置的石子。给定一个整数数组&nbsp;stones&nbsp;表示石子的位置。\n\n如果一个石子在最小或最大的位置，称其为&nbsp;端点石子。每个回合，你可以将一颗 端点石子 拿起并移动到一个未占用的位置，使得该石子不再是一颗 端点石子。\n\n\t值得注意的是，如果石子像&nbsp;stones = [1,2,5]&nbsp;这样，你将 无法 移动位于位置 5 的端点石子，因为无论将它移动到任何位置（例如 0 或 3），该石子都仍然会是端点石子。\n\n当你无法进行任何移动时，即，这些石子的位置连续时，游戏结束。\n\n以长度为 2 的数组形式返回答案，其中：\n\n\tanswer[0]&nbsp;是你可以移动的最小次数\n\tanswer[1]&nbsp;是你可以移动的最大次数。\n\n&nbsp;\n\n示例 1：\n\n输入：[7,4,9]\n输出：[1,2]\n解释：\n我们可以移动一次，4 -> 8，游戏结束。\n或者，我们可以移动两次 9 -> 5，4 -> 6，游戏结束。\n\n示例&nbsp;2：\n\n输入：[6,5,4,3,10]\n输出：[2,3]\n解释：\n我们可以移动 3 -> 8，接着是 10 -> 7，游戏结束。\n或者，我们可以移动 3 -> 7, 4 -> 8, 5 -> 9，游戏结束。\n注意，我们无法进行 10 -> 2 这样的移动来结束游戏，因为这是不合要求的移动。\n\n&nbsp;\n\n提示：\n\n\t3 <= stones.length <= 104\n\t1 <= stones[i] <= 109\n\tstones&nbsp;的值各不相同。\n\n&nbsp;",
+  "constraints": [
+    "3 <= stones.length <= 104",
+    "1 <= stones[i] <= 109",
+    "stones&nbsp;的值各不相同。"
+  ]
+}

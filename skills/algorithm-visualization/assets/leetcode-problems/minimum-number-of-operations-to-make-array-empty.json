@@ -1,0 +1,12 @@
+{
+  "number": "2870",
+  "title_cn": "使数组为空的最少操作次数",
+  "title_en": "Minimum Number of Operations to Make Array Empty",
+  "slug": "minimum-number-of-operations-to-make-array-empty",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的正整数数组&nbsp;nums&nbsp;。\n\n你可以对数组执行以下两种操作 任意次&nbsp;：\n\n\t从数组中选择 两个&nbsp;值 相等&nbsp;的元素，并将它们从数组中 删除&nbsp;。\n\t从数组中选择 三个&nbsp;值 相等&nbsp;的元素，并将它们从数组中 删除&nbsp;。\n\n请你返回使数组为空的 最少&nbsp;操作次数，如果无法达成，请返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,3,2,2,4,2,3,4]\n输出：4\n解释：我们可以执行以下操作使数组为空：\n- 对下标为 0 和 3 的元素执行第一种操作，得到 nums = [3,3,2,4,2,3,4] 。\n- 对下标为 2 和 4 的元素执行第一种操作，得到 nums = [3,3,4,3,4] 。\n- 对下标为 0 ，1 和 3 的元素执行第二种操作，得到 nums = [4,4] 。\n- 对下标为 0 和 1 的元素执行第一种操作，得到 nums = [] 。\n至少需要 4 步操作使数组为空。\n\n示例 2：\n\n输入：nums = [2,1,2,2,3,3]\n输出：-1\n解释：无法使数组为空。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t1 <= nums[i] <= 106",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "1 <= nums[i] <= 106"
+  ]
+}

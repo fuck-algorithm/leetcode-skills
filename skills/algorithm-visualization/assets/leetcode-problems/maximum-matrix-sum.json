@@ -1,0 +1,13 @@
+{
+  "number": "1975",
+  "title_cn": "最大方阵和",
+  "title_en": "Maximum Matrix Sum",
+  "slug": "maximum-matrix-sum",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;n x n&nbsp;的整数方阵&nbsp;matrix&nbsp;。你可以执行以下操作&nbsp;任意次&nbsp;：\n\n\t选择&nbsp;matrix&nbsp;中&nbsp;相邻&nbsp;两个元素，并将它们都 乘以&nbsp;-1&nbsp;。\n\n如果两个元素有 公共边&nbsp;，那么它们就是 相邻&nbsp;的。\n\n你的目的是 最大化&nbsp;方阵元素的和。请你在执行以上操作之后，返回方阵的&nbsp;最大&nbsp;和。\n\n&nbsp;\n\n示例 1：\n\n输入：matrix = [[1,-1],[-1,1]]\n输出：4\n解释：我们可以执行以下操作使和等于 4 ：\n- 将第一行的 2 个元素乘以 -1 。\n- 将第一列的 2 个元素乘以 -1 。\n\n示例&nbsp;2：\n\n输入：matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]\n输出：16\n解释：我们可以执行以下操作使和等于 16 ：\n- 将第二行的最后 2 个元素乘以 -1 。\n\n&nbsp;\n\n提示：\n\n\tn == matrix.length == matrix[i].length\n\t2 <= n <= 250\n\t-105 <= matrix[i][j] <= 105",
+  "constraints": [
+    "n == matrix.length == matrix[i].length",
+    "2 <= n <= 250",
+    "-105 <= matrix[i][j] <= 105"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2953",
+  "title_cn": "统计完全子字符串",
+  "title_en": "Count Complete Substrings",
+  "slug": "count-complete-substrings",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;word&nbsp;和一个整数 k&nbsp;。\n\n如果&nbsp;word&nbsp;的一个子字符串 s&nbsp;满足以下条件，我们称它是 完全字符串：\n\n\ts&nbsp;中每个字符 恰好&nbsp;出现 k&nbsp;次。\n\t相邻字符在字母表中的顺序 至多&nbsp;相差&nbsp;2&nbsp;。也就是说，s&nbsp;中两个相邻字符&nbsp;c1 和&nbsp;c2&nbsp;，它们在字母表中的位置相差&nbsp;至多&nbsp;为 2 。\n\n请你返回 word&nbsp;中 完全&nbsp;子字符串的数目。\n\n子字符串&nbsp;指的是一个字符串中一段连续 非空&nbsp;的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"igigee\", k = 2\n输出：3\n解释：完全子字符串需要满足每个字符恰好出现 2 次，且相邻字符相差至多为 2 ：igigee, igigee, igigee&nbsp;。\n\n示例 2：\n\n输入：word = \"aaabbbccc\", k = 3\n输出：6\n解释：完全子字符串需要满足每个字符恰好出现 3 次，且相邻字符相差至多为 2 ：aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc 。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 105\n\tword&nbsp;只包含小写英文字母。\n\t1 <= k <= word.length",
+  "constraints": [
+    "1 <= word.length <= 105",
+    "word&nbsp;只包含小写英文字母。",
+    "1 <= k <= word.length"
+  ]
+}

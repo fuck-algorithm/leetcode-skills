@@ -1,0 +1,15 @@
+{
+  "number": "1383",
+  "title_cn": "最大的团队表现值",
+  "title_en": "Maximum Performance of a Team",
+  "slug": "maximum-performance-of-a-team",
+  "difficulty": "Hard",
+  "description": "给定两个整数 n 和 k，以及两个长度为 n 的整数数组 speed 和 efficiency。现有 n 名工程师，编号从 1 到 n。其中 speed[i]&nbsp;和 efficiency[i]&nbsp;分别代表第 i&nbsp;位工程师的速度和效率。\n\n从这 n 名工程师中最多选择 k 名不同的工程师，使其组成的团队具有最大的团队表现值。\n\n团队表现值&nbsp;的定义为：一个团队中「所有工程师速度的和」乘以他们「效率值中的最小值」。\n\n请你返回该团队的​​​​​​最大团队表现值，由于答案可能很大，请你返回结果对 10^9 + 7 取余后的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 2\n输出：60\n解释：\n我们选择工程师 2（speed=10 且 efficiency=4）和工程师 5（speed=5 且 efficiency=7）。他们的团队表现值为 performance = (10 + 5) * min(4, 7) = 60 。\n\n示例 2：\n\n输入：n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 3\n输出：68\n解释：\n此示例与第一个示例相同，除了 k = 3 。我们可以选择工程师 1 ，工程师 2 和工程师 5 得到最大的团队表现值。表现值为 performance = (2 + 10 + 5) * min(5, 4, 7) = 68 。\n\n示例 3：\n\n输入：n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 4\n输出：72\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= n <= 10^5\n\tspeed.length == n\n\tefficiency.length == n\n\t1 <= speed[i] <= 10^5\n\t1 <= efficiency[i] <= 10^8",
+  "constraints": [
+    "1 <= k <= n <= 10^5",
+    "speed.length == n",
+    "efficiency.length == n",
+    "1 <= speed[i] <= 10^5",
+    "1 <= efficiency[i] <= 10^8"
+  ]
+}

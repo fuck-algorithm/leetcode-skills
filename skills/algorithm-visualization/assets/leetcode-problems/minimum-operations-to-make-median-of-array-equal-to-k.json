@@ -1,0 +1,13 @@
+{
+  "number": "3107",
+  "title_cn": "使数组中位数等于 K 的最少操作数",
+  "title_en": "Minimum Operations to Make Median of Array Equal to K",
+  "slug": "minimum-operations-to-make-median-of-array-equal-to-k",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个 非负&nbsp;整数&nbsp;k&nbsp;。一次操作中，你可以选择任一元素&nbsp;加&nbsp;1&nbsp;或者减&nbsp;1&nbsp;。\n\n请你返回将 nums&nbsp;中位数&nbsp;变为 k&nbsp;所需要的 最少&nbsp;操作次数。\n\n一个数组的中位数指的是数组按非递减顺序排序后最中间的元素。如果数组长度为偶数，我们选择中间两个数的较大值为中位数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,5,6,8,5], k = 4\n\n输出：2\n\n解释：我们将&nbsp;nums[1] 和&nbsp;nums[4]&nbsp;减 1&nbsp;得到&nbsp;[2, 4, 6, 8, 4]&nbsp;。现在数组的中位数等于&nbsp;k&nbsp;。\n\n示例 2：\n\n输入：nums = [2,5,6,8,5], k = 7\n\n输出：3\n\n解释：我们将&nbsp;nums[1]&nbsp;增加 1 两次，并且将&nbsp;nums[2]&nbsp;增加 1 一次，得到&nbsp;[2, 7, 7, 8, 5]&nbsp;。\n\n示例 3：\n\n输入：nums = [1,2,3,4,5,6], k = 4\n\n输出：0\n\n解释：数组中位数已经等于 k&nbsp;了。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 2 * 105\n\t1 <= nums[i] <= 109\n\t1 <= k <= 109",
+  "constraints": [
+    "1 <= nums.length <= 2 * 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 109"
+  ]
+}

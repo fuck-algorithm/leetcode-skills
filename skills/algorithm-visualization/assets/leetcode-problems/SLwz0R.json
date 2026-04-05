@@ -1,0 +1,14 @@
+{
+  "number": "LCR 021",
+  "title_cn": "删除链表的倒数第 N 个结点",
+  "title_en": "删除链表的倒数第 N 个结点",
+  "slug": "SLwz0R",
+  "difficulty": "Medium",
+  "description": "给定一个链表，删除链表的倒数第&nbsp;n&nbsp;个结点，并且返回链表的头结点。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,2,3,4,5], n = 2\n输出：[1,2,3,5]\n\n示例 2：\n\n输入：head = [1], n = 1\n输出：[]\n\n示例 3：\n\n输入：head = [1,2], n = 1\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t链表中结点的数目为 sz\n\t1 <= sz <= 30\n\t0 <= Node.val <= 100\n\t1 <= n <= sz\n\n&nbsp;\n\n进阶：能尝试使用一趟扫描实现吗？\n\n&nbsp;\n\n注意：本题与主站 19&nbsp;题相同：&nbsp;https://leetcode.cn/problems/remove-nth-node-from-end-of-list/",
+  "constraints": [
+    "链表中结点的数目为 sz",
+    "1 <= sz <= 30",
+    "0 <= Node.val <= 100",
+    "1 <= n <= sz"
+  ]
+}

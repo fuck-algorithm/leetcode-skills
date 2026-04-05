@@ -1,0 +1,14 @@
+{
+  "number": "2024",
+  "title_cn": "考试的最大困扰度",
+  "title_en": "Maximize the Confusion of an Exam",
+  "slug": "maximize-the-confusion-of-an-exam",
+  "difficulty": "Medium",
+  "description": "一位老师正在出一场由 n&nbsp;道判断题构成的考试，每道题的答案为 true （用 'T' 表示）或者 false （用 'F'&nbsp;表示）。老师想增加学生对自己做出答案的不确定性，方法是&nbsp;最大化&nbsp;有 连续相同&nbsp;结果的题数。（也就是连续出现 true 或者连续出现 false）。\n\n给你一个字符串&nbsp;answerKey&nbsp;，其中&nbsp;answerKey[i]&nbsp;是第 i&nbsp;个问题的正确结果。除此以外，还给你一个整数 k&nbsp;，表示你能进行以下操作的最多次数：\n\n\t每次操作中，将问题的正确答案改为&nbsp;'T' 或者&nbsp;'F'&nbsp;（也就是将 answerKey[i] 改为&nbsp;'T'&nbsp;或者&nbsp;'F'&nbsp;）。\n\n请你返回在不超过 k&nbsp;次操作的情况下，最大&nbsp;连续 'T'&nbsp;或者 'F'&nbsp;的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：answerKey = \"TTFF\", k = 2\n输出：4\n解释：我们可以将两个 'F' 都变为 'T' ，得到 answerKey = \"TTTT\" 。\n总共有四个连续的 'T' 。\n\n示例 2：\n\n输入：answerKey = \"TFFT\", k = 1\n输出：3\n解释：我们可以将最前面的 'T' 换成 'F' ，得到 answerKey = \"FFFT\" 。\n或者，我们可以将第二个 'T' 换成 'F' ，得到 answerKey = \"TFFF\" 。\n两种情况下，都有三个连续的 'F' 。\n\n示例 3：\n\n输入：answerKey = \"TTFTTFTT\", k = 1\n输出：5\n解释：我们可以将第一个 'F' 换成 'T' ，得到 answerKey = \"TTTTTFTT\" 。\n或者我们可以将第二个 'F' 换成 'T' ，得到 answerKey = \"TTFTTTTT\" 。\n两种情况下，都有五个连续的 'T' 。\n\n&nbsp;\n\n提示：\n\n\tn == answerKey.length\n\t1 <= n <= 5 * 104\n\tanswerKey[i]&nbsp;要么是&nbsp;'T' ，要么是&nbsp;'F'\n\t1 <= k <= n",
+  "constraints": [
+    "n == answerKey.length",
+    "1 <= n <= 5 * 104",
+    "answerKey[i]&nbsp;要么是&nbsp;'T' ，要么是&nbsp;'F'",
+    "1 <= k <= n"
+  ]
+}

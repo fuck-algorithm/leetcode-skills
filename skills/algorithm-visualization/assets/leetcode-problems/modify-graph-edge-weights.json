@@ -1,0 +1,19 @@
+{
+  "number": "2699",
+  "title_cn": "修改图中的边权",
+  "title_en": "Modify Graph Edge Weights",
+  "slug": "modify-graph-edge-weights",
+  "difficulty": "Hard",
+  "description": "给你一个 n&nbsp;个节点的 无向带权连通&nbsp;图，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;，再给你一个整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi, wi]&nbsp;表示节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条边权为&nbsp;wi&nbsp;的边。\n\n部分边的边权为&nbsp;-1（wi = -1），其他边的边权都为 正&nbsp;数（wi > 0）。\n\n你需要将所有边权为 -1&nbsp;的边都修改为范围&nbsp;[1, 2 * 109]&nbsp;中的 正整数&nbsp;，使得从节点&nbsp;source&nbsp;到节点&nbsp;destination&nbsp;的 最短距离&nbsp;为整数&nbsp;target&nbsp;。如果有 多种&nbsp;修改方案可以使&nbsp;source 和&nbsp;destination&nbsp;之间的最短距离等于&nbsp;target&nbsp;，你可以返回任意一种方案。\n\n如果存在使 source&nbsp;到 destination&nbsp;最短距离为 target&nbsp;的方案，请你按任意顺序返回包含所有边的数组（包括未修改边权的边）。如果不存在这样的方案，请你返回一个 空数组&nbsp;。\n\n注意：你不能修改一开始边权为正数的边。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5, edges = [[4,1,-1],[2,0,-1],[0,3,-1],[4,3,-1]], source = 0, destination = 1, target = 5\n输出：[[4,1,1],[2,0,1],[0,3,3],[4,3,1]]\n解释：上图展示了一个满足题意的修改方案，从 0 到 1 的最短距离为 5 。\n\n示例 2：\n\n输入：n = 3, edges = [[0,1,-1],[0,2,5]], source = 0, destination = 2, target = 6\n输出：[]\n解释：上图是一开始的图。没有办法通过修改边权为 -1 的边，使得 0 到 2 的最短距离等于 6 ，所以返回一个空数组。\n\n示例 3：\n\n输入：n = 4, edges = [[1,0,4],[1,2,3],[2,3,5],[0,3,-1]], source = 0, destination = 2, target = 6\n输出：[[1,0,4],[1,2,3],[2,3,5],[0,3,1]]\n解释：上图展示了一个满足题意的修改方案，从 0 到 2 的最短距离为 6 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 100\n\t1 <= edges.length <= n * (n - 1) / 2\n\tedges[i].length == 3\n\t0 <= ai, bi&nbsp;<&nbsp;n\n\twi&nbsp;= -1 或者 1 <= wi&nbsp;<= 107\n\tai&nbsp;!=&nbsp;bi\n\t0 <= source, destination < n\n\tsource != destination\n\t1 <= target <= 109\n\t输入的图是连通图，且没有自环和重边。",
+  "constraints": [
+    "1 <= n <= 100",
+    "1 <= edges.length <= n * (n - 1) / 2",
+    "edges[i].length == 3",
+    "0 <= ai, bi&nbsp;<&nbsp;n",
+    "wi&nbsp;= -1 或者 1 <= wi&nbsp;<= 107",
+    "ai&nbsp;!=&nbsp;bi",
+    "0 <= source, destination < n",
+    "source != destination",
+    "1 <= target <= 109"
+  ]
+}

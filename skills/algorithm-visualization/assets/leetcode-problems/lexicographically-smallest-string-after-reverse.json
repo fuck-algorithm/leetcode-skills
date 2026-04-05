@@ -1,0 +1,12 @@
+{
+  "number": "3722",
+  "title_cn": "反转后字典序最小的字符串",
+  "title_en": "Lexicographically Smallest String After Reverse",
+  "slug": "lexicographically-smallest-string-after-reverse",
+  "difficulty": "Medium",
+  "description": "给你一个由小写英文字母组成的、长度为 n 的字符串 s。\n\n你 必须执行 恰好&nbsp;一次操作：选择一个整数 k，满足 1 <= k <= n，然后执行以下两个选项之一：\n\n\t反转 s 的 前&nbsp;k 个字符，或\n\t反转 s 的&nbsp;后&nbsp;k 个字符。\n\n返回在 恰好&nbsp;执行一次此类操作后可以获得的 字典序最小&nbsp;的字符串。\n\n如果字符串 a 和字符串 b 在第一个不同的位置上，a 中的字母在字母表中比 b 中对应的字母出现得更早，则称字符串 a&nbsp;字典序小于&nbsp;字符串 b。如果前 min(a.length, b.length) 个字符都相同，则较短的字符串字典序较小。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"dcab\"\n\n输出: \"acdb\"\n\n解释:\n\n\t选择 k = 3，反转前 3 个字符。\n\t将 \"dca\" 反转为 \"acd\"，得到的字符串 s = \"acdb\"，这是可获得的字典序最小的字符串。\n\n示例 2:\n\n输入: s = \"abba\"\n\n输出: \"aabb\"\n\n解释:\n\n\t选择 k = 3，反转后 3 个字符。\n\t将 \"bba\" 反转为 \"abb\"，得到的字符串是 \"aabb\"，这是可获得的字典序最小的字符串。\n\n示例 3:\n\n输入: s = \"zxy\"\n\n输出: \"xzy\"\n\n解释:\n\n\t选择 k = 2，反转前 2 个字符。\n\t将 \"zx\" 反转为 \"xz\"，得到的字符串是 \"xzy\"，这是可获得的字典序最小的字符串。\n\n&nbsp;\n\n提示:\n\n\t1 <= n == s.length <= 1000\n\ts 由小写英文字母组成。",
+  "constraints": [
+    "1 <= n == s.length <= 1000",
+    "s 由小写英文字母组成。"
+  ]
+}

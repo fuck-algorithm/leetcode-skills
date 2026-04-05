@@ -1,0 +1,11 @@
+{
+  "number": "2165",
+  "title_cn": "重排数字的最小值",
+  "title_en": "Smallest Value of the Rearranged Number",
+  "slug": "smallest-value-of-the-rearranged-number",
+  "difficulty": "Medium",
+  "description": "给你一个整数 num 。重排 num 中的各位数字，使其值 最小化 且不含 任何 前导零。\n\n返回不含前导零且值最小的重排数字。\n\n注意，重排各位数字后，num 的符号不会改变。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 310\n输出：103\n解释：310 中各位数字的可行排列有：013、031、103、130、301、310 。\n不含任何前导零且值最小的重排数字是 103 。\n\n示例 2：\n\n输入：num = -7605\n输出：-7650\n解释：-7605 中各位数字的部分可行排列为：-7650、-6705、-5076、-0567。\n不含任何前导零且值最小的重排数字是 -7650 。\n\n&nbsp;\n\n提示：\n\n\t-1015 <= num <= 1015",
+  "constraints": [
+    "-1015 <= num <= 1015"
+  ]
+}

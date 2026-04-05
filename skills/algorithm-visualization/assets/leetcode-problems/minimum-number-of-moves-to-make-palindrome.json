@@ -1,0 +1,13 @@
+{
+  "number": "2193",
+  "title_cn": "得到回文串的最少操作次数",
+  "title_en": "Minimum Number of Moves to Make Palindrome",
+  "slug": "minimum-number-of-moves-to-make-palindrome",
+  "difficulty": "Hard",
+  "description": "给你一个只包含小写英文字母的字符串&nbsp;s&nbsp;。\n\n每一次 操作&nbsp;，你可以选择 s&nbsp;中两个 相邻&nbsp;的字符，并将它们交换。\n\n请你返回将 s&nbsp;变成回文串的 最少操作次数&nbsp;。\n\n注意&nbsp;，输入数据会确保&nbsp;s&nbsp;一定能变成一个回文串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aabb\"\n输出：2\n解释：\n我们可以将 s 变成 2 个回文串，\"abba\" 和 \"baab\" 。\n- 我们可以通过 2 次操作得到 \"abba\" ：\"aabb\" -> \"abab\" -> \"abba\" 。\n- 我们可以通过 2 次操作得到 \"baab\" ：\"aabb\" -> \"abab\" -> \"baab\" 。\n因此，得到回文串的最少总操作次数为 2 。\n\n示例 2：\n\n输入：s = \"letelt\"\n输出：2\n解释：\n通过 2 次操作从 s 能得到回文串 \"lettel\" 。\n其中一种方法是：\"letelt\" -> \"letetl\" -> \"lettel\" 。\n其他回文串比方说 \"tleelt\" 也可以通过 2 次操作得到。\n可以证明少于 2 次操作，无法得到回文串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2000\n\ts&nbsp;只包含小写英文字母。\n\ts&nbsp;可以通过有限次操作得到一个回文串。",
+  "constraints": [
+    "1 <= s.length <= 2000",
+    "s&nbsp;只包含小写英文字母。",
+    "s&nbsp;可以通过有限次操作得到一个回文串。"
+  ]
+}

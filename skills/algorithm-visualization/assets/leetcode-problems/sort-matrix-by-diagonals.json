@@ -1,0 +1,13 @@
+{
+  "number": "3446",
+  "title_cn": "按对角线进行矩阵排序",
+  "title_en": "Sort Matrix by Diagonals",
+  "slug": "sort-matrix-by-diagonals",
+  "difficulty": "Medium",
+  "description": "给你一个大小为&nbsp;n x n 的整数方阵 grid。返回一个经过如下调整的矩阵：\n\n\t左下角三角形（包括中间对角线）的对角线按&nbsp;非递增顺序&nbsp;排序。\n\t右上角三角形&nbsp;的对角线按&nbsp;非递减顺序&nbsp;排序。\n\n&nbsp;\n\n示例 1：\n\n输入： grid = [[1,7,3],[9,8,2],[4,5,6]]\n\n输出： [[8,2,3],[9,6,7],[4,5,1]]\n\n解释：\n\n标有黑色箭头的对角线（左下角三角形）应按非递增顺序排序：\n\n\t[1, 8, 6] 变为 [8, 6, 1]。\n\t[9, 5] 和 [4] 保持不变。\n\n标有蓝色箭头的对角线（右上角三角形）应按非递减顺序排序：\n\n\t[7, 2] 变为 [2, 7]。\n\t[3] 保持不变。\n\n示例 2：\n\n输入： grid = [[0,1],[1,2]]\n\n输出： [[2,1],[1,0]]\n\n解释：\n\n标有黑色箭头的对角线必须按非递增顺序排序，因此 [0, 2] 变为 [2, 0]。其他对角线已经符合要求。\n\n示例 3：\n\n输入： grid = [[1]]\n\n输出： [[1]]\n\n解释：\n\n只有一个元素的对角线已经符合要求，因此无需修改。\n\n&nbsp;\n\n提示：\n\n\tgrid.length == grid[i].length == n\n\t1 <= n <= 10\n\t-105 <= grid[i][j] <= 105",
+  "constraints": [
+    "grid.length == grid[i].length == n",
+    "1 <= n <= 10",
+    "-105 <= grid[i][j] <= 105"
+  ]
+}

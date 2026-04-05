@@ -1,0 +1,9 @@
+{
+  "number": "2888",
+  "title_cn": "重塑数据：连结",
+  "title_en": "Reshape Data: Concatenate",
+  "slug": "reshape-data-concatenate",
+  "difficulty": "Easy",
+  "description": "DataFrame df1\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n\nDataFrame df2\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n\n编写一个解决方案，将两个&nbsp;DataFrames 垂直 连接成一个&nbsp;DataFrame。\n\n结果格式如下示例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\ndf1\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n+------------+---------+-----+\ndf2\n+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 5          | Leo  | 7   |\n| 6          | Alex | 7   |\n+------------+------+-----+\n输出：\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n| 5          | Leo     | 7   |\n| 6          | Alex    | 7   |\n+------------+---------+-----+\n解释：\n两个 DataFrame 被垂直堆叠，它们的行被合并。",
+  "constraints": []
+}

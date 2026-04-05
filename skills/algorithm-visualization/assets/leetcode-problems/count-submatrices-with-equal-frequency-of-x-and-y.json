@@ -1,0 +1,12 @@
+{
+  "number": "3212",
+  "title_cn": "统计 X 和 Y 频数相等的子矩阵数量",
+  "title_en": "Count Submatrices With Equal Frequency of X and Y",
+  "slug": "count-submatrices-with-equal-frequency-of-x-and-y",
+  "difficulty": "Medium",
+  "description": "给你一个二维字符矩阵 grid，其中 grid[i][j] 可能是 'X'、'Y' 或 '.'，返回满足以下条件的子矩阵数量：\n\n\t包含 grid[0][0]\n\t'X' 和 'Y' 的频数相等。\n\t至少包含一个 'X'。\n\n&nbsp;\n\n示例 1：\n\n输入： grid = [[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]\n\n输出： 3\n\n解释：\n\n示例 2：\n\n输入： grid = [[\"X\",\"X\"],[\"X\",\"Y\"]]\n\n输出： 0\n\n解释：\n\n不存在满足 'X' 和 'Y' 频数相等的子矩阵。\n\n示例 3：\n\n输入： grid = [[\".\",\".\"],[\".\",\".\"]]\n\n输出： 0\n\n解释：\n\n不存在满足至少包含一个 'X' 的子矩阵。\n\n&nbsp;\n\n提示：\n\n\t1 <= grid.length, grid[i].length <= 1000\n\tgrid[i][j] 可能是 'X'、'Y' 或 '.'.",
+  "constraints": [
+    "1 <= grid.length, grid[i].length <= 1000",
+    "grid[i][j] 可能是 'X'、'Y' 或 '.'."
+  ]
+}

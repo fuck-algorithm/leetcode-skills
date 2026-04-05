@@ -1,0 +1,12 @@
+{
+  "number": "3334",
+  "title_cn": "数组的最大因子得分",
+  "title_en": "Find the Maximum Factor Score of Array",
+  "slug": "find-the-maximum-factor-score-of-array",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。\n\n因子得分 定义为数组所有元素的最小公倍数（LCM）与最大公约数（GCD）的 乘积。\n\n在 最多 移除一个元素的情况下，返回 nums 的 最大因子得分。\n\n注意，单个数字的 LCM 和 GCD 都是其本身，而 空数组 的因子得分为 0。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [2,4,8,16]\n\n输出： 64\n\n解释：\n\n移除数字 2 后，剩余元素的 GCD 为 4，LCM 为 16，因此最大因子得分为 4 * 16 = 64。\n\n示例 2：\n\n输入： nums = [1,2,3,4,5]\n\n输出： 60\n\n解释：\n\n无需移除任何元素即可获得最大因子得分 60。\n\n示例 3：\n\n输入： nums = [3]\n\n输出： 9\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 30",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 30"
+  ]
+}

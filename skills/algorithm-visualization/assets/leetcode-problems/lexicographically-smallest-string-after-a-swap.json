@@ -1,0 +1,12 @@
+{
+  "number": "3216",
+  "title_cn": "交换后字典序最小的字符串",
+  "title_en": "Lexicographically Smallest String After a Swap",
+  "slug": "lexicographically-smallest-string-after-a-swap",
+  "difficulty": "Easy",
+  "description": "给你一个仅由数字组成的字符串 s，在最多交换一次 相邻 且具有相同 奇偶性 的数字后，返回可以得到的字典序最小的字符串。\n\n如果两个数字都是奇数或都是偶数，则它们具有相同的奇偶性。例如，5 和 9、2 和 4 奇偶性相同，而 6 和 9 奇偶性不同。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"45320\"\n\n输出： \"43520\"\n\n解释：\n\ns[1] == '5' 和 s[2] == '3' 都具有相同的奇偶性，交换它们可以得到字典序最小的字符串。\n\n示例 2：\n\n输入： s = \"001\"\n\n输出： \"001\"\n\n解释：\n\n无需进行交换，因为 s 已经是字典序最小的。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 100\n\ts 仅由数字组成。",
+  "constraints": [
+    "2 <= s.length <= 100",
+    "s 仅由数字组成。"
+  ]
+}

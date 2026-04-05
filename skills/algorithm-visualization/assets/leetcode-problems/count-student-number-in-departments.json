@@ -1,0 +1,9 @@
+{
+  "number": "580",
+  "title_cn": "统计各专业学生人数",
+  "title_en": "Count Student Number in Departments",
+  "slug": "count-student-number-in-departments",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

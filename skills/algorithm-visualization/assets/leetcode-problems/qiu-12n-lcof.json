@@ -1,0 +1,11 @@
+{
+  "number": "LCR 189",
+  "title_cn": "设计机械累加器",
+  "title_en": "设计机械累加器",
+  "slug": "qiu-12n-lcof",
+  "difficulty": "Medium",
+  "description": "请设计一个机械累加器，计算从 1、2... 一直累加到目标数值 target 的总和。注意这是一个只能进行加法操作的程序，不具备乘除、if-else、switch-case、for 循环、while 循环，及条件判断语句等高级功能。\n\n&nbsp;\n\n示例 1：\n\n输入: target = 5\n输出:&nbsp;15\n\n示例 2：\n\n输入: target = 7\n输出:&nbsp;28\n\n&nbsp;\n\n提示：\n\n\t1 <= target&nbsp;<= 10000\n\n&nbsp;",
+  "constraints": [
+    "1 <= target&nbsp;<= 10000"
+  ]
+}

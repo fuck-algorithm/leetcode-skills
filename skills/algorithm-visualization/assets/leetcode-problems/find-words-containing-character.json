@@ -1,0 +1,14 @@
+{
+  "number": "2942",
+  "title_cn": "查找包含给定字符的单词",
+  "title_en": "Find Words Containing Character",
+  "slug": "find-words-containing-character",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的字符串数组&nbsp;words&nbsp;和一个字符&nbsp;x&nbsp;。\n\n请你返回一个 下标数组&nbsp;，表示下标在数组中对应的单词包含字符 x&nbsp;。\n\n注意&nbsp;，返回的数组可以是&nbsp;任意&nbsp;顺序。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"leet\",\"code\"], x = \"e\"\n输出：[0,1]\n解释：\"e\" 在两个单词中都出现了：\"leet\" 和 \"code\" 。所以我们返回下标 0 和 1 。\n\n示例 2：\n\n输入：words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"a\"\n输出：[0,2]\n解释：\"a\" 在 \"abc\" 和 \"aaaa\" 中出现了，所以我们返回下标 0 和 2 。\n\n示例 3：\n\n输入：words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"z\"\n输出：[]\n解释：\"z\" 没有在任何单词中出现。所以我们返回空数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 50\n\t1 <= words[i].length <= 50\n\tx&nbsp;是一个小写英文字母。\n\twords[i]&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= words.length <= 50",
+    "1 <= words[i].length <= 50",
+    "x&nbsp;是一个小写英文字母。",
+    "words[i]&nbsp;只包含小写英文字母。"
+  ]
+}

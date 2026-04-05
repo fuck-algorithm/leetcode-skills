@@ -1,0 +1,14 @@
+{
+  "number": "面试题 16.20",
+  "title_cn": "T9键盘",
+  "title_en": "T9 LCCI",
+  "slug": "t9-lcci",
+  "difficulty": "Medium",
+  "description": "在老式手机上，用户通过数字键盘输入，手机将提供与这些数字相匹配的单词列表。每个数字映射到0至4个字母。给定一个数字序列，实现一个算法来返回匹配单词的列表。你会得到一张含有有效单词的列表。映射如下图所示：\n\n示例 1：\n\n输入：num = \"8733\", words = [\"tree\", \"used\"]\n输出：[\"tree\", \"used\"]\n\n示例 2：\n\n输入：num = \"2\", words = [\"a\", \"b\", \"c\", \"d\"]\n输出：[\"a\", \"b\", \"c\"]\n\n提示：\n\n\tnum.length <= 1000\n\twords.length <= 500\n\twords[i].length == num.length\n\tnum中不会出现 0, 1 这两个数字",
+  "constraints": [
+    "num.length <= 1000",
+    "words.length <= 500",
+    "words[i].length == num.length",
+    "num中不会出现 0, 1 这两个数字"
+  ]
+}

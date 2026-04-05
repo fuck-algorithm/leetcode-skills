@@ -1,0 +1,16 @@
+{
+  "number": "2925",
+  "title_cn": "在树上执行操作以后得到的最大分数",
+  "title_en": "Maximum Score After Applying Operations on a Tree",
+  "slug": "maximum-score-after-applying-operations-on-a-tree",
+  "difficulty": "Medium",
+  "description": "有一棵 n&nbsp;个节点的无向树，节点编号为 0&nbsp;到 n - 1&nbsp;，根节点编号为 0&nbsp;。给你一个长度为 n - 1&nbsp;的二维整数数组&nbsp;edges&nbsp;表示这棵树，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示树中节点&nbsp;ai&nbsp;和&nbsp;bi&nbsp;有一条边。\n\n同时给你一个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;values&nbsp;，其中&nbsp;values[i]&nbsp;表示第 i&nbsp;个节点的值。\n\n一开始你的分数为 0&nbsp;，每次操作中，你将执行：\n\n\t选择节点&nbsp;i&nbsp;。\n\t将&nbsp;values[i]&nbsp;加入你的分数。\n\t将&nbsp;values[i]&nbsp;变为&nbsp;0&nbsp;。\n\n如果从根节点出发，到任意叶子节点经过的路径上的节点值之和都不等于 0 ，那么我们称这棵树是 健康的&nbsp;。\n\n你可以对这棵树执行任意次操作，但要求执行完所有操作以后树是&nbsp;健康的&nbsp;，请你返回你可以获得的 最大分数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [[0,1],[0,2],[0,3],[2,4],[4,5]], values = [5,2,5,2,1,1]\n输出：11\n解释：我们可以选择节点 1 ，2 ，3 ，4 和 5 。根节点的值是非 0 的。所以从根出发到任意叶子节点路径上节点值之和都不为 0 。所以树是健康的。你的得分之和为 values[1] + values[2] + values[3] + values[4] + values[5] = 11 。\n11 是你对树执行任意次操作以后可以获得的最大得分之和。\n\n示例 2：\n\n输入：edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]], values = [20,10,9,7,4,3,5]\n输出：40\n解释：我们选择节点 0 ，2 ，3 和 4 。\n- 从 0 到 4 的节点值之和为 10 。\n- 从 0 到 3 的节点值之和为 10 。\n- 从 0 到 5 的节点值之和为 3 。\n- 从 0 到 6 的节点值之和为 5 。\n所以树是健康的。你的得分之和为 values[0] + values[2] + values[3] + values[4] = 40 。\n40 是你对树执行任意次操作以后可以获得的最大得分之和。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 2 * 104\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ai, bi < n\n\tvalues.length == n\n\t1 <= values[i] <= 109\n\t输入保证&nbsp;edges&nbsp;构成一棵合法的树。",
+  "constraints": [
+    "2 <= n <= 2 * 104",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ai, bi < n",
+    "values.length == n",
+    "1 <= values[i] <= 109"
+  ]
+}

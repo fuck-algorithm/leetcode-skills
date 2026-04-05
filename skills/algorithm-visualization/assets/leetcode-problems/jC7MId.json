@@ -1,0 +1,13 @@
+{
+  "number": "LCR 051",
+  "title_cn": "二叉树中的最大路径和",
+  "title_en": "二叉树中的最大路径和",
+  "slug": "jC7MId",
+  "difficulty": "Hard",
+  "description": "路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不一定经过根节点。\n\n路径和 是路径中各节点值的总和。\n\n给定一个二叉树的根节点 root ，返回其 最大路径和，即所有路径上节点值之和的最大值。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,2,3]\n输出：6\n解释：最优路径是 2 -> 1 -> 3 ，路径和为 2 + 1 + 3 = 6\n\n示例 2：\n\n输入：root = [-10,9,20,null,null,15,7]\n输出：42\n解释：最优路径是 15 -> 20 -> 7 ，路径和为 15 + 20 + 7 = 42\n\n&nbsp;\n\n提示：\n\n\t树中节点数目范围是 [1, 3 * 104]\n\t-1000 <= Node.val <= 1000\n\n&nbsp;\n\n注意：本题与主站 124&nbsp;题相同：&nbsp;https://leetcode.cn/problems/binary-tree-maximum-path-sum/",
+  "constraints": [
+    "树中节点数目范围是 [1, 3 * 104]",
+    "-1000 <= Node.val <= 1000",
+    "注意：本题与主站 124&nbsp;题相同：&nbsp;https://leetcode.cn/problems/binary-tree-maximum-path-sum/"
+  ]
+}

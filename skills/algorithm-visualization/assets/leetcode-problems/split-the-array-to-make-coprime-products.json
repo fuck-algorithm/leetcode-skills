@@ -1,0 +1,13 @@
+{
+  "number": "2584",
+  "title_cn": "分割数组使乘积互质",
+  "title_en": "Split the Array to Make Coprime Products",
+  "slug": "split-the-array-to-make-coprime-products",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n 的整数数组 nums ，下标从 0 开始。\n\n如果在下标 i 处 分割 数组，其中 0 <= i <= n - 2 ，使前 i + 1 个元素的乘积和剩余元素的乘积互质，则认为该分割 有效 。\n\n\t例如，如果 nums = [2, 3, 3] ，那么在下标 i = 0 处的分割有效，因为 2 和 9 互质，而在下标 i = 1 处的分割无效，因为 6 和 3 不互质。在下标 i = 2 处的分割也无效，因为 i == n - 1 。\n\n返回可以有效分割数组的最小下标 i ，如果不存在有效分割，则返回 -1 。\n\n当且仅当 gcd(val1, val2) == 1 成立时，val1 和 val2 这两个值才是互质的，其中 gcd(val1, val2) 表示 val1 和 val2 的最大公约数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,7,8,15,3,5]\n输出：2\n解释：上表展示了每个下标 i 处的前 i + 1 个元素的乘积、剩余元素的乘积和它们的最大公约数的值。\n唯一一个有效分割位于下标 2 。\n\n示例 2：\n\n输入：nums = [4,7,15,8,3,5]\n输出：-1\n解释：上表展示了每个下标 i 处的前 i + 1 个元素的乘积、剩余元素的乘积和它们的最大公约数的值。\n不存在有效分割。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 104\n\t1 <= nums[i] <= 106",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 104",
+    "1 <= nums[i] <= 106"
+  ]
+}

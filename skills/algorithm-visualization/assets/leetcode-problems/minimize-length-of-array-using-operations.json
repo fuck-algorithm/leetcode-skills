@@ -1,0 +1,12 @@
+{
+  "number": "3012",
+  "title_cn": "通过操作使数组长度最小",
+  "title_en": "Minimize Length of Array Using Operations",
+  "slug": "minimize-length-of-array-using-operations",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，它只包含 正&nbsp;整数。\n\n你的任务是通过进行以下操作&nbsp;任意次&nbsp;（可以是 0 次）&nbsp;最小化&nbsp;nums&nbsp;的长度：\n\n\t在 nums&nbsp;中选择 两个不同&nbsp;的下标&nbsp;i&nbsp;和&nbsp;j&nbsp;，满足&nbsp;nums[i] > 0&nbsp;且&nbsp;nums[j] > 0&nbsp;。\n\t将结果&nbsp;nums[i] % nums[j]&nbsp;插入&nbsp;nums&nbsp;的结尾。\n\t将 nums&nbsp;中下标为&nbsp;i&nbsp;和&nbsp;j&nbsp;的元素删除。\n\n请你返回一个整数，它表示进行任意次操作以后&nbsp;nums&nbsp;的 最小长度&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,4,3,1]\n输出：1\n解释：使数组长度最小的一种方法是：\n操作 1 ：选择下标 2 和 1 ，插入 nums[2] % nums[1] 到数组末尾，得到 [1,4,3,1,3] ，然后删除下标为 2 和 1 的元素。\nnums 变为 [1,1,3] 。\n操作 2 ：选择下标 1 和 2 ，插入 nums[1] % nums[2] 到数组末尾，得到 [1,1,3,1] ，然后删除下标为 1 和 2 的元素。\nnums 变为 [1,1] 。\n操作 3 ：选择下标 1 和 0 ，插入 nums[1] % nums[0] 到数组末尾，得到 [1,1,0] ，然后删除下标为 1 和 0 的元素。\nnums 变为 [0] 。\nnums 的长度无法进一步减小，所以答案为 1 。\n1 是可以得到的最小长度。\n\n示例 2：\n\n输入：nums = [5,5,5,10,5]\n输出：2\n解释：使数组长度最小的一种方法是：\n操作 1 ：选择下标 0 和 3 ，插入 nums[0] % nums[3] 到数组末尾，得到 [5,5,5,10,5,5] ，然后删除下标为 0 和 3 的元素。\nnums 变为 [5,5,5,5] 。\n操作 2 ：选择下标 2 和 3 ，插入 nums[2] % nums[3] 到数组末尾，得到 [5,5,5,5,0] ，然后删除下标为 2 和 3 的元素。\nnums 变为 [5,5,0] 。\n操作 3 ：选择下标 0 和 1 ，插入 nums[0] % nums[1] 到数组末尾，得到 [5,5,0,0] ，然后删除下标为 0 和 1 的元素。\nnums 变为 [0,0] 。\nnums 的长度无法进一步减小，所以答案为 2 。\n2 是可以得到的最小长度。\n\n示例 3：\n\n输入：nums = [2,3,4]\n输出：1\n解释：使数组长度最小的一种方法是：\n操作 1 ：选择下标 1 和 2 ，插入 nums[1] % nums[2] 到数组末尾，得到 [2,3,4,3] ，然后删除下标为 1 和 2 的元素。\nnums 变为 [2,3] 。\n操作 2 ：选择下标 1 和 0 ，插入 nums[1] % nums[0] 到数组末尾，得到 [2,3,1] ，然后删除下标为 1 和 0 的元素。\nnums 变为 [1] 。\nnums 的长度无法进一步减小，所以答案为 1 。\n1 是可以得到的最小长度。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "479",
+  "title_cn": "最大回文数乘积",
+  "title_en": "Largest Palindrome Product",
+  "slug": "largest-palindrome-product",
+  "difficulty": "Hard",
+  "description": "给定一个整数 n ，返回 可表示为两个 n&nbsp;位整数乘积的 最大回文整数 。因为答案可能非常大，所以返回它对 1337 取余 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2\n输出：987\n解释：99 x 91 = 9009, 9009 % 1337 = 987\n\n示例 2：\n\n输入：n = 1\n输出：9\n\n&nbsp;\n\n提示:\n\n\t1 <= n <= 8",
+  "constraints": [
+    "1 <= n <= 8"
+  ]
+}

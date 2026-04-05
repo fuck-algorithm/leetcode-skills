@@ -1,0 +1,14 @@
+{
+  "number": "832",
+  "title_cn": "翻转图像",
+  "title_en": "Flipping an Image",
+  "slug": "flipping-an-image",
+  "difficulty": "Easy",
+  "description": "给定一个&nbsp;n x n&nbsp;的二进制矩阵&nbsp;image&nbsp;，先 水平 翻转图像，然后&nbsp;反转&nbsp;图像并返回&nbsp;结果&nbsp;。\n\n水平翻转图片就是将图片的每一行都进行翻转，即逆序。\n\n\t例如，水平翻转&nbsp;[1,1,0]&nbsp;的结果是&nbsp;[0,1,1]。\n\n反转图片的意思是图片中的&nbsp;0&nbsp;全部被&nbsp;1&nbsp;替换，&nbsp;1&nbsp;全部被&nbsp;0&nbsp;替换。\n\n\t例如，反转&nbsp;[0,1,1]&nbsp;的结果是&nbsp;[1,0,0]。\n\n&nbsp;\n\n示例 1：\n\n输入：image = [[1,1,0],[1,0,1],[0,0,0]]\n输出：[[1,0,0],[0,1,0],[1,1,1]]\n解释：首先翻转每一行: [[0,1,1],[1,0,1],[0,0,0]]；\n     然后反转图片: [[1,0,0],[0,1,0],[1,1,1]]\n\n示例 2：\n\n输入：image = [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]\n输出：[[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]\n解释：首先翻转每一行: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]]；\n     然后反转图片: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]\n\n&nbsp;\n\n提示：\n\n\tn == image.length\n\tn == image[i].length\n\t1 <= n <= 20\n\timages[i][j]&nbsp;==&nbsp;0&nbsp;或&nbsp;1.",
+  "constraints": [
+    "n == image.length",
+    "n == image[i].length",
+    "1 <= n <= 20",
+    "images[i][j]&nbsp;==&nbsp;0&nbsp;或&nbsp;1."
+  ]
+}

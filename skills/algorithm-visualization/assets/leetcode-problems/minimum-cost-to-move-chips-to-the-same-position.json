@@ -1,0 +1,12 @@
+{
+  "number": "1217",
+  "title_cn": "玩筹码",
+  "title_en": "Minimum Cost to Move Chips to The Same Position",
+  "slug": "minimum-cost-to-move-chips-to-the-same-position",
+  "difficulty": "Easy",
+  "description": "有&nbsp;n&nbsp;个筹码。第 i 个筹码的位置是&nbsp;position[i]&nbsp;。\n\n我们需要把所有筹码移到同一个位置。在一步中，我们可以将第 i 个筹码的位置从&nbsp;position[i]&nbsp;改变为:\n\n\tposition[i] + 2&nbsp;或&nbsp;position[i] - 2&nbsp;，此时&nbsp;cost = 0\n\tposition[i] + 1&nbsp;或&nbsp;position[i] - 1&nbsp;，此时&nbsp;cost = 1\n\n返回将所有筹码移动到同一位置上所需要的 最小代价 。\n\n&nbsp;\n\n示例 1：\n\n输入：position = [1,2,3]\n输出：1\n解释：第一步:将位置3的筹码移动到位置1，成本为0。\n第二步:将位置2的筹码移动到位置1，成本= 1。\n总成本是1。\n\n示例 2：\n\n输入：position = [2,2,2,3,3]\n输出：2\n解释：我们可以把位置3的两个筹码移到位置2。每一步的成本为1。总成本= 2。\n\n示例 3:\n\n输入：position = [1,1000000000]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= position.length <= 100\n\t1 <= position[i] <= 10^9",
+  "constraints": [
+    "1 <= position.length <= 100",
+    "1 <= position[i] <= 10^9"
+  ]
+}

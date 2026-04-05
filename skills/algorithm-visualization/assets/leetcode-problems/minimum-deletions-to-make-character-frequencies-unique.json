@@ -1,0 +1,12 @@
+{
+  "number": "1647",
+  "title_cn": "字符频次唯一的最小删除次数",
+  "title_en": "Minimum Deletions to Make Character Frequencies Unique",
+  "slug": "minimum-deletions-to-make-character-frequencies-unique",
+  "difficulty": "Medium",
+  "description": "如果字符串 s 中 不存在 两个不同字符 频次 相同的情况，就称 s 是 优质字符串 。\n\n给你一个字符串 s，返回使 s 成为 优质字符串 需要删除的 最小 字符数。\n\n字符串中字符的 频次 是该字符在字符串中的出现次数。例如，在字符串 \"aab\" 中，'a' 的频次是 2，而 'b' 的频次是 1 。\n\n示例 1：\n\n输入：s = \"aab\"\n输出：0\n解释：s 已经是优质字符串。\n\n示例 2：\n\n输入：s = \"aaabbbcc\"\n输出：2\n解释：可以删除两个 'b' , 得到优质字符串 \"aaabcc\" 。\n另一种方式是删除一个 'b' 和一个 'c' ，得到优质字符串 \"aaabbc\" 。\n\n示例 3：\n\n输入：s = \"ceabaacb\"\n输出：2\n解释：可以删除两个 'c' 得到优质字符串 \"eabaab\" 。\n注意，只需要关注结果字符串中仍然存在的字符。（即，频次为 0 的字符会忽略不计。）\n\n提示：\n\n\t1 5\n\ts 仅含小写英文字母",
+  "constraints": [
+    "1 5",
+    "s 仅含小写英文字母"
+  ]
+}

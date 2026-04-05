@@ -1,0 +1,12 @@
+{
+  "number": "20",
+  "title_cn": "有效的括号",
+  "title_en": "Valid Parentheses",
+  "slug": "valid-parentheses",
+  "difficulty": "Easy",
+  "description": "给定一个只包括 '('，')'，'{'，'}'，'['，']'&nbsp;的字符串 s ，判断字符串是否有效。\n\n有效字符串需满足：\n\n\t左括号必须用相同类型的右括号闭合。\n\t左括号必须以正确的顺序闭合。\n\t每个右括号都有一个对应的相同类型的左括号。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"()\"\n\n输出：true\n\n示例 2：\n\n输入：s = \"()[]{}\"\n\n输出：true\n\n示例 3：\n\n输入：s = \"(]\"\n\n输出：false\n\n示例 4：\n\n输入：s = \"([])\"\n\n输出：true\n\n示例 5：\n\n输入：s = \"([)]\"\n\n输出：false\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts 仅由括号 '()[]{}' 组成",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s 仅由括号 '()[]{}' 组成"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "LCR 163",
+  "title_cn": "找到第 k 位数字",
+  "title_en": "找到第 k 位数字",
+  "slug": "shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof",
+  "difficulty": "Medium",
+  "description": "某班级学号记录系统发生错乱，原整数学号序列 [1,2,3,4,...] 分隔符丢失后变为 1234... 的字符序列。请实现一个函数返回该字符序列中的第 k 位数字。\n\n&nbsp;\n\n示例 1：\n\n输入：k = 5\n输出：5\n\n示例 2：\n\n输入：k = 12\n输出：1\n解释：第 12 位数字在序列 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... 里是 1 ，它是 11 的一部分。\n\n&nbsp;\n\n提示：\n\n\t0 <= k <&nbsp;231\n\n注意：本题与主站 400 题相同：https://leetcode.cn/problems/nth-digit/\n\n&nbsp;",
+  "constraints": [
+    "0 <= k <&nbsp;231",
+    "注意：本题与主站 400 题相同：https://leetcode.cn/problems/nth-digit/"
+  ]
+}

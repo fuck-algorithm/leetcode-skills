@@ -1,0 +1,9 @@
+{
+  "number": "1565",
+  "title_cn": "按月统计订单数与顾客数",
+  "title_en": "Unique Orders and Customers Per Month",
+  "slug": "unique-orders-and-customers-per-month",
+  "difficulty": "Easy",
+  "description": "",
+  "constraints": []
+}

@@ -1,0 +1,13 @@
+{
+  "number": "686",
+  "title_cn": "重复叠加字符串匹配",
+  "title_en": "Repeated String Match",
+  "slug": "repeated-string-match",
+  "difficulty": "Medium",
+  "description": "给定两个字符串&nbsp;a 和 b，寻找重复叠加字符串 a 的最小次数，使得字符串 b 成为叠加后的字符串 a 的子串，如果不存在则返回 -1。\n\n注意：字符串 \"abc\"&nbsp;重复叠加 0 次是 \"\"，重复叠加 1 次是&nbsp;\"abc\"，重复叠加 2 次是&nbsp;\"abcabc\"。\n\n&nbsp;\n\n示例 1：\n\n输入：a = \"abcd\", b = \"cdabcdab\"\n输出：3\n解释：a 重复叠加三遍后为 \"abcdabcdabcd\", 此时 b 是其子串。\n\n示例 2：\n\n输入：a = \"a\", b = \"aa\"\n输出：2\n\n示例 3：\n\n输入：a = \"a\", b = \"a\"\n输出：1\n\n示例 4：\n\n输入：a = \"abc\", b = \"wxyz\"\n输出：-1\n\n&nbsp;\n\n提示：\n\n\t1 <= a.length <= 104\n\t1 <= b.length <= 104\n\ta 和 b 由小写英文字母组成",
+  "constraints": [
+    "1 <= a.length <= 104",
+    "1 <= b.length <= 104",
+    "a 和 b 由小写英文字母组成"
+  ]
+}

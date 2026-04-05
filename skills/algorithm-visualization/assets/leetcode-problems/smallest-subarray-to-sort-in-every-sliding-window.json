@@ -1,0 +1,9 @@
+{
+  "number": "3555",
+  "title_cn": "排序每个滑动窗口中最小的子数组",
+  "title_en": "Smallest Subarray to Sort in Every Sliding Window",
+  "slug": "smallest-subarray-to-sort-in-every-sliding-window",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

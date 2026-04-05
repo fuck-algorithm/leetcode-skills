@@ -1,0 +1,12 @@
+{
+  "number": "2063",
+  "title_cn": "所有子字符串中的元音",
+  "title_en": "Vowels of All Substrings",
+  "slug": "vowels-of-all-substrings",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 word ，返回 word 的所有子字符串中 元音的总数 ，元音是指 'a'、'e'、'i'、'o' 和 'u' 。\n\n子字符串 是字符串中一个连续（非空）的字符序列。\n\n注意：由于对 word 长度的限制比较宽松，答案可能超过有符号 32 位整数的范围。计算时需当心。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"aba\"\n输出：6\n解释：\n所有子字符串是：\"a\"、\"ab\"、\"aba\"、\"b\"、\"ba\" 和 \"a\" 。\n- \"b\" 中有 0 个元音\n- \"a\"、\"ab\"、\"ba\" 和 \"a\" 每个都有 1 个元音\n- \"aba\" 中有 2 个元音\n因此，元音总数 = 0 + 1 + 1 + 1 + 1 + 2 = 6 。\n\n示例 2：\n\n输入：word = \"abc\"\n输出：3\n解释：\n所有子字符串是：\"a\"、\"ab\"、\"abc\"、\"b\"、\"bc\" 和 \"c\" 。\n- \"a\"、\"ab\" 和 \"abc\" 每个都有 1 个元音\n- \"b\"、\"bc\" 和 \"c\" 每个都有 0 个元音\n因此，元音总数 = 1 + 1 + 1 + 0 + 0 + 0 = 3 。\n\n示例 3：\n\n输入：word = \"ltcd\"\n输出：0\n解释：\"ltcd\" 的子字符串均不含元音。\n\n示例 4：\n\n输入：word = \"noosabasboosa\"\n输出：237\n解释：所有子字符串中共有 237 个元音。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 105\n\tword 由小写英文字母组成",
+  "constraints": [
+    "1 <= word.length <= 105",
+    "word 由小写英文字母组成"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3884",
+  "title_cn": "双端字符匹配",
+  "title_en": "First Matching Character From Both Ends",
+  "slug": "first-matching-character-from-both-ends",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n 的字符串 s，其中只包含小写英文字母。\n\n返回最小的下标 i，使得 s[i] == s[n - i - 1]。\n\n如果不存在这样的下标，返回 -1。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"abcacbd\"\n\n输出： 1\n\n解释：\n\n在下标 i = 1 处，s[1] 和 s[5] 的值均为 'b'。\n\n没有更小的下标满足条件，因此答案是 1。\n\n示例 2：\n\n输入： s = \"abc\"\n\n输出： 1\n\n解释：\n\n​​​​​​​在下标 i = 1 处，左右对应位置重合，因此字符均为 'b'。\n\n没有更小的下标满足条件，因此答案是 1。\n\n示例 3：\n\n输入： s = \"abcdab\"\n\n输出： -1\n\n解释：\n\n​​​​​​​对于每个下标 i，位置 i 和 n - i - 1 的字符均不相同。\n\n因此，不存在有效下标，答案是 -1。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == s.length <= 100\n\ts 仅包含小写英文字母。",
+  "constraints": [
+    "1 <= n == s.length <= 100",
+    "s 仅包含小写英文字母。"
+  ]
+}

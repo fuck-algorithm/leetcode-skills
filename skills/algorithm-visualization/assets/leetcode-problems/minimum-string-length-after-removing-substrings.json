@@ -1,0 +1,12 @@
+{
+  "number": "2696",
+  "title_cn": "删除子串后的字符串最小长度",
+  "title_en": "Minimum String Length After Removing Substrings",
+  "slug": "minimum-string-length-after-removing-substrings",
+  "difficulty": "Easy",
+  "description": "给你一个仅由 大写 英文字符组成的字符串 s 。\n\n你可以对此字符串执行一些操作，在每一步操作中，你可以从 s 中删除 任一个 \"AB\" 或 \"CD\" 子字符串。\n\n通过执行操作，删除所有&nbsp;\"AB\" 和 \"CD\" 子串，返回可获得的最终字符串的 最小 可能长度。\n\n注意，删除子串后，重新连接出的字符串可能会产生新的&nbsp;\"AB\" 或 \"CD\" 子串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"ABFCACDB\"\n输出：2\n解释：你可以执行下述操作：\n- 从 \"ABFCACDB\" 中删除子串 \"AB\"，得到 s = \"FCACDB\" 。\n- 从 \"FCACDB\" 中删除子串 \"CD\"，得到 s = \"FCAB\" 。\n- 从 \"FCAB\" 中删除子串 \"AB\"，得到 s = \"FC\" 。\n最终字符串的长度为 2 。\n可以证明 2 是可获得的最小长度。\n\n示例 2：\n\n输入：s = \"ACBBD\"\n输出：5\n解释：无法执行操作，字符串长度不变。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts 仅由大写英文字母组成",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 仅由大写英文字母组成"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "number": "3639",
+  "title_cn": "变为活跃状态的最小时间",
+  "title_en": "Minimum Time to Activate String",
+  "slug": "minimum-time-to-activate-string",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的字符串 s 和一个整数数组 order，其中 order 是范围 [0, n - 1] 内数字的一个 排列。\n\n从时间 t = 0 开始，在每个时间点，将字符串 s 中下标为 order[t] 的字符替换为 '*'。\n\n如果 子字符串 包含&nbsp;至少&nbsp;一个 '*'&nbsp;，则认为该子字符串有效。\n\n如果字符串中&nbsp;有效子字符串&nbsp;的总数大于或等于 k，则称该字符串为 活跃 字符串。\n\n返回字符串 s 变为 活跃&nbsp;状态的最小时间 t。如果无法变为活跃状态，返回 -1。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"abc\", order = [1,0,2], k = 2\n\n输出: 0\n\n解释:\n\n\t\t\tt\n\t\t\torder[t]\n\t\t\t修改后的 s\n\t\t\t有效子字符串\n\t\t\t计数\n\t\t\t激活状态\n\t\t\t(计数 >= k)\n\n\t\t\t0\n\t\t\t1\n\t\t\t\"a*c\"\n\t\t\t\"*\", \"a*\", \"*c\", \"a*c\"\n\t\t\t4\n\t\t\t是\n\n字符串 s 在 t = 0 时变为激活状态。因此，答案是 0。\n\n示例 2:\n\n输入: s = \"cat\", order = [0,2,1], k = 6\n\n输出: 2\n\n解释:\n\n\t\t\tt\n\t\t\torder[t]\n\t\t\t修改后的 s\n\t\t\t有效子字符串\n\t\t\t计数\n\t\t\t激活状态\n\t\t\t(计数 >= k)\n\n\t\t\t0\n\t\t\t0\n\t\t\t\"*at\"\n\t\t\t\"*\", \"*a\", \"*at\"\n\t\t\t3\n\t\t\t否\n\n\t\t\t1\n\t\t\t2\n\t\t\t\"*a*\"\n\t\t\t\"*\", \"*a\", \"*a*\", \"a*\", \"*\"\n\t\t\t5\n\t\t\t否\n\n\t\t\t2\n\t\t\t1\n\t\t\t\"***\"\n\t\t\t所有子字符串(包含 '*')\n\t\t\t6\n\t\t\t是\n\n字符串 s 在 t = 2 时变为激活状态。因此，答案是 2。\n\n示例 3:\n\n输入: s = \"xy\", order = [0,1], k = 4\n\n输出: -1\n\n解释:\n\n即使完成所有替换，也无法得到 k = 4 个有效子字符串。因此，答案是 -1。\n\n&nbsp;\n\n提示:\n\n\t1 <= n == s.length <= 105\n\torder.length == n\n\t0 <= order[i] <= n - 1\n\ts 由小写英文字母组成。\n\torder 是从 0 到 n - 1 的整数排列。\n\t1 <= k <= 109",
+  "constraints": [
+    "1 <= n == s.length <= 105",
+    "order.length == n",
+    "0 <= order[i] <= n - 1",
+    "s 由小写英文字母组成。",
+    "order 是从 0 到 n - 1 的整数排列。",
+    "1 <= k <= 109"
+  ]
+}

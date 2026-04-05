@@ -1,0 +1,11 @@
+{
+  "number": "3622",
+  "title_cn": "判断整除性",
+  "title_en": "Check Divisibility by Digit Sum and Product",
+  "slug": "check-divisibility-by-digit-sum-and-product",
+  "difficulty": "Easy",
+  "description": "给你一个正整数 n。请判断 n 是否可以被以下两值之和&nbsp;整除：\n\n\tn 的&nbsp;数字和（即其各个位数之和）。\n\n\tn 的&nbsp;数字积（即其各个位数之积）。\n\n如果 n 能被该和整除，返回 true；否则，返回 false。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 99\n\n输出： true\n\n解释：\n\n因为 99 可以被其数字和 (9 + 9 = 18) 与数字积 (9 * 9 = 81) 之和 (18 + 81 = 99) 整除，因此输出为 true。\n\n示例 2：\n\n输入： n = 23\n\n输出： false\n\n解释：\n\n因为 23 无法被其数字和 (2 + 3 = 5) 与数字积 (2 * 3 = 6) 之和 (5 + 6 = 11) 整除，因此输出为 false。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 106",
+  "constraints": [
+    "1 <= n <= 106"
+  ]
+}

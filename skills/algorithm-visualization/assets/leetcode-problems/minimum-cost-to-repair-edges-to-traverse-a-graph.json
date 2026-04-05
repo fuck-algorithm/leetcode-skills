@@ -1,0 +1,9 @@
+{
+  "number": "3807",
+  "title_cn": "修复边以遍历图的最小成本",
+  "title_en": "Minimum Cost to Repair Edges to Traverse a Graph",
+  "slug": "minimum-cost-to-repair-edges-to-traverse-a-graph",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

@@ -1,0 +1,13 @@
+{
+  "number": "LCR 014",
+  "title_cn": "字符串的排列",
+  "title_en": "字符串的排列",
+  "slug": "MPnaiL",
+  "difficulty": "Medium",
+  "description": "给定两个字符串&nbsp;s1&nbsp;和&nbsp;s2，写一个函数来判断 s2 是否包含 s1&nbsp;的某个变位词。\n\n换句话说，第一个字符串的排列之一是第二个字符串的 子串 。\n\n&nbsp;\n\n示例 1：\n\n输入: s1 = \"ab\" s2 = \"eidbaooo\"\n输出: True\n解释: s2 包含 s1 的排列之一 (\"ba\").\n\n示例 2：\n\n输入: s1= \"ab\" s2 = \"eidboaoo\"\n输出: False\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length, s2.length <= 104\n\ts1 和 s2 仅包含小写字母\n\n&nbsp;\n\n注意：本题与主站 567&nbsp;题相同：&nbsp;https://leetcode.cn/problems/permutation-in-string/",
+  "constraints": [
+    "1 <= s1.length, s2.length <= 104",
+    "s1 和 s2 仅包含小写字母",
+    "注意：本题与主站 567&nbsp;题相同：&nbsp;https://leetcode.cn/problems/permutation-in-string/"
+  ]
+}

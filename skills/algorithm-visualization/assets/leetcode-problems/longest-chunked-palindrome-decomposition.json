@@ -1,0 +1,12 @@
+{
+  "number": "1147",
+  "title_cn": "段式回文",
+  "title_en": "Longest Chunked Palindrome Decomposition",
+  "slug": "longest-chunked-palindrome-decomposition",
+  "difficulty": "Hard",
+  "description": "你会得到一个字符串&nbsp;text&nbsp;。你应该把它分成 k&nbsp;个子字符串&nbsp;(subtext1, subtext2，…， subtextk)&nbsp;，要求满足:\n\n\tsubtexti&nbsp;是 非空&nbsp;字符串\n\t所有子字符串的连接等于 text ( 即subtext1&nbsp;+ subtext2&nbsp;+ ... + subtextk&nbsp;== text&nbsp;)\n\t对于所有 i&nbsp;的有效值( 即&nbsp;1 <= i&nbsp;<= k ) ，subtexti&nbsp;== subtextk - i + 1 均成立\n\n返回k可能最大值。\n\n&nbsp;\n\n示例 1：\n\n输入：text = \"ghiabcdefhelloadamhelloabcdefghi\"\n输出：7\n解释：我们可以把字符串拆分成 \"(ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)\"。\n\n示例 2：\n\n输入：text = \"merchant\"\n输出：1\n解释：我们可以把字符串拆分成 \"(merchant)\"。\n\n示例 3：\n\n输入：text = \"antaprezatepzapreanta\"\n输出：11\n解释：我们可以把字符串拆分成 \"(a)(nt)(a)(pre)(za)(tep)(za)(pre)(a)(nt)(a)\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= text.length <= 1000\n\ttext&nbsp;仅由小写英文字符组成",
+  "constraints": [
+    "1 <= text.length <= 1000",
+    "text&nbsp;仅由小写英文字符组成"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2842",
+  "title_cn": "统计一个字符串的 k 子序列美丽值最大的数目",
+  "title_en": "Count K-Subsequences of a String With Maximum Beauty",
+  "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;和一个整数&nbsp;k&nbsp;。\n\nk 子序列指的是 s&nbsp;的一个长度为 k&nbsp;的 子序列&nbsp;，且所有字符都是 唯一&nbsp;的，也就是说每个字符在子序列里只出现过一次。\n\n定义&nbsp;f(c)&nbsp;为字符 c&nbsp;在 s&nbsp;中出现的次数。\n\nk 子序列的 美丽值&nbsp;定义为这个子序列中每一个字符 c&nbsp;的&nbsp;f(c)&nbsp;之 和&nbsp;。\n\n比方说，s = \"abbbdd\"&nbsp;和&nbsp;k = 2&nbsp;，我们有：\n\n\tf('a') = 1, f('b') = 3, f('d') = 2\n\ts&nbsp;的部分 k 子序列为：\n\n\t\t\"abbbdd\" -> \"ab\"&nbsp;，美丽值为&nbsp;f('a') + f('b') = 4\n\t\t\"abbbdd\" -> \"ad\"&nbsp;，美丽值为&nbsp;f('a') + f('d') = 3\n\t\t\"abbbdd\" -> \"bd\"&nbsp;，美丽值为&nbsp;f('b') + f('d') = 5\n\n请你返回一个整数，表示所有 k 子序列&nbsp;里面 美丽值 是&nbsp;最大值&nbsp;的子序列数目。由于答案可能很大，将结果对&nbsp;109 + 7&nbsp;取余后返回。\n\n一个字符串的子序列指的是从原字符串里面删除一些字符（也可能一个字符也不删除），不改变剩下字符顺序连接得到的新字符串。\n\n注意：\n\n\tf(c) 指的是字符&nbsp;c&nbsp;在字符串&nbsp;s&nbsp;的出现次数，不是在 k 子序列里的出现次数。\n\t两个 k 子序列如果有任何一个字符在原字符串中的下标不同，则它们是两个不同的子序列。所以两个不同的 k 子序列可能产生相同的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"bcca\", k = 2\n输出：4\n解释：s 中我们有 f('a') = 1 ，f('b') = 1 和 f('c') = 2 。\ns 的 k 子序列为：\nbcca ，美丽值为 f('b') + f('c') = 3\nbcca ，美丽值为 f('b') + f('c') = 3\nbcca ，美丽值为 f('b') + f('a') = 2\nbcca ，美丽值为 f('c') + f('a') = 3\nbcca ，美丽值为 f('c') + f('a') = 3\n总共有 4 个 k 子序列美丽值为最大值 3 。\n所以答案为 4 。\n\n示例 2：\n\n输入：s = \"abbcd\", k = 4\n输出：2\n解释：s 中我们有 f('a') = 1 ，f('b') = 2&nbsp;，f('c') = 1&nbsp;和 f('d') = 1 。\ns 的 k 子序列为：\nabbcd ，美丽值为 f('a') + f('b') + f('c') + f('d') = 5\nabbcd ，美丽值为 f('a') + f('b') + f('c') + f('d') = 5 \n总共有 2 个 k 子序列美丽值为最大值 5 。\n所以答案为 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2 * 105\n\t1 <= k <= s.length\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 2 * 105",
+    "1 <= k <= s.length",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "2328",
+  "title_cn": "网格图中递增路径的数目",
+  "title_en": "Number of Increasing Paths in a Grid",
+  "slug": "number-of-increasing-paths-in-a-grid",
+  "difficulty": "Hard",
+  "description": "给你一个&nbsp;m x n&nbsp;的整数网格图&nbsp;grid&nbsp;，你可以从一个格子移动到&nbsp;4&nbsp;个方向相邻的任意一个格子。\n\n请你返回在网格图中从 任意&nbsp;格子出发，达到 任意&nbsp;格子，且路径中的数字是 严格递增&nbsp;的路径数目。由于答案可能会很大，请将结果对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n如果两条路径中访问过的格子不是完全相同的，那么它们视为两条不同的路径。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,1],[3,4]]\n输出：8\n解释：严格递增路径包括：\n- 长度为 1 的路径：[1]，[1]，[3]，[4] 。\n- 长度为 2 的路径：[1 -> 3]，[1 -> 4]，[3 -> 4] 。\n- 长度为 3 的路径：[1 -> 3 -> 4] 。\n路径数目为 4 + 3 + 1 = 8 。\n\n示例 2：\n\n输入：grid = [[1],[2]]\n输出：3\n解释：严格递增路径包括：\n- 长度为 1 的路径：[1]，[2] 。\n- 长度为 2 的路径：[1 -> 2] 。\n路径数目为 2 + 1 = 3 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 1000\n\t1 <= m * n <= 105\n\t1 <= grid[i][j] <= 105",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 1000",
+    "1 <= m * n <= 105",
+    "1 <= grid[i][j] <= 105"
+  ]
+}

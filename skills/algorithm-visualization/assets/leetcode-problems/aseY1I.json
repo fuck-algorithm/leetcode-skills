@@ -1,0 +1,14 @@
+{
+  "number": "LCR 005",
+  "title_cn": "最大单词长度乘积",
+  "title_en": "最大单词长度乘积",
+  "slug": "aseY1I",
+  "difficulty": "Medium",
+  "description": "给定一个字符串数组&nbsp;words，请计算当两个字符串 words[i] 和 words[j] 不包含相同字符时，它们长度的乘积的最大值。假设字符串中只包含英语的小写字母。如果没有不包含相同字符的一对字符串，返回 0。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"abcw\",\"baz\",\"foo\",\"bar\",\"fxyz\",\"abcdef\"]\n输出：16 \n解释：这两个单词为 \"abcw\", \"fxyz\"。它们不包含相同字符，且长度的乘积最大。\n\n示例 2：\n\n输入：words = [\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]\n输出：4 \n解释：这两个单词为 \"ab\", \"cd\"。\n\n示例 3：\n\n输入：words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]\n输出：0 \n解释：不存在这样的两个单词。\n\n&nbsp;\n\n提示：\n\n\t2 <= words.length <= 1000\n\t1 <= words[i].length <= 1000\n\twords[i]&nbsp;仅包含小写字母\n\n&nbsp;\n\n注意：本题与主站 318&nbsp;题相同：https://leetcode.cn/problems/maximum-product-of-word-lengths/",
+  "constraints": [
+    "2 <= words.length <= 1000",
+    "1 <= words[i].length <= 1000",
+    "words[i]&nbsp;仅包含小写字母",
+    "注意：本题与主站 318&nbsp;题相同：https://leetcode.cn/problems/maximum-product-of-word-lengths/"
+  ]
+}

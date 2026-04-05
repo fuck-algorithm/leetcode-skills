@@ -1,0 +1,17 @@
+{
+  "number": "2923",
+  "title_cn": "找到冠军 I",
+  "title_en": "Find Champion I",
+  "slug": "find-champion-i",
+  "difficulty": "Easy",
+  "description": "一场比赛中共有 n 支队伍，按从 0 到&nbsp; n - 1 编号。\n\n给你一个下标从 0 开始、大小为 n * n 的二维布尔矩阵 grid 。对于满足&nbsp;0 <= i, j <= n - 1 且 i != j 的所有 i, j ：如果 grid[i][j] == 1，那么 i 队比 j 队 强 ；否则，j 队比 i 队 强 。\n\n在这场比赛中，如果不存在某支强于 a 队的队伍，则认为 a 队将会是 冠军 。\n\n返回这场比赛中将会成为冠军的队伍。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,1],[0,0]]\n输出：0\n解释：比赛中有两支队伍。\ngrid[0][1] == 1 表示 0 队比 1 队强。所以 0 队是冠军。\n\n示例 2：\n\n输入：grid = [[0,0,1],[1,0,1],[0,0,0]]\n输出：1\n解释：比赛中有三支队伍。\ngrid[1][0] == 1 表示 1 队比 0 队强。\ngrid[1][2] == 1 表示 1 队比 2 队强。\n所以 1 队是冠军。\n\n&nbsp;\n\n提示：\n\n\tn == grid.length\n\tn == grid[i].length\n\t2 <= n <= 100\n\tgrid[i][j] 的值为 0 或 1\n\t对于所有&nbsp;i， grid[i][i]&nbsp;等于&nbsp;0.\n\t对于满足&nbsp;i != j 的所有 i, j ，grid[i][j] != grid[j][i] 均成立\n\t生成的输入满足：如果 a 队比 b 队强，b 队比 c 队强，那么 a 队比 c 队强",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "2 <= n <= 100",
+    "grid[i][j] 的值为 0 或 1",
+    "对于所有&nbsp;i， grid[i][i]&nbsp;等于&nbsp;0.",
+    "对于满足&nbsp;i != j 的所有 i, j ，grid[i][j] != grid[j][i] 均成立",
+    "生成的输入满足：如果 a 队比 b 队强，b 队比 c 队强，那么 a 队比 c 队强"
+  ]
+}

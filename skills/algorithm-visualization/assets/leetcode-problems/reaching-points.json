@@ -1,0 +1,11 @@
+{
+  "number": "780",
+  "title_cn": "到达终点",
+  "title_en": "Reaching Points",
+  "slug": "reaching-points",
+  "difficulty": "Hard",
+  "description": "给定四个整数&nbsp;sx&nbsp;,&nbsp;sy&nbsp;，tx&nbsp;和&nbsp;ty，如果通过一系列的转换可以从起点&nbsp;(sx, sy)&nbsp;到达终点&nbsp;(tx, ty)，则返回 true，否则返回&nbsp;false。\n\n从点&nbsp;(x, y)&nbsp;可以转换到&nbsp;(x, x+y)&nbsp; 或者&nbsp;(x+y, y)。\n\n&nbsp;\n\n示例 1:\n\n输入: sx = 1, sy = 1, tx = 3, ty = 5\n输出: true\n解释:\n可以通过以下一系列转换从起点转换到终点：\n(1, 1) -> (1, 2)\n(1, 2) -> (3, 2)\n(3, 2) -> (3, 5)\n\n示例 2:\n\n输入: sx = 1, sy = 1, tx = 2, ty = 2 \n输出: false\n\n示例 3:\n\n输入: sx = 1, sy = 1, tx = 1, ty = 1 \n输出: true\n\n&nbsp;\n\n提示:\n\n\t1 <= sx, sy, tx, ty <= 109",
+  "constraints": [
+    "1 <= sx, sy, tx, ty <= 109"
+  ]
+}

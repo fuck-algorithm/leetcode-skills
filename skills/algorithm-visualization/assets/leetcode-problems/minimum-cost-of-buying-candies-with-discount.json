@@ -1,0 +1,12 @@
+{
+  "number": "2144",
+  "title_cn": "打折购买糖果的最小开销",
+  "title_en": "Minimum Cost of Buying Candies With Discount",
+  "slug": "minimum-cost-of-buying-candies-with-discount",
+  "difficulty": "Easy",
+  "description": "一家商店正在打折销售糖果。每购买 两个&nbsp;糖果，商店会 免费&nbsp;送一个糖果。\n\n免费送的糖果唯一的限制是：它的价格需要小于等于购买的两个糖果价格的 较小值&nbsp;。\n\n\t比方说，总共有 4&nbsp;个糖果，价格分别为&nbsp;1&nbsp;，2&nbsp;，3&nbsp;和&nbsp;4&nbsp;，一位顾客买了价格为&nbsp;2 和&nbsp;3&nbsp;的糖果，那么他可以免费获得价格为 1&nbsp;的糖果，但不能获得价格为&nbsp;4&nbsp;的糖果。\n\n给你一个下标从 0&nbsp;开始的整数数组&nbsp;cost&nbsp;，其中&nbsp;cost[i]&nbsp;表示第&nbsp;i&nbsp;个糖果的价格，请你返回获得 所有&nbsp;糖果的 最小&nbsp;总开销。\n\n&nbsp;\n\n示例 1：\n\n输入：cost = [1,2,3]\n输出：5\n解释：我们购买价格为 2 和 3 的糖果，然后免费获得价格为 1 的糖果。\n总开销为 2 + 3 = 5 。这是开销最小的 唯一&nbsp;方案。\n注意，我们不能购买价格为 1 和 3 的糖果，并免费获得价格为 2 的糖果。\n这是因为免费糖果的价格必须小于等于购买的 2 个糖果价格的较小值。\n\n示例 2：\n\n输入：cost = [6,5,7,9,2,2]\n输出：23\n解释：最小总开销购买糖果方案为：\n- 购买价格为 9 和 7 的糖果\n- 免费获得价格为 6 的糖果\n- 购买价格为 5 和 2 的糖果\n- 免费获得价格为 2 的最后一个糖果\n因此，最小总开销为 9 + 7 + 5 + 2 = 23 。\n\n示例 3：\n\n输入：cost = [5,5]\n输出：10\n解释：由于只有 2 个糖果，我们需要将它们都购买，而且没有免费糖果。\n所以总最小开销为 5 + 5 = 10 。\n\n&nbsp;\n\n提示：\n\n\t1 <= cost.length <= 100\n\t1 <= cost[i] <= 100",
+  "constraints": [
+    "1 <= cost.length <= 100",
+    "1 <= cost[i] <= 100"
+  ]
+}

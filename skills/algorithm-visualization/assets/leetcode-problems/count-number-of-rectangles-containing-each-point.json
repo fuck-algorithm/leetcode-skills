@@ -1,0 +1,16 @@
+{
+  "number": "2250",
+  "title_cn": "统计包含每个点的矩形数目",
+  "title_en": "Count Number of Rectangles Containing Each Point",
+  "slug": "count-number-of-rectangles-containing-each-point",
+  "difficulty": "Medium",
+  "description": "给你一个二维整数数组&nbsp;rectangles&nbsp;，其中&nbsp;rectangles[i] = [li, hi]&nbsp;表示第&nbsp;i&nbsp;个矩形长为&nbsp;li&nbsp;高为&nbsp;hi&nbsp;。给你一个二维整数数组&nbsp;points&nbsp;，其中&nbsp;points[j] = [xj, yj]&nbsp;是坐标为&nbsp;(xj, yj)&nbsp;的一个点。\n\n第&nbsp;i&nbsp;个矩形的 左下角&nbsp;在&nbsp;(0, 0)&nbsp;处，右上角&nbsp;在&nbsp;(li, hi)&nbsp;。\n\n请你返回一个整数数组&nbsp;count&nbsp;，长度为&nbsp;points.length，其中&nbsp;count[j]是 包含 第&nbsp;j&nbsp;个点的矩形数目。\n\n如果&nbsp;0 <= xj <= li 且&nbsp;0 <= yj <= hi&nbsp;，那么我们说第&nbsp;i&nbsp;个矩形包含第&nbsp;j&nbsp;个点。如果一个点刚好在矩形的 边上&nbsp;，这个点也被视为被矩形包含。\n\n&nbsp;\n\n示例 1：\n\n输入：rectangles = [[1,2],[2,3],[2,5]], points = [[2,1],[1,4]]\n输出：[2,1]\n解释：\n第一个矩形不包含任何点。\n第二个矩形只包含一个点 (2, 1) 。\n第三个矩形包含点 (2, 1) 和 (1, 4) 。\n包含点 (2, 1) 的矩形数目为 2 。\n包含点 (1, 4) 的矩形数目为 1 。\n所以，我们返回 [2, 1] 。\n\n示例 2：\n\n输入：rectangles = [[1,1],[2,2],[3,3]], points = [[1,3],[1,1]]\n输出：[1,3]\n解释：\n第一个矩形只包含点 (1, 1) 。\n第二个矩形只包含点 (1, 1) 。\n第三个矩形包含点 (1, 3) 和 (1, 1) 。\n包含点 (1, 3) 的矩形数目为 1 。\n包含点 (1, 1) 的矩形数目为 3 。\n所以，我们返回 [1, 3] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= rectangles.length, points.length <= 5 * 104\n\trectangles[i].length == points[j].length == 2\n\t1 <= li, xj <= 109\n\t1 <= hi, yj <= 100\n\t所有&nbsp;rectangles&nbsp;互不相同&nbsp;。\n\t所有&nbsp;points 互不相同&nbsp;。",
+  "constraints": [
+    "1 <= rectangles.length, points.length <= 5 * 104",
+    "rectangles[i].length == points[j].length == 2",
+    "1 <= li, xj <= 109",
+    "1 <= hi, yj <= 100",
+    "所有&nbsp;rectangles&nbsp;互不相同&nbsp;。",
+    "所有&nbsp;points 互不相同&nbsp;。"
+  ]
+}

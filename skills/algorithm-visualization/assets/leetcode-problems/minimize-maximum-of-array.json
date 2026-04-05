@@ -1,0 +1,13 @@
+{
+  "number": "2439",
+  "title_cn": "最小化数组中的最大值",
+  "title_en": "Minimize Maximum of Array",
+  "slug": "minimize-maximum-of-array",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的数组&nbsp;nums&nbsp;，它含有&nbsp;n&nbsp;个非负整数。\n\n每一步操作中，你需要：\n\n\t选择一个满足&nbsp;1 <= i < n&nbsp;的整数 i&nbsp;，且&nbsp;nums[i] > 0&nbsp;。\n\t将&nbsp;nums[i]&nbsp;减 1 。\n\t将&nbsp;nums[i - 1]&nbsp;加 1 。\n\n你可以对数组执行 任意&nbsp;次上述操作，请你返回可以得到的 nums&nbsp;数组中&nbsp;最大值&nbsp;最小 为多少。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,7,1,6]\n输出：5\n解释：\n一串最优操作是：\n1. 选择 i = 1 ，nums 变为 [4,6,1,6] 。\n2. 选择 i = 3 ，nums 变为 [4,6,2,5] 。\n3. 选择 i = 1 ，nums 变为 [5,5,2,5] 。\nnums 中最大值为 5 。无法得到比 5 更小的最大值。\n所以我们返回 5 。\n\n示例 2：\n\n输入：nums = [10,1]\n输出：10\n解释：\n最优解是不改动 nums ，10 是最大值，所以返回 10 。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t2 <= n <= 105\n\t0 <= nums[i] <= 109",
+  "constraints": [
+    "n == nums.length",
+    "2 <= n <= 105",
+    "0 <= nums[i] <= 109"
+  ]
+}

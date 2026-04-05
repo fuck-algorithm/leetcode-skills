@@ -1,0 +1,13 @@
+{
+  "number": "2140",
+  "title_cn": "解决智力问题",
+  "title_en": "Solving Questions With Brainpower",
+  "slug": "solving-questions-with-brainpower",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的二维整数数组&nbsp;questions&nbsp;，其中&nbsp;questions[i] = [pointsi, brainpoweri]&nbsp;。\n\n这个数组表示一场考试里的一系列题目，你需要 按顺序&nbsp;（也就是从问题 0&nbsp;开始依次解决），针对每个问题选择 解决&nbsp;或者 跳过&nbsp;操作。解决问题 i&nbsp;将让你 获得&nbsp;&nbsp;pointsi&nbsp;的分数，但是你将 无法&nbsp;解决接下来的&nbsp;brainpoweri&nbsp;个问题（即只能跳过接下来的 brainpoweri&nbsp;个问题）。如果你跳过问题&nbsp;i&nbsp;，你可以对下一个问题决定使用哪种操作。\n\n\t比方说，给你&nbsp;questions = [[3, 2], [4, 3], [4, 4], [2, 5]]&nbsp;：\n\n\t\t如果问题&nbsp;0&nbsp;被解决了， 那么你可以获得&nbsp;3&nbsp;分，但你不能解决问题&nbsp;1 和&nbsp;2&nbsp;。\n\t\t如果你跳过问题&nbsp;0&nbsp;，且解决问题&nbsp;1&nbsp;，你将获得 4 分但是不能解决问题&nbsp;2 和&nbsp;3&nbsp;。\n\n请你返回这场考试里你能获得的 最高&nbsp;分数。\n\n&nbsp;\n\n示例 1：\n\n输入：questions = [[3,2],[4,3],[4,4],[2,5]]\n输出：5\n解释：解决问题 0 和 3 得到最高分。\n- 解决问题 0 ：获得 3 分，但接下来 2 个问题都不能解决。\n- 不能解决问题 1 和 2\n- 解决问题 3 ：获得 2 分\n总得分为：3 + 2 = 5 。没有别的办法获得 5 分或者多于 5 分。\n\n示例 2：\n\n输入：questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]\n输出：7\n解释：解决问题 1 和 4 得到最高分。\n- 跳过问题 0\n- 解决问题 1 ：获得 2 分，但接下来 2 个问题都不能解决。\n- 不能解决问题 2 和 3\n- 解决问题 4 ：获得 5 分\n总得分为：2 + 5 = 7 。没有别的办法获得 7 分或者多于 7 分。\n\n&nbsp;\n\n提示：\n\n\t1 <= questions.length <= 105\n\tquestions[i].length == 2\n\t1 <= pointsi, brainpoweri <= 105",
+  "constraints": [
+    "1 <= questions.length <= 105",
+    "questions[i].length == 2",
+    "1 <= pointsi, brainpoweri <= 105"
+  ]
+}

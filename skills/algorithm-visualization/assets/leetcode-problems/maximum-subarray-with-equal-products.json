@@ -1,0 +1,12 @@
+{
+  "number": "3411",
+  "title_cn": "最长乘积等价子数组",
+  "title_en": "Maximum Subarray With Equal Products",
+  "slug": "maximum-subarray-with-equal-products",
+  "difficulty": "Easy",
+  "description": "给你一个由&nbsp;正整数&nbsp;组成的数组 nums。\n\n如果一个数组 arr 满足 prod(arr) == lcm(arr) * gcd(arr)，则称其为&nbsp;乘积等价数组&nbsp;，其中：\n\n\tprod(arr) 表示 arr 中所有元素的乘积。\n\tgcd(arr) 表示 arr 中所有元素的最大公因数 (GCD)。\n\tlcm(arr) 表示 arr 中所有元素的最小公倍数 (LCM)。\n\n返回数组 nums 的&nbsp;最长 乘积等价 子数组&nbsp;的长度。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2,1,2,1,1,1]\n\n输出： 5\n\n解释：&nbsp;\n\n最长的乘积等价子数组是 [1, 2, 1, 1, 1]，其中&nbsp;prod([1, 2, 1, 1, 1]) = 2，&nbsp;gcd([1, 2, 1, 1, 1]) = 1，以及&nbsp;lcm([1, 2, 1, 1, 1]) = 2。\n\n示例 2：\n\n输入： nums = [2,3,4,5,6]\n\n输出： 3\n\n解释：&nbsp;\n\n最长的乘积等价子数组是 [3, 4, 5]。\n\n示例 3：\n\n输入： nums = [1,2,3,1,4,5,1]\n\n输出： 5\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 100\n\t1 <= nums[i] <= 10",
+  "constraints": [
+    "2 <= nums.length <= 100",
+    "1 <= nums[i] <= 10"
+  ]
+}

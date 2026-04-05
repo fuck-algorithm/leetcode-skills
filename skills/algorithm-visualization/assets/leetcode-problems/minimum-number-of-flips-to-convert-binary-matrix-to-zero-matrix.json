@@ -1,0 +1,15 @@
+{
+  "number": "1284",
+  "title_cn": "转化为全零矩阵的最少反转次数",
+  "title_en": "Minimum Number of Flips to Convert Binary Matrix to Zero Matrix",
+  "slug": "minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix",
+  "difficulty": "Hard",
+  "description": "给你一个&nbsp;m x n&nbsp;的二进制矩阵&nbsp;mat。每一步，你可以选择一个单元格并将它反转（反转表示 0 变 1 ，1 变 0 ）。如果存在和它相邻的单元格，那么这些相邻的单元格也会被反转。相邻的两个单元格共享同一条边。\n\n请你返回将矩阵&nbsp;mat 转化为全零矩阵的最少反转次数，如果无法转化为全零矩阵，请返回&nbsp;-1&nbsp;。\n\n二进制矩阵&nbsp;的每一个格子要么是 0 要么是 1 。\n\n全零矩阵&nbsp;是所有格子都为 0 的矩阵。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：mat = [[0,0],[0,1]]\n输出：3\n解释：一个可能的解是反转 (1, 0)，然后 (0, 1) ，最后是 (1, 1) 。\n\n示例 2：\n\n输入：mat = [[0]]\n输出：0\n解释：给出的矩阵是全零矩阵，所以你不需要改变它。\n\n示例 3：\n\n输入：mat = [[1,0,0],[1,0,0]]\n输出：-1\n解释：该矩阵无法转变成全零矩阵\n\n&nbsp;\n\n提示：\n\n\tm ==&nbsp;mat.length\n\tn ==&nbsp;mat[0].length\n\t1 <= m&nbsp;<= 3\n\t1 <= n&nbsp;<= 3\n\tmat[i][j]&nbsp;是 0 或 1 。",
+  "constraints": [
+    "m ==&nbsp;mat.length",
+    "n ==&nbsp;mat[0].length",
+    "1 <= m&nbsp;<= 3",
+    "1 <= n&nbsp;<= 3",
+    "mat[i][j]&nbsp;是 0 或 1 。"
+  ]
+}

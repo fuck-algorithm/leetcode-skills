@@ -1,0 +1,9 @@
+{
+  "number": "面试题 04.04",
+  "title_cn": "检查平衡性",
+  "title_en": "Check Balance LCCI",
+  "slug": "check-balance-lcci",
+  "difficulty": "Easy",
+  "description": "实现一个函数，检查二叉树是否平衡。在这个问题中，平衡树的定义如下：任意一个节点，其两棵子树的高度差不超过 1。\n\n示例 1：\n\n给定二叉树 [3,9,20,null,null,15,7]\n    3\n   / \\\n  9  20\n    /  \\\n   15   7\n返回 true 。\n示例 2：\n\n给定二叉树 [1,2,2,3,3,null,null,4,4]\n      1\n     / \\\n    2   2\n   / \\\n  3   3\n / \\\n4   4\n返回&nbsp;false 。",
+  "constraints": []
+}

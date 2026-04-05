@@ -1,0 +1,13 @@
+{
+  "number": "930",
+  "title_cn": "和相同的二元子数组",
+  "title_en": "Binary Subarrays With Sum",
+  "slug": "binary-subarrays-with-sum",
+  "difficulty": "Medium",
+  "description": "给你一个二元数组 nums ，和一个整数 goal ，请你统计并返回有多少个和为 goal 的 非空 子数组。\n\n子数组 是数组的一段连续部分。\n\n示例 1：\n\n输入：nums = [1,0,1,0,1], goal = 2\n输出：4\n解释：\n有 4 个满足题目要求的子数组：[1,0,1]、[1,0,1,0]、[0,1,0,1]、[1,0,1]\n\n示例 2：\n\n输入：nums = [0,0,0,0,0], goal = 0\n输出：15\n\n提示：\n\n\t1 4\n\tnums[i] 不是 0 就是 1\n\t0",
+  "constraints": [
+    "1 4",
+    "nums[i] 不是 0 就是 1",
+    "0"
+  ]
+}

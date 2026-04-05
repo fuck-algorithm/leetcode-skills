@@ -1,0 +1,11 @@
+{
+  "number": "2469",
+  "title_cn": "温度转换",
+  "title_en": "Convert the Temperature",
+  "slug": "convert-the-temperature",
+  "difficulty": "Easy",
+  "description": "给你一个四舍五入到两位小数的非负浮点数 celsius 来表示温度，以 摄氏度（Celsius）为单位。\n\n你需要将摄氏度转换为 开氏度（Kelvin）和 华氏度（Fahrenheit），并以数组 ans = [kelvin, fahrenheit] 的形式返回结果。\n\n返回数组 ans 。与实际答案误差不超过 10-5 的会视为正确答案。\n\n注意：\n\n\t开氏度 = 摄氏度 + 273.15\n\t华氏度 = 摄氏度 * 1.80 + 32.00\n\n&nbsp;\n\n示例 1 ：\n\n输入：celsius = 36.50\n输出：[309.65000,97.70000]\n解释：36.50 摄氏度：转换为开氏度是 309.65 ，转换为华氏度是 97.70 。\n\n示例 2 ：\n\n输入：celsius = 122.11\n输出：[395.26000,251.79800]\n解释：122.11 摄氏度：转换为开氏度是 395.26 ，转换为华氏度是 251.798 。\n\n&nbsp;\n\n提示：\n\n\t0 <= celsius <= 1000",
+  "constraints": [
+    "0 <= celsius <= 1000"
+  ]
+}

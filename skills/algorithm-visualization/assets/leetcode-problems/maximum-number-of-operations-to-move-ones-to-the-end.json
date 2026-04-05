@@ -1,0 +1,12 @@
+{
+  "number": "3228",
+  "title_cn": "将 1 移动到末尾的最大操作次数",
+  "title_en": "Maximum Number of Operations to Move Ones to the End",
+  "slug": "maximum-number-of-operations-to-move-ones-to-the-end",
+  "difficulty": "Medium",
+  "description": "给你一个 二进制字符串 s。\n\n你可以对这个字符串执行 任意次 下述操作：\n\n\t选择字符串中的任一下标 i（ i + 1 < s.length ），该下标满足 s[i] == '1' 且 s[i + 1] == '0'。\n\t将字符 s[i] 向 右移 直到它到达字符串的末端或另一个 '1'。例如，对于 s = \"010010\"，如果我们选择 i = 1，结果字符串将会是 s = \"000110\"。\n\n返回你能执行的 最大 操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"1001101\"\n\n输出： 4\n\n解释：\n\n可以执行以下操作：\n\n\t选择下标 i = 0。结果字符串为 s = \"0011101\"。\n\t选择下标 i = 4。结果字符串为 s = \"0011011\"。\n\t选择下标 i = 3。结果字符串为 s = \"0010111\"。\n\t选择下标 i = 2。结果字符串为 s = \"0001111\"。\n\n示例 2：\n\n输入： s = \"00111\"\n\n输出： 0\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts[i] 为 '0' 或 '1'。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] 为 '0' 或 '1'。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "1561",
+  "title_cn": "你可以获得的最大硬币数目",
+  "title_en": "Maximum Number of Coins You Can Get",
+  "slug": "maximum-number-of-coins-you-can-get",
+  "difficulty": "Medium",
+  "description": "有 3n 堆数目不一的硬币，你和你的朋友们打算按以下方式分硬币：\n\n\t每一轮中，你将会选出 任意 3 堆硬币（不一定连续）。\n\tAlice 将会取走硬币数量最多的那一堆。\n\t你将会取走硬币数量第二多的那一堆。\n\tBob 将会取走最后一堆。\n\t重复这个过程，直到没有更多硬币。\n\n给你一个整数数组 piles ，其中 piles[i] 是第 i 堆中硬币的数目。\n\n返回你可以获得的最大硬币数目。\n\n&nbsp;\n\n示例 1：\n\n输入：piles = [2,4,1,2,7,8]\n输出：9\n解释：选出 (2, 7, 8) ，Alice 取走 8 枚硬币的那堆，你取走 7 枚硬币的那堆，Bob 取走最后一堆。\n选出 (1, 2, 4) , Alice 取走 4 枚硬币的那堆，你取走 2 枚硬币的那堆，Bob 取走最后一堆。\n你可以获得的最大硬币数目：7 + 2 = 9.\n考虑另外一种情况，如果选出的是 (1, 2, 8) 和 (2, 4, 7) ，你就只能得到 2 + 4 = 6 枚硬币，这不是最优解。\n\n示例 2：\n\n输入：piles = [2,4,5]\n输出：4\n\n示例 3：\n\n输入：piles = [9,8,7,6,5,1,2,3,4]\n输出：18\n\n&nbsp;\n\n提示：\n\n\t3 <= piles.length <= 10^5\n\tpiles.length % 3 == 0\n\t1 <= piles[i] <= 10^4",
+  "constraints": [
+    "3 <= piles.length <= 10^5",
+    "piles.length % 3 == 0",
+    "1 <= piles[i] <= 10^4"
+  ]
+}

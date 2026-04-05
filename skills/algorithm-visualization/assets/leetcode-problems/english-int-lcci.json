@@ -1,0 +1,9 @@
+{
+  "number": "面试题 16.08",
+  "title_cn": "整数的英语表示",
+  "title_en": "English Int LCCI",
+  "slug": "english-int-lcci",
+  "difficulty": "Hard",
+  "description": "给定一个整数，打印该整数的英文描述。\n\n示例 1：\n\n输入：123\n输出：\"One Hundred Twenty Three\"\n\n示例 2：\n\n输入：12345\n输出：\"Twelve Thousand Three Hundred Forty Five\"\n\n示例 3：\n\n输入：1234567\n输出：\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\"\n\n示例 4：\n\n输入：1234567891\n输出：\"One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One\"\n\n注意：本题与&nbsp;273 题相同：https://leetcode.cn/problems/integer-to-english-words/",
+  "constraints": []
+}

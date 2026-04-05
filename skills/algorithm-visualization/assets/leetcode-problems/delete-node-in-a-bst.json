@@ -1,0 +1,15 @@
+{
+  "number": "450",
+  "title_cn": "删除二叉搜索树中的节点",
+  "title_en": "Delete Node in a BST",
+  "slug": "delete-node-in-a-bst",
+  "difficulty": "Medium",
+  "description": "给定一个二叉搜索树的根节点 root 和一个值 key，删除二叉搜索树中的&nbsp;key&nbsp;对应的节点，并保证二叉搜索树的性质不变。返回二叉搜索树（有可能被更新）的根节点的引用。\n\n一般来说，删除节点可分为两个步骤：\n\n\t首先找到需要删除的节点；\n\t如果找到了，删除它。\n\n&nbsp;\n\n示例 1:\n\n输入：root = [5,3,6,2,4,null,7], key = 3\n输出：[5,4,6,2,null,null,7]\n解释：给定需要删除的节点值是 3，所以我们首先找到 3 这个节点，然后删除它。\n一个正确的答案是 [5,4,6,2,null,null,7], 如下图所示。\n另一个正确答案是 [5,2,6,null,4,null,7]。\n\n示例 2:\n\n输入: root = [5,3,6,2,4,null,7], key = 0\n输出: [5,3,6,2,4,null,7]\n解释: 二叉树不包含值为 0 的节点\n\n示例 3:\n\n输入: root = [], key = 0\n输出: []\n\n&nbsp;\n\n提示:\n\n\t节点数的范围&nbsp;[0, 104].\n\t-105&nbsp;<= Node.val <= 105\n\t节点值唯一\n\troot&nbsp;是合法的二叉搜索树\n\t-105&nbsp;<= key <= 105\n\n&nbsp;\n\n进阶： 要求算法时间复杂度为&nbsp;O(h)，h 为树的高度。",
+  "constraints": [
+    "节点数的范围&nbsp;[0, 104].",
+    "-105&nbsp;<= Node.val <= 105",
+    "节点值唯一",
+    "root&nbsp;是合法的二叉搜索树",
+    "-105&nbsp;<= key <= 105"
+  ]
+}

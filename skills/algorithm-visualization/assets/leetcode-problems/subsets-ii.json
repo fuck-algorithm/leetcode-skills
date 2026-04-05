@@ -1,0 +1,12 @@
+{
+  "number": "90",
+  "title_cn": "子集 II",
+  "title_en": "Subsets II",
+  "slug": "subsets-ii",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums ，其中可能包含重复元素，请你返回该数组所有可能的 子集（幂集）。\n\n解集 不能 包含重复的子集。返回的解集中，子集可以按 任意顺序 排列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,2]\n输出：[[],[1],[1,2],[1,2,2],[2],[2,2]]\n\n示例 2：\n\n输入：nums = [0]\n输出：[[],[0]]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 10\n\t-10 <= nums[i] <= 10",
+  "constraints": [
+    "1 <= nums.length <= 10",
+    "-10 <= nums[i] <= 10"
+  ]
+}

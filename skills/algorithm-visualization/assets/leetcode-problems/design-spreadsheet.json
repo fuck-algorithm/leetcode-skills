@@ -1,0 +1,15 @@
+{
+  "number": "3484",
+  "title_cn": "设计电子表格",
+  "title_en": "Design Spreadsheet",
+  "slug": "design-spreadsheet",
+  "difficulty": "Medium",
+  "description": "电子表格是一个网格，它有 26 列（从 'A' 到 'Z'）和指定数量的 rows。每个单元格可以存储一个 0 到 105&nbsp;之间的整数值。\n\n请你实现一个&nbsp;Spreadsheet 类：\n\n\tSpreadsheet(int rows) 初始化一个具有 26 列（从 'A' 到 'Z'）和指定行数的电子表格。所有单元格最初的值都为 0 。\n\tvoid setCell(String cell, int value) 设置指定单元格的值。单元格引用以 \"AX\" 的格式提供（例如，\"A1\"，\"B10\"），其中字母表示列（从 'A' 到 'Z'），数字表示从&nbsp;1&nbsp;开始的行号。\n\tvoid resetCell(String cell) 重置指定单元格的值为 0 。\n\tint getValue(String formula) 计算一个公式的值，格式为 \"=X+Y\"，其中 X 和 Y&nbsp;要么 是单元格引用，要么非负整数，返回计算的和。\n\n注意： 如果 getValue 引用一个未通过 setCell 明确设置的单元格，则该单元格的值默认为 0 。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"Spreadsheet\", \"getValue\", \"setCell\", \"getValue\", \"setCell\", \"getValue\", \"resetCell\", \"getValue\"]\n[[3], [\"=5+7\"], [\"A1\", 10], [\"=A1+6\"], [\"B2\", 15], [\"=A1+B2\"], [\"A1\"], [\"=A1+B2\"]]\n\n输出：\n[null, 12, null, 16, null, 25, null, 15] \n\n解释\nSpreadsheet spreadsheet = new Spreadsheet(3); // 初始化一个具有 3 行和 26 列的电子表格\nspreadsheet.getValue(\"=5+7\"); // 返回 12 (5+7)\nspreadsheet.setCell(\"A1\", 10); // 设置 A1 为 10\nspreadsheet.getValue(\"=A1+6\"); // 返回 16 (10+6)\nspreadsheet.setCell(\"B2\", 15); // 设置 B2 为 15\nspreadsheet.getValue(\"=A1+B2\"); // 返回 25 (10+15)\nspreadsheet.resetCell(\"A1\"); // 重置 A1 为 0\nspreadsheet.getValue(\"=A1+B2\"); // 返回 15 (0+15)\n\n&nbsp;\n\n提示：\n\n\t1 <= rows <= 103\n\t0 <= value <= 105\n\t公式保证采用 \"=X+Y\" 格式，其中 X 和 Y 要么是有效的单元格引用，要么是小于等于 105 的 非负 整数。\n\t每个单元格引用由一个大写字母 'A' 到 'Z' 和一个介于 1 和 rows 之间的行号组成。\n\t总共 最多会对 setCell、resetCell 和 getValue 调用 104 次。",
+  "constraints": [
+    "1 <= rows <= 103",
+    "0 <= value <= 105",
+    "公式保证采用 \"=X+Y\" 格式，其中 X 和 Y 要么是有效的单元格引用，要么是小于等于 105 的 非负 整数。",
+    "每个单元格引用由一个大写字母 'A' 到 'Z' 和一个介于 1 和 rows 之间的行号组成。",
+    "总共 最多会对 setCell、resetCell 和 getValue 调用 104 次。"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "906",
+  "title_cn": "超级回文数",
+  "title_en": "Super Palindromes",
+  "slug": "super-palindromes",
+  "difficulty": "Hard",
+  "description": "如果一个正整数自身是回文数，而且它也是一个回文数的平方，那么我们称这个数为 超级回文数 。\n\n现在，给你两个以字符串形式表示的正整数 left&nbsp;和 right&nbsp; ，统计并返回区间&nbsp;[left, right] 中的 超级回文数 的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：left = \"4\", right = \"1000\"\n输出：4\n解释：4、9、121 和 484 都是超级回文数。\n注意 676 不是超级回文数：26 * 26 = 676 ，但是 26 不是回文数。\n\n示例 2：\n\n输入：left = \"1\", right = \"2\"\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= left.length, right.length <= 18\n\tleft&nbsp;和&nbsp;right&nbsp;仅由数字（0 - 9）组成。\n\tleft&nbsp;和&nbsp;right&nbsp;不含前导零。\n\tleft&nbsp;和&nbsp;right&nbsp;表示的整数在区间&nbsp;[1, 1018 - 1] 内。\n\tleft&nbsp;小于等于&nbsp;right&nbsp;。",
+  "constraints": [
+    "1 <= left.length, right.length <= 18",
+    "left&nbsp;和&nbsp;right&nbsp;仅由数字（0 - 9）组成。",
+    "left&nbsp;和&nbsp;right&nbsp;不含前导零。",
+    "left&nbsp;和&nbsp;right&nbsp;表示的整数在区间&nbsp;[1, 1018 - 1] 内。",
+    "left&nbsp;小于等于&nbsp;right&nbsp;。"
+  ]
+}

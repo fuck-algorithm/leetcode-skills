@@ -1,0 +1,9 @@
+{
+  "number": "2887",
+  "title_cn": "填充缺失值",
+  "title_en": "Fill Missing Data",
+  "slug": "fill-missing-data",
+  "difficulty": "Easy",
+  "description": "DataFrame products\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| name        | object |\n| quantity    | int    |\n| price       | int    |\n+-------------+--------+\n\n编写一个解决方案，在 quantity 列中将缺失的值填充为&nbsp;0。\n\n返回结果如下示例所示。\n\n&nbsp;\n示例 1：\n\n输入：\n+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | 32       | 135   |\n| WirelessEarbuds | None     | 821   |\n| GolfClubs       | None     | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+\n输出：\n+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | 32       | 135   |\n| WirelessEarbuds | 0        | 821   |\n| GolfClubs       | 0        | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+\n解释：\nToaster 和 Headphones 的数量被填充为 0。",
+  "constraints": []
+}

@@ -1,0 +1,13 @@
+{
+  "number": "3008",
+  "title_cn": "找出数组中的美丽下标 II",
+  "title_en": "Find Beautiful Indices in the Given Array II",
+  "slug": "find-beautiful-indices-in-the-given-array-ii",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;、字符串&nbsp;a&nbsp;、字符串&nbsp;b&nbsp;和一个整数&nbsp;k&nbsp;。\n\n如果下标 i&nbsp;满足以下条件，则认为它是一个 美丽下标&nbsp;：\n\n\t0 <= i <= s.length - a.length\n\ts[i..(i + a.length - 1)] == a\n\t存在下标&nbsp;j&nbsp;使得：\n\n\t\t0 <= j <= s.length - b.length\n\t\ts[j..(j + b.length - 1)] == b\n\t\t|j - i| <= k\n\n以数组形式按&nbsp;从小到大排序&nbsp;返回美丽下标。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"isawsquirrelnearmysquirrelhouseohmy\", a = \"my\", b = \"squirrel\", k = 15\n输出：[16,33]\n解释：存在 2 个美丽下标：[16,33]。\n- 下标 16 是美丽下标，因为 s[16..17] == \"my\" ，且存在下标 4 ，满足 s[4..11] == \"squirrel\" 且 |16 - 4| <= 15 。\n- 下标 33 是美丽下标，因为 s[33..34] == \"my\" ，且存在下标 18 ，满足 s[18..25] == \"squirrel\" 且 |33 - 18| <= 15 。\n因此返回 [16,33] 作为结果。\n\n示例 2：\n\n输入：s = \"abcd\", a = \"a\", b = \"a\", k = 4\n输出：[0]\n解释：存在 1 个美丽下标：[0]。\n- 下标 0 是美丽下标，因为 s[0..0] == \"a\" ，且存在下标 0 ，满足 s[0..0] == \"a\" 且 |0 - 0| <= 4 。\n因此返回 [0] 作为结果。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= s.length <= 5 * 105\n\t1 <= a.length, b.length <= 5 * 105\n\ts、a、和&nbsp;b&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= k <= s.length <= 5 * 105",
+    "1 <= a.length, b.length <= 5 * 105",
+    "s、a、和&nbsp;b&nbsp;只包含小写英文字母。"
+  ]
+}

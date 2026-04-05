@@ -1,0 +1,13 @@
+{
+  "number": "3202",
+  "title_cn": "找出有效子序列的最大长度 II",
+  "title_en": "Find the Maximum Length of Valid Subsequence II",
+  "slug": "find-the-maximum-length-of-valid-subsequence-ii",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个 正&nbsp;整数&nbsp;k&nbsp;。\nnums&nbsp;的一个&nbsp;子序列 sub&nbsp;的长度为 x&nbsp;，如果其满足以下条件，则称其为 有效子序列&nbsp;：\n\n\t(sub[0] + sub[1]) % k == (sub[1] + sub[2]) % k == ... == (sub[x - 2] + sub[x - 1]) % k\n\n返回 nums&nbsp;的 最长有效子序列&nbsp;的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5], k = 2\n\n输出：5\n\n解释：\n\n最长有效子序列是&nbsp;[1, 2, 3, 4, 5]&nbsp;。\n\n示例 2：\n\n输入：nums = [1,4,2,3,1,4], k = 3\n\n输出：4\n\n解释：\n\n最长有效子序列是&nbsp;[1, 4, 1, 4]&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 103\n\t1 <= nums[i] <= 107\n\t1 <= k <= 103",
+  "constraints": [
+    "2 <= nums.length <= 103",
+    "1 <= nums[i] <= 107",
+    "1 <= k <= 103"
+  ]
+}

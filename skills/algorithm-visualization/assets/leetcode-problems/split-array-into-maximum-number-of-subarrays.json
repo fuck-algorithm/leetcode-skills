@@ -1,0 +1,12 @@
+{
+  "number": "2871",
+  "title_cn": "将数组分割成最多数目的子数组",
+  "title_en": "Split Array Into Maximum Number of Subarrays",
+  "slug": "split-array-into-maximum-number-of-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个只包含 非负&nbsp;整数的数组&nbsp;nums&nbsp;。\n\n我们定义满足 l <= r&nbsp;的子数组&nbsp;nums[l..r]&nbsp;的分数为&nbsp;nums[l] AND nums[l + 1] AND ... AND nums[r]&nbsp;，其中&nbsp;AND&nbsp;是按位与运算。\n\n请你将数组分割成一个或者更多子数组，满足：\n\n\t每个 元素都&nbsp;只&nbsp;属于一个子数组。\n\t子数组分数之和尽可能&nbsp;小&nbsp;。\n\n请你在满足以上要求的条件下，返回&nbsp;最多&nbsp;可以得到多少个子数组。\n\n一个 子数组&nbsp;是一个数组中一段连续的元素。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,0,2,0,1,2]\n输出：3\n解释：我们可以将数组分割成以下子数组：\n- [1,0] 。子数组分数为 1 AND 0 = 0 。\n- [2,0] 。子数组分数为 2 AND 0 = 0 。\n- [1,2] 。子数组分数为 1 AND 2 = 0 。\n分数之和为 0 + 0 + 0 = 0 ，是我们可以得到的最小分数之和。\n在分数之和为 0 的前提下，最多可以将数组分割成 3 个子数组。所以返回 3 。\n\n示例 2：\n\n输入：nums = [5,7,1,3]\n输出：1\n解释：我们可以将数组分割成一个子数组：[5,7,1,3] ，分数为 1 ，这是可以得到的最小总分数。\n在总分数为 1 的前提下，最多可以将数组分割成 1 个子数组。所以返回 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 106",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 106"
+  ]
+}

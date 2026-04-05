@@ -1,0 +1,9 @@
+{
+  "number": "面试题 04.03",
+  "title_cn": "特定深度节点链表",
+  "title_en": "List of Depth LCCI",
+  "slug": "list-of-depth-lcci",
+  "difficulty": "Medium",
+  "description": "给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表（比如，若一棵树的深度为 D，则会创建出 D 个链表）。返回一个包含所有深度的链表的数组。\n\n&nbsp;\n\n示例：\n\n输入：[1,2,3,4,5,null,7,8]\n\n        1\n       /  \\ \n      2    3\n     / \\    \\ \n    4   5    7\n   /\n  8\n\n输出：[[1],[2,3],[4,5,7],[8]]",
+  "constraints": []
+}

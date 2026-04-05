@@ -1,0 +1,14 @@
+{
+  "number": "2448",
+  "title_cn": "使数组相等的最小开销",
+  "title_en": "Minimum Cost to Make Array Equal",
+  "slug": "minimum-cost-to-make-array-equal",
+  "difficulty": "Hard",
+  "description": "给你两个下标从 0&nbsp;开始的数组&nbsp;nums 和&nbsp;cost&nbsp;，分别包含&nbsp;n&nbsp;个&nbsp;正&nbsp;整数。\n\n你可以执行下面操作 任意&nbsp;次：\n\n\t将&nbsp;nums&nbsp;中 任意&nbsp;元素增加或者减小 1&nbsp;。\n\n对第 i&nbsp;个元素执行一次操作的开销是&nbsp;cost[i]&nbsp;。\n\n请你返回使 nums&nbsp;中所有元素 相等&nbsp;的 最少&nbsp;总开销。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,3,5,2], cost = [2,3,1,14]\n输出：8\n解释：我们可以执行以下操作使所有元素变为 2 ：\n- 增加第 0 个元素 1 次，开销为 2 。\n- 减小第 1 个元素 1 次，开销为 3 。\n- 减小第 2 个元素 3 次，开销为 1 + 1 + 1 = 3 。\n总开销为 2 + 3 + 3 = 8 。\n这是最小开销。\n\n示例 2：\n\n输入：nums = [2,2,2,2,2], cost = [4,2,8,1,3]\n输出：0\n解释：数组中所有元素已经全部相等，不需要执行额外的操作。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length == cost.length\n\t1 <= n <= 105\n\t1 <= nums[i], cost[i] <= 106\n\t测试用例确保输出不超过 253-1。",
+  "constraints": [
+    "n == nums.length == cost.length",
+    "1 <= n <= 105",
+    "1 <= nums[i], cost[i] <= 106",
+    "测试用例确保输出不超过 253-1。"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "3070",
+  "title_cn": "元素和小于等于 k 的子矩阵的数目",
+  "title_en": "Count Submatrices with Top-Left Element and Sum Less Than k",
+  "slug": "count-submatrices-with-top-left-element-and-sum-less-than-k",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的整数矩阵 grid 和一个整数 k。\n\n返回包含 grid 左上角元素、元素和小于或等于 k 的 子矩阵的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[7,6,3],[6,6,1]], k = 18\n输出：4\n解释：如上图所示，只有 4 个子矩阵满足：包含 grid 的左上角元素，并且元素和小于或等于 18 。\n\n示例 2：\n\n输入：grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20\n输出：6\n解释：如上图所示，只有 6 个子矩阵满足：包含 grid 的左上角元素，并且元素和小于或等于 20 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length \n\tn == grid[i].length\n\t1 <= n, m <= 1000 \n\t0 <= grid[i][j] <= 1000\n\t1 <= k <= 109",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= n, m <= 1000",
+    "0 <= grid[i][j] <= 1000",
+    "1 <= k <= 109"
+  ]
+}

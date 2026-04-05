@@ -1,0 +1,12 @@
+{
+  "number": "467",
+  "title_cn": "环绕字符串中唯一的子字符串",
+  "title_en": "Unique Substrings in Wraparound String",
+  "slug": "unique-substrings-in-wraparound-string",
+  "difficulty": "Medium",
+  "description": "定义字符串&nbsp;base&nbsp;为一个&nbsp;\"abcdefghijklmnopqrstuvwxyz\"&nbsp;无限环绕的字符串，所以&nbsp;base&nbsp;看起来是这样的：\n\n\t\"...zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd....\".\n\n给你一个字符串&nbsp;s ，请你统计并返回&nbsp;s&nbsp;中有多少&nbsp;不同非空子串&nbsp;也在&nbsp;base&nbsp;中出现。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：s = \"a\"\n输出：1\n解释：字符串 s 的子字符串 \"a\" 在 base 中出现。\n\n示例 2：\n\n输入：s = \"cac\"\n输出：2\n解释：字符串 s 有两个子字符串 (\"a\", \"c\") 在 base 中出现。\n\n示例 3：\n\n输入：s = \"zab\"\n输出：6\n解释：字符串 s 有六个子字符串 (\"z\", \"a\", \"b\", \"za\", \"ab\", and \"zab\") 在 base 中出现。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 由小写英文字母组成",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 由小写英文字母组成"
+  ]
+}

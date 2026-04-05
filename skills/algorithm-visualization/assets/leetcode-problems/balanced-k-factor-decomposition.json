@@ -1,0 +1,13 @@
+{
+  "number": "3669",
+  "title_cn": "K 因数分解",
+  "title_en": "Balanced K-Factor Decomposition",
+  "slug": "balanced-k-factor-decomposition",
+  "difficulty": "Medium",
+  "description": "给你两个整数 n 和 k，将数字 n 恰好分割成 k 个正整数，使得这些整数的&nbsp;乘积&nbsp;等于 n。\n\n返回一个分割方案，使得这些数字中&nbsp;最大值&nbsp;和&nbsp;最小值&nbsp;之间的&nbsp;差值&nbsp;最小化。结果可以以&nbsp;任意顺序&nbsp;返回。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 100, k = 2\n\n输出：[10,10]\n\n解释：\n\n分割方案 [10, 10] 的结果是 10 * 10 = 100，且最大值与最小值的差值为 0，这是最小可能值。\n\n示例 2：\n\n输入：n = 44, k = 3\n\n输出：[2,2,11]\n\n解释：\n\n\t分割方案 [1, 1, 44] 的差值为 43\n\t分割方案 [1, 2, 22] 的差值为 21\n\t分割方案 [1, 4, 11] 的差值为 10\n\t分割方案 [2, 2, 11] 的差值为 9\n\n因此，[2, 2, 11] 是最优分割方案，其差值最小，为 9。\n\n&nbsp;\n\n提示：\n\n\t4 <= n <= 105\n\t2 <= k <= 5\n\tk 严格小于 n 的正因数的总数。",
+  "constraints": [
+    "4 <= n <= 105",
+    "2 <= k <= 5",
+    "k 严格小于 n 的正因数的总数。"
+  ]
+}

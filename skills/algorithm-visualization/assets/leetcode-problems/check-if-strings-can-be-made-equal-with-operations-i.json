@@ -1,0 +1,12 @@
+{
+  "number": "2839",
+  "title_cn": "判断通过操作能否让字符串相等 I",
+  "title_en": "Check if Strings Can be Made Equal With Operations I",
+  "slug": "check-if-strings-can-be-made-equal-with-operations-i",
+  "difficulty": "Easy",
+  "description": "给你两个字符串&nbsp;s1 和&nbsp;s2&nbsp;，两个字符串的长度都为&nbsp;4&nbsp;，且只包含 小写 英文字母。\n\n你可以对两个字符串中的 任意一个&nbsp;执行以下操作 任意&nbsp;次：\n\n\t选择两个下标&nbsp;i 和&nbsp;j&nbsp;且满足&nbsp;j - i = 2&nbsp;，然后 交换 这个字符串中两个下标对应的字符。\n\n如果你可以让字符串&nbsp;s1 和&nbsp;s2&nbsp;相等，那么返回 true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"abcd\", s2 = \"cdab\"\n输出：true\n解释： 我们可以对 s1 执行以下操作：\n- 选择下标 i = 0 ，j = 2 ，得到字符串 s1 = \"cbad\" 。\n- 选择下标 i = 1 ，j = 3 ，得到字符串 s1 = \"cdab\" = s2 。\n\n示例 2：\n\n输入：s1 = \"abcd\", s2 = \"dacb\"\n输出：false\n解释：无法让两个字符串相等。\n\n&nbsp;\n\n提示：\n\n\ts1.length == s2.length == 4\n\ts1 和&nbsp;s2&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "s1.length == s2.length == 4",
+    "s1 和&nbsp;s2&nbsp;只包含小写英文字母。"
+  ]
+}

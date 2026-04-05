@@ -1,0 +1,12 @@
+{
+  "number": "面试题 16.09",
+  "title_cn": "运算",
+  "title_en": "Operations LCCI",
+  "slug": "operations-lcci",
+  "difficulty": "Medium",
+  "description": "请实现整数数字的乘法、减法和除法运算，运算结果均为整数数字，程序中只允许使用加法运算符和逻辑运算符，允许程序中出现正负常数，不允许使用位运算。\n你的实现应该支持如下操作：\n\nOperations() 构造函数\nminus(a, b) 减法，返回a - b\nmultiply(a, b) 乘法，返回a * b\ndivide(a, b) 除法，返回a / b\n\n示例：\nOperations operations = new Operations();\noperations.minus(1, 2); //返回-1\noperations.multiply(3, 4); //返回12\noperations.divide(5, -2); //返回-2\n\n提示：\n\n你可以假设函数输入一定是有效的，例如不会出现除法分母为0的情况\n单个用例的函数调用次数不会超过1000次",
+  "constraints": [
+    "你可以假设函数输入一定是有效的，例如不会出现除法分母为0的情况",
+    "单个用例的函数调用次数不会超过1000次"
+  ]
+}

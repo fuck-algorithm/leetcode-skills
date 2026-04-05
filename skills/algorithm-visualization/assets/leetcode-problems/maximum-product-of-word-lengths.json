@@ -1,0 +1,13 @@
+{
+  "number": "318",
+  "title_cn": "最大单词长度乘积",
+  "title_en": "Maximum Product of Word Lengths",
+  "slug": "maximum-product-of-word-lengths",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组&nbsp;words ，找出并返回 length(words[i]) * length(words[j])&nbsp;的最大值，并且这两个单词不含有公共字母。如果不存在这样的两个单词，返回 0 。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：words = [\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\"]\n输出：16 \n解释：这两个单词为 \"abcw\", \"xtfn\"。\n\n示例 2：\n\n输入：words = [\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]\n输出：4 \n解释：这两个单词为 \"ab\", \"cd\"。\n\n示例 3：\n\n输入：words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]\n输出：0 \n解释：不存在这样的两个单词。\n\n&nbsp;\n\n提示：\n\n\t2 <= words.length <= 1000\n\t1 <= words[i].length <= 1000\n\twords[i]&nbsp;仅包含小写字母",
+  "constraints": [
+    "2 <= words.length <= 1000",
+    "1 <= words[i].length <= 1000",
+    "words[i]&nbsp;仅包含小写字母"
+  ]
+}

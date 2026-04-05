@@ -1,0 +1,9 @@
+{
+  "number": "2061",
+  "title_cn": "扫地机器人清扫过的空间个数",
+  "title_en": "Number of Spaces Cleaning Robot Cleaned",
+  "slug": "number-of-spaces-cleaning-robot-cleaned",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

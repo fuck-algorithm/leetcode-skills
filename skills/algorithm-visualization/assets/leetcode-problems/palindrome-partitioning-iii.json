@@ -1,0 +1,12 @@
+{
+  "number": "1278",
+  "title_cn": "分割回文串 III",
+  "title_en": "Palindrome Partitioning III",
+  "slug": "palindrome-partitioning-iii",
+  "difficulty": "Hard",
+  "description": "给你一个由小写字母组成的字符串&nbsp;s，和一个整数&nbsp;k。\n\n请你按下面的要求分割字符串：\n\n\t首先，你可以将&nbsp;s&nbsp;中的部分字符修改为其他的小写英文字母。\n\t接着，你需要把&nbsp;s&nbsp;分割成&nbsp;k&nbsp;个非空且不相交的子串，并且每个子串都是回文串。\n\n请返回以这种方式分割字符串所需修改的最少字符数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abc\", k = 2\n输出：1\n解释：你可以把字符串分割成 \"ab\" 和 \"c\"，并修改 \"ab\" 中的 1 个字符，将它变成回文串。\n\n示例 2：\n\n输入：s = \"aabbc\", k = 3\n输出：0\n解释：你可以把字符串分割成 \"aa\"、\"bb\" 和 \"c\"，它们都是回文串。\n\n示例 3：\n\n输入：s = \"leetcode\", k = 8\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= s.length <= 100\n\ts&nbsp;中只含有小写英文字母。",
+  "constraints": [
+    "1 <= k <= s.length <= 100",
+    "s&nbsp;中只含有小写英文字母。"
+  ]
+}

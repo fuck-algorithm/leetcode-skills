@@ -1,0 +1,9 @@
+{
+  "number": "1430",
+  "title_cn": "判断给定的序列是否是二叉树从根到叶的路径",
+  "title_en": "Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree",
+  "slug": "check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

@@ -1,0 +1,13 @@
+{
+  "number": "3472",
+  "title_cn": "至多 K 次操作后的最长回文子序列",
+  "title_en": "Longest Palindromic Subsequence After at Most K Operations",
+  "slug": "longest-palindromic-subsequence-after-at-most-k-operations",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个整数 k。\n\n在一次操作中，你可以将任意位置的字符替换为字母表中相邻的字符（字母表是循环的，因此&nbsp;'z'&nbsp;的下一个字母是&nbsp;'a'）。例如，将 'a' 替换为下一个字母结果是 'b'，将 'a' 替换为上一个字母结果是 'z'；同样，将 'z' 替换为下一个字母结果是 'a'，替换为上一个字母结果是 'y'。\n\n返回在进行&nbsp;最多 k 次操作后，s 的&nbsp;最长回文子序列&nbsp;的长度。\n\n子序列&nbsp;是一个&nbsp;非空&nbsp;字符串，可以通过删除原字符串中的某些字符（或不删除任何字符）并保持剩余字符的相对顺序得到。\n\n回文&nbsp;是正着读和反着读都相同的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"abced\", k = 2\n\n输出: 3\n\n解释:\n\n\t将 s[1] 替换为下一个字母，得到 \"acced\"。\n\t将 s[4] 替换为上一个字母，得到 \"accec\"。\n\n子序列 \"ccc\" 形成一个长度为 3 的回文，这是最长的回文子序列。\n\n示例 2：\n\n输入: s = \"aaazzz\", k = 4\n\n输出: 6\n\n解释:\n\n\t将 s[0] 替换为上一个字母，得到 \"zaazzz\"。\n\t将 s[4] 替换为下一个字母，得到 \"zaazaz\"。\n\t将 s[3] 替换为下一个字母，得到 \"zaaaaz\"。\n\n整个字符串形成一个长度为 6 的回文。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 200\n\t1 <= k <= 200\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 200",
+    "1 <= k <= 200",
+    "s 仅由小写英文字母组成。"
+  ]
+}

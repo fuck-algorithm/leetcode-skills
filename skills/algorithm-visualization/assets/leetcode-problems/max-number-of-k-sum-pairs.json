@@ -1,0 +1,13 @@
+{
+  "number": "1679",
+  "title_cn": "K 和数对的最大数目",
+  "title_en": "Max Number of K-Sum Pairs",
+  "slug": "max-number-of-k-sum-pairs",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums 和一个整数 k 。\n\n每一步操作中，你需要从数组中选出和为 k 的两个整数，并将它们移出数组。\n\n返回你可以对数组执行的最大操作数。\n\n示例 1：\n\n输入：nums = [1,2,3,4], k = 5\n输出：2\n解释：开始时 nums = [1,2,3,4]：\n- 移出 1 和 4 ，之后 nums = [2,3]\n- 移出 2 和 3 ，之后 nums = []\n不再有和为 5 的数对，因此最多执行 2 次操作。\n\n示例 2：\n\n输入：nums = [3,1,3,4,3], k = 6\n输出：1\n解释：开始时 nums = [3,1,3,4,3]：\n- 移出前两个 3 ，之后nums = [1,4,3]\n不再有和为 6 的数对，因此最多执行 1 次操作。\n\n提示：\n\n\t1 5\n\t1 9\n\t1 9",
+  "constraints": [
+    "1 5",
+    "1 9",
+    "1 9"
+  ]
+}

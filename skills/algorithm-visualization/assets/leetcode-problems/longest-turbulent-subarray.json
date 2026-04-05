@@ -1,0 +1,12 @@
+{
+  "number": "978",
+  "title_cn": "最长湍流子数组",
+  "title_en": "Longest Turbulent Subarray",
+  "slug": "longest-turbulent-subarray",
+  "difficulty": "Medium",
+  "description": "给定一个整数数组 arr&nbsp;，返回 arr&nbsp;的&nbsp;最大湍流子数组的长度&nbsp;。\n\n如果比较符号在子数组中的每个相邻元素对之间翻转，则该子数组是&nbsp;湍流子数组&nbsp;。\n\n更正式地来说，当 arr&nbsp;的子数组&nbsp;A[i], A[i+1], ..., A[j]&nbsp;满足仅满足下列条件时，我们称其为湍流子数组：\n\n\t若&nbsp;i <= k < j&nbsp;：\n\n\t\t当 k&nbsp;为奇数时，&nbsp;A[k] > A[k+1]，且\n\t\t当 k 为偶数时，A[k] < A[k+1]；\n\n\t或 若&nbsp;i <= k < j&nbsp;：\n\n\t\t当 k 为偶数时，A[k] > A[k+1]&nbsp;，且\n\t\t当 k&nbsp;为奇数时，&nbsp;A[k] < A[k+1]。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [9,4,2,10,7,8,8,1,9]\n输出：5\n解释：arr[1] > arr[2] < arr[3] > arr[4] < arr[5]\n\n示例 2：\n\n输入：arr = [4,8,12,16]\n输出：2\n\n示例 3：\n\n输入：arr = [100]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 4 * 104\n\t0 <= arr[i] <= 109",
+  "constraints": [
+    "1 <= arr.length <= 4 * 104",
+    "0 <= arr[i] <= 109"
+  ]
+}

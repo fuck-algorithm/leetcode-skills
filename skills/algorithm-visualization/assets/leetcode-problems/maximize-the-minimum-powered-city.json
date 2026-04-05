@@ -1,0 +1,15 @@
+{
+  "number": "2528",
+  "title_cn": "最大化城市的最小电量",
+  "title_en": "Maximize the Minimum Powered City",
+  "slug": "maximize-the-minimum-powered-city",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始长度为 n&nbsp;的整数数组&nbsp;stations&nbsp;，其中&nbsp;stations[i]&nbsp;表示第 i&nbsp;座城市的供电站数目。\n\n每个供电站可以在一定 范围&nbsp;内给所有城市提供电力。换句话说，如果给定的范围是&nbsp;r&nbsp;，在城市&nbsp;i&nbsp;处的供电站可以给所有满足&nbsp;|i - j| <= r 且&nbsp;0 <= i, j <= n - 1&nbsp;的城市&nbsp;j&nbsp;供电。\n\n\t|x|&nbsp;表示 x&nbsp;的 绝对值&nbsp;。比方说，|7 - 5| = 2&nbsp;，|3 - 10| = 7&nbsp;。\n\n一座城市的 电量&nbsp;是所有能给它供电的供电站数目。\n\n政府批准了可以额外建造 k&nbsp;座供电站，你需要决定这些供电站分别应该建在哪里，这些供电站与已经存在的供电站有相同的供电范围。\n\n给你两个整数&nbsp;r 和&nbsp;k&nbsp;，如果以最优策略建造额外的发电站，返回所有城市中，最小电量的最大值是多少。\n\n这 k&nbsp;座供电站可以建在多个城市。\n\n&nbsp;\n\n示例 1：\n\n输入：stations = [1,2,4,5,0], r = 1, k = 2\n输出：5\n解释：\n最优方案之一是把 2 座供电站都建在城市 1 。\n每座城市的供电站数目分别为 [1,4,4,5,0] 。\n- 给城市 0 供电的供电站数目为 1 + 4 = 5 。\n- 给城市 1 供电的供电站数目为 1 + 4 + 4 = 9 。\n- 给城市 2 供电的供电站数目为 4 + 4 + 5 = 13 。\n- 给城市 3 供电的供电站数目为 5 + 4 = 9 。\n- 给城市 4 供电的供电站数目为 5 + 0 = 5 。\n供电站数目最少是 5 。\n无法得到更优解，所以我们返回 5 。\n\n示例 2：\n\n输入：stations = [4,4,4,4], r = 0, k = 3\n输出：4\n解释：\n无论如何安排，总有一座城市的供电站数目是 4 ，所以最优解是 4 。\n\n&nbsp;\n\n提示：\n\n\tn == stations.length\n\t1 <= n <= 105\n\t0 <= stations[i] <= 105\n\t0 <= r&nbsp;<= n - 1\n\t0 <= k&nbsp;<= 109",
+  "constraints": [
+    "n == stations.length",
+    "1 <= n <= 105",
+    "0 <= stations[i] <= 105",
+    "0 <= r&nbsp;<= n - 1",
+    "0 <= k&nbsp;<= 109"
+  ]
+}

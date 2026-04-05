@@ -1,0 +1,12 @@
+{
+  "number": "115",
+  "title_cn": "不同的子序列",
+  "title_en": "Distinct Subsequences",
+  "slug": "distinct-subsequences",
+  "difficulty": "Hard",
+  "description": "给你两个字符串 s 和 t ，统计并返回在 s 的 子序列 中 t 出现的个数。\n\n测试用例保证结果在 32 位有符号整数范围内。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：s = \"rabbbit\", t = \"rabbit\"\n输出：3\n解释：\n如下所示, 有 3 种可以从 s 中得到 \"rabbit\" 的方案。\nrabbbit\nrabbbit\nrabbbit\n\n示例&nbsp;2：\n\n输入：s = \"babgbag\", t = \"bag\"\n输出：5\n解释：\n如下所示, 有 5 种可以从 s 中得到 \"bag\" 的方案。 \nbabgbag\nbabgbag\nbabgbag\nbabgbag\nbabgbag\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, t.length <= 1000\n\ts 和 t 由英文字母组成",
+  "constraints": [
+    "1 <= s.length, t.length <= 1000",
+    "s 和 t 由英文字母组成"
+  ]
+}

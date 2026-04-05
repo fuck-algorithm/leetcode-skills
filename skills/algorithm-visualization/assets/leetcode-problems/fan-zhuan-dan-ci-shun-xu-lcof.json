@@ -1,0 +1,14 @@
+{
+  "number": "LCR 181",
+  "title_cn": "字符串中的单词反转",
+  "title_en": "字符串中的单词反转",
+  "slug": "fan-zhuan-dan-ci-shun-xu-lcof",
+  "difficulty": "Easy",
+  "description": "你在与一位习惯从右往左阅读的朋友发消息，他发出的文字顺序都与正常相反但单词内容正确，为了和他顺利交流你决定写一个转换程序，把他所发的消息 message 转换为正常语序。\n\n注意：输入字符串 message 中可能会存在前导空格、尾随空格或者单词间的多个空格。返回的结果字符串中，单词间应当仅用单个空格分隔，且不包含任何额外的空格。\n\n&nbsp;\n\n示例 1：\n\n输入: message = \"the sky is blue\"\n输出:&nbsp;\"blue is sky the\"\n\n示例 2：\n\n输入: message = \" &nbsp;hello world! &nbsp;\"\n输出:&nbsp;\"world! hello\"\n解释: 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。\n\n示例 3：\n\n输入: message = \"a good &nbsp; example\"\n输出:&nbsp;\"example good a\"\n解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。\n\n&nbsp;\n\n提示：\n\n\t0 <= message.length <= 104\n\tmessage 中包含英文大小写字母、空格和数字\n\n注意：\n\n\t本题与主站 151 题相同：https://leetcode.cn/problems/reverse-words-in-a-string/\n\n&nbsp;",
+  "constraints": [
+    "0 <= message.length <= 104",
+    "message 中包含英文大小写字母、空格和数字",
+    "注意：",
+    "本题与主站 151 题相同：https://leetcode.cn/problems/reverse-words-in-a-string/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2695",
+  "title_cn": "包装数组",
+  "title_en": "Array Wrapper",
+  "slug": "array-wrapper",
+  "difficulty": "Easy",
+  "description": "创建一个名为 ArrayWrapper 的类，它在其构造函数中接受一个整数数组作为参数。该类应具有以下两个特性：\n\n\t当使用 + 运算符将两个该类的实例相加时，结果值为两个数组中所有元素的总和。\n\t当在实例上调用 String() 函数时，它将返回一个由逗号分隔的括在方括号中的字符串。例如，[1,2,3] 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [[1,2],[3,4]], operation = \"Add\"\n输出：10\n解释：\nconst obj1 = new ArrayWrapper([1,2]);\nconst obj2 = new ArrayWrapper([3,4]);\nobj1 + obj2; // 10\n\n示例 2：\n\n输入：nums = [[23,98,42,70]], operation = \"String\"\n输出：\"[23,98,42,70]\"\n解释：\nconst obj = new ArrayWrapper([23,98,42,70]);\nString(obj); // \"[23,98,42,70]\"\n\n示例 3：\n\n输入：nums = [[],[]], operation = \"Add\"\n输出：0\n解释：\nconst obj1 = new ArrayWrapper([]);\nconst obj2 = new ArrayWrapper([]);\nobj1 + obj2; // 0\n\n&nbsp;\n\n提示：\n\n\t0 <= nums.length <= 1000\n\t0 <= nums[i]&nbsp;<= 1000\n\t注意：nums 是传递给构造函数的数组。",
+  "constraints": [
+    "0 <= nums.length <= 1000",
+    "0 <= nums[i]&nbsp;<= 1000",
+    "注意：nums 是传递给构造函数的数组。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1010",
+  "title_cn": "总持续时间可被 60 整除的歌曲",
+  "title_en": "Pairs of Songs With Total Durations Divisible by 60",
+  "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+  "difficulty": "Medium",
+  "description": "在歌曲列表中，第 i 首歌曲的持续时间为 time[i] 秒。\n\n返回其总持续时间（以秒为单位）可被 60 整除的歌曲对的数量。形式上，我们希望下标数字 i 和 j 满足&nbsp; i < j 且有&nbsp;(time[i] + time[j]) % 60 == 0。\n\n&nbsp;\n\n示例 1：\n\n输入：time = [30,20,150,100,40]\n输出：3\n解释：这三对的总持续时间可被 60 整除：\n(time[0] = 30, time[2] = 150): 总持续时间 180\n(time[1] = 20, time[3] = 100): 总持续时间 120\n(time[1] = 20, time[4] = 40): 总持续时间 60\n\n示例 2：\n\n输入：time = [60,60,60]\n输出：3\n解释：所有三对的总持续时间都是 120，可以被 60 整除。\n\n&nbsp;\n\n提示：\n\n\t1 <= time.length <= 6 * 104\n\t1 <= time[i] <= 500",
+  "constraints": [
+    "1 <= time.length <= 6 * 104",
+    "1 <= time[i] <= 500"
+  ]
+}

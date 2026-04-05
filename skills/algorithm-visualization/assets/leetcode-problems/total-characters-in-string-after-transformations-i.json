@@ -1,0 +1,13 @@
+{
+  "number": "3335",
+  "title_cn": "字符串转换后的长度 I",
+  "title_en": "Total Characters in String After Transformations I",
+  "slug": "total-characters-in-string-after-transformations-i",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个整数 t，表示要执行的 转换 次数。每次 转换 需要根据以下规则替换字符串 s 中的每个字符：\n\n\t如果字符是 'z'，则将其替换为字符串 \"ab\"。\n\t否则，将其替换为字母表中的下一个字符。例如，'a' 替换为 'b'，'b' 替换为 'c'，依此类推。\n\n返回 恰好 执行 t 次转换后得到的字符串的 长度。\n\n由于答案可能非常大，返回其对 109 + 7 取余的结果。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"abcyy\", t = 2\n\n输出： 7\n\n解释：\n\n\t第一次转换 (t = 1)\n\n\t\t'a' 变为 'b'\n\t\t'b' 变为 'c'\n\t\t'c' 变为 'd'\n\t\t'y' 变为 'z'\n\t\t'y' 变为 'z'\n\t\t第一次转换后的字符串为：\"bcdzz\"\n\n\t第二次转换 (t = 2)\n\n\t\t'b' 变为 'c'\n\t\t'c' 变为 'd'\n\t\t'd' 变为 'e'\n\t\t'z' 变为 \"ab\"\n\t\t'z' 变为 \"ab\"\n\t\t第二次转换后的字符串为：\"cdeabab\"\n\n\t最终字符串长度：字符串为 \"cdeabab\"，长度为 7 个字符。\n\n示例 2：\n\n输入： s = \"azbk\", t = 1\n\n输出： 5\n\n解释：\n\n\t第一次转换 (t = 1)\n\n\t\t'a' 变为 'b'\n\t\t'z' 变为 \"ab\"\n\t\t'b' 变为 'c'\n\t\t'k' 变为 'l'\n\t\t第一次转换后的字符串为：\"babcl\"\n\n\t最终字符串长度：字符串为 \"babcl\"，长度为 5 个字符。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅由小写英文字母组成。\n\t1 <= t <= 105",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由小写英文字母组成。",
+    "1 <= t <= 105"
+  ]
+}

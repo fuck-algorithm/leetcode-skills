@@ -1,0 +1,12 @@
+{
+  "number": "2027",
+  "title_cn": "转换字符串的最少操作次数",
+  "title_en": "Minimum Moves to Convert String",
+  "slug": "minimum-moves-to-convert-string",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s ，由 n 个字符组成，每个字符不是 'X' 就是 'O' 。\n\n一次 操作 定义为从 s 中选出 三个连续字符 并将选中的每个字符都转换为 'O' 。注意，如果字符已经是 'O' ，只需要保持 不变 。\n\n返回将 s 中所有字符均转换为 'O' 需要执行的&nbsp;最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"XXX\"\n输出：1\n解释：XXX -> OOO\n一次操作，选中全部 3 个字符，并将它们转换为 'O' 。\n\n示例 2：\n\n输入：s = \"XXOX\"\n输出：2\n解释：XXOX -> OOOX -> OOOO\n第一次操作，选择前 3 个字符，并将这些字符转换为 'O' 。\n然后，选中后 3 个字符，并执行转换。最终得到的字符串全由字符 'O' 组成。\n\n示例 3：\n\n输入：s = \"OOOO\"\n输出：0\n解释：s 中不存在需要转换的 'X' 。\n\n&nbsp;\n\n提示：\n\n\t3 <= s.length <= 1000\n\ts[i] 为 'X' 或 'O'",
+  "constraints": [
+    "3 <= s.length <= 1000",
+    "s[i] 为 'X' 或 'O'"
+  ]
+}

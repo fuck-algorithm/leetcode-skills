@@ -1,0 +1,11 @@
+{
+  "number": "LCR 143",
+  "title_cn": "子结构判断",
+  "title_en": "子结构判断",
+  "slug": "shu-de-zi-jie-gou-lcof",
+  "difficulty": "Medium",
+  "description": "给定两棵二叉树 tree1 和 tree2，判断 tree2 是否以 tree1 的某个节点为根的子树具有 相同的结构和节点值 。\n注意，空树&nbsp;不会是以 tree1 的某个节点为根的子树具有 相同的结构和节点值 。\n\n&nbsp;\n\n示例 1：\n\n&nbsp;\n\n&nbsp;\n\n输入：tree1 = [1,7,5], tree2 = [6,1]\n输出：false\n解释：tree2 与 tree1 的一个子树没有相同的结构和节点值。\n\n示例 2：\n\n输入：tree1 = [3,6,7,1,8], tree2 = [6,1]\n输出：true\n解释：tree2 与 tree1 的一个子树拥有相同的结构和节点值。即 6 - > 1。\n\n&nbsp;\n\n提示：\n\n0 <= 节点个数 <= 10000",
+  "constraints": [
+    "0 <= 节点个数 <= 10000"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3823",
+  "title_cn": "反转一个字符串里的字母后反转特殊字符",
+  "title_en": "Reverse Letters Then Special Characters in a String",
+  "slug": "reverse-letters-then-special-characters-in-a-string",
+  "difficulty": "Easy",
+  "description": "给你一个由小写英文字母和特殊字符组成的字符串 s。\n\n你的任务是 按顺序 执行以下操作：\n\n\t反转小写字母，并将它们放回原来字母所占据的位置。\n\t反转特殊字符，并将它们放回原来特殊字符所占据的位置。\n\n返回执行反转操作后的结果字符串。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \")ebc#da@f(\"\n\n输出： \"(fad@cb#e)\"\n\n解释：\n\n\t字符串中的字母为 ['e', 'b', 'c', 'd', 'a', 'f']：\n\n\t\t反转它们得到 ['f', 'a', 'd', 'c', 'b', 'e']\n\t\ts 变为 \")fad#cb@e(\"\n\n\t字符串中的特殊字符为 [')', '#', '@', '(']：\n\n\t\t反转它们得到 ['(', '@', '#', ')']\n\t\ts 变为 \"(fad@cb#e)\"\n\n示例 2：\n\n输入： s = \"z\"\n\n输出： \"z\"\n\n解释：\n\n字符串仅包含一个字母，反转它不会改变字符串。没有特殊字符。\n\n示例 3：\n\n输入： s = \"!@#$%^&*()\"\n\n输出： \")(*&^%$#@!\"\n\n解释：\n\n字符串不包含字母。字符串全部由特殊字符组成，因此反转特殊字符即反转整个字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts 仅由小写英文字母和 \"!@#$%^&*()\" 中的特殊字符组成。",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 仅由小写英文字母和 \"!@#$%^&*()\" 中的特殊字符组成。"
+  ]
+}

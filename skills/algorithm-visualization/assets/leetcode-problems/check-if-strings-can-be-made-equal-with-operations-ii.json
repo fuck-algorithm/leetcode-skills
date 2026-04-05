@@ -1,0 +1,13 @@
+{
+  "number": "2840",
+  "title_cn": "判断通过操作能否让字符串相等 II",
+  "title_en": "Check if Strings Can be Made Equal With Operations II",
+  "slug": "check-if-strings-can-be-made-equal-with-operations-ii",
+  "difficulty": "Medium",
+  "description": "给你两个字符串&nbsp;s1&nbsp;和&nbsp;s2&nbsp;，两个字符串长度都为&nbsp;n&nbsp;，且只包含&nbsp;小写&nbsp;英文字母。\n\n你可以对两个字符串中的 任意一个&nbsp;执行以下操作 任意&nbsp;次：\n\n\t选择两个下标&nbsp;i 和&nbsp;j&nbsp;，满足 i < j&nbsp;且 j - i&nbsp;是 偶数，然后 交换 这个字符串中两个下标对应的字符。\n\n&nbsp;\n\n如果你可以让字符串&nbsp;s1 和&nbsp;s2&nbsp;相等，那么返回 true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"abcdba\", s2 = \"cabdab\"\n输出：true\n解释：我们可以对 s1 执行以下操作：\n- 选择下标 i = 0 ，j = 2 ，得到字符串 s1 = \"cbadba\" 。\n- 选择下标 i = 2 ，j = 4 ，得到字符串 s1 = \"cbbdaa\" 。\n- 选择下标 i = 1 ，j = 5 ，得到字符串 s1 = \"cabdab\" = s2 。\n\n示例 2：\n\n输入：s1 = \"abe\", s2 = \"bea\"\n输出：false\n解释：无法让两个字符串相等。\n\n&nbsp;\n\n提示：\n\n\tn == s1.length == s2.length\n\t1 <= n <= 105\n\ts1 和&nbsp;s2&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "n == s1.length == s2.length",
+    "1 <= n <= 105",
+    "s1 和&nbsp;s2&nbsp;只包含小写英文字母。"
+  ]
+}

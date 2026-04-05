@@ -1,0 +1,12 @@
+{
+  "number": "2335",
+  "title_cn": "装满杯子需要的最短总时长",
+  "title_en": "Minimum Amount of Time to Fill Cups",
+  "slug": "minimum-amount-of-time-to-fill-cups",
+  "difficulty": "Easy",
+  "description": "现有一台饮水机，可以制备冷水、温水和热水。每秒钟，可以装满 2 杯 不同 类型的水或者 1 杯任意类型的水。\n\n给你一个下标从 0 开始、长度为 3 的整数数组 amount ，其中 amount[0]、amount[1] 和 amount[2] 分别表示需要装满冷水、温水和热水的杯子数量。返回装满所有杯子所需的 最少 秒数。\n\n&nbsp;\n\n示例 1：\n\n输入：amount = [1,4,2]\n输出：4\n解释：下面给出一种方案：\n第 1 秒：装满一杯冷水和一杯温水。\n第 2 秒：装满一杯温水和一杯热水。\n第 3 秒：装满一杯温水和一杯热水。\n第 4 秒：装满一杯温水。\n可以证明最少需要 4 秒才能装满所有杯子。\n\n示例 2：\n\n输入：amount = [5,4,4]\n输出：7\n解释：下面给出一种方案：\n第 1 秒：装满一杯冷水和一杯热水。\n第 2 秒：装满一杯冷水和一杯温水。\n第 3 秒：装满一杯冷水和一杯温水。\n第 4 秒：装满一杯温水和一杯热水。\n第 5 秒：装满一杯冷水和一杯热水。\n第 6 秒：装满一杯冷水和一杯温水。\n第 7 秒：装满一杯热水。\n\n示例 3：\n\n输入：amount = [5,0,0]\n输出：5\n解释：每秒装满一杯冷水。\n\n&nbsp;\n\n提示：\n\n\tamount.length == 3\n\t0 <= amount[i] <= 100",
+  "constraints": [
+    "amount.length == 3",
+    "0 <= amount[i] <= 100"
+  ]
+}

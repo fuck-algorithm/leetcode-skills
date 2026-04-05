@@ -1,0 +1,12 @@
+{
+  "number": "2405",
+  "title_cn": "子字符串的最优划分",
+  "title_en": "Optimal Partition of String",
+  "slug": "optimal-partition-of-string",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s ，请你将该字符串划分成一个或多个 子字符串 ，并满足每个子字符串中的字符都是 唯一 的。也就是说，在单个子字符串中，字母的出现次数都不超过 一次 。\n\n满足题目要求的情况下，返回 最少 需要划分多少个子字符串。\n\n注意，划分后，原字符串中的每个字符都应该恰好属于一个子字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abacaba\"\n输出：4\n解释：\n两种可行的划分方法分别是 (\"a\",\"ba\",\"cab\",\"a\") 和 (\"ab\",\"a\",\"ca\",\"ba\") 。\n可以证明最少需要划分 4 个子字符串。\n\n示例 2：\n\n输入：s = \"ssssss\"\n输出：6\n解释：\n只存在一种可行的划分方法 (\"s\",\"s\",\"s\",\"s\",\"s\",\"s\") 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅由小写英文字母组成",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由小写英文字母组成"
+  ]
+}

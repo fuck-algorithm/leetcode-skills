@@ -1,0 +1,14 @@
+{
+  "number": "955",
+  "title_cn": "删列造序 II",
+  "title_en": "Delete Columns to Make Sorted II",
+  "slug": "delete-columns-to-make-sorted-ii",
+  "difficulty": "Medium",
+  "description": "给定由 n 个字符串组成的数组 strs，其中每个字符串长度相等。\n\n选取一个删除索引序列，对于 strs 中的每个字符串，删除对应每个索引处的字符。\n\n比如，有 strs = [\"abcdef\", \"uvwxyz\"]，删除索引序列 {0, 2, 3}，删除后 strs 为[\"bef\", \"vyz\"]。\n\n假设，我们选择了一组删除索引 answer，那么在执行删除操作之后，最终得到的数组的元素是按 字典序（strs[0] ）排列的，然后请你返回 answer.length 的最小可能值。\n\n示例 1：\n\n输入：strs = [\"ca\",\"bb\",\"ac\"]\n输出：1\n解释： \n删除第一列后，strs = [\"a\", \"b\", \"c\"]。\n现在 strs 中元素是按字典排列的 (即，strs[0] \n\n示例 2：\n\n输入：strs = [\"xc\",\"yb\",\"za\"]\n输出：0\n解释：\nstrs 的列已经是按字典序排列了，所以我们不需要删除任何东西。\n注意 strs 的行不需要按字典序排列。\n也就是说，strs[0][0] \n\n示例 3：\n\n输入：strs = [\"zyx\",\"wvu\",\"tsr\"]\n输出：3\n解释：\n我们必须删掉每一列。\n\n提示：\n\n\tn == strs.length\n\t1 \n\t1 \n\tstrs[i] 由小写英文字母组成",
+  "constraints": [
+    "n == strs.length",
+    "1",
+    "1",
+    "strs[i] 由小写英文字母组成"
+  ]
+}

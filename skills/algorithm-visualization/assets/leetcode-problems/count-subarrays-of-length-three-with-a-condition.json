@@ -1,0 +1,12 @@
+{
+  "number": "3392",
+  "title_cn": "统计符合条件长度为 3 的子数组数目",
+  "title_en": "Count Subarrays of Length Three With a Condition",
+  "slug": "count-subarrays-of-length-three-with-a-condition",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;，请你返回长度为 3 的 子数组 的数量，满足第一个数和第三个数的和恰好为第二个数的一半。\n\n子数组&nbsp;指的是一个数组中连续 非空&nbsp;的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,1,4,1]\n\n输出：1\n\n解释：\n\n只有子数组&nbsp;[1,4,1]&nbsp;包含 3 个元素且第一个和第三个数字之和是中间数字的一半。number.\n\n示例 2：\n\n输入：nums = [1,1,1]\n\n输出：0\n\n解释：\n\n[1,1,1]&nbsp;是唯一长度为 3 的子数组，但第一个数和第三个数的和不是第二个数的一半。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 100\n\t-100 <= nums[i] <= 100",
+  "constraints": [
+    "3 <= nums.length <= 100",
+    "-100 <= nums[i] <= 100"
+  ]
+}

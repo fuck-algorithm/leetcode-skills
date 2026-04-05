@@ -1,0 +1,11 @@
+{
+  "number": "367",
+  "title_cn": "有效的完全平方数",
+  "title_en": "Valid Perfect Square",
+  "slug": "valid-perfect-square",
+  "difficulty": "Easy",
+  "description": "给你一个正整数 num 。如果 num 是一个完全平方数，则返回 true ，否则返回 false 。\n\n完全平方数 是一个可以写成某个整数的平方的整数。换句话说，它可以写成某个整数和自身的乘积。\n\n不能使用任何内置的库函数，如&nbsp; sqrt 。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 16\n输出：true\n解释：返回 true ，因为 4 * 4 = 16 且 4 是一个整数。\n\n示例 2：\n\n输入：num = 14\n输出：false\n解释：返回 false ，因为 3.742 * 3.742 = 14 但 3.742 不是一个整数。\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 231 - 1",
+  "constraints": [
+    "1 <= num <= 231 - 1"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "LCR 142",
+  "title_cn": "训练计划 IV",
+  "title_en": "训练计划 IV",
+  "slug": "he-bing-liang-ge-pai-xu-de-lian-biao-lcof",
+  "difficulty": "Easy",
+  "description": "给定两个以 有序链表 形式记录的训练计划 l1、l2，分别记录了两套核心肌群训练项目编号，请合并这两个训练计划，按训练项目编号 升序 记录于链表并返回。\n\n注意：新链表是通过拼接给定的两个链表的所有节点组成的。\n\n&nbsp;\n\n示例 1：\n\n输入：l1 = [1,2,4], l2 = [1,3,4]\n输出：[1,1,2,3,4,4]\n\n示例 2：\n\n输入：l1 = [], l2 = []\n输出：[]\n\n示例 3：\n\n输入：l1 = [], l2 = [0]\n输出：[0]\n\n&nbsp;\n\n提示：\n\n0 <= 链表长度 <= 1000\n\n&nbsp;\n\n注意：本题与主站 21 题相同：https://leetcode.cn/problems/merge-two-sorted-lists/\n\n&nbsp;",
+  "constraints": [
+    "0 <= 链表长度 <= 1000",
+    "注意：本题与主站 21 题相同：https://leetcode.cn/problems/merge-two-sorted-lists/"
+  ]
+}

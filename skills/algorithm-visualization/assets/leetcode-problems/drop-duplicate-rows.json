@@ -1,0 +1,9 @@
+{
+  "number": "2882",
+  "title_cn": "删去重复的行",
+  "title_en": "Drop Duplicate Rows",
+  "slug": "drop-duplicate-rows",
+  "difficulty": "Easy",
+  "description": "DataFrame customers\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| customer_id | int    |\n| name        | object |\n| email       | object |\n+-------------+--------+\n\n在 DataFrame 中基于&nbsp;email&nbsp;列存在一些重复行。\n\n编写一个解决方案，删除这些重复行，仅保留第一次出现的行。\n\n返回结果格式如下例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\n+-------------+---------+---------------------+\n| customer_id | name    | email               |\n+-------------+---------+---------------------+\n| 1           | Ella    | emily@example.com   |\n| 2           | David   | michael@example.com |\n| 3           | Zachary | sarah@example.com   |\n| 4           | Alice   | john@example.com    |\n| 5           | Finn    | john@example.com    |\n| 6           | Violet  | alice@example.com   |\n+-------------+---------+---------------------+\n输出：\n+-------------+---------+---------------------+\n| customer_id | name    | email               |\n+-------------+---------+---------------------+\n| 1           | Ella    | emily@example.com   |\n| 2           | David   | michael@example.com |\n| 3           | Zachary | sarah@example.com   |\n| 4           | Alice   | john@example.com    |\n| 6           | Violet  | alice@example.com   |\n+-------------+---------+---------------------+\n解释：\nAlice (customer_id = 4) 和 Finn (customer_id = 5) 都使用 john@example.com，因此只保留该邮箱地址的第一次出现。",
+  "constraints": []
+}

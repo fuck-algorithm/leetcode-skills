@@ -1,0 +1,11 @@
+{
+  "number": "1780",
+  "title_cn": "判断一个数字是否可以表示成三的幂的和",
+  "title_en": "Check if Number is a Sum of Powers of Three",
+  "slug": "check-if-number-is-a-sum-of-powers-of-three",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n ，如果你可以将 n 表示成若干个不同的三的幂之和，请你返回 true ，否则请返回 false 。\n\n对于一个整数 y ，如果存在整数 x 满足 y == 3x ，我们称这个整数 y 是三的幂。\n\n示例 1：\n\n输入：n = 12\n输出：true\n解释：12 = 31 + 32\n\n示例 2：\n\n输入：n = 91\n输出：true\n解释：91 = 30 + 32 + 34\n\n示例 3：\n\n输入：n = 21\n输出：false\n\n提示：\n\n\t1 <= n <= 107",
+  "constraints": [
+    "1 <= n <= 107"
+  ]
+}

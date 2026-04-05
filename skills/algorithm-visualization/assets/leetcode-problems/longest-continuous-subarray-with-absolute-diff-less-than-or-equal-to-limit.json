@@ -1,0 +1,13 @@
+{
+  "number": "1438",
+  "title_cn": "绝对差不超过限制的最长连续子数组",
+  "title_en": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+  "slug": "longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums ，和一个表示限制的整数 limit，请你返回最长连续子数组的长度，该子数组中的任意两个元素之间的绝对差必须小于或者等于 limit。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [8,2,4,7], limit = 4\n输出：2 \n解释：所有子数组如下：\n[8] 最大绝对差 |8-8| = 0 <= 4.\n[8,2] 最大绝对差 |8-2| = 6 > 4. \n[8,2,4] 最大绝对差 |8-2| = 6 > 4.\n[8,2,4,7] 最大绝对差 |8-2| = 6 > 4.\n[2] 最大绝对差 |2-2| = 0 <= 4.\n[2,4] 最大绝对差 |2-4| = 2 <= 4.\n[2,4,7] 最大绝对差 |2-7| = 5 > 4.\n[4] 最大绝对差 |4-4| = 0 <= 4.\n[4,7] 最大绝对差 |4-7| = 3 <= 4.\n[7] 最大绝对差 |7-7| = 0 <= 4. \n因此，满足题意的最长子数组的长度为 2 。\n\n示例 2：\n\n输入：nums = [10,1,2,4,7,2], limit = 5\n输出：4 \n解释：满足题意的最长子数组是 [2,4,7,2]，其最大绝对差 |2-7| = 5 <= 5 。\n\n示例 3：\n\n输入：nums = [4,2,2,2,4,4,2,2], limit = 0\n输出：3\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t0 <= limit <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "0 <= limit <= 109"
+  ]
+}

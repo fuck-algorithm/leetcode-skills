@@ -1,0 +1,13 @@
+{
+  "number": "1335",
+  "title_cn": "工作计划的最低难度",
+  "title_en": "Minimum Difficulty of a Job Schedule",
+  "slug": "minimum-difficulty-of-a-job-schedule",
+  "difficulty": "Hard",
+  "description": "你需要制定一份&nbsp;d&nbsp;天的工作计划表。工作之间存在依赖，要想执行第&nbsp;i&nbsp;项工作，你必须完成全部&nbsp;j&nbsp;项工作（&nbsp;0 <= j < i）。\n\n你每天 至少&nbsp;需要完成一项任务。工作计划的总难度是这&nbsp;d&nbsp;天每一天的难度之和，而一天的工作难度是当天应该完成工作的最大难度。\n\n给你一个整数数组&nbsp;jobDifficulty&nbsp;和一个整数&nbsp;d，分别代表工作难度和需要计划的天数。第&nbsp;i&nbsp;项工作的难度是&nbsp;jobDifficulty[i]。\n\n返回整个工作计划的 最小难度 。如果无法制定工作计划，则返回&nbsp;-1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：jobDifficulty = [6,5,4,3,2,1], d = 2\n输出：7\n解释：第一天，您可以完成前 5 项工作，总难度 = 6.\n第二天，您可以完成最后一项工作，总难度 = 1.\n计划表的难度 = 6 + 1 = 7 \n\n示例 2：\n\n输入：jobDifficulty = [9,9,9], d = 4\n输出：-1\n解释：就算你每天完成一项工作，仍然有一天是空闲的，你无法制定一份能够满足既定工作时间的计划表。\n\n示例 3：\n\n输入：jobDifficulty = [1,1,1], d = 3\n输出：3\n解释：工作计划为每天一项工作，总难度为 3 。\n\n示例 4：\n\n输入：jobDifficulty = [7,1,7,1,7,1], d = 3\n输出：15\n\n示例 5：\n\n输入：jobDifficulty = [11,111,22,222,33,333,44,444], d = 6\n输出：843\n\n&nbsp;\n\n提示：\n\n\t1 <= jobDifficulty.length <= 300\n\t0 <=&nbsp;jobDifficulty[i] <= 1000\n\t1 <= d <= 10",
+  "constraints": [
+    "1 <= jobDifficulty.length <= 300",
+    "0 <=&nbsp;jobDifficulty[i] <= 1000",
+    "1 <= d <= 10"
+  ]
+}

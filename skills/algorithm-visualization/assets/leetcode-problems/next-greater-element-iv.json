@@ -1,0 +1,12 @@
+{
+  "number": "2454",
+  "title_cn": "下一个更大元素 IV",
+  "title_en": "Next Greater Element IV",
+  "slug": "next-greater-element-iv",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的非负整数数组&nbsp;nums&nbsp;。对于&nbsp;nums&nbsp;中每一个整数，你必须找到对应元素的&nbsp;第二大&nbsp;整数。\n\n如果&nbsp;nums[j]&nbsp;满足以下条件，那么我们称它为&nbsp;nums[i]&nbsp;的&nbsp;第二大&nbsp;整数：\n\n\tj > i\n\tnums[j] > nums[i]\n\t恰好存在 一个&nbsp;k&nbsp;满足 i < k < j&nbsp;且&nbsp;nums[k] > nums[i]&nbsp;。\n\n如果不存在&nbsp;nums[j]&nbsp;，那么第二大整数为&nbsp;-1&nbsp;。\n\n\t比方说，数组&nbsp;[1, 2, 4, 3]&nbsp;中，1&nbsp;的第二大整数是&nbsp;4&nbsp;，2&nbsp;的第二大整数是&nbsp;3&nbsp;，3 和&nbsp;4&nbsp;的第二大整数是&nbsp;-1&nbsp;。\n\n请你返回一个整数数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]是&nbsp;nums[i]&nbsp;的第二大整数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,4,0,9,6]\n输出：[9,6,6,-1,-1]\n解释：\n下标为 0 处：2 的右边，4 是大于 2 的第一个整数，9 是第二个大于 2 的整数。\n下标为 1 处：4 的右边，9 是大于 4 的第一个整数，6 是第二个大于 4 的整数。\n下标为 2 处：0 的右边，9 是大于 0 的第一个整数，6 是第二个大于 0 的整数。\n下标为 3 处：右边不存在大于 9 的整数，所以第二大整数为 -1 。\n下标为 4 处：右边不存在大于 6 的整数，所以第二大整数为 -1 。\n所以我们返回 [9,6,6,-1,-1] 。\n\n示例 2：\n\n输入：nums = [3,3]\n输出：[-1,-1]\n解释：\n由于每个数右边都没有更大的数，所以我们返回 [-1,-1] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 109"
+  ]
+}

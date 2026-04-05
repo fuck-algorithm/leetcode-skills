@@ -1,0 +1,9 @@
+{
+  "number": "面试题 01.08",
+  "title_cn": "零矩阵",
+  "title_en": "Zero Matrix LCCI",
+  "slug": "zero-matrix-lcci",
+  "difficulty": "Medium",
+  "description": "编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\n  [1,1,1],\n  [1,0,1],\n  [1,1,1]\n]\n输出：\n[\n  [1,0,1],\n  [0,0,0],\n  [1,0,1]\n]\n\n示例 2：\n\n输入：\n[\n  [0,1,2,0],\n  [3,4,5,2],\n  [1,3,1,5]\n]\n输出：\n[\n  [0,0,0,0],\n  [0,4,5,0],\n  [0,3,1,0]\n]",
+  "constraints": []
+}

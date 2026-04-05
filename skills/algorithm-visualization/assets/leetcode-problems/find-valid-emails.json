@@ -1,0 +1,9 @@
+{
+  "number": "3436",
+  "title_cn": "查找合法邮箱",
+  "title_en": "Find Valid Emails",
+  "slug": "find-valid-emails",
+  "difficulty": "Easy",
+  "description": "表：Users\n\n+-----------------+---------+\n| Column Name     | Type    |\n+-----------------+---------+\n| user_id         | int     |\n| email           | varchar |\n+-----------------+---------+\n(user_id) 是这张表的唯一主键。\n每一行包含用户的唯一 ID 和邮箱地址。\n\n编写一个解决方案来查找所有 合法邮箱地址。一个合法的邮箱地址符合下述条件：\n\n\t只包含一个&nbsp;@&nbsp;符号。\n\t以&nbsp;.com&nbsp;结尾。\n\t@&nbsp;符号前面的部分只包含&nbsp;字母数字&nbsp;字符和&nbsp;下划线。\n\t@&nbsp;符号后面与&nbsp;.com&nbsp;前面的部分 包含 只有字母&nbsp;的域名。\n\n返回结果表以&nbsp;user_id 升序&nbsp;排序。\n\n&nbsp;\n\n示例：\n\n输入：\n\nUsers 表：\n\n+---------+---------------------+\n| user_id | email               |\n+---------+---------------------+\n| 1       | alice@example.com   |\n| 2       | bob_at_example.com  |\n| 3       | charlie@example.net |\n| 4       | david@domain.com    |\n| 5       | eve@invalid         |\n+---------+---------------------+\n\n输出：\n\n+---------+-------------------+\n| user_id | email             |\n+---------+-------------------+\n| 1       | alice@example.com |\n| 4       | david@domain.com  |\n+---------+-------------------+\n\n解释：\n\n\talice@example.com&nbsp;是合法的因为它包含一个&nbsp;@，alice 是只有字母数字的，并且&nbsp;example.com 以字母开始并以 .com&nbsp;结束。\n\tbob_at_example.com&nbsp;是不合法的因为它包含下划线但没有&nbsp;@。\n\tcharlie@example.net&nbsp;是不合法的因为域名没有以&nbsp;.com&nbsp;结尾。\n\tdavid@domain.com&nbsp;是合法的因为它满足所有条件。\n\teve@invalid&nbsp;是不合法的因为域名没有以&nbsp;.com&nbsp;结尾。\n\n结果表以 user_id 升序排序。",
+  "constraints": []
+}

@@ -1,0 +1,9 @@
+{
+  "number": "1667",
+  "title_cn": "修复表中的名字",
+  "title_en": "Fix Names in a Table",
+  "slug": "fix-names-in-a-table",
+  "difficulty": "Easy",
+  "description": "表： Users\n\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| user_id        | int     |\n| name           | varchar |\n+----------------+---------+\nuser_id 是该表的主键(具有唯一值的列)。\n该表包含用户的 ID 和名字。名字仅由小写和大写字符组成。\n\n&nbsp;\n\n编写解决方案，修复名字，使得只有第一个字符是大写的，其余都是小写的。\n\n返回按 user_id 排序的结果表。\n\n返回结果格式示例如下。\n\n&nbsp;\n\n示例 1：\n\n输入：\nUsers table:\n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | aLice |\n| 2       | bOB   |\n+---------+-------+\n输出：\n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | Alice |\n| 2       | Bob   |\n+---------+-------+",
+  "constraints": []
+}

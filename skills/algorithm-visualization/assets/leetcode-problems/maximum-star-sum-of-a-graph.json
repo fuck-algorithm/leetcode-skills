@@ -1,0 +1,18 @@
+{
+  "number": "2497",
+  "title_cn": "图中最大星和",
+  "title_en": "Maximum Star Sum of a Graph",
+  "slug": "maximum-star-sum-of-a-graph",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;n&nbsp;个点的无向图，节点从&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;编号。给你一个长度为 n&nbsp;下标从&nbsp;0&nbsp;开始的整数数组&nbsp;vals&nbsp;，其中&nbsp;vals[i]&nbsp;表示第&nbsp;i&nbsp;个节点的值。\n\n同时给你一个二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条双向边。\n\n星图&nbsp;是给定图中的一个子图，它包含一个中心节点和&nbsp;0&nbsp;个或更多个邻居。换言之，星图是给定图中一个边的子集，且这些边都有一个公共节点。\n\n下图分别展示了有 3&nbsp;个和 4&nbsp;个邻居的星图，蓝色节点为中心节点。\n\n星和 定义为星图中所有节点值的和。\n\n给你一个整数&nbsp;k&nbsp;，请你返回 至多&nbsp;包含 k&nbsp;条边的星图中的 最大星和&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：vals = [1,2,3,4,10,-10,-20], edges = [[0,1],[1,2],[1,3],[3,4],[3,5],[3,6]], k = 2\n输出：16\n解释：上图展示了输入示例。\n最大星和对应的星图在上图中用蓝色标出。中心节点是 3 ，星图中还包含邻居 1 和 4 。\n无法得到一个和大于 16 且边数不超过 2 的星图。\n\n示例 2：\n\n输入：vals = [-5], edges = [], k = 0\n输出：-5\n解释：只有一个星图，就是节点 0 自己。\n所以我们返回 -5 。\n\n&nbsp;\n\n提示：\n\n\tn == vals.length\n\t1 <= n <= 105\n\t-104 <= vals[i] <= 104\n\t0 <= edges.length <= min(n * (n - 1) / 2, 105)\n\tedges[i].length == 2\n\t0 <= ai, bi <= n - 1\n\tai != bi\n\t0 <= k <= n - 1",
+  "constraints": [
+    "n == vals.length",
+    "1 <= n <= 105",
+    "-104 <= vals[i] <= 104",
+    "0 <= edges.length <= min(n * (n - 1) / 2, 105)",
+    "edges[i].length == 2",
+    "0 <= ai, bi <= n - 1",
+    "ai != bi",
+    "0 <= k <= n - 1"
+  ]
+}

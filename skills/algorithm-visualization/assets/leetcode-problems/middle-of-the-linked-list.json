@@ -1,0 +1,12 @@
+{
+  "number": "876",
+  "title_cn": "链表的中间结点",
+  "title_en": "Middle of the Linked List",
+  "slug": "middle-of-the-linked-list",
+  "difficulty": "Easy",
+  "description": "给你单链表的头结点 head ，请你找出并返回链表的中间结点。\n\n如果有两个中间结点，则返回第二个中间结点。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,2,3,4,5]\n输出：[3,4,5]\n解释：链表只有一个中间结点，值为 3 。\n\n示例 2：\n\n输入：head = [1,2,3,4,5,6]\n输出：[4,5,6]\n解释：该链表有两个中间结点，值分别为 3 和 4 ，返回第二个结点。\n\n&nbsp;\n\n提示：\n\n\t链表的结点数范围是 [1, 100]\n\t1 <= Node.val <= 100",
+  "constraints": [
+    "链表的结点数范围是 [1, 100]",
+    "1 <= Node.val <= 100"
+  ]
+}

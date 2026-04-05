@@ -1,0 +1,13 @@
+{
+  "number": "1812",
+  "title_cn": "判断国际象棋棋盘中一个格子的颜色",
+  "title_en": "Determine Color of a Chessboard Square",
+  "slug": "determine-color-of-a-chessboard-square",
+  "difficulty": "Easy",
+  "description": "给你一个坐标 coordinates ，它是一个字符串，表示国际象棋棋盘中一个格子的坐标。下图是国际象棋棋盘示意图。\n\n如果所给格子的颜色是白色，请你返回 true，如果是黑色，请返回 false 。\n\n给定坐标一定代表国际象棋棋盘上一个存在的格子。坐标第一个字符是字母，第二个字符是数字。\n\n示例 1：\n\n输入：coordinates = \"a1\"\n输出：false\n解释：如上图棋盘所示，\"a1\" 坐标的格子是黑色的，所以返回 false 。\n\n示例 2：\n\n输入：coordinates = \"h3\"\n输出：true\n解释：如上图棋盘所示，\"h3\" 坐标的格子是白色的，所以返回 true 。\n\n示例 3：\n\n输入：coordinates = \"c7\"\n输出：false\n\n提示：\n\n\tcoordinates.length == 2\n\t'a' \n\t'1'",
+  "constraints": [
+    "coordinates.length == 2",
+    "'a'",
+    "'1'"
+  ]
+}

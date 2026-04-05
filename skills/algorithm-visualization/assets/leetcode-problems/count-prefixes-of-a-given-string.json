@@ -1,0 +1,13 @@
+{
+  "number": "2255",
+  "title_cn": "统计是给定字符串前缀的字符串数目",
+  "title_en": "Count Prefixes of a Given String",
+  "slug": "count-prefixes-of-a-given-string",
+  "difficulty": "Easy",
+  "description": "给你一个字符串数组&nbsp;words&nbsp;和一个字符串&nbsp;s&nbsp;，其中&nbsp;words[i] 和&nbsp;s&nbsp;只包含 小写英文字母&nbsp;。\n\n请你返回 words&nbsp;中是字符串 s&nbsp;前缀&nbsp;的 字符串数目&nbsp;。\n\n一个字符串的 前缀&nbsp;是出现在字符串开头的子字符串。子字符串&nbsp;是一个字符串中的连续一段字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"a\",\"b\",\"c\",\"ab\",\"bc\",\"abc\"], s = \"abc\"\n输出：3\n解释：\nwords 中是 s = \"abc\" 前缀的字符串为：\n\"a\" ，\"ab\" 和 \"abc\" 。\n所以 words 中是字符串 s 前缀的字符串数目为 3 。\n\n示例 2：\n\n输入：words = [\"a\",\"a\"], s = \"aa\"\n输出：2\n解释：\n两个字符串都是 s 的前缀。\n注意，相同的字符串可能在 words 中出现多次，它们应该被计数多次。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 1000\n\t1 <= words[i].length, s.length <= 10\n\twords[i] 和&nbsp;s&nbsp;只&nbsp;包含小写英文字母。",
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length, s.length <= 10",
+    "words[i] 和&nbsp;s&nbsp;只&nbsp;包含小写英文字母。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2365",
+  "title_cn": "任务调度器 II",
+  "title_en": "Task Scheduler II",
+  "slug": "task-scheduler-ii",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的正整数数组&nbsp;tasks&nbsp;，表示需要 按顺序&nbsp;完成的任务，其中&nbsp;tasks[i]&nbsp;表示第&nbsp;i&nbsp;件任务的 类型&nbsp;。\n\n同时给你一个正整数&nbsp;space&nbsp;，表示一个任务完成&nbsp;后&nbsp;，另一个&nbsp;相同&nbsp;类型任务完成前需要间隔的&nbsp;最少&nbsp;天数。\n\n在所有任务完成前的每一天，你都必须进行以下两种操作中的一种：\n\n\t完成&nbsp;tasks&nbsp;中的下一个任务\n\t休息一天\n\n请你返回完成所有任务所需的 最少&nbsp;天数。\n\n&nbsp;\n\n示例 1：\n\n输入：tasks = [1,2,1,2,3,1], space = 3\n输出：9\n解释：\n9 天完成所有任务的一种方法是：\n第 1 天：完成任务 0 。\n第 2 天：完成任务 1 。\n第 3 天：休息。\n第 4 天：休息。\n第 5 天：完成任务 2 。\n第 6 天：完成任务 3 。\n第 7 天：休息。\n第 8 天：完成任务 4 。\n第 9 天：完成任务 5 。\n可以证明无法少于 9 天完成所有任务。\n\n示例 2：\n\n输入：tasks = [5,8,8,5], space = 2\n输出：6\n解释：\n6 天完成所有任务的一种方法是：\n第 1 天：完成任务 0 。\n第 2 天：完成任务 1 。\n第 3 天：休息。\n第 4 天：休息。\n第 5 天：完成任务 2 。\n第 6 天：完成任务 3 。\n可以证明无法少于 6 天完成所有任务。\n\n&nbsp;\n\n提示：\n\n\t1 <= tasks.length <= 105\n\t1 <= tasks[i] <= 109\n\t1 <= space <= tasks.length",
+  "constraints": [
+    "1 <= tasks.length <= 105",
+    "1 <= tasks[i] <= 109",
+    "1 <= space <= tasks.length"
+  ]
+}

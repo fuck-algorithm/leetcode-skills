@@ -1,0 +1,14 @@
+{
+  "number": "3161",
+  "title_cn": "物块放置查询",
+  "title_en": "Block Placement Queries",
+  "slug": "block-placement-queries",
+  "difficulty": "Hard",
+  "description": "有一条无限长的数轴，原点在 0 处，沿着 x 轴 正&nbsp;方向无限延伸。\n\n给你一个二维数组&nbsp;queries&nbsp;，它包含两种操作：\n\n\t操作类型 1 ：queries[i] = [1, x]&nbsp;。在距离原点 x&nbsp;处建一个障碍物。数据保证当操作执行的时候，位置 x&nbsp;处 没有&nbsp;任何障碍物。\n\t操作类型 2 ：queries[i] = [2, x, sz]&nbsp;。判断在数轴范围&nbsp;[0, x]&nbsp;内是否可以放置一个长度为&nbsp;sz&nbsp;的物块，这个物块需要&nbsp;完全&nbsp;放置在范围&nbsp;[0, x]&nbsp;内。如果物块与任何障碍物有重合，那么这个物块&nbsp;不能&nbsp;被放置，但物块可以与障碍物刚好接触。注意，你只是进行查询，并&nbsp;不是&nbsp;真的放置这个物块。每个查询都是相互独立的。\n\n请你返回一个 boolean 数组results&nbsp;，如果第&nbsp;i 个操作类型 2 的操作你可以放置物块，那么&nbsp;results[i]&nbsp;为&nbsp;true&nbsp;，否则为 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：queries = [[1,2],[2,3,3],[2,3,1],[2,2,2]]\n\n输出：[false,true,true]\n\n解释：\n\n查询 0 ，在&nbsp;x = 2&nbsp;处放置一个障碍物。在&nbsp;x = 3&nbsp;之前任何大小不超过 2 的物块都可以被放置。\n\n示例 2：\n\n输入：queries = [[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]\n\n输出：[true,true,false]\n\n解释：\n\n\t查询 0 在&nbsp;x = 7&nbsp;处放置一个障碍物。在&nbsp;x = 7&nbsp;之前任何大小不超过 7 的物块都可以被放置。\n\t查询 2 在&nbsp;x = 2&nbsp;处放置一个障碍物。现在，在&nbsp;x = 7&nbsp;之前任何大小不超过 5 的物块可以被放置，x = 2&nbsp;之前任何大小不超过 2 的物块可以被放置。\n\n&nbsp;\n\n提示：\n\n\t1 <= queries.length <= 15 * 104\n\t2 <= queries[i].length <= 3\n\t1 <= queries[i][0] <= 2\n\t1 <= x, sz <= min(5 * 104, 3 * queries.length)\n\t输入保证操作 1 中，x&nbsp;处不会有障碍物。\n\t输入保证至少有一个操作类型 2 。",
+  "constraints": [
+    "1 <= queries.length <= 15 * 104",
+    "2 <= queries[i].length <= 3",
+    "1 <= queries[i][0] <= 2",
+    "1 <= x, sz <= min(5 * 104, 3 * queries.length)"
+  ]
+}

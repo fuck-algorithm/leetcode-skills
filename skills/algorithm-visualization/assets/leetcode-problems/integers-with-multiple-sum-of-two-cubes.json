@@ -1,0 +1,11 @@
+{
+  "number": "101030",
+  "title_cn": "可由多种立方和构造的整数",
+  "title_en": "Integers With Multiple Sum of Two Cubes",
+  "slug": "integers-with-multiple-sum-of-two-cubes",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n。\n\n当存在&nbsp;至少&nbsp;两组不同的整数对 (a, b) 满足以下条件时，整数 x 被称为&nbsp;好整数：\n\n\ta 和 b 是正整数。\n\ta <= b\n\tx = a3 + b3\n\n返回一个数组，其中包含所有小于等于 n 的好整数，并按升序排序。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 4104\n\n输出： [1729,4104]\n\n解释：\n\n在小于等于 4104 的整数中，好整数包括：\n\n\t1729：13 + 123 = 1729，以及 93 + 103 = 1729。\n\t4104：23 + 163 = 4104，以及 93 + 153 = 4104。\n\n因此，答案是 [1729, 4104]。\n\n示例 2：\n\n输入： n = 578\n\n输出： []\n\n解释：\n\n不存在小于等于 578 的好整数，因此答案是空数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 109",
+  "constraints": [
+    "1 <= n <= 109"
+  ]
+}

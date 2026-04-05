@@ -1,0 +1,11 @@
+{
+  "number": "2507",
+  "title_cn": "使用质因数之和替换后可以取到的最小值",
+  "title_en": "Smallest Value After Replacing With Sum of Prime Factors",
+  "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+  "difficulty": "Medium",
+  "description": "给你一个正整数 n 。\n\n请你将 n 的值替换为 n 的 质因数 之和，重复这一过程。\n\n\t注意，如果 n 能够被某个质因数多次整除，则在求和时，应当包含这个质因数同样次数。\n\n返回 n 可以取到的最小值。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 15\n输出：5\n解释：最开始，n = 15 。\n15 = 3 * 5 ，所以 n 替换为 3 + 5 = 8 。\n8 = 2 * 2 * 2 ，所以 n 替换为 2 + 2 + 2 = 6 。\n6 = 2 * 3 ，所以 n 替换为 2 + 3 = 5 。\n5 是 n 可以取到的最小值。\n\n示例 2：\n\n输入：n = 3\n输出：3\n解释：最开始，n = 3 。\n3 是 n 可以取到的最小值。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 105",
+  "constraints": [
+    "2 <= n <= 105"
+  ]
+}

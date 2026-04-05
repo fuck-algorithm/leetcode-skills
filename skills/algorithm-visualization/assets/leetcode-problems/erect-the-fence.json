@@ -1,0 +1,9 @@
+{
+  "number": "587",
+  "title_cn": "安装栅栏",
+  "title_en": "Erect the Fence",
+  "slug": "erect-the-fence",
+  "difficulty": "Hard",
+  "description": "给定一个数组 trees，其中 trees[i] = [xi, yi] 表示树在花园中的位置。\n\n你被要求用最短长度的绳子把整个花园围起来，因为绳子很贵。只有把&nbsp;所有的树都围起来，花园才围得很好。\n\n返回恰好位于围栏周边的树木的坐标。\n\n示例 1:\n\n输入: points = [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]]\n输出: [[1,1],[2,0],[3,3],[2,4],[4,2]]\n\n示例 2:\n\n输入: points = [[1,2],[2,2],[4,2]]\n输出: [[4,2],[2,2],[1,2]]\n\n&nbsp;\n\n注意:\n\n\t1 <= points.length <= 3000\n\tpoints[i].length == 2\n\t0 <= xi, yi&nbsp;<= 100\n\n\t所有给定的点都是&nbsp;唯一&nbsp;的。",
+  "constraints": []
+}

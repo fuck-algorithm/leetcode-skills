@@ -1,0 +1,15 @@
+{
+  "number": "1478",
+  "title_cn": "安排邮筒",
+  "title_en": "Allocate Mailboxes",
+  "slug": "allocate-mailboxes",
+  "difficulty": "Hard",
+  "description": "给你一个房屋数组houses&nbsp;和一个整数&nbsp;k&nbsp;，其中&nbsp;houses[i]&nbsp;是第 i&nbsp;栋房子在一条街上的位置，现需要在这条街上安排 k&nbsp;个邮筒。\n\n请你返回每栋房子与离它最近的邮筒之间的距离的 最小 总和。\n\n答案保证在 32 位有符号整数范围以内。\n\n&nbsp;\n\n示例 1：\n\n输入：houses = [1,4,8,10,20], k = 3\n输出：5\n解释：将邮筒分别安放在位置 3， 9 和 20 处。\n每个房子到最近邮筒的距离和为 |3-1| + |4-3| + |9-8| + |10-9| + |20-20| = 5 。\n\n示例 2：\n\n输入：houses = [2,3,5,12,18], k = 2\n输出：9\n解释：将邮筒分别安放在位置 3 和 14 处。\n每个房子到最近邮筒距离和为 |2-3| + |3-3| + |5-3| + |12-14| + |18-14| = 9 。\n\n示例 3：\n\n输入：houses = [7,4,6,1], k = 1\n输出：8\n\n示例 4：\n\n输入：houses = [3,6,14,10], k = 4\n输出：0\n\n&nbsp;\n\n提示：\n\n\tn == houses.length\n\t1 <= n&nbsp;<= 100\n\t1 <= houses[i] <= 10^4\n\t1 <= k <= n\n\t数组&nbsp;houses&nbsp;中的整数互不相同。",
+  "constraints": [
+    "n == houses.length",
+    "1 <= n&nbsp;<= 100",
+    "1 <= houses[i] <= 10^4",
+    "1 <= k <= n",
+    "数组&nbsp;houses&nbsp;中的整数互不相同。"
+  ]
+}

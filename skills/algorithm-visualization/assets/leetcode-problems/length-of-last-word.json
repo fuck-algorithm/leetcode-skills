@@ -1,0 +1,13 @@
+{
+  "number": "58",
+  "title_cn": "最后一个单词的长度",
+  "title_en": "Length of Last Word",
+  "slug": "length-of-last-word",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。\n\n单词 是指仅由字母组成、不包含任何空格字符的最大子字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"Hello World\"\n输出：5\n解释：最后一个单词是“World”，长度为 5。\n\n示例 2：\n\n输入：s = \"   fly me   to   the moon  \"\n输出：4\n解释：最后一个单词是“moon”，长度为 4。\n\n示例 3：\n\n输入：s = \"luffy is still joyboy\"\n输出：6\n解释：最后一个单词是长度为 6 的“joyboy”。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts 仅有英文字母和空格 ' ' 组成\n\ts 中至少存在一个单词",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s 仅有英文字母和空格 ' ' 组成",
+    "s 中至少存在一个单词"
+  ]
+}

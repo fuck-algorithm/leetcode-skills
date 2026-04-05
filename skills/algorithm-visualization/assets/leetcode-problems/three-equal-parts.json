@@ -1,0 +1,12 @@
+{
+  "number": "927",
+  "title_cn": "三等分",
+  "title_en": "Three Equal Parts",
+  "slug": "three-equal-parts",
+  "difficulty": "Hard",
+  "description": "给定一个由 0 和 1 组成的数组&nbsp;arr&nbsp;，将数组分成 &nbsp;3&nbsp;个非空的部分 ，使得所有这些部分表示相同的二进制值。\n\n如果可以做到，请返回任何&nbsp;[i, j]，其中 i+1 < j，这样一来：\n\n\tarr[0], arr[1], ..., arr[i]&nbsp;为第一部分；\n\tarr[i + 1], arr[i + 2], ..., arr[j - 1]&nbsp;为第二部分；\n\tarr[j], arr[j + 1], ..., arr[arr.length - 1]&nbsp;为第三部分。\n\t这三个部分所表示的二进制值相等。\n\n如果无法做到，就返回&nbsp;[-1, -1]。\n\n注意，在考虑每个部分所表示的二进制时，应当将其看作一个整体。例如，[1,1,0]&nbsp;表示十进制中的&nbsp;6，而不会是&nbsp;3。此外，前导零也是被允许的，所以&nbsp;[0,1,1] 和&nbsp;[1,1]&nbsp;表示相同的值。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,0,1,0,1]\n输出：[0,3]\n\n示例 2：\n\n输入：arr = [1,1,0,1,1]\n输出：[-1,-1]\n\n示例 3:\n\n输入：arr = [1,1,0,0,1]\n输出：[0,2]\n\n&nbsp;\n\n提示：\n\n\t3 <= arr.length <= 3 * 104\n\tarr[i]&nbsp;是&nbsp;0&nbsp;或&nbsp;1",
+  "constraints": [
+    "3 <= arr.length <= 3 * 104",
+    "arr[i]&nbsp;是&nbsp;0&nbsp;或&nbsp;1"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3084",
+  "title_cn": "统计以给定字符开头和结尾的子字符串总数",
+  "title_en": "Count Substrings Starting and Ending with Given Character",
+  "slug": "count-substrings-starting-and-ending-with-given-character",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个字符 c 。返回在字符串 s 中并且以 c 字符开头和结尾的非空子字符串的总数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abada\", c = \"a\"\n\n输出：6\n\n解释：以 \"a\" 开头和结尾的子字符串有： \"abada\"、\"abada\"、\"abada\"、\"abada\"、\"abada\"、\"abada\"。\n\n示例 2：\n\n输入：s = \"zzz\", c = \"z\"\n\n输出：6\n\n解释：字符串 s 中总共有 6 个子字符串，并且它们都以 \"z\" 开头和结尾。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 和 c 均由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 和 c 均由小写英文字母组成。"
+  ]
+}

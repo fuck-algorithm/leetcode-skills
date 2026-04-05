@@ -1,0 +1,13 @@
+{
+  "number": "1616",
+  "title_cn": "分割两个字符串得到回文串",
+  "title_en": "Split Two Strings to Make Palindrome",
+  "slug": "split-two-strings-to-make-palindrome",
+  "difficulty": "Medium",
+  "description": "给你两个字符串&nbsp;a 和&nbsp;b&nbsp;，它们长度相同。请你选择一个下标，将两个字符串都在&nbsp;相同的下标 分割开。由&nbsp;a&nbsp;可以得到两个字符串：&nbsp;aprefix&nbsp;和&nbsp;asuffix&nbsp;，满足&nbsp;a = aprefix + asuffix&nbsp;，同理，由&nbsp;b 可以得到两个字符串&nbsp;bprefix 和&nbsp;bsuffix&nbsp;，满足&nbsp;b = bprefix + bsuffix&nbsp;。请你判断&nbsp;aprefix + bsuffix 或者&nbsp;bprefix + asuffix&nbsp;能否构成回文串。\n\n当你将一个字符串&nbsp;s&nbsp;分割成&nbsp;sprefix 和&nbsp;ssuffix&nbsp;时，&nbsp;ssuffix 或者&nbsp;sprefix 可以为空。比方说，&nbsp;s = \"abc\"&nbsp;那么&nbsp;\"\" + \"abc\"&nbsp;，&nbsp;\"a\" + \"bc\"&nbsp;，&nbsp;\"ab\" + \"c\"&nbsp;和&nbsp;\"abc\" + \"\"&nbsp;都是合法分割。\n\n如果 能构成回文字符串 ，那么请返回&nbsp;true，否则返回&nbsp;false&nbsp;。\n\n注意，&nbsp;x + y&nbsp;表示连接字符串&nbsp;x 和&nbsp;y&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：a = \"x\", b = \"y\"\n输出：true\n解释：如果 a 或者 b 是回文串，那么答案一定为 true ，因为你可以如下分割：\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\n那么 aprefix + bsuffix = \"\" + \"y\" = \"y\" 是回文串。\n\n示例 2：\n\n输入：a = \"xbdef\", b = \"xecab\"\n输出：false\n\n示例 3：\n\n输入：a = \"ulacfd\", b = \"jizalu\"\n输出：true\n解释：在下标为 3 处分割：\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\n那么 aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\" 是回文串。\n\n&nbsp;\n\n提示：\n\n\t1 <= a.length, b.length <= 105\n\ta.length == b.length\n\ta 和&nbsp;b&nbsp;都只包含小写英文字母",
+  "constraints": [
+    "1 <= a.length, b.length <= 105",
+    "a.length == b.length",
+    "a 和&nbsp;b&nbsp;都只包含小写英文字母"
+  ]
+}

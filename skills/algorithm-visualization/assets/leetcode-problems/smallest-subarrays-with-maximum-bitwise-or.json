@@ -1,0 +1,13 @@
+{
+  "number": "2411",
+  "title_cn": "按位或最大的最小子数组长度",
+  "title_en": "Smallest Subarrays With Maximum Bitwise OR",
+  "slug": "smallest-subarrays-with-maximum-bitwise-or",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n&nbsp;下标从 0&nbsp;开始的数组&nbsp;nums&nbsp;，数组中所有数字均为非负整数。对于&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;之间的每一个下标 i&nbsp;，你需要找出&nbsp;nums&nbsp;中一个 最小 非空子数组，它的起始位置为&nbsp;i&nbsp;（包含这个位置），同时有&nbsp;最大&nbsp;的 按位或运算值&nbsp;。\n\n\t换言之，令&nbsp;Bij&nbsp;表示子数组&nbsp;nums[i...j]&nbsp;的按位或运算的结果，你需要找到一个起始位置为&nbsp;i&nbsp;的最小子数组，这个子数组的按位或运算的结果等于&nbsp;max(Bik)&nbsp;，其中&nbsp;i <= k <= n - 1&nbsp;。\n\n一个数组的按位或运算值是这个数组里所有数字按位或运算的结果。\n\n请你返回一个大小为 n&nbsp;的整数数组&nbsp;answer，其中&nbsp;answer[i]是开始位置为&nbsp;i&nbsp;，按位或运算结果最大，且&nbsp;最短&nbsp;子数组的长度。\n\n子数组&nbsp;是数组里一段连续非空元素组成的序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,0,2,1,3]\n输出：[3,3,2,2,1]\n解释：\n任何位置开始，最大按位或运算的结果都是 3 。\n- 下标 0 处，能得到结果 3 的最短子数组是 [1,0,2] 。\n- 下标 1 处，能得到结果 3 的最短子数组是 [0,2,1] 。\n- 下标 2 处，能得到结果 3 的最短子数组是 [2,1] 。\n- 下标 3 处，能得到结果 3 的最短子数组是 [1,3] 。\n- 下标 4 处，能得到结果 3 的最短子数组是 [3] 。\n所以我们返回 [3,3,2,2,1] 。\n\n示例 2：\n\n输入：nums = [1,2]\n输出：[2,1]\n解释：\n下标 0 处，能得到最大按位或运算值的最短子数组长度为 2 。\n下标 1 处，能得到最大按位或运算值的最短子数组长度为 1 。\n所以我们返回 [2,1] 。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 105\n\t0 <= nums[i] <= 109",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 105",
+    "0 <= nums[i] <= 109"
+  ]
+}

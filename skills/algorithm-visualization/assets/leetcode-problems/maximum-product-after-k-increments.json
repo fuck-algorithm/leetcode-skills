@@ -1,0 +1,12 @@
+{
+  "number": "2233",
+  "title_cn": "K 次增加后的最大乘积",
+  "title_en": "Maximum Product After K Increments",
+  "slug": "maximum-product-after-k-increments",
+  "difficulty": "Medium",
+  "description": "给你一个非负整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。每次操作，你可以选择&nbsp;nums&nbsp;中 任一&nbsp;元素并将它 增加&nbsp;1&nbsp;。\n\n请你返回 至多&nbsp;k&nbsp;次操作后，能得到的&nbsp;nums的&nbsp;最大乘积&nbsp;。由于答案可能很大，请你将答案对&nbsp;109 + 7&nbsp;取余后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,4], k = 5\n输出：20\n解释：将第一个数增加 5 次。\n得到 nums = [5, 4] ，乘积为 5 * 4 = 20 。\n可以证明 20 是能得到的最大乘积，所以我们返回 20 。\n存在其他增加 nums 的方法，也能得到最大乘积。\n\n示例 2：\n\n输入：nums = [6,3,3,2], k = 2\n输出：216\n解释：将第二个数增加 1 次，将第四个数增加 1 次。\n得到 nums = [6, 4, 3, 3] ，乘积为 6 * 4 * 3 * 3 = 216 。\n可以证明 216 是能得到的最大乘积，所以我们返回 216 。\n存在其他增加 nums 的方法，也能得到最大乘积。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length, k <= 105\n\t0 <= nums[i] <= 106",
+  "constraints": [
+    "1 <= nums.length, k <= 105",
+    "0 <= nums[i] <= 106"
+  ]
+}

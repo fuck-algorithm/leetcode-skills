@@ -1,0 +1,12 @@
+{
+  "number": "29",
+  "title_cn": "两数相除",
+  "title_en": "Divide Two Integers",
+  "slug": "divide-two-integers",
+  "difficulty": "Medium",
+  "description": "给你两个整数，被除数&nbsp;dividend&nbsp;和除数&nbsp;divisor。将两数相除，要求 不使用 乘法、除法和取余运算。\n\n整数除法应该向零截断，也就是截去（truncate）其小数部分。例如，8.345 将被截断为 8 ，-2.7335 将被截断至 -2 。\n\n返回被除数&nbsp;dividend&nbsp;除以除数&nbsp;divisor&nbsp;得到的 商 。\n\n注意：假设我们的环境只能存储 32 位 有符号整数，其数值范围是 [−231,&nbsp; 231&nbsp;− 1] 。本题中，如果商 严格大于 231&nbsp;− 1 ，则返回 231&nbsp;− 1 ；如果商 严格小于 -231 ，则返回 -231 。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: dividend = 10, divisor = 3\n输出: 3\n解释: 10/3 = 3.33333.. ，向零截断后得到 3 。\n\n示例&nbsp;2:\n\n输入: dividend = 7, divisor = -3\n输出: -2\n解释: 7/-3 = -2.33333.. ，向零截断后得到 -2 。\n\n&nbsp;\n\n提示：\n\n\t-231 <= dividend, divisor <= 231 - 1\n\tdivisor != 0",
+  "constraints": [
+    "-231 <= dividend, divisor <= 231 - 1",
+    "divisor != 0"
+  ]
+}

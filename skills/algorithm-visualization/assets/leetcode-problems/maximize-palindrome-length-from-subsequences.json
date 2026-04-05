@@ -1,0 +1,12 @@
+{
+  "number": "1771",
+  "title_cn": "由子序列构造的最长回文串的长度",
+  "title_en": "Maximize Palindrome Length From Subsequences",
+  "slug": "maximize-palindrome-length-from-subsequences",
+  "difficulty": "Hard",
+  "description": "给你两个字符串 word1 和 word2 ，请你按下述方法构造一个字符串：\n\n\t从 word1 中选出某个 非空 子序列 subsequence1 。\n\t从 word2 中选出某个 非空 子序列 subsequence2 。\n\t连接两个子序列 subsequence1 + subsequence2 ，得到字符串。\n\n返回可按上述方法构造的最长 回文串 的 长度 。如果无法构造回文串，返回 0 。\n\n字符串 s 的一个 子序列 是通过从 s 中删除一些（也可能不删除）字符而不更改其余字符的顺序生成的字符串。\n\n回文串 是正着读和反着读结果一致的字符串。\n\n示例 1：\n\n输入：word1 = \"cacb\", word2 = \"cbba\"\n输出：5\n解释：从 word1 中选出 \"ab\" ，从 word2 中选出 \"cba\" ，得到回文串 \"abcba\" 。\n\n示例 2：\n\n输入：word1 = \"ab\", word2 = \"ab\"\n输出：3\n解释：从 word1 中选出 \"ab\" ，从 word2 中选出 \"a\" ，得到回文串 \"aba\" 。\n\n示例 3：\n\n输入：word1 = \"aa\", word2 = \"bb\"\n输出：0\n解释：无法按题面所述方法构造回文串，所以返回 0 。\n\n提示：\n\n\t1 <= word1.length, word2.length <= 1000\n\tword1 和 word2 由小写英文字母组成",
+  "constraints": [
+    "1 <= word1.length, word2.length <= 1000",
+    "word1 和 word2 由小写英文字母组成"
+  ]
+}

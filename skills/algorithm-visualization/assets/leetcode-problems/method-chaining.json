@@ -1,0 +1,9 @@
+{
+  "number": "2891",
+  "title_cn": "方法链",
+  "title_en": "Method Chaining",
+  "slug": "method-chaining",
+  "difficulty": "Easy",
+  "description": "DataFrame animals\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| name        | object |\n| species     | object |\n| age         | int    |\n| weight      | int    |\n+-------------+--------+\n\n编写一个解决方案来列出体重 严格超过&nbsp;&nbsp;100&nbsp; 千克的动物的名称。\n\n按体重 降序 返回动物。\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\nDataFrame animals:\n+----------+---------+-----+--------+\n| name     | species | age | weight |\n+----------+---------+-----+--------+\n| Tatiana  | Snake   | 98  | 464    |\n| Khaled   | Giraffe | 50  | 41     |\n| Alex     | Leopard | 6   | 328    |\n| Jonathan | Monkey  | 45  | 463    |\n| Stefan   | Bear    | 100 | 50     |\n| Tommy    | Panda   | 26  | 349    |\n+----------+---------+-----+--------+\n输出：\n+----------+\n| name     |\n+----------+\n| Tatiana  |\n| Jonathan |\n| Tommy    |\n| Alex     |\n+----------+\n解释：\n所有体重超过 100 的动物都应包含在结果表中。\nTatiana 的体重为 464，Jonathan 的体重为 463，Tommy 的体重为 349，Alex 的体重为 328。\n结果应按体重降序排序。\n\n&nbsp;\n\n在 Pandas 中，方法链 允许我们在 DataFrame 上执行操作，而无需将每个操作拆分成单独的行或创建多个临时变量。\n\n你能用 一行 代码的方法链完成这个任务吗？",
+  "constraints": []
+}

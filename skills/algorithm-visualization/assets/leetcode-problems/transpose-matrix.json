@@ -1,0 +1,15 @@
+{
+  "number": "867",
+  "title_cn": "转置矩阵",
+  "title_en": "Transpose Matrix",
+  "slug": "transpose-matrix",
+  "difficulty": "Easy",
+  "description": "给你一个二维整数数组 matrix， 返回 matrix 的 转置矩阵 。\n\n矩阵的 转置 是指将矩阵的主对角线翻转，交换矩阵的行索引与列索引。\n\n示例 1：\n\n输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]\n输出：[[1,4,7],[2,5,8],[3,6,9]]\n\n示例 2：\n\n输入：matrix = [[1,2,3],[4,5,6]]\n输出：[[1,4],[2,5],[3,6]]\n\n提示：\n\n\tm == matrix.length\n\tn == matrix[i].length\n\t1 \n\t1 5\n\t-109 9",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1",
+    "1 5",
+    "-109 9"
+  ]
+}

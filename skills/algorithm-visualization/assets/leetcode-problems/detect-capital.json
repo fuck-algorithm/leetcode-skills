@@ -1,0 +1,12 @@
+{
+  "number": "520",
+  "title_cn": "检测大写字母",
+  "title_en": "Detect Capital",
+  "slug": "detect-capital",
+  "difficulty": "Easy",
+  "description": "我们定义，在以下情况时，单词的大写用法是正确的：\n\n\t全部字母都是大写，比如 \"USA\" 。\n\t所有字母都不是大写，比如 \"leetcode\" 。\n\t只有首字母大写，&nbsp;比如&nbsp;\"Google\" 。\n\n给你一个字符串 word 。如果大写用法正确，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"USA\"\n输出：true\n\n示例 2：\n\n输入：word = \"FlaG\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 100\n\tword 由小写和大写英文字母组成",
+  "constraints": [
+    "1 <= word.length <= 100",
+    "word 由小写和大写英文字母组成"
+  ]
+}

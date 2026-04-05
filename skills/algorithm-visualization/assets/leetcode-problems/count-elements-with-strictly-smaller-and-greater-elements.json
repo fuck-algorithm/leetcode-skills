@@ -1,0 +1,12 @@
+{
+  "number": "2148",
+  "title_cn": "元素计数",
+  "title_en": "Count Elements With Strictly Smaller and Greater Elements ",
+  "slug": "count-elements-with-strictly-smaller-and-greater-elements",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums ，统计并返回在 nums 中同时至少具有一个严格较小元素和一个严格较大元素的元素数目。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [11,7,2,15]\n输出：2\n解释：元素 7 ：严格较小元素是元素 2 ，严格较大元素是元素 11 。\n元素 11 ：严格较小元素是元素 7 ，严格较大元素是元素 15 。\n总计有 2 个元素都满足在 nums 中同时存在一个严格较小元素和一个严格较大元素。\n\n示例 2：\n\n输入：nums = [-3,3,3,90]\n输出：2\n解释：元素 3 ：严格较小元素是元素 -3 ，严格较大元素是元素 90 。\n由于有两个元素的值为 3 ，总计有 2 个元素都满足在 nums 中同时存在一个严格较小元素和一个严格较大元素。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t-105 <= nums[i] <= 105",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "-105 <= nums[i] <= 105"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "730",
+  "title_cn": "统计不同回文子序列",
+  "title_en": "Count Different Palindromic Subsequences",
+  "slug": "count-different-palindromic-subsequences",
+  "difficulty": "Hard",
+  "description": "给你一个字符串 s ，返回 s&nbsp;中不同的非空回文子序列个数 。由于答案可能很大，请返回对 109 + 7 取余 的结果。\n\n字符串的子序列可以经由字符串删除 0 个或多个字符获得。\n\n如果一个序列与它反转后的序列一致，那么它是回文序列。\n\n如果存在某个 i , 满足&nbsp;ai&nbsp;!= bi&nbsp;，则两个序列&nbsp;a1, a2, ...&nbsp;和&nbsp;b1, b2, ...&nbsp;不同。\n\n&nbsp;\n\n示例 1：\n\n输入：s = 'bccb'\n输出：6\n解释：6 个不同的非空回文子字符序列分别为：'b', 'c', 'bb', 'cc', 'bcb', 'bccb'。\n注意：'bcb' 虽然出现两次但仅计数一次。\n\n示例 2：\n\n输入：s = 'abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba'\n输出：104860361\n解释：共有 3104860382 个不同的非空回文子序列，104860361 是对 109 + 7 取余后的值。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts[i]&nbsp;仅包含&nbsp;'a',&nbsp;'b',&nbsp;'c'&nbsp;或&nbsp;'d'&nbsp;",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i]&nbsp;仅包含&nbsp;'a',&nbsp;'b',&nbsp;'c'&nbsp;或&nbsp;'d'&nbsp;"
+  ]
+}

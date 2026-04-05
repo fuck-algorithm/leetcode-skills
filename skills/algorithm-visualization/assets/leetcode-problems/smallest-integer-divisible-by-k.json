@@ -1,0 +1,11 @@
+{
+  "number": "1015",
+  "title_cn": "可被 K 整除的最小整数",
+  "title_en": "Smallest Integer Divisible by K",
+  "slug": "smallest-integer-divisible-by-k",
+  "difficulty": "Medium",
+  "description": "给定正整数 k&nbsp;，你需要找出可以被 k&nbsp;整除的、仅包含数字 1 的最 小 正整数 n&nbsp;的长度。\n\n返回 n&nbsp;的长度。如果不存在这样的 n&nbsp;，就返回-1。\n\n注意： n 可能不符合 64 位带符号整数。\n\n&nbsp;\n\n示例 1：\n\n输入：k = 1\n输出：1\n解释：最小的答案是 n = 1，其长度为 1。\n\n示例 2：\n\n输入：k = 2\n输出：-1\n解释：不存在可被 2 整除的正整数 n 。\n\n示例 3：\n\n输入：k = 3\n输出：3\n解释：最小的答案是 n = 111，其长度为 3。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= 105",
+  "constraints": [
+    "1 <= k <= 105"
+  ]
+}

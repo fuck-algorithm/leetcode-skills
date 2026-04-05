@@ -1,0 +1,13 @@
+{
+  "number": "1309",
+  "title_cn": "解码字母到整数映射",
+  "title_en": "Decrypt String from Alphabet to Integer Mapping",
+  "slug": "decrypt-string-from-alphabet-to-integer-mapping",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;s，它由数字（'0' - '9'）和&nbsp;'#'&nbsp;组成。我们希望按下述规则将&nbsp;s&nbsp;映射为一些小写英文字符：\n\n\t字符（'a' - 'i'）分别用（'1' -&nbsp;'9'）表示。\n\t字符（'j' - 'z'）分别用（'10#'&nbsp;-&nbsp;'26#'）表示。&nbsp;\n\n返回映射之后形成的新字符串。\n\n题目数据保证映射始终唯一。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"10#11#12\"\n输出：\"jkab\"\n解释：\"j\" -> \"10#\" , \"k\" -> \"11#\" , \"a\" -> \"1\" , \"b\" -> \"2\".\n\n示例 2：\n\n输入：s = \"1326#\"\n输出：\"acz\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts[i] 只包含数字（'0'-'9'）和&nbsp;'#'&nbsp;字符。\n\ts&nbsp;是映射始终存在的有效字符串。",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i] 只包含数字（'0'-'9'）和&nbsp;'#'&nbsp;字符。",
+    "s&nbsp;是映射始终存在的有效字符串。"
+  ]
+}

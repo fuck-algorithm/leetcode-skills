@@ -1,0 +1,15 @@
+{
+  "number": "598",
+  "title_cn": "区间加法 II",
+  "title_en": "Range Addition II",
+  "slug": "range-addition-ii",
+  "difficulty": "Easy",
+  "description": "给你一个 m x&nbsp;n 的矩阵&nbsp;M 和一个操作数组 op 。矩阵初始化时所有的单元格都为 0 。ops[i] = [ai, bi] 意味着当所有的 0 <= x < ai 和 0 <= y < bi 时， M[x][y] 应该加 1。\n\n在&nbsp;执行完所有操作后&nbsp;，计算并返回&nbsp;矩阵中最大整数的个数&nbsp;。\n\n&nbsp;\n\n示例 1:\n\n输入: m = 3, n = 3，ops = [[2,2],[3,3]]\n输出: 4\n解释: M 中最大的整数是 2, 而且 M 中有4个值为2的元素。因此返回 4。\n\n示例 2:\n\n输入: m = 3, n = 3, ops = [[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]\n输出: 4\n\n示例 3:\n\n输入: m = 3, n = 3, ops = []\n输出: 9\n\n&nbsp;\n\n提示:\n\n\t1 <= m, n <= 4 * 104\n\t0 <= ops.length <= 104\n\tops[i].length == 2\n\t1 <= ai&nbsp;<= m\n\t1 <= bi&nbsp;<= n",
+  "constraints": [
+    "1 <= m, n <= 4 * 104",
+    "0 <= ops.length <= 104",
+    "ops[i].length == 2",
+    "1 <= ai&nbsp;<= m",
+    "1 <= bi&nbsp;<= n"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2486",
+  "title_cn": "追加字符以获得子序列",
+  "title_en": "Append Characters to String to Make Subsequence",
+  "slug": "append-characters-to-string-to-make-subsequence",
+  "difficulty": "Medium",
+  "description": "给你两个仅由小写英文字母组成的字符串 s 和 t 。\n\n现在需要通过向 s 末尾追加字符的方式使 t 变成 s 的一个 子序列 ，返回需要追加的最少字符数。\n\n子序列是一个可以由其他字符串删除部分（或不删除）字符但不改变剩下字符顺序得到的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"coaching\", t = \"coding\"\n输出：4\n解释：向 s 末尾追加字符串 \"ding\" ，s = \"coachingding\" 。\n现在，t 是 s (\"coachingding\") 的一个子序列。\n可以证明向 s 末尾追加任何 3 个字符都无法使 t 成为 s 的一个子序列。\n\n示例 2：\n\n输入：s = \"abcde\", t = \"a\"\n输出：0\n解释：t 已经是 s (\"abcde\") 的一个子序列。\n\n示例 3：\n\n输入：s = \"z\", t = \"abcde\"\n输出：5\n解释：向 s 末尾追加字符串 \"abcde\" ，s = \"zabcde\" 。\n现在，t 是 s (\"zabcde\") 的一个子序列。 \n可以证明向 s 末尾追加任何 4 个字符都无法使 t 成为 s 的一个子序列。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, t.length <= 105\n\ts 和 t 仅由小写英文字母组成",
+  "constraints": [
+    "1 <= s.length, t.length <= 105",
+    "s 和 t 仅由小写英文字母组成"
+  ]
+}

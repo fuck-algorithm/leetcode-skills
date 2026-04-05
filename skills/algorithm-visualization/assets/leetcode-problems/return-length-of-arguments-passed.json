@@ -1,0 +1,12 @@
+{
+  "number": "2703",
+  "title_cn": "返回传递的参数的长度",
+  "title_en": "Return Length of Arguments Passed",
+  "slug": "return-length-of-arguments-passed",
+  "difficulty": "Easy",
+  "description": "请你编写一个函数 argumentsLength，返回传递给该函数的参数数量。\n&nbsp;\n\n示例 1：\n\n输入：args = [5]\n输出：1\n解释：\nargumentsLength(5); // 1\n\n只传递了一个值给函数，因此它应返回 1。\n\n示例 2：\n\n输入：args = [{}, null, \"3\"]\n输出：3\n解释：\nargumentsLength({}, null, \"3\"); // 3\n\n传递了三个值给函数，因此它应返回 3。\n\n&nbsp;\n\n提示：\n\n\targs&nbsp;是一个有效的 JSON 数组\n\t0 <= args.length <= 100",
+  "constraints": [
+    "args&nbsp;是一个有效的 JSON 数组",
+    "0 <= args.length <= 100"
+  ]
+}

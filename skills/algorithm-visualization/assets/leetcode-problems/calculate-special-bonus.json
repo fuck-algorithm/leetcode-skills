@@ -1,0 +1,9 @@
+{
+  "number": "1873",
+  "title_cn": "计算特殊奖金",
+  "title_en": "Calculate Special Bonus",
+  "slug": "calculate-special-bonus",
+  "difficulty": "Easy",
+  "description": "表: Employees\n\n+-------------+---------+\n| 列名        | 类型     |\n+-------------+---------+\n| employee_id | int     |\n| name        | varchar |\n| salary      | int     |\n+-------------+---------+\nemployee_id 是这个表的主键(具有唯一值的列)。\n此表的每一行给出了雇员id ，名字和薪水。\n\n&nbsp;\n\n编写解决方案，计算每个雇员的奖金。如果一个雇员的 id 是 奇数 并且他的名字不是以 'M' 开头，那么他的奖金是他工资的 100% ，否则奖金为 0 。\n\n返回的结果按照&nbsp;employee_id&nbsp;排序。\n\n返回结果格式如下面的例子所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\nEmployees 表:\n+-------------+---------+--------+\n| employee_id | name    | salary |\n+-------------+---------+--------+\n| 2           | Meir    | 3000   |\n| 3           | Michael | 3800   |\n| 7           | Addilyn | 7400   |\n| 8           | Juan    | 6100   |\n| 9           | Kannon  | 7700   |\n+-------------+---------+--------+\n输出：\n+-------------+-------+\n| employee_id | bonus |\n+-------------+-------+\n| 2           | 0     |\n| 3           | 0     |\n| 7           | 7400  |\n| 8           | 0     |\n| 9           | 7700  |\n+-------------+-------+\n解释：\n因为雇员id是偶数，所以雇员id 是2和8的两个雇员得到的奖金是0。\n雇员id为3的因为他的名字以'M'开头，所以，奖金是0。\n其他的雇员得到了百分之百的奖金。",
+  "constraints": []
+}

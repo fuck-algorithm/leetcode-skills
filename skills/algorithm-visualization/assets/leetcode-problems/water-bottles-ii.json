@@ -1,0 +1,12 @@
+{
+  "number": "3100",
+  "title_cn": "换水问题 II",
+  "title_en": "Water Bottles II",
+  "slug": "water-bottles-ii",
+  "difficulty": "Medium",
+  "description": "给你两个整数 numBottles 和 numExchange 。\n\nnumBottles 代表你最初拥有的满水瓶数量。在一次操作中，你可以执行以下操作之一：\n\n\t喝掉任意数量的满水瓶，使它们变成空水瓶。\n\t用 numExchange 个空水瓶交换一个满水瓶。然后，将 numExchange 的值增加 1 。\n\n注意，你不能使用相同的 numExchange 值交换多批空水瓶。例如，如果 numBottles == 3 并且 numExchange == 1 ，则不能用 3 个空水瓶交换成 3 个满水瓶。\n\n返回你 最多 可以喝到多少瓶水。\n\n&nbsp;\n\n示例 1：\n\n输入：numBottles = 13, numExchange = 6\n输出：15\n解释：上表显示了满水瓶的数量、空水瓶的数量、numExchange 的值，以及累计喝掉的水瓶数量。\n\n示例 2：\n\n输入：numBottles = 10, numExchange = 3\n输出：13\n解释：上表显示了满水瓶的数量、空水瓶的数量、numExchange 的值，以及累计喝掉的水瓶数量。\n\n&nbsp;\n\n提示：\n\n\t1 <= numBottles <= 100 \n\t1 <= numExchange <= 100",
+  "constraints": [
+    "1 <= numBottles <= 100",
+    "1 <= numExchange <= 100"
+  ]
+}

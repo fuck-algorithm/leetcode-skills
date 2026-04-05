@@ -1,0 +1,14 @@
+{
+  "number": "2040",
+  "title_cn": "两个有序数组的第 K 小乘积",
+  "title_en": "Kth Smallest Product of Two Sorted Arrays",
+  "slug": "kth-smallest-product-of-two-sorted-arrays",
+  "difficulty": "Hard",
+  "description": "给你两个 从小到大排好序&nbsp;且下标从 0&nbsp;开始的整数数组&nbsp;nums1 和&nbsp;nums2&nbsp;以及一个整数&nbsp;k&nbsp;，请你返回第&nbsp;k&nbsp;（从 1&nbsp;开始编号）小的&nbsp;nums1[i] * nums2[j]&nbsp;的乘积，其中&nbsp;0 <= i < nums1.length 且 0 <= j < nums2.length&nbsp;。\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [2,5], nums2 = [3,4], k = 2\n输出：8\n解释：第 2 小的乘积计算如下：\n- nums1[0] * nums2[0] = 2 * 3 = 6\n- nums1[0] * nums2[1] = 2 * 4 = 8\n第 2 小的乘积为 8 。\n\n示例 2：\n\n输入：nums1 = [-4,-2,0,3], nums2 = [2,4], k = 6\n输出：0\n解释：第 6 小的乘积计算如下：\n- nums1[0] * nums2[1] = (-4) * 4 = -16\n- nums1[0] * nums2[0] = (-4) * 2 = -8\n- nums1[1] * nums2[1] = (-2) * 4 = -8\n- nums1[1] * nums2[0] = (-2) * 2 = -4\n- nums1[2] * nums2[0] = 0 * 2 = 0\n- nums1[2] * nums2[1] = 0 * 4 = 0\n第 6 小的乘积为 0 。\n\n示例 3：\n\n输入：nums1 = [-2,-1,0,1,2], nums2 = [-3,-1,2,4,5], k = 3\n输出：-6\n解释：第 3 小的乘积计算如下：\n- nums1[0] * nums2[4] = (-2) * 5 = -10\n- nums1[0] * nums2[3] = (-2) * 4 = -8\n- nums1[4] * nums2[0] = 2 * (-3) = -6\n第 3 小的乘积为 -6 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums1.length, nums2.length <= 5 * 104\n\t-105 <= nums1[i], nums2[j] <= 105\n\t1 <= k <= nums1.length * nums2.length\n\tnums1 和&nbsp;nums2&nbsp;都是从小到大排好序的。",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 5 * 104",
+    "-105 <= nums1[i], nums2[j] <= 105",
+    "1 <= k <= nums1.length * nums2.length",
+    "nums1 和&nbsp;nums2&nbsp;都是从小到大排好序的。"
+  ]
+}

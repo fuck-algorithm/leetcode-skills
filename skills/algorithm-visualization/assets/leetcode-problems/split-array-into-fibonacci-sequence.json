@@ -1,0 +1,12 @@
+{
+  "number": "842",
+  "title_cn": "将数组拆分成斐波那契序列",
+  "title_en": "Split Array into Fibonacci Sequence",
+  "slug": "split-array-into-fibonacci-sequence",
+  "difficulty": "Medium",
+  "description": "给定一个数字字符串 num，比如 \"123456579\"，我们可以将它分成「斐波那契式」的序列 [123, 456, 579]。\n\n形式上，斐波那契式&nbsp;序列是一个非负整数列表 f，且满足：\n\n\t0 <= f[i] < 231&nbsp;，（也就是说，每个整数都符合 32 位&nbsp;有符号整数类型）\n\tf.length >= 3\n\t对于所有的0 <= i < f.length - 2，都有 f[i] + f[i + 1] = f[i + 2]\n\n另外，请注意，将字符串拆分成小块时，每个块的数字一定不要以零开头，除非这个块是数字 0 本身。\n\n返回从 num 拆分出来的任意一组斐波那契式的序列块，如果不能拆分则返回 []。\n\n&nbsp;\n\n示例 1：\n\n输入：num = \"1101111\"\n输出：[11,0,11,11]\n解释：输出 [110,1,111] 也可以。\n\n示例 2：\n\n输入: num = \"112358130\"\n输出: []\n解释: 无法拆分。\n\n示例 3：\n\n输入：\"0123\"\n输出：[]\n解释：每个块的数字不能以零开头，因此 \"01\"，\"2\"，\"3\" 不是有效答案。\n\n&nbsp;\n\n提示：\n\n\t1 <= num.length <= 200\n\tnum&nbsp;中只含有数字",
+  "constraints": [
+    "1 <= num.length <= 200",
+    "num&nbsp;中只含有数字"
+  ]
+}

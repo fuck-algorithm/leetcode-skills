@@ -1,0 +1,13 @@
+{
+  "number": "3442",
+  "title_cn": "奇偶频次间的最大差值 I",
+  "title_en": "Maximum Difference Between Even and Odd Frequency I",
+  "slug": "maximum-difference-between-even-and-odd-frequency-i",
+  "difficulty": "Easy",
+  "description": "给你一个由小写英文字母组成的字符串&nbsp;s。\n\n请你找出字符串中两个字符&nbsp;a1&nbsp;和&nbsp;a2 的出现频次之间的 最大 差值 diff = freq(a1)&nbsp;- freq(a2)，这两个字符需要满足：\n\n\ta1&nbsp;在字符串中出现 奇数次 。\n\ta2&nbsp;在字符串中出现 偶数次&nbsp;。\n\n返回 最大 差值。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aaaaabbc\"\n\n输出：3\n\n解释：\n\n\t字符&nbsp;'a'&nbsp;出现 奇数次&nbsp;，次数为&nbsp;5 ；字符&nbsp;'b'&nbsp;出现 偶数次 ，次数为&nbsp;2&nbsp;。\n\t最大差值为&nbsp;5 - 2 = 3&nbsp;。\n\n示例 2：\n\n输入：s = \"abcabcab\"\n\n输出：1\n\n解释：\n\n\t字符&nbsp;'a'&nbsp;出现 奇数次&nbsp;，次数为&nbsp;3 ；字符&nbsp;'c'&nbsp;出现 偶数次&nbsp;，次数为&nbsp;2 。\n\t最大差值为&nbsp;3 - 2 = 1 。\n\n&nbsp;\n\n提示：\n\n\t3 <= s.length <= 100\n\ts&nbsp;仅由小写英文字母组成。\n\ts&nbsp;至少由一个出现奇数次的字符和一个出现偶数次的字符组成。",
+  "constraints": [
+    "3 <= s.length <= 100",
+    "s&nbsp;仅由小写英文字母组成。",
+    "s&nbsp;至少由一个出现奇数次的字符和一个出现偶数次的字符组成。"
+  ]
+}

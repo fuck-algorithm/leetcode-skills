@@ -1,0 +1,13 @@
+{
+  "number": "1605",
+  "title_cn": "给定行和列的和求可行矩阵",
+  "title_en": "Find Valid Matrix Given Row and Column Sums",
+  "slug": "find-valid-matrix-given-row-and-column-sums",
+  "difficulty": "Medium",
+  "description": "给你两个非负整数数组&nbsp;rowSum 和&nbsp;colSum&nbsp;，其中&nbsp;rowSum[i]&nbsp;是二维矩阵中第 i&nbsp;行元素的和， colSum[j]&nbsp;是第 j&nbsp;列元素的和。换言之你不知道矩阵里的每个元素，但是你知道每一行和每一列的和。\n\n请找到大小为&nbsp;rowSum.length x colSum.length&nbsp;的任意 非负整数&nbsp;矩阵，且该矩阵满足&nbsp;rowSum 和&nbsp;colSum&nbsp;的要求。\n\n请你返回任意一个满足题目要求的二维矩阵，题目保证存在 至少一个&nbsp;可行矩阵。\n\n&nbsp;\n\n示例 1：\n\n输入：rowSum = [3,8], colSum = [4,7]\n输出：[[3,0],\n      [1,7]]\n解释：\n第 0 行：3 + 0 = 3 == rowSum[0]\n第 1 行：1 + 7 = 8 == rowSum[1]\n第 0 列：3 + 1 = 4 == colSum[0]\n第 1 列：0 + 7 = 7 == colSum[1]\n行和列的和都满足题目要求，且所有矩阵元素都是非负的。\n另一个可行的矩阵为：[[1,2],\n                  [3,5]]\n\n示例 2：\n\n输入：rowSum = [5,7,10], colSum = [8,6,8]\n输出：[[0,5,0],\n      [6,1,0],\n      [2,0,8]]\n\n示例 3：\n\n输入：rowSum = [14,9], colSum = [6,9,8]\n输出：[[0,9,5],\n      [6,0,3]]\n\n示例 4：\n\n输入：rowSum = [1,0], colSum = [1]\n输出：[[1],\n      [0]]\n\n示例 5：\n\n输入：rowSum = [0], colSum = [0]\n输出：[[0]]\n\n&nbsp;\n\n提示：\n\n\t1 <= rowSum.length, colSum.length <= 500\n\t0 <= rowSum[i], colSum[i] <= 108\n\tsum(rowSum) == sum(colSum)",
+  "constraints": [
+    "1 <= rowSum.length, colSum.length <= 500",
+    "0 <= rowSum[i], colSum[i] <= 108",
+    "sum(rowSum) == sum(colSum)"
+  ]
+}

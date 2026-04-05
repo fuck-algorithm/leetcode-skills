@@ -1,0 +1,13 @@
+{
+  "number": "LCR 004",
+  "title_cn": "只出现一次的数字 II",
+  "title_en": "只出现一次的数字 II",
+  "slug": "WGki4K",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,2,3,2]\n输出：3\n\n示例 2：\n\n输入：nums = [0,1,0,1,0,1,100]\n输出：100\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 3 * 104\n\t-231 <= nums[i] <= 231 - 1\n\tnums 中，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次\n\n&nbsp;\n\n进阶：你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？\n\n&nbsp;\n\n注意：本题与主站 137&nbsp;题相同：https://leetcode.cn/problems/single-number-ii/",
+  "constraints": [
+    "1 <= nums.length <= 3 * 104",
+    "-231 <= nums[i] <= 231 - 1",
+    "nums 中，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次"
+  ]
+}

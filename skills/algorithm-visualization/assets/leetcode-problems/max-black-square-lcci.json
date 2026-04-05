@@ -1,0 +1,11 @@
+{
+  "number": "面试题 17.23",
+  "title_cn": "最大黑方阵",
+  "title_en": "Max Black Square LCCI",
+  "slug": "max-black-square-lcci",
+  "difficulty": "Medium",
+  "description": "给定一个方阵，其中每个单元(像素)非黑即白。设计一个算法，找出 4 条边皆为黑色像素的最大子方阵。\n\n返回一个数组 [r, c, size] ，其中&nbsp;r,&nbsp;c&nbsp;分别代表子方阵左上角的行号和列号，size 是子方阵的边长。若有多个满足条件的子方阵，返回 r 最小的，若 r 相同，返回 c 最小的子方阵。若无满足条件的子方阵，返回空数组。\n\n示例 1：\n\n输入：\n[\n&nbsp;  [1,0,1],\n&nbsp;  [0,0,1],\n&nbsp;  [0,0,1]\n]\n输出：[1,0,2]\n解释：输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵\n\n示例 2：\n\n输入：\n[\n&nbsp;  [0,1,1],\n&nbsp;  [1,0,1],\n&nbsp;  [1,1,0]\n]\n输出：[0,0,1]\n\n提示：\n\n\tmatrix.length == matrix[0].length <= 200",
+  "constraints": [
+    "matrix.length == matrix[0].length <= 200"
+  ]
+}

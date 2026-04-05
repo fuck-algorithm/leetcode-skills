@@ -1,0 +1,17 @@
+{
+  "number": "2203",
+  "title_cn": "包含要求路径的最小带权子图",
+  "title_en": "Minimum Weighted Subgraph With the Required Paths",
+  "slug": "minimum-weighted-subgraph-with-the-required-paths",
+  "difficulty": "Hard",
+  "description": "给你一个整数&nbsp;n&nbsp;，它表示一个 带权有向 图的节点数，节点编号为&nbsp;0 到&nbsp;n - 1&nbsp;。\n\n同时给你一个二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [fromi, toi, weighti]&nbsp;，表示从&nbsp;fromi&nbsp;到&nbsp;toi&nbsp;有一条边权为&nbsp;weighti&nbsp;的 有向 边。\n\n最后，给你三个 互不相同&nbsp;的整数&nbsp;src1&nbsp;，src2&nbsp;和&nbsp;dest&nbsp;，表示图中三个不同的点。\n\n请你从图中选出一个 边权和最小&nbsp;的子图，使得从 src1&nbsp;和 src2&nbsp;出发，在这个子图中，都 可以&nbsp;到达 dest&nbsp;。如果这样的子图不存在，请返回 -1&nbsp;。\n\n子图&nbsp;中的点和边都应该属于原图的一部分。子图的边权和定义为它所包含的所有边的权值之和。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6, edges = [[0,2,2],[0,5,6],[1,0,3],[1,4,5],[2,1,1],[2,3,3],[2,3,4],[3,4,2],[4,5,1]], src1 = 0, src2 = 1, dest = 5\n输出：9\n解释：\n上图为输入的图。\n蓝色边为最优子图之一。\n注意，子图 [[1,0,3],[0,5,6]] 也能得到最优解，但无法在满足所有限制的前提下，得到更优解。\n\n示例 2：\n\n输入：n = 3, edges = [[0,1,1],[2,1,1]], src1 = 0, src2 = 1, dest = 2\n输出：-1\n解释：\n上图为输入的图。\n可以看到，不存在从节点 1 到节点 2 的路径，所以不存在任何子图满足所有限制。\n\n&nbsp;\n\n提示：\n\n\t3 <= n <= 105\n\t0 <= edges.length <= 105\n\tedges[i].length == 3\n\t0 <= fromi, toi, src1, src2, dest <= n - 1\n\tfromi != toi\n\tsrc1&nbsp;，src2&nbsp;和&nbsp;dest&nbsp;两两不同。\n\t1 <= weight[i] <= 105",
+  "constraints": [
+    "3 <= n <= 105",
+    "0 <= edges.length <= 105",
+    "edges[i].length == 3",
+    "0 <= fromi, toi, src1, src2, dest <= n - 1",
+    "fromi != toi",
+    "src1&nbsp;，src2&nbsp;和&nbsp;dest&nbsp;两两不同。",
+    "1 <= weight[i] <= 105"
+  ]
+}

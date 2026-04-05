@@ -1,0 +1,11 @@
+{
+  "number": "LCR 157",
+  "title_cn": "套餐内商品的排列顺序",
+  "title_en": "套餐内商品的排列顺序",
+  "slug": "zi-fu-chuan-de-pai-lie-lcof",
+  "difficulty": "Medium",
+  "description": "某店铺将用于组成套餐的商品记作字符串 goods，其中 goods[i] 表示对应商品。请返回该套餐内所含商品的 全部排列方式 。\n\n返回结果 无顺序要求，但不能含有重复的元素。\n\n&nbsp;\n\n示例 1：\n\n输入：goods = \"agew\"\n输出：[\"aegw\",\"aewg\",\"agew\",\"agwe\",\"aweg\",\"awge\",\"eagw\",\"eawg\",\"egaw\",\"egwa\",\"ewag\",\"ewga\",\"gaew\",\"gawe\",\"geaw\",\"gewa\",\"gwae\",\"gwea\",\"waeg\",\"wage\",\"weag\",\"wega\",\"wgae\",\"wgea\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= goods.length <= 8\n\n&nbsp;",
+  "constraints": [
+    "1 <= goods.length <= 8"
+  ]
+}

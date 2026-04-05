@@ -1,0 +1,14 @@
+{
+  "number": "840",
+  "title_cn": "矩阵中的幻方",
+  "title_en": "Magic Squares In Grid",
+  "slug": "magic-squares-in-grid",
+  "difficulty": "Medium",
+  "description": "3 x 3 的幻方是一个填充有&nbsp;从 1 到 9&nbsp; 的不同数字的 3 x 3 矩阵，其中每行，每列以及两条对角线上的各数之和都相等。\n\n给定一个由整数组成的row x col&nbsp;的 grid，其中有多少个&nbsp;3 × 3 的 “幻方” 子矩阵？\n\n注意：虽然幻方只能包含 1 到 9 的数字，但&nbsp;grid 可以包含最多15的数字。\n\n&nbsp;\n\n示例 1：\n\n输入: grid = [[4,3,8,4],[9,5,1,9],[2,7,6,2]\n输出: 1\n解释: \n下面的子矩阵是一个 3 x 3 的幻方：\n\n而这一个不是：\n\n总的来说，在本示例所给定的矩阵中只有一个 3 x 3 的幻方子矩阵。\n\n示例 2:\n\n输入: grid = [[8]]\n输出: 0\n\n&nbsp;\n\n提示:\n\n\trow == grid.length\n\tcol == grid[i].length\n\t1 <= row, col <= 10\n\t0 <= grid[i][j] <= 15",
+  "constraints": [
+    "row == grid.length",
+    "col == grid[i].length",
+    "1 <= row, col <= 10",
+    "0 <= grid[i][j] <= 15"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2862",
+  "title_cn": "完全子集的最大元素和",
+  "title_en": "Maximum Element-Sum of a Complete Subset of Indices",
+  "slug": "maximum-element-sum-of-a-complete-subset-of-indices",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 1 开始、由 n 个整数组成的数组。你需要从&nbsp;nums&nbsp;选择一个&nbsp;完全集，其中每对元素下标的乘积都是一个 完全平方数，例如选择&nbsp;ai&nbsp;和&nbsp;aj&nbsp;，i * j&nbsp;一定是完全平方数。\n\n返回&nbsp;完全子集 所能取到的 最大元素和 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [8,7,3,5,7,2,4,9]\n\n输出：16\n\n解释：\n\n我们选择下标为 2 和 8 的元素，并且&nbsp;2 * 8&nbsp;是一个完全平方数。\n\n示例 2：\n\n输入：nums = [8,10,3,8,1,13,7,9,4]\n\n输出：20\n\n解释：\n\n我们选择下标为 1, 4, 9 的元素。1 * 4, 1 * 9, 4 * 9&nbsp;是完全平方数。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 104\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= n == nums.length <= 104",
+    "1 <= nums[i] <= 109"
+  ]
+}

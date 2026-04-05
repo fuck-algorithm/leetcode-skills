@@ -1,0 +1,12 @@
+{
+  "number": "1345",
+  "title_cn": "跳跃游戏 IV",
+  "title_en": "Jump Game IV",
+  "slug": "jump-game-iv",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;arr&nbsp;，你一开始在数组的第一个元素处（下标为 0）。\n\n每一步，你可以从下标&nbsp;i&nbsp;跳到下标&nbsp;i + 1 、i - 1 或者 j ：\n\n\ti + 1 需满足：i + 1 < arr.length\n\ti - 1&nbsp;需满足：i - 1 >= 0\n\tj&nbsp;需满足：arr[i] == arr[j]&nbsp;且&nbsp;i != j\n\n请你返回到达数组最后一个元素的下标处所需的&nbsp;最少操作次数&nbsp;。\n\n注意：任何时候你都不能跳到数组外面。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [100,-23,-23,404,100,23,23,23,3,404]\n输出：3\n解释：那你需要跳跃 3 次，下标依次为 0 --> 4 --> 3 --> 9 。下标 9 为数组的最后一个元素的下标。\n\n示例 2：\n\n输入：arr = [7]\n输出：0\n解释：一开始就在最后一个元素处，所以你不需要跳跃。\n\n示例 3：\n\n输入：arr = [7,6,9,6,9,6,9,7]\n输出：1\n解释：你可以直接从下标 0 处跳到下标 7 处，也就是数组的最后一个元素处。\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 5 * 104\n\t-108&nbsp;<= arr[i] <= 108",
+  "constraints": [
+    "1 <= arr.length <= 5 * 104",
+    "-108&nbsp;<= arr[i] <= 108"
+  ]
+}

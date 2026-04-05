@@ -1,0 +1,12 @@
+{
+  "number": "3149",
+  "title_cn": "找出分数最低的排列",
+  "title_en": "Find the Minimum Cost Array Permutation",
+  "slug": "find-the-minimum-cost-array-permutation",
+  "difficulty": "Hard",
+  "description": "给你一个数组 nums ，它是 [0, 1, 2, ..., n - 1] 的一个排列 。对于任意一个 [0, 1, 2, ..., n - 1] 的排列 perm ，其 分数 定义为：\n\nscore(perm) = |perm[0] - nums[perm[1]]| + |perm[1] - nums[perm[2]]| + ... + |perm[n - 1] - nums[perm[0]]|\n\n返回具有 最低 分数的排列 perm 。如果存在多个满足题意且分数相等的排列，则返回其中字典序最小的一个。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,0,2]\n\n输出：[0,1,2]\n\n解释：\n\n字典序最小且分数最低的排列是 [0,1,2]。这个排列的分数是 |0 - 0| + |1 - 2| + |2 - 1| = 2 。\n\n示例 2：\n\n输入：nums = [0,2,1]\n\n输出：[0,2,1]\n\n解释：\n\n字典序最小且分数最低的排列是 [0,2,1]。这个排列的分数是 |0 - 1| + |2 - 2| + |1 - 0| = 2 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n == nums.length <= 14\n\tnums 是 [0, 1, 2, ..., n - 1] 的一个排列。",
+  "constraints": [
+    "2 <= n == nums.length <= 14",
+    "nums 是 [0, 1, 2, ..., n - 1] 的一个排列。"
+  ]
+}

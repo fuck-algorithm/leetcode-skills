@@ -1,0 +1,12 @@
+{
+  "number": "668",
+  "title_cn": "乘法表中第k小的数",
+  "title_en": "Kth Smallest Number in Multiplication Table",
+  "slug": "kth-smallest-number-in-multiplication-table",
+  "difficulty": "Hard",
+  "description": "几乎每一个人都用&nbsp;乘法表。但是你能在乘法表中快速找到第 k 小的数字吗？\n\n乘法表是大小为 m x n 的一个整数矩阵，其中&nbsp;mat[i][j] == i * j（下标从 1 开始）。\n\n给你三个整数 m、n 和 k，请你在大小为&nbsp;m x n 的乘法表中，找出并返回第 k&nbsp;小的数字。\n\n&nbsp;\n\n示例 1：\n\n输入：m = 3, n = 3, k = 5\n输出：3\n解释：第 5 小的数字是 3 。\n\n示例 2：\n\n输入：m = 2, n = 3, k = 6\n输出：6\n解释：第 6 小的数字是 6 。\n\n&nbsp;\n\n提示：\n\n\t1 <= m, n <= 3 * 104\n\t1 <= k <= m * n",
+  "constraints": [
+    "1 <= m, n <= 3 * 104",
+    "1 <= k <= m * n"
+  ]
+}

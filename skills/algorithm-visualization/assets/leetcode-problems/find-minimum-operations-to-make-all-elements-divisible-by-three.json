@@ -1,0 +1,12 @@
+{
+  "number": "3190",
+  "title_cn": "使所有元素都可以被 3 整除的最少操作数",
+  "title_en": "Find Minimum Operations to Make All Elements Divisible by Three",
+  "slug": "find-minimum-operations-to-make-all-elements-divisible-by-three",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。一次操作中，你可以将&nbsp;nums&nbsp;中的&nbsp;任意&nbsp;一个元素增加或者减少 1 。\n\n请你返回将 nums&nbsp;中所有元素都可以被 3 整除的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4]\n\n输出：3\n\n解释：\n\n通过以下 3 个操作，数组中的所有元素都可以被 3 整除：\n\n\t将 1 减少 1 。\n\t将 2 增加 1 。\n\t将 4 减少 1 。\n\n示例 2：\n\n输入：nums = [3,6,9]\n\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 50\n\t1 <= nums[i] <= 50",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "1 <= nums[i] <= 50"
+  ]
+}

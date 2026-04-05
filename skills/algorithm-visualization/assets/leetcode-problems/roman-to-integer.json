@@ -1,0 +1,16 @@
+{
+  "number": "13",
+  "title_cn": "罗马数字转整数",
+  "title_en": "Roman to Integer",
+  "slug": "roman-to-integer",
+  "difficulty": "Easy",
+  "description": "罗马数字包含以下七种字符:&nbsp;I，&nbsp;V，&nbsp;X，&nbsp;L，C，D&nbsp;和&nbsp;M。\n\n字符          数值\nI             1\nV             5\nX             10\nL             50\nC             100\nD             500\nM             1000\n\n例如， 罗马数字 2 写做&nbsp;II&nbsp;，即为两个并列的 1 。12 写做&nbsp;XII&nbsp;，即为&nbsp;X&nbsp;+&nbsp;II&nbsp;。 27 写做&nbsp;&nbsp;XXVII, 即为&nbsp;XX&nbsp;+&nbsp;V&nbsp;+&nbsp;II&nbsp;。\n\n通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做&nbsp;IIII，而是&nbsp;IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为&nbsp;IX。这个特殊的规则只适用于以下六种情况：\n\n\tI&nbsp;可以放在&nbsp;V&nbsp;(5) 和&nbsp;X&nbsp;(10) 的左边，来表示 4 和 9。\n\tX&nbsp;可以放在&nbsp;L&nbsp;(50) 和&nbsp;C&nbsp;(100) 的左边，来表示 40 和&nbsp;90。&nbsp;\n\tC&nbsp;可以放在&nbsp;D&nbsp;(500) 和&nbsp;M&nbsp;(1000) 的左边，来表示&nbsp;400 和&nbsp;900。\n\n给定一个罗马数字，将其转换成整数。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入:&nbsp;s = \"III\"\n输出: 3\n\n示例&nbsp;2:\n\n输入:&nbsp;s = \"IV\"\n输出: 4\n\n示例&nbsp;3:\n\n输入:&nbsp;s = \"IX\"\n输出: 9\n\n示例&nbsp;4:\n\n输入:&nbsp;s = \"LVIII\"\n输出: 58\n解释: L = 50, V= 5, III = 3.\n\n示例&nbsp;5:\n\n输入:&nbsp;s = \"MCMXCIV\"\n输出: 1994\n解释: M = 1000, CM = 900, XC = 90, IV = 4.\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 15\n\ts 仅含字符 ('I', 'V', 'X', 'L', 'C', 'D', 'M')\n\t题目数据保证 s 是一个有效的罗马数字，且表示整数在范围 [1, 3999] 内\n\t题目所给测试用例皆符合罗马数字书写规则，不会出现跨位等情况。\n\tIL 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 应该写作 CMXCIX 。\n\t关于罗马数字的详尽书写规则，可以参考 罗马数字 - 百度百科。",
+  "constraints": [
+    "1 <= s.length <= 15",
+    "s 仅含字符 ('I', 'V', 'X', 'L', 'C', 'D', 'M')",
+    "题目数据保证 s 是一个有效的罗马数字，且表示整数在范围 [1, 3999] 内",
+    "题目所给测试用例皆符合罗马数字书写规则，不会出现跨位等情况。",
+    "IL 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 应该写作 CMXCIX 。",
+    "关于罗马数字的详尽书写规则，可以参考 罗马数字 - 百度百科。"
+  ]
+}

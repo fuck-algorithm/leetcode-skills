@@ -1,0 +1,16 @@
+{
+  "number": "2493",
+  "title_cn": "将节点分成尽可能多的组",
+  "title_en": "Divide Nodes Into the Maximum Number of Groups",
+  "slug": "divide-nodes-into-the-maximum-number-of-groups",
+  "difficulty": "Hard",
+  "description": "给你一个正整数&nbsp;n&nbsp;，表示一个 无向&nbsp;图中的节点数目，节点编号从&nbsp;1&nbsp;到&nbsp;n&nbsp;。\n\n同时给你一个二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条&nbsp;双向&nbsp;边。注意给定的图可能是不连通的。\n\n请你将图划分为&nbsp;m&nbsp;个组（编号从 1&nbsp;开始），满足以下要求：\n\n\t图中每个节点都只属于一个组。\n\t图中每条边连接的两个点&nbsp;[ai, bi]&nbsp;，如果&nbsp;ai&nbsp;属于编号为&nbsp;x&nbsp;的组，bi&nbsp;属于编号为&nbsp;y&nbsp;的组，那么&nbsp;|y - x| = 1&nbsp;。\n\n请你返回最多可以将节点分为多少个组（也就是最大的&nbsp;m&nbsp;）。如果没办法在给定条件下分组，请你返回&nbsp;-1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6, edges = [[1,2],[1,4],[1,5],[2,6],[2,3],[4,6]]\n输出：4\n解释：如上图所示，\n- 节点 5 在第一个组。\n- 节点 1 在第二个组。\n- 节点 2 和节点 4 在第三个组。\n- 节点 3 和节点 6 在第四个组。\n所有边都满足题目要求。\n如果我们创建第五个组，将第三个组或者第四个组中任何一个节点放到第五个组，至少有一条边连接的两个节点所属的组编号不符合题目要求。\n\n示例 2：\n\n输入：n = 3, edges = [[1,2],[2,3],[3,1]]\n输出：-1\n解释：如果我们将节点 1 放入第一个组，节点 2 放入第二个组，节点 3 放入第三个组，前两条边满足题目要求，但第三条边不满足题目要求。\n没有任何符合题目要求的分组方式。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 500\n\t1 <= edges.length <= 104\n\tedges[i].length == 2\n\t1 <= ai, bi <= n\n\tai != bi\n\t两个点之间至多只有一条边。",
+  "constraints": [
+    "1 <= n <= 500",
+    "1 <= edges.length <= 104",
+    "edges[i].length == 2",
+    "1 <= ai, bi <= n",
+    "ai != bi",
+    "两个点之间至多只有一条边。"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "number": "LCR 013",
+  "title_cn": "二维区域和检索 - 矩阵不可变",
+  "title_en": "二维区域和检索 - 矩阵不可变",
+  "slug": "O4NDxx",
+  "difficulty": "Medium",
+  "description": "给定一个二维矩阵 matrix，以下类型的多个请求：\n\n\t计算其子矩形范围内元素的总和，该子矩阵的左上角为 (row1,&nbsp;col1) ，右下角为 (row2,&nbsp;col2) 。\n\n实现 NumMatrix 类：\n\n\tNumMatrix(int[][] matrix)&nbsp;给定整数矩阵 matrix 进行初始化\n\tint sumRegion(int row1, int col1, int row2, int col2)&nbsp;返回左上角 (row1,&nbsp;col1)&nbsp;、右下角&nbsp;(row2,&nbsp;col2)&nbsp;的子矩阵的元素总和。\n\n&nbsp;\n\n示例 1：\n\n输入: \n[\"NumMatrix\",\"sumRegion\",\"sumRegion\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]]\n输出: \n[null, 8, 11, 12]\n\n解释:\nNumMatrix numMatrix = new NumMatrix([[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]]);\nnumMatrix.sumRegion(2, 1, 4, 3); // return 8 (红色矩形框的元素总和)\nnumMatrix.sumRegion(1, 1, 2, 2); // return 11 (绿色矩形框的元素总和)\nnumMatrix.sumRegion(1, 2, 2, 4); // return 12 (蓝色矩形框的元素总和)\n\n&nbsp;\n\n提示：\n\n\tm == matrix.length\n\tn == matrix[i].length\n\t1 <= m,&nbsp;n <=&nbsp;200\n\t-105&nbsp;<= matrix[i][j] <= 105\n\t0 <= row1 <= row2 < m\n\t0 <= col1 <= col2 < n\n\t最多调用 104 次&nbsp;sumRegion 方法\n\n&nbsp;\n\n注意：本题与主站 304&nbsp;题相同：&nbsp;https://leetcode.cn/problems/range-sum-query-2d-immutable/",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m,&nbsp;n <=&nbsp;200",
+    "-105&nbsp;<= matrix[i][j] <= 105",
+    "0 <= row1 <= row2 < m",
+    "0 <= col1 <= col2 < n",
+    "最多调用 104 次&nbsp;sumRegion 方法",
+    "注意：本题与主站 304&nbsp;题相同：&nbsp;https://leetcode.cn/problems/range-sum-query-2d-immutable/"
+  ]
+}

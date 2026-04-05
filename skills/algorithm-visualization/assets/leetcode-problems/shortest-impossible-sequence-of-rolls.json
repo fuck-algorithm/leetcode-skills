@@ -1,0 +1,13 @@
+{
+  "number": "2350",
+  "title_cn": "不可能得到的最短骰子序列",
+  "title_en": "Shortest Impossible Sequence of Rolls",
+  "slug": "shortest-impossible-sequence-of-rolls",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n&nbsp;的整数数组&nbsp;rolls&nbsp;和一个整数&nbsp;k&nbsp;。你扔一个&nbsp;k&nbsp;面的骰子 n&nbsp;次，骰子的每个面分别是&nbsp;1&nbsp;到&nbsp;k&nbsp;，其中第&nbsp;i&nbsp;次扔得到的数字是&nbsp;rolls[i]&nbsp;。\n\n请你返回 无法&nbsp;从 rolls&nbsp;中得到的 最短&nbsp;骰子子序列的长度。\n\n扔一个 k&nbsp;面的骰子 len&nbsp;次得到的是一个长度为 len&nbsp;的 骰子子序列&nbsp;。\n\n注意&nbsp;，子序列只需要保持在原数组中的顺序，不需要连续。\n\n&nbsp;\n\n示例 1：\n\n输入：rolls = [4,2,1,2,3,3,2,4,1], k = 4\n输出：3\n解释：所有长度为 1 的骰子子序列 [1] ，[2] ，[3] ，[4] 都可以从原数组中得到。\n所有长度为 2 的骰子子序列 [1, 1] ，[1, 2] ，... ，[4, 4] 都可以从原数组中得到。\n子序列 [1, 4, 2] 无法从原数组中得到，所以我们返回 3 。\n还有别的子序列也无法从原数组中得到。\n\n示例 2：\n\n输入：rolls = [1,1,2,2], k = 2\n输出：2\n解释：所有长度为 1 的子序列 [1] ，[2] 都可以从原数组中得到。\n子序列 [2, 1] 无法从原数组中得到，所以我们返回 2 。\n还有别的子序列也无法从原数组中得到，但 [2, 1] 是最短的子序列。\n\n示例 3：\n\n输入：rolls = [1,1,3,2,2,2,3,3], k = 4\n输出：1\n解释：子序列 [4] 无法从原数组中得到，所以我们返回 1 。\n还有别的子序列也无法从原数组中得到，但 [4] 是最短的子序列。\n\n&nbsp;\n\n提示：\n\n\tn == rolls.length\n\t1 <= n <= 105\n\t1 <= rolls[i] <= k <= 105",
+  "constraints": [
+    "n == rolls.length",
+    "1 <= n <= 105",
+    "1 <= rolls[i] <= k <= 105"
+  ]
+}

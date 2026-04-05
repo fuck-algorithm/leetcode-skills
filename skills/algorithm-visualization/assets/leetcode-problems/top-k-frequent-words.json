@@ -1,0 +1,9 @@
+{
+  "number": "692",
+  "title_cn": "前K个高频单词",
+  "title_en": "Top K Frequent Words",
+  "slug": "top-k-frequent-words",
+  "difficulty": "Medium",
+  "description": "给定一个单词列表&nbsp;words&nbsp;和一个整数 k ，返回前&nbsp;k&nbsp;个出现次数最多的单词。\n\n返回的答案应该按单词出现频率由高到低排序。如果不同的单词有相同出现频率， 按字典顺序 排序。\n\n&nbsp;\n\n示例 1：\n\n输入: words = [\"i\", \"love\", \"leetcode\", \"i\", \"love\", \"coding\"], k = 2\n输出: [\"i\", \"love\"]\n解析: \"i\" 和 \"love\" 为出现次数最多的两个单词，均为2次。\n    注意，按字母顺序 \"i\" 在 \"love\" 之前。\n\n示例 2：\n\n输入: [\"the\", \"day\", \"is\", \"sunny\", \"the\", \"the\", \"the\", \"sunny\", \"is\", \"is\"], k = 4\n输出: [\"the\", \"is\", \"sunny\", \"day\"]\n解析: \"the\", \"is\", \"sunny\" 和 \"day\" 是出现次数最多的四个单词，\n    出现次数依次为 4, 3, 2 和 1 次。\n\n&nbsp;\n\n注意：\n\n\t1 <= words.length <= 500\n\t1 <= words[i].length <= 10\n\twords[i]&nbsp;由小写英文字母组成。\n\tk 的取值范围是&nbsp;[1, 不同 words[i] 的数量]\n\n&nbsp;\n\n进阶：尝试以&nbsp;O(n log k) 时间复杂度和&nbsp;O(n) 空间复杂度解决。",
+  "constraints": []
+}

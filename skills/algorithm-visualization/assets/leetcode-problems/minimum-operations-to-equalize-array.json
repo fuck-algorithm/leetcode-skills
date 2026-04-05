@@ -1,0 +1,12 @@
+{
+  "number": "3674",
+  "title_cn": "数组元素相等的最小操作次数",
+  "title_en": "Minimum Operations to Equalize Array",
+  "slug": "minimum-operations-to-equalize-array",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n 的整数数组 nums。\n\n在一次操作中，可以选择任意子数组 nums[l...r] （0 <= l <= r < n），并将该子数组中的每个元素&nbsp;替换&nbsp;为所有元素的&nbsp;按位与（bitwise AND）结果。\n\n返回使数组 nums 中所有元素相等所需的最小操作次数。\n\n子数组&nbsp;是数组中连续的、非空的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2]\n\n输出： 1\n\n解释：\n\n选择 nums[0...1]：(1 AND 2) = 0，因此数组变为 [0, 0]，所有元素在一次操作后相等。\n\n示例 2：\n\n输入： nums = [5,5,5]\n\n输出： 0\n\n解释：\n\nnums 本身是 [5, 5, 5]，所有元素已经相等，因此不需要任何操作。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 100\n\t1 <= nums[i] <= 105",
+  "constraints": [
+    "1 <= n == nums.length <= 100",
+    "1 <= nums[i] <= 105"
+  ]
+}

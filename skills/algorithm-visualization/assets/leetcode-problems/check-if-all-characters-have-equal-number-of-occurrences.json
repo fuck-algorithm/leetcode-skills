@@ -1,0 +1,12 @@
+{
+  "number": "1941",
+  "title_cn": "检查是否所有字符出现次数相同",
+  "title_en": "Check if All Characters Have Equal Number of Occurrences",
+  "slug": "check-if-all-characters-have-equal-number-of-occurrences",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s ，如果 s 是一个 好 字符串，请你返回 true ，否则请返回 false 。\n\n如果 s 中出现过的 所有 字符的出现次数 相同 ，那么我们称字符串 s 是 好 字符串。\n\n示例 1：\n\n输入：s = \"abacbc\"\n输出：true\n解释：s 中出现过的字符为 'a'，'b' 和 'c' 。s 中所有字符均出现 2 次。\n\n示例 2：\n\n输入：s = \"aaabb\"\n输出：false\n解释：s 中出现过的字符为 'a' 和 'b' 。\n'a' 出现了 3 次，'b' 出现了 2 次，两者出现次数不同。\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts 只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s 只包含小写英文字母。"
+  ]
+}

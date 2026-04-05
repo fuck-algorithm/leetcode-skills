@@ -1,0 +1,12 @@
+{
+  "number": "3396",
+  "title_cn": "使数组元素互不相同所需的最少操作次数",
+  "title_en": "Minimum Number of Operations to Make Elements in Array Distinct",
+  "slug": "minimum-number-of-operations-to-make-elements-in-array-distinct",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums，你需要确保数组中的元素&nbsp;互不相同&nbsp;。为此，你可以执行以下操作任意次：\n\n\t从数组的开头移除 3 个元素。如果数组中元素少于 3 个，则移除所有剩余元素。\n\n注意：空数组也视作为数组元素互不相同。返回使数组元素互不相同所需的&nbsp;最少操作次数&nbsp;。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2,3,4,2,3,3,5,7]\n\n输出： 2\n\n解释：\n\n\t第一次操作：移除前 3 个元素，数组变为 [4, 2, 3, 3, 5, 7]。\n\t第二次操作：再次移除前 3 个元素，数组变为 [3, 5, 7]，此时数组中的元素互不相同。\n\n因此，答案是 2。\n\n示例 2：\n\n输入： nums = [4,5,6,4,4]\n\n输出： 2\n\n解释：\n\n\t第一次操作：移除前 3 个元素，数组变为 [4, 4]。\n\t第二次操作：移除所有剩余元素，数组变为空。\n\n因此，答案是 2。\n\n示例 3：\n\n输入： nums = [6,7,8,9]\n\n输出： 0\n\n解释：\n\n数组中的元素已经互不相同，因此不需要进行任何操作，答案是 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ]
+}

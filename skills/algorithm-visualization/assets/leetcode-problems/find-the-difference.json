@@ -1,0 +1,13 @@
+{
+  "number": "389",
+  "title_cn": "找不同",
+  "title_en": "Find the Difference",
+  "slug": "find-the-difference",
+  "difficulty": "Easy",
+  "description": "给定两个字符串 s 和 t&nbsp;，它们只包含小写字母。\n\n字符串 t&nbsp;由字符串 s 随机重排，然后在随机位置添加一个字母。\n\n请找出在 t&nbsp;中被添加的字母。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abcd\", t = \"abcde\"\n输出：\"e\"\n解释：'e' 是那个被添加的字母。\n\n示例 2：\n\n输入：s = \"\", t = \"y\"\n输出：\"y\"\n\n&nbsp;\n\n提示：\n\n\t0 <= s.length <= 1000\n\tt.length == s.length + 1\n\ts 和 t 只包含小写字母",
+  "constraints": [
+    "0 <= s.length <= 1000",
+    "t.length == s.length + 1",
+    "s 和 t 只包含小写字母"
+  ]
+}

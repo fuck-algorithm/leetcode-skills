@@ -1,0 +1,13 @@
+{
+  "number": "1283",
+  "title_cn": "使结果不超过阈值的最小除数",
+  "title_en": "Find the Smallest Divisor Given a Threshold",
+  "slug": "find-the-smallest-divisor-given-a-threshold",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums 和一个正整数&nbsp;threshold &nbsp;，你需要选择一个正整数作为除数，然后将数组里每个数都除以它，并对除法结果求和。\n\n请你找出能够使上述结果小于等于阈值&nbsp;threshold&nbsp;的除数中 最小 的那个。\n\n每个数除以除数后都向上取整，比方说 7/3 = 3 ， 10/2 = 5 。\n\n题目保证一定有解。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,5,9], threshold = 6\n输出：5\n解释：如果除数为 1 ，我们可以得到和为 17 （1+2+5+9）。\n如果除数为 4 ，我们可以得到和为 7 (1+1+2+3) 。如果除数为 5 ，和为 5 (1+1+1+2)。\n\n示例 2：\n\n输入：nums = [2,3,5,7,11], threshold = 11\n输出：3\n\n示例 3：\n\n输入：nums = [19], threshold = 5\n输出：4\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 5 * 10^4\n\t1 <= nums[i] <= 10^6\n\tnums.length <=&nbsp;threshold <= 10^6",
+  "constraints": [
+    "1 <= nums.length <= 5 * 10^4",
+    "1 <= nums[i] <= 10^6",
+    "nums.length <=&nbsp;threshold <= 10^6"
+  ]
+}

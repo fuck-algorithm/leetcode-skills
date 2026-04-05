@@ -1,0 +1,11 @@
+{
+  "number": "3021",
+  "title_cn": "Alice 和 Bob 玩鲜花游戏",
+  "title_en": "Alice and Bob Playing Flower Game",
+  "slug": "alice-and-bob-playing-flower-game",
+  "difficulty": "Medium",
+  "description": "Alice 和 Bob 在一片田野上玩一个回合制游戏，他们之间有两排花。Alice 和 Bob 之间第一排有 x 朵花，第二排有 y 朵花。\n\n游戏过程如下：\n\n\tAlice 先行动。\n\t每一次行动中，当前玩家必须选择其中一排，然后在这边摘一朵鲜花。\n\t一次行动结束后，如果两排上都没有剩下鲜花，那么 当前&nbsp;玩家抓住对手并赢得游戏的胜利。\n\n给你两个整数&nbsp;n&nbsp;和&nbsp;m&nbsp;，你的任务是求出满足以下条件的所有&nbsp;(x, y)&nbsp;对：\n\n\t按照上述规则，Alice 必须赢得游戏。\n\t第一排的鲜花数目&nbsp;x&nbsp;必须在区间&nbsp;[1,n]&nbsp;之间。\n\t第二排的鲜花数目 y&nbsp;必须在区间&nbsp;[1,m]&nbsp;之间。\n\n请你返回满足题目描述的数对&nbsp;(x, y)&nbsp;的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, m = 2\n输出：3\n解释：以下数对满足题目要求：(1,2) ，(3,2) ，(2,1) 。\n\n示例 2：\n\n输入：n = 1, m = 1\n输出：0\n解释：没有数对满足题目要求。\n\n&nbsp;\n\n提示：\n\n\t1 <= n, m <= 105",
+  "constraints": [
+    "1 <= n, m <= 105"
+  ]
+}

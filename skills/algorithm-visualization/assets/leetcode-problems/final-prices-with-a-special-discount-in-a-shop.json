@@ -1,0 +1,12 @@
+{
+  "number": "1475",
+  "title_cn": "商品折扣后的最终价格",
+  "title_en": "Final Prices With a Special Discount in a Shop",
+  "slug": "final-prices-with-a-special-discount-in-a-shop",
+  "difficulty": "Easy",
+  "description": "给你一个数组&nbsp;prices&nbsp;，其中&nbsp;prices[i]&nbsp;是商店里第&nbsp;i&nbsp;件商品的价格。\n\n商店里正在进行促销活动，如果你要买第&nbsp;i&nbsp;件商品，那么你可以得到与 prices[j] 相等的折扣，其中&nbsp;j&nbsp;是满足&nbsp;j > i&nbsp;且&nbsp;prices[j] <= prices[i]&nbsp;的&nbsp;最小下标&nbsp;，如果没有满足条件的&nbsp;j&nbsp;，你将没有任何折扣。\n\n请你返回一个数组，数组中第&nbsp;i&nbsp;个元素是折扣后你购买商品 i&nbsp;最终需要支付的价格。\n\n&nbsp;\n\n示例 1：\n\n输入：prices = [8,4,6,2,3]\n输出：[4,2,4,2,3]\n解释：\n商品 0 的价格为 price[0]=8 ，你将得到 prices[1]=4 的折扣，所以最终价格为 8 - 4 = 4 。\n商品 1 的价格为 price[1]=4 ，你将得到 prices[3]=2 的折扣，所以最终价格为 4 - 2 = 2 。\n商品 2 的价格为 price[2]=6 ，你将得到 prices[3]=2 的折扣，所以最终价格为 6 - 2 = 4 。\n商品 3 和 4 都没有折扣。\n\n示例 2：\n\n输入：prices = [1,2,3,4,5]\n输出：[1,2,3,4,5]\n解释：在这个例子中，所有商品都没有折扣。\n\n示例 3：\n\n输入：prices = [10,1,1,6]\n输出：[9,0,1,6]\n\n&nbsp;\n\n提示：\n\n\t1 <= prices.length <= 500\n\t1 <= prices[i] <= 10^3",
+  "constraints": [
+    "1 <= prices.length <= 500",
+    "1 <= prices[i] <= 10^3"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "LCR 158",
+  "title_cn": "库存管理 II",
+  "title_en": "库存管理 II",
+  "slug": "shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof",
+  "difficulty": "Easy",
+  "description": "仓库管理员以数组 stock 形式记录商品库存表。stock[i] 表示商品 id，可能存在重复。请返回库存表中数量大于 stock.length / 2 的商品 id。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：stock = [6, 1, 3, 1, 1, 1]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= stock.length <= 50000\n\t给定数组为非空数组，且存在结果数字\n\n&nbsp;\n\n注意：本题与主站 169 题相同：https://leetcode.cn/problems/majority-element/",
+  "constraints": [
+    "1 <= stock.length <= 50000",
+    "给定数组为非空数组，且存在结果数字",
+    "注意：本题与主站 169 题相同：https://leetcode.cn/problems/majority-element/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "915",
+  "title_cn": "分割数组",
+  "title_en": "Partition Array into Disjoint Intervals",
+  "slug": "partition-array-into-disjoint-intervals",
+  "difficulty": "Medium",
+  "description": "给定一个数组&nbsp;nums&nbsp;，将其划分为两个连续子数组&nbsp;left&nbsp;和&nbsp;right，&nbsp;使得：\n\n\tleft&nbsp;中的每个元素都小于或等于&nbsp;right&nbsp;中的每个元素。\n\tleft 和&nbsp;right&nbsp;都是非空的。\n\tleft 的长度要尽可能小。\n\n在完成这样的分组后返回&nbsp;left&nbsp;的&nbsp;长度&nbsp;。\n\n用例可以保证存在这样的划分方法。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,0,3,8,6]\n输出：3\n解释：left = [5,0,3]，right = [8,6]\n\n示例 2：\n\n输入：nums = [1,1,1,0,6,12]\n输出：4\n解释：left = [1,1,1,0]，right = [6,12]\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t0 <= nums[i] <= 106\n\t可以保证至少有一种方法能够按题目所描述的那样对 nums 进行划分。",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "0 <= nums[i] <= 106",
+    "可以保证至少有一种方法能够按题目所描述的那样对 nums 进行划分。"
+  ]
+}

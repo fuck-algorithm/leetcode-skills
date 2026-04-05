@@ -1,0 +1,11 @@
+{
+  "number": "面试题 05.07",
+  "title_cn": "配对交换",
+  "title_en": "Exchange LCCI",
+  "slug": "exchange-lcci",
+  "difficulty": "Easy",
+  "description": "配对交换。编写程序，交换某个整数的奇数位和偶数位，尽量使用较少的指令（也就是说，位 0 与位 1 交换，位 2 与位 3 交换，以此类推）。\n\n示例 1：\n\n 输入：num = 2（或者 0b10）\n 输出：1 (或者 0b01)\n\n示例 2：\n\n 输入：num = 3\n 输出：3\n\n提示:\n\n\tnum&nbsp;的范围在[0, 230 - 1]之间，不会发生整数溢出。",
+  "constraints": [
+    "num&nbsp;的范围在[0, 230 - 1]之间，不会发生整数溢出。"
+  ]
+}

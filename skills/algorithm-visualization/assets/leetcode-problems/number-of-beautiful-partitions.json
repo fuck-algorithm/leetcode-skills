@@ -1,0 +1,12 @@
+{
+  "number": "2478",
+  "title_cn": "完美分割的方案数",
+  "title_en": "Number of Beautiful Partitions",
+  "slug": "number-of-beautiful-partitions",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;，每个字符是数字&nbsp;'1'&nbsp;到&nbsp;'9'&nbsp;，再给你两个整数&nbsp;k 和&nbsp;minLength&nbsp;。\n\n如果对 s&nbsp;的分割满足以下条件，那么我们认为它是一个 完美&nbsp;分割：\n\n\ts&nbsp;被分成 k&nbsp;段互不相交的子字符串。\n\t每个子字符串长度都 至少&nbsp;为&nbsp;minLength&nbsp;。\n\t每个子字符串的第一个字符都是一个 质数 数字，最后一个字符都是一个 非质数&nbsp;数字。质数数字为&nbsp;'2'&nbsp;，'3'&nbsp;，'5'&nbsp;和&nbsp;'7'&nbsp;，剩下的都是非质数数字。\n\n请你返回 s&nbsp;的 完美&nbsp;分割数目。由于答案可能很大，请返回答案对&nbsp;109 + 7&nbsp;取余&nbsp;后的结果。\n\n一个 子字符串&nbsp;是字符串中一段连续字符串序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"23542185131\", k = 3, minLength = 2\n输出：3\n解释：存在 3 种完美分割方案：\n\"2354 | 218 | 5131\"\n\"2354 | 21851 | 31\"\n\"2354218 | 51 | 31\"\n\n示例 2：\n\n输入：s = \"23542185131\", k = 3, minLength = 3\n输出：1\n解释：存在一种完美分割方案：\"2354 | 218 | 5131\" 。\n\n示例 3：\n\n输入：s = \"3312958\", k = 3, minLength = 1\n输出：1\n解释：存在一种完美分割方案：\"331 | 29 | 58\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= k, minLength <= s.length <= 1000\n\ts&nbsp;每个字符都为数字&nbsp;'1'&nbsp;到&nbsp;'9' 之一。",
+  "constraints": [
+    "1 <= k, minLength <= s.length <= 1000",
+    "s&nbsp;每个字符都为数字&nbsp;'1'&nbsp;到&nbsp;'9' 之一。"
+  ]
+}

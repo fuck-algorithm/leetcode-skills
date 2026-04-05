@@ -1,0 +1,13 @@
+{
+  "number": "3225",
+  "title_cn": "网格图操作后的最大分数",
+  "title_en": "Maximum Score From Grid Operations",
+  "slug": "maximum-score-from-grid-operations",
+  "difficulty": "Hard",
+  "description": "给你一个大小为 n x n&nbsp;的二维矩阵&nbsp;grid&nbsp;，一开始所有格子都是白色的。一次操作中，你可以选择任意下标为&nbsp;(i, j)&nbsp;的格子，并将第&nbsp;j&nbsp;列中从最上面到第&nbsp;i&nbsp;行所有格子改成黑色。\n\n如果格子 (i, j)&nbsp;为白色，且左边或者右边的格子至少一个格子为黑色，那么我们将 grid[i][j]&nbsp;加到最后网格图的总分中去。\n\n请你返回执行任意次操作以后，最终网格图的 最大&nbsp;总分数。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,0,0,0,0],[0,0,3,0,0],[0,1,0,0,0],[5,0,0,3,0],[0,0,0,0,2]]\n\n输出：11\n\n解释：\n\n第一次操作中，我们将第 1 列中，最上面的格子到第 3 行的格子染成黑色。第二次操作中，我们将第 4 列中，最上面的格子到最后一行的格子染成黑色。最后网格图总分为&nbsp;grid[3][0] + grid[1][2] + grid[3][3]&nbsp;等于 11 。\n\n示例 2：\n\n输入：grid = [[10,9,0,0,15],[7,1,0,8,0],[5,20,0,11,0],[0,0,0,1,2],[8,12,1,10,3]]\n\n输出：94\n\n解释：\n\n我们对第 1 ，2 ，3 列分别从上往下染黑色到第 1 ，4， 0 行。最后网格图总分为&nbsp;grid[0][0] + grid[1][0] + grid[2][1] + grid[4][1] + grid[1][3] + grid[2][3] + grid[3][3] + grid[4][3] + grid[0][4]&nbsp;等于 94 。\n\n&nbsp;\n\n提示：\n\n\t1 <=&nbsp;n == grid.length <= 100\n\tn == grid[i].length\n\t0 <= grid[i][j] <= 109",
+  "constraints": [
+    "1 <=&nbsp;n == grid.length <= 100",
+    "n == grid[i].length",
+    "0 <= grid[i][j] <= 109"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2385",
+  "title_cn": "感染二叉树需要的总时间",
+  "title_en": "Amount of Time for Binary Tree to Be Infected",
+  "slug": "amount-of-time-for-binary-tree-to-be-infected",
+  "difficulty": "Medium",
+  "description": "给你一棵二叉树的根节点 root ，二叉树中节点的值 互不相同 。另给你一个整数 start 。在第 0 分钟，感染 将会从值为 start 的节点开始爆发。\n\n每分钟，如果节点满足以下全部条件，就会被感染：\n\n\t节点此前还没有感染。\n\t节点与一个已感染节点相邻。\n\n返回感染整棵树需要的分钟数。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,5,3,null,4,10,6,9,2], start = 3\n输出：4\n解释：节点按以下过程被感染：\n- 第 0 分钟：节点 3\n- 第 1 分钟：节点 1、10、6\n- 第 2 分钟：节点5\n- 第 3 分钟：节点 4\n- 第 4 分钟：节点 9 和 2\n感染整棵树需要 4 分钟，所以返回 4 。\n\n示例 2：\n\n输入：root = [1], start = 1\n输出：0\n解释：第 0 分钟，树中唯一一个节点处于感染状态，返回 0 。\n\n&nbsp;\n\n提示：\n\n\t树中节点的数目在范围 [1, 105] 内\n\t1 <= Node.val <= 105\n\t每个节点的值 互不相同\n\t树中必定存在值为 start 的节点",
+  "constraints": [
+    "树中节点的数目在范围 [1, 105] 内",
+    "1 <= Node.val <= 105",
+    "每个节点的值 互不相同",
+    "树中必定存在值为 start 的节点"
+  ]
+}

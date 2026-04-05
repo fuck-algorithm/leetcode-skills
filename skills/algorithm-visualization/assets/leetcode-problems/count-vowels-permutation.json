@@ -1,0 +1,11 @@
+{
+  "number": "1220",
+  "title_cn": "统计元音字母序列的数目",
+  "title_en": "Count Vowels Permutation",
+  "slug": "count-vowels-permutation",
+  "difficulty": "Hard",
+  "description": "给你一个整数&nbsp;n，请你帮忙统计一下我们可以按下述规则形成多少个长度为&nbsp;n&nbsp;的字符串：\n\n\t字符串中的每个字符都应当是小写元音字母（&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;）\n\t每个元音&nbsp;&#39;a&#39;&nbsp;后面都只能跟着&nbsp;&#39;e&#39;\n\t每个元音&nbsp;&#39;e&#39;&nbsp;后面只能跟着&nbsp;&#39;a&#39;&nbsp;或者是&nbsp;&#39;i&#39;\n\t每个元音&nbsp;&#39;i&#39;&nbsp;后面&nbsp;不能 再跟着另一个&nbsp;&#39;i&#39;\n\t每个元音&nbsp;&#39;o&#39;&nbsp;后面只能跟着&nbsp;&#39;i&#39;&nbsp;或者是&nbsp;&#39;u&#39;\n\t每个元音&nbsp;&#39;u&#39;&nbsp;后面只能跟着&nbsp;&#39;a&#39;\n\n由于答案可能会很大，所以请你返回 模&nbsp;10^9 + 7&nbsp;之后的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1\n输出：5\n解释：所有可能的字符串分别是：\"a\", \"e\", \"i\" , \"o\" 和 \"u\"。\n\n示例 2：\n\n输入：n = 2\n输出：10\n解释：所有可能的字符串分别是：\"ae\", \"ea\", \"ei\", \"ia\", \"ie\", \"io\", \"iu\", \"oi\", \"ou\" 和 \"ua\"。\n\n示例 3：\n\n输入：n = 5\n输出：68\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 2 * 10^4",
+  "constraints": [
+    "1 <= n <= 2 * 10^4"
+  ]
+}

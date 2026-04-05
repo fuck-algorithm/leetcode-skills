@@ -1,0 +1,9 @@
+{
+  "number": "2628",
+  "title_cn": "完全相等的 JSON 字符串",
+  "title_en": "JSON Deep Equal",
+  "slug": "json-deep-equal",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

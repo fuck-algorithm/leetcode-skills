@@ -1,0 +1,15 @@
+{
+  "number": "2463",
+  "title_cn": "最小移动总距离",
+  "title_en": "Minimum Total Distance Traveled",
+  "slug": "minimum-total-distance-traveled",
+  "difficulty": "Hard",
+  "description": "X 轴上有一些机器人和工厂。给你一个整数数组&nbsp;robot&nbsp;，其中&nbsp;robot[i]&nbsp;是第&nbsp;i&nbsp;个机器人的位置。再给你一个二维整数数组&nbsp;factory&nbsp;，其中&nbsp;factory[j] = [positionj, limitj]&nbsp;，表示第 j&nbsp;个工厂的位置在&nbsp;positionj&nbsp;，且第 j&nbsp;个工厂最多可以修理&nbsp;limitj&nbsp;个机器人。\n\n每个机器人所在的位置 互不相同&nbsp;。每个工厂所在的位置也 互不相同&nbsp;。注意一个机器人可能一开始跟一个工厂在 相同的位置&nbsp;。\n\n所有机器人一开始都是坏的，他们会沿着设定的方向一直移动。设定的方向要么是 X 轴的正方向，要么是 X 轴的负方向。当一个机器人经过一个没达到上限的工厂时，这个工厂会维修这个机器人，且机器人停止移动。\n\n任何时刻，你都可以设置&nbsp;部分&nbsp;机器人的移动方向。你的目标是最小化所有机器人总的移动距离。\n\n请你返回所有机器人移动的最小总距离。测试数据保证所有机器人都可以被维修。\n\n注意：\n\n\t所有机器人移动速度相同。\n\t如果两个机器人移动方向相同，它们永远不会碰撞。\n\t如果两个机器人迎面相遇，它们也不会碰撞，它们彼此之间会擦肩而过。\n\t如果一个机器人经过了一个已经达到上限的工厂，机器人会当作工厂不存在，继续移动。\n\t机器人从位置&nbsp;x 到位置&nbsp;y&nbsp;的移动距离为&nbsp;|y - x|&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：robot = [0,4,6], factory = [[2,2],[6,2]]\n输出：4\n解释：如上图所示：\n- 第一个机器人从位置 0 沿着正方向移动，在第一个工厂处维修。\n- 第二个机器人从位置 4 沿着负方向移动，在第一个工厂处维修。\n- 第三个机器人在位置 6 被第二个工厂维修，它不需要移动。\n第一个工厂的维修上限是 2 ，它维修了 2 个机器人。\n第二个工厂的维修上限是 2 ，它维修了 1 个机器人。\n总移动距离是 |2 - 0| + |2 - 4| + |6 - 6| = 4 。没有办法得到比 4 更少的总移动距离。\n\n示例 2：\n\n输入：robot = [1,-1], factory = [[-2,1],[2,1]]\n输出：2\n解释：如上图所示：\n- 第一个机器人从位置 1 沿着正方向移动，在第二个工厂处维修。\n- 第二个机器人在位置 -1 沿着负方向移动，在第一个工厂处维修。\n第一个工厂的维修上限是 1 ，它维修了 1 个机器人。\n第二个工厂的维修上限是 1 ，它维修了 1 个机器人。\n总移动距离是 |2 - 1| + |(-2) - (-1)| = 2 。没有办法得到比 2 更少的总移动距离。\n\n&nbsp;\n\n提示：\n\n\t1 <= robot.length, factory.length <= 100\n\tfactory[j].length == 2\n\t-109 <= robot[i], positionj <= 109\n\t0 <= limitj <= robot.length\n\t测试数据保证所有机器人都可以被维修。",
+  "constraints": [
+    "1 <= robot.length, factory.length <= 100",
+    "factory[j].length == 2",
+    "-109 <= robot[i], positionj <= 109",
+    "0 <= limitj <= robot.length",
+    "测试数据保证所有机器人都可以被维修。"
+  ]
+}

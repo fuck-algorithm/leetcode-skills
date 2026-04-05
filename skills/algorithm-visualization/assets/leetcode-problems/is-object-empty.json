@@ -1,0 +1,13 @@
+{
+  "number": "2727",
+  "title_cn": "判断对象是否为空",
+  "title_en": "Is Object Empty",
+  "slug": "is-object-empty",
+  "difficulty": "Easy",
+  "description": "给定一个对象或数组，判断它是否为空。\n\n\t一个空对象不包含任何键值对。\n\t一个空数组不包含任何元素。\n\n你可以假设对象或数组是通过 JSON.parse 解析得到的。\n\n&nbsp;\n\n示例 1：\n\n输入：obj = {\"x\": 5, \"y\": 42}\n输出：false\n解释：这个对象有两个键值对，所以它不为空。\n\n示例 2：\n\n输入：obj = {}\n输出：true\n解释：这个对象没有任何键值对，所以它为空。\n\n示例 3：\n\n输入：obj = [null, false, 0]\n输出：false\n解释：这个数组有 3 个元素，所以它不为空。\n\n&nbsp;\n\n提示：\n\n\tobj 是一个有效的 JSON 对象或数组\n\t2 <= JSON.stringify(obj).length <= 105\n\n&nbsp;\n你可以在 O(1) 时间复杂度内解决这个问题吗？",
+  "constraints": [
+    "obj 是一个有效的 JSON 对象或数组",
+    "2 <= JSON.stringify(obj).length <= 105",
+    "你可以在 O(1) 时间复杂度内解决这个问题吗？"
+  ]
+}

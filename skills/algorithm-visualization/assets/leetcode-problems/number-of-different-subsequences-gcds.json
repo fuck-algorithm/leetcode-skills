@@ -1,0 +1,12 @@
+{
+  "number": "1819",
+  "title_cn": "序列中不同最大公约数的数目",
+  "title_en": "Number of Different Subsequences GCDs",
+  "slug": "number-of-different-subsequences-gcds",
+  "difficulty": "Hard",
+  "description": "给你一个由正整数组成的数组 nums 。\n\n数字序列的 最大公约数 定义为序列中所有整数的共有约数中的最大整数。\n\n\t例如，序列 [4,6,16] 的最大公约数是 2 。\n\n数组的一个 子序列 本质是一个序列，可以通过删除数组中的某些元素（或者不删除）得到。\n\n\t例如，[2,5,10] 是 [1,2,1,2,4,1,5,10] 的一个子序列。\n\n计算并返回 nums 的所有 非空 子序列中 不同 最大公约数的 数目 。\n\n示例 1：\n\n输入：nums = [6,10,3]\n输出：5\n解释：上图显示了所有的非空子序列与各自的最大公约数。\n不同的最大公约数为 6 、10 、3 、2 和 1 。\n\n示例 2：\n\n输入：nums = [5,15,40,5,6]\n输出：7\n\n提示：\n\n\t1 5\n\t1 5",
+  "constraints": [
+    "1 5",
+    "1 5"
+  ]
+}

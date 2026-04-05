@@ -1,0 +1,13 @@
+{
+  "number": "LCR 018",
+  "title_cn": "验证回文串",
+  "title_en": "验证回文串",
+  "slug": "XltzEq",
+  "difficulty": "Easy",
+  "description": "给定一个字符串 s ，验证 s&nbsp;是否是&nbsp;回文串&nbsp;，只考虑字母和数字字符，可以忽略字母的大小写。\n\n本题中，将空字符串定义为有效的&nbsp;回文串&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"A man, a plan, a canal: Panama\"\n输出: true\n解释：\"amanaplanacanalpanama\" 是回文串\n\n示例 2：\n\n输入: s = \"race a car\"\n输出: false\n解释：\"raceacar\" 不是回文串\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2 * 105\n\t字符串 s 由 ASCII 字符组成\n\n&nbsp;\n\n注意：本题与主站 125&nbsp;题相同：&nbsp;https://leetcode.cn/problems/valid-palindrome/",
+  "constraints": [
+    "1 <= s.length <= 2 * 105",
+    "字符串 s 由 ASCII 字符组成",
+    "注意：本题与主站 125&nbsp;题相同：&nbsp;https://leetcode.cn/problems/valid-palindrome/"
+  ]
+}

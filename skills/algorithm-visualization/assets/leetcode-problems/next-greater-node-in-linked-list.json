@@ -1,0 +1,13 @@
+{
+  "number": "1019",
+  "title_cn": "链表中的下一个更大节点",
+  "title_en": "Next Greater Node In Linked List",
+  "slug": "next-greater-node-in-linked-list",
+  "difficulty": "Medium",
+  "description": "给定一个长度为&nbsp;n&nbsp;的链表&nbsp;head\n\n对于列表中的每个节点，查找下一个 更大节点 的值。也就是说，对于每个节点，找到它旁边的第一个节点的值，这个节点的值 严格大于 它的值。\n\n返回一个整数数组 answer ，其中 answer[i] 是第 i 个节点( 从1开始 )的下一个更大的节点的值。如果第 i 个节点没有下一个更大的节点，设置&nbsp;answer[i] = 0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [2,1,5]\n输出：[5,5,0]\n\n示例 2：\n\n输入：head = [2,7,4,3,5]\n输出：[7,0,5,5,0]\n\n&nbsp;\n\n提示：\n\n\t链表中节点数为&nbsp;n\n\t1 <= n <= 104\n\t1 <= Node.val <= 109",
+  "constraints": [
+    "链表中节点数为&nbsp;n",
+    "1 <= n <= 104",
+    "1 <= Node.val <= 109"
+  ]
+}

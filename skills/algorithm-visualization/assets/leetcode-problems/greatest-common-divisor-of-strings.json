@@ -1,0 +1,12 @@
+{
+  "number": "1071",
+  "title_cn": "字符串的最大公因子",
+  "title_en": "Greatest Common Divisor of Strings",
+  "slug": "greatest-common-divisor-of-strings",
+  "difficulty": "Easy",
+  "description": "对于字符串&nbsp;s 和&nbsp;t，只有在&nbsp;s = t + t + t + ... + t + t（t 自身连接 1 次或多次）时，我们才认定&nbsp;“t 能除尽 s”。\n\n给定两个字符串&nbsp;str1&nbsp;和&nbsp;str2&nbsp;。返回 最长字符串&nbsp;x，要求满足&nbsp;x 能除尽 str1 且 x 能除尽 str2 。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：str1 = \"ABCABC\", str2 = \"ABC\"\n\n输出：\"ABC\"\n\n示例 2：\n\n输入：str1 = \"ABABAB\", str2 = \"ABAB\"\n\n输出：\"AB\"\n\n示例 3：\n\n输入：str1 = \"LEET\", str2 = \"CODE\"\n\n输出：\"\"\n\n示例 4：\n\n输入：str1 = \"AAAAAB\", str2 = \"AAA\"\n\n输出：\"\"\n\n&nbsp;\n\n提示：\n\n\t1 <= str1.length, str2.length <= 1000\n\tstr1&nbsp;和&nbsp;str2&nbsp;由大写英文字母组成",
+  "constraints": [
+    "1 <= str1.length, str2.length <= 1000",
+    "str1&nbsp;和&nbsp;str2&nbsp;由大写英文字母组成"
+  ]
+}

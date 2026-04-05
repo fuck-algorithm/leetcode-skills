@@ -1,0 +1,16 @@
+{
+  "number": "3508",
+  "title_cn": "设计路由器",
+  "title_en": "Implement Router",
+  "slug": "implement-router",
+  "difficulty": "Medium",
+  "description": "请你设计一个数据结构来高效管理网络路由器中的数据包。每个数据包包含以下属性：\n\n\tsource：生成该数据包的机器的唯一标识符。\n\tdestination：目标机器的唯一标识符。\n\ttimestamp：该数据包到达路由器的时间戳。\n\n实现 Router 类：\n\nRouter(int memoryLimit)：初始化路由器对象，并设置固定的内存限制。\n\n\tmemoryLimit 是路由器在任意时间点可以存储的 最大 数据包数量。\n\t如果添加一个新数据包会超过这个限制，则必须移除 最旧的 数据包以腾出空间。\n\nbool addPacket(int source, int destination, int timestamp)：将具有给定属性的数据包添加到路由器。\n\n\t如果路由器中已经存在一个具有相同 source、destination 和 timestamp 的数据包，则视为重复数据包。\n\t如果数据包成功添加（即不是重复数据包），返回 true；否则返回 false。\n\nint[] forwardPacket()：以 FIFO（先进先出）顺序转发下一个数据包。\n\n\t从存储中移除该数据包。\n\t以数组 [source, destination, timestamp] 的形式返回该数据包。\n\t如果没有数据包可以转发，则返回空数组。\n\nint getCount(int destination, int startTime, int endTime)：\n\n\t返回当前存储在路由器中（即尚未转发）的，且目标地址为指定 destination 且时间戳在范围 [startTime, endTime]（包括两端）内的数据包数量。\n\n注意：对于 addPacket 的查询会按照 timestamp 的非递减顺序进行。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"Router\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"forwardPacket\", \"addPacket\", \"getCount\"]\n[[3], [1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]\n\n输出：\n[null, true, true, false, true, true, [2, 5, 90], true, 1] \n\n解释：\nRouter router = new Router(3); // 初始化路由器，内存限制为 3。\nrouter.addPacket(1, 4, 90); // 数据包被添加，返回 True。\nrouter.addPacket(2, 5, 90); // 数据包被添加，返回 True。\nrouter.addPacket(1, 4, 90); // 这是一个重复数据包，返回 False。\nrouter.addPacket(3, 5, 95); // 数据包被添加，返回 True。\nrouter.addPacket(4, 5, 105); // 数据包被添加，[1, 4, 90] 被移除，因为数据包数量超过限制，返回 True。\nrouter.forwardPacket(); // 转发数据包 [2, 5, 90] 并将其从路由器中移除。\nrouter.addPacket(5, 2, 110); // 数据包被添加，返回 True。\nrouter.getCount(5, 100, 110); // 唯一目标地址为 5 且时间在 [100, 110]&nbsp;范围内的数据包是 [4, 5, 105]，返回 1。\n\n示例 2：\n\n输入：\n[\"Router\", \"addPacket\", \"forwardPacket\", \"forwardPacket\"]\n[[2], [7, 4, 90], [], []]\n\n输出：\n[null, true, [7, 4, 90], []] \n\n解释：\nRouter router = new Router(2); // 初始化路由器，内存限制为 2。\nrouter.addPacket(7, 4, 90); // 返回 True。\nrouter.forwardPacket(); // 返回 [7, 4, 90]。\nrouter.forwardPacket(); // 没有数据包可以转发，返回 []。\n\n&nbsp;\n\n提示：\n\n\t2 <= memoryLimit <= 105\n\t1 <= source, destination <= 2 * 105\n\t1 <= timestamp <= 109\n\t1 <= startTime <= endTime <= 109\n\taddPacket、forwardPacket 和 getCount 方法的总调用次数最多为 105。\n\t对于 addPacket 的查询，timestamp 按非递减顺序给出。",
+  "constraints": [
+    "2 <= memoryLimit <= 105",
+    "1 <= source, destination <= 2 * 105",
+    "1 <= timestamp <= 109",
+    "1 <= startTime <= endTime <= 109",
+    "addPacket、forwardPacket 和 getCount 方法的总调用次数最多为 105。",
+    "对于 addPacket 的查询，timestamp 按非递减顺序给出。"
+  ]
+}

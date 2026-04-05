@@ -1,0 +1,12 @@
+{
+  "number": "LCR 168",
+  "title_cn": "丑数",
+  "title_en": "丑数",
+  "slug": "chou-shu-lcof",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n ，请你找出并返回第 n 个 丑数 。\n\n说明：丑数是只包含质因数 2、3 和/或 5 的正整数；1 是丑数。\n\n&nbsp;\n\n示例 1：\n\n输入: n = 10\n输出: 12\n解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。\n\n提示：&nbsp;\n\n\t1 <= n&nbsp;<=&nbsp;1690\n\n&nbsp;\n\n注意：本题与主站 264 题相同：https://leetcode.cn/problems/ugly-number-ii/\n\n&nbsp;",
+  "constraints": [
+    "1 <= n&nbsp;<=&nbsp;1690",
+    "注意：本题与主站 264 题相同：https://leetcode.cn/problems/ugly-number-ii/"
+  ]
+}

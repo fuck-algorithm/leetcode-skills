@@ -1,0 +1,12 @@
+{
+  "number": "2981",
+  "title_cn": "找出出现至少三次的最长特殊子字符串 I",
+  "title_en": "Find Longest Special Substring That Occurs Thrice I",
+  "slug": "find-longest-special-substring-that-occurs-thrice-i",
+  "difficulty": "Medium",
+  "description": "给你一个仅由小写英文字母组成的字符串 s 。\n\n如果一个字符串仅由单一字符组成，那么它被称为 特殊 字符串。例如，字符串 \"abc\" 不是特殊字符串，而字符串 \"ddd\"、\"zz\" 和 \"f\" 是特殊字符串。\n\n返回在 s 中出现 至少三次 的 最长特殊子字符串 的长度，如果不存在出现至少三次的特殊子字符串，则返回 -1 。\n\n子字符串 是字符串中的一个连续 非空 字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aaaa\"\n输出：2\n解释：出现三次的最长特殊子字符串是 \"aa\" ：子字符串 \"aaaa\"、\"aaaa\" 和 \"aaaa\"。\n可以证明最大长度是 2 。\n\n示例 2：\n\n输入：s = \"abcdef\"\n输出：-1\n解释：不存在出现至少三次的特殊子字符串。因此返回 -1 。\n\n示例 3：\n\n输入：s = \"abcaba\"\n输出：1\n解释：出现三次的最长特殊子字符串是 \"a\" ：子字符串 \"abcaba\"、\"abcaba\" 和 \"abcaba\"。\n可以证明最大长度是 1 。\n\n&nbsp;\n\n提示：\n\n\t3 <= s.length <= 50\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "3 <= s.length <= 50",
+    "s 仅由小写英文字母组成。"
+  ]
+}

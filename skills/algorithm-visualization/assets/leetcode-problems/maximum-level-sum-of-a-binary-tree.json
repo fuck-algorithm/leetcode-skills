@@ -1,0 +1,12 @@
+{
+  "number": "1161",
+  "title_cn": "最大层内元素和",
+  "title_en": "Maximum Level Sum of a Binary Tree",
+  "slug": "maximum-level-sum-of-a-binary-tree",
+  "difficulty": "Medium",
+  "description": "给你一个二叉树的根节点&nbsp;root。设根节点位于二叉树的第 1 层，而根节点的子节点位于第 2 层，依此类推。\n\n返回总和 最大 的那一层的层号 x。如果有多层的总和一样大，返回其中 最小 的层号 x。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,7,0,7,-8,null,null]\n输出：2\n解释：\n第 1 层各元素之和为 1，\n第 2 层各元素之和为 7 + 0 = 7，\n第 3 层各元素之和为 7 + -8 = -1，\n所以我们返回第 2 层的层号，它的层内元素之和最大。\n\n示例 2：\n\n输入：root = [989,null,10250,98693,-89388,null,null,null,-32127]\n输出：2\n\n&nbsp;\n\n提示：\n\n\t树中的节点数在&nbsp;[1, 104]范围内\n\t-105&nbsp;<= Node.val <= 105",
+  "constraints": [
+    "树中的节点数在&nbsp;[1, 104]范围内",
+    "-105&nbsp;<= Node.val <= 105"
+  ]
+}

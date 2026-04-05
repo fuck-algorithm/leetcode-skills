@@ -1,0 +1,11 @@
+{
+  "number": "342",
+  "title_cn": "4的幂",
+  "title_en": "Power of Four",
+  "slug": "power-of-four",
+  "difficulty": "Easy",
+  "description": "给定一个整数，写一个函数来判断它是否是 4 的幂次方。如果是，返回 true ；否则，返回 false 。\n\n整数 n 是 4 的幂次方需满足：存在整数 x 使得 n == 4x\n\n&nbsp;\n\n示例 1：\n\n输入：n = 16\n输出：true\n\n示例 2：\n\n输入：n = 5\n输出：false\n\n示例 3：\n\n输入：n = 1\n输出：true\n\n&nbsp;\n\n提示：\n\n\t-231 <= n <= 231 - 1\n\n&nbsp;\n\n进阶：你能不使用循环或者递归来完成本题吗？",
+  "constraints": [
+    "-231 <= n <= 231 - 1"
+  ]
+}

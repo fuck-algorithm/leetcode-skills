@@ -1,0 +1,9 @@
+{
+  "number": "2893",
+  "title_cn": "计算每个区间内的订单",
+  "title_en": "Calculate Orders Within Each Interval",
+  "slug": "calculate-orders-within-each-interval",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

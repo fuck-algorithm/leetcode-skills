@@ -1,0 +1,12 @@
+{
+  "number": "LCR 159",
+  "title_cn": "库存管理 III",
+  "title_en": "库存管理 III",
+  "slug": "zui-xiao-de-kge-shu-lcof",
+  "difficulty": "Easy",
+  "description": "仓库管理员以数组 stock 形式记录商品库存表，其中 stock[i] 表示对应商品库存余量。请返回库存余量最少的 cnt 个商品余量，返回&nbsp;顺序不限。\n\n&nbsp;\n\n示例 1：\n\n输入：stock = [2,5,7,4], cnt = 1\n输出：[2]\n\n示例 2：\n\n输入：stock = [0,2,3,6], cnt = 2\n输出：[0,2] 或 [2,0]\n\n&nbsp;\n\n提示：\n\n\t0 <= cnt <= stock.length <= 10000\n\t0 <= stock[i] <= 10000\n\n&nbsp;",
+  "constraints": [
+    "0 <= cnt <= stock.length <= 10000",
+    "0 <= stock[i] <= 10000"
+  ]
+}

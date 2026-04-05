@@ -1,0 +1,12 @@
+{
+  "number": "2470",
+  "title_cn": "最小公倍数等于 K 的子数组数目",
+  "title_en": "Number of Subarrays With LCM Equal to K",
+  "slug": "number-of-subarrays-with-lcm-equal-to-k",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums 和一个整数 k ，请你统计并返回 nums 的 子数组 中满足 元素最小公倍数为 k 的子数组数目。\n\n子数组 是数组中一个连续非空的元素序列。\n\n数组的最小公倍数 是可被所有数组元素整除的最小正整数。\n\n&nbsp;\n\n示例 1 ：\n\n输入：nums = [3,6,2,7,1], k = 6\n输出：4\n解释：以 6 为最小公倍数的子数组是：\n- [3,6,2,7,1]\n- [3,6,2,7,1]\n- [3,6,2,7,1]\n- [3,6,2,7,1]\n\n示例 2 ：\n\n输入：nums = [3], k = 2\n输出：0\n解释：不存在以 2 为最小公倍数的子数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i], k <= 1000",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i], k <= 1000"
+  ]
+}

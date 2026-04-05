@@ -1,0 +1,11 @@
+{
+  "number": "2376",
+  "title_cn": "统计特殊整数",
+  "title_en": "Count Special Integers",
+  "slug": "count-special-integers",
+  "difficulty": "Hard",
+  "description": "如果一个正整数每一个数位都是 互不相同&nbsp;的，我们称它是 特殊整数 。\n\n给你一个 正&nbsp;整数&nbsp;n&nbsp;，请你返回区间&nbsp;[1, n]&nbsp;之间特殊整数的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 20\n输出：19\n解释：1 到 20 之间所有整数除了 11 以外都是特殊整数。所以总共有 19 个特殊整数。\n\n示例 2：\n\n输入：n = 5\n输出：5\n解释：1 到 5 所有整数都是特殊整数。\n\n示例 3：\n\n输入：n = 135\n输出：110\n解释：从 1 到 135 总共有 110 个整数是特殊整数。\n不特殊的部分数字为：22 ，114 和 131 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 2 * 109",
+  "constraints": [
+    "1 <= n <= 2 * 109"
+  ]
+}

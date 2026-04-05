@@ -1,0 +1,14 @@
+{
+  "number": "3036",
+  "title_cn": "匹配模式数组的子数组数目 II",
+  "title_en": "Number of Subarrays That Match a Pattern II",
+  "slug": "number-of-subarrays-that-match-a-pattern-ii",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;，和一个下标从 0&nbsp;开始长度为 m&nbsp;的整数数组&nbsp;pattern&nbsp;，pattern&nbsp;数组只包含整数&nbsp;-1&nbsp;，0&nbsp;和&nbsp;1&nbsp;。\n\n大小为 m + 1&nbsp;的子数组&nbsp;nums[i..j]&nbsp;如果对于每个元素 pattern[k]&nbsp;都满足以下条件，那么我们说这个子数组匹配模式数组&nbsp;pattern&nbsp;：\n\n\t如果 pattern[k] == 1 ，那么 nums[i + k + 1] > nums[i + k]\n\t如果&nbsp;pattern[k] == 0&nbsp;，那么&nbsp;nums[i + k + 1] == nums[i + k]\n\t如果&nbsp;pattern[k] == -1&nbsp;，那么&nbsp;nums[i + k + 1] < nums[i + k]\n\n请你返回匹配 pattern&nbsp;的 nums&nbsp;子数组的 数目&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5,6], pattern = [1,1]\n输出：4\n解释：模式 [1,1] 说明我们要找的子数组是长度为 3 且严格上升的。在数组 nums 中，子数组 [1,2,3] ，[2,3,4] ，[3,4,5] 和 [4,5,6] 都匹配这个模式。\n所以 nums 中总共有 4 个子数组匹配这个模式。\n\n示例 2：\n\n输入：nums = [1,4,4,1,3,5,5,3], pattern = [1,0,-1]\n输出：2\n解释：这里，模式数组 [1,0,-1] 说明我们需要找的子数组中，第一个元素小于第二个元素，第二个元素等于第三个元素，第三个元素大于第四个元素。在 nums 中，子数组 [1,4,4,1] 和 [3,5,5,3] 都匹配这个模式。\n所以 nums 中总共有 2 个子数组匹配这个模式。\n\n&nbsp;\n\n提示：\n\n\t2 <= n == nums.length <= 106\n\t1 <= nums[i] <= 109\n\t1 <= m == pattern.length < n\n\t-1 <= pattern[i] <= 1",
+  "constraints": [
+    "2 <= n == nums.length <= 106",
+    "1 <= nums[i] <= 109",
+    "1 <= m == pattern.length < n",
+    "-1 <= pattern[i] <= 1"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2537",
+  "title_cn": "统计好子数组的数目",
+  "title_en": "Count the Number of Good Subarrays",
+  "slug": "count-the-number-of-good-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums&nbsp;和一个整数 k&nbsp;，请你返回 nums&nbsp;中 好&nbsp;子数组的数目。\n\n一个子数组 arr&nbsp;如果有 至少&nbsp;k&nbsp;对下标 (i, j)&nbsp;满足 i < j&nbsp;且 arr[i] == arr[j]&nbsp;，那么称它是一个 好&nbsp;子数组。\n\n子数组&nbsp;是原数组中一段连续 非空&nbsp;的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,1,1,1], k = 10\n输出：1\n解释：唯一的好子数组是这个数组本身。\n\n示例 2：\n\n输入：nums = [3,1,4,3,2,2,4], k = 2\n输出：4\n解释：总共有 4 个不同的好子数组：\n- [3,1,4,3,2,2] 有 2 对。\n- [3,1,4,3,2,2,4] 有 3 对。\n- [1,4,3,2,2,4] 有 2 对。\n- [4,3,2,2,4] 有 2 对。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i], k <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i], k <= 109"
+  ]
+}

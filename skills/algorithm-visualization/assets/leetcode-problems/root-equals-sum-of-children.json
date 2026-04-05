@@ -1,0 +1,12 @@
+{
+  "number": "2236",
+  "title_cn": "判断根结点是否等于子结点之和",
+  "title_en": "Root Equals Sum of Children",
+  "slug": "root-equals-sum-of-children",
+  "difficulty": "Easy",
+  "description": "给你一个 二叉树 的根结点&nbsp;root，该二叉树由恰好&nbsp;3&nbsp;个结点组成：根结点、左子结点和右子结点。\n\n如果根结点值等于两个子结点值之和，返回&nbsp;true&nbsp;，否则返回&nbsp;false 。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [10,4,6]\n输出：true\n解释：根结点、左子结点和右子结点的值分别是 10 、4 和 6 。\n由于 10 等于 4 + 6 ，因此返回 true 。\n\n示例 2：\n\n输入：root = [5,3,1]\n输出：false\n解释：根结点、左子结点和右子结点的值分别是 5 、3 和 1 。\n由于 5 不等于 3 + 1 ，因此返回 false 。\n\n&nbsp;\n\n提示：\n\n\t树只包含根结点、左子结点和右子结点\n\t-100 <= Node.val <= 100",
+  "constraints": [
+    "树只包含根结点、左子结点和右子结点",
+    "-100 <= Node.val <= 100"
+  ]
+}

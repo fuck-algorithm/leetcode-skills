@@ -1,0 +1,12 @@
+{
+  "number": "1124",
+  "title_cn": "表现良好的最长时间段",
+  "title_en": "Longest Well-Performing Interval",
+  "slug": "longest-well-performing-interval",
+  "difficulty": "Medium",
+  "description": "给你一份工作时间表&nbsp;hours，上面记录着某一位员工每天的工作小时数。\n\n我们认为当员工一天中的工作小时数大于&nbsp;8 小时的时候，那么这一天就是「劳累的一天」。\n\n所谓「表现良好的时间段」，意味在这段时间内，「劳累的天数」是严格 大于「不劳累的天数」。\n\n请你返回「表现良好时间段」的最大长度。\n\n&nbsp;\n\n示例 1：\n\n输入：hours = [9,9,6,0,6,6,9]\n输出：3\n解释：最长的表现良好时间段是 [9,9,6]。\n\n示例 2：\n\n输入：hours = [6,6,6]\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= hours.length <= 104\n\t0 <= hours[i] <= 16",
+  "constraints": [
+    "1 <= hours.length <= 104",
+    "0 <= hours[i] <= 16"
+  ]
+}

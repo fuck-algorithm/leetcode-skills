@@ -1,0 +1,13 @@
+{
+  "number": "2438",
+  "title_cn": "二的幂数组中查询范围内的乘积",
+  "title_en": "Range Product Queries of Powers",
+  "slug": "range-product-queries-of-powers",
+  "difficulty": "Medium",
+  "description": "给你一个正整数&nbsp;n&nbsp;，你需要找到一个下标从&nbsp;0&nbsp;开始的数组&nbsp;powers&nbsp;，它包含 最少&nbsp;数目的 2&nbsp;的幂，且它们的和为&nbsp;n&nbsp;。powers&nbsp;数组是&nbsp;非递减&nbsp;顺序的。根据前面描述，构造&nbsp;powers&nbsp;数组的方法是唯一的。\n\n同时给你一个下标从 0&nbsp;开始的二维整数数组&nbsp;queries&nbsp;，其中&nbsp;queries[i] = [lefti, righti]&nbsp;，其中&nbsp;queries[i]&nbsp;表示请你求出满足&nbsp;lefti <= j <= righti&nbsp;的所有&nbsp;powers[j]&nbsp;的乘积。\n\n请你返回一个数组&nbsp;answers&nbsp;，长度与&nbsp;queries&nbsp;的长度相同，其中&nbsp;answers[i]是第&nbsp;i&nbsp;个查询的答案。由于查询的结果可能非常大，请你将每个&nbsp;answers[i]&nbsp;都对&nbsp;109 + 7&nbsp;取余&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 15, queries = [[0,1],[2,2],[0,3]]\n输出：[2,4,64]\n解释：\n对于 n = 15 ，得到 powers = [1,2,4,8] 。没法得到元素数目更少的数组。\n第 1 个查询的答案：powers[0] * powers[1] = 1 * 2 = 2 。\n第 2 个查询的答案：powers[2] = 4 。\n第 3 个查询的答案：powers[0] * powers[1] * powers[2] * powers[3] = 1 * 2 * 4 * 8 = 64 。\n每个答案对 109 + 7 取余得到的结果都相同，所以返回 [2,4,64] 。\n\n示例 2：\n\n输入：n = 2, queries = [[0,0]]\n输出：[2]\n解释：\n对于 n = 2, powers = [2] 。\n唯一一个查询的答案是 powers[0] = 2 。答案对 109 + 7 取余后结果相同，所以返回 [2] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 109\n\t1 <= queries.length <= 105\n\t0 <= starti <= endi < powers.length",
+  "constraints": [
+    "1 <= n <= 109",
+    "1 <= queries.length <= 105",
+    "0 <= starti <= endi < powers.length"
+  ]
+}

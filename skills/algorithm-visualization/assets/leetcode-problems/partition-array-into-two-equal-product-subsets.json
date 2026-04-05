@@ -1,0 +1,14 @@
+{
+  "number": "3566",
+  "title_cn": "等积子集的划分方案",
+  "title_en": "Partition Array into Two Equal Product Subsets",
+  "slug": "partition-array-into-two-equal-product-subsets",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums，其中包含的正整数&nbsp;互不相同&nbsp;，另给你一个整数 target。\n\n请判断是否可以将 nums 分成两个&nbsp;非空、互不相交&nbsp;的&nbsp;子集&nbsp;，并且每个元素必须 &nbsp;恰好 属于&nbsp;一个&nbsp;子集，使得这两个子集中元素的乘积都等于 target。\n\n如果存在这样的划分，返回 true；否则，返回 false。\n\n子集&nbsp;是数组中元素的一个选择集合。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [3,1,6,8,4], target = 24\n\n输出： true\n\n解释：子集 [3, 8] 和 [1, 6, 4] 的乘积均为 24。因此，输出为 true 。\n\n示例 2：\n\n输入： nums = [2,5,3,7], target = 15\n\n输出： false\n\n解释：无法将 nums 划分为两个非空的互不相交子集，使得它们的乘积均为 15。因此，输出为 false。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 12\n\t1 <= target <= 1015\n\t1 <= nums[i] <= 100\n\tnums 中的所有元素互不相同。",
+  "constraints": [
+    "3 <= nums.length <= 12",
+    "1 <= target <= 1015",
+    "1 <= nums[i] <= 100",
+    "nums 中的所有元素互不相同。"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "number": "250",
+  "title_cn": "统计同值子树",
+  "title_en": "Count Univalue Subtrees",
+  "slug": "count-univalue-subtrees",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

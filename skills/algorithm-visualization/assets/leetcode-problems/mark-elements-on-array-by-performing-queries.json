@@ -1,0 +1,16 @@
+{
+  "number": "3080",
+  "title_cn": "执行操作标记数组中的元素",
+  "title_en": "Mark Elements on Array by Performing Queries",
+  "slug": "mark-elements-on-array-by-performing-queries",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n&nbsp;下标从 0&nbsp;开始的正整数数组&nbsp;nums&nbsp;。\n\n同时给你一个长度为 m&nbsp;的二维操作数组&nbsp;queries&nbsp;，其中&nbsp;queries[i] = [indexi, ki]&nbsp;。\n\n一开始，数组中的所有元素都 未标记&nbsp;。\n\n你需要依次对数组执行 m&nbsp;次操作，第 i&nbsp;次操作中，你需要执行：\n\n\t如果下标&nbsp;indexi&nbsp;对应的元素还没标记，那么标记这个元素。\n\t然后标记&nbsp;ki&nbsp;个数组中还没有标记的&nbsp;最小&nbsp;元素。如果有元素的值相等，那么优先标记它们中下标较小的。如果少于&nbsp;ki&nbsp;个未标记元素存在，那么将它们全部标记。\n\n请你返回一个长度为 m&nbsp;的数组 answer&nbsp;，其中&nbsp;answer[i]是第&nbsp;i&nbsp;次操作后数组中还没标记元素的&nbsp;和&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,2,1,2,3,1], queries = [[1,2],[3,3],[4,2]]\n\n输出：[8,3,0]\n\n解释：\n\n我们依次对数组做以下操作：\n\n\t标记下标为&nbsp;1&nbsp;的元素，同时标记&nbsp;2&nbsp;个未标记的最小元素。标记完后数组为&nbsp;nums = [1,2,2,1,2,3,1]&nbsp;。未标记元素的和为&nbsp;2 + 2 + 3 + 1 = 8&nbsp;。\n\t标记下标为&nbsp;3&nbsp;的元素，由于它已经被标记过了，所以我们忽略这次标记，同时标记最靠前的&nbsp;3&nbsp;个未标记的最小元素。标记完后数组为&nbsp;nums = [1,2,2,1,2,3,1]&nbsp;。未标记元素的和为&nbsp;3&nbsp;。\n\t标记下标为 4&nbsp;的元素，由于它已经被标记过了，所以我们忽略这次标记，同时标记最靠前的 2&nbsp;个未标记的最小元素。标记完后数组为&nbsp;nums = [1,2,2,1,2,3,1]&nbsp;。未标记元素的和为&nbsp;0&nbsp;。\n\n示例 2：\n\n输入：nums = [1,4,2,3], queries = [[0,1]]\n\n输出：[7]\n\n解释：我们执行一次操作，将下标为&nbsp;0&nbsp;处的元素标记，并且标记最靠前的&nbsp;1&nbsp;个未标记的最小元素。标记完后数组为&nbsp;nums = [1,4,2,3]&nbsp;。未标记元素的和为&nbsp;4 + 3 = 7&nbsp;。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\tm == queries.length\n\t1 <= m <= n <= 105\n\t1 <= nums[i] <= 105\n\tqueries[i].length == 2\n\t0 <= indexi, ki <= n - 1",
+  "constraints": [
+    "n == nums.length",
+    "m == queries.length",
+    "1 <= m <= n <= 105",
+    "1 <= nums[i] <= 105",
+    "queries[i].length == 2",
+    "0 <= indexi, ki <= n - 1"
+  ]
+}

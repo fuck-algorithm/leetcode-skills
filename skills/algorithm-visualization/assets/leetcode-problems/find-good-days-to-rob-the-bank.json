@@ -1,0 +1,12 @@
+{
+  "number": "2100",
+  "title_cn": "适合野炊的日子",
+  "title_en": "Find Good Days to Rob the Bank",
+  "slug": "find-good-days-to-rob-the-bank",
+  "difficulty": "Medium",
+  "description": "你和朋友们准备去野炊。给你一个下标从 0&nbsp;开始的整数数组&nbsp;security&nbsp;，其中&nbsp;security[i]&nbsp;是第 i&nbsp;天的建议出行指数。日子从 0&nbsp;开始编号。同时给你一个整数&nbsp;time&nbsp;。\n\n如果第 i&nbsp;天满足以下所有条件，我们称它为一个适合野炊的日子：\n\n\t第 i&nbsp;天前和后都分别至少有 time&nbsp;天。\n\t第 i&nbsp;天前连续 time&nbsp;天建议出行指数都是非递增的。\n\t第 i&nbsp;天后连续 time&nbsp;天建议出行指数都是非递减的。\n\n更正式的，第 i 天是一个适合野炊的日子当且仅当：security[i - time] >= security[i - time + 1] >= ... >= security[i] <= ... <= security[i + time - 1] <= security[i + time].\n\n请你返回一个数组，包含 所有 适合野炊的日子（下标从 0&nbsp;开始）。返回的日子可以 任意&nbsp;顺序排列。\n\n&nbsp;\n\n示例 1：\n\n输入：security = [5,3,3,3,5,6,2], time = 2\n输出：[2,3]\n解释：\n第 2 天，我们有 security[0] >= security[1] >= security[2] <= security[3] <= security[4] 。\n第 3 天，我们有 security[1] >= security[2] >= security[3] <= security[4] <= security[5] 。\n没有其他日子符合这个条件，所以日子 2 和 3 是适合野炊的日子。\n\n示例 2：\n\n输入：security = [1,1,1,1,1], time = 0\n输出：[0,1,2,3,4]\n解释：\n因为 time 等于 0 ，所以每一天都是适合野炊的日子，所以返回每一天。\n\n示例 3：\n\n输入：security = [1,2,3,4,5,6], time = 2\n输出：[]\n解释：\n没有任何一天的前 2 天建议出行指数是非递增的。\n所以没有适合野炊的日子，返回空数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= security.length <= 105\n\t0 <= security[i], time <= 105",
+  "constraints": [
+    "1 <= security.length <= 105",
+    "0 <= security[i], time <= 105"
+  ]
+}

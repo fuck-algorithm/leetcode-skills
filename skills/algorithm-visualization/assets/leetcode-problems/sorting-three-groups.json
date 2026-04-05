@@ -1,0 +1,12 @@
+{
+  "number": "2826",
+  "title_cn": "将三个组排序",
+  "title_en": "Sorting Three Groups",
+  "slug": "sorting-three-groups",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。nums&nbsp;的每个元素是 1，2 或 3。在每次操作中，你可以删除&nbsp;nums&nbsp;中的一个元素。返回使 nums 成为 非递减&nbsp;顺序所需操作数的 最小值。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,3,2,1]\n输出：3\n解释：\n其中一个最优方案是删除 nums[0]，nums[2] 和 nums[3]。\n\n示例 2：\n\n输入：nums = [1,3,2,1,3,3]\n输出：2\n解释：\n其中一个最优方案是删除 nums[1] 和 nums[2]。\n\n示例 3：\n\n输入：nums = [2,2,2,2,3,3]\n输出：0\n解释：\nnums 已是非递减顺序的。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 3\n\n进阶：你可以使用&nbsp;O(n)&nbsp;时间复杂度以内的算法解决吗？",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 3"
+  ]
+}

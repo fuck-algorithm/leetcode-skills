@@ -1,0 +1,12 @@
+{
+  "number": "988",
+  "title_cn": "从叶结点开始的最小字符串",
+  "title_en": "Smallest String Starting From Leaf",
+  "slug": "smallest-string-starting-from-leaf",
+  "difficulty": "Medium",
+  "description": "给定一颗根结点为&nbsp;root&nbsp;的二叉树，树中的每一个结点都有一个&nbsp;[0, 25]&nbsp;范围内的值，分别代表字母&nbsp;'a' 到&nbsp;'z'。\n\n返回 按字典序最小 的字符串，该字符串从这棵树的一个叶结点开始，到根结点结束。\n\n注：字符串中任何较短的前缀在 字典序上 都是 较小 的：\n\n\t例如，在字典序上&nbsp;\"ab\" 比&nbsp;\"aba\"&nbsp;要小。叶结点是指没有子结点的结点。&nbsp;\n\n节点的叶节点是没有子节点的节点。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [0,1,2,3,4,3,4]\n输出：\"dba\"\n\n示例 2：\n\n输入：root = [25,1,3,1,3,0,2]\n输出：\"adz\"\n\n示例 3：\n\n输入：root = [2,2,1,null,1,0,null,0]\n输出：\"abc\"\n\n&nbsp;\n\n提示：\n\n\t给定树的结点数在&nbsp;[1, 8500] 范围内\n\t0 <= Node.val <= 25",
+  "constraints": [
+    "给定树的结点数在&nbsp;[1, 8500] 范围内",
+    "0 <= Node.val <= 25"
+  ]
+}

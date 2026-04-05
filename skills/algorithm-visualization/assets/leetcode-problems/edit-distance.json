@@ -1,0 +1,12 @@
+{
+  "number": "72",
+  "title_cn": "编辑距离",
+  "title_en": "Edit Distance",
+  "slug": "edit-distance",
+  "difficulty": "Medium",
+  "description": "给你两个单词&nbsp;word1 和&nbsp;word2， 请返回将&nbsp;word1&nbsp;转换成&nbsp;word2 所使用的最少操作数 &nbsp;。\n\n你可以对一个单词进行如下三种操作：\n\n\t插入一个字符\n\t删除一个字符\n\t替换一个字符\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：word1 = \"horse\", word2 = \"ros\"\n输出：3\n解释：\nhorse -> rorse (将 'h' 替换为 'r')\nrorse -> rose (删除 'r')\nrose -> ros (删除 'e')\n\n示例&nbsp;2：\n\n输入：word1 = \"intention\", word2 = \"execution\"\n输出：5\n解释：\nintention -> inention (删除 't')\ninention -> enention (将 'i' 替换为 'e')\nenention -> exention (将 'n' 替换为 'x')\nexention -> exection (将 'n' 替换为 'c')\nexection -> execution (插入 'u')\n\n&nbsp;\n\n提示：\n\n\t0 <= word1.length, word2.length <= 500\n\tword1 和 word2 由小写英文字母组成",
+  "constraints": [
+    "0 <= word1.length, word2.length <= 500",
+    "word1 和 word2 由小写英文字母组成"
+  ]
+}

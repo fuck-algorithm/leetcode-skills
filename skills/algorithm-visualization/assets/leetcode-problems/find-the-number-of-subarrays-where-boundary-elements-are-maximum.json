@@ -1,0 +1,12 @@
+{
+  "number": "3113",
+  "title_cn": "边界元素是最大值的子数组数目",
+  "title_en": "Find the Number of Subarrays Where Boundary Elements Are Maximum",
+  "slug": "find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+  "difficulty": "Hard",
+  "description": "给你一个 正&nbsp;整数数组&nbsp;nums&nbsp;。\n\n请你求出&nbsp;nums&nbsp;中有多少个子数组，满足子数组中&nbsp;第一个&nbsp;和 最后一个&nbsp;元素都是这个子数组中的 最大&nbsp;值。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,4,3,3,2]\n\n输出：6\n\n解释：\n\n总共有 6 个子数组满足第一个元素和最后一个元素都是子数组中的最大值：\n\n\t子数组&nbsp;[1,4,3,3,2]&nbsp;，最大元素为 1 ，第一个和最后一个元素都是 1 。\n\t子数组&nbsp;[1,4,3,3,2]&nbsp;，最大元素为 4 ，第一个和最后一个元素都是 4 。\n\t子数组&nbsp;[1,4,3,3,2]&nbsp;，最大元素为 3 ，第一个和最后一个元素都是 3 。\n\t子数组&nbsp;[1,4,3,3,2]&nbsp;，最大元素为 3 ，第一个和最后一个元素都是 3 。\n\t子数组&nbsp;[1,4,3,3,2]&nbsp;，最大元素为 2 ，第一个和最后一个元素都是 2 。\n\t子数组&nbsp;[1,4,3,3,2]&nbsp;，最大元素为 3 ，第一个和最后一个元素都是 3 。\n\n所以我们返回 6 。\n\n示例 2：\n\n输入：nums = [3,3,3]\n\n输出：6\n\n解释：\n\n总共有 6 个子数组满足第一个元素和最后一个元素都是子数组中的最大值：\n\n\t子数组 [3,3,3]&nbsp;，最大元素为 3&nbsp;，第一个和最后一个元素都是 3&nbsp;。\n\t子数组 [3,3,3]&nbsp;，最大元素为 3&nbsp;，第一个和最后一个元素都是 3&nbsp;。\n\t子数组 [3,3,3]&nbsp;，最大元素为 3&nbsp;，第一个和最后一个元素都是 3&nbsp;。\n\t子数组 [3,3,3]&nbsp;，最大元素为 3&nbsp;，第一个和最后一个元素都是 3&nbsp;。\n\t子数组 [3,3,3]&nbsp;，最大元素为 3&nbsp;，第一个和最后一个元素都是 3&nbsp;。\n\t子数组 [3,3,3]&nbsp;，最大元素为 3&nbsp;，第一个和最后一个元素都是 3&nbsp;。\n\n所以我们返回 6 。\n\n示例 3：\n\n输入：nums = [1]\n\n输出：1\n\n解释：\n\nnums&nbsp;中只有一个子数组&nbsp;[1]&nbsp;，最大元素为 1 ，第一个和最后一个元素都是 1 。\n\n所以我们返回 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

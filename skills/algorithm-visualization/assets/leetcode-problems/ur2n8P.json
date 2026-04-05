@@ -1,0 +1,20 @@
+{
+  "number": "LCR 115",
+  "title_cn": "序列重建",
+  "title_en": "序列重建",
+  "slug": "ur2n8P",
+  "difficulty": "Medium",
+  "description": "给定一个长度为 n 的整数数组 nums ，其中 nums 是范围为 [1，n] 的整数的排列。还提供了一个 2D 整数数组&nbsp;sequences&nbsp;，其中&nbsp;sequences[i]&nbsp;是&nbsp;nums&nbsp;的子序列。\n检查 nums 是否是唯一的最短&nbsp;超序列 。最短 超序列 是 长度最短 的序列，并且所有序列&nbsp;sequences[i]&nbsp;都是它的子序列。对于给定的数组&nbsp;sequences&nbsp;，可能存在多个有效的 超序列 。\n\n\t例如，对于&nbsp;sequences = [[1,2],[1,3]]&nbsp;，有两个最短的 超序列 ，[1,2,3] 和 [1,3,2] 。\n\t而对于&nbsp;sequences = [[1,2],[1,3],[1,2,3]]&nbsp;，唯一可能的最短 超序列 是 [1,2,3] 。[1,2,3,4] 是可能的超序列，但不是最短的。\n\n如果 nums 是序列的唯一最短 超序列 ，则返回 true ，否则返回 false 。\n子序列 是一个可以通过从另一个序列中删除一些元素或不删除任何元素，而不改变其余元素的顺序的序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3], sequences = [[1,2],[1,3]]\n输出：false\n解释：有两种可能的超序列：[1,2,3]和[1,3,2]。\n序列 [1,2] 是[1,2,3]和[1,3,2]的子序列。\n序列 [1,3] 是[1,2,3]和[1,3,2]的子序列。\n因为 nums 不是唯一最短的超序列，所以返回false。\n\n示例 2：\n\n输入：nums = [1,2,3], sequences = [[1,2]]\n输出：false\n解释：最短可能的超序列为 [1,2]。\n序列 [1,2] 是它的子序列：[1,2]。\n因为 nums 不是最短的超序列，所以返回false。\n\n示例 3：\n\n输入：nums = [1,2,3], sequences = [[1,2],[1,3],[2,3]]\n输出：true\n解释：最短可能的超序列为[1,2,3]。\n序列 [1,2] 是它的一个子序列：[1,2,3]。\n序列 [1,3] 是它的一个子序列：[1,2,3]。\n序列 [2,3] 是它的一个子序列：[1,2,3]。\n因为 nums 是唯一最短的超序列，所以返回true。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 104\n\tnums&nbsp;是&nbsp;[1, n]&nbsp;范围内所有整数的排列\n\t1 <= sequences.length <= 104\n\t1 <= sequences[i].length <= 104\n\t1 <= sum(sequences[i].length) <= 105\n\t1 <= sequences[i][j] <= n\n\tsequences&nbsp;的所有数组都是 唯一 的\n\tsequences[i]&nbsp;是&nbsp;nums 的一个子序列\n\n&nbsp;\n\n注意：本题与主站 444&nbsp;题相同：https://leetcode.cn/problems/sequence-reconstruction/",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 104",
+    "nums&nbsp;是&nbsp;[1, n]&nbsp;范围内所有整数的排列",
+    "1 <= sequences.length <= 104",
+    "1 <= sequences[i].length <= 104",
+    "1 <= sum(sequences[i].length) <= 105",
+    "1 <= sequences[i][j] <= n",
+    "sequences&nbsp;的所有数组都是 唯一 的",
+    "sequences[i]&nbsp;是&nbsp;nums 的一个子序列",
+    "注意：本题与主站 444&nbsp;题相同：https://leetcode.cn/problems/sequence-reconstruction/"
+  ]
+}

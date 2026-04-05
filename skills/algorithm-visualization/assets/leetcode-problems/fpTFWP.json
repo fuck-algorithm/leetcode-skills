@@ -1,0 +1,15 @@
+{
+  "number": "LCR 112",
+  "title_cn": "矩阵中的最长递增路径",
+  "title_en": "矩阵中的最长递增路径",
+  "slug": "fpTFWP",
+  "difficulty": "Hard",
+  "description": "给定一个&nbsp;m x n 整数矩阵&nbsp;matrix ，找出其中 最长递增路径 的长度。\n\n对于每个单元格，你可以往上，下，左，右四个方向移动。 不能 在 对角线 方向上移动或移动到 边界外（即不允许环绕）。\n\n&nbsp;\n\n示例 1：\n\n输入：matrix = [[9,9,4],[6,6,8],[2,1,1]]\n输出：4 \n解释：最长递增路径为&nbsp;[1, 2, 6, 9]。\n\n示例 2：\n\n输入：matrix = [[3,4,5],[3,2,6],[2,2,1]]\n输出：4 \n解释：最长递增路径是&nbsp;[3, 4, 5, 6]。注意不允许在对角线方向上移动。\n\n示例 3：\n\n输入：matrix = [[1]]\n输出：1\n\n&nbsp;\n\n提示：\n\n\tm == matrix.length\n\tn == matrix[i].length\n\t1 <= m, n <= 200\n\t0 <= matrix[i][j] <= 231 - 1\n\n&nbsp;\n\n注意：本题与主站 329&nbsp;题相同：&nbsp;https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m, n <= 200",
+    "0 <= matrix[i][j] <= 231 - 1",
+    "注意：本题与主站 329&nbsp;题相同：&nbsp;https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/"
+  ]
+}

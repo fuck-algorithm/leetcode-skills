@@ -1,0 +1,13 @@
+{
+  "number": "6",
+  "title_cn": "Z 字形变换",
+  "title_en": "Zigzag Conversion",
+  "slug": "zigzag-conversion",
+  "difficulty": "Medium",
+  "description": "将一个给定字符串 s 根据给定的行数 numRows ，以从上往下、从左到右进行 Z 字形排列。\n\n比如输入字符串为 \"PAYPALISHIRING\" 行数为 3 时，排列如下：\n\nP   A   H   N\nA P L S I I G\nY   I   R\n\n之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：\"PAHNAPLSIIGYIR\"。\n\n请你实现这个将字符串进行指定行数变换的函数：\n\nstring convert(string s, int numRows);\n\n示例 1：\n\n输入：s = \"PAYPALISHIRING\", numRows = 3\n输出：\"PAHNAPLSIIGYIR\"\n\n示例 2：\n\n输入：s = \"PAYPALISHIRING\", numRows = 4\n输出：\"PINALSIGYAHRPI\"\n解释：\nP     I    N\nA   L S  I G\nY A   H R\nP     I\n\n示例 3：\n\n输入：s = \"A\", numRows = 1\n输出：\"A\"\n\n提示：\n\n\t1 \n\ts 由英文字母（小写和大写）、',' 和 '.' 组成\n\t1",
+  "constraints": [
+    "1",
+    "s 由英文字母（小写和大写）、',' 和 '.' 组成",
+    "1"
+  ]
+}

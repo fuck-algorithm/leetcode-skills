@@ -1,0 +1,13 @@
+{
+  "number": "2465",
+  "title_cn": "不同的平均值数目",
+  "title_en": "Number of Distinct Averages",
+  "slug": "number-of-distinct-averages",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始长度为 偶数&nbsp;的整数数组&nbsp;nums&nbsp;。\n\n只要&nbsp;nums 不是&nbsp;空数组，你就重复执行以下步骤：\n\n\t找到&nbsp;nums&nbsp;中的最小值，并删除它。\n\t找到&nbsp;nums&nbsp;中的最大值，并删除它。\n\t计算删除两数的平均值。\n\n两数 a&nbsp;和 b&nbsp;的 平均值&nbsp;为&nbsp;(a + b) / 2&nbsp;。\n\n\t比方说，2&nbsp;和&nbsp;3&nbsp;的平均值是&nbsp;(2 + 3) / 2 = 2.5&nbsp;。\n\n返回上述过程能得到的 不同&nbsp;平均值的数目。\n\n注意&nbsp;，如果最小值或者最大值有重复元素，可以删除任意一个。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,1,4,0,3,5]\n输出：2\n解释：\n1. 删除 0 和 5 ，平均值是 (0 + 5) / 2 = 2.5 ，现在 nums = [4,1,4,3] 。\n2. 删除 1 和 4 ，平均值是 (1 + 4) / 2 = 2.5 ，现在 nums = [4,3] 。\n3. 删除 3 和 4 ，平均值是 (3 + 4) / 2 = 3.5 。\n2.5 ，2.5 和 3.5 之中总共有 2 个不同的数，我们返回 2 。\n\n示例 2：\n\n输入：nums = [1,100]\n输出：1\n解释：\n删除 1 和 100 后只有一个平均值，所以我们返回 1 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 100\n\tnums.length&nbsp;是偶数。\n\t0 <= nums[i] <= 100",
+  "constraints": [
+    "2 <= nums.length <= 100",
+    "nums.length&nbsp;是偶数。",
+    "0 <= nums[i] <= 100"
+  ]
+}

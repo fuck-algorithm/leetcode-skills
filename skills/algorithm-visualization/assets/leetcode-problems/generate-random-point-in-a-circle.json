@@ -1,0 +1,13 @@
+{
+  "number": "478",
+  "title_cn": "在圆内随机生成点",
+  "title_en": "Generate Random Point in a Circle",
+  "slug": "generate-random-point-in-a-circle",
+  "difficulty": "Medium",
+  "description": "给定圆的半径和圆心的位置，实现函数 randPoint ，在圆中产生均匀随机点。\n\n实现&nbsp;Solution&nbsp;类:\n\n\tSolution(double radius, double x_center, double y_center)&nbsp;用圆的半径&nbsp;radius&nbsp;和圆心的位置 (x_center, y_center) 初始化对象\n\trandPoint()&nbsp;返回圆内的一个随机点。圆周上的一点被认为在圆内。答案作为数组返回 [x, y] 。\n\n&nbsp;\n\n示例 1：\n\n输入: \n[\"Solution\",\"randPoint\",\"randPoint\",\"randPoint\"]\n[[1.0, 0.0, 0.0], [], [], []]\n输出: [null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]\n解释:\nSolution solution = new Solution(1.0, 0.0, 0.0);\nsolution.randPoint ();//返回[-0.02493，-0.38077]\nsolution.randPoint ();//返回[0.82314,0.38945]\nsolution.randPoint ();//返回[0.36572,0.17248]\n\n&nbsp;\n\n提示：\n\n\t0 <&nbsp;radius <= 108\n\t-107&nbsp;<= x_center, y_center <= 107\n\trandPoint 最多被调用&nbsp;3 * 104&nbsp;次",
+  "constraints": [
+    "0 <&nbsp;radius <= 108",
+    "-107&nbsp;<= x_center, y_center <= 107",
+    "randPoint 最多被调用&nbsp;3 * 104&nbsp;次"
+  ]
+}

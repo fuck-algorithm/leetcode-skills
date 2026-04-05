@@ -1,0 +1,14 @@
+{
+  "number": "3235",
+  "title_cn": "判断矩形的两个角落是否可达",
+  "title_en": "Check if the Rectangle Corner Is Reachable",
+  "slug": "check-if-the-rectangle-corner-is-reachable",
+  "difficulty": "Hard",
+  "description": "给你两个正整数&nbsp;xCorner 和&nbsp;yCorner&nbsp;和一个二维整数数组&nbsp;circles&nbsp;，其中&nbsp;circles[i] = [xi, yi, ri]&nbsp;表示一个圆心在&nbsp;(xi, yi)&nbsp;半径为&nbsp;ri&nbsp;的圆。\n\n坐标平面内有一个左下角在原点，右上角在&nbsp;(xCorner, yCorner)&nbsp;的矩形。你需要判断是否存在一条从左下角到右上角的路径满足：路径&nbsp;完全&nbsp;在矩形内部，不会&nbsp;触碰或者经过 任何&nbsp;圆的内部和边界，同时&nbsp;只 在起点和终点接触到矩形。\n\n如果存在这样的路径，请你返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：X = 3, Y = 4, circles = [[2,1,1]]\n\n输出：true\n\n解释：\n\n黑色曲线表示一条从&nbsp;(0, 0)&nbsp;到&nbsp;(3, 4)&nbsp;的路径。\n\n示例 2：\n\n输入：X = 3, Y = 3, circles = [[1,1,2]]\n\n输出：false\n\n解释：\n\n不存在从&nbsp;(0, 0) 到&nbsp;(3, 3)&nbsp;的路径。\n\n示例 3：\n\n输入：X = 3, Y = 3, circles = [[2,1,1],[1,2,1]]\n\n输出：false\n\n解释：\n\n不存在从&nbsp;(0, 0)&nbsp;到&nbsp;(3, 3)&nbsp;的路径。\n\n示例 4：\n\n输入：X = 4, Y = 4, circles = [[5,5,1]]\n\n输出：true\n\n解释：\n\n&nbsp;\n\n提示：\n\n\t3 <= xCorner, yCorner&nbsp;<= 109\n\t1 <= circles.length <= 1000\n\tcircles[i].length == 3\n\t1 <= xi, yi, ri <= 109",
+  "constraints": [
+    "3 <= xCorner, yCorner&nbsp;<= 109",
+    "1 <= circles.length <= 1000",
+    "circles[i].length == 3",
+    "1 <= xi, yi, ri <= 109"
+  ]
+}

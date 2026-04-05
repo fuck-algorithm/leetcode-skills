@@ -1,0 +1,12 @@
+{
+  "number": "1044",
+  "title_cn": "最长重复子串",
+  "title_en": "Longest Duplicate Substring",
+  "slug": "longest-duplicate-substring",
+  "difficulty": "Hard",
+  "description": "给你一个字符串 s ，考虑其所有 重复子串 ：即&nbsp;s 的（连续）子串，在 s 中出现 2 次或更多次。这些出现之间可能存在重叠。\n\n返回 任意一个 可能具有最长长度的重复子串。如果 s 不含重复子串，那么答案为 \"\" 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"banana\"\n输出：\"ana\"\n\n示例 2：\n\n输入：s = \"abcd\"\n输出：\"\"\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 3 * 104\n\ts 由小写英文字母组成",
+  "constraints": [
+    "2 <= s.length <= 3 * 104",
+    "s 由小写英文字母组成"
+  ]
+}

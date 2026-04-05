@@ -1,0 +1,12 @@
+{
+  "number": "117",
+  "title_cn": "填充每个节点的下一个右侧节点指针 II",
+  "title_en": "Populating Next Right Pointers in Each Node II",
+  "slug": "populating-next-right-pointers-in-each-node-ii",
+  "difficulty": "Medium",
+  "description": "给定一个二叉树：\n\nstruct Node {\n  int val;\n  Node *left;\n  Node *right;\n  Node *next;\n}\n\n填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL 。\n\n初始状态下，所有&nbsp;next 指针都被设置为 NULL 。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,2,3,4,5,null,7]\n输出：[1,#,2,3,#,4,5,7,#]\n解释：给定二叉树如图 A 所示，你的函数应该填充它的每个 next 指针，以指向其下一个右侧节点，如图 B 所示。序列化输出按层序遍历顺序（由 next 指针连接），'#' 表示每层的末尾。\n\n示例 2：\n\n输入：root = []\n输出：[]\n\n&nbsp;\n\n提示：\n\n\t树中的节点数在范围 [0, 6000] 内\n\t-100 <= Node.val <= 100\n\n进阶：\n\n\t你只能使用常量级额外空间。\n\t使用递归解题也符合要求，本题中递归程序的隐式栈空间不计入额外空间复杂度。",
+  "constraints": [
+    "树中的节点数在范围 [0, 6000] 内",
+    "-100 <= Node.val <= 100"
+  ]
+}

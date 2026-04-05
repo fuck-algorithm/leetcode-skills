@@ -1,0 +1,12 @@
+{
+  "number": "1144",
+  "title_cn": "递减元素使数组呈锯齿状",
+  "title_en": "Decrease Elements To Make Array Zigzag",
+  "slug": "decrease-elements-to-make-array-zigzag",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums，每次 操作&nbsp;会从中选择一个元素并 将该元素的值减少&nbsp;1。\n\n如果符合下列情况之一，则数组&nbsp;A&nbsp;就是 锯齿数组：\n\n\t每个偶数索引对应的元素都大于相邻的元素，即&nbsp;A[0] > A[1] < A[2] > A[3] < A[4] > ...\n\t或者，每个奇数索引对应的元素都大于相邻的元素，即&nbsp;A[0] < A[1] > A[2] < A[3] > A[4] < ...\n\n返回将数组&nbsp;nums&nbsp;转换为锯齿数组所需的最小操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3]\n输出：2\n解释：我们可以把 2 递减到 0，或把 3 递减到 1。\n\n示例 2：\n\n输入：nums = [9,6,1,6,2]\n输出：4\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000"
+  ]
+}

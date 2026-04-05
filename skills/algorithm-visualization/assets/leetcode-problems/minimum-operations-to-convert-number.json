@@ -1,0 +1,15 @@
+{
+  "number": "2059",
+  "title_cn": "转化数字的最小运算数",
+  "title_en": "Minimum Operations to Convert Number",
+  "slug": "minimum-operations-to-convert-number",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的整数数组 nums ，该数组由 互不相同 的数字组成。另给你两个整数 start 和 goal 。\n\n整数 x 的值最开始设为 start ，你打算执行一些运算使 x 转化为 goal 。你可以对数字 x 重复执行下述运算：\n\n如果 0 <= x <= 1000 ，那么，对于数组中的任一下标 i（0 <= i < nums.length），可以将 x 设为下述任一值：\n\n\tx + nums[i]\n\tx - nums[i]\n\tx ^ nums[i]（按位异或 XOR）\n\n注意，你可以按任意顺序使用每个 nums[i] 任意次。使 x 越过 0 <= x <= 1000 范围的运算同样可以生效，但该该运算执行后将不能执行其他运算。\n\n返回将 x = start 转化为 goal 的最小操作数；如果无法完成转化，则返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,4,12], start = 2, goal = 12\n输出：2\n解释：\n可以按 2 → 14 → 12 的转化路径进行，只需执行下述 2 次运算：\n- 2 + 12 = 14\n- 14 - 2 = 12\n\n示例 2：\n\n输入：nums = [3,5,7], start = 0, goal = -4\n输出：2\n解释：\n可以按 0 → 3 → -4 的转化路径进行，只需执行下述 2 次运算：\n- 0 + 3 = 3\n- 3 - 7 = -4\n注意，最后一步运算使 x 超过范围 0 <= x <= 1000 ，但该运算仍然可以生效。\n\n示例 3：\n\n输入：nums = [2,8,16], start = 0, goal = 1\n输出：-1\n解释：\n无法将 0 转化为 1\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t-109 <= nums[i], goal <= 109\n\t0 <= start <= 1000\n\tstart != goal\n\tnums 中的所有整数互不相同",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "-109 <= nums[i], goal <= 109",
+    "0 <= start <= 1000",
+    "start != goal",
+    "nums 中的所有整数互不相同"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1358",
+  "title_cn": "包含所有三种字符的子字符串数目",
+  "title_en": "Number of Substrings Containing All Three Characters",
+  "slug": "number-of-substrings-containing-all-three-characters",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s&nbsp;，它只包含三种字符 a, b 和 c 。\n\n请你返回 a，b 和 c 都&nbsp;至少&nbsp;出现过一次的子字符串数目。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abcabc\"\n输出：10\n解释：包含 a，b 和 c 各至少一次的子字符串为 \"abc\", \"abca\", \"abcab\", \"abcabc\", \"bca\", \"bcab\", \"bcabc\", \"cab\", \"cabc\" 和 \"abc\" (相同字符串算多次)。\n\n示例 2：\n\n输入：s = \"aaacb\"\n输出：3\n解释：包含 a，b 和 c 各至少一次的子字符串为 \"aaacb\", \"aacb\" 和 \"acb\" 。\n\n示例 3：\n\n输入：s = \"abc\"\n输出：1\n\n&nbsp;\n\n提示：\n\n\t3 <= s.length <= 5 x 10^4\n\ts&nbsp;只包含字符 a，b 和 c 。",
+  "constraints": [
+    "3 <= s.length <= 5 x 10^4",
+    "s&nbsp;只包含字符 a，b 和 c 。"
+  ]
+}

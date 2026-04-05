@@ -1,0 +1,13 @@
+{
+  "number": "1248",
+  "title_cn": "统计「优美子数组」",
+  "title_en": "Count Number of Nice Subarrays",
+  "slug": "count-number-of-nice-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums 和一个整数 k。如果某个连续子数组中恰好有 k 个奇数数字，我们就认为这个子数组是「优美子数组」。\n\n请返回这个数组中 「优美子数组」 的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,2,1,1], k = 3\n输出：2\n解释：包含 3 个奇数的子数组是 [1,1,2,1] 和 [1,2,1,1] 。\n\n示例 2：\n\n输入：nums = [2,4,6], k = 1\n输出：0\n解释：数列中不包含任何奇数，所以不存在优美子数组。\n\n示例 3：\n\n输入：nums = [2,2,2,1,2,2,1,2,2,2], k = 2\n输出：16\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 50000\n\t1 <= nums[i] <= 10^5\n\t1 <= k <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 50000",
+    "1 <= nums[i] <= 10^5",
+    "1 <= k <= nums.length"
+  ]
+}

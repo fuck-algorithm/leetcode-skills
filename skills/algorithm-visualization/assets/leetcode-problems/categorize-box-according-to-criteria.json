@@ -1,0 +1,12 @@
+{
+  "number": "2525",
+  "title_cn": "根据规则将箱子分类",
+  "title_en": "Categorize Box According to Criteria",
+  "slug": "categorize-box-according-to-criteria",
+  "difficulty": "Easy",
+  "description": "给你四个整数&nbsp;length&nbsp;，width&nbsp;，height&nbsp;和&nbsp;mass&nbsp;，分别表示一个箱子的三个维度和质量，请你返回一个表示箱子 类别 的字符串。\n\n\t如果满足以下条件，那么箱子是&nbsp;\"Bulky\"&nbsp;的：\n\n\t\t箱子 至少有一个 维度大于等于 104&nbsp;。\n\t\t或者箱子的 体积 大于等于&nbsp;109&nbsp;。\n\n\t如果箱子的质量大于等于&nbsp;100&nbsp;，那么箱子是&nbsp;\"Heavy\"&nbsp;的。\n\t如果箱子同时是&nbsp;\"Bulky\" 和&nbsp;\"Heavy\"&nbsp;，那么返回类别为&nbsp;\"Both\"&nbsp;。\n\t如果箱子既不是&nbsp;\"Bulky\"&nbsp;，也不是&nbsp;\"Heavy\"&nbsp;，那么返回类别为&nbsp;\"Neither\"&nbsp;。\n\t如果箱子是&nbsp;\"Bulky\"&nbsp;但不是&nbsp;\"Heavy\"&nbsp;，那么返回类别为&nbsp;\"Bulky\"&nbsp;。\n\t如果箱子是&nbsp;\"Heavy\"&nbsp;但不是&nbsp;\"Bulky\"&nbsp;，那么返回类别为&nbsp;\"Heavy\"&nbsp;。\n\n注意，箱子的体积等于箱子的长度、宽度和高度的乘积。\n\n&nbsp;\n\n示例 1：\n\n输入：length = 1000, width = 35, height = 700, mass = 300\n输出：\"Heavy\"\n解释：\n箱子没有任何维度大于等于 104 。\n体积为 24500000 <= 109 。所以不能归类为 \"Bulky\" 。\n但是质量 >= 100 ，所以箱子是 \"Heavy\" 的。\n由于箱子不是 \"Bulky\" 但是是 \"Heavy\" ，所以我们返回 \"Heavy\" 。\n\n示例 2：\n\n输入：length = 200, width = 50, height = 800, mass = 50\n输出：\"Neither\"\n解释：\n箱子没有任何维度大于等于 104&nbsp;。\n体积为 8 * 106 <= 109&nbsp;。所以不能归类为 \"Bulky\" 。\n质量小于 100 ，所以不能归类为 \"Heavy\" 。\n由于不属于上述两者任何一类，所以我们返回 \"Neither\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= length, width, height <= 105\n\t1 <= mass <= 103",
+  "constraints": [
+    "1 <= length, width, height <= 105",
+    "1 <= mass <= 103"
+  ]
+}

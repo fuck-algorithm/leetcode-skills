@@ -1,0 +1,13 @@
+{
+  "number": "917",
+  "title_cn": "仅仅反转字母",
+  "title_en": "Reverse Only Letters",
+  "slug": "reverse-only-letters",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s ，根据下述规则反转字符串：\n\n\t所有非英文字母保留在原有位置。\n\t所有英文字母（小写或大写）位置反转。\n\n返回反转后的 s 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"ab-cd\"\n输出：\"dc-ba\"\n\n示例 2：\n\n输入：s = \"a-bC-dEf-ghIj\"\n输出：\"j-Ih-gfE-dCba\"\n\n示例 3：\n\n输入：s = \"Test1ng-Leet=code-Q!\"\n输出：\"Qedo1ct-eeLg=ntse-T!\"\n\n&nbsp;\n\n提示\n\n\t1 <= s.length <= 100\n\ts 仅由 ASCII 值在范围 [33, 122] 的字符组成\n\ts 不含 '\\\"' 或 '\\\\'",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 仅由 ASCII 值在范围 [33, 122] 的字符组成",
+    "s 不含 '\\\"' 或 '\\\\'"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "130",
+  "title_cn": "被围绕的区域",
+  "title_en": "Surrounded Regions",
+  "slug": "surrounded-regions",
+  "difficulty": "Medium",
+  "description": "给你一个 m x n 的矩阵 board ，由若干字符 'X' 和 'O'&nbsp;组成，捕获 所有 被围绕的区域：\n\n\t连接：一个单元格与水平或垂直方向上相邻的单元格连接。\n\t区域：连接所有&nbsp;'O'&nbsp;的单元格来形成一个区域。\n\t围绕：如果一个区域中的所有 'O' 单元格都不在棋盘的边缘，则该区域被包围。这样的区域 完全 被 'X' 单元格包围。\n\n通过 原地&nbsp;将输入矩阵中的所有 'O'&nbsp;替换为 'X' 来 捕获被围绕的区域。你不需要返回任何值。\n\n&nbsp;\n\n示例 1：\n\n输入：board = [['X','X','X','X'],['X','O','O','X'],['X','X','O','X'],['X','O','X','X']]\n\n输出：[['X','X','X','X'],['X','X','X','X'],['X','X','X','X'],['X','O','X','X']]\n\n解释：\n\n在上图中，底部的区域没有被捕获，因为它在 board 的边缘并且不能被围绕。\n\n示例 2：\n\n输入：board = [['X']]\n\n输出：[['X']]\n\n&nbsp;\n\n提示：\n\n\tm == board.length\n\tn == board[i].length\n\t1 <= m, n <= 200\n\tboard[i][j] 为 'X' 或 'O'",
+  "constraints": [
+    "m == board.length",
+    "n == board[i].length",
+    "1 <= m, n <= 200",
+    "board[i][j] 为 'X' 或 'O'"
+  ]
+}

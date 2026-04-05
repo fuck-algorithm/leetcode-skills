@@ -1,0 +1,12 @@
+{
+  "number": "941",
+  "title_cn": "有效的山脉数组",
+  "title_en": "Valid Mountain Array",
+  "slug": "valid-mountain-array",
+  "difficulty": "Easy",
+  "description": "给定一个整数数组 arr，如果它是有效的山脉数组就返回&nbsp;true，否则返回 false。\n\n让我们回顾一下，如果 arr&nbsp;满足下述条件，那么它是一个山脉数组：\n\n\tarr.length >= 3\n\t在&nbsp;0 < i&nbsp;< arr.length - 1&nbsp;条件下，存在&nbsp;i&nbsp;使得：\n\n\t\tarr[0] < arr[1] < ... arr[i-1] < arr[i] \n\t\tarr[i] > arr[i+1] > ... > arr[arr.length - 1]\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [2,1]\n输出：false\n\n示例 2：\n\n输入：arr = [3,5,5]\n输出：false\n\n示例 3：\n\n输入：arr = [0,3,2,1]\n输出：true\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 104\n\t0 <= arr[i] <= 104",
+  "constraints": [
+    "1 <= arr.length <= 104",
+    "0 <= arr[i] <= 104"
+  ]
+}

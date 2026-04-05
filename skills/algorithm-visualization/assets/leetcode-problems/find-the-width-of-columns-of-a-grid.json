@@ -1,0 +1,14 @@
+{
+  "number": "2639",
+  "title_cn": "查询网格图中每一列的宽度",
+  "title_en": "Find the Width of Columns of a Grid",
+  "slug": "find-the-width-of-columns-of-a-grid",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的&nbsp;m x n&nbsp;整数矩阵&nbsp;grid&nbsp;。矩阵中某一列的宽度是这一列数字的最大 字符串长度&nbsp;。\n\n\t比方说，如果&nbsp;grid = [[-10], [3], [12]]&nbsp;，那么唯一一列的宽度是&nbsp;3&nbsp;，因为&nbsp;-10&nbsp;的字符串长度为&nbsp;3&nbsp;。\n\n请你返回一个大小为 n&nbsp;的整数数组&nbsp;ans&nbsp;，其中&nbsp;ans[i]&nbsp;是第&nbsp;i&nbsp;列的宽度。\n\n一个有 len&nbsp;个数位的整数 x&nbsp;，如果是非负数，那么&nbsp;字符串长度&nbsp;为&nbsp;len&nbsp;，否则为&nbsp;len + 1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1],[22],[333]]\n输出：[3]\n解释：第 0 列中，333 字符串长度为 3 。\n\n示例 2：\n\n输入：grid = [[-15,1,3],[15,7,12],[5,6,-2]]\n输出：[3,1,2]\n解释：\n第 0 列中，只有 -15 字符串长度为 3 。\n第 1 列中，所有整数的字符串长度都是 1 。\n第 2 列中，12 和 -2 的字符串长度都为 2 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 100 \n\t-109 <= grid[r][c] <= 109",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 100",
+    "-109 <= grid[r][c] <= 109"
+  ]
+}

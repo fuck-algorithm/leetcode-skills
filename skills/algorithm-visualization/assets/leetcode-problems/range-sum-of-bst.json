@@ -1,0 +1,14 @@
+{
+  "number": "938",
+  "title_cn": "二叉搜索树的范围和",
+  "title_en": "Range Sum of BST",
+  "slug": "range-sum-of-bst",
+  "difficulty": "Easy",
+  "description": "给定二叉搜索树的根结点 root，返回值位于范围 [low, high] 之间的所有结点的值的和。\n\n示例 1：\n\n输入：root = [10,5,15,3,7,null,18], low = 7, high = 15\n输出：32\n\n示例 2：\n\n输入：root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10\n输出：23\n\n提示：\n\n\t树中节点数目在范围 [1, 2 * 104] 内\n\t1 5\n\t1 5\n\t所有 Node.val 互不相同",
+  "constraints": [
+    "树中节点数目在范围 [1, 2 * 104] 内",
+    "1 5",
+    "1 5",
+    "所有 Node.val 互不相同"
+  ]
+}

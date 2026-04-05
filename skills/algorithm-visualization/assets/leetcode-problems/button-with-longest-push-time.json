@@ -1,0 +1,13 @@
+{
+  "number": "3386",
+  "title_cn": "按下时间最长的按钮",
+  "title_en": "Button with Longest Push Time",
+  "slug": "button-with-longest-push-time",
+  "difficulty": "Easy",
+  "description": "给你一个二维数组 events，表示孩子在键盘上按下一系列按钮触发的按钮事件。\n\n每个 events[i] = [indexi, timei] 表示在时间 timei 时，按下了下标为 indexi 的按钮。\n\n\t数组按照 time 的递增顺序排序。\n\t按下一个按钮所需的时间是连续两次按钮按下的时间差。按下第一个按钮所需的时间就是其时间戳。\n\n返回按下时间&nbsp;最长&nbsp;的按钮的 index。如果有多个按钮的按下时间相同，则返回 index 最小的按钮。\n\n&nbsp;\n\n示例 1：\n\n输入： events = [[1,2],[2,5],[3,9],[1,15]]\n\n输出： 1\n\n解释：\n\n\t下标为 1 的按钮在时间 2 被按下。\n\t下标为 2 的按钮在时间 5 被按下，因此按下时间为 5 - 2 = 3。\n\t下标为 3 的按钮在时间 9 被按下，因此按下时间为 9 - 5 = 4。\n\t下标为 1 的按钮再次在时间 15 被按下，因此按下时间为 15 - 9 = 6。\n\n最终，下标为 1 的按钮按下时间最长，为 6。\n\n示例 2：\n\n输入： events = [[10,5],[1,7]]\n\n输出： 10\n\n解释：\n\n\t下标为 10 的按钮在时间 5 被按下。\n\t下标为 1 的按钮在时间 7 被按下，因此按下时间为 7 - 5 = 2。\n\n最终，下标为 10 的按钮按下时间最长，为 5。\n\n&nbsp;\n\n提示：\n\n\t1 <= events.length <= 1000\n\tevents[i] == [indexi, timei]\n\t1 <= indexi, timei <= 105\n\t输入保证数组 events 按照 timei 的递增顺序排序。",
+  "constraints": [
+    "1 <= events.length <= 1000",
+    "events[i] == [indexi, timei]",
+    "1 <= indexi, timei <= 105"
+  ]
+}

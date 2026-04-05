@@ -1,0 +1,13 @@
+{
+  "number": "794",
+  "title_cn": "有效的井字游戏",
+  "title_en": "Valid Tic-Tac-Toe State",
+  "slug": "valid-tic-tac-toe-state",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 board 表示井字游戏的棋盘。当且仅当在井字游戏过程中，棋盘有可能达到 board 所显示的状态时，才返回 true 。\n\n井字游戏的棋盘是一个 3 x 3 数组，由字符 ' '，'X' 和 'O' 组成。字符 ' ' 代表一个空位。\n\n以下是井字游戏的规则：\n\n\t玩家轮流将字符放入空位（' '）中。\n\t玩家 1 总是放字符 'X' ，而玩家 2 总是放字符 'O' 。\n\t'X' 和 'O' 只允许放置在空位中，不允许对已放有字符的位置进行填充。\n\t当有 3 个相同（且非空）的字符填充任何行、列或对角线时，游戏结束。\n\t当所有位置非空时，也算为游戏结束。\n\t如果游戏结束，玩家不允许再放置字符。\n\n&nbsp;\n\n示例 1：\n\n输入：board = [\"O  \",\"   \",\"   \"]\n输出：false\n解释：玩家 1 总是放字符 \"X\" 。\n\n示例 2：\n\n输入：board = [\"XOX\",\" X \",\"   \"]\n输出：false\n解释：玩家应该轮流放字符。\n\n示例 3:\n\n输入：board = [\"XOX\",\"O O\",\"XOX\"]\n输出：true\n\n&nbsp;\n\n提示：\n\n\tboard.length == 3\n\tboard[i].length == 3\n\tboard[i][j] 为 'X'、'O' 或 ' '",
+  "constraints": [
+    "board.length == 3",
+    "board[i].length == 3",
+    "board[i][j] 为 'X'、'O' 或 ' '"
+  ]
+}

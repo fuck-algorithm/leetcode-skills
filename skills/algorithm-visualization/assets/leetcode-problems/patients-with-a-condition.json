@@ -1,0 +1,9 @@
+{
+  "number": "1527",
+  "title_cn": "患某种疾病的患者",
+  "title_en": "Patients With a Condition",
+  "slug": "patients-with-a-condition",
+  "difficulty": "Easy",
+  "description": "患者信息表：&nbsp;Patients\n\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| patient_id   | int     |\n| patient_name | varchar |\n| conditions   | varchar |\n+--------------+---------+\n在 SQL 中，patient_id （患者 ID）是该表的主键。\n'conditions' （疾病）包含 0 个或以上的疾病代码，以空格分隔。\n这个表包含医院中患者的信息。\n\n&nbsp;\n\n查询患有 I 类糖尿病的患者&nbsp;ID （patient_id）、患者姓名（patient_name）以及其患有的所有疾病代码（conditions）。I 类糖尿病的代码总是包含前缀&nbsp;DIAB1&nbsp;。\n\n按 任意顺序 返回结果表。\n\n查询结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\nPatients表：\n+------------+--------------+--------------+\n| patient_id | patient_name | conditions   |\n+------------+--------------+--------------+\n| 1          | Daniel      &nbsp;| YFEV COUGH   |\n| 2    &nbsp;     | Alice        |            &nbsp; |\n| 3    &nbsp;     | Bob         &nbsp;| DIAB100 MYOP&nbsp;|\n| 4 &nbsp;        | George      &nbsp;| ACNE DIAB100&nbsp;|\n| 5 &nbsp;        | Alain       &nbsp;| DIAB201     &nbsp;|\n+------------+--------------+--------------+\n输出：\n+------------+--------------+--------------+\n| patient_id | patient_name | conditions   |\n+------------+--------------+--------------+\n| 3    &nbsp;     | Bob         &nbsp;| DIAB100 MYOP&nbsp;|\n| 4 &nbsp;        | George   &nbsp;   | ACNE DIAB100&nbsp;| \n+------------+--------------+--------------+\n解释：Bob 和 George 都患有代码以 DIAB1 开头的疾病。",
+  "constraints": []
+}

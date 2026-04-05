@@ -1,0 +1,13 @@
+{
+  "number": "1798",
+  "title_cn": "你能构造出连续值的最大数目",
+  "title_en": "Maximum Number of Consecutive Values You Can Make",
+  "slug": "maximum-number-of-consecutive-values-you-can-make",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组 coins ，它代表你拥有的 n 个硬币。第 i 个硬币的值为 coins[i] 。如果你从这些硬币中选出一部分硬币，它们的和为 x ，那么称，你可以 构造 出 x 。\n\n请返回从 0 开始（包括 0 ），你最多能 构造 出多少个连续整数。\n\n你可能有多个相同值的硬币。\n\n示例 1：\n\n输入：coins = [1,3]\n输出：2\n解释：你可以得到以下这些值：\n- 0：什么都不取 []\n- 1：取 [1]\n从 0 开始，你可以构造出 2 个连续整数。\n\n示例 2：\n\n输入：coins = [1,1,1,4]\n输出：8\n解释：你可以得到以下这些值：\n- 0：什么都不取 []\n- 1：取 [1]\n- 2：取 [1,1]\n- 3：取 [1,1,1]\n- 4：取 [4]\n- 5：取 [4,1]\n- 6：取 [4,1,1]\n- 7：取 [4,1,1,1]\n从 0 开始，你可以构造出 8 个连续整数。\n\n示例 3：\n\n输入：nums = [1,4,10,3,1]\n输出：20\n\n提示：\n\n\tcoins.length == n\n\t1 4\n\t1 4",
+  "constraints": [
+    "coins.length == n",
+    "1 4",
+    "1 4"
+  ]
+}

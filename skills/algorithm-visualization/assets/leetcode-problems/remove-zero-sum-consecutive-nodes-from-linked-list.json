@@ -1,0 +1,12 @@
+{
+  "number": "1171",
+  "title_cn": "从链表中删去总和值为零的连续节点",
+  "title_en": "Remove Zero Sum Consecutive Nodes from Linked List",
+  "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+  "difficulty": "Medium",
+  "description": "给你一个链表的头节点&nbsp;head，请你编写代码，反复删去链表中由 总和&nbsp;值为 0 的连续节点组成的序列，直到不存在这样的序列为止。\n\n删除完毕后，请你返回最终结果链表的头节点。\n\n&nbsp;\n\n你可以返回任何满足题目要求的答案。\n\n（注意，下面示例中的所有序列，都是对&nbsp;ListNode&nbsp;对象序列化的表示。）\n\n示例 1：\n\n输入：head = [1,2,-3,3,1]\n输出：[3,1]\n提示：答案 [1,2,1] 也是正确的。\n\n示例 2：\n\n输入：head = [1,2,3,-3,4]\n输出：[1,2,4]\n\n示例 3：\n\n输入：head = [1,2,3,-3,-2]\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t给你的链表中可能有 1 到&nbsp;1000&nbsp;个节点。\n\t对于链表中的每个节点，节点的值：-1000 <= node.val <= 1000.",
+  "constraints": [
+    "给你的链表中可能有 1 到&nbsp;1000&nbsp;个节点。",
+    "对于链表中的每个节点，节点的值：-1000 <= node.val <= 1000."
+  ]
+}

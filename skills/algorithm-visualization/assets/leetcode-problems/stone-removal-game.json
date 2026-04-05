@@ -1,0 +1,11 @@
+{
+  "number": "3360",
+  "title_cn": "移除石头游戏",
+  "title_en": "Stone Removal Game",
+  "slug": "stone-removal-game",
+  "difficulty": "Easy",
+  "description": "Alice 和 Bob 在玩一个游戏，他们俩轮流从一堆石头中移除石头，Alice 先进行操作。\n\n\tAlice 在第一次操作中移除 恰好&nbsp;10 个石头。\n\t接下来的每次操作中，每位玩家移除的石头数 恰好&nbsp;为另一位玩家上一次操作的石头数减 1 。\n\n第一位没法进行操作的玩家输掉这个游戏。\n\n给你一个正整数&nbsp;n&nbsp;表示一开始石头的数目，如果 Alice 赢下这个游戏，请你返回&nbsp;true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 12\n\n输出：true\n\n解释：\n\n\tAlice 第一次操作中移除 10 个石头，剩下 2 个石头给 Bob 。\n\tBob 无法移除 9 个石头，所以 Alice 赢下游戏。\n\n示例 2：\n\n输入：n = 1\n\n输出：false\n\n解释：\n\n\tAlice 无法移除 10 个石头，所以 Alice 输掉游戏。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 50",
+  "constraints": [
+    "1 <= n <= 50"
+  ]
+}

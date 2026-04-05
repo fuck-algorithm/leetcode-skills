@@ -1,0 +1,12 @@
+{
+  "number": "652",
+  "title_cn": "寻找重复的子树",
+  "title_en": "Find Duplicate Subtrees",
+  "slug": "find-duplicate-subtrees",
+  "difficulty": "Medium",
+  "description": "给你一棵二叉树的根节点 root ，返回所有 重复的子树 。\n\n对于同一类的重复子树，你只需要返回其中任意 一棵 的根结点即可。\n\n如果两棵树具有 相同的结构 和 相同的结点值 ，则认为二者是 重复 的。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,2,3,4,null,2,4,null,null,4]\n输出：[[2,4],[4]]\n\n示例 2：\n\n输入：root = [2,1,1]\n输出：[[1]]\n\n示例 3：\n\n输入：root = [2,2,2,3,null,3,null]\n输出：[[2,3],[3]]\n\n&nbsp;\n\n提示：\n\n\t树中的结点数在 [1, 5000] 范围内。\n\t-200 <= Node.val <= 200",
+  "constraints": [
+    "树中的结点数在 [1, 5000] 范围内。",
+    "-200 <= Node.val <= 200"
+  ]
+}

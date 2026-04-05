@@ -1,0 +1,11 @@
+{
+  "number": "3211",
+  "title_cn": "生成不含相邻零的二进制字符串",
+  "title_en": "Generate Binary Strings Without Adjacent Zeros",
+  "slug": "generate-binary-strings-without-adjacent-zeros",
+  "difficulty": "Medium",
+  "description": "给你一个正整数 n。\n\n如果一个二进制字符串 x 的所有长度为 2 的子字符串中包含 至少 一个 \"1\"，则称 x 是一个 有效 字符串。\n\n返回所有长度为 n 的 有效 字符串，可以以任意顺序排列。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 3\n\n输出： [\"010\",\"011\",\"101\",\"110\",\"111\"]\n\n解释：\n\n长度为 3 的有效字符串有：\"010\"、\"011\"、\"101\"、\"110\" 和 \"111\"。\n\n示例 2：\n\n输入： n = 1\n\n输出： [\"0\",\"1\"]\n\n解释：\n\n长度为 1 的有效字符串有：\"0\" 和 \"1\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 18",
+  "constraints": [
+    "1 <= n <= 18"
+  ]
+}

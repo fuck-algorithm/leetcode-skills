@@ -1,0 +1,11 @@
+{
+  "number": "59",
+  "title_cn": "螺旋矩阵 II",
+  "title_en": "Spiral Matrix II",
+  "slug": "spiral-matrix-ii",
+  "difficulty": "Medium",
+  "description": "给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。\n\n示例 1：\n\n输入：n = 3\n输出：[[1,2,3],[8,9,4],[7,6,5]]\n\n示例 2：\n\n输入：n = 1\n输出：[[1]]\n\n提示：\n\n\t1",
+  "constraints": [
+    "1"
+  ]
+}

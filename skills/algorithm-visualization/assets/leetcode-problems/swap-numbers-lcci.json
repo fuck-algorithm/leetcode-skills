@@ -1,0 +1,12 @@
+{
+  "number": "面试题 16.01",
+  "title_cn": "交换数字",
+  "title_en": "Swap Numbers LCCI",
+  "slug": "swap-numbers-lcci",
+  "difficulty": "Medium",
+  "description": "编写一个函数，不用临时变量，直接交换numbers = [a, b]中a与b的值。\n\n示例：\n\n输入: numbers = [1,2]\n输出: [2,1]\n\n提示：\n\n\tnumbers.length == 2\n\t-2147483647",
+  "constraints": [
+    "numbers.length == 2",
+    "-2147483647"
+  ]
+}

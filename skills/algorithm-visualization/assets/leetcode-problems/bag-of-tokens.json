@@ -1,0 +1,12 @@
+{
+  "number": "948",
+  "title_cn": "令牌放置",
+  "title_en": "Bag of Tokens",
+  "slug": "bag-of-tokens",
+  "difficulty": "Medium",
+  "description": "你的初始 能量 为 power，初始 分数 为&nbsp;0，只有一包令牌以整数数组&nbsp;tokens&nbsp;给出。其中 tokens[i] 是第 i 个令牌的值（下标从 0 开始）。\n\n你的目标是通过有策略地使用这些令牌以&nbsp;最大化&nbsp;总 分数。在一次行动中，你可以用两种方式中的一种来使用一个&nbsp;未被使用的 令牌（但不是对同一个令牌使用两种方式）：\n\n\t朝上：如果你当前&nbsp;至少 有&nbsp;tokens[i]&nbsp;点 能量 ，可以使用令牌 i ，失去&nbsp;tokens[i]&nbsp;点 能量 ，并得到&nbsp;1&nbsp;分 。\n\t朝下：如果你当前至少有&nbsp;1&nbsp;分 ，可以使用令牌 i ，获得&nbsp;tokens[i] 点 能量 ，并失去&nbsp;1&nbsp;分 。\n\n在使用 任意 数量的令牌后，返回我们可以得到的最大 分数 。\n\n&nbsp;\n\n示例 1：\n\n输入：tokens = [100], power = 50\n输出：0\n解释：因为你的初始分数为 0，无法使令牌朝下。你也不能使令牌朝上因为你的能量（50）比 tokens[0]&nbsp;少（100）。\n\n示例 2：\n\n输入：tokens = [200,100], power = 150\n输出：1\n解释：使令牌 1 正面朝上，能量变为 50，分数变为 1 。\n不必使用令牌 0，因为你无法使用它来提高分数。可得到的最大分数是 1。\n\n示例 3：\n\n输入：tokens = [100,200,300,400], power = 200\n输出：2\n解释：按下面顺序使用令牌可以得到 2 分：\n1. 令牌 0 (100)正面朝上，能量变为 100 ，分数变为 1\n2. 令牌 3 (400)正面朝下，能量变为 500 ，分数变为 0\n3. 令牌 1 (200)正面朝上，能量变为 300 ，分数变为 1\n4. 令牌 2 (300)正面朝上，能量变为 0 ，分数变为 2\n\n可得的最大分数是 2。\n\n&nbsp;\n\n提示：\n\n\t0 <= tokens.length <= 1000\n\t0 <= tokens[i],&nbsp;power < 104",
+  "constraints": [
+    "0 <= tokens.length <= 1000",
+    "0 <= tokens[i],&nbsp;power < 104"
+  ]
+}

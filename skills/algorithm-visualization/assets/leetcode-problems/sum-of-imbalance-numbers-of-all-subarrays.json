@@ -1,0 +1,12 @@
+{
+  "number": "2763",
+  "title_cn": "所有子数组中不平衡数字之和",
+  "title_en": "Sum of Imbalance Numbers of All Subarrays",
+  "slug": "sum-of-imbalance-numbers-of-all-subarrays",
+  "difficulty": "Hard",
+  "description": "一个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组 arr&nbsp;的 不平衡数字&nbsp;定义为，在&nbsp;sarr = sorted(arr)&nbsp;数组中，满足以下条件的下标数目：\n\n\t0 <= i < n - 1&nbsp;，和\n\tsarr[i+1] - sarr[i] > 1\n\n这里，sorted(arr)&nbsp;表示将数组 arr&nbsp;排序后得到的数组。\n\n给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，请你返回它所有&nbsp;子数组&nbsp;的&nbsp;不平衡数字&nbsp;之和。\n\n子数组指的是一个数组中连续一段 非空&nbsp;的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,1,4]\n输出：3\n解释：总共有 3 个子数组有非 0 不平衡数字：\n- 子数组 [3, 1] ，不平衡数字为 1 。\n- 子数组 [3, 1, 4] ，不平衡数字为 1 。\n- 子数组 [1, 4] ，不平衡数字为 1 。\n其他所有子数组的不平衡数字都是 0 ，所以所有子数组的不平衡数字之和为 3 。\n\n示例 2：\n\n输入：nums = [1,3,3,3,5]\n输出：8\n解释：总共有 7 个子数组有非 0 不平衡数字：\n- 子数组 [1, 3] ，不平衡数字为 1 。\n- 子数组 [1, 3, 3] ，不平衡数字为 1 。\n- 子数组 [1, 3, 3, 3] ，不平衡数字为 1 。\n- 子数组 [1, 3, 3, 3, 5] ，不平衡数字为 2 。\n- 子数组 [3, 3, 3, 5] ，不平衡数字为 1 。\n- 子数组 [3, 3, 5] ，不平衡数字为 1 。\n- 子数组 [3, 5] ，不平衡数字为 1 。\n其他所有子数组的不平衡数字都是 0 ，所以所有子数组的不平衡数字之和为 8 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i] <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= nums.length"
+  ]
+}

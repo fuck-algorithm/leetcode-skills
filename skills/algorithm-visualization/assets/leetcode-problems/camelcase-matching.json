@@ -1,0 +1,13 @@
+{
+  "number": "1023",
+  "title_cn": "驼峰式匹配",
+  "title_en": "Camelcase Matching",
+  "slug": "camelcase-matching",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 queries，和一个表示模式的字符串&nbsp;pattern，请你返回一个布尔数组 answer 。只有在待查项&nbsp;queries[i] 与模式串&nbsp;pattern 匹配时，&nbsp;answer[i]&nbsp;才为 true，否则为 false。\n\n如果可以将&nbsp;小写字母&nbsp;插入模式串&nbsp;pattern&nbsp;得到待查询项&nbsp;queries[i]，那么待查询项与给定模式串匹配。您可以在模式串中的任何位置插入字符，也可以选择不插入任何字符。\n\n&nbsp;\n\n示例 1：\n\n输入：queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FB\"\n输出：[true,false,true,true,false]\n示例：\n\"FooBar\" 可以这样生成：\"F\" + \"oo\" + \"B\" + \"ar\"。\n\"FootBall\" 可以这样生成：\"F\" + \"oot\" + \"B\" + \"all\".\n\"FrameBuffer\" 可以这样生成：\"F\" + \"rame\" + \"B\" + \"uffer\".\n\n示例 2：\n\n输入：queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBa\"\n输出：[true,false,true,false,false]\n解释：\n\"FooBar\" 可以这样生成：\"Fo\" + \"o\" + \"Ba\" + \"r\".\n\"FootBall\" 可以这样生成：\"Fo\" + \"ot\" + \"Ba\" + \"ll\".\n\n示例 3：\n\n输入：queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBaT\"\n输出：[false,true,false,false,false]\n解释： \n\"FooBarTest\" 可以这样生成：\"Fo\" + \"o\" + \"Ba\" + \"r\" + \"T\" + \"est\".\n\n&nbsp;\n\n提示：\n\n\t1 <= pattern.length, queries.length <= 100\n\t1 <= queries[i].length <= 100\n\tqueries[i] 和 pattern 由英文字母组成",
+  "constraints": [
+    "1 <= pattern.length, queries.length <= 100",
+    "1 <= queries[i].length <= 100",
+    "queries[i] 和 pattern 由英文字母组成"
+  ]
+}

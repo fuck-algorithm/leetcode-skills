@@ -1,0 +1,14 @@
+{
+  "number": "2867",
+  "title_cn": "统计树中的合法路径数目",
+  "title_en": "Count Valid Paths in a Tree",
+  "slug": "count-valid-paths-in-a-tree",
+  "difficulty": "Hard",
+  "description": "给你一棵 n&nbsp;个节点的无向树，节点编号为&nbsp;1&nbsp;到&nbsp;n&nbsp;。给你一个整数&nbsp;n&nbsp;和一个长度为 n - 1&nbsp;的二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ui, vi]&nbsp;表示节点&nbsp;ui 和&nbsp;vi&nbsp;在树中有一条边。\n\n请你返回树中的 合法路径数目&nbsp;。\n\n如果在节点 a&nbsp;到节点 b&nbsp;之间 恰好有一个&nbsp;节点的编号是质数，那么我们称路径&nbsp;(a, b)&nbsp;是 合法的&nbsp;。\n\n注意：\n\n\t路径&nbsp;(a, b)&nbsp;指的是一条从节点 a&nbsp;开始到节点 b&nbsp;结束的一个节点序列，序列中的节点 互不相同&nbsp;，且相邻节点之间在树上有一条边。\n\t路径&nbsp;(a, b)&nbsp;和路径&nbsp;(b, a)&nbsp;视为 同一条&nbsp;路径，且只计入答案 一次&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5, edges = [[1,2],[1,3],[2,4],[2,5]]\n输出：4\n解释：恰好有一个质数编号的节点路径有：\n- (1, 2) 因为路径 1 到 2 只包含一个质数 2 。\n- (1, 3) 因为路径 1 到 3 只包含一个质数 3 。\n- (1, 4) 因为路径 1 到 4 只包含一个质数 2 。\n- (2, 4) 因为路径 2 到 4 只包含一个质数 2 。\n只有 4 条合法路径。\n\n示例 2：\n\n输入：n = 6, edges = [[1,2],[1,3],[2,4],[3,5],[3,6]]\n输出：6\n解释：恰好有一个质数编号的节点路径有：\n- (1, 2) 因为路径 1 到 2 只包含一个质数 2 。\n- (1, 3) 因为路径 1 到 3 只包含一个质数 3 。\n- (1, 4) 因为路径 1 到 4 只包含一个质数 2 。\n- (1, 6) 因为路径 1 到 6 只包含一个质数 3 。\n- (2, 4) 因为路径 2 到 4 只包含一个质数 2 。\n- (3, 6) 因为路径 3 到 6 只包含一个质数 3 。\n只有 6 条合法路径。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t1 <= ui, vi <= n\n\t输入保证&nbsp;edges&nbsp;形成一棵合法的树。",
+  "constraints": [
+    "1 <= n <= 105",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "1 <= ui, vi <= n"
+  ]
+}

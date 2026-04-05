@@ -1,0 +1,12 @@
+{
+  "number": "60",
+  "title_cn": "排列序列",
+  "title_en": "Permutation Sequence",
+  "slug": "permutation-sequence",
+  "difficulty": "Hard",
+  "description": "给出集合 [1,2,3,...,n]，其所有元素共有 n! 种排列。\n\n按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：\n\n\t\"123\"\n\t\"132\"\n\t\"213\"\n\t\"231\"\n\t\"312\"\n\t\"321\"\n\n给定 n 和 k，返回第 k 个排列。\n\n示例 1：\n\n输入：n = 3, k = 3\n输出：\"213\"\n\n示例 2：\n\n输入：n = 4, k = 9\n输出：\"2314\"\n\n示例 3：\n\n输入：n = 3, k = 1\n输出：\"123\"\n\n提示：\n\n\t1 \n\t1",
+  "constraints": [
+    "1",
+    "1"
+  ]
+}

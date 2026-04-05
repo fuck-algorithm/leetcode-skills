@@ -1,0 +1,12 @@
+{
+  "number": "2375",
+  "title_cn": "根据模式串构造最小数字",
+  "title_en": "Construct Smallest Number From DI String",
+  "slug": "construct-smallest-number-from-di-string",
+  "difficulty": "Medium",
+  "description": "给你下标从 0 开始、长度为 n&nbsp;的字符串&nbsp;pattern&nbsp;，它包含两种字符，'I'&nbsp;表示 上升&nbsp;，'D'&nbsp;表示 下降&nbsp;。\n\n你需要构造一个下标从 0&nbsp;开始长度为&nbsp;n + 1&nbsp;的字符串，且它要满足以下条件：\n\n\tnum&nbsp;包含数字&nbsp;'1'&nbsp;到&nbsp;'9'&nbsp;，其中每个数字&nbsp;至多&nbsp;使用一次。\n\t如果&nbsp;pattern[i] == 'I'&nbsp;，那么&nbsp;num[i] < num[i + 1]&nbsp;。\n\t如果&nbsp;pattern[i] == 'D'&nbsp;，那么&nbsp;num[i] > num[i + 1]&nbsp;。\n\n请你返回满足上述条件字典序 最小&nbsp;的字符串&nbsp;num。\n\n&nbsp;\n\n示例 1：\n\n输入：pattern = \"IIIDIDDD\"\n输出：\"123549876\"\n解释：\n下标 0 ，1 ，2 和 4 处，我们需要使 num[i] < num[i+1] 。\n下标 3 ，5 ，6 和 7 处，我们需要使 num[i] > num[i+1] 。\n一些可能的 num 的值为 \"245639871\" ，\"135749862\" 和 \"123849765\" 。\n\"123549876\" 是满足条件最小的数字。\n注意，\"123414321\" 不是可行解因为数字 '1' 使用次数超过 1 次。\n\n示例 2：\n\n输入：pattern = \"DDD\"\n输出：\"4321\"\n解释：\n一些可能的 num 的值为 \"9876\" ，\"7321\" 和 \"8742\" 。\n\"4321\" 是满足条件最小的数字。\n\n&nbsp;\n\n提示：\n\n\t1 <= pattern.length <= 8\n\tpattern&nbsp;只包含字符&nbsp;'I' 和&nbsp;'D' 。",
+  "constraints": [
+    "1 <= pattern.length <= 8",
+    "pattern&nbsp;只包含字符&nbsp;'I' 和&nbsp;'D' 。"
+  ]
+}

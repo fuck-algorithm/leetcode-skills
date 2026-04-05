@@ -1,0 +1,12 @@
+{
+  "number": "3498",
+  "title_cn": "字符串的反转度",
+  "title_en": "Reverse Degree of a String",
+  "slug": "reverse-degree-of-a-string",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s，计算其 反转度。\n\n反转度的计算方法如下：\n\n\t对于每个字符，将其在 反转 字母表中的位置（'a' = 26, 'b' = 25, ..., 'z' = 1）与其在字符串中的位置（下标从1 开始）相乘。\n\t将这些乘积加起来，得到字符串中所有字符的和。\n\n返回 反转度。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"abc\"\n\n输出： 148\n\n解释：\n\n\t\t\t字母\n\t\t\t反转字母表中的位置\n\t\t\t字符串中的位置\n\t\t\t乘积\n\n\t\t\t'a'\n\t\t\t26\n\t\t\t1\n\t\t\t26\n\n\t\t\t'b'\n\t\t\t25\n\t\t\t2\n\t\t\t50\n\n\t\t\t'c'\n\t\t\t24\n\t\t\t3\n\t\t\t72\n\n反转度是 26 + 50 + 72 = 148 。\n\n示例 2：\n\n输入： s = \"zaza\"\n\n输出： 160\n\n解释：\n\n\t\t\t字母\n\t\t\t反转字母表中的位置\n\t\t\t字符串中的位置\n\t\t\t乘积\n\n\t\t\t'z'\n\t\t\t1\n\t\t\t1\n\t\t\t1\n\n\t\t\t'a'\n\t\t\t26\n\t\t\t2\n\t\t\t52\n\n\t\t\t'z'\n\t\t\t1\n\t\t\t3\n\t\t\t3\n\n\t\t\t'a'\n\t\t\t26\n\t\t\t4\n\t\t\t104\n\n反转度是 1 + 52 + 3 + 104 = 160&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts 仅包含小写字母。",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s 仅包含小写字母。"
+  ]
+}

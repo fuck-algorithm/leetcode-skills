@@ -1,0 +1,11 @@
+{
+  "number": "693",
+  "title_cn": "交替位二进制数",
+  "title_en": "Binary Number with Alternating Bits",
+  "slug": "binary-number-with-alternating-bits",
+  "difficulty": "Easy",
+  "description": "给定一个正整数，检查它的二进制表示是否总是 0、1 交替出现：换句话说，就是二进制表示中相邻两位的数字永不相同。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5\n输出：true\n解释：5 的二进制表示是：101\n\n示例 2：\n\n输入：n = 7\n输出：false\n解释：7 的二进制表示是：111.\n\n示例 3：\n\n输入：n = 11\n输出：false\n解释：11 的二进制表示是：1011.\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 231 - 1",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ]
+}

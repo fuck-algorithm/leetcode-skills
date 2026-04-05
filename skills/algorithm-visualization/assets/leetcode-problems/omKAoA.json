@@ -1,0 +1,13 @@
+{
+  "number": "LCR 094",
+  "title_cn": "分割回文串 II",
+  "title_en": "分割回文串 II",
+  "slug": "omKAoA",
+  "difficulty": "Hard",
+  "description": "给定一个字符串 s，请将 s 分割成一些子串，使每个子串都是回文串。\n\n返回符合要求的 最少分割次数 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aab\"\n输出：1\n解释：只需一次分割就可将&nbsp;s 分割成 [\"aa\",\"b\"] 这样两个回文子串。\n\n示例 2：\n\n输入：s = \"a\"\n输出：0\n\n示例 3：\n\n输入：s = \"ab\"\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2000\n\ts 仅由小写英文字母组成\n\n&nbsp;\n\n注意：本题与主站 132&nbsp;题相同：&nbsp;https://leetcode.cn/problems/palindrome-partitioning-ii/",
+  "constraints": [
+    "1 <= s.length <= 2000",
+    "s 仅由小写英文字母组成",
+    "注意：本题与主站 132&nbsp;题相同：&nbsp;https://leetcode.cn/problems/palindrome-partitioning-ii/"
+  ]
+}

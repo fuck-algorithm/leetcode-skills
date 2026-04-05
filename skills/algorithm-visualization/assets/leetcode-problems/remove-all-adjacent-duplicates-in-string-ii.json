@@ -1,0 +1,13 @@
+{
+  "number": "1209",
+  "title_cn": "删除字符串中的所有相邻重复项 II",
+  "title_en": "Remove All Adjacent Duplicates in String II",
+  "slug": "remove-all-adjacent-duplicates-in-string-ii",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s，「k 倍重复项删除操作」将会从 s&nbsp;中选择&nbsp;k&nbsp;个相邻且相等的字母，并删除它们，使被删去的字符串的左侧和右侧连在一起。\n\n你需要对&nbsp;s&nbsp;重复进行无限次这样的删除操作，直到无法继续为止。\n\n在执行完所有删除操作后，返回最终得到的字符串。\n\n本题答案保证唯一。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abcd\", k = 2\n输出：\"abcd\"\n解释：没有要删除的内容。\n\n示例 2：\n\n输入：s = \"deeedbbcccbdaa\", k = 3\n输出：\"aa\"\n解释： \n先删除 \"eee\" 和 \"ccc\"，得到 \"ddbbbdaa\"\n再删除 \"bbb\"，得到 \"dddaa\"\n最后删除 \"ddd\"，得到 \"aa\"\n\n示例 3：\n\n输入：s = \"pbbcggttciiippooaais\", k = 2\n输出：\"ps\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 10^5\n\t2 <= k <= 10^4\n\ts&nbsp;中只含有小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "2 <= k <= 10^4",
+    "s&nbsp;中只含有小写英文字母。"
+  ]
+}

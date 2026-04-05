@@ -1,0 +1,13 @@
+{
+  "number": "2319",
+  "title_cn": "判断矩阵是否是一个 X 矩阵",
+  "title_en": "Check if Matrix Is X-Matrix",
+  "slug": "check-if-matrix-is-x-matrix",
+  "difficulty": "Easy",
+  "description": "如果一个正方形矩阵满足下述 全部 条件，则称之为一个 X 矩阵 ：\n\n\t矩阵对角线上的所有元素都 不是 0\n\t矩阵中所有其他元素都是 0\n\n给你一个大小为 n x n 的二维整数数组 grid ，表示一个正方形矩阵。如果 grid 是一个 X 矩阵 ，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]]\n输出：true\n解释：矩阵如上图所示。\nX 矩阵应该满足：绿色元素（对角线上）都不是 0 ，红色元素都是 0 。\n因此，grid 是一个 X 矩阵。\n\n示例 2：\n\n输入：grid = [[5,7,0],[0,3,1],[0,5,0]]\n输出：false\n解释：矩阵如上图所示。\nX 矩阵应该满足：绿色元素（对角线上）都不是 0 ，红色元素都是 0 。\n因此，grid 不是一个 X 矩阵。\n\n&nbsp;\n\n提示：\n\n\tn == grid.length == grid[i].length\n\t3 <= n <= 100\n\t0 <= grid[i][j] <= 105",
+  "constraints": [
+    "n == grid.length == grid[i].length",
+    "3 <= n <= 100",
+    "0 <= grid[i][j] <= 105"
+  ]
+}

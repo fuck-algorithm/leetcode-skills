@@ -1,0 +1,13 @@
+{
+  "number": "3683",
+  "title_cn": "完成一个任务的最早时间",
+  "title_en": "Earliest Time to Finish One Task",
+  "slug": "earliest-time-to-finish-one-task",
+  "difficulty": "Easy",
+  "description": "给你一个二维整数数组 tasks，其中 tasks[i] = [si, ti]。\n\n数组中的每个 [si, ti] 表示一个任务，该任务的开始时间为 si，完成该任务需要 ti 个时间单位。\n\n返回至少完成一个任务的最早时间。\n\n&nbsp;\n\n示例 1：\n\n输入： tasks = [[1,6],[2,3]]\n\n输出： 5\n\n解释：\n\n第一个任务从时间 t = 1 开始，并在 1 + 6 = 7 时完成。第二个任务在时间 t = 2 开始，并在 2 + 3 = 5 时完成。因此，最早完成的任务在时间 5。\n\n示例 2：\n\n输入： tasks = [[100,100],[100,100],[100,100]]\n\n输出： 200\n\n解释：\n\n三个任务都在时间 100 + 100 = 200 时完成。\n\n&nbsp;\n\n提示：\n\n\t1 <= tasks.length <= 100\n\ttasks[i] = [si, ti]\n\t1 <= si, ti <= 100",
+  "constraints": [
+    "1 <= tasks.length <= 100",
+    "tasks[i] = [si, ti]",
+    "1 <= si, ti <= 100"
+  ]
+}

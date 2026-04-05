@@ -1,0 +1,15 @@
+{
+  "number": "1261",
+  "title_cn": "在受污染的二叉树中查找元素",
+  "title_en": "Find Elements in a Contaminated Binary Tree",
+  "slug": "find-elements-in-a-contaminated-binary-tree",
+  "difficulty": "Medium",
+  "description": "给出一个满足下述规则的二叉树：\n\n\troot.val == 0\n\t对于任意 treeNode：\n\n\t\t如果 treeNode.val 为&nbsp;x 且&nbsp;treeNode.left != null，那么&nbsp;treeNode.left.val == 2 * x + 1\n\t\t如果 treeNode.val 为&nbsp;x 且 treeNode.right != null，那么&nbsp;treeNode.right.val == 2 * x + 2\n\n现在这个二叉树受到「污染」，所有的&nbsp;treeNode.val&nbsp;都变成了&nbsp;-1。\n\n请你先还原二叉树，然后实现&nbsp;FindElements&nbsp;类：\n\n\tFindElements(TreeNode* root)&nbsp;用受污染的二叉树初始化对象，你需要先把它还原。\n\tbool find(int target)&nbsp;判断目标值&nbsp;target&nbsp;是否存在于还原后的二叉树中并返回结果。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"FindElements\",\"find\",\"find\"]\n[[[-1,null,-1]],[1],[2]]\n输出：\n[null,false,true]\n解释：\nFindElements findElements = new FindElements([-1,null,-1]); \nfindElements.find(1); // return False \nfindElements.find(2); // return True \n\n示例 2：\n\n输入：\n[\"FindElements\",\"find\",\"find\",\"find\"]\n[[[-1,-1,-1,-1,-1]],[1],[3],[5]]\n输出：\n[null,true,true,false]\n解释：\nFindElements findElements = new FindElements([-1,-1,-1,-1,-1]);\nfindElements.find(1); // return True\nfindElements.find(3); // return True\nfindElements.find(5); // return False\n\n示例 3：\n\n输入：\n[\"FindElements\",\"find\",\"find\",\"find\",\"find\"]\n[[[-1,null,-1,-1,null,-1]],[2],[3],[4],[5]]\n输出：\n[null,true,false,false,true]\n解释：\nFindElements findElements = new FindElements([-1,null,-1,-1,null,-1]);\nfindElements.find(2); // return True\nfindElements.find(3); // return False\nfindElements.find(4); // return False\nfindElements.find(5); // return True\n\n&nbsp;\n\n提示：\n\n\tTreeNode.val == -1\n\t二叉树的高度不超过&nbsp;20\n\t节点的总数在&nbsp;[1,&nbsp;104]&nbsp;之间\n\t调用&nbsp;find()&nbsp;的总次数在&nbsp;[1,&nbsp;104]&nbsp;之间\n\t0 <= target <= 106",
+  "constraints": [
+    "TreeNode.val == -1",
+    "二叉树的高度不超过&nbsp;20",
+    "节点的总数在&nbsp;[1,&nbsp;104]&nbsp;之间",
+    "调用&nbsp;find()&nbsp;的总次数在&nbsp;[1,&nbsp;104]&nbsp;之间",
+    "0 <= target <= 106"
+  ]
+}

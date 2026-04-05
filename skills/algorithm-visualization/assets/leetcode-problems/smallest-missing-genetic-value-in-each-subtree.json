@@ -1,0 +1,17 @@
+{
+  "number": "2003",
+  "title_cn": "每棵子树内缺失的最小基因值",
+  "title_en": "Smallest Missing Genetic Value in Each Subtree",
+  "slug": "smallest-missing-genetic-value-in-each-subtree",
+  "difficulty": "Hard",
+  "description": "有一棵根节点为 0&nbsp;的 家族树&nbsp;，总共包含 n&nbsp;个节点，节点编号为 0&nbsp;到 n - 1&nbsp;。给你一个下标从 0&nbsp;开始的整数数组 parents&nbsp;，其中&nbsp;parents[i]&nbsp;是节点 i&nbsp;的父节点。由于节点 0&nbsp;是 根&nbsp;，所以&nbsp;parents[0] == -1&nbsp;。\n\n总共有&nbsp;105&nbsp;个基因值，每个基因值都用 闭区间&nbsp;[1, 105]&nbsp;中的一个整数表示。给你一个下标从&nbsp;0&nbsp;开始的整数数组&nbsp;nums&nbsp;，其中&nbsp;nums[i]&nbsp;是节点 i&nbsp;的基因值，且基因值 互不相同&nbsp;。\n\n请你返回一个数组&nbsp;ans&nbsp;，长度为&nbsp;n&nbsp;，其中&nbsp;ans[i]&nbsp;是以节点&nbsp;i&nbsp;为根的子树内 缺失&nbsp;的&nbsp;最小&nbsp;基因值。\n\n节点 x&nbsp;为根的 子树&nbsp;包含节点 x&nbsp;和它所有的 后代&nbsp;节点。\n\n&nbsp;\n\n示例 1：\n\n输入：parents = [-1,0,0,2], nums = [1,2,3,4]\n输出：[5,1,1,1]\n解释：每个子树答案计算结果如下：\n- 0：子树包含节点 [0,1,2,3] ，基因值分别为 [1,2,3,4] 。5 是缺失的最小基因值。\n- 1：子树只包含节点 1 ，基因值为 2 。1 是缺失的最小基因值。\n- 2：子树包含节点 [2,3] ，基因值分别为 [3,4] 。1 是缺失的最小基因值。\n- 3：子树只包含节点 3 ，基因值为 4 。1是缺失的最小基因值。\n\n示例 2：\n\n输入：parents = [-1,0,1,0,3,3], nums = [5,4,6,2,1,3]\n输出：[7,1,1,4,2,1]\n解释：每个子树答案计算结果如下：\n- 0：子树内包含节点 [0,1,2,3,4,5] ，基因值分别为 [5,4,6,2,1,3] 。7 是缺失的最小基因值。\n- 1：子树内包含节点 [1,2] ，基因值分别为 [4,6] 。 1 是缺失的最小基因值。\n- 2：子树内只包含节点 2 ，基因值为 6 。1 是缺失的最小基因值。\n- 3：子树内包含节点 [3,4,5] ，基因值分别为 [2,1,3] 。4 是缺失的最小基因值。\n- 4：子树内只包含节点 4 ，基因值为 1 。2 是缺失的最小基因值。\n- 5：子树内只包含节点 5 ，基因值为 3 。1 是缺失的最小基因值。\n\n示例 3：\n\n输入：parents = [-1,2,3,0,2,4,1], nums = [2,3,4,5,6,7,8]\n输出：[1,1,1,1,1,1,1]\n解释：所有子树都缺失基因值 1 。\n\n&nbsp;\n\n提示：\n\n\tn == parents.length == nums.length\n\t2 <= n <= 105\n\t对于&nbsp;i != 0&nbsp;，满足&nbsp;0 <= parents[i] <= n - 1\n\tparents[0] == -1\n\tparents&nbsp;表示一棵合法的树。\n\t1 <= nums[i] <= 105\n\tnums[i]&nbsp;互不相同。",
+  "constraints": [
+    "n == parents.length == nums.length",
+    "2 <= n <= 105",
+    "对于&nbsp;i != 0&nbsp;，满足&nbsp;0 <= parents[i] <= n - 1",
+    "parents[0] == -1",
+    "parents&nbsp;表示一棵合法的树。",
+    "1 <= nums[i] <= 105",
+    "nums[i]&nbsp;互不相同。"
+  ]
+}

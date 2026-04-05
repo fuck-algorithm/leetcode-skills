@@ -1,0 +1,13 @@
+{
+  "number": "2724",
+  "title_cn": "排序方式",
+  "title_en": "Sort By",
+  "slug": "sort-by",
+  "difficulty": "Easy",
+  "description": "给定一个数组 arr 和一个函数 fn，返回一个排序后的数组 sortedArr。你可以假设 fn 只返回数字，并且这些数字决定了 sortedArr 的排序顺序。sortedArr 必须按照 fn 的输出值&nbsp;升序 排序。\n\n你可以假设对于给定的数组，fn 不会返回重复的数字。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [5, 4, 1, 2, 3], fn = (x) => x\n输出：[1, 2, 3, 4, 5]\n解释：fn 只是返回传入的数字，因此数组按升序排序。\n\n示例 2：\n\n输入：arr = [{\"x\": 1}, {\"x\": 0}, {\"x\": -1}], fn = (d) => d.x\n输出：[{\"x\": -1}, {\"x\": 0}, {\"x\": 1}]\n解释：fn 返回 \"x\" 键的值，因此数组根据该值排序。\n\n示例 3：\n\n输入：arr = [[3, 4], [5, 2], [10, 1]], fn = (x) => x[1]\n输出：[[10, 1], [5, 2], [3, 4]]\n解释：数组按照索引为 1 处的数字升序排序。\n\n&nbsp;\n\n提示：\n\n\tarr 是一个有效的 JSON 数组\n\tfn 是一个函数，返回一个数字\n\t1 <=&nbsp;arr.length <= 5 * 105",
+  "constraints": [
+    "arr 是一个有效的 JSON 数组",
+    "fn 是一个函数，返回一个数字",
+    "1 <=&nbsp;arr.length <= 5 * 105"
+  ]
+}

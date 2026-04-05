@@ -1,0 +1,12 @@
+{
+  "number": "1509",
+  "title_cn": "三次操作后最大值与最小值的最小差",
+  "title_en": "Minimum Difference Between Largest and Smallest Value in Three Moves",
+  "slug": "minimum-difference-between-largest-and-smallest-value-in-three-moves",
+  "difficulty": "Medium",
+  "description": "给你一个数组&nbsp;nums&nbsp;。\n\n每次操作你可以选择&nbsp;nums&nbsp;中的任意一个元素并将它改成 任意值 。\n\n在&nbsp;执行最多三次移动后&nbsp;，返回&nbsp;nums&nbsp;中最大值与最小值的最小差值。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,3,2,4]\n输出：0\n解释：我们最多可以走 3 步。\n第一步，将 2 变为 3 。 nums 变成 [5,3,3,4] 。\n第二步，将 4 改为 3 。 nums 变成 [5,3,3,3] 。\n第三步，将 5 改为 3 。 nums 变成 [3,3,3,3] 。\n执行 3 次移动后，最小值和最大值之间的差值为 3 - 3 = 0 。\n\n示例 2：\n\n输入：nums = [1,5,0,10,14]\n输出：1\n解释：我们最多可以走 3 步。\n第一步，将 5 改为 0 。 nums变成 [1,0,0,10,14] 。\n第二步，将 10 改为 0 。 nums变成 [1,0,0,0,14] 。\n第三步，将 14 改为 1 。 nums变成 [1,0,0,0,1] 。\n执行 3 步后，最小值和最大值之间的差值为 1 - 0 = 1 。\n可以看出，没有办法可以在 3 步内使差值变为0。\n\n示例 3：\n\n输入：nums = [3,100,20]\n输出：0\n解释：我们最多可以走 3 步。\n第一步，将 100 改为 7 。 nums 变成 [3,7,20] 。\n第二步，将 20 改为 7 。 nums 变成 [3,7,7] 。\n第三步，将 3 改为 7 。 nums 变成 [7,7,7] 。\n执行 3 步后，最小值和最大值之间的差值是 7 - 7 = 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-109 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109"
+  ]
+}

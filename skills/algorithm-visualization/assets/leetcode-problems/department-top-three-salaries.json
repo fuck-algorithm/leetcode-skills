@@ -1,0 +1,11 @@
+{
+  "number": "185",
+  "title_cn": "部门工资前三高的所有员工",
+  "title_en": "Department Top Three Salaries",
+  "slug": "department-top-three-salaries",
+  "difficulty": "Hard",
+  "description": "表:&nbsp;Employee\n\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| id           | int     |\n| name         | varchar |\n| salary       | int     |\n| departmentId | int     |\n+--------------+---------+\nid 是该表的主键列(具有唯一值的列)。\ndepartmentId 是 Department 表中 ID 的外键（reference 列）。\n该表的每一行都表示员工的ID、姓名和工资。它还包含了他们部门的ID。\n\n&nbsp;\n\n表:&nbsp;Department\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| name        | varchar |\n+-------------+---------+\nid 是该表的主键列(具有唯一值的列)。\n该表的每一行表示部门ID和部门名。\n\n&nbsp;\n\n公司的主管们感兴趣的是公司每个部门中谁赚的钱最多。一个部门的 高收入者 是指一个员工的工资在该部门的 不同 工资中 排名前三 。\n\n编写解决方案，找出每个部门中 收入高的员工 。\n\n以 任意顺序 返回结果表。\n\n返回结果格式如下所示。\n\n&nbsp;\n\n示例 1:\n\n输入: \nEmployee 表:\n+----+-------+--------+--------------+\n| id | name  | salary | departmentId |\n+----+-------+--------+--------------+\n| 1  | Joe   | 85000  | 1            |\n| 2  | Henry | 80000  | 2            |\n| 3  | Sam   | 60000  | 2            |\n| 4  | Max   | 90000  | 1            |\n| 5  | Janet | 69000  | 1            |\n| 6  | Randy | 85000  | 1            |\n| 7  | Will  | 70000  | 1            |\n+----+-------+--------+--------------+\nDepartment  表:\n+----+-------+\n| id | name  |\n+----+-------+\n| 1  | IT    |\n| 2  | Sales |\n+----+-------+\n输出: \n+------------+----------+--------+\n| Department | Employee | Salary |\n+------------+----------+--------+\n| IT         | Max      | 90000  |\n| IT         | Joe      | 85000  |\n| IT         | Randy    | 85000  |\n| IT         | Will     | 70000  |\n| Sales      | Henry    | 80000  |\n| Sales      | Sam      | 60000  |\n+------------+----------+--------+\n解释:\n在IT部门:\n- Max的工资最高\n- 兰迪和乔都赚取第二高的独特的薪水\n- 威尔的薪水是第三高的\n\n在销售部:\n- 亨利的工资最高\n- 山姆的薪水第二高\n- 没有第三高的工资，因为只有两名员工\n\n&nbsp;\n\n提示：\n\n\t没有姓名、薪资和部门 完全 相同的员工。",
+  "constraints": [
+    "没有姓名、薪资和部门 完全 相同的员工。"
+  ]
+}

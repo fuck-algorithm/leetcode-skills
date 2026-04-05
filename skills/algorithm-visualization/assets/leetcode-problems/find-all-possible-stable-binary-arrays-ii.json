@@ -1,0 +1,11 @@
+{
+  "number": "3130",
+  "title_cn": "找出所有稳定的二进制数组 II",
+  "title_en": "Find All Possible Stable Binary Arrays II",
+  "slug": "find-all-possible-stable-binary-arrays-ii",
+  "difficulty": "Hard",
+  "description": "给你 3 个正整数&nbsp;zero&nbsp;，one&nbsp;和&nbsp;limit&nbsp;。\n\n一个 二进制数组 arr 如果满足以下条件，那么我们称它是 稳定的 ：\n\n\t0 在&nbsp;arr&nbsp;中出现次数 恰好&nbsp;为&nbsp;zero&nbsp;。\n\t1 在&nbsp;arr&nbsp;中出现次数 恰好&nbsp;为&nbsp;one&nbsp;。\n\tarr 中每个长度超过 limit&nbsp;的 子数组 都 同时 包含 0 和 1 。\n\n请你返回 稳定&nbsp;二进制数组的 总 数目。\n\n由于答案可能很大，将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：zero = 1, one = 1, limit = 2\n\n输出：2\n\n解释：\n\n两个稳定的二进制数组为&nbsp;[1,0] 和&nbsp;[0,1]&nbsp;，两个数组都有一个 0 和一个 1 ，且没有子数组长度大于 2 。\n\n示例 2：\n\n输入：zero = 1, one = 2, limit = 1\n\n输出：1\n\n解释：\n\n唯一稳定的二进制数组是&nbsp;[1,0,1]&nbsp;。\n\n二进制数组&nbsp;[1,1,0] 和&nbsp;[0,1,1]&nbsp;都有长度为 2 且元素全都相同的子数组，所以它们不稳定。\n\n示例 3：\n\n输入：zero = 3, one = 3, limit = 2\n\n输出：14\n\n解释：\n\n所有稳定的二进制数组包括&nbsp;[0,0,1,0,1,1]&nbsp;，[0,0,1,1,0,1]&nbsp;，[0,1,0,0,1,1]&nbsp;，[0,1,0,1,0,1]&nbsp;，[0,1,0,1,1,0]&nbsp;，[0,1,1,0,0,1]&nbsp;，[0,1,1,0,1,0]&nbsp;，[1,0,0,1,0,1]&nbsp;，[1,0,0,1,1,0]&nbsp;，[1,0,1,0,0,1]&nbsp;，[1,0,1,0,1,0]&nbsp;，[1,0,1,1,0,0]&nbsp;，[1,1,0,0,1,0]&nbsp;和&nbsp;[1,1,0,1,0,0]&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= zero, one, limit <= 1000",
+  "constraints": [
+    "1 <= zero, one, limit <= 1000"
+  ]
+}

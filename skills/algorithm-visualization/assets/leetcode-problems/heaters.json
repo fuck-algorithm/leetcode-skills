@@ -1,0 +1,12 @@
+{
+  "number": "475",
+  "title_cn": "供暖器",
+  "title_en": "Heaters",
+  "slug": "heaters",
+  "difficulty": "Medium",
+  "description": "冬季已经来临。&nbsp;你的任务是设计一个有固定加热半径的供暖器向所有房屋供暖。\n\n在加热器的加热半径范围内的每个房屋都可以获得供暖。\n\n现在，给出位于一条水平线上的房屋&nbsp;houses 和供暖器&nbsp;heaters 的位置，请你找出并返回可以覆盖所有房屋的最小加热半径。\n\n注意：所有供暖器 heaters 都遵循你的半径标准，加热的半径也一样。\n\n&nbsp;\n\n示例 1:\n\n输入: houses = [1,2,3], heaters = [2]\n输出: 1\n解释: 仅在位置 2 上有一个供暖器。如果我们将加热半径设为 1，那么所有房屋就都能得到供暖。\n\n示例 2:\n\n输入: houses = [1,2,3,4], heaters = [1,4]\n输出: 1\n解释: 在位置 1, 4 上有两个供暖器。我们需要将加热半径设为 1，这样所有房屋就都能得到供暖。\n\n示例 3：\n\n输入：houses = [1,5], heaters = [2]\n输出：3\n\n&nbsp;\n\n提示：\n\n\t1 <= houses.length, heaters.length <= 3 * 104\n\t1 <= houses[i], heaters[i] <= 109",
+  "constraints": [
+    "1 <= houses.length, heaters.length <= 3 * 104",
+    "1 <= houses[i], heaters[i] <= 109"
+  ]
+}

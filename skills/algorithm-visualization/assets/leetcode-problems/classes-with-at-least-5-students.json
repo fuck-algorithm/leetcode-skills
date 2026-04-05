@@ -1,0 +1,9 @@
+{
+  "number": "596",
+  "title_cn": "超过 5 名学生的课",
+  "title_en": "Classes With at Least 5 Students",
+  "slug": "classes-with-at-least-5-students",
+  "difficulty": "Easy",
+  "description": "表:&nbsp;Courses\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| student     | varchar |\n| class       | varchar |\n+-------------+---------+\n(student, class)是该表的主键（不同值的列的组合）。\n该表的每一行表示学生的名字和他们注册的课程。\n\n&nbsp;\n\n查询&nbsp;至少有 5 个学生 的所有课程。\n\n以 任意顺序 返回结果表。\n\n结果格式如下所示。\n\n&nbsp;\n\n示例 1:\n\n输入: \nCourses 表:\n+---------+----------+\n| student | class    |\n+---------+----------+\n| A       | Math     |\n| B       | English  |\n| C       | Math     |\n| D       | Biology  |\n| E       | Math     |\n| F       | Computer |\n| G       | Math     |\n| H       | Math     |\n| I       | Math     |\n+---------+----------+\n输出: \n+---------+ \n| class &nbsp; | \n+---------+ \n| Math &nbsp; &nbsp;| \n+---------+\n解释: \n-数学课有 6 个学生，所以我们包括它。\n-英语课有 1 名学生，所以我们不包括它。\n-生物课有 1 名学生，所以我们不包括它。\n-计算机课有 1 个学生，所以我们不包括它。",
+  "constraints": []
+}

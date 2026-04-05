@@ -1,0 +1,16 @@
+{
+  "number": "624",
+  "title_cn": "数组列表中的最大距离",
+  "title_en": "Maximum Distance in Arrays",
+  "slug": "maximum-distance-in-arrays",
+  "difficulty": "Medium",
+  "description": "给定&nbsp;m&nbsp;个数组，每个数组都已经按照升序排好序了。\n\n现在你需要从两个不同的数组中选择两个整数（每个数组选一个）并且计算它们的距离。两个整数&nbsp;a&nbsp;和&nbsp;b&nbsp;之间的距离定义为它们差的绝对值&nbsp;|a-b|&nbsp;。\n\n返回最大距离。\n\n示例 1：\n\n输入：[[1,2,3],[4,5],[1,2,3]]\n输出：4\n解释：\n一种得到答案 4 的方法是从第一个数组或者第三个数组中选择 1，同时从第二个数组中选择 5 。\n\n示例 2：\n\n输入：arrays = [[1],[1]]\n输出：0\n\n&nbsp;\n\n提示：\n\n\tm == arrays.length\n\t2 <= m <= 105\n\t1 <= arrays[i].length <= 500\n\t-104 <= arrays[i][j] <= 104\n\tarrays[i]&nbsp;以&nbsp;升序&nbsp;排序。\n\t所有数组中最多有&nbsp;105 个整数。\n\n&nbsp;",
+  "constraints": [
+    "m == arrays.length",
+    "2 <= m <= 105",
+    "1 <= arrays[i].length <= 500",
+    "-104 <= arrays[i][j] <= 104",
+    "arrays[i]&nbsp;以&nbsp;升序&nbsp;排序。",
+    "所有数组中最多有&nbsp;105 个整数。"
+  ]
+}

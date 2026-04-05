@@ -1,0 +1,16 @@
+{
+  "number": "3068",
+  "title_cn": "最大节点价值之和",
+  "title_en": "Find the Maximum Sum of Node Values",
+  "slug": "find-the-maximum-sum-of-node-values",
+  "difficulty": "Hard",
+  "description": "给你一棵 n&nbsp;个节点的 无向&nbsp;树，节点从 0&nbsp;到 n - 1&nbsp;编号。树以长度为 n - 1&nbsp;下标从 0&nbsp;开始的二维整数数组 edges&nbsp;的形式给你，其中&nbsp;edges[i] = [ui, vi]&nbsp;表示树中节点&nbsp;ui&nbsp;和&nbsp;vi&nbsp;之间有一条边。同时给你一个 正&nbsp;整数&nbsp;k&nbsp;和一个长度为 n&nbsp;下标从&nbsp;0&nbsp;开始的&nbsp;非负&nbsp;整数数组&nbsp;nums&nbsp;，其中&nbsp;nums[i]&nbsp;表示节点 i&nbsp;的 价值&nbsp;。\n\nAlice&nbsp;想 最大化&nbsp;树中所有节点价值之和。为了实现这一目标，Alice 可以执行以下操作 任意&nbsp;次（包括&nbsp;0 次）：\n\n\t选择连接节点&nbsp;u&nbsp;和&nbsp;v&nbsp;的边&nbsp;[u, v]&nbsp;，并将它们的值更新为：\n\n\t\tnums[u] = nums[u] XOR k\n\t\tnums[v] = nums[v] XOR k\n\n请你返回 Alice 通过执行以上操作 任意次&nbsp;后，可以得到所有节点 价值之和&nbsp;的 最大值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,1], k = 3, edges = [[0,1],[0,2]]\n输出：6\n解释：Alice 可以通过一次操作得到最大价值和 6 ：\n- 选择边 [0,2] 。nums[0] 和 nums[2] 都变为：1 XOR 3 = 2 ，数组 nums 变为：[1,2,1] -> [2,2,2] 。\n所有节点价值之和为 2 + 2 + 2 = 6 。\n6 是可以得到最大的价值之和。\n\n示例 2：\n\n输入：nums = [2,3], k = 7, edges = [[0,1]]\n输出：9\n解释：Alice 可以通过一次操作得到最大和 9 ：\n- 选择边 [0,1] 。nums[0] 变为：2 XOR 7 = 5 ，nums[1] 变为：3 XOR 7 = 4 ，数组 nums 变为：[2,3] -> [5,4] 。\n所有节点价值之和为 5 + 4 = 9 。\n9 是可以得到最大的价值之和。\n\n示例 3：\n\n输入：nums = [7,7,7,7,7,7], k = 3, edges = [[0,1],[0,2],[0,3],[0,4],[0,5]]\n输出：42\n解释：Alice 不需要执行任何操作，就可以得到最大价值之和 42 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n == nums.length <= 2 * 104\n\t1 <= k <= 109\n\t0 <= nums[i] <= 109\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= edges[i][0], edges[i][1] <= n - 1\n\t输入保证&nbsp;edges&nbsp;构成一棵合法的树。",
+  "constraints": [
+    "2 <= n == nums.length <= 2 * 104",
+    "1 <= k <= 109",
+    "0 <= nums[i] <= 109",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= edges[i][0], edges[i][1] <= n - 1"
+  ]
+}

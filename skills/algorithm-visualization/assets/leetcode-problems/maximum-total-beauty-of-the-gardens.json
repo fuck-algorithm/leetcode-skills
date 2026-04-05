@@ -1,0 +1,14 @@
+{
+  "number": "2234",
+  "title_cn": "花园的最大总美丽值",
+  "title_en": "Maximum Total Beauty of the Gardens",
+  "slug": "maximum-total-beauty-of-the-gardens",
+  "difficulty": "Hard",
+  "description": "Alice 是&nbsp;n&nbsp;个花园的园丁，她想通过种花，最大化她所有花园的总美丽值。\n\n给你一个下标从 0&nbsp;开始大小为 n&nbsp;的整数数组&nbsp;flowers&nbsp;，其中&nbsp;flowers[i]&nbsp;是第 i&nbsp;个花园里已经种的花的数目。已经种了的花 不能&nbsp;移走。同时给你&nbsp;newFlowers&nbsp;，表示 Alice 额外可以种花的&nbsp;最大数目&nbsp;。同时给你的还有整数&nbsp;target&nbsp;，full&nbsp;和&nbsp;partial&nbsp;。\n\n如果一个花园有 至少&nbsp;target&nbsp;朵花，那么这个花园称为 完善的&nbsp;，花园的 总美丽值&nbsp;为以下分数之 和 ：\n\n\t完善 花园数目乘以&nbsp;full.\n\t剩余 不完善&nbsp;花园里，花的 最少数目&nbsp;乘以&nbsp;partial&nbsp;。如果没有不完善花园，那么这一部分的值为&nbsp;0&nbsp;。\n\n请你返回 Alice 种最多 newFlowers&nbsp;朵花以后，能得到的&nbsp;最大&nbsp;总美丽值。\n\n&nbsp;\n\n示例 1：\n\n输入：flowers = [1,3,1,1], newFlowers = 7, target = 6, full = 12, partial = 1\n输出：14\n解释：Alice 可以按以下方案种花\n- 在第 0 个花园种 2 朵花\n- 在第 1 个花园种 3 朵花\n- 在第 2 个花园种 1 朵花\n- 在第 3 个花园种 1 朵花\n花园里花的数目为 [3,6,2,2] 。总共种了 2 + 3 + 1 + 1 = 7 朵花。\n只有 1 个花园是完善的。\n不完善花园里花的最少数目是 2 。\n所以总美丽值为 1 * 12 + 2 * 1 = 12 + 2 = 14 。\n没有其他方案可以让花园总美丽值超过 14 。\n\n示例 2：\n\n输入：flowers = [2,4,5,3], newFlowers = 10, target = 5, full = 2, partial = 6\n输出：30\n解释：Alice 可以按以下方案种花\n- 在第 0 个花园种 3 朵花\n- 在第 1 个花园种 0 朵花\n- 在第 2 个花园种 0 朵花\n- 在第 3 个花园种 2 朵花\n花园里花的数目为 [5,4,5,5] 。总共种了 3 + 0 + 0 + 2 = 5 朵花。\n有 3 个花园是完善的。\n不完善花园里花的最少数目为 4 。\n所以总美丽值为 3 * 2 + 4 * 6 = 6 + 24 = 30 。\n没有其他方案可以让花园总美丽值超过 30 。\n注意，Alice可以让所有花园都变成完善的，但这样她的总美丽值反而更小。\n\n&nbsp;\n\n提示：\n\n\t1 <= flowers.length <= 105\n\t1 <= flowers[i], target <= 105\n\t1 <= newFlowers <= 1010\n\t1 <= full, partial <= 105",
+  "constraints": [
+    "1 <= flowers.length <= 105",
+    "1 <= flowers[i], target <= 105",
+    "1 <= newFlowers <= 1010",
+    "1 <= full, partial <= 105"
+  ]
+}

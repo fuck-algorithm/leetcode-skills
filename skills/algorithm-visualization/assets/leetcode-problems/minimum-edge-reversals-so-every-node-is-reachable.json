@@ -1,0 +1,16 @@
+{
+  "number": "2858",
+  "title_cn": "可以到达每一个节点的最少边反转次数",
+  "title_en": "Minimum Edge Reversals So Every Node Is Reachable",
+  "slug": "minimum-edge-reversals-so-every-node-is-reachable",
+  "difficulty": "Hard",
+  "description": "给你一个 n&nbsp;个点的 简单有向图&nbsp;（没有重复边的有向图），节点编号为 0&nbsp;到 n - 1&nbsp;。如果这些边是双向边，那么这个图形成一棵&nbsp;树&nbsp;。\n\n给你一个整数&nbsp;n&nbsp;和一个 二维&nbsp;整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ui, vi]&nbsp;表示从节点&nbsp;ui&nbsp;到节点&nbsp;vi&nbsp;有一条&nbsp;有向边&nbsp;。\n\n边反转&nbsp;指的是将一条边的方向反转，也就是说一条从节点&nbsp;ui&nbsp;到节点&nbsp;vi&nbsp;的边会变为一条从节点&nbsp;vi&nbsp;到节点&nbsp;ui&nbsp;的边。\n\n对于范围&nbsp;[0, n - 1]&nbsp;中的每一个节点 i&nbsp;，你的任务是分别 独立 计算 最少&nbsp;需要多少次 边反转&nbsp;，从节点 i&nbsp;出发经过 一系列有向边&nbsp;，可以到达所有的节点。\n\n请你返回一个长度为 n&nbsp;的整数数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]表示从节点&nbsp;i&nbsp;出发，可以到达所有节点的&nbsp;最少边反转&nbsp;次数。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4, edges = [[2,0],[2,1],[1,3]]\n输出：[1,1,0,2]\n解释：上图表示了与输入对应的简单有向图。\n对于节点 0 ：反转 [2,0] ，从节点 0 出发可以到达所有节点。\n所以 answer[0] = 1 。\n对于节点 1 ：反转 [2,1] ，从节点 1 出发可以到达所有节点。\n所以 answer[1] = 1 。\n对于节点 2 ：不需要反转就可以从节点 2 出发到达所有节点。\n所以 answer[2] = 0 。\n对于节点 3 ：反转 [1,3] 和 [2,1] ，从节点 3 出发可以到达所有节点。\n所以 answer[3] = 2 。\n\n示例 2：\n\n输入：n = 3, edges = [[1,2],[2,0]]\n输出：[2,0,1]\n解释：上图表示了与输入对应的简单有向图。\n对于节点 0 ：反转 [2,0] 和 [1,2] ，从节点 0 出发可以到达所有节点。\n所以 answer[0] = 2 。\n对于节点 1 ：不需要反转就可以从节点 2 出发到达所有节点。\n所以 answer[1] = 0 。\n对于节点 2 ：反转 [1,2] ，从节点 2 出发可以到达所有节点。\n所以 answer[2] = 1 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 105\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ui == edges[i][0] < n\n\t0 <= vi == edges[i][1] < n\n\tui != vi\n\t输入保证如果边是双向边，可以得到一棵树。",
+  "constraints": [
+    "2 <= n <= 105",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ui == edges[i][0] < n",
+    "0 <= vi == edges[i][1] < n",
+    "ui != vi"
+  ]
+}

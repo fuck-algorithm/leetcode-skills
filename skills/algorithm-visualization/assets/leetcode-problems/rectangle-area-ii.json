@@ -1,0 +1,16 @@
+{
+  "number": "850",
+  "title_cn": "矩形面积 II",
+  "title_en": "Rectangle Area II",
+  "slug": "rectangle-area-ii",
+  "difficulty": "Hard",
+  "description": "给你一个轴对齐的二维数组&nbsp;rectangles&nbsp;。 对于&nbsp;rectangle[i] = [x1, y1, x2, y2]，其中&nbsp;(xi1, yi1)&nbsp;是该矩形 左下角 的坐标，&nbsp;(xi2, yi2)&nbsp;是该矩形&nbsp;右上角 的坐标。\n\n计算平面中所有&nbsp;rectangles&nbsp;所覆盖的 总面积 。任何被两个或多个矩形覆盖的区域应只计算 一次 。\n\n返回 总面积 。因为答案可能太大，返回&nbsp;109&nbsp;+ 7 的&nbsp;模&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：rectangles = [[0,0,2,2],[1,0,2,3],[1,0,3,1]]\n输出：6\n解释：如图所示，三个矩形覆盖了总面积为 6 的区域。\n从(1,1)到(2,2)，绿色矩形和红色矩形重叠。\n从(1,0)到(2,3)，三个矩形都重叠。\n\n示例 2：\n\n输入：rectangles = [[0,0,1000000000,1000000000]]\n输出：49\n解释：答案是 1018 对 (109 + 7) 取模的结果， 即 49 。\n\n&nbsp;\n\n提示：\n\n\t1 <= rectangles.length <= 200\n\trectanges[i].length = 4\n\t0 <= xi1, yi1, xi2, yi2&nbsp;<= 109\n\txi1&nbsp;<= xi2\n\tyi1&nbsp;<= yi2\n\t所有矩阵面积不为 0。",
+  "constraints": [
+    "1 <= rectangles.length <= 200",
+    "rectanges[i].length = 4",
+    "0 <= xi1, yi1, xi2, yi2&nbsp;<= 109",
+    "xi1&nbsp;<= xi2",
+    "yi1&nbsp;<= yi2",
+    "所有矩阵面积不为 0。"
+  ]
+}

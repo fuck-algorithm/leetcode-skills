@@ -1,0 +1,12 @@
+{
+  "number": "32",
+  "title_cn": "最长有效括号",
+  "title_en": "Longest Valid Parentheses",
+  "slug": "longest-valid-parentheses",
+  "difficulty": "Hard",
+  "description": "给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号 子串 的长度。\n\n左右括号匹配，即每个左括号都有对应的右括号将其闭合的字符串是格式正确的，比如&nbsp;\"(()())\"。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"(()\"\n输出：2\n解释：最长有效括号子串是 \"()\"\n\n示例 2：\n\n输入：s = \")()())\"\n输出：4\n解释：最长有效括号子串是 \"()()\"\n\n示例 3：\n\n输入：s = \"\"\n输出：0\n\n&nbsp;\n\n提示：\n\n\t0 <= s.length <= 3 * 104\n\ts[i] 为 '(' 或 ')'",
+  "constraints": [
+    "0 <= s.length <= 3 * 104",
+    "s[i] 为 '(' 或 ')'"
+  ]
+}

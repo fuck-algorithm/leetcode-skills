@@ -1,0 +1,9 @@
+{
+  "number": "1180",
+  "title_cn": "统计只含单一字母的子串",
+  "title_en": "Count Substrings with Only One Distinct Letter",
+  "slug": "count-substrings-with-only-one-distinct-letter",
+  "difficulty": "Easy",
+  "description": "",
+  "constraints": []
+}

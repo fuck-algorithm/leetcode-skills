@@ -1,0 +1,17 @@
+{
+  "number": "889",
+  "title_cn": "根据前序和后序遍历构造二叉树",
+  "title_en": "Construct Binary Tree from Preorder and Postorder Traversal",
+  "slug": "construct-binary-tree-from-preorder-and-postorder-traversal",
+  "difficulty": "Medium",
+  "description": "给定两个整数数组，preorder&nbsp;和 postorder ，其中 preorder 是一个具有 无重复 值的二叉树的前序遍历，postorder 是同一棵树的后序遍历，重构并返回二叉树。\n\n如果存在多个答案，您可以返回其中 任何 一个。\n\n&nbsp;\n\n示例 1：\n\n输入：preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1]\n输出：[1,2,3,4,5,6,7]\n\n示例 2:\n\n输入: preorder = [1], postorder = [1]\n输出: [1]\n\n&nbsp;\n\n提示：\n\n\t1 <= preorder.length <= 30\n\t1 <= preorder[i] <= preorder.length\n\tpreorder&nbsp;中所有值都 不同\n\tpostorder.length == preorder.length\n\t1 <= postorder[i] <= postorder.length\n\tpostorder&nbsp;中所有值都 不同\n\t保证 preorder&nbsp;和 postorder&nbsp;是同一棵二叉树的前序遍历和后序遍历",
+  "constraints": [
+    "1 <= preorder.length <= 30",
+    "1 <= preorder[i] <= preorder.length",
+    "preorder&nbsp;中所有值都 不同",
+    "postorder.length == preorder.length",
+    "1 <= postorder[i] <= postorder.length",
+    "postorder&nbsp;中所有值都 不同",
+    "保证 preorder&nbsp;和 postorder&nbsp;是同一棵二叉树的前序遍历和后序遍历"
+  ]
+}

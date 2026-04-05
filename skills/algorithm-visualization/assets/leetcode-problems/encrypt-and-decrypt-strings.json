@@ -1,0 +1,21 @@
+{
+  "number": "2227",
+  "title_cn": "加密解密字符串",
+  "title_en": "Encrypt and Decrypt Strings",
+  "slug": "encrypt-and-decrypt-strings",
+  "difficulty": "Hard",
+  "description": "给你一个字符数组 keys ，由若干 互不相同 的字符组成。还有一个字符串数组 values ，内含若干长度为 2 的字符串。另给你一个字符串数组 dictionary ，包含解密后所有允许的原字符串。请你设计并实现一个支持加密及解密下标从 0 开始字符串的数据结构。\n\n字符串 加密 按下述步骤进行：\n\n\t对字符串中的每个字符 c ，先从 keys 中找出满足 keys[i] == c 的下标 i 。\n\t在字符串中，用&nbsp;values[i] 替换字符 c 。\n\n请注意，如果&nbsp;keys 中不存在字符串中的字符，则无法执行加密过程，返回空字符串 \"\"。\n\n字符串 解密 按下述步骤进行：\n\n\t将字符串每相邻 2 个字符划分为一个子字符串，对于每个子字符串 s ，找出满足 values[i] == s 的一个下标 i 。如果存在多个有效的 i ，从中选择 任意 一个。这意味着一个字符串解密可能得到多个解密字符串。\n\t在字符串中，用 keys[i] 替换 s 。\n\n实现 Encrypter 类：\n\n\tEncrypter(char[] keys, String[] values, String[] dictionary) 用 keys、values 和 dictionary 初始化 Encrypter 类。\n\tString encrypt(String word1) 按上述加密过程完成对 word1 的加密，并返回加密后的字符串。\n\tint decrypt(String word2) 统计并返回可以由 word2 解密得到且出现在 dictionary 中的字符串数目。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"Encrypter\", \"encrypt\", \"decrypt\"]\n[[['a', 'b', 'c', 'd'], [\"ei\", \"zf\", \"ei\", \"am\"], [\"abcd\", \"acbd\", \"adbc\", \"badc\", \"dacb\", \"cadb\", \"cbda\", \"abad\"]], [\"abcd\"], [\"eizfeiam\"]]\n输出：\n[null, \"eizfeiam\", 2]\n\n解释：\nEncrypter encrypter = new Encrypter([['a', 'b', 'c', 'd'], [\"ei\", \"zf\", \"ei\", \"am\"], [\"abcd\", \"acbd\", \"adbc\", \"badc\", \"dacb\", \"cadb\", \"cbda\", \"abad\"]);\nencrypter.encrypt(\"abcd\"); // 返回 \"eizfeiam\"。 \n&nbsp;                          // 'a' 映射为 \"ei\"，'b' 映射为 \"zf\"，'c' 映射为 \"ei\"，'d' 映射为 \"am\"。\nencrypter.decrypt(\"eizfeiam\"); // return 2. \n                              // \"ei\" 可以映射为 'a' 或 'c'，\"zf\" 映射为 'b'，\"am\" 映射为 'd'。 \n                              // 因此，解密后可以得到的字符串是 \"abad\"，\"cbad\"，\"abcd\" 和 \"cbcd\"。 \n                              // 其中 2 个字符串，\"abad\" 和 \"abcd\"，在 dictionary 中出现，所以答案是 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= keys.length == values.length <= 26\n\tvalues[i].length == 2\n\t1 <= dictionary.length <= 100\n\t1 <= dictionary[i].length <= 100\n\t所有 keys[i] 和 dictionary[i] 互不相同\n\t1 <= word1.length <= 2000\n\t1 <= word2.length <= 200\n\t所有 word1[i] 都出现在 keys 中\n\tword2.length 是偶数\n\tkeys、values[i]、dictionary[i]、word1 和 word2 只含小写英文字母\n\t至多调用 encrypt 和 decrypt 总计 200 次",
+  "constraints": [
+    "1 <= keys.length == values.length <= 26",
+    "values[i].length == 2",
+    "1 <= dictionary.length <= 100",
+    "1 <= dictionary[i].length <= 100",
+    "所有 keys[i] 和 dictionary[i] 互不相同",
+    "1 <= word1.length <= 2000",
+    "1 <= word2.length <= 200",
+    "所有 word1[i] 都出现在 keys 中",
+    "word2.length 是偶数",
+    "keys、values[i]、dictionary[i]、word1 和 word2 只含小写英文字母",
+    "至多调用 encrypt 和 decrypt 总计 200 次"
+  ]
+}

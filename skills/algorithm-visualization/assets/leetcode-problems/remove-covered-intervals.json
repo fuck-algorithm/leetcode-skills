@@ -1,0 +1,13 @@
+{
+  "number": "1288",
+  "title_cn": "删除被覆盖区间",
+  "title_en": "Remove Covered Intervals",
+  "slug": "remove-covered-intervals",
+  "difficulty": "Medium",
+  "description": "给你一个区间列表，请你删除列表中被其他区间所覆盖的区间。\n\n只有当&nbsp;c <= a&nbsp;且&nbsp;b <= d&nbsp;时，我们才认为区间&nbsp;[a,b) 被区间&nbsp;[c,d) 覆盖。\n\n在完成所有删除操作后，请你返回列表中剩余区间的数目。\n\n&nbsp;\n\n示例：\n\n输入：intervals = [[1,4],[3,6],[2,8]]\n输出：2\n解释：区间 [3,6] 被区间 [2,8] 覆盖，所以它被删除了。\n\n&nbsp;\n\n提示：​​​​​​\n\n\t1 <= intervals.length <= 1000\n\t0 <= intervals[i][0] <&nbsp;intervals[i][1] <= 10^5\n\t对于所有的&nbsp;i != j：intervals[i] != intervals[j]",
+  "constraints": [
+    "1 <= intervals.length <= 1000",
+    "0 <= intervals[i][0] <&nbsp;intervals[i][1] <= 10^5",
+    "对于所有的&nbsp;i != j：intervals[i] != intervals[j]"
+  ]
+}

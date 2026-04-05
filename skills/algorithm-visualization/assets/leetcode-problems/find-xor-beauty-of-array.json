@@ -1,0 +1,12 @@
+{
+  "number": "2527",
+  "title_cn": "查询数组异或美丽值",
+  "title_en": "Find Xor-Beauty of Array",
+  "slug": "find-xor-beauty-of-array",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;。\n\n三个下标&nbsp;i&nbsp;，j&nbsp;和&nbsp;k&nbsp;的 有效值&nbsp;定义为&nbsp;((nums[i] | nums[j]) & nums[k])&nbsp;。\n\n一个数组的 异或美丽值&nbsp;是数组中所有满足&nbsp;0 <= i, j, k < n&nbsp;&nbsp;的三元组&nbsp;(i, j, k)&nbsp;的 有效值&nbsp;的异或结果。\n\n请你返回&nbsp;nums&nbsp;的异或美丽值。\n\n注意：\n\n\tval1 | val2&nbsp;是&nbsp;val1 和&nbsp;val2&nbsp;的按位或。\n\tval1 & val2&nbsp;是&nbsp;val1 和&nbsp;val2&nbsp;的按位与。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,4]\n输出：5\n解释：\n三元组和它们对应的有效值如下：\n- (0,0,0) 有效值为 ((1 | 1) & 1) = 1\n- (0,0,1) 有效值为 ((1 | 1) & 4) = 0\n- (0,1,0) 有效值为 ((1 | 4) & 1) = 1\n- (0,1,1) 有效值为 ((1 | 4) & 4) = 4\n- (1,0,0) 有效值为 ((4 | 1) & 1) = 1\n- (1,0,1) 有效值为 ((4 | 1) & 4) = 4\n- (1,1,0) 有效值为 ((4 | 4) & 1) = 0\n- (1,1,1) 有效值为 ((4 | 4) & 4) = 4 \n数组的异或美丽值为所有有效值的按位异或 1 ^ 0 ^ 1 ^ 4 ^ 1 ^ 4 ^ 0 ^ 4 = 5 。\n\n示例 2：\n\n输入：nums = [15,45,20,2,34,35,5,44,32,30]\n输出：34\n解释：数组的异或美丽值为 34 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length&nbsp;<= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length&nbsp;<= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "number": "2617",
+  "title_cn": "网格图中最少访问的格子数",
+  "title_en": "Minimum Number of Visited Cells in a Grid",
+  "slug": "minimum-number-of-visited-cells-in-a-grid",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的&nbsp;m x n&nbsp;整数矩阵&nbsp;grid&nbsp;。你一开始的位置在&nbsp;左上角&nbsp;格子&nbsp;(0, 0)&nbsp;。\n\n当你在格子&nbsp;(i, j)&nbsp;的时候，你可以移动到以下格子之一：\n\n\t满足 j < k <= grid[i][j] + j&nbsp;的格子&nbsp;(i, k)&nbsp;（向右移动），或者\n\t满足 i < k <= grid[i][j] + i&nbsp;的格子&nbsp;(k, j)&nbsp;（向下移动）。\n\n请你返回到达 右下角&nbsp;格子&nbsp;(m - 1, n - 1)&nbsp;需要经过的最少移动格子数，如果无法到达右下角格子，请你返回&nbsp;-1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[3,4,2,1],[4,2,3,1],[2,1,0,0],[2,4,0,0]]\n输出：4\n解释：上图展示了到达右下角格子经过的 4 个格子。\n\n示例 2：\n\n输入：grid = [[3,4,2,1],[4,2,1,1],[2,1,1,0],[3,4,1,0]]\n输出：3\n解释：上图展示了到达右下角格子经过的 3 个格子。\n\n示例 3：\n\n输入：grid = [[2,1,0],[1,0,0]]\n输出：-1\n解释：无法到达右下角格子。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 105\n\t1 <= m * n <= 105\n\t0 <= grid[i][j] < m * n\n\tgrid[m - 1][n - 1] == 0",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 105",
+    "1 <= m * n <= 105",
+    "0 <= grid[i][j] < m * n",
+    "grid[m - 1][n - 1] == 0"
+  ]
+}

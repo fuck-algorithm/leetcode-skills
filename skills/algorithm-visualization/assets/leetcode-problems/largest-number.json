@@ -1,0 +1,12 @@
+{
+  "number": "179",
+  "title_cn": "最大数",
+  "title_en": "Largest Number",
+  "slug": "largest-number",
+  "difficulty": "Medium",
+  "description": "给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。\n\n注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [10,2]\n输出：\"210\"\n\n示例&nbsp;2：\n\n输入：nums = [3,30,34,5,9]\n输出：\"9534330\"\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t0 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 109"
+  ]
+}

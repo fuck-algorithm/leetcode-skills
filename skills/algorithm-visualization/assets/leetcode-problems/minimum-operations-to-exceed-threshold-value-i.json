@@ -1,0 +1,13 @@
+{
+  "number": "3065",
+  "title_cn": "超过阈值的最少操作数 I",
+  "title_en": "Minimum Operations to Exceed Threshold Value I",
+  "slug": "minimum-operations-to-exceed-threshold-value-i",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。\n\n一次操作中，你可以删除 nums&nbsp;中的最小元素。\n\n你需要使数组中的所有元素都大于或等于 k&nbsp;，请你返回需要的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,11,10,1,3], k = 10\n输出：3\n解释：第一次操作后，nums 变为 [2, 11, 10, 3] 。\n第二次操作后，nums 变为 [11, 10, 3] 。\n第三次操作后，nums 变为 [11, 10] 。\n此时，数组中的所有元素都大于等于 10 ，所以我们停止操作。\n使数组中所有元素都大于等于 10 需要的最少操作次数为 3 。\n\n示例 2：\n\n输入：nums = [1,1,2,4,9], k = 1\n输出：0\n解释：数组中的所有元素都大于等于 1 ，所以不需要对 nums 做任何操作。\n\n示例 3：\n\n输入：nums = [1,1,2,4,9], k = 9\n输出：4\n解释：nums 中只有一个元素大于等于 9 ，所以需要执行 4 次操作。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 50\n\t1 <= nums[i] <= 109\n\t1 <= k <= 109\n\t输入保证至少有一个满足&nbsp;nums[i] >= k&nbsp;的下标&nbsp;i&nbsp;存在。",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 109"
+  ]
+}

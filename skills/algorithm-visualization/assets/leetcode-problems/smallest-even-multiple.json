@@ -1,0 +1,11 @@
+{
+  "number": "2413",
+  "title_cn": "最小偶倍数",
+  "title_en": "Smallest Even Multiple",
+  "slug": "smallest-even-multiple",
+  "difficulty": "Easy",
+  "description": "给你一个正整数 n ，返回 2 和 n 的最小公倍数（正整数）。\n&nbsp;\n\n示例 1：\n\n输入：n = 5\n输出：10\n解释：5 和 2 的最小公倍数是 10 。\n\n示例 2：\n\n输入：n = 6\n输出：6\n解释：6 和 2 的最小公倍数是 6 。注意数字会是它自身的倍数。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 150",
+  "constraints": [
+    "1 <= n <= 150"
+  ]
+}

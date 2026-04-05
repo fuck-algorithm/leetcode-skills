@@ -1,0 +1,13 @@
+{
+  "number": "857",
+  "title_cn": "雇佣 K 名工人的最低成本",
+  "title_en": "Minimum Cost to Hire K Workers",
+  "slug": "minimum-cost-to-hire-k-workers",
+  "difficulty": "Hard",
+  "description": "有 n&nbsp;名工人。&nbsp;给定两个数组&nbsp;quality&nbsp;和&nbsp;wage&nbsp;，其中，quality[i]&nbsp;表示第&nbsp;i&nbsp;名工人的工作质量，其最低期望工资为&nbsp;wage[i]&nbsp;。\n\n现在我们想雇佣&nbsp;k&nbsp;名工人组成一个&nbsp;工资组。在雇佣&nbsp;一组 k&nbsp;名工人时，我们必须按照下述规则向他们支付工资：\n\n\t对工资组中的每名工人，应当按其工作质量与同组其他工人的工作质量的比例来支付工资。\n\t工资组中的每名工人至少应当得到他们的最低期望工资。\n\n给定整数 k ，返回 组成满足上述条件的付费群体所需的最小金额&nbsp;。与实际答案误差相差在&nbsp;10-5&nbsp;以内的答案将被接受。\n\n&nbsp;\n\n示例 1：\n\n输入： quality = [10,20,5], wage = [70,50,30], k = 2\n输出： 105.00000\n解释： 我们向 0 号工人支付 70，向 2 号工人支付 35。\n\n示例 2：\n\n输入： quality = [3,1,10,10,1], wage = [4,8,2,2,7], k = 3\n输出： 30.66667\n解释： 我们向 0 号工人支付 4，向 2 号和 3 号分别支付 13.33333。\n\n&nbsp;\n\n提示：\n\n\tn == quality.length == wage.length\n\t1 <= k <= n <= 104\n\t1 <= quality[i], wage[i] <= 104",
+  "constraints": [
+    "n == quality.length == wage.length",
+    "1 <= k <= n <= 104",
+    "1 <= quality[i], wage[i] <= 104"
+  ]
+}

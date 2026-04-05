@@ -1,0 +1,12 @@
+{
+  "number": "2951",
+  "title_cn": "找出峰值",
+  "title_en": "Find the Peaks",
+  "slug": "find-the-peaks",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始的数组 mountain 。你的任务是找出数组&nbsp;mountain 中的所有 峰值。\n\n以数组形式返回给定数组中 峰值 的下标，顺序不限 。\n\n注意：\n\n\t峰值 是指一个严格大于其相邻元素的元素。\n\t数组的第一个和最后一个元素 不 是峰值。\n\n&nbsp;\n\n示例 1：\n\n输入：mountain = [2,4,4]\n输出：[]\n解释：mountain[0] 和 mountain[2] 不可能是峰值，因为它们是数组的第一个和最后一个元素。\nmountain[1] 也不可能是峰值，因为它不严格大于 mountain[2] 。\n因此，答案为 [] 。\n\n示例 2：\n\n输入：mountain = [1,4,3,8,5]\n输出：[1,3]\n解释：mountain[0] 和 mountain[4] 不可能是峰值，因为它们是数组的第一个和最后一个元素。\nmountain[2] 也不可能是峰值，因为它不严格大于 mountain[3] 和 mountain[1] 。\n但是 mountain[1] 和 mountain[3] 严格大于它们的相邻元素。\n因此，答案是 [1,3] 。\n\n&nbsp;\n\n提示：\n\n\t3 <= mountain.length <= 100\n\t1 <= mountain[i] <= 100",
+  "constraints": [
+    "3 <= mountain.length <= 100",
+    "1 <= mountain[i] <= 100"
+  ]
+}

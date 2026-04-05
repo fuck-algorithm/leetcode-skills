@@ -1,0 +1,15 @@
+{
+  "number": "2570",
+  "title_cn": "合并两个二维数组 - 求和法",
+  "title_en": "Merge Two 2D Arrays by Summing Values",
+  "slug": "merge-two-2d-arrays-by-summing-values",
+  "difficulty": "Easy",
+  "description": "给你两个 二维 整数数组 nums1 和 nums2.\n\n\tnums1[i] = [idi, vali] 表示编号为 idi 的数字对应的值等于 vali 。\n\tnums2[i] = [idi, vali]&nbsp;表示编号为 idi 的数字对应的值等于 vali 。\n\n每个数组都包含 互不相同 的 id ，并按 id 以 递增 顺序排列。\n\n请你将两个数组合并为一个按 id 以递增顺序排列的数组，并符合下述条件：\n\n\t只有在两个数组中至少出现过一次的 id 才能包含在结果数组内。\n\t每个 id 在结果数组中 只能出现一次 ，并且其对应的值等于两个数组中该 id 所对应的值求和。如果某个数组中不存在该 id ，则假定其对应的值等于 0 。\n\n返回结果数组。返回的数组需要按 id 以递增顺序排列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]\n输出：[[1,6],[2,3],[3,2],[4,6]]\n解释：结果数组中包含以下元素：\n- id = 1 ，对应的值等于 2 + 4 = 6 。\n- id = 2 ，对应的值等于 3 。\n- id = 3 ，对应的值等于 2 。\n- id = 4 ，对应的值等于 5 + 1 = 6 。\n\n示例 2：\n\n输入：nums1 = [[2,4],[3,6],[5,5]], nums2 = [[1,3],[4,3]]\n输出：[[1,3],[2,4],[3,6],[4,3],[5,5]]\n解释：不存在共同 id ，在结果数组中只需要包含每个 id 和其对应的值。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums1.length, nums2.length <= 200\n\tnums1[i].length == nums2[j].length == 2\n\t1 <= idi, vali <= 1000\n\t数组中的 id 互不相同\n\t数据均按 id 以严格递增顺序排列",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 200",
+    "nums1[i].length == nums2[j].length == 2",
+    "1 <= idi, vali <= 1000",
+    "数组中的 id 互不相同",
+    "数据均按 id 以严格递增顺序排列"
+  ]
+}

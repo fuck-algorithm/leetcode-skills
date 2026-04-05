@@ -1,0 +1,13 @@
+{
+  "number": "2025",
+  "title_cn": "分割数组的最多方案数",
+  "title_en": "Maximum Number of Ways to Partition an Array",
+  "slug": "maximum-number-of-ways-to-partition-an-array",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始且长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;。分割&nbsp;数组 nums&nbsp;的方案数定义为符合以下两个条件的 pivot&nbsp;数目：\n\n\t1 <= pivot < n\n\tnums[0] + nums[1] + ... + nums[pivot - 1] == nums[pivot] + nums[pivot + 1] + ... + nums[n - 1]\n\n同时给你一个整数&nbsp;k&nbsp;。你可以将&nbsp;nums&nbsp;中&nbsp;一个&nbsp;元素变为&nbsp;k&nbsp;或&nbsp;不改变&nbsp;数组。\n\n请你返回在 至多&nbsp;改变一个元素的前提下，最多&nbsp;有多少种方法 分割&nbsp;nums&nbsp;使得上述两个条件都满足。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,-1,2], k = 3\n输出：1\n解释：一个最优的方案是将 nums[0] 改为 k&nbsp;。数组变为 [3,-1,2] 。\n有一种方法分割数组：\n- pivot = 2 ，我们有分割 [3,-1 | 2]：3 + -1 == 2 。\n\n示例 2：\n\n输入：nums = [0,0,0], k = 1\n输出：2\n解释：一个最优的方案是不改动数组。\n有两种方法分割数组：\n- pivot = 1 ，我们有分割 [0 | 0,0]：0 == 0 + 0 。\n- pivot = 2 ，我们有分割 [0,0 | 0]: 0 + 0 == 0 。\n\n示例 3：\n\n输入：nums = [22,4,-25,-20,-15,15,-16,7,19,-10,0,-13,-14], k = -33\n输出：4\n解释：一个最优的方案是将 nums[2] 改为 k 。数组变为 [22,4,-33,-20,-15,15,-16,7,19,-10,0,-13,-14] 。\n有四种方法分割数组。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t2 <= n <= 105\n\t-105 <= k, nums[i] <= 105",
+  "constraints": [
+    "n == nums.length",
+    "2 <= n <= 105",
+    "-105 <= k, nums[i] <= 105"
+  ]
+}

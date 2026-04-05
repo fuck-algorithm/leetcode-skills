@@ -1,0 +1,15 @@
+{
+  "number": "599",
+  "title_cn": "两个列表的最小索引总和",
+  "title_en": "Minimum Index Sum of Two Lists",
+  "slug": "minimum-index-sum-of-two-lists",
+  "difficulty": "Easy",
+  "description": "给定两个字符串数组&nbsp;list1 和 list2，找到 索引和最小的公共字符串。\n\n公共字符串&nbsp;是同时出现在&nbsp;list1 和 list2&nbsp;中的字符串。\n\n具有 最小索引和的公共字符串 是指，如果它在 list1[i] 和 list2[j] 中出现，那么 i + j 应该是所有其他 公共字符串 中的最小值。\n\n返回所有 具有最小索引和的公共字符串。以 任何顺序 返回答案。\n\n&nbsp;\n\n示例 1:\n\n输入: list1 = [\"Shogun\", \"Tapioca Express\", \"Burger King\", \"KFC\"]，list2 = [\"Piatti\", \"The Grill at Torrey Pines\", \"Hungry Hunter Steakhouse\", \"Shogun\"]\n输出: [\"Shogun\"]\n解释: 唯一的公共字符串是 “Shogun”。\n\n示例 2:\n\n输入:list1 = [\"Shogun\", \"Tapioca Express\", \"Burger King\", \"KFC\"]，list2 = [\"KFC\", \"Shogun\", \"Burger King\"]\n输出: [\"Shogun\"]\n解释: 具有最小索引和的公共字符串是 “Shogun”，它有最小的索引和 = (0 + 1) = 1。\n\n示例 3：\n\n输入：list1 = [\"happy\",\"sad\",\"good\"], list2 = [\"sad\",\"happy\",\"good\"]\n输出：[\"sad\",\"happy\"]\n解释：有三个公共字符串：\n\"happy\" 索引和 = (0 + 1) = 1.\n\"sad\" 索引和 = (1 + 0) = 1.\n\"good\" 索引和 = (2 + 2) = 4.\n最小索引和的字符串是 \"sad\" 和 \"happy\"。\n\n&nbsp;\n\n提示:\n\n\t1 <= list1.length, list2.length <= 1000\n\t1 <= list1[i].length, list2[i].length <= 30&nbsp;\n\tlist1[i] 和 list2[i] 由空格&nbsp;' '&nbsp;和英文字母组成。\n\tlist1 的所有字符串都是 唯一 的。\n\tlist2 中的所有字符串都是 唯一 的。",
+  "constraints": [
+    "1 <= list1.length, list2.length <= 1000",
+    "1 <= list1[i].length, list2[i].length <= 30&nbsp;",
+    "list1[i] 和 list2[i] 由空格&nbsp;' '&nbsp;和英文字母组成。",
+    "list1 的所有字符串都是 唯一 的。",
+    "list2 中的所有字符串都是 唯一 的。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "3827",
+  "title_cn": "统计单比特整数",
+  "title_en": "Count Monobit Integers",
+  "slug": "count-monobit-integers",
+  "difficulty": "Easy",
+  "description": "给你一个整数&nbsp;n。\n\n如果一个整数的二进制表示中所有位都相同，则称其为&nbsp;单比特数（Monobit）。\n\n返回范围[0, n]（包括两端）内&nbsp;单比特数&nbsp;的个数。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 1\n\n输出： 2\n\n解释：\n\n\t范围[0, 1]内的整数对应的二进制表示为\"0\"和\"1\"。\n\t每个表示都由相同的位组成，因此答案是2。\n\n示例 2：\n\n输入： n = 4\n\n输出： 3\n\n解释：\n\n\t范围[0, 4]内的整数对应的二进制表示为\"0\"、\"1\"、\"10\"、\"11\"和\"100\"。\n\t只有0、1和3满足单比特条件。因此答案是3。\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 1000",
+  "constraints": [
+    "0 <= n <= 1000"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "706",
+  "title_cn": "设计哈希映射",
+  "title_en": "Design HashMap",
+  "slug": "design-hashmap",
+  "difficulty": "Easy",
+  "description": "不使用任何内建的哈希表库设计一个哈希映射（HashMap）。\n\n实现 MyHashMap 类：\n\n\tMyHashMap() 用空映射初始化对象\n\tvoid put(int key, int value) 向 HashMap 插入一个键值对 (key, value) 。如果 key 已经存在于映射中，则更新其对应的值 value 。\n\tint get(int key) 返回特定的 key 所映射的 value ；如果映射中不包含 key 的映射，返回 -1 。\n\tvoid remove(key) 如果映射中存在 key 的映射，则移除 key 和它所对应的 value 。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"MyHashMap\", \"put\", \"put\", \"get\", \"get\", \"put\", \"get\", \"remove\", \"get\"]\n[[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]\n输出：\n[null, null, null, 1, -1, null, 1, null, -1]\n\n解释：\nMyHashMap myHashMap = new MyHashMap();\nmyHashMap.put(1, 1); // myHashMap 现在为 [[1,1]]\nmyHashMap.put(2, 2); // myHashMap 现在为 [[1,1], [2,2]]\nmyHashMap.get(1);    // 返回 1 ，myHashMap 现在为 [[1,1], [2,2]]\nmyHashMap.get(3);    // 返回 -1（未找到），myHashMap 现在为 [[1,1], [2,2]]\nmyHashMap.put(2, 1); // myHashMap 现在为 [[1,1], [2,1]]（更新已有的值）\nmyHashMap.get(2);    // 返回 1 ，myHashMap 现在为 [[1,1], [2,1]]\nmyHashMap.remove(2); // 删除键为 2 的数据，myHashMap 现在为 [[1,1]]\nmyHashMap.get(2);    // 返回 -1（未找到），myHashMap 现在为 [[1,1]]\n\n&nbsp;\n\n提示：\n\n\t0 <= key, value <= 106\n\t最多调用 104 次 put、get 和 remove 方法",
+  "constraints": [
+    "0 <= key, value <= 106",
+    "最多调用 104 次 put、get 和 remove 方法"
+  ]
+}

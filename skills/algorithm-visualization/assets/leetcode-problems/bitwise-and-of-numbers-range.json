@@ -1,0 +1,11 @@
+{
+  "number": "201",
+  "title_cn": "数字范围按位与",
+  "title_en": "Bitwise AND of Numbers Range",
+  "slug": "bitwise-and-of-numbers-range",
+  "difficulty": "Medium",
+  "description": "给你两个整数 left 和 right ，表示区间 [left, right] ，返回此区间内所有数字 按位与 的结果（包含 left 、right 端点）。\n\n示例 1：\n\n输入：left = 5, right = 7\n输出：4\n\n示例 2：\n\n输入：left = 0, right = 0\n输出：0\n\n示例 3：\n\n输入：left = 1, right = 2147483647\n输出：0\n\n提示：\n\n\t0 31 - 1",
+  "constraints": [
+    "0 31 - 1"
+  ]
+}

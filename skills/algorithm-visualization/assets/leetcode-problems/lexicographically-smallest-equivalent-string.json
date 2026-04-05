@@ -1,0 +1,13 @@
+{
+  "number": "1061",
+  "title_cn": "按字典序排列最小的等效字符串",
+  "title_en": "Lexicographically Smallest Equivalent String",
+  "slug": "lexicographically-smallest-equivalent-string",
+  "difficulty": "Medium",
+  "description": "给出长度相同的两个字符串s1 和&nbsp;s2&nbsp;，还有一个字符串&nbsp;baseStr&nbsp;。\n\n其中 &nbsp;s1[i]&nbsp;和&nbsp;s2[i]&nbsp; 是一组等价字符。\n\n\t举个例子，如果&nbsp;s1 = \"abc\" 且&nbsp;s2 = \"cde\"，那么就有&nbsp;'a' == 'c', 'b' == 'd', 'c' == 'e'。\n\n等价字符遵循任何等价关系的一般规则：\n\n\t&nbsp;自反性&nbsp;：'a' == 'a'\n\t&nbsp;对称性&nbsp;：'a' == 'b' 则必定有 'b' == 'a'\n\t&nbsp;传递性 ：'a' == 'b' 且 'b' == 'c' 就表明 'a' == 'c'\n\n例如，&nbsp;s1 = \"abc\"&nbsp;和&nbsp;s2 = \"cde\"&nbsp;的等价信息和之前的例子一样，那么&nbsp;baseStr = \"eed\"&nbsp;, \"acd\"&nbsp;或&nbsp;\"aab\"，这三个字符串都是等价的，而&nbsp;\"aab\"&nbsp;是&nbsp;baseStr&nbsp;的按字典序最小的等价字符串\n\n利用&nbsp;s1&nbsp;和&nbsp;s2&nbsp;的等价信息，找出并返回&nbsp;baseStr&nbsp;的按字典序排列最小的等价字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"parker\", s2 = \"morris\", baseStr = \"parser\"\n输出：\"makkek\"\n解释：根据 A 和 B 中的等价信息，我们可以将这些字符分为 [m,p], [a,o], [k,r,s], [e,i] 共 4 组。每组中的字符都是等价的，并按字典序排列。所以答案是 \"makkek\"。\n\n示例 2：\n\n输入：s1 = \"hello\", s2 = \"world\", baseStr = \"hold\"\n输出：\"hdld\"\n解释：根据 A 和 B 中的等价信息，我们可以将这些字符分为 [h,w], [d,e,o], [l,r] 共 3 组。所以只有 S 中的第二个字符 'o' 变成 'd'，最后答案为 \"hdld\"。\n\n示例 3：\n\n输入：s1 = \"leetcode\", s2 = \"programs\", baseStr = \"sourcecode\"\n输出：\"aauaaaaada\"\n解释：我们可以把 A 和 B 中的等价字符分为 [a,o,e,r,s,c], [l,p], [g,t] 和 [d,m] 共 4 组，因此 S 中除了 'u' 和 'd' 之外的所有字母都转化成了 'a'，最后答案为 \"aauaaaaada\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length, s2.length, baseStr <= 1000\n\ts1.length == s2.length\n\t字符串s1,&nbsp;s2, and&nbsp;baseStr&nbsp;仅由从&nbsp;'a' 到&nbsp;'z'&nbsp;的小写英文字母组成。",
+  "constraints": [
+    "1 <= s1.length, s2.length, baseStr <= 1000",
+    "s1.length == s2.length",
+    "字符串s1,&nbsp;s2, and&nbsp;baseStr&nbsp;仅由从&nbsp;'a' 到&nbsp;'z'&nbsp;的小写英文字母组成。"
+  ]
+}

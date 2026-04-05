@@ -1,0 +1,15 @@
+{
+  "number": "LCR 056",
+  "title_cn": "两数之和 IV - 输入二叉搜索树",
+  "title_en": "两数之和 IV - 输入二叉搜索树",
+  "slug": "opLdQZ",
+  "difficulty": "Easy",
+  "description": "给定一个二叉搜索树的 根节点 root&nbsp;和一个整数 k , 请判断该二叉搜索树中是否存在两个节点它们的值之和等于 k 。假设二叉搜索树中节点的值均唯一。\n\n&nbsp;\n\n示例 1：\n\n输入: root = [8,6,10,5,7,9,11], k = 12\n输出: true\n解释: 节点 5 和节点 7 之和等于 12\n\n示例 2：\n\n输入: root = [8,6,10,5,7,9,11], k = 22\n输出: false\n解释: 不存在两个节点值之和为 22 的节点\n\n&nbsp;\n\n提示：\n\n\t二叉树的节点个数的范围是&nbsp;&nbsp;[1, 104].\n\t-104&nbsp;<= Node.val <= 104\n\troot&nbsp;为二叉搜索树\n\t-105&nbsp;<= k <= 105\n\n&nbsp;\n\n注意：本题与主站 653 题相同：&nbsp;https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/",
+  "constraints": [
+    "二叉树的节点个数的范围是&nbsp;&nbsp;[1, 104].",
+    "-104&nbsp;<= Node.val <= 104",
+    "root&nbsp;为二叉搜索树",
+    "-105&nbsp;<= k <= 105",
+    "注意：本题与主站 653 题相同：&nbsp;https://leetcode.cn/problems/two-sum-iv-input-is-a-bst/"
+  ]
+}

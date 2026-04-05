@@ -1,0 +1,13 @@
+{
+  "number": "1997",
+  "title_cn": "访问完所有房间的第一天",
+  "title_en": "First Day Where You Have Been in All the Rooms",
+  "slug": "first-day-where-you-have-been-in-all-the-rooms",
+  "difficulty": "Medium",
+  "description": "你需要访问&nbsp;n 个房间，房间从 0 到 n - 1 编号。同时，每一天都有一个日期编号，从 0 开始，依天数递增。你每天都会访问一个房间。\n\n最开始的第 0 天，你访问&nbsp;0 号房间。给你一个长度为 n 且 下标从 0 开始 的数组 nextVisit 。在接下来的几天中，你访问房间的 次序 将根据下面的 规则 决定：\n\n\t假设某一天，你访问&nbsp;i 号房间。\n\t如果算上本次访问，访问&nbsp;i 号房间的次数为 奇数 ，那么 第二天 需要访问&nbsp;nextVisit[i] 所指定的房间，其中 0 <= nextVisit[i] <= i 。\n\t如果算上本次访问，访问&nbsp;i 号房间的次数为 偶数 ，那么 第二天 需要访问&nbsp;(i + 1) mod n 号房间。\n\n请返回你访问完所有房间的第一天的日期编号。题目数据保证总是存在这样的一天。由于答案可能很大，返回对 109 + 7 取余后的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：nextVisit = [0,0]\n输出：2\n解释：\n- 第 0 天，你访问房间 0 。访问 0 号房间的总次数为 1 ，次数为奇数。\n&nbsp; 下一天你需要访问房间的编号是 nextVisit[0] = 0\n- 第 1 天，你访问房间 0 。访问 0 号房间的总次数为 2 ，次数为偶数。\n&nbsp; 下一天你需要访问房间的编号是 (0 + 1) mod 2 = 1\n- 第 2 天，你访问房间 1 。这是你第一次完成访问所有房间的那天。\n\n示例 2：\n\n输入：nextVisit = [0,0,2]\n输出：6\n解释：\n你每天访问房间的次序是 [0,0,1,0,0,1,2,...] 。\n第 6 天是你访问完所有房间的第一天。\n\n示例 3：\n\n输入：nextVisit = [0,1,2,0]\n输出：6\n解释：\n你每天访问房间的次序是 [0,0,1,1,2,2,3,...] 。\n第 6 天是你访问完所有房间的第一天。\n\n&nbsp;\n\n提示：\n\n\tn == nextVisit.length\n\t2 <= n <= 105\n\t0 <= nextVisit[i] <= i",
+  "constraints": [
+    "n == nextVisit.length",
+    "2 <= n <= 105",
+    "0 <= nextVisit[i] <= i"
+  ]
+}

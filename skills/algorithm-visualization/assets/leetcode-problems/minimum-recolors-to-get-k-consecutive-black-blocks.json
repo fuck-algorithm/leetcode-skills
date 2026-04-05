@@ -1,0 +1,14 @@
+{
+  "number": "2379",
+  "title_cn": "得到 K 个黑块的最少涂色次数",
+  "title_en": "Minimum Recolors to Get K Consecutive Black Blocks",
+  "slug": "minimum-recolors-to-get-k-consecutive-black-blocks",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n&nbsp;下标从 0&nbsp;开始的字符串&nbsp;blocks&nbsp;，blocks[i]&nbsp;要么是&nbsp;'W'&nbsp;要么是&nbsp;'B'&nbsp;，表示第&nbsp;i&nbsp;块的颜色。字符&nbsp;'W' 和&nbsp;'B'&nbsp;分别表示白色和黑色。\n\n给你一个整数&nbsp;k&nbsp;，表示想要&nbsp;连续&nbsp;黑色块的数目。\n\n每一次操作中，你可以选择一个白色块将它 涂成&nbsp;黑色块。\n\n请你返回至少出现 一次&nbsp;连续 k&nbsp;个黑色块的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：blocks = \"WBBWWBBWBW\", k = 7\n输出：3\n解释：\n一种得到 7 个连续黑色块的方法是把第 0 ，3 和 4 个块涂成黑色。\n得到 blocks = \"BBBBBBBWBW\" 。\n可以证明无法用少于 3 次操作得到 7 个连续的黑块。\n所以我们返回 3 。\n\n示例 2：\n\n输入：blocks = \"WBWBBBW\", k = 2\n输出：0\n解释：\n不需要任何操作，因为已经有 2 个连续的黑块。\n所以我们返回 0 。\n\n&nbsp;\n\n提示：\n\n\tn == blocks.length\n\t1 <= n <= 100\n\tblocks[i]&nbsp;要么是&nbsp;'W'&nbsp;，要么是&nbsp;'B' 。\n\t1 <= k <= n",
+  "constraints": [
+    "n == blocks.length",
+    "1 <= n <= 100",
+    "blocks[i]&nbsp;要么是&nbsp;'W'&nbsp;，要么是&nbsp;'B' 。",
+    "1 <= k <= n"
+  ]
+}

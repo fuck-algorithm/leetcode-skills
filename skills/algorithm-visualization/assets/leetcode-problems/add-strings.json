@@ -1,0 +1,13 @@
+{
+  "number": "415",
+  "title_cn": "字符串相加",
+  "title_en": "Add Strings",
+  "slug": "add-strings",
+  "difficulty": "Easy",
+  "description": "给定两个字符串形式的非负整数&nbsp;num1 和num2&nbsp;，计算它们的和并同样以字符串形式返回。\n\n你不能使用任何內建的用于处理大整数的库（比如 BigInteger），&nbsp;也不能直接将输入的字符串转换为整数形式。\n\n&nbsp;\n\n示例 1：\n\n输入：num1 = \"11\", num2 = \"123\"\n输出：\"134\"\n\n示例 2：\n\n输入：num1 = \"456\", num2 = \"77\"\n输出：\"533\"\n\n示例 3：\n\n输入：num1 = \"0\", num2 = \"0\"\n输出：\"0\"\n\n&nbsp;\n\n&nbsp;\n\n提示：\n\n\t1 <= num1.length, num2.length <= 104\n\tnum1 和num2 都只包含数字&nbsp;0-9\n\tnum1 和num2 都不包含任何前导零",
+  "constraints": [
+    "1 <= num1.length, num2.length <= 104",
+    "num1 和num2 都只包含数字&nbsp;0-9",
+    "num1 和num2 都不包含任何前导零"
+  ]
+}

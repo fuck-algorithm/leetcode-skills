@@ -1,0 +1,12 @@
+{
+  "number": "LCR 166",
+  "title_cn": "珠宝的最高价值",
+  "title_en": "珠宝的最高价值",
+  "slug": "li-wu-de-zui-da-jie-zhi-lcof",
+  "difficulty": "Medium",
+  "description": "现有一个记作二维矩阵 frame 的珠宝架，其中 frame[i][j] 为该位置珠宝的价值。拿取珠宝的规则为：\n\n\t只能从架子的左上角开始拿珠宝\n\t每次可以移动到右侧或下侧的相邻位置\n\t到达珠宝架子的右下角时，停止拿取\n\n注意：珠宝的价值都是大于 0 的。除非这个架子上没有任何珠宝，比如 frame = [[0]]。\n\n&nbsp;\n\n示例 1：\n\n输入：frame = [[1,3,1],[1,5,1],[4,2,1]]\n输出：12\n解释：路径 1→3→5→2→1 可以拿到最高价值的珠宝\n\n&nbsp;\n\n提示：\n\n\t0 < frame.length <= 200\n\t0 < frame[0].length <= 200\n\n&nbsp;",
+  "constraints": [
+    "0 < frame.length <= 200",
+    "0 < frame[0].length <= 200"
+  ]
+}

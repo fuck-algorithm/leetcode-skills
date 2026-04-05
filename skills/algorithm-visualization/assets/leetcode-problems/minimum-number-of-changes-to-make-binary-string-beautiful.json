@@ -1,0 +1,13 @@
+{
+  "number": "2914",
+  "title_cn": "使二进制字符串变美丽的最少修改次数",
+  "title_en": "Minimum Number of Changes to Make Binary String Beautiful",
+  "slug": "minimum-number-of-changes-to-make-binary-string-beautiful",
+  "difficulty": "Medium",
+  "description": "给你一个长度为偶数下标从 0&nbsp;开始的二进制字符串&nbsp;s&nbsp;。\n\n如果可以将一个字符串分割成一个或者更多满足以下条件的子字符串，那么我们称这个字符串是 美丽的&nbsp;：\n\n\t每个子字符串的长度都是 偶数&nbsp;。\n\t每个子字符串都 只&nbsp;包含 1&nbsp;或 只&nbsp;包含 0&nbsp;。\n\n你可以将 s&nbsp;中任一字符改成&nbsp;0&nbsp;或者&nbsp;1&nbsp;。\n\n请你返回让字符串 s&nbsp;美丽的&nbsp;最少&nbsp;字符修改次数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"1001\"\n输出：2\n解释：我们将 s[1] 改为 1 ，且将 s[3] 改为 0 ，得到字符串 \"1100\" 。\n字符串 \"1100\" 是美丽的，因为我们可以将它分割成 \"11|00\" 。\n将字符串变美丽最少需要 2 次修改。\n\n示例 2：\n\n输入：s = \"10\"\n输出：1\n解释：我们将 s[1] 改为 1 ，得到字符串 \"11\" 。\n字符串 \"11\" 是美丽的，因为它已经是美丽的。\n将字符串变美丽最少需要 1 次修改。\n\n示例 3：\n\n输入：s = \"0000\"\n输出：0\n解释：不需要进行任何修改，字符串 \"0000\" 已经是美丽字符串。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 105\n\ts&nbsp;的长度为偶数。\n\ts[i]&nbsp;要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1' 。",
+  "constraints": [
+    "2 <= s.length <= 105",
+    "s&nbsp;的长度为偶数。",
+    "s[i]&nbsp;要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1' 。"
+  ]
+}

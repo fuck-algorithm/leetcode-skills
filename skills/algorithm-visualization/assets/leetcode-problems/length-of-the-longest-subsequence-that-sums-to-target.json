@@ -1,0 +1,13 @@
+{
+  "number": "2915",
+  "title_cn": "和为目标值的最长子序列的长度",
+  "title_en": "Length of the Longest Subsequence That Sums to Target",
+  "slug": "length-of-the-longest-subsequence-that-sums-to-target",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个整数&nbsp;target&nbsp;。\n\n返回和为 target&nbsp;的 nums&nbsp;子序列中，子序列&nbsp;长度的最大值&nbsp;。如果不存在和为 target&nbsp;的子序列，返回 -1&nbsp;。\n\n子序列 指的是从原数组中删除一些或者不删除任何元素后，剩余元素保持原来的顺序构成的数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5], target = 9\n输出：3\n解释：总共有 3 个子序列的和为 9 ：[4,5] ，[1,3,5] 和 [2,3,4] 。最长的子序列是 [1,3,5] 和 [2,3,4] 。所以答案为 3 。\n\n示例 2：\n\n输入：nums = [4,1,3,2,1,5], target = 7\n输出：4\n解释：总共有 5 个子序列的和为 7 ：[4,3] ，[4,1,2] ，[4,2,1] ，[1,1,5] 和 [1,3,2,1] 。最长子序列为 [1,3,2,1] 。所以答案为 4 。\n\n示例 3：\n\n输入：nums = [1,1,5,4,5], target = 3\n输出：-1\n解释：无法得到和为 3 的子序列。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i] <= 1000\n\t1 <= target <= 1000",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000",
+    "1 <= target <= 1000"
+  ]
+}

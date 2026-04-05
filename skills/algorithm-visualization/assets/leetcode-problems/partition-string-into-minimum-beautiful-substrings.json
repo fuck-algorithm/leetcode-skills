@@ -1,0 +1,12 @@
+{
+  "number": "2767",
+  "title_cn": "将字符串分割为最少的美丽子字符串",
+  "title_en": "Partition String Into Minimum Beautiful Substrings",
+  "slug": "partition-string-into-minimum-beautiful-substrings",
+  "difficulty": "Medium",
+  "description": "给你一个二进制字符串&nbsp;s&nbsp;，你需要将字符串分割成一个或者多个&nbsp;子字符串&nbsp;&nbsp;，使每个子字符串都是 美丽&nbsp;的。\n\n如果一个字符串满足以下条件，我们称它是 美丽&nbsp;的：\n\n\t它不包含前导 0 。\n\t它是 5&nbsp;的幂的 二进制&nbsp;表示。\n\n请你返回分割后的子字符串的 最少&nbsp;数目。如果无法将字符串&nbsp;s&nbsp;分割成美丽子字符串，请你返回 -1&nbsp;。\n\n子字符串是一个字符串中一段连续的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"1011\"\n输出：2\n解释：我们可以将输入字符串分成 [\"101\", \"1\"] 。\n- 字符串 \"101\" 不包含前导 0 ，且它是整数 51 = 5 的二进制表示。\n- 字符串 \"1\" 不包含前导 0 ，且它是整数 50 = 1 的二进制表示。\n最少可以将 s 分成 2 个美丽子字符串。\n\n示例 2：\n\n输入：s = \"111\"\n输出：3\n解释：我们可以将输入字符串分成 [\"1\", \"1\", \"1\"] 。\n- 字符串 \"1\" 不包含前导 0 ，且它是整数 50 = 1 的二进制表示。\n最少可以将 s 分成 3 个美丽子字符串。\n\n示例 3：\n\n输入：s = \"0\"\n输出：-1\n解释：无法将给定字符串分成任何美丽子字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 15\n\ts[i]&nbsp;要么是&nbsp;'0'&nbsp;要么是&nbsp;'1' 。",
+  "constraints": [
+    "1 <= s.length <= 15",
+    "s[i]&nbsp;要么是&nbsp;'0'&nbsp;要么是&nbsp;'1' 。"
+  ]
+}

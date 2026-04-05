@@ -1,0 +1,15 @@
+{
+  "number": "3468",
+  "title_cn": "可行数组的数目",
+  "title_en": "Find the Number of Copy Arrays",
+  "slug": "find-the-number-of-copy-arrays",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的数组 original 和一个长度为 n x 2 的二维数组 bounds，其中 bounds[i] = [ui, vi]。\n\n你需要找到长度为 n&nbsp;且满足以下条件的&nbsp;可能的&nbsp;数组 copy 的数量：\n\n\t对于 1 <= i <= n - 1&nbsp;，都有&nbsp;(copy[i] - copy[i - 1]) == (original[i] - original[i - 1])&nbsp;。\n\t对于 0 <= i <= n - 1&nbsp;，都有&nbsp;ui <= copy[i] <= vi&nbsp;。\n\n返回满足这些条件的数组数目。\n\n&nbsp;\n\n示例 1\n\n输入：original = [1,2,3,4], bounds = [[1,2],[2,3],[3,4],[4,5]]\n\n输出：2\n\n解释：\n\n可能的数组为：\n\n\t[1, 2, 3, 4]\n\t[2, 3, 4, 5]\n\n示例 2\n\n输入：original = [1,2,3,4], bounds = [[1,10],[2,9],[3,8],[4,7]]\n\n输出：4\n\n解释：\n\n可能的数组为：\n\n\t[1, 2, 3, 4]\n\t[2, 3, 4, 5]\n\t[3, 4, 5, 6]\n\t[4, 5, 6, 7]\n\n示例 3\n\n输入：original = [1,2,1,2], bounds = [[1,1],[2,3],[3,3],[2,3]]\n\n输出：0\n\n解释：\n\n没有可行的数组。\n\n&nbsp;\n\n提示：\n\n\t2 <= n == original.length <= 105\n\t1 <= original[i] <= 109\n\tbounds.length == n\n\tbounds[i].length == 2\n\t1 <= bounds[i][0] <= bounds[i][1] <= 109",
+  "constraints": [
+    "2 <= n == original.length <= 105",
+    "1 <= original[i] <= 109",
+    "bounds.length == n",
+    "bounds[i].length == 2",
+    "1 <= bounds[i][0] <= bounds[i][1] <= 109"
+  ]
+}

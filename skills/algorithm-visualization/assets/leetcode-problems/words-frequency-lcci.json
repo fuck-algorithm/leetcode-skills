@@ -1,0 +1,14 @@
+{
+  "number": "面试题 16.02",
+  "title_cn": "单词频率",
+  "title_en": "Words Frequency LCCI",
+  "slug": "words-frequency-lcci",
+  "difficulty": "Medium",
+  "description": "设计一个方法，找出任意指定单词在一本书中的出现频率。\n\n你的实现应该支持如下操作：\n\n\tWordsFrequency(book)构造函数，参数为字符串数组构成的一本书\n\tget(word)查询指定单词在书中出现的频率\n\n示例：\n\nWordsFrequency wordsFrequency = new WordsFrequency({\"i\", \"have\", \"an\", \"apple\", \"he\", \"have\", \"a\", \"pen\"});\nwordsFrequency.get(\"you\"); //返回0，\"you\"没有出现过\nwordsFrequency.get(\"have\"); //返回2，\"have\"出现2次\nwordsFrequency.get(\"an\"); //返回1\nwordsFrequency.get(\"apple\"); //返回1\nwordsFrequency.get(\"pen\"); //返回1\n\n提示：\n\n\tbook[i]中只包含小写字母\n\t1 <= book.length <= 100000\n\t1 <= book[i].length <= 10\n\tget函数的调用次数不会超过100000",
+  "constraints": [
+    "book[i]中只包含小写字母",
+    "1 <= book.length <= 100000",
+    "1 <= book[i].length <= 10",
+    "get函数的调用次数不会超过100000"
+  ]
+}

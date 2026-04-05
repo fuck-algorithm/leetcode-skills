@@ -1,0 +1,12 @@
+{
+  "number": "3628",
+  "title_cn": "插入一个字母的最大子序列数",
+  "title_en": "Maximum Number of Subsequences After One Inserting",
+  "slug": "maximum-number-of-subsequences-after-one-inserting",
+  "difficulty": "Medium",
+  "description": "给你一个由大写英文字母组成的字符串 s。\n\n你可以在字符串的&nbsp;任意&nbsp;位置（包括字符串的开头或结尾）最多插入一个&nbsp;大写英文字母。\n\n返回在&nbsp;最多插入一个字母&nbsp;后，字符串中可以形成的 \"LCT\" 子序列的&nbsp;最大&nbsp;数量。\n\n子序列&nbsp;是从另一个字符串中删除某些字符（可以不删除）且不改变剩余字符顺序后得到的一个&nbsp;非空&nbsp;字符串。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"LMCT\"\n\n输出： 2\n\n解释：\n\n可以在字符串 s 的开头插入一个 \"L\"，变为 \"LLMCT\"，其中包含 2 个子序列，分别位于下标&nbsp;[0, 3, 4] 和 [1, 3, 4]。\n\n示例 2：\n\n输入： s = \"LCCT\"\n\n输出： 4\n\n解释：\n\n可以在字符串 s 的开头插入一个 \"L\"，变为 \"LLCCT\"，其中包含 4 个子序列，分别位于下标&nbsp;[0, 2, 4]、[0, 3, 4]、[1, 2, 4] 和 [1, 3, 4]。\n\n示例 3：\n\n输入： s = \"L\"\n\n输出： 0\n\n解释：\n\n插入一个字母无法获得子序列 \"LCT\"，结果为 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅由大写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由大写英文字母组成。"
+  ]
+}

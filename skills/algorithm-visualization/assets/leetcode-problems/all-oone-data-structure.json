@@ -1,0 +1,14 @@
+{
+  "number": "432",
+  "title_cn": "全 O(1) 的数据结构",
+  "title_en": "All O`one Data Structure",
+  "slug": "all-oone-data-structure",
+  "difficulty": "Hard",
+  "description": "请你设计一个用于存储字符串计数的数据结构，并能够返回计数最小和最大的字符串。\n\n实现 AllOne 类：\n\n\tAllOne() 初始化数据结构的对象。\n\tinc(String key) 字符串 key 的计数增加 1 。如果数据结构中尚不存在 key ，那么插入计数为 1 的 key 。\n\tdec(String key) 字符串 key 的计数减少 1 。如果 key 的计数在减少后为 0 ，那么需要将这个 key 从数据结构中删除。测试用例保证：在减少计数前，key 存在于数据结构中。\n\tgetMaxKey() 返回任意一个计数最大的字符串。如果没有元素存在，返回一个空字符串 \"\" 。\n\tgetMinKey() 返回任意一个计数最小的字符串。如果没有元素存在，返回一个空字符串 \"\" 。\n\n注意：每个函数都应当满足 O(1) 平均时间复杂度。\n\n&nbsp;\n\n示例：\n\n输入\n[\"AllOne\", \"inc\", \"inc\", \"getMaxKey\", \"getMinKey\", \"inc\", \"getMaxKey\", \"getMinKey\"]\n[[], [\"hello\"], [\"hello\"], [], [], [\"leet\"], [], []]\n输出\n[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]\n\n解释\nAllOne allOne = new AllOne();\nallOne.inc(\"hello\");\nallOne.inc(\"hello\");\nallOne.getMaxKey(); // 返回 \"hello\"\nallOne.getMinKey(); // 返回 \"hello\"\nallOne.inc(\"leet\");\nallOne.getMaxKey(); // 返回 \"hello\"\nallOne.getMinKey(); // 返回 \"leet\"\n\n&nbsp;\n\n提示：\n\n\t1 <= key.length <= 10\n\tkey 由小写英文字母组成\n\t测试用例保证：在每次调用 dec 时，数据结构中总存在 key\n\t最多调用 inc、dec、getMaxKey 和 getMinKey 方法 5 * 104 次",
+  "constraints": [
+    "1 <= key.length <= 10",
+    "key 由小写英文字母组成",
+    "测试用例保证：在每次调用 dec 时，数据结构中总存在 key",
+    "最多调用 inc、dec、getMaxKey 和 getMinKey 方法 5 * 104 次"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "LCR 033",
+  "title_cn": "字母异位词分组",
+  "title_en": "字母异位词分组",
+  "slug": "sfvd7V",
+  "difficulty": "Medium",
+  "description": "给定一个字符串数组 strs ，将&nbsp;变位词&nbsp;组合在一起。 可以按任意顺序返回结果列表。\n\n注意：若两个字符串中每个字符出现的次数都相同，则称它们互为变位词。\n\n&nbsp;\n\n示例 1：\n\n输入: strs = [\"eat\", \"tea\", \"tan\", \"ate\", \"nat\", \"bat\"]\n输出: [[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]\n\n示例 2：\n\n输入: strs = [\"\"]\n输出: [[\"\"]]\n\n示例 3：\n\n输入: strs = [\"a\"]\n输出: [[\"a\"]]\n\n&nbsp;\n\n提示：\n\n\t1 <= strs.length <= 104\n\t0 <= strs[i].length <= 100\n\tstrs[i]&nbsp;仅包含小写字母\n\n&nbsp;\n\n注意：本题与主站 49&nbsp;题相同：&nbsp;https://leetcode.cn/problems/group-anagrams/",
+  "constraints": [
+    "1 <= strs.length <= 104",
+    "0 <= strs[i].length <= 100",
+    "strs[i]&nbsp;仅包含小写字母",
+    "注意：本题与主站 49&nbsp;题相同：&nbsp;https://leetcode.cn/problems/group-anagrams/"
+  ]
+}

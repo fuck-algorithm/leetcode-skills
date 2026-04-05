@@ -1,0 +1,14 @@
+{
+  "number": "LCR 002",
+  "title_cn": "二进制求和",
+  "title_en": "二进制求和",
+  "slug": "JFETK5",
+  "difficulty": "Easy",
+  "description": "给定两个 01 字符串&nbsp;a&nbsp;和&nbsp;b&nbsp;，请计算它们的和，并以二进制字符串的形式输出。\n\n输入为 非空 字符串且只包含数字&nbsp;1&nbsp;和&nbsp;0。\n\n&nbsp;\n\n示例 1：\n\n输入: a = \"11\", b = \"10\"\n输出: \"101\"\n\n示例 2：\n\n输入: a = \"1010\", b = \"1011\"\n输出: \"10101\"\n\n&nbsp;\n\n提示：\n\n\t每个字符串仅由字符 &#39;0&#39; 或 &#39;1&#39; 组成。\n\t1 <= a.length, b.length <= 10^4\n\t字符串如果不是 \"0\" ，就都不含前导零。\n\n&nbsp;\n\n注意：本题与主站 67&nbsp;题相同：https://leetcode.cn/problems/add-binary/",
+  "constraints": [
+    "每个字符串仅由字符 &#39;0&#39; 或 &#39;1&#39; 组成。",
+    "1 <= a.length, b.length <= 10^4",
+    "字符串如果不是 \"0\" ，就都不含前导零。",
+    "注意：本题与主站 67&nbsp;题相同：https://leetcode.cn/problems/add-binary/"
+  ]
+}

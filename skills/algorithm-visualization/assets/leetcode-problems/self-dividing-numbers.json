@@ -1,0 +1,11 @@
+{
+  "number": "728",
+  "title_cn": "自除数",
+  "title_en": "Self Dividing Numbers",
+  "slug": "self-dividing-numbers",
+  "difficulty": "Easy",
+  "description": "自除数&nbsp;是指可以被它包含的每一位数整除的数。\n\n\t例如，128 是一个 自除数 ，因为&nbsp;128 % 1 == 0，128 % 2 == 0，128 % 8 == 0。\n\n自除数 不允许包含 0 。\n\n给定两个整数&nbsp;left&nbsp;和&nbsp;right ，返回一个列表，列表的元素是范围&nbsp;[left, right]（包括两个端点）内所有的 自除数 。\n\n&nbsp;\n\n示例 1：\n\n输入：left = 1, right = 22\n输出：[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]\n\n示例 2:\n\n输入：left = 47, right = 85\n输出：[48,55,66,77]\n\n&nbsp;\n\n提示：\n\n\t1 <= left <= right <= 104",
+  "constraints": [
+    "1 <= left <= right <= 104"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2589",
+  "title_cn": "完成所有任务的最少时间",
+  "title_en": "Minimum Time to Complete All Tasks",
+  "slug": "minimum-time-to-complete-all-tasks",
+  "difficulty": "Hard",
+  "description": "你有一台电脑，它可以 同时&nbsp;运行无数个任务。给你一个二维整数数组&nbsp;tasks&nbsp;，其中&nbsp;tasks[i] = [starti, endi, durationi]&nbsp;表示第&nbsp;i&nbsp;个任务需要在 闭区间&nbsp;时间段&nbsp;[starti, endi]&nbsp;内运行&nbsp;durationi&nbsp;个整数时间点（但不需要连续）。\n\n当电脑需要运行任务时，你可以打开电脑，如果空闲时，你可以将电脑关闭。\n\n请你返回完成所有任务的情况下，电脑最少需要运行多少秒。\n\n&nbsp;\n\n示例 1：\n\n输入：tasks = [[2,3,1],[4,5,1],[1,5,2]]\n输出：2\n解释：\n- 第一个任务在闭区间 [2, 2] 运行。\n- 第二个任务在闭区间 [5, 5] 运行。\n- 第三个任务在闭区间 [2, 2] 和 [5, 5] 运行。\n电脑总共运行 2 个整数时间点。\n\n示例 2：\n\n输入：tasks = [[1,3,2],[2,5,3],[5,6,2]]\n输出：4\n解释：\n- 第一个任务在闭区间 [2, 3] 运行\n- 第二个任务在闭区间 [2, 3] 和 [5, 5] 运行。\n- 第三个任务在闭区间 [5, 6] 运行。\n电脑总共运行 4 个整数时间点。\n\n&nbsp;\n\n提示：\n\n\t1 <= tasks.length <= 2000\n\ttasks[i].length == 3\n\t1 <= starti, endi <= 2000\n\t1 <= durationi <= endi - starti + 1",
+  "constraints": [
+    "1 <= tasks.length <= 2000",
+    "tasks[i].length == 3",
+    "1 <= starti, endi <= 2000",
+    "1 <= durationi <= endi - starti + 1"
+  ]
+}

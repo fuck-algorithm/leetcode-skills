@@ -1,0 +1,12 @@
+{
+  "number": "583",
+  "title_cn": "两个字符串的删除操作",
+  "title_en": "Delete Operation for Two Strings",
+  "slug": "delete-operation-for-two-strings",
+  "difficulty": "Medium",
+  "description": "给定两个单词&nbsp;word1&nbsp;和&nbsp;word2&nbsp;，返回使得&nbsp;word1&nbsp;和&nbsp;&nbsp;word2&nbsp;相同所需的最小步数。\n\n每步&nbsp;可以删除任意一个字符串中的一个字符。\n\n&nbsp;\n\n示例 1：\n\n输入: word1 = \"sea\", word2 = \"eat\"\n输出: 2\n解释: 第一步将 \"sea\" 变为 \"ea\" ，第二步将 \"eat \"变为 \"ea\"\n\n示例 &nbsp;2:\n\n输入：word1 = \"leetcode\", word2 = \"etco\"\n输出：4\n\n&nbsp;\n\n提示：\n\n\t1 <= word1.length, word2.length <= 500\n\tword1&nbsp;和&nbsp;word2&nbsp;只包含小写英文字母",
+  "constraints": [
+    "1 <= word1.length, word2.length <= 500",
+    "word1&nbsp;和&nbsp;word2&nbsp;只包含小写英文字母"
+  ]
+}

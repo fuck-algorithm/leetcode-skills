@@ -1,0 +1,14 @@
+{
+  "number": "877",
+  "title_cn": "石子游戏",
+  "title_en": "Stone Game",
+  "slug": "stone-game",
+  "difficulty": "Medium",
+  "description": "Alice 和 Bob 用几堆石子在做游戏。一共有偶数堆石子，排成一行；每堆都有 正 整数颗石子，数目为 piles[i]&nbsp;。\n\n游戏以谁手中的石子最多来决出胜负。石子的 总数 是 奇数 ，所以没有平局。\n\nAlice 和 Bob 轮流进行，Alice 先开始 。 每回合，玩家从行的 开始 或 结束 处取走整堆石头。 这种情况一直持续到没有更多的石子堆为止，此时手中 石子最多 的玩家 获胜 。\n\n假设 Alice 和 Bob 都发挥出最佳水平，当 Alice 赢得比赛时返回&nbsp;true&nbsp;，当 Bob 赢得比赛时返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：piles = [5,3,4,5]\n输出：true\n解释：\nAlice 先开始，只能拿前 5 颗或后 5 颗石子 。\n假设他取了前 5 颗，这一行就变成了 [3,4,5] 。\n如果 Bob 拿走前 3 颗，那么剩下的是 [4,5]，Alice 拿走后 5 颗赢得 10 分。\n如果 Bob 拿走后 5 颗，那么剩下的是 [3,4]，Alice 拿走后 4 颗赢得 9 分。\n这表明，取前 5 颗石子对 Alice 来说是一个胜利的举动，所以返回 true 。\n\n示例 2：\n\n输入：piles = [3,7,2,3]\n输出：true\n\n&nbsp;\n\n提示：\n\n\t2 <= piles.length <= 500\n\tpiles.length 是 偶数\n\t1 <= piles[i] <= 500\n\tsum(piles[i])&nbsp;是 奇数",
+  "constraints": [
+    "2 <= piles.length <= 500",
+    "piles.length 是 偶数",
+    "1 <= piles[i] <= 500",
+    "sum(piles[i])&nbsp;是 奇数"
+  ]
+}

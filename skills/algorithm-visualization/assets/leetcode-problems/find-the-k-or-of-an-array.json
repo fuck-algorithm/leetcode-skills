@@ -1,0 +1,13 @@
+{
+  "number": "2917",
+  "title_cn": "找出数组中的 K-or 值",
+  "title_en": "Find the K-or of an Array",
+  "slug": "find-the-k-or-of-an-array",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums 和一个整数 k 。让我们通过扩展标准的按位或来介绍 K-or 操作。在 K-or 操作中，如果在 nums 中，至少存在 k 个元素的第 i 位值为 1 ，那么 K-or 中的第 i 位的值是 1 。\n\n返回 nums 的 K-or 值。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [7,12,9,8,9,15], k = 4\n输出：9\n解释：\n用二进制表示 numbers：\n\n\t\t\tNumber\n\t\t\tBit 3\n\t\t\tBit 2\n\t\t\tBit 1\n\t\t\tBit 0\n\n\t\t\t7\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\t\t\t1\n\n\t\t\t12\n\t\t\t1\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\n\t\t\t9\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t1\n\n\t\t\t8\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\n\t\t\t9\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t1\n\n\t\t\t15\n\t\t\t1\n\t\t\t1\n\t\t\t1\n\t\t\t1\n\n\t\t\tResult = 9\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t1\n\n位 0 在 7, 9, 9, 15 中为 1。位 3 在 12, 9, 8, 9, 15 中为 1。 只有位 0 和 3 满足。结果是 (1001)2 = 9。\n\n示例 2：\n\n输入：nums = [2,12,1,11,4,5], k = 6\n输出：0\n解释：没有位在所有 6 个数字中都为 1，如 k = 6 所需要的。所以，答案为 0。\n\n示例 3：\n\n输入：nums = [10,8,5,9,11,6,8], k = 1\n输出：15\n解释：因为 k == 1 ，数组的 1-or 等于其中所有元素按位或运算的结果。因此，答案为 10 OR 8 OR 5 OR 9 OR 11 OR 6 OR 8 = 15 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 50\n\t0 <= nums[i] < 231\n\t1 <= k <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "0 <= nums[i] < 231",
+    "1 <= k <= nums.length"
+  ]
+}

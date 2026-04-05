@@ -1,0 +1,14 @@
+{
+  "number": "1637",
+  "title_cn": "两点之间不包含任何点的最宽垂直区域",
+  "title_en": "Widest Vertical Area Between Two Points Containing No Points",
+  "slug": "widest-vertical-area-between-two-points-containing-no-points",
+  "difficulty": "Easy",
+  "description": "给你&nbsp;n&nbsp;个二维平面上的点 points ，其中&nbsp;points[i] = [xi, yi]&nbsp;，请你返回两点之间内部不包含任何点的&nbsp;最宽垂直区域 的宽度。\n\n垂直区域 的定义是固定宽度，而 y 轴上无限延伸的一块区域（也就是高度为无穷大）。 最宽垂直区域 为宽度最大的一个垂直区域。\n\n请注意，垂直区域&nbsp;边上&nbsp;的点&nbsp;不在&nbsp;区域内。\n\n&nbsp;\n\n示例 1：\n​\n\n输入：points = [[8,7],[9,9],[7,4],[9,7]]\n输出：1\n解释：红色区域和蓝色区域都是最优区域。\n\n示例 2：\n\n输入：points = [[3,1],[9,0],[1,0],[1,4],[5,3],[8,8]]\n输出：3\n\n&nbsp;\n\n提示：\n\n\tn == points.length\n\t2 <= n <= 105\n\tpoints[i].length == 2\n\t0 <= xi, yi&nbsp;<= 109",
+  "constraints": [
+    "n == points.length",
+    "2 <= n <= 105",
+    "points[i].length == 2",
+    "0 <= xi, yi&nbsp;<= 109"
+  ]
+}

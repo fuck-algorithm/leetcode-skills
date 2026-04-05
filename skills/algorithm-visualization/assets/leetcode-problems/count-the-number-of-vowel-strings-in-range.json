@@ -1,0 +1,14 @@
+{
+  "number": "2586",
+  "title_cn": "统计范围内的元音字符串数",
+  "title_en": "Count the Number of Vowel Strings in Range",
+  "slug": "count-the-number-of-vowel-strings-in-range",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始的字符串数组 words 和两个整数：left 和 right 。\n\n如果字符串以元音字母开头并以元音字母结尾，那么该字符串就是一个 元音字符串 ，其中元音字母是 'a'、'e'、'i'、'o'、'u' 。\n\n返回 words[i] 是元音字符串的数目，其中 i 在闭区间 [left, right] 内。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"are\",\"amy\",\"u\"], left = 0, right = 2\n输出：2\n解释：\n- \"are\" 是一个元音字符串，因为它以 'a' 开头并以 'e' 结尾。\n- \"amy\" 不是元音字符串，因为它没有以元音字母结尾。\n- \"u\" 是一个元音字符串，因为它以 'u' 开头并以 'u' 结尾。\n在上述范围中的元音字符串数目为 2 。\n\n示例 2：\n\n输入：words = [\"hey\",\"aeo\",\"mu\",\"ooo\",\"artro\"], left = 1, right = 4\n输出：3\n解释：\n- \"aeo\" 是一个元音字符串，因为它以 'a' 开头并以 'o' 结尾。\n- \"mu\" 不是元音字符串，因为它没有以元音字母开头。\n- \"ooo\" 是一个元音字符串，因为它以 'o' 开头并以 'o' 结尾。\n- \"artro\" 是一个元音字符串，因为它以 'a' 开头并以 'o' 结尾。\n在上述范围中的元音字符串数目为 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 1000\n\t1 <= words[i].length <= 10\n\twords[i] 仅由小写英文字母组成\n\t0 <= left <= right < words.length",
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length <= 10",
+    "words[i] 仅由小写英文字母组成",
+    "0 <= left <= right < words.length"
+  ]
+}

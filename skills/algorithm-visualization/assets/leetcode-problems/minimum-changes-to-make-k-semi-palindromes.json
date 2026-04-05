@@ -1,0 +1,13 @@
+{
+  "number": "2911",
+  "title_cn": "得到 K 个半回文串的最少修改次数",
+  "title_en": "Minimum Changes to Make K Semi-palindromes",
+  "slug": "minimum-changes-to-make-k-semi-palindromes",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;和一个整数&nbsp;k&nbsp;，请你将&nbsp;s 分成&nbsp;k&nbsp;个&nbsp;子字符串&nbsp;，使得每个 子字符串&nbsp;变成&nbsp;半回文串&nbsp;需要修改的字符数目最少。\n\n请你返回一个整数，表示需要修改的 最少&nbsp;字符数目。\n\n注意：\n\n\t如果一个字符串从左往右和从右往左读是一样的，那么它是一个 回文串&nbsp;。\n\t如果长度为 len&nbsp;的字符串存在一个满足&nbsp;1 <= d < len&nbsp;的正整数&nbsp;d&nbsp;，len % d == 0&nbsp;成立且所有对 d&nbsp;做除法余数相同的下标对应的字符连起来得到的字符串都是 回文串&nbsp;，那么我们说这个字符串是 半回文串&nbsp;。比方说&nbsp;\"aa\"&nbsp;，\"aba\" ，\"adbgad\"&nbsp;和&nbsp;\"abab\"&nbsp;都是 半回文串&nbsp;，而&nbsp;\"a\"&nbsp;，\"ab\"&nbsp;和&nbsp;\"abca\"&nbsp;不是。\n\t子字符串&nbsp;指的是一个字符串中一段连续的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abcac\", k = 2\n输出：1\n解释：我们可以将 s 分成子字符串 \"ab\" 和 \"cac\" 。子字符串 \"cac\" 已经是半回文串。如果我们将 \"ab\" 变成 \"aa\" ，它也会变成一个 d = 1 的半回文串。\n该方案是将 s 分成 2 个子字符串的前提下，得到 2 个半回文子字符串需要的最少修改次数。所以答案为 1 。\n\n示例 2:\n\n输入：s = \"abcdef\", k = 2\n输出：2\n解释：我们可以将 s 分成子字符串 \"abc\" 和 \"def\" 。子字符串 \"abc\" 和 \"def\" 都需要修改一个字符得到半回文串，所以我们总共需要 2 次字符修改使所有子字符串变成半回文串。\n该方案是将 s 分成 2 个子字符串的前提下，得到 2 个半回文子字符串需要的最少修改次数。所以答案为 2 。\n\n示例 3：\n\n输入：s = \"aabbaa\", k = 3\n输出：0\n解释：我们可以将 s 分成子字符串 \"aa\" ，\"bb\" 和 \"aa\" 。\n字符串 \"aa\" 和 \"bb\" 都已经是半回文串了。所以答案为 0 。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 200\n\t1 <= k <= s.length / 2\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "2 <= s.length <= 200",
+    "1 <= k <= s.length / 2",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

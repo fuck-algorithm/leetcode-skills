@@ -1,0 +1,15 @@
+{
+  "number": "472",
+  "title_cn": "连接词",
+  "title_en": "Concatenated Words",
+  "slug": "concatenated-words",
+  "difficulty": "Hard",
+  "description": "给你一个 不含重复 单词的字符串数组 words ，请你找出并返回 words 中的所有 连接词 。\n\n连接词 定义为：一个完全由给定数组中的至少两个较短单词（不一定是不同的两个单词）组成的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]\n输出：[\"catsdogcats\",\"dogcatsdog\",\"ratcatdogcat\"]\n解释：\"catsdogcats\" 由 \"cats\", \"dog\" 和 \"cats\" 组成; \n     \"dogcatsdog\" 由 \"dog\", \"cats\" 和 \"dog\" 组成; \n     \"ratcatdogcat\" 由 \"rat\", \"cat\", \"dog\" 和 \"cat\" 组成。\n\n示例 2：\n\n输入：words = [\"cat\",\"dog\",\"catdog\"]\n输出：[\"catdog\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 104\n\t1 <= words[i].length <= 30\n\twords[i]&nbsp;仅由小写英文字母组成。&nbsp;\n\twords&nbsp;中的所有字符串都是 唯一 的。\n\t1 <= sum(words[i].length) <= 105",
+  "constraints": [
+    "1 <= words.length <= 104",
+    "1 <= words[i].length <= 30",
+    "words[i]&nbsp;仅由小写英文字母组成。&nbsp;",
+    "words&nbsp;中的所有字符串都是 唯一 的。",
+    "1 <= sum(words[i].length) <= 105"
+  ]
+}

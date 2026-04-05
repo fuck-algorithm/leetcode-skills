@@ -1,0 +1,12 @@
+{
+  "number": "125",
+  "title_cn": "验证回文串",
+  "title_en": "Valid Palindrome",
+  "slug": "valid-palindrome",
+  "difficulty": "Easy",
+  "description": "如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样。则可以认为该短语是一个 回文串 。\n\n字母和数字都属于字母数字字符。\n\n给你一个字符串 s，如果它是 回文串 ，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"A man, a plan, a canal: Panama\"\n输出：true\n解释：\"amanaplanacanalpanama\" 是回文串。\n\n示例 2：\n\n输入：s = \"race a car\"\n输出：false\n解释：\"raceacar\" 不是回文串。\n\n示例 3：\n\n输入：s = \" \"\n输出：true\n解释：在移除非字母数字字符之后，s 是一个空字符串 \"\" 。\n由于空字符串正着反着读都一样，所以是回文串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2 * 105\n\ts 仅由可打印的 ASCII 字符组成",
+  "constraints": [
+    "1 <= s.length <= 2 * 105",
+    "s 仅由可打印的 ASCII 字符组成"
+  ]
+}

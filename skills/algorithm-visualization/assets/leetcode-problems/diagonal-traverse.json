@@ -1,0 +1,15 @@
+{
+  "number": "498",
+  "title_cn": "对角线遍历",
+  "title_en": "Diagonal Traverse",
+  "slug": "diagonal-traverse",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 m x n 的矩阵 mat ，请以对角线遍历的顺序，用一个数组返回这个矩阵中的所有元素。\n\n&nbsp;\n\n示例 1：\n\n输入：mat = [[1,2,3],[4,5,6],[7,8,9]]\n输出：[1,2,4,7,5,3,6,8,9]\n\n示例 2：\n\n输入：mat = [[1,2],[3,4]]\n输出：[1,2,3,4]\n\n&nbsp;\n\n提示：\n\n\tm == mat.length\n\tn == mat[i].length\n\t1 <= m, n <= 104\n\t1 <= m * n <= 104\n\t-105 <= mat[i][j] <= 105",
+  "constraints": [
+    "m == mat.length",
+    "n == mat[i].length",
+    "1 <= m, n <= 104",
+    "1 <= m * n <= 104",
+    "-105 <= mat[i][j] <= 105"
+  ]
+}

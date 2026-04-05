@@ -1,0 +1,13 @@
+{
+  "number": "1095",
+  "title_cn": "山脉数组中查找目标值",
+  "title_en": "Find in Mountain Array",
+  "slug": "find-in-mountain-array",
+  "difficulty": "Hard",
+  "description": "（这是一个 交互式问题&nbsp;）\n\n你可以将一个数组&nbsp;arr&nbsp;称为&nbsp;山脉数组&nbsp;当且仅当：\n\n\tarr.length >= 3\n\t存在一些&nbsp;0 < i < arr.length - 1&nbsp;的&nbsp;i&nbsp;使得：\n\n\t\tarr[0] < arr[1] < ... < arr[i - 1] < arr[i]\n\t\tarr[i] > arr[i + 1] > ... > arr[arr.length - 1]\n\n给定一个山脉数组&nbsp;mountainArr&nbsp;，返回&nbsp;最小 的&nbsp;index&nbsp;使得&nbsp;mountainArr.get(index) == target。如果不存在这样的&nbsp;index，返回&nbsp;-1&nbsp;。\n\n你无法直接访问山脉数组。你只能使用&nbsp;MountainArray&nbsp;接口来访问数组：\n\n\tMountainArray.get(k)&nbsp;返回数组中下标为&nbsp;k&nbsp;的元素（从 0 开始）。\n\tMountainArray.length()&nbsp;返回数组的长度。\n\n调用&nbsp;MountainArray.get&nbsp;超过&nbsp;100&nbsp;次的提交会被判定为错误答案。此外，任何试图绕过在线评测的解决方案都将导致取消资格。\n\n&nbsp;\n\n示例 1：\n\n输入：mountainArr = [1,2,3,4,5,3,1], target = 3\n输出：2\n解释：3 在数组中出现了两次，下标分别为 2 和 5，我们返回最小的下标 2。\n\n示例 2：\n\n输入：mountainArr = [0,1,2,4,2,1], target = 3\n输出：-1\n解释：3 在数组中没有出现，返回 -1。\n\n&nbsp;\n\n提示：\n\n\t3 <= mountainArr.length() <= 104\n\t0 <= target <= 109\n\t0 <= mountainArr.get(index) <=&nbsp;109",
+  "constraints": [
+    "3 <= mountainArr.length() <= 104",
+    "0 <= target <= 109",
+    "0 <= mountainArr.get(index) <=&nbsp;109"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "1110",
+  "title_cn": "删点成林",
+  "title_en": "Delete Nodes And Return Forest",
+  "slug": "delete-nodes-and-return-forest",
+  "difficulty": "Medium",
+  "description": "给出二叉树的根节点&nbsp;root，树上每个节点都有一个不同的值。\n\n如果节点值在&nbsp;to_delete&nbsp;中出现，我们就把该节点从树上删去，最后得到一个森林（一些不相交的树构成的集合）。\n\n返回森林中的每棵树。你可以按任意顺序组织答案。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,2,3,4,5,6,7], to_delete = [3,5]\n输出：[[1,2,null,4],[6],[7]]\n\n示例 2：\n\n输入：root = [1,2,4,null,3], to_delete = [3]\n输出：[[1,2,4]]\n\n&nbsp;\n\n提示：\n\n\t树中的节点数最大为&nbsp;1000。\n\t每个节点都有一个介于&nbsp;1 到&nbsp;1000&nbsp;之间的值，且各不相同。\n\tto_delete.length <= 1000\n\tto_delete 包含一些从&nbsp;1 到&nbsp;1000、各不相同的值。",
+  "constraints": [
+    "树中的节点数最大为&nbsp;1000。",
+    "每个节点都有一个介于&nbsp;1 到&nbsp;1000&nbsp;之间的值，且各不相同。",
+    "to_delete.length <= 1000",
+    "to_delete 包含一些从&nbsp;1 到&nbsp;1000、各不相同的值。"
+  ]
+}

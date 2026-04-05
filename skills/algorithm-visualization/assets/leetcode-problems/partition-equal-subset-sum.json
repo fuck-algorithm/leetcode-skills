@@ -1,0 +1,12 @@
+{
+  "number": "416",
+  "title_cn": "分割等和子集",
+  "title_en": "Partition Equal Subset Sum",
+  "slug": "partition-equal-subset-sum",
+  "difficulty": "Medium",
+  "description": "给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。\n\n示例 1：\n\n输入：nums = [1,5,11,5]\n输出：true\n解释：数组可以分割成 [1, 5, 5] 和 [11] 。\n\n示例 2：\n\n输入：nums = [1,2,3,5]\n输出：false\n解释：数组不能分割成两个元素和相等的子集。\n\n提示：\n\n\t1 \n\t1",
+  "constraints": [
+    "1",
+    "1"
+  ]
+}

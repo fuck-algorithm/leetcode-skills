@@ -1,0 +1,12 @@
+{
+  "number": "1138",
+  "title_cn": "字母板上的路径",
+  "title_en": "Alphabet Board Path",
+  "slug": "alphabet-board-path",
+  "difficulty": "Medium",
+  "description": "我们从一块字母板上的位置&nbsp;(0, 0)&nbsp;出发，该坐标对应的字符为&nbsp;board[0][0]。\n\n在本题里，字母板为board = [\"abcde\", \"fghij\", \"klmno\", \"pqrst\", \"uvwxy\", \"z\"]，如下所示。\n\n我们可以按下面的指令规则行动：\n\n\t如果方格存在，'U'&nbsp;意味着将我们的位置上移一行；\n\t如果方格存在，'D'&nbsp;意味着将我们的位置下移一行；\n\t如果方格存在，'L'&nbsp;意味着将我们的位置左移一列；\n\t如果方格存在，'R'&nbsp;意味着将我们的位置右移一列；\n\t'!'&nbsp;会把在我们当前位置 (r, c) 的字符&nbsp;board[r][c]&nbsp;添加到答案中。\n\n（注意，字母板上只存在有字母的位置。）\n\n返回指令序列，用最小的行动次数让答案和目标&nbsp;target&nbsp;相同。你可以返回任何达成目标的路径。\n\n&nbsp;\n\n示例 1：\n\n输入：target = \"leet\"\n输出：\"DDR!UURRR!!DDD!\"\n\n示例 2：\n\n输入：target = \"code\"\n输出：\"RR!DDRR!UUL!R!\"\n\n&nbsp;\n\n提示：\n\n\t1 <= target.length <= 100\n\ttarget&nbsp;仅含有小写英文字母。",
+  "constraints": [
+    "1 <= target.length <= 100",
+    "target&nbsp;仅含有小写英文字母。"
+  ]
+}

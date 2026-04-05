@@ -1,0 +1,12 @@
+{
+  "number": "1802",
+  "title_cn": "有界数组中指定下标处的最大值",
+  "title_en": "Maximum Value at a Given Index in a Bounded Array",
+  "slug": "maximum-value-at-a-given-index-in-a-bounded-array",
+  "difficulty": "Medium",
+  "description": "给你三个正整数 n、index 和 maxSum 。你需要构造一个同时满足下述所有条件的数组 nums（下标 从 0 开始 计数）：\n\n\tnums.length == n\n\tnums[i] 是 正整数 ，其中 0 <= i < n\n\tabs(nums[i] - nums[i+1]) <= 1 ，其中 0 <= i < n-1\n\tnums 中所有元素之和不超过 maxSum\n\tnums[index] 的值被 最大化\n\n返回你所构造的数组中的 nums[index] 。\n\n注意：abs(x) 等于 x 的前提是 x >= 0 ；否则，abs(x) 等于 -x 。\n\n示例 1：\n\n输入：n = 4, index = 2,  maxSum = 6\n输出：2\n解释：数组 [1,1,2,1] 和 [1,2,2,1] 满足所有条件。不存在其他在指定下标处具有更大值的有效数组。\n\n示例 2：\n\n输入：n = 6, index = 1,  maxSum = 10\n输出：3\n\n提示：\n\n\t1 <= n <= maxSum <= 109\n\t0 <= index < n",
+  "constraints": [
+    "1 <= n <= maxSum <= 109",
+    "0 <= index < n"
+  ]
+}

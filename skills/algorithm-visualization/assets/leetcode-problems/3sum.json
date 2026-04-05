@@ -1,0 +1,12 @@
+{
+  "number": "15",
+  "title_cn": "三数之和",
+  "title_en": "3Sum",
+  "slug": "3sum",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请你返回所有和为 0 且不重复的三元组。\n\n注意：答案中不可以包含重复的三元组。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [-1,0,1,2,-1,-4]\n输出：[[-1,-1,2],[-1,0,1]]\n解释：\nnums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。\nnums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。\nnums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。\n不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。\n注意，输出的顺序和三元组的顺序并不重要。\n\n示例 2：\n\n输入：nums = [0,1,1]\n输出：[]\n解释：唯一可能的三元组和不为 0 。\n\n示例 3：\n\n输入：nums = [0,0,0]\n输出：[[0,0,0]]\n解释：唯一可能的三元组和为 0 。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 3000\n\t-105 <= nums[i] <= 105",
+  "constraints": [
+    "3 <= nums.length <= 3000",
+    "-105 <= nums[i] <= 105"
+  ]
+}

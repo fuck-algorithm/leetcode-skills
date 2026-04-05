@@ -1,0 +1,14 @@
+{
+  "number": "1202",
+  "title_cn": "交换字符串中的元素",
+  "title_en": "Smallest String With Swaps",
+  "slug": "smallest-string-with-swaps",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s，以及该字符串中的一些「索引对」数组&nbsp;pairs，其中&nbsp;pairs[i] =&nbsp;[a, b]&nbsp;表示字符串中的两个索引（编号从 0 开始）。\n\n你可以 任意多次交换 在&nbsp;pairs&nbsp;中任意一对索引处的字符。\n\n返回在经过若干次交换后，s&nbsp;可以变成的按字典序最小的字符串。\n\n&nbsp;\n\n示例 1:\n\n输入：s = \"dcab\", pairs = [[0,3],[1,2]]\n输出：\"bacd\"\n解释： \n交换 s[0] 和 s[3], s = \"bcad\"\n交换 s[1] 和 s[2], s = \"bacd\"\n\n示例 2：\n\n输入：s = \"dcab\", pairs = [[0,3],[1,2],[0,2]]\n输出：\"abcd\"\n解释：\n交换 s[0] 和 s[3], s = \"bcad\"\n交换 s[0] 和 s[2], s = \"acbd\"\n交换 s[1] 和 s[2], s = \"abcd\"\n\n示例 3：\n\n输入：s = \"cba\", pairs = [[0,1],[1,2]]\n输出：\"abc\"\n解释：\n交换 s[0] 和 s[1], s = \"bca\"\n交换 s[1] 和 s[2], s = \"bac\"\n交换 s[0] 和 s[1], s = \"abc\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 10^5\n\t0 <= pairs.length <= 10^5\n\t0 <= pairs[i][0], pairs[i][1] <&nbsp;s.length\n\ts&nbsp;中只含有小写英文字母",
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "0 <= pairs.length <= 10^5",
+    "0 <= pairs[i][0], pairs[i][1] <&nbsp;s.length",
+    "s&nbsp;中只含有小写英文字母"
+  ]
+}

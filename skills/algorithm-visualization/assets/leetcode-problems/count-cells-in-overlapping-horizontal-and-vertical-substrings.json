@@ -1,0 +1,16 @@
+{
+  "number": "3529",
+  "title_cn": "统计水平子串和垂直子串重叠格子的数目",
+  "title_en": "Count Cells in Overlapping Horizontal and Vertical Substrings",
+  "slug": "count-cells-in-overlapping-horizontal-and-vertical-substrings",
+  "difficulty": "Medium",
+  "description": "给你一个由字符组成的 m x n 矩阵 grid 和一个字符串 pattern。\n\n水平子串 是从左到右的一段连续字符序列。如果子串到达了某行的末尾，它将换行并从下一行的第一个字符继续。不会&nbsp;从最后一行回到第一行。\n\n垂直子串 是从上到下的一段连续字符序列。如果子串到达了某列的底部，它将换列并从下一列的第一个字符继续。不会&nbsp;从最后一列回到第一列。\n\n请统计矩阵中满足以下条件的单元格数量：\n\n\t该单元格必须属于 至少&nbsp;一个等于 pattern&nbsp;的水平子串，且属于 至少 一个等于 pattern&nbsp;的垂直子串。\n\n返回满足条件的单元格数量。\n\n&nbsp;\n\n示例 1：\n\n输入： grid = [[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]], pattern = \"abaca\"\n\n输出： 1\n\n解释：\n\n\"abaca\" 作为一个水平子串（蓝色）和一个垂直子串（红色）各出现一次，并在一个单元格（紫色）处相交。\n\n示例 2：\n\n输入： grid = [[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]], pattern = \"aba\"\n\n输出： 4\n\n解释：\n\n上述被标记的单元格都同时属于至少一个&nbsp;\"aba\" 的水平和垂直子串。\n\n示例 3：\n\n输入： grid = [[\"a\"]], pattern = \"a\"\n\n输出： 1\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 1000\n\t1 <= m * n <= 105\n\t1 <= pattern.length <= m * n\n\tgrid 和 pattern 仅由小写英文字母组成。",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 1000",
+    "1 <= m * n <= 105",
+    "1 <= pattern.length <= m * n",
+    "grid 和 pattern 仅由小写英文字母组成。"
+  ]
+}

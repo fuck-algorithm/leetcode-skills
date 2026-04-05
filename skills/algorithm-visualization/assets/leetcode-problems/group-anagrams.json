@@ -1,0 +1,13 @@
+{
+  "number": "49",
+  "title_cn": "字母异位词分组",
+  "title_en": "Group Anagrams",
+  "slug": "group-anagrams",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组，请你将 字母异位词 组合在一起。可以按任意顺序返回结果列表。\n\n&nbsp;\n\n示例 1:\n\n输入: strs = [\"eat\", \"tea\", \"tan\", \"ate\", \"nat\", \"bat\"]\n\n输出: [[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]\n\n解释：\n\n\t在 strs 中没有字符串可以通过重新排列来形成 \"bat\"。\n\t字符串 \"nat\" 和 \"tan\" 是字母异位词，因为它们可以重新排列以形成彼此。\n\t字符串 \"ate\"&nbsp;，\"eat\"&nbsp;和 \"tea\" 是字母异位词，因为它们可以重新排列以形成彼此。\n\n示例 2:\n\n输入: strs = [\"\"]\n\n输出: [[\"\"]]\n\n示例 3:\n\n输入: strs = [\"a\"]\n\n输出: [[\"a\"]]\n\n&nbsp;\n\n提示：\n\n\t1 <= strs.length <= 104\n\t0 <= strs[i].length <= 100\n\tstrs[i]&nbsp;仅包含小写字母",
+  "constraints": [
+    "1 <= strs.length <= 104",
+    "0 <= strs[i].length <= 100",
+    "strs[i]&nbsp;仅包含小写字母"
+  ]
+}

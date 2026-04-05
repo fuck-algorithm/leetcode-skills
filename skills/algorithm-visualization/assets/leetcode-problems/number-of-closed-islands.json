@@ -1,0 +1,12 @@
+{
+  "number": "1254",
+  "title_cn": "统计封闭岛屿的数目",
+  "title_en": "Number of Closed Islands",
+  "slug": "number-of-closed-islands",
+  "difficulty": "Medium",
+  "description": "二维矩阵 grid&nbsp;由 0&nbsp;（土地）和 1&nbsp;（水）组成。岛是由最大的4个方向连通的 0&nbsp;组成的群，封闭岛是一个&nbsp;完全 由1包围（左、上、右、下）的岛。\n\n请返回 封闭岛屿 的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]\n输出：2\n解释：\n灰色区域的岛屿是封闭岛屿，因为这座岛屿完全被水域包围（即被 1 区域包围）。\n\n示例 2：\n\n输入：grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]\n输出：1\n\n示例 3：\n\n输入：grid = [[1,1,1,1,1,1,1],\n&nbsp;            [1,0,0,0,0,0,1],\n&nbsp;            [1,0,1,1,1,0,1],\n&nbsp;            [1,0,1,0,1,0,1],\n&nbsp;            [1,0,1,1,1,0,1],\n&nbsp;            [1,0,0,0,0,0,1],\n             [1,1,1,1,1,1,1]]\n输出：2\n\n&nbsp;\n\n提示：\n\n\t1 <= grid.length, grid[0].length <= 100\n\t0 <= grid[i][j] <=1",
+  "constraints": [
+    "1 <= grid.length, grid[0].length <= 100",
+    "0 <= grid[i][j] <=1"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "number": "1971",
+  "title_cn": "寻找图中是否存在路径",
+  "title_en": "Find if Path Exists in Graph",
+  "slug": "find-if-path-exists-in-graph",
+  "difficulty": "Easy",
+  "description": "有一个具有 n 个顶点的 双向 图，其中每个顶点标记从 0 到 n - 1（包含 0 和 n - 1）。图中的边用一个二维整数数组 edges 表示，其中 edges[i] = [ui, vi] 表示顶点 ui 和顶点 vi 之间的双向边。 每个顶点对由 最多一条 边连接，并且没有顶点存在与自身相连的边。\n\n请你确定是否存在从顶点 source 开始，到顶点 destination 结束的 有效路径 。\n\n给你数组 edges 和整数 n、source 和 destination，如果从 source 到 destination 存在 有效路径 ，则返回 true，否则返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2\n输出：true\n解释：存在由顶点 0 到顶点 2 的路径:\n- 0 → 1 → 2 \n- 0 → 2\n\n示例 2：\n\n输入：n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5\n输出：false\n解释：不存在由顶点 0 到顶点 5 的路径.\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 2 * 105\n\t0 <= edges.length <= 2 * 105\n\tedges[i].length == 2\n\t0 <= ui, vi <= n - 1\n\tui != vi\n\t0 <= source, destination <= n - 1\n\t不存在重复边\n\t不存在指向顶点自身的边",
+  "constraints": [
+    "1 <= n <= 2 * 105",
+    "0 <= edges.length <= 2 * 105",
+    "edges[i].length == 2",
+    "0 <= ui, vi <= n - 1",
+    "ui != vi",
+    "0 <= source, destination <= n - 1",
+    "不存在重复边",
+    "不存在指向顶点自身的边"
+  ]
+}

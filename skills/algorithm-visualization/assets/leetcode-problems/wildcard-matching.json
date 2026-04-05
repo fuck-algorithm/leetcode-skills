@@ -1,0 +1,13 @@
+{
+  "number": "44",
+  "title_cn": "通配符匹配",
+  "title_en": "Wildcard Matching",
+  "slug": "wildcard-matching",
+  "difficulty": "Hard",
+  "description": "给你一个输入字符串 (s) 和一个字符模式 (p) ，请你实现一个支持 '?' 和 '*' 匹配规则的通配符匹配：\n\n\t'?' 可以匹配任何单个字符。\n\t'*' 可以匹配任意字符序列（包括空字符序列）。\n\n判定匹配成功的充要条件是：字符模式必须能够 完全匹配 输入字符串（而不是部分匹配）。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aa\", p = \"a\"\n输出：false\n解释：\"a\" 无法匹配 \"aa\" 整个字符串。\n\n示例 2：\n\n输入：s = \"aa\", p = \"*\"\n输出：true\n解释：'*' 可以匹配任意字符串。\n\n示例 3：\n\n输入：s = \"cb\", p = \"?a\"\n输出：false\n解释：'?' 可以匹配 'c', 但第二个 'a' 无法匹配 'b'。\n\n&nbsp;\n\n提示：\n\n\t0 <= s.length, p.length <= 2000\n\ts 仅由小写英文字母组成\n\tp 仅由小写英文字母、'?' 或 '*' 组成",
+  "constraints": [
+    "0 <= s.length, p.length <= 2000",
+    "s 仅由小写英文字母组成",
+    "p 仅由小写英文字母、'?' 或 '*' 组成"
+  ]
+}

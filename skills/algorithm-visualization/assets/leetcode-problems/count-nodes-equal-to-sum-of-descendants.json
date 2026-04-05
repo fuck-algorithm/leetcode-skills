@@ -1,0 +1,9 @@
+{
+  "number": "1973",
+  "title_cn": "值等于子节点值之和的节点数量",
+  "title_en": "Count Nodes Equal to Sum of Descendants",
+  "slug": "count-nodes-equal-to-sum-of-descendants",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

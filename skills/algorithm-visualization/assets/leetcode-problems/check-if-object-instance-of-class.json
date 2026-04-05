@@ -1,0 +1,9 @@
+{
+  "number": "2618",
+  "title_cn": "检查是否是类的对象实例",
+  "title_en": "Check if Object Instance of Class",
+  "slug": "check-if-object-instance-of-class",
+  "difficulty": "Medium",
+  "description": "请你编写一个函数，检查给定的值是否是给定类或超类的实例。\n\n可以传递给函数的数据类型没有限制。例如，值或类可能是&nbsp; undefined 。\n\n&nbsp;\n\n示例 1：\n\n输入：func = () => checkIfInstance(new Date(), Date)\n输出：true\n解释：根据定义，Date 构造函数返回的对象是 Date 的一个实例。\n\n示例 2：\n\n输入：func = () => { class Animal {}; class Dog extends Animal {}; return checkIfInstance(new Dog(), Animal); }\n输出：true\n解释：\nclass Animal {};\nclass Dog extends Animal {};\ncheckIfInstanceOf(new Dog(), Animal); // true\n\nDog 是 Animal 的子类。因此，Dog 对象同时是 Dog 和 Animal 的实例。\n\n示例 3：\n\n输入：func = () => checkIfInstance(Date, Date)\n输出：false\n解释：日期的构造函数在逻辑上不能是其自身的实例。\n\n示例 4：\n\n输入：func = () => checkIfInstance(5, Number)\n输出：true\n解释：5 是一个 Number。注意，\"instanceof\" 关键字将返回 false。",
+  "constraints": []
+}

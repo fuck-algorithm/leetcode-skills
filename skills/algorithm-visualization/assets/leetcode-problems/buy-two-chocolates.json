@@ -1,0 +1,13 @@
+{
+  "number": "2706",
+  "title_cn": "购买两块巧克力",
+  "title_en": "Buy Two Chocolates",
+  "slug": "buy-two-chocolates",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;prices&nbsp;，它表示一个商店里若干巧克力的价格。同时给你一个整数&nbsp;money&nbsp;，表示你一开始拥有的钱数。\n\n你必须购买 恰好&nbsp;两块巧克力，而且剩余的钱数必须是 非负数&nbsp;。同时你想最小化购买两块巧克力的总花费。\n\n请你返回在购买两块巧克力后，最多能剩下多少钱。如果购买任意两块巧克力都超过了你拥有的钱，请你返回 money&nbsp;。注意剩余钱数必须是非负数。\n\n&nbsp;\n\n示例 1：\n\n输入：prices = [1,2,2], money = 3\n输出：0\n解释：分别购买价格为 1 和 2 的巧克力。你剩下 3 - 3 = 0 块钱。所以我们返回 0 。\n\n示例 2：\n\n输入：prices = [3,2,3], money = 3\n输出：3\n解释：购买任意 2 块巧克力都会超过你拥有的钱数，所以我们返回 3 。\n\n&nbsp;\n\n提示：\n\n\t2 <= prices.length <= 50\n\t1 <= prices[i] <= 100\n\t1 <= money <= 100",
+  "constraints": [
+    "2 <= prices.length <= 50",
+    "1 <= prices[i] <= 100",
+    "1 <= money <= 100"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2522",
+  "title_cn": "将字符串分割成值不超过 K 的子字符串",
+  "title_en": "Partition String Into Substrings With Values at Most K",
+  "slug": "partition-string-into-substrings-with-values-at-most-k",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;，它每一位都是&nbsp;1&nbsp;到&nbsp;9&nbsp;之间的数字组成，同时给你一个整数&nbsp;k&nbsp;。\n\n如果一个字符串 s&nbsp;的分割满足以下条件，我们称它是一个 好&nbsp;分割：\n\n\ts&nbsp;中每个数位 恰好&nbsp;属于一个子字符串。\n\t每个子字符串的值都小于等于&nbsp;k&nbsp;。\n\n请你返回 s&nbsp;所有的 好&nbsp;分割中，子字符串的&nbsp;最少&nbsp;数目。如果不存在 s&nbsp;的&nbsp;好&nbsp;分割，返回&nbsp;-1&nbsp;。\n\n注意：\n\n\t一个字符串的 值&nbsp;是这个字符串对应的整数。比方说，\"123\"&nbsp;的值为&nbsp;123&nbsp;，\"1\"&nbsp;的值是&nbsp;1&nbsp;。\n\t子字符串&nbsp;是字符串中一段连续的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"165462\", k = 60\n输出：4\n解释：我们将字符串分割成子字符串 \"16\" ，\"54\" ，\"6\" 和 \"2\" 。每个子字符串的值都小于等于 k = 60 。\n不存在小于 4 个子字符串的好分割。\n\n示例 2：\n\n输入：s = \"238182\", k = 5\n输出：-1\n解释：这个字符串不存在好分割。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts[i]&nbsp;是&nbsp;'1'&nbsp;到&nbsp;'9'&nbsp;之间的数字。\n\t1 <= k <= 109",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i]&nbsp;是&nbsp;'1'&nbsp;到&nbsp;'9'&nbsp;之间的数字。",
+    "1 <= k <= 109"
+  ]
+}

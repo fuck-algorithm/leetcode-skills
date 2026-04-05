@@ -1,0 +1,12 @@
+{
+  "number": "1092",
+  "title_cn": "最短公共超序列",
+  "title_en": "Shortest Common Supersequence ",
+  "slug": "shortest-common-supersequence",
+  "difficulty": "Hard",
+  "description": "给你两个字符串&nbsp;str1 和&nbsp;str2，返回同时以&nbsp;str1&nbsp;和&nbsp;str2&nbsp;作为 子序列 的最短字符串。如果答案不止一个，则可以返回满足条件的 任意一个 答案。\n\n如果从字符串 t 中删除一些字符（也可能不删除），可以得到字符串 s ，那么 s 就是 t 的一个子序列。\n\n&nbsp;\n\n示例 1：\n\n输入：str1 = \"abac\", str2 = \"cab\"\n输出：\"cabac\"\n解释：\nstr1 = \"abac\" 是 \"cabac\" 的一个子串，因为我们可以删去 \"cabac\" 的第一个 \"c\"得到 \"abac\"。 \nstr2 = \"cab\" 是 \"cabac\" 的一个子串，因为我们可以删去 \"cabac\" 末尾的 \"ac\" 得到 \"cab\"。\n最终我们给出的答案是满足上述属性的最短字符串。\n\n示例 2：\n\n输入：str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"\n输出：\"aaaaaaaa\"\n\n&nbsp;\n\n提示：\n\n\t1 <= str1.length, str2.length <= 1000\n\tstr1 和&nbsp;str2&nbsp;都由小写英文字母组成。",
+  "constraints": [
+    "1 <= str1.length, str2.length <= 1000",
+    "str1 和&nbsp;str2&nbsp;都由小写英文字母组成。"
+  ]
+}

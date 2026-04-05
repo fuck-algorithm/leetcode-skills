@@ -1,0 +1,14 @@
+{
+  "number": "1297",
+  "title_cn": "子串的最大出现次数",
+  "title_en": "Maximum Number of Occurrences of a Substring",
+  "slug": "maximum-number-of-occurrences-of-a-substring",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s ，请你返回满足以下条件且出现次数最大的&nbsp;任意&nbsp;子串的出现次数：\n\n\t子串中不同字母的数目必须小于等于 maxLetters 。\n\t子串的长度必须大于等于&nbsp;minSize 且小于等于&nbsp;maxSize 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aababcaab\", maxLetters = 2, minSize = 3, maxSize = 4\n输出：2\n解释：子串 \"aab\" 在原字符串中出现了 2 次。\n它满足所有的要求：2 个不同的字母，长度为 3 （在 minSize 和 maxSize 范围内）。\n\n示例 2：\n\n输入：s = \"aaaa\", maxLetters = 1, minSize = 3, maxSize = 3\n输出：2\n解释：子串 \"aaa\" 在原字符串中出现了 2 次，且它们有重叠部分。\n\n示例 3：\n\n输入：s = \"aabcabcab\", maxLetters = 2, minSize = 2, maxSize = 3\n输出：3\n\n示例 4：\n\n输入：s = \"abcde\", maxLetters = 2, minSize = 3, maxSize = 3\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 10^5\n\t1 <= maxLetters <= 26\n\t1 <= minSize <= maxSize <= min(26, s.length)\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "1 <= maxLetters <= 26",
+    "1 <= minSize <= maxSize <= min(26, s.length)",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

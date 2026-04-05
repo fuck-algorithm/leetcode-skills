@@ -1,0 +1,13 @@
+{
+  "number": "852",
+  "title_cn": "山脉数组的峰顶索引",
+  "title_en": "Peak Index in a Mountain Array",
+  "slug": "peak-index-in-a-mountain-array",
+  "difficulty": "Medium",
+  "description": "给定一个长度为&nbsp;n&nbsp;的整数 山脉&nbsp;数组&nbsp;arr&nbsp;，其中的值递增到一个&nbsp;峰值元素&nbsp;然后递减。\n\n返回峰值元素的下标。\n\n你必须设计并实现时间复杂度为 O(log(n)) 的解决方案。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [0,1,0]\n输出：1\n\n示例 2：\n\n输入：arr = [0,2,1,0]\n输出：1\n\n示例 3：\n\n输入：arr = [0,10,5,2]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t3 <= arr.length <= 105\n\t0 <= arr[i] <= 106\n\t题目数据 保证 arr 是一个山脉数组",
+  "constraints": [
+    "3 <= arr.length <= 105",
+    "0 <= arr[i] <= 106",
+    "题目数据 保证 arr 是一个山脉数组"
+  ]
+}

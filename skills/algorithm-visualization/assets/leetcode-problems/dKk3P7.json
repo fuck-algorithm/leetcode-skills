@@ -1,0 +1,12 @@
+{
+  "number": "LCR 032",
+  "title_cn": "有效的字母异位词",
+  "title_en": "有效的字母异位词",
+  "slug": "dKk3P7",
+  "difficulty": "Easy",
+  "description": "给定两个字符串 s 和 t ，编写一个函数来判断它们是不是一组变位词（字母异位词）。\n\n注意：若&nbsp;s 和 t&nbsp;中每个字符出现的次数都相同且字符顺序不完全相同，则称&nbsp;s 和 t&nbsp;互为变位词（字母异位词）。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"anagram\", t = \"nagaram\"\n输出：true\n\n示例 2：\n\n输入：s = \"rat\", t = \"car\"\n输出：false\n\n示例 3：\n\n输入：s = \"a\", t = \"a\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, t.length <= 5 * 104\n\ts&nbsp;和&nbsp;t&nbsp;仅包含小写字母\n\n&nbsp;\n\n进阶:&nbsp;如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？\n\n&nbsp;\n\n注意：本题与主站 242&nbsp;题相似（字母异位词定义不同）：https://leetcode.cn/problems/valid-anagram/",
+  "constraints": [
+    "1 <= s.length, t.length <= 5 * 104",
+    "s&nbsp;和&nbsp;t&nbsp;仅包含小写字母"
+  ]
+}

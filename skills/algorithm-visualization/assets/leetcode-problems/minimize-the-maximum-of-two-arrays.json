@@ -1,0 +1,13 @@
+{
+  "number": "2513",
+  "title_cn": "最小化两个数组中的最大值",
+  "title_en": "Minimize the Maximum of Two Arrays",
+  "slug": "minimize-the-maximum-of-two-arrays",
+  "difficulty": "Medium",
+  "description": "给你两个数组&nbsp;arr1 和&nbsp;arr2&nbsp;，它们一开始都是空的。你需要往它们中添加正整数，使它们满足以下条件：\n\n\tarr1&nbsp;包含&nbsp;uniqueCnt1&nbsp;个&nbsp;互不相同&nbsp;的正整数，每个整数都&nbsp;不能 被&nbsp;divisor1&nbsp;整除&nbsp;。\n\tarr2&nbsp;包含&nbsp;uniqueCnt2&nbsp;个&nbsp;互不相同&nbsp;的正整数，每个整数都&nbsp;不能&nbsp;被&nbsp;divisor2&nbsp;整除&nbsp;。\n\tarr1 和&nbsp;arr2&nbsp;中的元素&nbsp;互不相同&nbsp;。\n\n给你&nbsp;divisor1&nbsp;，divisor2&nbsp;，uniqueCnt1&nbsp;和&nbsp;uniqueCnt2&nbsp;，请你返回两个数组中&nbsp;最大元素&nbsp;的&nbsp;最小值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：divisor1 = 2, divisor2 = 7, uniqueCnt1 = 1, uniqueCnt2 = 3\n输出：4\n解释：\n我们可以把前 4 个自然数划分到 arr1 和 arr2 中。\narr1 = [1] 和 arr2 = [2,3,4] 。\n可以看出两个数组都满足条件。\n最大值是 4 ，所以返回 4 。\n\n示例 2：\n\n输入：divisor1 = 3, divisor2 = 5, uniqueCnt1 = 2, uniqueCnt2 = 1\n输出：3\n解释：\narr1 = [1,2] 和 arr2 = [3] 满足所有条件。\n最大值是 3 ，所以返回 3 。\n\n示例 3：\n\n输入：divisor1 = 2, divisor2 = 4, uniqueCnt1 = 8, uniqueCnt2 = 2\n输出：15\n解释：\n最终数组为 arr1 = [1,3,5,7,9,11,13,15] 和 arr2 = [2,6] 。\n上述方案是满足所有条件的最优解。\n\n&nbsp;\n\n提示：\n\n\t2 <= divisor1, divisor2 <= 105\n\t1 <= uniqueCnt1, uniqueCnt2 < 109\n\t2 <= uniqueCnt1 + uniqueCnt2 <= 109",
+  "constraints": [
+    "2 <= divisor1, divisor2 <= 105",
+    "1 <= uniqueCnt1, uniqueCnt2 < 109",
+    "2 <= uniqueCnt1 + uniqueCnt2 <= 109"
+  ]
+}

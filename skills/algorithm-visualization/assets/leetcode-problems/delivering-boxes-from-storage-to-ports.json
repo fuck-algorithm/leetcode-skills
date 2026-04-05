@@ -1,0 +1,14 @@
+{
+  "number": "1687",
+  "title_cn": "从仓库到码头运输箱子",
+  "title_en": "Delivering Boxes from Storage to Ports",
+  "slug": "delivering-boxes-from-storage-to-ports",
+  "difficulty": "Hard",
+  "description": "你有一辆货运卡车，你需要用这一辆车把一些箱子从仓库运送到码头。这辆卡车每次运输有&nbsp;箱子数目的限制&nbsp;和 总重量的限制&nbsp;。\n\n给你一个箱子数组&nbsp;boxes&nbsp;和三个整数 portsCount, maxBoxes&nbsp;和&nbsp;maxWeight&nbsp;，其中&nbsp;boxes[i] = [ports​​i​, weighti]&nbsp;。\n\n\tports​​i&nbsp;表示第&nbsp;i&nbsp;个箱子需要送达的码头，&nbsp;weightsi&nbsp;是第&nbsp;i&nbsp;个箱子的重量。\n\tportsCount&nbsp;是码头的数目。\n\tmaxBoxes 和&nbsp;maxWeight&nbsp;分别是卡车每趟运输箱子数目和重量的限制。\n\n箱子需要按照 数组顺序&nbsp;运输，同时每次运输需要遵循以下步骤：\n\n\t卡车从&nbsp;boxes&nbsp;队列中按顺序取出若干个箱子，但不能违反&nbsp;maxBoxes 和&nbsp;maxWeight&nbsp;限制。\n\t对于在卡车上的箱子，我们需要 按顺序&nbsp;处理它们，卡车会通过 一趟行程&nbsp;将最前面的箱子送到目的地码头并卸货。如果卡车已经在对应的码头，那么不需要 额外行程&nbsp;，箱子也会立马被卸货。\n\t卡车上所有箱子都被卸货后，卡车需要 一趟行程&nbsp;回到仓库，从箱子队列里再取出一些箱子。\n\n卡车在将所有箱子运输并卸货后，最后必须回到仓库。\n\n请你返回将所有箱子送到相应码头的&nbsp;最少行程&nbsp;次数。\n\n&nbsp;\n\n示例 1：\n\n输入：boxes = [[1,1],[2,1],[1,1]], portsCount = 2, maxBoxes = 3, maxWeight = 3\n输出：4\n解释：最优策略如下：\n- 卡车将所有箱子装上车，到达码头 1 ，然后去码头 2 ，然后再回到码头 1 ，最后回到仓库，总共需要 4 趟行程。\n所以总行程数为 4 。\n注意到第一个和第三个箱子不能同时被卸货，因为箱子需要按顺序处理（也就是第二个箱子需要先被送到码头 2 ，然后才能处理第三个箱子）。\n\n示例 2：\n\n输入：boxes = [[1,2],[3,3],[3,1],[3,1],[2,4]], portsCount = 3, maxBoxes = 3, maxWeight = 6\n输出：6\n解释：最优策略如下：\n- 卡车首先运输第一个箱子，到达码头 1 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第二、第三、第四个箱子，到达码头 3 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第五个箱子，到达码头 2 ，回到仓库，总共 2 趟行程。\n总行程数为 2 + 2 + 2 = 6 。\n\n示例 3：\n\n输入：boxes = [[1,4],[1,2],[2,1],[2,1],[3,2],[3,4]], portsCount = 3, maxBoxes = 6, maxWeight = 7\n输出：6\n解释：最优策略如下：\n- 卡车运输第一和第二个箱子，到达码头 1 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第三和第四个箱子，到达码头 2 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第五和第六个箱子，到达码头 3 ，然后回到仓库，总共 2 趟行程。\n总行程数为 2 + 2 + 2 = 6 。\n\n示例 4：\n\n输入：boxes = [[2,4],[2,5],[3,1],[3,2],[3,7],[3,1],[4,4],[1,3],[5,2]], portsCount = 5, maxBoxes = 5, maxWeight = 7\n输出：14\n解释：最优策略如下：\n- 卡车运输第一个箱子，到达码头 2 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第二个箱子，到达码头 2 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第三和第四个箱子，到达码头 3 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第五个箱子，到达码头 3 ，然后回到仓库，总共 2 趟行程。\n- 卡车运输第六和第七个箱子，到达码头 3 ，然后去码头 4 ，然后回到仓库，总共 3 趟行程。\n- 卡车运输第八和第九个箱子，到达码头 1 ，然后去码头 5 ，然后回到仓库，总共 3 趟行程。\n总行程数为 2 + 2 + 2 + 2 + 3 + 3 = 14 。\n\n&nbsp;\n\n提示：\n\n\t1 <= boxes.length <= 105\n\t1 <= portsCount, maxBoxes, maxWeight <= 105\n\t1 <= ports​​i <= portsCount\n\t1 <= weightsi <= maxWeight",
+  "constraints": [
+    "1 <= boxes.length <= 105",
+    "1 <= portsCount, maxBoxes, maxWeight <= 105",
+    "1 <= ports​​i <= portsCount",
+    "1 <= weightsi <= maxWeight"
+  ]
+}

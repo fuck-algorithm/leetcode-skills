@@ -1,0 +1,15 @@
+{
+  "number": "1443",
+  "title_cn": "收集树上所有苹果的最少时间",
+  "title_en": "Minimum Time to Collect All Apples in a Tree",
+  "slug": "minimum-time-to-collect-all-apples-in-a-tree",
+  "difficulty": "Medium",
+  "description": "给你一棵有&nbsp;n&nbsp;个节点的无向树，节点编号为&nbsp;0&nbsp;到&nbsp;n-1&nbsp;，它们中有一些节点有苹果。通过树上的一条边，需要花费 1 秒钟。你从&nbsp;节点 0&nbsp;出发，请你返回最少需要多少秒，可以收集到所有苹果，并回到节点 0 。\n\n无向树的边由&nbsp;edges&nbsp;给出，其中&nbsp;edges[i] = [fromi, toi]&nbsp;，表示有一条边连接&nbsp;from&nbsp;和&nbsp;toi 。除此以外，还有一个布尔数组&nbsp;hasApple ，其中&nbsp;hasApple[i] = true&nbsp;代表节点&nbsp;i&nbsp;有一个苹果，否则，节点&nbsp;i&nbsp;没有苹果。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,true,true,false]\n输出：8 \n解释：上图展示了给定的树，其中红色节点表示有苹果。一个能收集到所有苹果的最优方案由绿色箭头表示。\n\n示例 2：\n\n输入：n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,false,true,false]\n输出：6\n解释：上图展示了给定的树，其中红色节点表示有苹果。一个能收集到所有苹果的最优方案由绿色箭头表示。\n\n示例 3：\n\n输入：n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,false,false,false,false,false]\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 10^5\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ai&nbsp;< bi&nbsp;<= n - 1\n\thasApple.length == n",
+  "constraints": [
+    "1 <= n <= 10^5",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ai&nbsp;< bi&nbsp;<= n - 1",
+    "hasApple.length == n"
+  ]
+}

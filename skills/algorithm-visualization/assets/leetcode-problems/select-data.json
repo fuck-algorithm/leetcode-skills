@@ -1,0 +1,9 @@
+{
+  "number": "2880",
+  "title_cn": "数据选取",
+  "title_en": "Select Data",
+  "slug": "select-data",
+  "difficulty": "Easy",
+  "description": "DataFrame students\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n\n编写一个解决方案，选择&nbsp;student_id = 101&nbsp;的学生的 name 和 age 并输出。\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 101        | Ulysses | 13  |\n| 53         | William | 10  |\n| 128        | Henry   | 6   |\n| 3          | Henry   | 11  |\n+------------+---------+-----+\n输出：\n+---------+-----+\n| name    | age | \n+---------+-----+\n| Ulysses | 13  |\n+---------+-----+\n解释：\n学生 Ulysses 的 student_id = 101，所以我们输出了他的 name 和 age。",
+  "constraints": []
+}

@@ -1,0 +1,11 @@
+{
+  "number": "2429",
+  "title_cn": "最小异或",
+  "title_en": "Minimize XOR",
+  "slug": "minimize-xor",
+  "difficulty": "Medium",
+  "description": "给你两个正整数 num1 和 num2 ，找出满足下述条件的正整数 x ：\n\n\tx 的置位数和 num2 相同，且\n\tx XOR num1 的值 最小\n\n注意 XOR 是按位异或运算。\n\n返回整数 x 。题目保证，对于生成的测试用例， x 是 唯一确定 的。\n\n整数的 置位数 是其二进制表示中 1 的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：num1 = 3, num2 = 5\n输出：3\n解释：\nnum1 和 num2 的二进制表示分别是 0011 和 0101 。\n整数 3 的置位数与 num2 相同，且 3 XOR 3 = 0 是最小的。\n\n示例 2：\n\n输入：num1 = 1, num2 = 12\n输出：3\n解释：\nnum1 和 num2 的二进制表示分别是 0001 和 1100 。\n整数 3 的置位数与 num2 相同，且 3 XOR 1 = 2 是最小的。\n\n&nbsp;\n\n提示：\n\n\t1 <= num1, num2 <= 109",
+  "constraints": [
+    "1 <= num1, num2 <= 109"
+  ]
+}

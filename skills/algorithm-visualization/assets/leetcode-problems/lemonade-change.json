@@ -1,0 +1,12 @@
+{
+  "number": "860",
+  "title_cn": "柠檬水找零",
+  "title_en": "Lemonade Change",
+  "slug": "lemonade-change",
+  "difficulty": "Easy",
+  "description": "在柠檬水摊上，每一杯柠檬水的售价为&nbsp;5&nbsp;美元。顾客排队购买你的产品，（按账单 bills 支付的顺序）一次购买一杯。\n\n每位顾客只买一杯柠檬水，然后向你付 5 美元、10 美元或 20 美元。你必须给每个顾客正确找零，也就是说净交易是每位顾客向你支付 5 美元。\n\n注意，一开始你手头没有任何零钱。\n\n给你一个整数数组 bills ，其中 bills[i] 是第 i 位顾客付的账。如果你能给每位顾客正确找零，返回&nbsp;true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：bills = [5,5,5,10,20]\n输出：true\n解释：\n前 3 位顾客那里，我们按顺序收取 3 张 5 美元的钞票。\n第 4 位顾客那里，我们收取一张 10 美元的钞票，并返还 5 美元。\n第 5 位顾客那里，我们找还一张 10 美元的钞票和一张 5 美元的钞票。\n由于所有客户都得到了正确的找零，所以我们输出 true。\n\n示例 2：\n\n输入：bills = [5,5,10,10,20]\n输出：false\n解释：\n前 2 位顾客那里，我们按顺序收取 2 张 5 美元的钞票。\n对于接下来的 2 位顾客，我们收取一张 10 美元的钞票，然后返还 5 美元。\n对于最后一位顾客，我们无法退回 15 美元，因为我们现在只有两张 10 美元的钞票。\n由于不是每位顾客都得到了正确的找零，所以答案是 false。\n\n&nbsp;\n\n提示：\n\n\t1 <= bills.length <= 105\n\tbills[i]&nbsp;不是&nbsp;5&nbsp;就是&nbsp;10&nbsp;或是&nbsp;20&nbsp;",
+  "constraints": [
+    "1 <= bills.length <= 105",
+    "bills[i]&nbsp;不是&nbsp;5&nbsp;就是&nbsp;10&nbsp;或是&nbsp;20&nbsp;"
+  ]
+}

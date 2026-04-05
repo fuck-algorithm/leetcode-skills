@@ -1,0 +1,11 @@
+{
+  "number": "面试题 08.14",
+  "title_cn": "布尔运算",
+  "title_en": "Boolean Evaluation LCCI",
+  "slug": "boolean-evaluation-lcci",
+  "difficulty": "Medium",
+  "description": "给定一个布尔表达式和一个期望的布尔结果 result，布尔表达式由 0 (false)、1 (true)、& (AND)、 | (OR) 和 ^ (XOR) 符号组成。实现一个函数，算出有几种可使该表达式得出 result 值的括号方法。\n\n示例 1：\n\n输入：s = \"1^0|0|1\", result = 0\n\n输出：2\n解释：两种可能的括号方法是\n1^(0|(0|1))\n1^((0|0)|1)\n\n示例 2：\n\n输入：s = \"0&0&0&1^1|0\", result = 1\n\n输出：10\n\n提示：\n\n\t运算符的数量不超过 19 个",
+  "constraints": [
+    "运算符的数量不超过 19 个"
+  ]
+}

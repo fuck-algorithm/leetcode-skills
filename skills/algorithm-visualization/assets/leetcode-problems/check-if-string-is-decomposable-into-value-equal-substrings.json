@@ -1,0 +1,9 @@
+{
+  "number": "1933",
+  "title_cn": "判断字符串是否可分解为值均等的子串",
+  "title_en": "Check if String Is Decomposable Into Value-Equal Substrings",
+  "slug": "check-if-string-is-decomposable-into-value-equal-substrings",
+  "difficulty": "Easy",
+  "description": "",
+  "constraints": []
+}

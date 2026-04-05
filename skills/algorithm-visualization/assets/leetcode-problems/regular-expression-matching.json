@@ -1,0 +1,15 @@
+{
+  "number": "10",
+  "title_cn": "正则表达式匹配",
+  "title_en": "Regular Expression Matching",
+  "slug": "regular-expression-matching",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;和一个字符规律&nbsp;p，请你来实现一个支持 '.'&nbsp;和&nbsp;'*'&nbsp;的正则表达式匹配。\n\n\t'.' 匹配任意单个字符\n\t'*' 匹配零个或多个前面的那一个元素\n\n返回一个布尔值，表示匹配是否覆盖整个输入字符串（而非部分）。\n&nbsp;\n\n示例 1：\n\n输入：s = \"aa\", p = \"a\"\n输出：false\n解释：\"a\" 无法匹配 \"aa\" 整个字符串。\n\n示例 2:\n\n输入：s = \"aa\", p = \"a*\"\n输出：true\n解释：因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 \"aa\" 可被视为 'a' 重复了一次。\n\n示例&nbsp;3：\n\n输入：s = \"ab\", p = \".*\"\n输出：true\n解释：\".*\" 表示可匹配零个或多个（'*'）任意字符（'.'）。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length&nbsp;<= 20\n\t1 <= p.length&nbsp;<= 20\n\ts&nbsp;只包含从&nbsp;a-z&nbsp;的小写字母。\n\tp&nbsp;只包含从&nbsp;a-z&nbsp;的小写字母，以及字符&nbsp;.&nbsp;和&nbsp;*。\n\t保证每次出现字符&nbsp;* 时，前面都匹配到有效的字符",
+  "constraints": [
+    "1 <= s.length&nbsp;<= 20",
+    "1 <= p.length&nbsp;<= 20",
+    "s&nbsp;只包含从&nbsp;a-z&nbsp;的小写字母。",
+    "p&nbsp;只包含从&nbsp;a-z&nbsp;的小写字母，以及字符&nbsp;.&nbsp;和&nbsp;*。",
+    "保证每次出现字符&nbsp;* 时，前面都匹配到有效的字符"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "number": "1514",
+  "title_cn": "概率最大的路径",
+  "title_en": "Path with Maximum Probability",
+  "slug": "path-with-maximum-probability",
+  "difficulty": "Medium",
+  "description": "给你一个由 n 个节点（下标从 0 开始）组成的无向加权图，该图由一个描述边的列表组成，其中 edges[i] = [a, b] 表示连接节点 a 和 b 的一条无向边，且该边遍历成功的概率为 succProb[i] 。\n\n指定两个节点分别作为起点 start 和终点 end ，请你找出从起点到终点成功概率最大的路径，并返回其成功概率。\n\n如果不存在从 start 到 end 的路径，请 返回 0 。只要答案与标准答案的误差不超过 1e-5 ，就会被视作正确答案。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2\n输出：0.25000\n解释：从起点到终点有两条路径，其中一条的成功概率为 0.2 ，而另一条为 0.5 * 0.5 = 0.25\n\n示例 2：\n\n输入：n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start = 0, end = 2\n输出：0.30000\n\n示例 3：\n\n输入：n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2\n输出：0.00000\n解释：节点 0 和 节点 2 之间不存在路径\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 10^4\n\t0 <= start, end < n\n\tstart != end\n\t0 <= a, b < n\n\ta != b\n\t0 <= succProb.length == edges.length <= 2*10^4\n\t0 <= succProb[i] <= 1\n\t每两个节点之间最多有一条边",
+  "constraints": [
+    "2 <= n <= 10^4",
+    "0 <= start, end < n",
+    "start != end",
+    "0 <= a, b < n",
+    "a != b",
+    "0 <= succProb.length == edges.length <= 2*10^4",
+    "0 <= succProb[i] <= 1",
+    "每两个节点之间最多有一条边"
+  ]
+}

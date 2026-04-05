@@ -1,0 +1,11 @@
+{
+  "number": "3370",
+  "title_cn": "仅含置位位的最小整数",
+  "title_en": "Smallest Number With All Set Bits",
+  "slug": "smallest-number-with-all-set-bits",
+  "difficulty": "Easy",
+  "description": "给你一个正整数 n。\n\n返回&nbsp;大于等于 n&nbsp;且二进制表示仅包含&nbsp;置位&nbsp;位的&nbsp;最小&nbsp;整数 x&nbsp;。\n\n置位&nbsp;位指的是二进制表示中值为 1 的位。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 5\n\n输出： 7\n\n解释：\n\n7 的二进制表示是 \"111\"。\n\n示例 2：\n\n输入： n = 10\n\n输出： 15\n\n解释：\n\n15 的二进制表示是 \"1111\"。\n\n示例 3：\n\n输入： n = 3\n\n输出： 3\n\n解释：\n\n3 的二进制表示是 \"11\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1000",
+  "constraints": [
+    "1 <= n <= 1000"
+  ]
+}

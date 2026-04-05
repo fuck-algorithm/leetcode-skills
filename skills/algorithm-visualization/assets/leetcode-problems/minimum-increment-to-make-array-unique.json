@@ -1,0 +1,12 @@
+{
+  "number": "945",
+  "title_cn": "使数组唯一的最小增量",
+  "title_en": "Minimum Increment to Make Array Unique",
+  "slug": "minimum-increment-to-make-array-unique",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums 。每次 move 操作将会选择任意一个满足 0 <= i < nums.length 的下标 i，并将&nbsp;nums[i] 递增&nbsp;1。\n\n返回使 nums 中的每个值都变成唯一的所需要的最少操作次数。\n\n生成的测试用例保证答案在 32 位整数范围内。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,2]\n输出：1\n解释：经过一次 move 操作，数组将变为 [1, 2, 3]。\n\n示例 2：\n\n输入：nums = [3,2,1,2,1,7]\n输出：6\n解释：经过 6 次 move 操作，数组将变为 [3, 4, 1, 2, 5, 7]。\n可以看出 5 次或 5 次以下的 move 操作是不能让数组的每个值唯一的。\n\n&nbsp;\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 105",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 105"
+  ]
+}

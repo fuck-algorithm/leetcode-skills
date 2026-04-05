@@ -1,0 +1,14 @@
+{
+  "number": "1825",
+  "title_cn": "求出 MK 平均值",
+  "title_en": "Finding MK Average",
+  "slug": "finding-mk-average",
+  "difficulty": "Hard",
+  "description": "给你两个整数&nbsp;m&nbsp;和&nbsp;k&nbsp;，以及数据流形式的若干整数。你需要实现一个数据结构，计算这个数据流的 MK 平均值&nbsp;。\n\nMK 平均值&nbsp;按照如下步骤计算：\n\n\t如果数据流中的整数少于 m&nbsp;个，MK 平均值&nbsp;为 -1&nbsp;，否则将数据流中最后 m&nbsp;个元素拷贝到一个独立的容器中。\n\t从这个容器中删除最小的 k&nbsp;个数和最大的 k&nbsp;个数。\n\t计算剩余元素的平均值，并 向下取整到最近的整数&nbsp;。\n\n请你实现&nbsp;MKAverage&nbsp;类：\n\n\tMKAverage(int m, int k)&nbsp;用一个空的数据流和两个整数 m&nbsp;和 k&nbsp;初始化&nbsp;MKAverage&nbsp;对象。\n\tvoid addElement(int num)&nbsp;往数据流中插入一个新的元素&nbsp;num&nbsp;。\n\tint calculateMKAverage()&nbsp;对当前的数据流计算并返回 MK 平均数&nbsp;，结果需 向下取整到最近的整数 。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"MKAverage\", \"addElement\", \"addElement\", \"calculateMKAverage\", \"addElement\", \"calculateMKAverage\", \"addElement\", \"addElement\", \"addElement\", \"calculateMKAverage\"]\n[[3, 1], [3], [1], [], [10], [], [5], [5], [5], []]\n输出：\n[null, null, null, -1, null, 3, null, null, null, 5]\n\n解释：\nMKAverage obj = new MKAverage(3, 1); \nobj.addElement(3);        // 当前元素为 [3]\nobj.addElement(1);        // 当前元素为 [3,1]\nobj.calculateMKAverage(); // 返回 -1 ，因为 m = 3 ，但数据流中只有 2 个元素\nobj.addElement(10);       // 当前元素为 [3,1,10]\nobj.calculateMKAverage(); // 最后 3 个元素为 [3,1,10]\n                          // 删除最小以及最大的 1 个元素后，容器为 [3]\n                          // [3] 的平均值等于 3/1 = 3 ，故返回 3\nobj.addElement(5);        // 当前元素为 [3,1,10,5]\nobj.addElement(5);        // 当前元素为 [3,1,10,5,5]\nobj.addElement(5);        // 当前元素为 [3,1,10,5,5,5]\nobj.calculateMKAverage(); // 最后 3 个元素为 [5,5,5]\n                          // 删除最小以及最大的 1 个元素后，容器为 [5]\n                          // [5] 的平均值等于 5/1 = 5 ，故返回 5\n\n&nbsp;\n\n提示：\n\n\t3 <= m <= 105\n\t1 <= k*2 < m\n\t1 <= num <= 105\n\taddElement 与&nbsp;calculateMKAverage&nbsp;总操作次数不超过 105 次。",
+  "constraints": [
+    "3 <= m <= 105",
+    "1 <= k*2 < m",
+    "1 <= num <= 105",
+    "addElement 与&nbsp;calculateMKAverage&nbsp;总操作次数不超过 105 次。"
+  ]
+}

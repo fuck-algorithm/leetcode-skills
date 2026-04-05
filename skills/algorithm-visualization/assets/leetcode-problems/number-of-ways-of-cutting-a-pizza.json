@@ -1,0 +1,15 @@
+{
+  "number": "1444",
+  "title_cn": "切披萨的方案数",
+  "title_en": "Number of Ways of Cutting a Pizza",
+  "slug": "number-of-ways-of-cutting-a-pizza",
+  "difficulty": "Hard",
+  "description": "给你一个&nbsp;rows x cols&nbsp;大小的矩形披萨和一个整数 k&nbsp;，矩形包含两种字符：&nbsp;&#39;A&#39; （表示苹果）和&nbsp;&#39;.&#39;&nbsp;（表示空白格子）。你需要切披萨 k-1 次，得到&nbsp;k&nbsp;块披萨并送给别人。\n\n切披萨的每一刀，先要选择是向垂直还是水平方向切，再在矩形的边界上选一个切的位置，将披萨一分为二。如果垂直地切披萨，那么需要把左边的部分送给一个人，如果水平地切，那么需要把上面的部分送给一个人。在切完最后一刀后，需要把剩下来的一块送给最后一个人。\n\n请你返回确保每一块披萨包含&nbsp;至少&nbsp;一个苹果的切披萨方案数。由于答案可能是个很大的数字，请你返回它对 10^9 + 7 取余的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：pizza = [\"A..\",\"AAA\",\"...\"], k = 3\n输出：3 \n解释：上图展示了三种切披萨的方案。注意每一块披萨都至少包含一个苹果。\n\n示例 2：\n\n输入：pizza = [\"A..\",\"AA.\",\"...\"], k = 3\n输出：1\n\n示例 3：\n\n输入：pizza = [\"A..\",\"A..\",\"...\"], k = 1\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= rows, cols <= 50\n\trows ==&nbsp;pizza.length\n\tcols ==&nbsp;pizza[i].length\n\t1 <= k <= 10\n\tpizza&nbsp;只包含字符&nbsp;&#39;A&#39;&nbsp;和&nbsp;&#39;.&#39;&nbsp;。",
+  "constraints": [
+    "1 <= rows, cols <= 50",
+    "rows ==&nbsp;pizza.length",
+    "cols ==&nbsp;pizza[i].length",
+    "1 <= k <= 10",
+    "pizza&nbsp;只包含字符&nbsp;&#39;A&#39;&nbsp;和&nbsp;&#39;.&#39;&nbsp;。"
+  ]
+}

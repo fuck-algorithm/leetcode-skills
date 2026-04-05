@@ -1,0 +1,12 @@
+{
+  "number": "2111",
+  "title_cn": "使数组 K 递增的最少操作次数",
+  "title_en": "Minimum Operations to Make the Array K-Increasing",
+  "slug": "minimum-operations-to-make-the-array-k-increasing",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始包含 n&nbsp;个正整数的数组&nbsp;arr&nbsp;，和一个正整数&nbsp;k&nbsp;。\n\n如果对于每个满足&nbsp;k <= i <= n-1&nbsp;的下标&nbsp;i&nbsp;，都有&nbsp;arr[i-k] <= arr[i]&nbsp;，那么我们称&nbsp;arr&nbsp;是 K&nbsp;递增 的。\n\n\t比方说，arr = [4, 1, 5, 2, 6, 2]&nbsp;对于&nbsp;k = 2&nbsp;是 K 递增的，因为：\n\n\t\tarr[0] <= arr[2] (4 <= 5)\n\t\tarr[1] <= arr[3] (1 <= 2)\n\t\tarr[2] <= arr[4] (5 <= 6)\n\t\tarr[3] <= arr[5] (2 <= 2)\n\n\t但是，相同的数组&nbsp;arr&nbsp;对于&nbsp;k = 1&nbsp;不是 K 递增的（因为&nbsp;arr[0] > arr[1]），对于&nbsp;k = 3&nbsp;也不是 K 递增的（因为&nbsp;arr[0] > arr[3]&nbsp;）。\n\n每一次 操作&nbsp;中，你可以选择一个下标&nbsp;i 并将&nbsp;arr[i] 改成任意&nbsp;正整数。\n\n请你返回对于给定的 k&nbsp;，使数组变成 K 递增的 最少操作次数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [5,4,3,2,1], k = 1\n输出：4\n解释：\n对于 k = 1 ，数组最终必须变成非递减的。\n可行的 K 递增结果数组为 [5,6,7,8,9]，[1,1,1,1,1]，[2,2,3,4,4] 。它们都需要 4 次操作。\n次优解是将数组变成比方说 [6,7,8,9,10] ，因为需要 5 次操作。\n显然我们无法使用少于 4 次操作将数组变成 K 递增的。\n\n示例 2：\n\n输入：arr = [4,1,5,2,6,2], k = 2\n输出：0\n解释：\n这是题目描述中的例子。\n对于每个满足 2 <= i <= 5 的下标 i ，有 arr[i-2] <= arr[i] 。\n由于给定数组已经是 K 递增的，我们不需要进行任何操作。\n\n示例 3：\n\n输入：arr = [4,1,5,2,6,2], k = 3\n输出：2\n解释：\n下标 3 和 5 是仅有的 3 <= i <= 5 且不满足 arr[i-3] <= arr[i] 的下标。\n将数组变成 K 递增的方法之一是将 arr[3] 变为 4 ，且将 arr[5] 变成 5 。\n数组变为 [4,1,5,4,6,5] 。\n可能有其他方法将数组变为 K 递增的，但没有任何一种方法需要的操作次数小于 2 次。\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 105\n\t1 <= arr[i], k <= arr.length",
+  "constraints": [
+    "1 <= arr.length <= 105",
+    "1 <= arr[i], k <= arr.length"
+  ]
+}

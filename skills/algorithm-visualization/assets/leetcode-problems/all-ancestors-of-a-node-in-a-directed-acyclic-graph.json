@@ -1,0 +1,17 @@
+{
+  "number": "2192",
+  "title_cn": "有向无环图中一个节点的所有祖先",
+  "title_en": "All Ancestors of a Node in a Directed Acyclic Graph",
+  "slug": "all-ancestors-of-a-node-in-a-directed-acyclic-graph",
+  "difficulty": "Medium",
+  "description": "给你一个正整数&nbsp;n&nbsp;，它表示一个 有向无环图&nbsp;中节点的数目，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;（包括两者）。\n\n给你一个二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [fromi, toi]&nbsp;表示图中一条从&nbsp;fromi&nbsp;到&nbsp;toi&nbsp;的单向边。\n\n请你返回一个数组&nbsp;answer，其中&nbsp;answer[i]是第&nbsp;i&nbsp;个节点的所有&nbsp;祖先&nbsp;，这些祖先节点&nbsp;升序&nbsp;排序。\n\n如果 u&nbsp;通过一系列边，能够到达 v&nbsp;，那么我们称节点 u&nbsp;是节点 v&nbsp;的 祖先&nbsp;节点。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 8, edgeList = [[0,3],[0,4],[1,3],[2,4],[2,7],[3,5],[3,6],[3,7],[4,6]]\n输出：[[],[],[],[0,1],[0,2],[0,1,3],[0,1,2,3,4],[0,1,2,3]]\n解释：\n上图为输入所对应的图。\n- 节点 0 ，1 和 2 没有任何祖先。\n- 节点 3 有 2 个祖先 0 和 1 。\n- 节点 4 有 2 个祖先 0 和 2 。\n- 节点 5 有 3 个祖先 0 ，1 和 3 。\n- 节点 6 有 5 个祖先 0 ，1 ，2 ，3 和 4 。\n- 节点 7 有 4 个祖先 0 ，1 ，2 和 3 。\n\n示例 2：\n\n输入：n = 5, edgeList = [[0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]\n输出：[[],[0],[0,1],[0,1,2],[0,1,2,3]]\n解释：\n上图为输入所对应的图。\n- 节点 0 没有任何祖先。\n- 节点 1 有 1 个祖先 0 。\n- 节点 2 有 2 个祖先 0 和 1 。\n- 节点 3 有 3 个祖先 0 ，1 和 2 。\n- 节点 4 有 4 个祖先 0 ，1 ，2 和 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1000\n\t0 <= edges.length <= min(2000, n * (n - 1) / 2)\n\tedges[i].length == 2\n\t0 <= fromi, toi <= n - 1\n\tfromi != toi\n\t图中不会有重边。\n\t图是 有向 且 无环 的。",
+  "constraints": [
+    "1 <= n <= 1000",
+    "0 <= edges.length <= min(2000, n * (n - 1) / 2)",
+    "edges[i].length == 2",
+    "0 <= fromi, toi <= n - 1",
+    "fromi != toi",
+    "图中不会有重边。",
+    "图是 有向 且 无环 的。"
+  ]
+}

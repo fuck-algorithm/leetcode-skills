@@ -1,0 +1,11 @@
+{
+  "number": "面试题 17.06",
+  "title_cn": "2出现的次数",
+  "title_en": "Number Of 2s In Range LCCI",
+  "slug": "number-of-2s-in-range-lcci",
+  "difficulty": "Hard",
+  "description": "编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。\n\n示例：\n\n输入：25\n输出：9\n解释：(2, 12, 20, 21, 22, 23, 24, 25)(注意 22 应该算作两次)\n\n提示：\n\n\tn <= 10^9",
+  "constraints": [
+    "n <= 10^9"
+  ]
+}

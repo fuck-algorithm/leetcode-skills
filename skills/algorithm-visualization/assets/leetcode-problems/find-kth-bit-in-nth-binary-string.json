@@ -1,0 +1,12 @@
+{
+  "number": "1545",
+  "title_cn": "找出第 N 个二进制字符串中的第 K 位",
+  "title_en": "Find Kth Bit in Nth Binary String",
+  "slug": "find-kth-bit-in-nth-binary-string",
+  "difficulty": "Medium",
+  "description": "给你两个正整数 n 和 k，二进制字符串  Sn 的形成规则如下：\n\n\tS1 = \"0\"\n\t当 i > 1 时，Si = Si-1 + \"1\" + reverse(invert(Si-1))\n\n其中 + 表示串联操作，reverse(x) 返回反转 x 后得到的字符串，而 invert(x) 则会翻转 x 中的每一位（0 变为 1，而 1 变为 0）。\n\n例如，符合上述描述的序列的前 4 个字符串依次是：\n\n\tS1 = \"0\"\n\tS2 = \"011\"\n\tS3 = \"0111001\"\n\tS4 = \"011100110110001\"\n\n请你返回  Sn 的 第 k 位字符 ，题目数据保证 k 一定在 Sn 长度范围以内。\n\n示例 1：\n\n输入：n = 3, k = 1\n输出：\"0\"\n解释：S3 为 \"0111001\"，其第 1 位为 \"0\" 。\n\n示例 2：\n\n输入：n = 4, k = 11\n输出：\"1\"\n解释：S4 为 \"011100110110001\"，其第 11 位为 \"1\" 。\n\n示例 3：\n\n输入：n = 1, k = 1\n输出：\"0\"\n\n示例 4：\n\n输入：n = 2, k = 3\n输出：\"1\"\n\n提示：\n\n\t1 \n\t1 n - 1",
+  "constraints": [
+    "1",
+    "1 n - 1"
+  ]
+}

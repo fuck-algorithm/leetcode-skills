@@ -1,0 +1,14 @@
+{
+  "number": "2452",
+  "title_cn": "距离字典两次编辑以内的单词",
+  "title_en": "Words Within Two Edits of Dictionary",
+  "slug": "words-within-two-edits-of-dictionary",
+  "difficulty": "Medium",
+  "description": "给你两个字符串数组&nbsp;queries 和&nbsp;dictionary&nbsp;。数组中所有单词都只包含小写英文字母，且长度都相同。\n\n一次 编辑&nbsp;中，你可以从 queries&nbsp;中选择一个单词，将任意一个字母修改成任何其他字母。从&nbsp;queries&nbsp;中找到所有满足以下条件的字符串：不超过&nbsp;两次编辑内，字符串与&nbsp;dictionary&nbsp;中某个字符串相同。\n\n请你返回&nbsp;queries&nbsp;中的单词列表，这些单词距离&nbsp;dictionary&nbsp;中的单词&nbsp;编辑次数&nbsp;不超过&nbsp;两次&nbsp;。单词返回的顺序需要与&nbsp;queries&nbsp;中原本顺序相同。\n\n&nbsp;\n\n示例 1：\n\n输入：queries = [\"word\",\"note\",\"ants\",\"wood\"], dictionary = [\"wood\",\"joke\",\"moat\"]\n输出：[\"word\",\"note\",\"wood\"]\n解释：\n- 将 \"word\" 中的 'r' 换成 'o' ，得到 dictionary 中的单词 \"wood\" 。\n- 将 \"note\" 中的 'n' 换成 'j' 且将 't' 换成 'k' ，得到 \"joke\" 。\n- \"ants\" 需要超过 2 次编辑才能得到 dictionary 中的单词。\n- \"wood\" 不需要修改（0 次编辑），就得到 dictionary 中相同的单词。\n所以我们返回 [\"word\",\"note\",\"wood\"] 。\n\n示例 2：\n\n输入：queries = [\"yes\"], dictionary = [\"not\"]\n输出：[]\n解释：\n\"yes\" 需要超过 2 次编辑才能得到 \"not\" 。\n所以我们返回空数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= queries.length, dictionary.length <= 100\n\tn == queries[i].length == dictionary[j].length\n\t1 <= n <= 100\n\t所有&nbsp;queries[i] 和&nbsp;dictionary[j]&nbsp;都只包含小写英文字母。",
+  "constraints": [
+    "1 <= queries.length, dictionary.length <= 100",
+    "n == queries[i].length == dictionary[j].length",
+    "1 <= n <= 100",
+    "所有&nbsp;queries[i] 和&nbsp;dictionary[j]&nbsp;都只包含小写英文字母。"
+  ]
+}

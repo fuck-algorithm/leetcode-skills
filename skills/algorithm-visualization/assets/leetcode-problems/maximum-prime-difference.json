@@ -1,0 +1,12 @@
+{
+  "number": "3115",
+  "title_cn": "质数的最大距离",
+  "title_en": "Maximum Prime Difference",
+  "slug": "maximum-prime-difference",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。\n\n返回两个（不一定不同的）质数在 nums 中&nbsp;下标 的 最大距离。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [4,2,9,5,3]\n\n输出： 3\n\n解释： nums[1]、nums[3] 和 nums[4] 是质数。因此答案是 |4 - 1| = 3。\n\n示例 2：\n\n输入： nums = [4,8,2,8]\n\n输出： 0\n\n解释： nums[2] 是质数。因为只有一个质数，所以答案是 |2 - 2| = 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 3 * 105\n\t1 <= nums[i] <= 100\n\t输入保证 nums 中至少有一个质数。",
+  "constraints": [
+    "1 <= nums.length <= 3 * 105",
+    "1 <= nums[i] <= 100"
+  ]
+}

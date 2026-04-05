@@ -1,0 +1,12 @@
+{
+  "number": "2366",
+  "title_cn": "将数组排序的最少替换次数",
+  "title_en": "Minimum Replacements to Sort the Array",
+  "slug": "minimum-replacements-to-sort-the-array",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;。每次操作中，你可以将数组中任何一个元素替换为&nbsp;任意两个&nbsp;和为该元素的数字。\n\n\t比方说，nums = [5,6,7]&nbsp;。一次操作中，我们可以将&nbsp;nums[1] 替换成&nbsp;2 和&nbsp;4&nbsp;，将&nbsp;nums&nbsp;转变成&nbsp;[5,2,4,7]&nbsp;。\n\n请你执行上述操作，将数组变成元素按 非递减 顺序排列的数组，并返回所需的最少操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,9,3]\n输出：2\n解释：以下是将数组变成非递减顺序的步骤：\n- [3,9,3] ，将9 变成 3 和 6 ，得到数组 [3,3,6,3] \n- [3,3,6,3] ，将 6 变成 3 和 3 ，得到数组 [3,3,3,3,3] \n总共需要 2 步将数组变成非递减有序，所以我们返回 2 。\n\n示例 2：\n\n输入：nums = [1,2,3,4,5]\n输出：0\n解释：数组已经是非递减顺序，所以我们返回 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "number": "570",
+  "title_cn": "至少有5名直接下属的经理",
+  "title_en": "Managers with at Least 5 Direct Reports",
+  "slug": "managers-with-at-least-5-direct-reports",
+  "difficulty": "Medium",
+  "description": "表:&nbsp;Employee\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| name        | varchar |\n| department  | varchar |\n| managerId   | int     |\n+-------------+---------+\nid 是此表的主键（具有唯一值的列）。\n该表的每一行表示雇员的名字、他们的部门和他们的经理的id。\n如果managerId为空，则该员工没有经理。\n没有员工会成为自己的管理者。\n\n&nbsp;\n\n编写一个解决方案，找出至少有五个直接下属的经理。\n\n以 任意顺序 返回结果表。\n\n查询结果格式如下所示。\n\n&nbsp;\n\n示例 1:\n\n输入: \nEmployee 表:\n+-----+-------+------------+-----------+\n| id  | name  | department | managerId |\n+-----+-------+------------+-----------+\n| 101 | John  | A          | Null      |\n| 102 | Dan   | A          | 101       |\n| 103 | James | A          | 101       |\n| 104 | Amy   | A          | 101       |\n| 105 | Anne  | A          | 101       |\n| 106 | Ron   | B          | 101       |\n+-----+-------+------------+-----------+\n输出: \n+------+\n| name |\n+------+\n| John |\n+------+",
+  "constraints": []
+}

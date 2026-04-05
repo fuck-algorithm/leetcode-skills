@@ -1,0 +1,12 @@
+{
+  "number": "3833",
+  "title_cn": "统计主导元素下标数",
+  "title_en": "Count Dominant Indices",
+  "slug": "count-dominant-indices",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n 的整数数组 nums。\n\n当下标&nbsp;i 满足以下条件时，该下标处的元素被称为&nbsp;主导元素：nums[i] > average(nums[i + 1], nums[i + 2], ..., nums[n - 1])\n\n你的任务是统计数组中&nbsp;主导元素&nbsp;的下标数。\n\n平均值&nbsp;是指一组数的总和除以该组数的个数得到的值。\n\n注意：数组的&nbsp;最右边元素&nbsp;不算作&nbsp;主导元素&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [5,4,3]\n\n输出： 2\n\n解释：\n\n\t在下标&nbsp;i = 0 处，值 5 是主导元素，因为 5 > average(4, 3) = 3.5。\n\t在下标&nbsp;i = 1 处，值 4 是主导元素，相对于子数组 [3]。\n\t下标&nbsp;i = 2 不是主导元素，因为它右侧没有元素。因此答案是 2。\n\n示例 2：\n\n输入： nums = [4,1,2]\n\n输出： 1\n\n解释：\n\n\t在下标&nbsp;i = 0 处，值 4 是主导元素，相对于子数组 [1, 2]。\n\t在下标&nbsp;i = 1 处，值 1 不是主导元素。\n\t下标&nbsp;i = 2 不是主导元素，因为它右侧没有元素。因此答案是 1。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100​​​​​​​",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100​​​​​​​"
+  ]
+}

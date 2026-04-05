@@ -1,0 +1,13 @@
+{
+  "number": "LCR 128",
+  "title_cn": "库存管理 I",
+  "title_en": "库存管理 I",
+  "slug": "xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof",
+  "difficulty": "Easy",
+  "description": "仓库管理员以数组 stock 形式记录商品库存表。stock[i] 表示商品 id，可能存在重复。原库存表按商品 id 升序排列。现因突发情况需要进行商品紧急调拨，管理员将这批商品 id 提前依次整理至库存表最后。请你找到并返回库存表中编号的 最小的元素 以便及时记录本次调拨。\n\n&nbsp;\n\n示例 1：\n\n输入：stock = [4,5,8,3,4]\n输出：3\n\n示例 2：\n\n输入：stock = [5,7,9,1,2]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= stock.length <= 5000\n\t-5000 <= stock[i] <= 5000\n\n&nbsp;\n\n注意：本题与主站 154 题相同：https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/\n\n&nbsp;",
+  "constraints": [
+    "1 <= stock.length <= 5000",
+    "-5000 <= stock[i] <= 5000",
+    "注意：本题与主站 154 题相同：https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/"
+  ]
+}

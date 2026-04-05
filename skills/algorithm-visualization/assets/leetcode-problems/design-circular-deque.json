@@ -1,0 +1,13 @@
+{
+  "number": "641",
+  "title_cn": "设计循环双端队列",
+  "title_en": "Design Circular Deque",
+  "slug": "design-circular-deque",
+  "difficulty": "Medium",
+  "description": "设计实现双端队列。\n\n实现 MyCircularDeque 类:\n\n\tMyCircularDeque(int k)&nbsp;：构造函数,双端队列最大为 k 。\n\tboolean insertFront()：将一个元素添加到双端队列头部。 如果操作成功返回 true&nbsp;，否则返回 false 。\n\tboolean insertLast()&nbsp;：将一个元素添加到双端队列尾部。如果操作成功返回 true&nbsp;，否则返回 false 。\n\tboolean deleteFront()&nbsp;：从双端队列头部删除一个元素。 如果操作成功返回 true&nbsp;，否则返回 false 。\n\tboolean deleteLast()&nbsp;：从双端队列尾部删除一个元素。如果操作成功返回 true&nbsp;，否则返回 false 。\n\tint getFront()&nbsp;)：从双端队列头部获得一个元素。如果双端队列为空，返回 -1&nbsp;。\n\tint getRear()&nbsp;：获得双端队列的最后一个元素。&nbsp;如果双端队列为空，返回 -1 。\n\tboolean isEmpty()&nbsp;：若双端队列为空，则返回&nbsp;true&nbsp;，否则返回 false &nbsp;。\n\tboolean isFull()&nbsp;：若双端队列满了，则返回&nbsp;true&nbsp;，否则返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入\n[\"MyCircularDeque\", \"insertLast\", \"insertLast\", \"insertFront\", \"insertFront\", \"getRear\", \"isFull\", \"deleteLast\", \"insertFront\", \"getFront\"]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]\n输出\n[null, true, true, true, false, 2, true, true, true, 4]\n\n解释\nMyCircularDeque circularDeque = new MycircularDeque(3); // 设置容量大小为3\ncircularDeque.insertLast(1);\t\t\t        // 返回 true\ncircularDeque.insertLast(2);\t\t\t        // 返回 true\ncircularDeque.insertFront(3);\t\t\t        // 返回 true\ncircularDeque.insertFront(4);\t\t\t        // 已经满了，返回 false\ncircularDeque.getRear();  \t\t\t\t// 返回 2\ncircularDeque.isFull();\t\t\t\t        // 返回 true\ncircularDeque.deleteLast();\t\t\t        // 返回 true\ncircularDeque.insertFront(4);\t\t\t        // 返回 true\ncircularDeque.getFront();\t\t\t\t// 返回 4\n&nbsp;\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= 1000\n\t0 <= value <= 1000\n\tinsertFront,&nbsp;insertLast,&nbsp;deleteFront,&nbsp;deleteLast,&nbsp;getFront,&nbsp;getRear,&nbsp;isEmpty,&nbsp;isFull&nbsp; 调用次数不大于&nbsp;2000&nbsp;次",
+  "constraints": [
+    "1 <= k <= 1000",
+    "0 <= value <= 1000",
+    "insertFront,&nbsp;insertLast,&nbsp;deleteFront,&nbsp;deleteLast,&nbsp;getFront,&nbsp;getRear,&nbsp;isEmpty,&nbsp;isFull&nbsp; 调用次数不大于&nbsp;2000&nbsp;次"
+  ]
+}

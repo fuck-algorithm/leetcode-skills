@@ -1,0 +1,12 @@
+{
+  "number": "2410",
+  "title_cn": "运动员和训练师的最大匹配数",
+  "title_en": "Maximum Matching of Players With Trainers",
+  "slug": "maximum-matching-of-players-with-trainers",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;players&nbsp;，其中&nbsp;players[i]&nbsp;表示第 i&nbsp;名运动员的 能力&nbsp;值，同时给你一个下标从 0&nbsp;开始的整数数组&nbsp;trainers&nbsp;，其中&nbsp;trainers[j]&nbsp;表示第 j&nbsp;名训练师的 训练能力值&nbsp;。\n\n如果第 i&nbsp;名运动员的能力值 小于等于&nbsp;第 j&nbsp;名训练师的能力值，那么第&nbsp;i&nbsp;名运动员可以 匹配&nbsp;第&nbsp;j&nbsp;名训练师。除此以外，每名运动员至多可以匹配一位训练师，每位训练师最多可以匹配一位运动员。\n\n请你返回满足上述要求&nbsp;players&nbsp;和 trainers&nbsp;的 最大 匹配数。\n\n&nbsp;\n\n示例 1：\n\n输入：players = [4,7,9], trainers = [8,2,5,8]\n输出：2\n解释：\n得到两个匹配的一种方案是：\n- players[0] 与 trainers[0] 匹配，因为 4 <= 8 。\n- players[1] 与 trainers[3] 匹配，因为 7 <= 8 。\n可以证明 2 是可以形成的最大匹配数。\n\n示例 2：\n\n输入：players = [1,1,1], trainers = [10]\n输出：1\n解释：\n训练师可以匹配所有 3 个运动员\n每个运动员至多只能匹配一个训练师，所以最大答案是 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= players.length, trainers.length <= 105\n\t1 <= players[i], trainers[j] <= 109",
+  "constraints": [
+    "1 <= players.length, trainers.length <= 105",
+    "1 <= players[i], trainers[j] <= 109"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "number": "972",
+  "title_cn": "相等的有理数",
+  "title_en": "Equal Rational Numbers",
+  "slug": "equal-rational-numbers",
+  "difficulty": "Hard",
+  "description": "给定两个字符串&nbsp;s&nbsp;和&nbsp;t&nbsp;，每个字符串代表一个非负有理数，只有当它们表示相同的数字时才返回 true&nbsp;。字符串中可以使用括号来表示有理数的重复部分。\n\n有理数&nbsp;最多可以用三个部分来表示：整数部分&nbsp;<IntegerPart>、小数非重复部分&nbsp;<NonRepeatingPart>&nbsp;和小数重复部分&nbsp;<(><RepeatingPart><)>。数字可以用以下三种方法之一来表示：\n\n\t<IntegerPart>&nbsp;\n\n\t\t例：&nbsp;0&nbsp;,12&nbsp;和&nbsp;123&nbsp;\n\n\t<IntegerPart><.><NonRepeatingPart>\n\n\t\t例： 0.5&nbsp;, 1.&nbsp;,&nbsp;2.12&nbsp;和&nbsp;123.0001\n\n\t<IntegerPart><.><NonRepeatingPart><(><RepeatingPart><)>&nbsp;\n\n\t\t例： 0.1(6) ， 1.(9)， 123.00(1212)\n\n十进制展开的重复部分通常在一对圆括号内表示。例如：\n\n\t1 / 6 = 0.16666666... = 0.1(6) = 0.1666(6) = 0.166(66)\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"0.(52)\", t = \"0.5(25)\"\n输出：true\n解释：因为 \"0.(52)\" 代表 0.52525252...，而 \"0.5(25)\" 代表 0.52525252525.....，则这两个字符串表示相同的数字。\n\n示例 2：\n\n输入：s = \"0.1666(6)\", t = \"0.166(66)\"\n输出：true\n\n示例 3：\n\n输入：s = \"0.9(9)\", t = \"1.\"\n输出：true\n解释：\"0.9(9)\" 代表 0.999999999... 永远重复，等于 1 。[有关说明，请参阅此链接]\n\"1.\" 表示数字 1，其格式正确：(IntegerPart) = \"1\" 且 (NonRepeatingPart) = \"\" 。\n\n&nbsp;\n\n提示：\n\n\t每个部分仅由数字组成。\n\t整数部分&nbsp;<IntegerPart>&nbsp;不会以零开头。（零本身除外）\n\t1 <= <IntegerPart>.length <= 4 \n\t0 <= <NonRepeatingPart>.length <= 4 \n\t1 <= <RepeatingPart>.length <= 4 \n\n​​​​​",
+  "constraints": [
+    "每个部分仅由数字组成。",
+    "整数部分&nbsp;<IntegerPart>&nbsp;不会以零开头。（零本身除外）",
+    "1 <= <IntegerPart>.length <= 4",
+    "0 <= <NonRepeatingPart>.length <= 4",
+    "1 <= <RepeatingPart>.length <= 4",
+    "​​​​​"
+  ]
+}

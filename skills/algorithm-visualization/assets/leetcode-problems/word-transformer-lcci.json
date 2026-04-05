@@ -1,0 +1,9 @@
+{
+  "number": "面试题 17.22",
+  "title_cn": "单词转换",
+  "title_en": "Word Transformer LCCI",
+  "slug": "word-transformer-lcci",
+  "difficulty": "Medium",
+  "description": "给定字典中的两个词，长度相等。写一个方法，把一个词转换成另一个词， 但是一次只能改变一个字符。每一步得到的新词都必须能在字典中找到。\n\n编写一个程序，返回一个可能的转换序列。如有多个可能的转换序列，你可以返回任何一个。\n\n示例 1：\n\n输入：\nbeginWord = \"hit\",\nendWord = \"cog\",\nwordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\n\n输出：\n[\"hit\",\"hot\",\"dot\",\"lot\",\"log\",\"cog\"]\n\n示例 2：\n\n输入：\nbeginWord = \"hit\"\nendWord = \"cog\"\nwordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]\n\n输出：[]\n\n解释：endWord \"cog\" 不在字典中，所以不存在符合要求的转换序列。",
+  "constraints": []
+}

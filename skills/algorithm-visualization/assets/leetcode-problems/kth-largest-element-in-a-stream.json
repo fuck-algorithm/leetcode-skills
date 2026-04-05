@@ -1,0 +1,15 @@
+{
+  "number": "703",
+  "title_cn": "数据流中的第 K 大元素",
+  "title_en": "Kth Largest Element in a Stream",
+  "slug": "kth-largest-element-in-a-stream",
+  "difficulty": "Easy",
+  "description": "设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。\n\n请实现 KthLargest&nbsp;类：\n\n\tKthLargest(int k, int[] nums) 使用整数 k 和整数流 nums 初始化对象。\n\tint add(int val) 将 val 插入数据流 nums 后，返回当前数据流中第 k 大的元素。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"KthLargest\", \"add\", \"add\", \"add\", \"add\", \"add\"]\n[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]\n\n输出：[null, 4, 5, 5, 8, 8]\n\n解释：\n\nKthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);\nkthLargest.add(3); // 返回 4\nkthLargest.add(5); // 返回 5\nkthLargest.add(10); // 返回 5\nkthLargest.add(9); // 返回 8\nkthLargest.add(4); // 返回 8\n\n&nbsp;\n\n示例&nbsp;2：\n\n输入：\n[\"KthLargest\", \"add\", \"add\", \"add\", \"add\"]\n[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]\n\n输出：[null, 7, 7, 7, 8]\n\n解释：\nKthLargest kthLargest = new KthLargest(4, [7, 7, 7, 7, 8, 3]);\nkthLargest.add(2); // 返回 7\nkthLargest.add(10); // 返回 7\nkthLargest.add(9); // 返回 7\nkthLargest.add(9); // 返回 8\n\n&nbsp;\n提示：\n\n\t0 <= nums.length <= 104\n\t1 <= k <= nums.length + 1\n\t-104 <= nums[i] <= 104\n\t-104 <= val <= 104\n\t最多调用 add 方法 104 次",
+  "constraints": [
+    "0 <= nums.length <= 104",
+    "1 <= k <= nums.length + 1",
+    "-104 <= nums[i] <= 104",
+    "-104 <= val <= 104",
+    "最多调用 add 方法 104 次"
+  ]
+}

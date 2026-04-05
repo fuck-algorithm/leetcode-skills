@@ -1,0 +1,17 @@
+{
+  "number": "126",
+  "title_cn": "单词接龙 II",
+  "title_en": "Word Ladder II",
+  "slug": "word-ladder-ii",
+  "difficulty": "Hard",
+  "description": "按字典&nbsp;wordList 完成从单词 beginWord 到单词 endWord 转化，一个表示此过程的 转换序列 是形式上像 beginWord -> s1 -> s2 -> ... -> sk 这样的单词序列，并满足：\n\n\t每对相邻的单词之间仅有单个字母不同。\n\t转换过程中的每个单词 si（1 <= i <= k）必须是字典&nbsp;wordList 中的单词。注意，beginWord 不必是字典 wordList 中的单词。\n\tsk == endWord\n\n给你两个单词 beginWord 和 endWord ，以及一个字典 wordList 。请你找出并返回所有从 beginWord 到 endWord 的 最短转换序列 ，如果不存在这样的转换序列，返回一个空列表。每个序列都应该以单词列表 [beginWord, s1, s2, ..., sk] 的形式返回。\n\n&nbsp;\n\n示例 1：\n\n输入：beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]\n输出：[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]\n解释：存在 2 种最短的转换序列：\n\"hit\" -> \"hot\" -> \"dot\" -> \"dog\" -> \"cog\"\n\"hit\" -> \"hot\" -> \"lot\" -> \"log\" -> \"cog\"\n\n示例 2：\n\n输入：beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]\n输出：[]\n解释：endWord \"cog\" 不在字典 wordList 中，所以不存在符合要求的转换序列。\n\n&nbsp;\n\n提示：\n\n\t1 <= beginWord.length <= 5\n\tendWord.length == beginWord.length\n\t1 <= wordList.length <= 500\n\twordList[i].length == beginWord.length\n\tbeginWord、endWord 和 wordList[i] 由小写英文字母组成\n\tbeginWord != endWord\n\twordList 中的所有单词 互不相同",
+  "constraints": [
+    "1 <= beginWord.length <= 5",
+    "endWord.length == beginWord.length",
+    "1 <= wordList.length <= 500",
+    "wordList[i].length == beginWord.length",
+    "beginWord、endWord 和 wordList[i] 由小写英文字母组成",
+    "beginWord != endWord",
+    "wordList 中的所有单词 互不相同"
+  ]
+}

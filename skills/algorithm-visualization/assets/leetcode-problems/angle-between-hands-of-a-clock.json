@@ -1,0 +1,13 @@
+{
+  "number": "1344",
+  "title_cn": "时钟指针的夹角",
+  "title_en": "Angle Between Hands of a Clock",
+  "slug": "angle-between-hands-of-a-clock",
+  "difficulty": "Medium",
+  "description": "给你两个数&nbsp;hour&nbsp;和&nbsp;minutes&nbsp;。请你返回在时钟上，由给定时间的时针和分针组成的较小角的角度（60 单位制）。\n\n&nbsp;\n\n示例 1：\n\n输入：hour = 12, minutes = 30\n输出：165\n\n示例 2：\n\n输入：hour = 3, minutes = 30\n输出；75\n\n示例 3：\n\n输入：hour = 3, minutes = 15\n输出：7.5\n\n示例 4：\n\n输入：hour = 4, minutes = 50\n输出：155\n\n示例 5：\n\n输入：hour = 12, minutes = 0\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= hour <= 12\n\t0 <= minutes <= 59\n\t与标准答案误差在&nbsp;10^-5&nbsp;以内的结果都被视为正确结果。",
+  "constraints": [
+    "1 <= hour <= 12",
+    "0 <= minutes <= 59",
+    "与标准答案误差在&nbsp;10^-5&nbsp;以内的结果都被视为正确结果。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "312",
+  "title_cn": "戳气球",
+  "title_en": "Burst Balloons",
+  "slug": "burst-balloons",
+  "difficulty": "Hard",
+  "description": "有 n 个气球，编号为0 到 n - 1，每个气球上都标有一个数字，这些数字存在数组&nbsp;nums&nbsp;中。\n\n现在要求你戳破所有的气球。戳破第 i 个气球，你可以获得&nbsp;nums[i - 1] * nums[i] * nums[i + 1] 枚硬币。&nbsp;这里的 i - 1 和 i + 1 代表和&nbsp;i&nbsp;相邻的两个气球的序号。如果 i - 1或 i + 1 超出了数组的边界，那么就当它是一个数字为 1 的气球。\n\n求所能获得硬币的最大数量。\n\n&nbsp;\n示例 1：\n\n输入：nums = [3,1,5,8]\n输出：167\n解释：\nnums = [3,1,5,8] --> [3,5,8] --> [3,8] --> [8] --> []\ncoins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167\n\n示例 2：\n\n输入：nums = [1,5]\n输出：10\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 300\n\t0 <= nums[i] <= 100",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 300",
+    "0 <= nums[i] <= 100"
+  ]
+}

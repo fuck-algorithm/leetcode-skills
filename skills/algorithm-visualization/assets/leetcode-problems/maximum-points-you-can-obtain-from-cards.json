@@ -1,0 +1,13 @@
+{
+  "number": "1423",
+  "title_cn": "可获得的最大点数",
+  "title_en": "Maximum Points You Can Obtain from Cards",
+  "slug": "maximum-points-you-can-obtain-from-cards",
+  "difficulty": "Medium",
+  "description": "几张卡牌 排成一行，每张卡牌都有一个对应的点数。点数由整数数组 cardPoints 给出。\n\n每次行动，你可以从行的开头或者末尾拿一张卡牌，最终你必须正好拿 k 张卡牌。\n\n你的点数就是你拿到手中的所有卡牌的点数之和。\n\n给你一个整数数组 cardPoints 和整数 k，请你返回可以获得的最大点数。\n\n&nbsp;\n\n示例 1：\n\n输入：cardPoints = [1,2,3,4,5,6,1], k = 3\n输出：12\n解释：第一次行动，不管拿哪张牌，你的点数总是 1 。但是，先拿最右边的卡牌将会最大化你的可获得点数。最优策略是拿右边的三张牌，最终点数为 1 + 6 + 5 = 12 。\n\n示例 2：\n\n输入：cardPoints = [2,2,2], k = 2\n输出：4\n解释：无论你拿起哪两张卡牌，可获得的点数总是 4 。\n\n示例 3：\n\n输入：cardPoints = [9,7,7,9,7,7,9], k = 7\n输出：55\n解释：你必须拿起所有卡牌，可以获得的点数为所有卡牌的点数之和。\n\n示例 4：\n\n输入：cardPoints = [1,1000,1], k = 1\n输出：1\n解释：你无法拿到中间那张卡牌，所以可以获得的最大点数为 1 。 \n\n示例 5：\n\n输入：cardPoints = [1,79,80,1,1,1,200,1], k = 3\n输出：202\n\n&nbsp;\n\n提示：\n\n\t1 <= cardPoints.length <= 10^5\n\t1 <= cardPoints[i] <= 10^4\n\t1 <= k <= cardPoints.length",
+  "constraints": [
+    "1 <= cardPoints.length <= 10^5",
+    "1 <= cardPoints[i] <= 10^4",
+    "1 <= k <= cardPoints.length"
+  ]
+}

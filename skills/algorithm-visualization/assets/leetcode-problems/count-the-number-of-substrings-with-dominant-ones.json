@@ -1,0 +1,12 @@
+{
+  "number": "3234",
+  "title_cn": "统计 1 显著的字符串的数量",
+  "title_en": "Count the Number of Substrings With Dominant Ones",
+  "slug": "count-the-number-of-substrings-with-dominant-ones",
+  "difficulty": "Medium",
+  "description": "给你一个二进制字符串 s。\n\n请你统计并返回其中 1 显著  的 子字符串 的数量。\n\n如果字符串中 1 的数量 大于或等于 0 的数量的 平方，则认为该字符串是一个 1 显著 的字符串 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"00011\"\n\n输出：5\n\n解释：\n\n1 显著的子字符串如下表所示。\n\n\t\t\ti\n\t\t\tj\n\t\t\ts[i..j]\n\t\t\t0 的数量\n\t\t\t1 的数量\n\n\t\t\t3\n\t\t\t3\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t4\n\t\t\t4\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t2\n\t\t\t3\n\t\t\t01\n\t\t\t1\n\t\t\t1\n\n\t\t\t3\n\t\t\t4\n\t\t\t11\n\t\t\t0\n\t\t\t2\n\n\t\t\t2\n\t\t\t4\n\t\t\t011\n\t\t\t1\n\t\t\t2\n\n示例 2：\n\n输入：s = \"101101\"\n\n输出：16\n\n解释：\n\n1 不显著的子字符串如下表所示。\n\n总共有 21 个子字符串，其中 5 个是 1 不显著字符串，因此有 16 个 1 显著子字符串。\n\n\t\t\ti\n\t\t\tj\n\t\t\ts[i..j]\n\t\t\t0 的数量\n\t\t\t1 的数量\n\n\t\t\t1\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\n\t\t\t4\n\t\t\t4\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\n\t\t\t1\n\t\t\t4\n\t\t\t0110\n\t\t\t2\n\t\t\t2\n\n\t\t\t0\n\t\t\t4\n\t\t\t10110\n\t\t\t2\n\t\t\t3\n\n\t\t\t1\n\t\t\t5\n\t\t\t01101\n\t\t\t2\n\t\t\t3\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 4 * 104\n\ts 仅包含字符 '0' 和 '1'。",
+  "constraints": [
+    "1 <= s.length <= 4 * 104",
+    "s 仅包含字符 '0' 和 '1'。"
+  ]
+}

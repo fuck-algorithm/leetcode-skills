@@ -1,0 +1,14 @@
+{
+  "number": "3048",
+  "title_cn": "标记所有下标的最早秒数 I",
+  "title_en": "Earliest Second to Mark Indices I",
+  "slug": "earliest-second-to-mark-indices-i",
+  "difficulty": "Medium",
+  "description": "给你两个下标从 1&nbsp;开始的整数数组&nbsp;nums 和&nbsp;changeIndices&nbsp;，数组的长度分别为&nbsp;n 和&nbsp;m&nbsp;。\n\n一开始，nums&nbsp;中所有下标都是未标记的，你的任务是标记 nums&nbsp;中 所有&nbsp;下标。\n\n从第 1&nbsp;秒到第 m&nbsp;秒（包括&nbsp;第&nbsp;m&nbsp;秒），对于每一秒 s&nbsp;，你可以执行以下操作 之一&nbsp;：\n\n\t选择范围&nbsp;[1, n]&nbsp;中的一个下标 i&nbsp;，并且将&nbsp;nums[i] 减少&nbsp;1&nbsp;。\n\t如果&nbsp;nums[changeIndices[s]]&nbsp;等于&nbsp;0&nbsp;，标记&nbsp;下标&nbsp;changeIndices[s]&nbsp;。\n\t什么也不做。\n\n请你返回范围 [1, m]&nbsp;中的一个整数，表示最优操作下，标记&nbsp;nums&nbsp;中 所有&nbsp;下标的 最早秒数&nbsp;，如果无法标记所有下标，返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,2,0], changeIndices = [2,2,2,2,3,2,2,1]\n输出：8\n解释：这个例子中，我们总共有 8 秒。按照以下操作标记所有下标：\n第 1 秒：选择下标 1 ，将 nums[1] 减少 1 。nums 变为 [1,2,0] 。\n第 2 秒：选择下标 1 ，将 nums[1] 减少 1 。nums 变为 [0,2,0] 。\n第 3 秒：选择下标 2 ，将 nums[2] 减少 1 。nums 变为 [0,1,0] 。\n第 4 秒：选择下标 2 ，将 nums[2] 减少 1 。nums 变为 [0,0,0] 。\n第 5 秒，标​​​​​记 changeIndices[5] ，也就是标记下标 3 ，因为 nums[3] 等于 0 。\n第 6 秒，标​​​​​记 changeIndices[6] ，也就是标记下标 2 ，因为 nums[2] 等于 0 。\n第 7 秒，什么也不做。\n第 8 秒，标记 changeIndices[8] ，也就是标记下标 1 ，因为 nums[1] 等于 0 。\n现在所有下标已被标记。\n最早可以在第 8 秒标记所有下标。\n所以答案是 8 。\n\n示例 2：\n\n输入：nums = [1,3], changeIndices = [1,1,1,2,1,1,1]\n输出：6\n解释：这个例子中，我们总共有 7 秒。按照以下操作标记所有下标：\n第 1 秒：选择下标 2 ，将 nums[2] 减少 1 。nums 变为 [1,2] 。\n第 2 秒：选择下标 2 ，将 nums[2] 减少 1 。nums 变为 [1,1] 。\n第 3 秒：选择下标 2 ，将 nums[2] 减少 1 。nums 变为 [1,0] 。\n第 4 秒：标​​​​​记 changeIndices[4] ，也就是标记下标 2 ，因为 nums[2] 等于 0 。\n第 5 秒：选择下标 1 ，将 nums[1] 减少 1 。nums 变为 [0,0] 。\n第 6 秒：标​​​​​记 changeIndices[6] ，也就是标记下标 1 ，因为 nums[1] 等于 0 。\n现在所有下标已被标记。\n最早可以在第 6 秒标记所有下标。\n所以答案是 6 。\n\n示例 3：\n\nInput: nums = [0,1], changeIndices = [2,2,2]\nOutput: -1\nExplanation: 这个例子中，无法标记所有下标，因为下标 1 不在 changeIndices 中。\n所以答案是 -1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 2000\n\t0 <= nums[i] <= 109\n\t1 <= m == changeIndices.length <= 2000\n\t1 <= changeIndices[i] <= n",
+  "constraints": [
+    "1 <= n == nums.length <= 2000",
+    "0 <= nums[i] <= 109",
+    "1 <= m == changeIndices.length <= 2000",
+    "1 <= changeIndices[i] <= n"
+  ]
+}

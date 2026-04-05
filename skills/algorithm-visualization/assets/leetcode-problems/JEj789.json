@@ -1,0 +1,15 @@
+{
+  "number": "LCR 091",
+  "title_cn": "粉刷房子",
+  "title_en": "粉刷房子",
+  "slug": "JEj789",
+  "difficulty": "Medium",
+  "description": "假如有一排房子，共 n 个，每个房子可以被粉刷成红色、蓝色或者绿色这三种颜色中的一种，你需要粉刷所有的房子并且使其相邻的两个房子颜色不能相同。\n\n当然，因为市场上不同颜色油漆的价格不同，所以房子粉刷成不同颜色的花费成本也是不同的。每个房子粉刷成不同颜色的花费是以一个&nbsp;n x 3&nbsp;的正整数矩阵 costs 来表示的。\n\n例如，costs[0][0] 表示第 0 号房子粉刷成红色的成本花费；costs[1][2]&nbsp;表示第 1 号房子粉刷成绿色的花费，以此类推。\n\n请计算出粉刷完所有房子最少的花费成本。\n\n&nbsp;\n\n示例 1：\n\n输入: costs = [[17,2,17],[16,16,5],[14,3,19]]\n输出: 10\n解释: 将 0 号房子粉刷成蓝色，1 号房子粉刷成绿色，2 号房子粉刷成蓝色。\n&nbsp;    最少花费: 2 + 5 + 3 = 10。\n\n示例 2：\n\n输入: costs = [[7,6,2]]\n输出: 2\n\n&nbsp;\n\n提示:\n\n\tcosts.length == n\n\tcosts[i].length == 3\n\t1 <= n <= 100\n\t1 <= costs[i][j] <= 20\n\n&nbsp;\n\n注意：本题与主站 256&nbsp;题相同：https://leetcode.cn/problems/paint-house/",
+  "constraints": [
+    "costs.length == n",
+    "costs[i].length == 3",
+    "1 <= n <= 100",
+    "1 <= costs[i][j] <= 20",
+    "注意：本题与主站 256&nbsp;题相同：https://leetcode.cn/problems/paint-house/"
+  ]
+}

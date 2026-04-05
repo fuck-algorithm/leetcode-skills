@@ -1,0 +1,12 @@
+{
+  "number": "LCR 152",
+  "title_cn": "验证二叉搜索树的后序遍历序列",
+  "title_en": "验证二叉搜索树的后序遍历序列",
+  "slug": "er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof",
+  "difficulty": "Medium",
+  "description": "请实现一个函数来判断整数数组 postorder 是否为二叉搜索树的后序遍历结果。\n\n&nbsp;\n\n示例 1：\n\n输入: postorder = [4,9,6,5,8]\n输出: false \n解释：从上图可以看出这不是一颗二叉搜索树\n\n示例 2：\n\n输入: postorder = [4,6,5,9,8]\n输出: true \n解释：可构建的二叉搜索树如上图\n\n&nbsp;\n\n提示：\n\n\t数组长度 <= 1000\n\tpostorder 中无重复数字\n\n&nbsp;",
+  "constraints": [
+    "数组长度 <= 1000",
+    "postorder 中无重复数字"
+  ]
+}

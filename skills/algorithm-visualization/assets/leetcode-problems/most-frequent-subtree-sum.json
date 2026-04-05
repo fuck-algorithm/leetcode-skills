@@ -1,0 +1,12 @@
+{
+  "number": "508",
+  "title_cn": "出现次数最多的子树元素和",
+  "title_en": "Most Frequent Subtree Sum",
+  "slug": "most-frequent-subtree-sum",
+  "difficulty": "Medium",
+  "description": "给你一个二叉树的根结点&nbsp;root&nbsp;，请返回出现次数最多的子树元素和。如果有多个元素出现的次数相同，返回所有出现次数最多的子树元素和（不限顺序）。\n\n一个结点的&nbsp;「子树元素和」&nbsp;定义为以该结点为根的二叉树上所有结点的元素之和（包括结点本身）。\n\n&nbsp;\n\n示例 1：\n\n输入: root = [5,2,-3]\n输出: [2,-3,4]\n\n示例&nbsp;2：\n\n输入: root = [5,2,-5]\n输出: [2]\n\n&nbsp;\n\n提示:\n\n\t节点数在&nbsp;[1, 104]&nbsp;范围内\n\t-105&nbsp;<= Node.val <= 105",
+  "constraints": [
+    "节点数在&nbsp;[1, 104]&nbsp;范围内",
+    "-105&nbsp;<= Node.val <= 105"
+  ]
+}

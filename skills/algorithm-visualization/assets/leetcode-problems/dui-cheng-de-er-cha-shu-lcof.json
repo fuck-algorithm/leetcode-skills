@@ -1,0 +1,12 @@
+{
+  "number": "LCR 145",
+  "title_cn": "判断对称二叉树",
+  "title_en": "判断对称二叉树",
+  "slug": "dui-cheng-de-er-cha-shu-lcof",
+  "difficulty": "Easy",
+  "description": "请设计一个函数判断一棵二叉树是否 轴对称 。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [6,7,7,8,9,9,8]\n输出：true\n解释：从图中可看出树是轴对称的。\n\n示例 2：\n\n输入：root = [1,2,2,null,3,null,3]\n输出：false\n解释：从图中可看出最后一层的节点不对称。\n\n&nbsp;\n\n提示：\n\n0 <= 节点个数 <= 1000\n\n注意：本题与主站 101 题相同：https://leetcode.cn/problems/symmetric-tree/\n\n&nbsp;",
+  "constraints": [
+    "0 <= 节点个数 <= 1000",
+    "注意：本题与主站 101 题相同：https://leetcode.cn/problems/symmetric-tree/"
+  ]
+}

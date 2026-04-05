@@ -1,0 +1,9 @@
+{
+  "number": "面试题 10.02",
+  "title_cn": "变位词组",
+  "title_en": "Group Anagrams LCCI",
+  "slug": "group-anagrams-lcci",
+  "difficulty": "Medium",
+  "description": "编写一种方法，对字符串数组进行排序，将所有变位词组合在一起。变位词是指字母相同，但排列不同的字符串。\n\n注意：本题相对原题稍作修改\n\n示例：\n\n输入：[\"eat\", \"tea\", \"tan\", \"ate\", \"nat\", \"bat\"],\n输出：\n[\n  [\"ate\",\"eat\",\"tea\"],\n  [\"nat\",\"tan\"],\n  [\"bat\"]\n]\n\n说明：\n\n\t所有输入均为小写字母。\n\t不考虑答案输出的顺序。",
+  "constraints": []
+}

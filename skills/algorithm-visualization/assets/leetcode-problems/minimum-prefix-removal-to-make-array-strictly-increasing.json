@@ -1,0 +1,12 @@
+{
+  "number": "3818",
+  "title_cn": "移除前缀使数组严格递增",
+  "title_en": "Minimum Prefix Removal to Make Array Strictly Increasing",
+  "slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。\n\n你需要从 nums 中&nbsp;恰好&nbsp;移除一个前缀（可以为空）。\n\n返回一个整数，表示被移除的前缀的&nbsp;最小&nbsp;长度，使得剩余的数组 严格递增&nbsp;。\n\n数组的&nbsp;前缀&nbsp;是从数组的起始位置开始，一直延伸到任意位置的子数组。\n\n如果一个数组的每个元素都严格大于它的前一个元素（若存在），则称该数组&nbsp;严格递增&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,-1,2,3,3,4,5]\n\n输出： 4\n\n解释：\n\n移除前缀 prefix = [1, -1, 2, 3] 后，剩余数组为 [3, 4, 5]，严格递增。\n\n示例 2：\n\n输入： nums = [4,3,-2,-5]\n\n输出： 3\n\n解释：\n\n移除前缀 prefix = [4, 3, -2] 后，剩余数组为 [-5]，严格递增。\n\n示例 3：\n\n输入： nums = [1,2,3,4]\n\n输出： 0\n\n解释：\n\n数组 nums = [1, 2, 3, 4] 已经是严格递增的，因此移除空前缀即可。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-109 <= nums[i] <= 109​​​​​​​",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109​​​​​​​"
+  ]
+}

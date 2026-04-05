@@ -1,0 +1,13 @@
+{
+  "number": "43",
+  "title_cn": "字符串相乘",
+  "title_en": "Multiply Strings",
+  "slug": "multiply-strings",
+  "difficulty": "Medium",
+  "description": "给定两个以字符串形式表示的非负整数&nbsp;num1&nbsp;和&nbsp;num2，返回&nbsp;num1&nbsp;和&nbsp;num2&nbsp;的乘积，它们的乘积也表示为字符串形式。\n\n注意：不能使用任何内置的 BigInteger 库或直接将输入转换为整数。\n\n&nbsp;\n\n示例 1:\n\n输入: num1 = \"2\", num2 = \"3\"\n输出: \"6\"\n\n示例&nbsp;2:\n\n输入: num1 = \"123\", num2 = \"456\"\n输出: \"56088\"\n\n&nbsp;\n\n提示：\n\n\t1 <= num1.length, num2.length <= 200\n\tnum1&nbsp;和 num2&nbsp;只能由数字组成。\n\tnum1&nbsp;和 num2&nbsp;都不包含任何前导零，除了数字0本身。",
+  "constraints": [
+    "1 <= num1.length, num2.length <= 200",
+    "num1&nbsp;和 num2&nbsp;只能由数字组成。",
+    "num1&nbsp;和 num2&nbsp;都不包含任何前导零，除了数字0本身。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "942",
+  "title_cn": "增减字符串匹配",
+  "title_en": "DI String Match",
+  "slug": "di-string-match",
+  "difficulty": "Easy",
+  "description": "由范围 [0,n] 内所有整数组成的 n + 1 个整数的排列序列可以表示为长度为 n 的字符串 s ，其中:\n\n\t如果&nbsp;perm[i] < perm[i + 1]&nbsp;，那么&nbsp;s[i] == 'I'&nbsp;\n\t如果&nbsp;perm[i] > perm[i + 1]&nbsp;，那么 s[i] == 'D'&nbsp;\n\n给定一个字符串 s ，重构排列&nbsp;perm 并返回它。如果有多个有效排列perm，则返回其中 任何一个 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"IDID\"\n输出：[0,4,1,3,2]\n\n示例 2：\n\n输入：s = \"III\"\n输出：[0,1,2,3]\n\n示例 3：\n\n输入：s = \"DDI\"\n输出：[3,2,0,1]\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 只包含字符&nbsp;\"I\"&nbsp;或&nbsp;\"D\"",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 只包含字符&nbsp;\"I\"&nbsp;或&nbsp;\"D\""
+  ]
+}

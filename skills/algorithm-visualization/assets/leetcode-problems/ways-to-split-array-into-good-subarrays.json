@@ -1,0 +1,12 @@
+{
+  "number": "2750",
+  "title_cn": "将数组划分成若干好子数组的方式",
+  "title_en": "Ways to Split Array Into Good Subarrays",
+  "slug": "ways-to-split-array-into-good-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个二元数组 nums 。\n\n如果数组中的某个子数组 恰好 只存在 一 个值为 1 的元素，则认为该子数组是一个 好子数组 。\n\n请你统计将数组 nums 划分成若干 好子数组 的方法数，并以整数形式返回。由于数字可能很大，返回其对 109 + 7 取余 之后的结果。\n\n子数组是数组中的一个连续 非空 元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,1,0,0,1]\n输出：3\n解释：存在 3 种可以将 nums 划分成若干好子数组的方式：\n- [0,1] [0,0,1]\n- [0,1,0] [0,1]\n- [0,1,0,0] [1]\n\n示例 2：\n\n输入：nums = [0,1,0]\n输出：1\n解释：存在 1 种可以将 nums 划分成若干好子数组的方式：\n- [0,1,0]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 1",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 1"
+  ]
+}

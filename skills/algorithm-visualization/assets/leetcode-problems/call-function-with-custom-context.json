@@ -1,0 +1,13 @@
+{
+  "number": "2693",
+  "title_cn": "使用自定义上下文调用函数",
+  "title_en": "Call Function with Custom Context",
+  "slug": "call-function-with-custom-context",
+  "difficulty": "Medium",
+  "description": "增强所有函数，使其具有&nbsp;callPolyfill&nbsp;方法。该方法接受一个对象&nbsp;obj&nbsp;作为第一个参数，以及任意数量的附加参数。obj&nbsp;成为函数的&nbsp;this&nbsp;上下文。附加参数将传递给该函数（即&nbsp;callPolyfill&nbsp;方法所属的函数）。\n\n例如，如果有以下函数：\n\nfunction tax(price, taxRate) {\n  const totalCost = price * (1 + taxRate);\n&nbsp; console.log(`The cost of ${this.item} is ${totalCost}`);\n}\n\n调用&nbsp;tax(10, 0.1)&nbsp;将输出&nbsp;\"The cost of undefined is 11\"&nbsp;。这是因为&nbsp;this&nbsp;上下文未定义。\n\n然而，调用&nbsp;tax.callPolyfill({item: \"salad\"}, 10, 0.1)&nbsp;将输出&nbsp;\"The cost of salad is 11\"&nbsp;。this&nbsp;上下文被正确设置，函数输出了适当的结果。\n\n请在不使用内置的&nbsp;Function.call&nbsp;方法的情况下解决这个问题。\n\n&nbsp;\n\n示例 1：\n\n输入：\nfn = function add(b) {\n  return this.a + b;\n}\nargs = [{\"a\": 5}, 7]\n输出：12\n解释：\nfn.callPolyfill({\"a\": 5}, 7); // 12\ncallPolyfill 将 \"this\" 上下文设置为 {\"a\": 5} ，并将 7 作为参数传递。\n\n示例 2：\n\n输入：\nfn = function tax(price, taxRate) { \n&nbsp;return `The cost of the ${this.item} is ${price * taxRate}`; \n}\nargs = [{\"item\": \"burger\"}, 10, 1,1]\n输出：\"The cost of the burger is 11\"\n解释：callPolyfill 将 \"this\" 上下文设置为 {\"item\": \"burger\"} ，并将 10 和 1.1 作为附加参数传递。\n\n&nbsp;\n\n提示：\n\n\ttypeof args[0] == 'object' and args[0] != null\n\t1 <= args.length <= 100\n\t2 <= JSON.stringify(args[0]).length <= 105",
+  "constraints": [
+    "typeof args[0] == 'object' and args[0] != null",
+    "1 <= args.length <= 100",
+    "2 <= JSON.stringify(args[0]).length <= 105"
+  ]
+}

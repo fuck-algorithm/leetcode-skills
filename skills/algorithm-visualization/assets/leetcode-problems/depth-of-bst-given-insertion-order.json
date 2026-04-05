@@ -1,0 +1,9 @@
+{
+  "number": "1902",
+  "title_cn": "给定二叉搜索树的插入顺序求深度",
+  "title_en": "Depth of BST Given Insertion Order",
+  "slug": "depth-of-bst-given-insertion-order",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

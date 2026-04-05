@@ -1,0 +1,16 @@
+{
+  "number": "3530",
+  "title_cn": "有向无环图中合法拓扑排序的最大利润",
+  "title_en": "Maximum Profit from Valid Topological Order in DAG",
+  "slug": "maximum-profit-from-valid-topological-order-in-dag",
+  "difficulty": "Hard",
+  "description": "给你一个由 n 个节点组成的有向无环图（DAG），节点编号从 0 到 n - 1，通过二维数组 edges 表示，其中 edges[i] = [ui, vi] 表示一条从节点 ui 指向节点 vi 的有向边。每个节点都有一个对应的&nbsp;得分&nbsp;，由数组 score 给出，其中 score[i] 表示节点 i 的得分。\n\n你需要以&nbsp;有效的拓扑排序&nbsp;顺序处理这些节点。每个节点在处理顺序中被分配一个编号从 1 开始的位置。\n\n将每个节点的得分乘以其在拓扑排序中的位置，然后求和，得到的值称为&nbsp;利润。\n\n请返回在所有合法拓扑排序中可获得的&nbsp;最大利润&nbsp;。\n\n拓扑排序&nbsp;是一个对 DAG 中所有节点的线性排序，使得每条有向边 u → v 中，节点 u 都出现在 v 之前。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 2, edges = [[0,1]], score = [2,3]\n\n输出： 8\n\n解释：\n\n节点 1 依赖于节点 0，因此一个合法顺序是 [0, 1]。\n\n\t\t\t节点\n\t\t\t处理顺序\n\t\t\t得分\n\t\t\t乘数\n\t\t\t利润计算\n\n\t\t\t0\n\t\t\t第 1 个\n\t\t\t2\n\t\t\t1\n\t\t\t2 × 1 = 2\n\n\t\t\t1\n\t\t\t第 2 个\n\t\t\t3\n\t\t\t2\n\t\t\t3 × 2 = 6\n\n所有合法拓扑排序中可获得的最大总利润是 2 + 6 = 8。\n\n示例 2：\n\n输入： n = 3, edges = [[0,1],[0,2]], score = [1,6,3]\n\n输出： 25\n\n解释：\n\n节点 1 和 2 都依赖于节点 0，因此最优的合法顺序是 [0, 2, 1]。\n\n\t\t\t节点\n\t\t\t处理顺序\n\t\t\t得分\n\t\t\t乘数\n\t\t\t利润计算\n\n\t\t\t0\n\t\t\t第 1 个\n\t\t\t1\n\t\t\t1\n\t\t\t1 × 1 = 1\n\n\t\t\t2\n\t\t\t第 2 个\n\t\t\t3\n\t\t\t2\n\t\t\t3 × 2 = 6\n\n\t\t\t1\n\t\t\t第 3 个\n\t\t\t6\n\t\t\t3\n\t\t\t6 × 3 = 18\n\n所有合法拓扑排序中可获得的最大总利润是 1 + 6 + 18 = 25。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == score.length <= 22\n\t1 <= score[i] <= 105\n\t0 <= edges.length <= n * (n - 1) / 2\n\tedges[i] == [ui, vi] 表示一条从 ui 到 vi 的有向边。\n\t0 <= ui, vi < n\n\tui != vi\n\t输入图&nbsp;保证&nbsp;是一个 DAG。\n\t不存在重复的边。",
+  "constraints": [
+    "1 <= n == score.length <= 22",
+    "1 <= score[i] <= 105",
+    "0 <= edges.length <= n * (n - 1) / 2",
+    "edges[i] == [ui, vi] 表示一条从 ui 到 vi 的有向边。",
+    "0 <= ui, vi < n",
+    "ui != vi"
+  ]
+}

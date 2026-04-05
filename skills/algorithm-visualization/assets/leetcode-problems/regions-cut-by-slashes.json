@@ -1,0 +1,13 @@
+{
+  "number": "959",
+  "title_cn": "由斜杠划分区域",
+  "title_en": "Regions Cut By Slashes",
+  "slug": "regions-cut-by-slashes",
+  "difficulty": "Medium",
+  "description": "在由 1 x 1 方格组成的 n&nbsp;x n&nbsp;网格&nbsp;grid 中，每个 1 x 1&nbsp;方块由 '/'、'\\' 或空格构成。这些字符会将方块划分为一些共边的区域。\n\n给定网格&nbsp;grid&nbsp;表示为一个字符串数组，返回 区域的数量 。\n\n请注意，反斜杠字符是转义的，因此&nbsp;'\\' 用 '\\\\'&nbsp;表示。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [\" /\",\"/ \"]\n输出：2\n\n示例 2：\n\n输入：grid = [\" /\",\"  \"]\n输出：1\n\n示例 3：\n\n输入：grid = [\"/\\\\\",\"\\\\/\"]\n输出：5\n解释：回想一下，因为 \\ 字符是转义的，所以 \"/\\\\\" 表示 /\\，而 \"\\\\/\" 表示 \\/。\n\n&nbsp;\n\n提示：\n\n\tn == grid.length == grid[i].length\n\t1 <= n <= 30\n\tgrid[i][j] 是&nbsp;'/'、'\\'、或&nbsp;' '",
+  "constraints": [
+    "n == grid.length == grid[i].length",
+    "1 <= n <= 30",
+    "grid[i][j] 是&nbsp;'/'、'\\'、或&nbsp;' '"
+  ]
+}

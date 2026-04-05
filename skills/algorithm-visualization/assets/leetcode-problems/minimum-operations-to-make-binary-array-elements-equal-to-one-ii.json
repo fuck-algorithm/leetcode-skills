@@ -1,0 +1,12 @@
+{
+  "number": "3192",
+  "title_cn": "使二进制数组全部等于 1 的最少操作次数 II",
+  "title_en": "Minimum Operations to Make Binary Array Elements Equal to One II",
+  "slug": "minimum-operations-to-make-binary-array-elements-equal-to-one-ii",
+  "difficulty": "Medium",
+  "description": "给你一个二进制数组&nbsp;nums&nbsp;。\n\n你可以对数组执行以下操作&nbsp;任意&nbsp;次（也可以 0 次）：\n\n\t选择数组中 任意&nbsp;一个下标 i&nbsp;，并将从下标 i&nbsp;开始一直到数组末尾 所有&nbsp;元素 反转&nbsp;。\n\n反转&nbsp;一个元素指的是将它的值从 0 变 1 ，或者从 1 变 0 。\n\n请你返回将 nums&nbsp;中所有元素变为 1 的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,1,1,0,1]\n\n输出：4\n\n解释：\n我们可以执行以下操作：\n\n\t选择下标&nbsp;i = 1&nbsp;执行操作，得到&nbsp;nums = [0,0,0,1,0]&nbsp;。\n\t选择下标&nbsp;i = 0&nbsp;执行操作，得到&nbsp;nums = [1,1,1,0,1]&nbsp;。\n\t选择下标&nbsp;i = 4&nbsp;执行操作，得到&nbsp;nums = [1,1,1,0,0]&nbsp;。\n\t选择下标&nbsp;i = 3&nbsp;执行操作，得到&nbsp;nums = [1,1,1,1,1]&nbsp;。\n\n示例 2：\n\n输入：nums = [1,0,0,0]\n\n输出：1\n\n解释：\n我们可以执行以下操作：\n\n\t选择下标&nbsp;i = 1&nbsp;执行操作，得到&nbsp;nums = [1,1,1,1]&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 1",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 1"
+  ]
+}

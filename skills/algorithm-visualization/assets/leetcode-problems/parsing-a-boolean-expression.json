@@ -1,0 +1,12 @@
+{
+  "number": "1106",
+  "title_cn": "解析布尔表达式",
+  "title_en": "Parsing A Boolean Expression",
+  "slug": "parsing-a-boolean-expression",
+  "difficulty": "Hard",
+  "description": "布尔表达式 是计算结果不是 true 就是 false 的表达式。有效的表达式需遵循以下约定：\n\n\t't'，运算结果为 true\n\t'f'，运算结果为 false\n\t'!(subExpr)'，运算过程为对内部表达式 subExpr 进行 逻辑非（NOT）运算\n\t'&(subExpr1, subExpr2, ..., subExprn)'，运算过程为对 2 个或以上内部表达式 subExpr1, subExpr2, ..., subExprn 进行 逻辑与（AND）运算\n\t'|(subExpr1, subExpr2, ..., subExprn)'，运算过程为对 2 个或以上内部表达式 subExpr1, subExpr2, ..., subExprn 进行 逻辑或（OR）运算\n\n给你一个以字符串形式表述的&nbsp;布尔表达式 expression，返回该式的运算结果。\n\n题目测试用例所给出的表达式均为有效的布尔表达式，遵循上述约定。\n\n&nbsp;\n\n示例 1：\n\n输入：expression = \"&(|(f))\"\n输出：false\n解释：\n首先，计算 |(f) --> f ，表达式变为 \"&(f)\" 。\n接着，计算 &(f) --> f ，表达式变为 \"f\" 。\n最后，返回 false 。\n\n示例 2：\n\n输入：expression = \"|(f,f,f,t)\"\n输出：true\n解释：计算 (false OR false OR false OR true) ，结果为 true 。\n\n示例 3：\n\n输入：expression = \"!(&(f,t))\"\n输出：true\n解释：\n首先，计算 &(f,t) --> (false AND true) --> false --> f ，表达式变为 \"!(f)\" 。\n接着，计算 !(f) --> NOT false --> true ，返回 true 。\n\n&nbsp;\n\n提示：\n\n\t1 <= expression.length <= 2 * 104\n\texpression[i] 为 '('、')'、'&'、'|'、'!'、't'、'f' 和 ',' 之一",
+  "constraints": [
+    "1 <= expression.length <= 2 * 104",
+    "expression[i] 为 '('、')'、'&'、'|'、'!'、't'、'f' 和 ',' 之一"
+  ]
+}

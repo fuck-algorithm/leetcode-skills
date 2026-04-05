@@ -1,0 +1,11 @@
+{
+  "number": "343",
+  "title_cn": "整数拆分",
+  "title_en": "Integer Break",
+  "slug": "integer-break",
+  "difficulty": "Medium",
+  "description": "给定一个正整数&nbsp;n&nbsp;，将其拆分为 k 个 正整数 的和（&nbsp;k >= 2&nbsp;），并使这些整数的乘积最大化。\n\n返回 你可以获得的最大乘积&nbsp;。\n\n&nbsp;\n\n示例 1:\n\n输入: n = 2\n输出: 1\n解释: 2 = 1 + 1, 1 × 1 = 1。\n\n示例&nbsp;2:\n\n输入: n = 10\n输出: 36\n解释: 10 = 3 + 3 + 4, 3 ×&nbsp;3 ×&nbsp;4 = 36。\n\n&nbsp;\n\n提示:\n\n\t2 <= n <= 58",
+  "constraints": [
+    "2 <= n <= 58"
+  ]
+}

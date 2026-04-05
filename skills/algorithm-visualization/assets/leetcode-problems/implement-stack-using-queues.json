@@ -1,0 +1,13 @@
+{
+  "number": "225",
+  "title_cn": "用队列实现栈",
+  "title_en": "Implement Stack using Queues",
+  "slug": "implement-stack-using-queues",
+  "difficulty": "Easy",
+  "description": "请你仅使用两个队列实现一个后入先出（LIFO）的栈，并支持普通栈的全部四种操作（push、top、pop 和 empty）。\n\n实现 MyStack 类：\n\n\tvoid push(int x) 将元素 x 压入栈顶。\n\tint pop() 移除并返回栈顶元素。\n\tint top() 返回栈顶元素。\n\tboolean empty() 如果栈是空的，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n注意：\n\n\t你只能使用队列的标准操作 —— 也就是&nbsp;push to back、peek/pop from front、size 和&nbsp;is empty&nbsp;这些操作。\n\t你所使用的语言也许不支持队列。&nbsp;你可以使用 list （列表）或者 deque（双端队列）来模拟一个队列&nbsp;, 只要是标准的队列操作即可。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"MyStack\", \"push\", \"push\", \"top\", \"pop\", \"empty\"]\n[[], [1], [2], [], [], []]\n输出：\n[null, null, null, 2, 2, false]\n\n解释：\nMyStack myStack = new MyStack();\nmyStack.push(1);\nmyStack.push(2);\nmyStack.top(); // 返回 2\nmyStack.pop(); // 返回 2\nmyStack.empty(); // 返回 False\n\n&nbsp;\n\n提示：\n\n\t1 <= x <= 9\n\t最多调用100 次 push、pop、top 和 empty\n\t每次调用 pop 和 top 都保证栈不为空\n\n&nbsp;\n\n进阶：你能否仅用一个队列来实现栈。",
+  "constraints": [
+    "1 <= x <= 9",
+    "最多调用100 次 push、pop、top 和 empty",
+    "每次调用 pop 和 top 都保证栈不为空"
+  ]
+}

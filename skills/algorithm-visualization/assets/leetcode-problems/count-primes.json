@@ -1,0 +1,11 @@
+{
+  "number": "204",
+  "title_cn": "计数质数",
+  "title_en": "Count Primes",
+  "slug": "count-primes",
+  "difficulty": "Medium",
+  "description": "给定整数 n ，返回 所有小于非负整数&nbsp;n&nbsp;的质数的数量 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 10\n输出：4\n解释：小于 10 的质数一共有 4 个, 它们是 2, 3, 5, 7 。\n\n示例 2：\n\n输入：n = 0\n输出：0\n\n示例 3：\n\n输入：n = 1\n输出：0\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 5 * 106",
+  "constraints": [
+    "0 <= n <= 5 * 106"
+  ]
+}

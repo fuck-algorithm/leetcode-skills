@@ -1,0 +1,12 @@
+{
+  "number": "2827",
+  "title_cn": "范围中美丽整数的数目",
+  "title_en": "Number of Beautiful Integers in the Range",
+  "slug": "number-of-beautiful-integers-in-the-range",
+  "difficulty": "Hard",
+  "description": "给你正整数&nbsp;low&nbsp;，high&nbsp;和&nbsp;k&nbsp;。\n\n如果一个数满足以下两个条件，那么它是 美丽的&nbsp;：\n\n\t偶数数位的数目与奇数数位的数目相同。\n\t这个整数可以被&nbsp;k&nbsp;整除。\n\n请你返回范围&nbsp;[low, high]&nbsp;中美丽整数的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：low = 10, high = 20, k = 3\n输出：2\n解释：给定范围中有 2 个美丽数字：[12,18]\n- 12 是美丽整数，因为它有 1 个奇数数位和 1 个偶数数位，而且可以被 k = 3 整除。\n- 18 是美丽整数，因为它有 1 个奇数数位和 1 个偶数数位，而且可以被 k = 3 整除。\n以下是一些不是美丽整数的例子：\n- 16 不是美丽整数，因为它不能被 k = 3 整除。\n- 15 不是美丽整数，因为它的奇数数位和偶数数位的数目不相等。\n给定范围内总共有 2 个美丽整数。\n\n示例 2：\n\n输入：low = 1, high = 10, k = 1\n输出：1\n解释：给定范围中有 1 个美丽数字：[10]\n- 10 是美丽整数，因为它有 1 个奇数数位和 1 个偶数数位，而且可以被 k = 1 整除。\n给定范围内总共有 1 个美丽整数。\n\n示例 3：\n\n输入：low = 5, high = 5, k = 2\n输出：0\n解释：给定范围中有 0 个美丽数字。\n- 5 不是美丽整数，因为它的奇数数位和偶数数位的数目不相等。\n\n&nbsp;\n\n提示：\n\n\t0 < low <= high <= 109\n\t0 < k <= 20",
+  "constraints": [
+    "0 < low <= high <= 109",
+    "0 < k <= 20"
+  ]
+}

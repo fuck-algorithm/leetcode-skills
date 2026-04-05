@@ -1,0 +1,9 @@
+{
+  "number": "面试题 04.05",
+  "title_cn": "合法二叉搜索树",
+  "title_en": "Legal Binary Search Tree LCCI",
+  "slug": "legal-binary-search-tree-lcci",
+  "difficulty": "Medium",
+  "description": "实现一个函数，检查一棵二叉树是否为二叉搜索树。\n示例 1：\n\n输入：\n    2\n   / \\\n  1   3\n输出：true\n\n示例 2：\n\n输入：\n    5\n   / \\\n  1   4\n&nbsp;    / \\\n&nbsp;   3   6\n输出：false\n解释：输入为: [5,1,4,null,null,3,6]。\n&nbsp;    根节点的值为 5 ，但是其右子节点值为 4 。",
+  "constraints": []
+}

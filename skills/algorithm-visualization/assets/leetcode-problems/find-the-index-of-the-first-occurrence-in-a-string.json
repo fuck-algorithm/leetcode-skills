@@ -1,0 +1,12 @@
+{
+  "number": "28",
+  "title_cn": "找出字符串中第一个匹配项的下标",
+  "title_en": "Find the Index of the First Occurrence in a String",
+  "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+  "difficulty": "Easy",
+  "description": "给你两个字符串&nbsp;haystack 和 needle ，请你在 haystack 字符串中找出 needle 字符串的第一个匹配项的下标（下标从 0 开始）。如果&nbsp;needle 不是 haystack 的一部分，则返回&nbsp; -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：haystack = \"sadbutsad\", needle = \"sad\"\n输出：0\n解释：\"sad\" 在下标 0 和 6 处匹配。\n第一个匹配项的下标是 0 ，所以返回 0 。\n\n示例 2：\n\n输入：haystack = \"leetcode\", needle = \"leeto\"\n输出：-1\n解释：\"leeto\" 没有在 \"leetcode\" 中出现，所以返回 -1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= haystack.length, needle.length <= 104\n\thaystack 和 needle 仅由小写英文字符组成",
+  "constraints": [
+    "1 <= haystack.length, needle.length <= 104",
+    "haystack 和 needle 仅由小写英文字符组成"
+  ]
+}

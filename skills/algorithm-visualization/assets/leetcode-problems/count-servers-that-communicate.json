@@ -1,0 +1,15 @@
+{
+  "number": "1267",
+  "title_cn": "统计参与通信的服务器",
+  "title_en": "Count Servers that Communicate",
+  "slug": "count-servers-that-communicate",
+  "difficulty": "Medium",
+  "description": "这里有一幅服务器分布图，服务器的位置标识在&nbsp;m * n&nbsp;的整数矩阵网格&nbsp;grid&nbsp;中，1 表示单元格上有服务器，0 表示没有。\n\n如果两台服务器位于同一行或者同一列，我们就认为它们之间可以进行通信。\n\n请你统计并返回能够与至少一台其他服务器进行通信的服务器的数量。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,0],[0,1]]\n输出：0\n解释：没有一台服务器能与其他服务器进行通信。\n\n示例 2：\n\n输入：grid = [[1,0],[1,1]]\n输出：3\n解释：所有这些服务器都至少可以与一台别的服务器进行通信。\n\n示例 3：\n\n输入：grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]\n输出：4\n解释：第一行的两台服务器互相通信，第三列的两台服务器互相通信，但右下角的服务器无法与其他服务器通信。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m <= 250\n\t1 <= n <= 250\n\tgrid[i][j] == 0 or 1",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m <= 250",
+    "1 <= n <= 250",
+    "grid[i][j] == 0 or 1"
+  ]
+}

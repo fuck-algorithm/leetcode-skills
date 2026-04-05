@@ -1,0 +1,14 @@
+{
+  "number": "1074",
+  "title_cn": "元素和为目标值的子矩阵数量",
+  "title_en": "Number of Submatrices That Sum to Target",
+  "slug": "number-of-submatrices-that-sum-to-target",
+  "difficulty": "Hard",
+  "description": "给出矩阵&nbsp;matrix&nbsp;和目标值&nbsp;target，返回元素总和等于目标值的非空子矩阵的数量。\n\n子矩阵&nbsp;x1, y1, x2, y2&nbsp;是满足 x1 <= x <= x2&nbsp;且&nbsp;y1 <= y <= y2&nbsp;的所有单元&nbsp;matrix[x][y]&nbsp;的集合。\n\n如果&nbsp;(x1, y1, x2, y2) 和&nbsp;(x1', y1', x2', y2')&nbsp;两个子矩阵中部分坐标不同（如：x1 != x1'），那么这两个子矩阵也不同。\n\n&nbsp;\n\n示例 1：\n\n输入：matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0\n输出：4\n解释：四个只含 0 的 1x1 子矩阵。\n\n示例 2：\n\n输入：matrix = [[1,-1],[-1,1]], target = 0\n输出：5\n解释：两个 1x2 子矩阵，加上两个 2x1 子矩阵，再加上一个 2x2 子矩阵。\n\n示例 3：\n\n输入：matrix = [[904]], target = 0\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= matrix.length <= 100\n\t1 <= matrix[0].length <= 100\n\t-1000 <= matrix[i][j] <= 1000\n\t-10^8 <= target <= 10^8",
+  "constraints": [
+    "1 <= matrix.length <= 100",
+    "1 <= matrix[0].length <= 100",
+    "-1000 <= matrix[i][j] <= 1000",
+    "-10^8 <= target <= 10^8"
+  ]
+}

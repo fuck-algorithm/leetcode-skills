@@ -1,0 +1,13 @@
+{
+  "number": "1039",
+  "title_cn": "多边形三角剖分的最低得分",
+  "title_en": "Minimum Score Triangulation of Polygon",
+  "slug": "minimum-score-triangulation-of-polygon",
+  "difficulty": "Medium",
+  "description": "你有一个凸的&nbsp;n&nbsp;边形，其每个顶点都有一个整数值。给定一个整数数组&nbsp;values&nbsp;，其中&nbsp;values[i]&nbsp;是按&nbsp;顺时针顺序&nbsp;第 i 个顶点的值。\n\n假设将多边形 剖分&nbsp;为 n - 2&nbsp;个三角形。对于每个三角形，该三角形的值是顶点标记的乘积，三角剖分的分数是进行三角剖分后所有 n - 2&nbsp;个三角形的值之和。\n\n返回 多边形进行三角剖分后可以得到的最低分 。\n&nbsp;\n\n示例 1：\n\n输入：values = [1,2,3]\n输出：6\n解释：多边形已经三角化，唯一三角形的分数为 6。\n\n示例 2：\n\n输入：values = [3,7,4,5]\n输出：144\n解释：有两种三角剖分，可能得分分别为：3*7*5 + 4*5*7 = 245，或 3*4*5 + 3*4*7 = 144。最低分数为 144。\n\n示例 3：\n\n输入：values = [1,3,1,4,1,5]\n输出：13\n解释：最低分数三角剖分的得分情况为 1*1*3 + 1*1*4 + 1*1*5 + 1*1*1 = 13。\n\n&nbsp;\n\n提示：\n\n\tn == values.length\n\t3 <= n <= 50\n\t1 <= values[i] <= 100",
+  "constraints": [
+    "n == values.length",
+    "3 <= n <= 50",
+    "1 <= values[i] <= 100"
+  ]
+}

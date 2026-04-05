@@ -1,0 +1,12 @@
+{
+  "number": "2384",
+  "title_cn": "最大回文数字",
+  "title_en": "Largest Palindromic Number",
+  "slug": "largest-palindromic-number",
+  "difficulty": "Medium",
+  "description": "给你一个仅由数字（0 - 9）组成的字符串 num 。\n\n请你找出能够使用 num 中数字形成的 最大回文 整数，并以字符串形式返回。该整数不含 前导零 。\n\n注意：\n\n\t你 无需 使用 num 中的所有数字，但你必须使用 至少 一个数字。\n\t数字可以重新排序。\n\n&nbsp;\n\n示例 1：\n\n输入：num = \"444947137\"\n输出：\"7449447\"\n解释：\n从 \"444947137\" 中选用数字 \"4449477\"，可以形成回文整数 \"7449447\" 。\n可以证明 \"7449447\" 是能够形成的最大回文整数。\n\n示例 2：\n\n输入：num = \"00009\"\n输出：\"9\"\n解释：\n可以证明 \"9\" 能够形成的最大回文整数。\n注意返回的整数不应含前导零。\n\n&nbsp;\n\n提示：\n\n\t1 <= num.length <= 105\n\tnum 由数字（0 - 9）组成",
+  "constraints": [
+    "1 <= num.length <= 105",
+    "num 由数字（0 - 9）组成"
+  ]
+}

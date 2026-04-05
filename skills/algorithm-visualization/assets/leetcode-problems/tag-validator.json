@@ -1,0 +1,12 @@
+{
+  "number": "591",
+  "title_cn": "标签验证器",
+  "title_en": "Tag Validator",
+  "slug": "tag-validator",
+  "difficulty": "Hard",
+  "description": "给定一个表示代码片段的字符串，你需要实现一个验证器来解析这段代码，并返回它是否合法。合法的代码片段需要遵守以下的所有规则：\n\n\t代码必须被合法的闭合标签包围。否则，代码是无效的。\n\t闭合标签（不一定合法）要严格符合格式：<TAG_NAME>TAG_CONTENT</TAG_NAME>。其中，<TAG_NAME>是起始标签，</TAG_NAME>是结束标签。起始和结束标签中的 TAG_NAME 应当相同。当且仅当&nbsp;TAG_NAME 和 TAG_CONTENT 都是合法的，闭合标签才是合法的。\n\t合法的&nbsp;TAG_NAME&nbsp;仅含有大写字母，长度在范围 [1,9] 之间。否则，该&nbsp;TAG_NAME&nbsp;是不合法的。\n\t合法的&nbsp;TAG_CONTENT&nbsp;可以包含其他合法的闭合标签，cdata&nbsp;（请参考规则7）和任意字符（注意参考规则1）除了不匹配的<、不匹配的起始和结束标签、不匹配的或带有不合法 TAG_NAME 的闭合标签。否则，TAG_CONTENT&nbsp;是不合法的。\n\t一个起始标签，如果没有具有相同&nbsp;TAG_NAME 的结束标签与之匹配，是不合法的。反之亦然。不过，你也需要考虑标签嵌套的问题。\n\t一个<，如果你找不到一个后续的>与之匹配，是不合法的。并且当你找到一个<或</时，所有直到下一个>的前的字符，都应当被解析为&nbsp;TAG_NAME（不一定合法）。\n\tcdata 有如下格式：<![CDATA[CDATA_CONTENT]]>。CDATA_CONTENT&nbsp;的范围被定义成&nbsp;<![CDATA[&nbsp;和后续的第一个&nbsp;]]>之间的字符。\n\tCDATA_CONTENT&nbsp;可以包含任意字符。cdata 的功能是阻止验证器解析CDATA_CONTENT，所以即使其中有一些字符可以被解析为标签（无论合法还是不合法），也应该将它们视为常规字符。\n\n&nbsp;\n\n示例 1：\n\n输入：code = \"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"\n输出：true\n解释：\n代码被闭合的标签包围：<DIV> 和 </DIV>。\nTAG_NAME 是合法的，TAG_CONTENT 只包含一些字母和 cdata。\n尽管 CDATA_CONTENT 有一个非法 TAG_NAME 的未匹配开始标签，它可以被认为是普通文本，不被解析为一个标签。\n所以 TAG_CONTENT 是合法的，并且代码是合法的。因此返回 true。\n\n示例 2：\n\n输入：code = \"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"\n输出：true\n解释：\n我们首先将代码分割为：start_tag|tag_content|end_tag。\nstart_tag -> \"<DIV>\"\nend_tag -> \"</DIV>\"\ntag_content 也可以被分割为：text1|cdata|text2。\ntext1 -> \">>  ![cdata[]] \"\ncdata -> \"<![CDATA[<div>]>]]>\"，其中 CDATA_CONTENT 是 \"<div>]>\"\ntext2 -> \"]]>>]\"\nstart_tag 不是 \"<DIV>>>\" 的原因是规则 6。\ncdata 不是 \"<![CDATA[<div>]>]]>]]>\" 的原因是规则 7。\n\n示例 3：\n\n输入：code = \"<A>  <B> </A>   </B>\"\n输出：false\n解释：不平衡。如果 \"<A>\" 是闭合的，那么 \"<B>\" 一定没有匹配，反之亦然。\n\n&nbsp;\n\n提示：\n\n\t1 <= code.length <= 500\n\tcode&nbsp;只包含英文字母，数字，'<'，'>'，'/'，'!'，'['，']'，'.'&nbsp;和&nbsp;' '。",
+  "constraints": [
+    "1 <= code.length <= 500",
+    "code&nbsp;只包含英文字母，数字，'<'，'>'，'/'，'!'，'['，']'，'.'&nbsp;和&nbsp;' '。"
+  ]
+}

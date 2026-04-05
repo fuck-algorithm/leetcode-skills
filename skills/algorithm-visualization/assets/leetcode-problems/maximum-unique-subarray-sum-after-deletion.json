@@ -1,0 +1,12 @@
+{
+  "number": "3487",
+  "title_cn": "删除后的最大子数组元素和",
+  "title_en": "Maximum Unique Subarray Sum After Deletion",
+  "slug": "maximum-unique-subarray-sum-after-deletion",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。\n\n你可以从数组 nums 中删除任意数量的元素，但不能将其变为 空 数组。执行删除操作后，选出&nbsp;nums&nbsp;中满足下述条件的一个子数组：\n\n\t子数组中的所有元素 互不相同 。\n\t最大化 子数组的元素和。\n\n返回子数组的 最大元素和 。\n子数组 是数组的一个连续、非空 的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5]\n\n输出：15\n\n解释：\n\n不删除任何元素，选中整个数组得到最大元素和。\n\n示例 2：\n\n输入：nums = [1,1,0,1,1]\n\n输出：1\n\n解释：\n\n删除元素&nbsp;nums[0] == 1、nums[1] == 1、nums[2] == 0&nbsp;和&nbsp;nums[3] == 1&nbsp;。选中整个数组&nbsp;[1]&nbsp;得到最大元素和。\n\n示例 3：\n\n输入：nums = [1,2,-1,-2,1,0,-1]\n\n输出：3\n\n解释：\n\n删除元素&nbsp;nums[2] == -1&nbsp;和&nbsp;nums[3] == -2&nbsp;，从&nbsp;[1, 2, 1, 0, -1]&nbsp;中选中子数组&nbsp;[2, 1]&nbsp;以获得最大元素和。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t-100 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "-100 <= nums[i] <= 100"
+  ]
+}

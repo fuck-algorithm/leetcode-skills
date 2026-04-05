@@ -1,0 +1,9 @@
+{
+  "number": "176",
+  "title_cn": "第二高的薪水",
+  "title_en": "Second Highest Salary",
+  "slug": "second-highest-salary",
+  "difficulty": "Medium",
+  "description": "Employee 表：\n\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| id          | int  |\n| salary      | int  |\n+-------------+------+\nid 是这个表的主键。\n表的每一行包含员工的工资信息。\n\n&nbsp;\n\n查询并返回 Employee&nbsp;表中第二高的 不同&nbsp;薪水 。如果不存在第二高的薪水，查询应该返回 null(Pandas 则返回 None) 。\n\n查询结果如下例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\nEmployee 表：\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n| 2  | 200    |\n| 3  | 300    |\n+----+--------+\n输出：\n+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| 200                 |\n+---------------------+\n\n示例 2：\n\n输入：\nEmployee 表：\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n+----+--------+\n输出：\n+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| null                |\n+---------------------+",
+  "constraints": []
+}

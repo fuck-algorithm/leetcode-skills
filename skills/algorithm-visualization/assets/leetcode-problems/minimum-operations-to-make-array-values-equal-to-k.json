@@ -1,0 +1,13 @@
+{
+  "number": "3375",
+  "title_cn": "使数组的值全部为 K 的最少操作次数",
+  "title_en": "Minimum Operations to Make Array Values Equal to K",
+  "slug": "minimum-operations-to-make-array-values-equal-to-k",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。\n\n如果一个数组中所有 严格大于&nbsp;h&nbsp;的整数值都 相等&nbsp;，那么我们称整数&nbsp;h&nbsp;是 合法的&nbsp;。\n\n比方说，如果&nbsp;nums = [10, 8, 10, 8]&nbsp;，那么&nbsp;h = 9&nbsp;是一个 合法&nbsp;整数，因为所有满足&nbsp;nums[i] > 9&nbsp;的数都等于 10 ，但是 5 不是 合法&nbsp;整数。\n\n你可以对 nums&nbsp;执行以下操作：\n\n\t选择一个整数&nbsp;h&nbsp;，它对于 当前&nbsp;nums&nbsp;中的值是合法的。\n\t对于每个下标 i&nbsp;，如果它满足&nbsp;nums[i] > h&nbsp;，那么将&nbsp;nums[i]&nbsp;变为&nbsp;h&nbsp;。\n\n你的目标是将 nums&nbsp;中的所有元素都变为 k&nbsp;，请你返回 最少&nbsp;操作次数。如果无法将所有元素都变&nbsp;k&nbsp;，那么返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,2,5,4,5], k = 2\n\n输出：2\n\n解释：\n\n依次选择合法整数 4 和 2 ，将数组全部变为 2 。\n\n示例 2：\n\n输入：nums = [2,1,2], k = 2\n\n输出：-1\n\n解释：\n\n没法将所有值变为 2 。\n\n示例 3：\n\n输入：nums = [9,7,5,3], k = 1\n\n输出：4\n\n解释：\n\n依次选择合法整数 7 ，5 ，3 和 1 ，将数组全部变为 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100 \n\t1 <= nums[i] <= 100\n\t1 <= k <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= 100"
+  ]
+}

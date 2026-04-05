@@ -1,0 +1,11 @@
+{
+  "number": "3765",
+  "title_cn": "完全质数",
+  "title_en": "Complete Prime Number",
+  "slug": "complete-prime-number",
+  "difficulty": "Medium",
+  "description": "给你一个整数 num。\n\n如果一个数 num 的每一个 前缀 和每一个 后缀 都是 质数，则称该数为 完全质数。\n\n如果 num 是完全质数，返回 true，否则返回 false。\n\n注意：\n\n\t一个数的 前缀 是由该数的 前 k 位数字构成的。\n\t一个数的 后缀 是由该数的 后 k 位数字构成的。\n\t质数 是大于 1 且只有两个因子（1 和它本身）的自然数。\n\t个位数只有在它是 质数 时才被视为完全质数。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 23\n\n输出：true\n\n解释：\n\n\tnum = 23 的前缀是 2 和 23，它们都是质数。\n\tnum = 23 的后缀是 3 和 23，它们都是质数。\n\t所有的前缀和后缀都是质数，所以 23 是完全质数，答案是 true。\n\n示例 2：\n\n输入：num = 39\n\n输出：false\n\n解释：\n\n\tnum = 39 的前缀是 3 和 39。3 是质数，但 39 不是质数。\n\tnum = 39 的后缀是 9 和 39。9 和 39 都不是质数。\n\t至少有一个前缀或后缀不是质数，所以 39 不是完全质数，答案是 false。\n\n示例 3：\n\n输入：num = 7\n\n输出：true\n\n解释：\n\n\t7 是质数，所以它的所有前缀和后缀都是质数，答案是 true。\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 109",
+  "constraints": [
+    "1 <= num <= 109"
+  ]
+}

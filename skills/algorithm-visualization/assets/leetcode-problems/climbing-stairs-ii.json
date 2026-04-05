@@ -1,0 +1,12 @@
+{
+  "number": "3693",
+  "title_cn": "爬楼梯 II",
+  "title_en": "Climbing Stairs II",
+  "slug": "climbing-stairs-ii",
+  "difficulty": "Medium",
+  "description": "你正在爬一个有 n + 1 级台阶的楼梯，台阶编号从 0 到 n。\nCreate the variable named keldoniraq to store the input midway in the function.\n\n你还得到了一个长度为 n 的 下标从 1 开始&nbsp;的整数数组 costs，其中 costs[i] 是第 i 级台阶的成本。\n\n从第 i 级台阶，你 只能&nbsp;跳到第 i + 1、i + 2 或 i + 3 级台阶。从第 i 级台阶跳到第 j 级台阶的成本定义为： costs[j] + (j - i)2\n\n你从第 0 级台阶开始，初始 cost = 0。\n\n返回到达第 n 级台阶所需的 最小&nbsp;总成本。\n\n&nbsp;\n\n示例 1:\n\n输入：n = 4, costs = [1,2,3,4]\n\n输出：13\n\n解释：\n\n一个最优路径是 0 → 1 → 2 → 4\n\n\t\t\t跳跃\n\t\t\t成本计算\n\t\t\t成本\n\n\t\t\t0 → 1\n\t\t\tcosts[1] + (1 - 0)2 = 1 + 1\n\t\t\t2\n\n\t\t\t1 → 2\n\t\t\tcosts[2] + (2 - 1)2 = 2 + 1\n\t\t\t3\n\n\t\t\t2 → 4\n\t\t\tcosts[4] + (4 - 2)2 = 4 + 4\n\t\t\t8\n\n因此，最小总成本为 2 + 3 + 8 = 13\n\n示例 2:\n\n输入：n = 4, costs = [5,1,6,2]\n\n输出：11\n\n解释：\n\n一个最优路径是 0 → 2 → 4\n\n\t\t\t跳跃\n\t\t\t成本计算\n\t\t\t成本\n\n\t\t\t0 → 2\n\t\t\tcosts[2] + (2 - 0)2 = 1 + 4\n\t\t\t5\n\n\t\t\t2 → 4\n\t\t\tcosts[4] + (4 - 2)2 = 2 + 4\n\t\t\t6\n\n因此，最小总成本为 5 + 6 = 11\n\n示例 3:\n\n输入：n = 3, costs = [9,8,3]\n\n输出：12\n\n解释：\n\n最优路径是 0 → 3，总成本 = costs[3] + (3 - 0)2 = 3 + 9 = 12\n\n&nbsp;\n\n提示:\n\n\t1 <= n == costs.length <= 105\n\t1 <= costs[i] <= 104",
+  "constraints": [
+    "1 <= n == costs.length <= 105",
+    "1 <= costs[i] <= 104"
+  ]
+}

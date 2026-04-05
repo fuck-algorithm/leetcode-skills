@@ -1,0 +1,14 @@
+{
+  "number": "2643",
+  "title_cn": "一最多的行",
+  "title_en": "Row With Maximum Ones",
+  "slug": "row-with-maximum-ones",
+  "difficulty": "Easy",
+  "description": "给你一个大小为 m x n 的二进制矩阵 mat ，请你找出包含最多 1 的行的下标（从 0 开始）以及这一行中 1 的数目。\n\n如果有多行包含最多的 1 ，只需要选择 行下标最小 的那一行。\n\n返回一个由行下标和该行中 1 的数量组成的数组。\n\n&nbsp;\n\n示例 1：\n\n输入：mat = [[0,1],[1,0]]\n输出：[0,1]\n解释：两行中 1 的数量相同。所以返回下标最小的行，下标为 0 。该行 1 的数量为 1 。所以，答案为 [0,1] 。 \n\n示例 2：\n\n输入：mat = [[0,0,0],[0,1,1]]\n输出：[1,2]\n解释：下标为 1 的行中 1 的数量最多。该行 1 的数量为 2 。所以，答案为 [1,2] 。\n\n示例 3：\n\n输入：mat = [[0,0],[1,1],[0,0]]\n输出：[1,2]\n解释：下标为 1 的行中 1 的数量最多。该行 1 的数量为 2 。所以，答案为 [1,2] 。\n\n&nbsp;\n\n提示：\n\n\tm == mat.length&nbsp;\n\tn == mat[i].length&nbsp;\n\t1 <= m, n <= 100&nbsp;\n\tmat[i][j] 为 0 或 1",
+  "constraints": [
+    "m == mat.length&nbsp;",
+    "n == mat[i].length&nbsp;",
+    "1 <= m, n <= 100&nbsp;",
+    "mat[i][j] 为 0 或 1"
+  ]
+}

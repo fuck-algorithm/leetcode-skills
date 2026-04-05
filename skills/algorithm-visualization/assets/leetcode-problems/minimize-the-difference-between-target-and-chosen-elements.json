@@ -1,0 +1,15 @@
+{
+  "number": "1981",
+  "title_cn": "最小化目标值与所选元素的差",
+  "title_en": "Minimize the Difference Between Target and Chosen Elements",
+  "slug": "minimize-the-difference-between-target-and-chosen-elements",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 m x n 的整数矩阵 mat 和一个整数 target 。\n\n从矩阵的 每一行 中选择一个整数，你的目标是&nbsp;最小化&nbsp;所有选中元素之&nbsp;和&nbsp;与目标值 target 的 绝对差 。\n\n返回 最小的绝对差 。\n\na 和 b 两数字的 绝对差 是 a - b 的绝对值。\n\n&nbsp;\n\n示例 1：\n\n输入：mat = [[1,2,3],[4,5,6],[7,8,9]], target = 13\n输出：0\n解释：一种可能的最优选择方案是：\n- 第一行选出 1\n- 第二行选出 5\n- 第三行选出 7\n所选元素的和是 13 ，等于目标值，所以绝对差是 0 。\n\n示例 2：\n\n输入：mat = [[1],[2],[3]], target = 100\n输出：94\n解释：唯一一种选择方案是：\n- 第一行选出 1\n- 第二行选出 2\n- 第三行选出 3\n所选元素的和是 6 ，绝对差是 94 。\n\n示例 3：\n\n输入：mat = [[1,2,9,8,7]], target = 6\n输出：1\n解释：最优的选择方案是选出第一行的 7 。\n绝对差是 1 。\n\n&nbsp;\n\n提示：\n\n\tm == mat.length\n\tn == mat[i].length\n\t1 <= m, n <= 70\n\t1 <= mat[i][j] <= 70\n\t1 <= target <= 800",
+  "constraints": [
+    "m == mat.length",
+    "n == mat[i].length",
+    "1 <= m, n <= 70",
+    "1 <= mat[i][j] <= 70",
+    "1 <= target <= 800"
+  ]
+}

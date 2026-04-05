@@ -1,0 +1,9 @@
+{
+  "number": "2886",
+  "title_cn": "改变数据类型",
+  "title_en": "Change Data Type",
+  "slug": "change-data-type",
+  "difficulty": "Easy",
+  "description": "DataFrame students\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n| grade       | float  |\n+-------------+--------+\n\n编写一个解决方案来纠正以下错误：\n\n&nbsp;grade&nbsp;列被存储为浮点数，将它转换为整数。\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\nDataFrame students:\n+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73.0  |\n| 2          | Kate | 15  | 87.0  |\n+------------+------+-----+-------+\n输出：\n+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73    |\n| 2          | Kate | 15  | 87    |\n+------------+------+-----+-------+\n解释：\ngrade 列的数据类型已转换为整数。",
+  "constraints": []
+}

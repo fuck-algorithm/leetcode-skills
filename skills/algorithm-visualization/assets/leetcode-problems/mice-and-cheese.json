@@ -1,0 +1,13 @@
+{
+  "number": "2611",
+  "title_cn": "老鼠和奶酪",
+  "title_en": "Mice and Cheese",
+  "slug": "mice-and-cheese",
+  "difficulty": "Medium",
+  "description": "有两只老鼠和&nbsp;n&nbsp;块不同类型的奶酪，每块奶酪都只能被其中一只老鼠吃掉。\n\n下标为 i&nbsp;处的奶酪被吃掉的得分为：\n\n\t如果第一只老鼠吃掉，则得分为&nbsp;reward1[i]&nbsp;。\n\t如果第二只老鼠吃掉，则得分为&nbsp;reward2[i]&nbsp;。\n\n给你一个正整数数组&nbsp;reward1&nbsp;，一个正整数数组&nbsp;reward2&nbsp;，和一个非负整数&nbsp;k&nbsp;。\n\n请你返回第一只老鼠恰好吃掉 k&nbsp;块奶酪的情况下，最大&nbsp;得分为多少。\n\n&nbsp;\n\n示例 1：\n\n输入：reward1 = [1,1,3,4], reward2 = [4,4,1,1], k = 2\n输出：15\n解释：这个例子中，第一只老鼠吃掉第 2&nbsp;和 3 块奶酪（下标从 0 开始），第二只老鼠吃掉第 0 和 1 块奶酪。\n总得分为 4 + 4 + 3 + 4 = 15 。\n15 是最高得分。\n\n示例 2：\n\n输入：reward1 = [1,1], reward2 = [1,1], k = 2\n输出：2\n解释：这个例子中，第一只老鼠吃掉第 0 和 1 块奶酪（下标从 0 开始），第二只老鼠不吃任何奶酪。\n总得分为 1 + 1 = 2 。\n2 是最高得分。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == reward1.length == reward2.length <= 105\n\t1 <= reward1[i],&nbsp;reward2[i] <= 1000\n\t0 <= k <= n",
+  "constraints": [
+    "1 <= n == reward1.length == reward2.length <= 105",
+    "1 <= reward1[i],&nbsp;reward2[i] <= 1000",
+    "0 <= k <= n"
+  ]
+}

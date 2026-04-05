@@ -1,0 +1,11 @@
+{
+  "number": "1301",
+  "title_cn": "最大得分的路径数目",
+  "title_en": "Number of Paths with Max Score",
+  "slug": "number-of-paths-with-max-score",
+  "difficulty": "Hard",
+  "description": "给你一个正方形字符数组&nbsp;board&nbsp;，你从数组最右下方的字符&nbsp;&#39;S&#39;&nbsp;出发。\n\n你的目标是到达数组最左上角的字符&nbsp;&#39;E&#39; ，数组剩余的部分为数字字符&nbsp;1, 2, ..., 9&nbsp;或者障碍 &#39;X&#39;。在每一步移动中，你可以向上、向左或者左上方移动，可以移动的前提是到达的格子没有障碍。\n\n一条路径的 「得分」 定义为：路径上所有数字的和。\n\n请你返回一个列表，包含两个整数：第一个整数是 「得分」 的最大值，第二个整数是得到最大得分的方案数，请把结果对&nbsp;10^9 + 7 取余。\n\n如果没有任何路径可以到达终点，请返回&nbsp;[0, 0] 。\n\n&nbsp;\n\n示例 1：\n\n输入：board = [\"E23\",\"2X2\",\"12S\"]\n输出：[7,1]\n\n示例 2：\n\n输入：board = [\"E12\",\"1X1\",\"21S\"]\n输出：[4,2]\n\n示例 3：\n\n输入：board = [\"E11\",\"XXX\",\"11S\"]\n输出：[0,0]\n\n&nbsp;\n\n提示：\n\n\t2 <= board.length == board[i].length <= 100",
+  "constraints": [
+    "2 <= board.length == board[i].length <= 100"
+  ]
+}

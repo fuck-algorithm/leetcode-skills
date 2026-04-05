@@ -1,0 +1,13 @@
+{
+  "number": "45",
+  "title_cn": "跳跃游戏 II",
+  "title_en": "Jump Game II",
+  "slug": "jump-game-ii",
+  "difficulty": "Medium",
+  "description": "给定一个长度为 n 的 0 索引整数数组 nums。初始位置在下标 0。\n\n每个元素 nums[i] 表示从索引 i 向后跳转的最大长度。换句话说，如果你在索引&nbsp;i&nbsp;处，你可以跳转到任意 (i + j) 处：\n\n\t0 <= j <= nums[i]&nbsp;且\n\ti + j < n\n\n返回到达&nbsp;n - 1&nbsp;的最小跳跃次数。测试用例保证可以到达 n - 1。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [2,3,1,1,4]\n输出: 2\n解释: 跳到最后一个位置的最小跳跃数是 2。\n&nbsp;    从下标为 0 跳到下标为 1 的位置，跳&nbsp;1&nbsp;步，然后跳&nbsp;3&nbsp;步到达数组的最后一个位置。\n\n示例 2:\n\n输入: nums = [2,3,0,1,4]\n输出: 2\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 104\n\t0 <= nums[i] <= 1000\n\t题目保证可以到达&nbsp;n - 1",
+  "constraints": [
+    "1 <= nums.length <= 104",
+    "0 <= nums[i] <= 1000",
+    "题目保证可以到达&nbsp;n - 1"
+  ]
+}

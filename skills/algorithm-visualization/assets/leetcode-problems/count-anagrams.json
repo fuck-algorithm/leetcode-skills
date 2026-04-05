@@ -1,0 +1,13 @@
+{
+  "number": "2514",
+  "title_cn": "统计同位异构字符串数目",
+  "title_en": "Count Anagrams",
+  "slug": "count-anagrams",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;，它包含一个或者多个单词。单词之间用单个空格&nbsp;' '&nbsp;隔开。\n\n如果字符串 t&nbsp;中第 i&nbsp;个单词是 s&nbsp;中第 i&nbsp;个单词的一个&nbsp;排列&nbsp;，那么我们称字符串&nbsp;t&nbsp;是字符串&nbsp;s&nbsp;的同位异构字符串。\n\n\t比方说，\"acb dfe\"&nbsp;是&nbsp;\"abc def\"&nbsp;的同位异构字符串，但是&nbsp;\"def cab\"&nbsp;和&nbsp;\"adc bef\"&nbsp;不是。\n\n请你返回&nbsp;s&nbsp;的同位异构字符串的数目，由于答案可能很大，请你将它对&nbsp;109 + 7&nbsp;取余 后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"too hot\"\n输出：18\n解释：输入字符串的一些同位异构字符串为 \"too hot\" ，\"oot hot\" ，\"oto toh\" ，\"too toh\" 以及 \"too oht\" 。\n\n示例 2：\n\n输入：s = \"aa\"\n输出：1\n解释：输入字符串只有一个同位异构字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 只包含小写英文字母和空格&nbsp;' '&nbsp;。\n\t相邻单词之间由单个空格隔开。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 只包含小写英文字母和空格&nbsp;' '&nbsp;。",
+    "相邻单词之间由单个空格隔开。"
+  ]
+}

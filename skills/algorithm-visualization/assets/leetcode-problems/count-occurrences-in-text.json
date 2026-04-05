@@ -1,0 +1,9 @@
+{
+  "number": "2738",
+  "title_cn": "统计文本中单词的出现次数",
+  "title_en": "Count Occurrences in Text",
+  "slug": "count-occurrences-in-text",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

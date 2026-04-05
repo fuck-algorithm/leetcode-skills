@@ -1,0 +1,15 @@
+{
+  "number": "2391",
+  "title_cn": "收集垃圾的最少总时间",
+  "title_en": "Minimum Amount of Time to Collect Garbage",
+  "slug": "minimum-amount-of-time-to-collect-garbage",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串数组&nbsp;garbage&nbsp;，其中&nbsp;garbage[i]&nbsp;表示第 i&nbsp;个房子的垃圾集合。garbage[i]&nbsp;只包含字符&nbsp;'M'&nbsp;，'P' 和&nbsp;'G'&nbsp;，但可能包含多个相同字符，每个字符分别表示一单位的金属、纸和玻璃。垃圾车收拾 一&nbsp;单位的任何一种垃圾都需要花费&nbsp;1&nbsp;分钟。\n\n同时给你一个下标从 0&nbsp;开始的整数数组&nbsp;travel&nbsp;，其中&nbsp;travel[i]&nbsp;是垃圾车从房子 i&nbsp;行驶到房子 i + 1&nbsp;需要的分钟数。\n\n城市里总共有三辆垃圾车，分别收拾三种垃圾。每辆垃圾车都从房子 0&nbsp;出发，按顺序&nbsp;到达每一栋房子。但它们 不是必须&nbsp;到达所有的房子。\n\n任何时刻只有 一辆&nbsp;垃圾车处在使用状态。当一辆垃圾车在行驶或者收拾垃圾的时候，另外两辆车 不能&nbsp;做任何事情。\n\n请你返回收拾完所有垃圾需要花费的 最少&nbsp;总分钟数。\n\n&nbsp;\n\n示例 1：\n\n输入：garbage = [\"G\",\"P\",\"GP\",\"GG\"], travel = [2,4,3]\n输出：21\n解释：\n收拾纸的垃圾车：\n1. 从房子 0 行驶到房子 1\n2. 收拾房子 1 的纸垃圾\n3. 从房子 1 行驶到房子 2\n4. 收拾房子 2 的纸垃圾\n收拾纸的垃圾车总共花费 8 分钟收拾完所有的纸垃圾。\n收拾玻璃的垃圾车：\n1. 收拾房子 0 的玻璃垃圾\n2. 从房子 0 行驶到房子 1\n3. 从房子 1 行驶到房子 2\n4. 收拾房子 2 的玻璃垃圾\n5. 从房子 2 行驶到房子 3\n6. 收拾房子 3 的玻璃垃圾\n收拾玻璃的垃圾车总共花费 13 分钟收拾完所有的玻璃垃圾。\n由于没有金属垃圾，收拾金属的垃圾车不需要花费任何时间。\n所以总共花费 8 + 13 = 21 分钟收拾完所有垃圾。\n\n示例 2：\n\n输入：garbage = [\"MMM\",\"PGM\",\"GP\"], travel = [3,10]\n输出：37\n解释：\n收拾金属的垃圾车花费 7 分钟收拾完所有的金属垃圾。\n收拾纸的垃圾车花费 15 分钟收拾完所有的纸垃圾。\n收拾玻璃的垃圾车花费 15 分钟收拾完所有的玻璃垃圾。\n总共花费 7 + 15 + 15 = 37 分钟收拾完所有的垃圾。\n\n&nbsp;\n\n提示：\n\n\t2 <= garbage.length <= 105\n\tgarbage[i] 只包含字母&nbsp;'M'&nbsp;，'P'&nbsp;和&nbsp;'G'&nbsp;。\n\t1 <= garbage[i].length <= 10\n\ttravel.length == garbage.length - 1\n\t1 <= travel[i] <= 100",
+  "constraints": [
+    "2 <= garbage.length <= 105",
+    "garbage[i] 只包含字母&nbsp;'M'&nbsp;，'P'&nbsp;和&nbsp;'G'&nbsp;。",
+    "1 <= garbage[i].length <= 10",
+    "travel.length == garbage.length - 1",
+    "1 <= travel[i] <= 100"
+  ]
+}

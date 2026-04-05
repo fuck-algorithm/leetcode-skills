@@ -1,0 +1,14 @@
+{
+  "number": "2666",
+  "title_cn": "只允许一次函数调用",
+  "title_en": "Allow One Function Call",
+  "slug": "allow-one-function-call",
+  "difficulty": "Easy",
+  "description": "给定一个函数 fn ，它返回一个新的函数，返回的函数与原始函数完全相同，只不过它确保 fn 最多被调用一次。\n\n\t第一次调用返回的函数时，它应该返回与 fn 相同的结果。\n\t第一次后的每次调用，它应该返回 undefined 。\n\n&nbsp;\n\n示例 1：\n\n输入：fn = (a,b,c) => (a + b + c), calls = [[1,2,3],[2,3,6]]\n输出：[{\"calls\":1,\"value\":6}]\n解释：\nconst onceFn = once(fn);\nonceFn(1, 2, 3); // 6\nonceFn(2, 3, 6); // undefined, fn 没有被调用\n\n示例 2：\n\n输入：fn = (a,b,c) => (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]\n输出：[{\"calls\":1,\"value\":140}]\n解释：\nconst onceFn = once(fn);\nonceFn(5, 7, 4); // 140\nonceFn(2, 3, 6); // undefined, fn 没有被调用\nonceFn(4, 6, 8); // undefined, fn 没有被调用\n\n&nbsp;\n\n提示：\n\n\tcalls 是一个有效的 JSON 数组\n\t1 <= calls.length <= 10\n\t1 <= calls[i].length <= 100\n\t2 <= JSON.stringify(calls).length <= 1000",
+  "constraints": [
+    "calls 是一个有效的 JSON 数组",
+    "1 <= calls.length <= 10",
+    "1 <= calls[i].length <= 100",
+    "2 <= JSON.stringify(calls).length <= 1000"
+  ]
+}

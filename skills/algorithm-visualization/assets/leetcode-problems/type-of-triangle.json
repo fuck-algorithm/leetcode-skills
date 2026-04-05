@@ -1,0 +1,12 @@
+{
+  "number": "3024",
+  "title_cn": "三角形类型",
+  "title_en": "Type of Triangle",
+  "slug": "type-of-triangle",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始长度为 3&nbsp;的整数数组&nbsp;nums&nbsp;，需要用它们来构造三角形。\n\n\t如果一个三角形的所有边长度相等，那么这个三角形称为&nbsp;equilateral&nbsp;。\n\t如果一个三角形恰好有两条边长度相等，那么这个三角形称为&nbsp;isosceles&nbsp;。\n\t如果一个三角形三条边的长度互不相同，那么这个三角形称为&nbsp;scalene&nbsp;。\n\n如果这个数组无法构成一个三角形，请你返回字符串&nbsp;\"none\"&nbsp;，否则返回一个字符串表示这个三角形的类型。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,3,3]\n输出：\"equilateral\"\n解释：由于三条边长度相等，所以可以构成一个等边三角形，返回 \"equilateral\" 。\n\n示例 2：\n\n输入：nums = [3,4,5]\n输出：\"scalene\"\n解释：\nnums[0] + nums[1] = 3 + 4 = 7 ，大于 nums[2] = 5 。\nnums[0] + nums[2] = 3 + 5 = 8 ，大于 nums[1] = 4 。\nnums[1] + nums[2] = 4 + 5 = 9 ，大于 nums[0] = 3 。\n由于任意两边之和都大于第三边，所以可以构成一个三角形，因为三条边的长度互不相等，所以返回 \"scalene\"。\n\n提示：\n\n\tnums.length == 3\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "nums.length == 3",
+    "1 <= nums[i] <= 100"
+  ]
+}

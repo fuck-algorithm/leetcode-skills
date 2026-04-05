@@ -1,0 +1,13 @@
+{
+  "number": "LCR 141",
+  "title_cn": "训练计划 III",
+  "title_en": "训练计划 III",
+  "slug": "fan-zhuan-lian-biao-lcof",
+  "difficulty": "Easy",
+  "description": "给定一个头节点为 head 的单链表用于记录一系列核心肌群训练编号，请将该系列训练编号 倒序 记录于链表并返回。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,2,3,4,5]\n输出：[5,4,3,2,1]\n\n&nbsp;\n\n示例 2：\n\n输入：head = [1,2]\n输出：[2,1]\n\n&nbsp;\n\n示例 3：\n\n输入：head = []\n输出：[]\n\n&nbsp;\n\n提示：\n\n\t链表中节点的数目范围是 [0, 5000]\n\t-5000 <= Node.val <= 5000\n\n&nbsp;\n\n注意：本题与主站 206 题相同：https://leetcode.cn/problems/reverse-linked-list/\n\n&nbsp;",
+  "constraints": [
+    "链表中节点的数目范围是 [0, 5000]",
+    "-5000 <= Node.val <= 5000",
+    "注意：本题与主站 206 题相同：https://leetcode.cn/problems/reverse-linked-list/"
+  ]
+}

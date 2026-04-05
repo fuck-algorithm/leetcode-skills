@@ -1,0 +1,12 @@
+{
+  "number": "2272",
+  "title_cn": "最大波动的子字符串",
+  "title_en": "Substring With Largest Variance",
+  "slug": "substring-with-largest-variance",
+  "difficulty": "Hard",
+  "description": "字符串的 波动&nbsp;定义为子字符串中出现次数 最多&nbsp;的字符次数与出现次数 最少&nbsp;的字符次数之差。\n\n给你一个字符串&nbsp;s&nbsp;，它只包含小写英文字母。请你返回 s&nbsp;里所有 子字符串的&nbsp;最大波动&nbsp;值。\n\n子字符串 是一个字符串的一段连续字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aababbb\"\n输出：3\n解释：\n所有可能的波动值和它们对应的子字符串如以下所示：\n- 波动值为 0 的子字符串：\"a\" ，\"aa\" ，\"ab\" ，\"abab\" ，\"aababb\" ，\"ba\" ，\"b\" ，\"bb\" 和 \"bbb\" 。\n- 波动值为 1 的子字符串：\"aab\" ，\"aba\" ，\"abb\" ，\"aabab\" ，\"ababb\" ，\"aababbb\" 和 \"bab\" 。\n- 波动值为 2 的子字符串：\"aaba\" ，\"ababbb\" ，\"abbb\" 和 \"babb\" 。\n- 波动值为 3 的子字符串 \"babbb\" 。\n所以，最大可能波动值为 3 。\n\n示例 2：\n\n输入：s = \"abcde\"\n输出：0\n解释：\ns 中没有字母出现超过 1 次，所以 s 中每个子字符串的波动值都是 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts&nbsp; 只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s&nbsp; 只包含小写英文字母。"
+  ]
+}

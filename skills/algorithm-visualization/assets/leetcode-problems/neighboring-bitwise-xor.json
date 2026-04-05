@@ -1,0 +1,13 @@
+{
+  "number": "2683",
+  "title_cn": "相邻值的按位异或",
+  "title_en": "Neighboring Bitwise XOR",
+  "slug": "neighboring-bitwise-xor",
+  "difficulty": "Medium",
+  "description": "下标从 0 开始、长度为 n 的数组 derived 是由同样长度为 n 的原始 二进制数组 original 通过计算相邻值的 按位异或（⊕）派生而来。\n\n特别地，对于范围&nbsp;[0, n - 1] 内的每个下标 i ：\n\n\t如果 i = n - 1 ，那么 derived[i] = original[i] ⊕ original[0]\n\t否则 derived[i] = original[i] ⊕ original[i + 1]\n\n给你一个数组 derived ，请判断是否存在一个能够派生得到 derived 的 有效原始二进制数组 original 。\n\n如果存在满足要求的原始二进制数组，返回 true ；否则，返回 false 。\n\n\t二进制数组是仅由 0 和 1 组成的数组。\n\n&nbsp;\n\n示例 1：\n\n输入：derived = [1,1,0]\n输出：true\n解释：能够派生得到 [1,1,0] 的有效原始二进制数组是 [0,1,0] ：\nderived[0] = original[0] ⊕ original[1] = 0 ⊕ 1 = 1 \nderived[1] = original[1] ⊕ original[2] = 1 ⊕ 0 = 1\nderived[2] = original[2] ⊕ original[0] = 0 ⊕ 0 = 0\n\n示例 2：\n\n输入：derived = [1,1]\n输出：true\n解释：能够派生得到 [1,1] 的有效原始二进制数组是 [0,1] ：\nderived[0] = original[0] ⊕ original[1] = 1\nderived[1] = original[1] ⊕ original[0] = 1\n\n示例 3：\n\n输入：derived = [1,0]\n输出：false\n解释：不存在能够派生得到 [1,0] 的有效原始二进制数组。\n\n&nbsp;\n\n提示：\n\n\tn == derived.length\n\t1 <= n&nbsp;<= 105\n\tderived 中的值不是 0 就是 1 。",
+  "constraints": [
+    "n == derived.length",
+    "1 <= n&nbsp;<= 105",
+    "derived 中的值不是 0 就是 1 。"
+  ]
+}

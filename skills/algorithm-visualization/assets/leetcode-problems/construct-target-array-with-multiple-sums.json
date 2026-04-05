@@ -1,0 +1,13 @@
+{
+  "number": "1354",
+  "title_cn": "多次求和构造目标数组",
+  "title_en": "Construct Target Array With Multiple Sums",
+  "slug": "construct-target-array-with-multiple-sums",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;target 。一开始，你有一个数组&nbsp;A ，它的所有元素均为 1 ，你可以执行以下操作：\n\n\t令&nbsp;x&nbsp;为你数组里所有元素的和\n\t选择满足&nbsp;0 <= i < target.size&nbsp;的任意下标&nbsp;i&nbsp;，并让&nbsp;A&nbsp;数组里下标为&nbsp;i&nbsp;处的值为&nbsp;x&nbsp;。\n\t你可以重复该过程任意次\n\n如果能从&nbsp;A&nbsp;开始构造出目标数组&nbsp;target&nbsp;，请你返回 True ，否则返回 False 。\n\n&nbsp;\n\n示例 1：\n\n输入：target = [9,3,5]\n输出：true\n解释：从 [1, 1, 1] 开始\n[1, 1, 1], 和为 3 ，选择下标 1\n[1, 3, 1], 和为 5， 选择下标 2\n[1, 3, 5], 和为 9， 选择下标 0\n[9, 3, 5] 完成\n\n示例 2：\n\n输入：target = [1,1,1,2]\n输出：false\n解释：不可能从 [1,1,1,1] 出发构造目标数组。\n\n示例 3：\n\n输入：target = [8,5]\n输出：true\n\n&nbsp;\n\n提示：\n\n\tN == target.length\n\t1 <= target.length&nbsp;<= 5 * 10^4\n\t1 <= target[i] <= 10^9",
+  "constraints": [
+    "N == target.length",
+    "1 <= target.length&nbsp;<= 5 * 10^4",
+    "1 <= target[i] <= 10^9"
+  ]
+}

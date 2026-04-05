@@ -1,0 +1,12 @@
+{
+  "number": "2124",
+  "title_cn": "检查是否所有 A 都在 B 之前",
+  "title_en": "Check if All A's Appears Before All B's",
+  "slug": "check-if-all-as-appears-before-all-bs",
+  "difficulty": "Easy",
+  "description": "给你一个 仅 由字符 'a' 和 'b' 组成的字符串&nbsp; s 。如果字符串中 每个  'a' 都出现在 每个 'b' 之前，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aaabbb\"\n输出：true\n解释：\n'a' 位于下标 0、1 和 2 ；而 'b' 位于下标 3、4 和 5 。\n因此，每个 'a' 都出现在每个 'b' 之前，所以返回 true 。\n\n示例 2：\n\n输入：s = \"abab\"\n输出：false\n解释：\n存在一个 'a' 位于下标 2 ，而一个 'b' 位于下标 1 。\n因此，不能满足每个 'a' 都出现在每个 'b' 之前，所以返回 false 。\n\n示例 3：\n\n输入：s = \"bbb\"\n输出：true\n解释：\n不存在 'a' ，因此可以视作每个 'a' 都出现在每个 'b' 之前，所以返回 true 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts[i] 为 'a' 或 'b'",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s[i] 为 'a' 或 'b'"
+  ]
+}

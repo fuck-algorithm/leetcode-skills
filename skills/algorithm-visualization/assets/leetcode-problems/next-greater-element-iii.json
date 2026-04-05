@@ -1,0 +1,11 @@
+{
+  "number": "556",
+  "title_cn": "下一个更大元素 III",
+  "title_en": "Next Greater Element III",
+  "slug": "next-greater-element-iii",
+  "difficulty": "Medium",
+  "description": "给你一个正整数 n ，请你找出符合条件的最小整数，其由重新排列 n 中存在的每位数字组成，并且其值大于 n 。如果不存在这样的正整数，则返回 -1 。\n\n注意 ，返回的整数应当是一个 32 位整数 ，如果存在满足题意的答案，但不是 32 位整数 ，同样返回 -1 。\n\n示例 1：\n\n输入：n = 12\n输出：21\n\n示例 2：\n\n输入：n = 21\n输出：-1\n\n提示：\n\n\t1 31 - 1",
+  "constraints": [
+    "1 31 - 1"
+  ]
+}

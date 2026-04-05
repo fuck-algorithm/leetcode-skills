@@ -1,0 +1,11 @@
+{
+  "number": "738",
+  "title_cn": "单调递增的数字",
+  "title_en": "Monotone Increasing Digits",
+  "slug": "monotone-increasing-digits",
+  "difficulty": "Medium",
+  "description": "当且仅当每个相邻位数上的数字&nbsp;x&nbsp;和&nbsp;y&nbsp;满足&nbsp;x <= y&nbsp;时，我们称这个整数是单调递增的。\n\n给定一个整数 n ，返回 小于或等于 n 的最大数字，且数字呈 单调递增 。\n\n&nbsp;\n\n示例 1:\n\n输入: n = 10\n输出: 9\n\n示例 2:\n\n输入: n = 1234\n输出: 1234\n\n示例 3:\n\n输入: n = 332\n输出: 299\n\n&nbsp;\n\n提示:\n\n\t0 <= n <= 109",
+  "constraints": [
+    "0 <= n <= 109"
+  ]
+}

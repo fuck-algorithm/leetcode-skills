@@ -1,0 +1,9 @@
+{
+  "number": "2388",
+  "title_cn": "将表中的空值更改为前一个值",
+  "title_en": "Change Null Values in a Table to the Previous Value",
+  "slug": "change-null-values-in-a-table-to-the-previous-value",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

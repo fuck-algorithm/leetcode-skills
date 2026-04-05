@@ -1,0 +1,12 @@
+{
+  "number": "238",
+  "title_cn": "除了自身以外数组的乘积",
+  "title_en": "Product of Array Except Self",
+  "slug": "product-of-array-except-self",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums，返回 数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]&nbsp;等于&nbsp;nums&nbsp;中除了&nbsp;nums[i]&nbsp;之外其余各元素的乘积&nbsp;。\n\n题目数据 保证 数组&nbsp;nums之中任意元素的全部前缀元素和后缀的乘积都在&nbsp; 32 位 整数范围内。\n\n请&nbsp;不要使用除法，且在&nbsp;O(n) 时间复杂度内完成此题。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [1,2,3,4]\n输出: [24,12,8,6]\n\n示例 2:\n\n输入: nums = [-1,1,0,-3,3]\n输出: [0,0,9,0,0]\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t-30 <= nums[i] <= 30\n\t输入&nbsp;保证 数组&nbsp;answer[i]&nbsp;在&nbsp; 32 位 整数范围内\n\n&nbsp;\n\n进阶：你可以在 O(1)&nbsp;的额外空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组&nbsp;不被视为&nbsp;额外空间。）",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "-30 <= nums[i] <= 30"
+  ]
+}

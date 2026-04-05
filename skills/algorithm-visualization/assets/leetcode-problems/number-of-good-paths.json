@@ -1,0 +1,18 @@
+{
+  "number": "2421",
+  "title_cn": "好路径的数目",
+  "title_en": "Number of Good Paths",
+  "slug": "number-of-good-paths",
+  "difficulty": "Hard",
+  "description": "给你一棵 n&nbsp;个节点的树（连通无向无环的图），节点编号从&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;且恰好有&nbsp;n - 1&nbsp;条边。\n\n给你一个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;vals&nbsp;，分别表示每个节点的值。同时给你一个二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条&nbsp;无向&nbsp;边。\n\n一条 好路径&nbsp;需要满足以下条件：\n\n\t开始节点和结束节点的值 相同&nbsp;。\n\t开始节点和结束节点中间的所有节点值都 小于等于&nbsp;开始节点的值（也就是说开始节点的值应该是路径上所有节点的最大值）。\n\n请你返回不同好路径的数目。\n\n注意，一条路径和它反向的路径算作 同一&nbsp;路径。比方说，&nbsp;0 -> 1&nbsp;与&nbsp;1 -> 0&nbsp;视为同一条路径。单个节点也视为一条合法路径。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：vals = [1,3,2,1,3], edges = [[0,1],[0,2],[2,3],[2,4]]\n输出：6\n解释：总共有 5 条单个节点的好路径。\n还有 1 条好路径：1 -> 0 -> 2 -> 4 。\n（反方向的路径 4 -> 2 -> 0 -> 1 视为跟 1 -> 0 -> 2 -> 4 一样的路径）\n注意 0 -> 2 -> 3 不是一条好路径，因为 vals[2] > vals[0] 。\n\n示例 2：\n\n输入：vals = [1,1,2,2,3], edges = [[0,1],[1,2],[2,3],[2,4]]\n输出：7\n解释：总共有 5 条单个节点的好路径。\n还有 2 条好路径：0 -> 1 和 2 -> 3 。\n\n示例 3：\n\n输入：vals = [1], edges = []\n输出：1\n解释：这棵树只有一个节点，所以只有一条好路径。\n\n&nbsp;\n\n提示：\n\n\tn == vals.length\n\t1 <= n <= 3 * 104\n\t0 <= vals[i] <= 105\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ai, bi < n\n\tai != bi\n\tedges&nbsp;表示一棵合法的树。",
+  "constraints": [
+    "n == vals.length",
+    "1 <= n <= 3 * 104",
+    "0 <= vals[i] <= 105",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ai, bi < n",
+    "ai != bi",
+    "edges&nbsp;表示一棵合法的树。"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "number": "3632",
+  "title_cn": "异或至少为 K 的子数组数目",
+  "title_en": "Subarrays with XOR at Least K",
+  "slug": "subarrays-with-xor-at-least-k",
+  "difficulty": "Hard",
+  "description": "",
+  "constraints": []
+}

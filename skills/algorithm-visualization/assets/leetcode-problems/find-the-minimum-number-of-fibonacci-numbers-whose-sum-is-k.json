@@ -1,0 +1,11 @@
+{
+  "number": "1414",
+  "title_cn": "和为 K 的最少斐波那契数字数目",
+  "title_en": "Find the Minimum Number of Fibonacci Numbers Whose Sum Is K",
+  "slug": "find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k",
+  "difficulty": "Medium",
+  "description": "给你数字 k&nbsp;，请你返回和为&nbsp;k&nbsp;的斐波那契数字的最少数目，其中，每个斐波那契数字都可以被使用多次。\n\n斐波那契数字定义为：\n\n\tF1 = 1\n\tF2 = 1\n\tFn = Fn-1 + Fn-2&nbsp;， 其中 n > 2 。\n\n数据保证对于给定的 k&nbsp;，一定能找到可行解。\n\n&nbsp;\n\n示例 1：\n\n输入：k = 7\n输出：2 \n解释：斐波那契数字为：1，1，2，3，5，8，13，&hellip;&hellip;\n对于 k = 7 ，我们可以得到 2 + 5 = 7 。\n\n示例 2：\n\n输入：k = 10\n输出：2 \n解释：对于 k = 10 ，我们可以得到 2 + 8 = 10 。\n\n示例 3：\n\n输入：k = 19\n输出：3 \n解释：对于 k = 19 ，我们可以得到 1 + 5 + 13 = 19 。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= 10^9",
+  "constraints": [
+    "1 <= k <= 10^9"
+  ]
+}

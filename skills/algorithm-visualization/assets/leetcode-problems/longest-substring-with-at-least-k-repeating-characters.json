@@ -1,0 +1,13 @@
+{
+  "number": "395",
+  "title_cn": "至少有 K 个重复字符的最长子串",
+  "title_en": "Longest Substring with At Least K Repeating Characters",
+  "slug": "longest-substring-with-at-least-k-repeating-characters",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个整数 k ，请你找出 s 中的最长子串，&nbsp;要求该子串中的每一字符出现次数都不少于 k 。返回这一子串的长度。\n\n如果不存在这样的子字符串，则返回 0。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aaabb\", k = 3\n输出：3\n解释：最长子串为 \"aaa\" ，其中 'a' 重复了 3 次。\n\n示例 2：\n\n输入：s = \"ababbc\", k = 2\n输出：5\n解释：最长子串为 \"ababb\" ，其中 'a' 重复了 2 次， 'b' 重复了 3 次。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts 仅由小写英文字母组成\n\t1 <= k <= 105",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s 仅由小写英文字母组成",
+    "1 <= k <= 105"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "2331",
+  "title_cn": "计算布尔二叉树的值",
+  "title_en": "Evaluate Boolean Binary Tree",
+  "slug": "evaluate-boolean-binary-tree",
+  "difficulty": "Easy",
+  "description": "给你一棵 完整二叉树&nbsp;的根，这棵树有以下特征：\n\n\t叶子节点&nbsp;要么值为&nbsp;0&nbsp;要么值为&nbsp;1&nbsp;，其中&nbsp;0 表示&nbsp;False&nbsp;，1 表示&nbsp;True&nbsp;。\n\t非叶子节点 要么值为 2&nbsp;要么值为 3&nbsp;，其中&nbsp;2&nbsp;表示逻辑或&nbsp;OR ，3&nbsp;表示逻辑与&nbsp;AND&nbsp;。\n\n计算&nbsp;一个节点的值方式如下：\n\n\t如果节点是个叶子节点，那么节点的 值&nbsp;为它本身，即&nbsp;True&nbsp;或者&nbsp;False&nbsp;。\n\t否则，计算&nbsp;两个孩子的节点值，然后将该节点的运算符对两个孩子值进行 运算&nbsp;。\n\n返回根节点&nbsp;root&nbsp;的布尔运算值。\n\n完整二叉树&nbsp;是每个节点有 0&nbsp;个或者 2&nbsp;个孩子的二叉树。\n\n叶子节点&nbsp;是没有孩子的节点。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [2,1,3,null,null,0,1]\n输出：true\n解释：上图展示了计算过程。\nAND 与运算节点的值为 False AND True = False 。\nOR 运算节点的值为 True OR False = True 。\n根节点的值为 True ，所以我们返回 true 。\n\n示例 2：\n\n输入：root = [0]\n输出：false\n解释：根节点是叶子节点，且值为 false，所以我们返回 false 。\n\n&nbsp;\n\n提示：\n\n\t树中节点数目在&nbsp;[1, 1000]&nbsp;之间。\n\t0 <= Node.val <= 3\n\t每个节点的孩子数为&nbsp;0 或&nbsp;2&nbsp;。\n\t叶子节点的值为&nbsp;0&nbsp;或&nbsp;1&nbsp;。\n\t非叶子节点的值为&nbsp;2&nbsp;或&nbsp;3 。",
+  "constraints": [
+    "树中节点数目在&nbsp;[1, 1000]&nbsp;之间。",
+    "0 <= Node.val <= 3",
+    "每个节点的孩子数为&nbsp;0 或&nbsp;2&nbsp;。",
+    "叶子节点的值为&nbsp;0&nbsp;或&nbsp;1&nbsp;。",
+    "非叶子节点的值为&nbsp;2&nbsp;或&nbsp;3 。"
+  ]
+}

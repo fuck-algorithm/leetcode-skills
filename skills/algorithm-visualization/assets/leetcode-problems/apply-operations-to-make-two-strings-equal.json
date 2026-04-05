@@ -1,0 +1,13 @@
+{
+  "number": "2896",
+  "title_cn": "执行操作使两个字符串相等",
+  "title_en": "Apply Operations to Make Two Strings Equal",
+  "slug": "apply-operations-to-make-two-strings-equal",
+  "difficulty": "Medium",
+  "description": "给你两个下标从 0&nbsp;开始的二进制字符串&nbsp;s1 和&nbsp;s2&nbsp;，两个字符串的长度都是&nbsp;n&nbsp;，再给你一个正整数&nbsp;x&nbsp;。\n\n你可以对字符串 s1&nbsp;执行以下操作 任意次&nbsp;：\n\n\t选择两个下标&nbsp;i&nbsp;和&nbsp;j&nbsp;，将&nbsp;s1[i] 和&nbsp;s1[j]&nbsp;都反转，操作的代价为&nbsp;x&nbsp;。\n\t选择满足 i < n - 1&nbsp;的下标&nbsp;i&nbsp;，反转&nbsp;s1[i] 和&nbsp;s1[i + 1]&nbsp;，操作的代价为&nbsp;1&nbsp;。\n\n请你返回使字符串&nbsp;s1&nbsp;和&nbsp;s2&nbsp;相等的&nbsp;最小&nbsp;操作代价之和，如果无法让二者相等，返回&nbsp;-1&nbsp;。\n\n注意&nbsp;，反转字符的意思是将&nbsp;0&nbsp;变成&nbsp;1&nbsp;，或者 1&nbsp;变成 0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"1100011000\", s2 = \"0101001010\", x = 2\n输出：4\n解释：我们可以执行以下操作：\n- 选择 i = 3 执行第二个操作。结果字符串是 s1 = \"1101111000\" 。\n- 选择 i = 4 执行第二个操作。结果字符串是 s1 = \"1101001000\" 。\n- 选择 i = 0 和 j = 8 ，执行第一个操作。结果字符串是 s1 = \"0101001010\" = s2 。\n总代价是 1 + 1 + 2 = 4 。这是最小代价和。\n\n示例 2：\n\n输入：s1 = \"10110\", s2 = \"00011\", x = 4\n输出：-1\n解释：无法使两个字符串相等。\n\n&nbsp;\n\n提示：\n\n\tn == s1.length == s2.length\n\t1 <= n, x <= 500\n\ts1 和&nbsp;s2&nbsp;只包含字符&nbsp;'0' 和&nbsp;'1' 。",
+  "constraints": [
+    "n == s1.length == s2.length",
+    "1 <= n, x <= 500",
+    "s1 和&nbsp;s2&nbsp;只包含字符&nbsp;'0' 和&nbsp;'1' 。"
+  ]
+}

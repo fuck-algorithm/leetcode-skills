@@ -1,0 +1,11 @@
+{
+  "number": "52",
+  "title_cn": "N 皇后 II",
+  "title_en": "N-Queens II",
+  "slug": "n-queens-ii",
+  "difficulty": "Hard",
+  "description": "n&nbsp;皇后问题 研究的是如何将 n&nbsp;个皇后放置在 n × n 的棋盘上，并且使皇后彼此之间不能相互攻击。\n\n给你一个整数 n ，返回 n 皇后问题 不同的解决方案的数量。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4\n输出：2\n解释：如上图所示，4 皇后问题存在两个不同的解法。\n\n示例 2：\n\n输入：n = 1\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 9",
+  "constraints": [
+    "1 <= n <= 9"
+  ]
+}

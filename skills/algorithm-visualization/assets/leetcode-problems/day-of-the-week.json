@@ -1,0 +1,11 @@
+{
+  "number": "1185",
+  "title_cn": "一周中的第几天",
+  "title_en": "Day of the Week",
+  "slug": "day-of-the-week",
+  "difficulty": "Easy",
+  "description": "给你一个日期，请你设计一个算法来判断它是对应一周中的哪一天。\n\n输入为三个整数：day、month 和&nbsp;year，分别表示日、月、年。\n\n您返回的结果必须是这几个值中的一个&nbsp;{\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"}。\n\n注意：1971 年 1 月 1 日是星期五。\n\n&nbsp;\n\n示例 1：\n\n输入：day = 31, month = 8, year = 2019\n输出：\"Saturday\"\n\n示例 2：\n\n输入：day = 18, month = 7, year = 1999\n输出：\"Sunday\"\n\n示例 3：\n\n输入：day = 15, month = 8, year = 1993\n输出：\"Sunday\"\n\n&nbsp;\n\n提示：\n\n\t给出的日期一定是在&nbsp;1971 到&nbsp;2100&nbsp;年之间的有效日期。",
+  "constraints": [
+    "给出的日期一定是在&nbsp;1971 到&nbsp;2100&nbsp;年之间的有效日期。"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "791",
+  "title_cn": "自定义字符串排序",
+  "title_en": "Custom Sort String",
+  "slug": "custom-sort-string",
+  "difficulty": "Medium",
+  "description": "给定两个字符串 order 和 s 。order 的所有字母都是 唯一 的，并且预先按照一些自定义的顺序排序。\n\n对 s 的字符进行置换，使其与排序的&nbsp;order&nbsp;相匹配。更具体地说，如果在&nbsp;order&nbsp;中的字符 x 出现字符 y 之前，那么在排列后的字符串中， x&nbsp;也应该出现在 y 之前。\n\n返回 满足这个性质的 s 的任意一种排列&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：  order = \"cba\", s = \"abcd\" \n\n输出：  \"cbad\" \n\n解释： \"a\"，\"b\"，\"c\"&nbsp;在&nbsp;order&nbsp;中出现，所以&nbsp;\"a\"，\"b\"，\"c\"&nbsp;的顺序应该是&nbsp;\"c\"，\"b\"，和&nbsp;\"a\"。\n\n由于&nbsp;\"d\"&nbsp;没有在&nbsp;order&nbsp;中出现，它可以在返回字符串的任意位置。\"dcba\"，\"cdba\"，\"cbda\"&nbsp;也是合法的输出。\n\n示例 2：\n\n输入：  order = \"bcafg\", s = \"abcd\" \n\n输出：  \"bcad\" \n\n解释：order&nbsp;中的字符 \"b\"、\"c\" 和 \"a\" 决定了 s 中字符的顺序。s 中的字符 \"d\"&nbsp;没有出现在&nbsp;order 中，因此其位置是可变的。\n\n按照&nbsp;order&nbsp;中的出现顺序，\"b\"、\"c\" 和 \"a\" 应该按 \"b\"、\"c\"、\"a\" 的顺序排列。\"d\" 可以放在任何位置，因为它不受顺序限制。输出 \"bcad\" 正确遵循了这一规则。其他排列如 \"dbca\" 或 \"bcda\" 也是合法的，只要 \"b\"、\"c\"、\"a\" 的顺序保持不变。\n\n&nbsp;\n\n提示:\n\n\t1 <= order.length <= 26\n\t1 <= s.length <= 200\n\torder&nbsp;和&nbsp;s&nbsp;由小写英文字母组成\n\torder&nbsp;中的所有字符都 不同",
+  "constraints": [
+    "1 <= order.length <= 26",
+    "1 <= s.length <= 200",
+    "order&nbsp;和&nbsp;s&nbsp;由小写英文字母组成",
+    "order&nbsp;中的所有字符都 不同"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "144",
+  "title_cn": "二叉树的前序遍历",
+  "title_en": "Binary Tree Preorder Traversal",
+  "slug": "binary-tree-preorder-traversal",
+  "difficulty": "Easy",
+  "description": "给你二叉树的根节点 root ，返回它节点值的&nbsp;前序&nbsp;遍历。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,null,2,3]\n\n输出：[1,2,3]\n\n解释：\n\n示例 2：\n\n输入：root = [1,2,3,4,5,null,8,null,null,6,7,9]\n\n输出：[1,2,4,5,6,7,3,8,9]\n\n解释：\n\n示例 3：\n\n输入：root = []\n\n输出：[]\n\n示例 4：\n\n输入：root = [1]\n\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t树中节点数目在范围 [0, 100] 内\n\t-100 <= Node.val <= 100\n\n&nbsp;\n\n进阶：递归算法很简单，你可以通过迭代算法完成吗？",
+  "constraints": [
+    "树中节点数目在范围 [0, 100] 内",
+    "-100 <= Node.val <= 100"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "1307",
+  "title_cn": "口算难题",
+  "title_en": "Verbal Arithmetic Puzzle",
+  "slug": "verbal-arithmetic-puzzle",
+  "difficulty": "Hard",
+  "description": "给你一个方程，左边用&nbsp;words&nbsp;表示，右边用&nbsp;result 表示。\n\n你需要根据以下规则检查方程是否可解：\n\n\t每个字符都会被解码成一位数字（0 - 9）。\n\t每对不同的字符必须映射到不同的数字。\n\t每个 words[i] 和 result&nbsp;都会被解码成一个没有前导零的数字。\n\t左侧数字之和（words）等于右侧数字（result）。&nbsp;\n\n如果方程可解，返回&nbsp;True，否则返回&nbsp;False。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"SEND\",\"MORE\"], result = \"MONEY\"\n输出：true\n解释：映射 &#39;S&#39;-> 9, &#39;E&#39;->5, &#39;N&#39;->6, &#39;D&#39;->7, &#39;M&#39;->1, &#39;O&#39;->0, &#39;R&#39;->8, &#39;Y&#39;->&#39;2&#39;\n所以 \"SEND\" + \"MORE\" = \"MONEY\" ,  9567 + 1085 = 10652\n\n示例 2：\n\n输入：words = [\"SIX\",\"SEVEN\",\"SEVEN\"], result = \"TWENTY\"\n输出：true\n解释：映射 &#39;S&#39;-> 6, &#39;I&#39;->5, &#39;X&#39;->0, &#39;E&#39;->8, &#39;V&#39;->7, &#39;N&#39;->2, &#39;T&#39;->1, &#39;W&#39;->&#39;3&#39;, &#39;Y&#39;->4\n所以 \"SIX\" + \"SEVEN\" + \"SEVEN\" = \"TWENTY\" ,  650 + 68782 + 68782 = 138214\n\n示例 3：\n\n输入：words = [\"THIS\",\"IS\",\"TOO\"], result = \"FUNNY\"\n输出：true\n\n示例 4：\n\n输入：words = [\"LEET\",\"CODE\"], result = \"POINT\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\t2 <= words.length <= 5\n\t1 <= words[i].length,&nbsp;results.length&nbsp;<= 7\n\twords[i], result&nbsp;只含有大写英文字母\n\t表达式中使用的不同字符数最大为&nbsp;10",
+  "constraints": [
+    "2 <= words.length <= 5",
+    "1 <= words[i].length,&nbsp;results.length&nbsp;<= 7",
+    "words[i], result&nbsp;只含有大写英文字母",
+    "表达式中使用的不同字符数最大为&nbsp;10"
+  ]
+}

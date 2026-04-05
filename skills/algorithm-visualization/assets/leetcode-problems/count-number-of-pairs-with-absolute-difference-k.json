@@ -1,0 +1,13 @@
+{
+  "number": "2006",
+  "title_cn": "差的绝对值为 K 的数对数目",
+  "title_en": "Count Number of Pairs With Absolute Difference K",
+  "slug": "count-number-of-pairs-with-absolute-difference-k",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;，请你返回数对&nbsp;(i, j)&nbsp;的数目，满足&nbsp;i < j&nbsp;且&nbsp;|nums[i] - nums[j]| == k&nbsp;。\n\n|x|&nbsp;的值定义为：\n\n\t如果&nbsp;x >= 0&nbsp;，那么值为&nbsp;x&nbsp;。\n\t如果&nbsp;x < 0&nbsp;，那么值为&nbsp;-x&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,2,1], k = 1\n输出：4\n解释：差的绝对值为 1 的数对为：\n- [1,2,2,1]\n- [1,2,2,1]\n- [1,2,2,1]\n- [1,2,2,1]\n\n示例 2：\n\n输入：nums = [1,3], k = 3\n输出：0\n解释：没有任何数对差的绝对值为 3 。\n\n示例 3：\n\n输入：nums = [3,2,1,5,4], k = 2\n输出：3\n解释：差的绝对值为 2 的数对为：\n- [3,2,1,5,4]\n- [3,2,1,5,4]\n- [3,2,1,5,4]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 200\n\t1 <= nums[i] <= 100\n\t1 <= k <= 99",
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= 99"
+  ]
+}

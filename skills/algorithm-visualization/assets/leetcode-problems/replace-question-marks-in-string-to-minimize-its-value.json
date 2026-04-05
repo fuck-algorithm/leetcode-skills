@@ -1,0 +1,12 @@
+{
+  "number": "3081",
+  "title_cn": "替换字符串中的问号使分数最小",
+  "title_en": "Replace Question Marks in String to Minimize Its Value",
+  "slug": "replace-question-marks-in-string-to-minimize-its-value",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;。s[i]&nbsp;要么是小写英文字母，要么是问号&nbsp;'?'&nbsp;。\n\n对于长度为 m&nbsp;且 只&nbsp;含有小写英文字母的字符串 t&nbsp;，我们定义函数&nbsp;cost(i)&nbsp;为下标 i&nbsp;之前（也就是范围 [0, i - 1]&nbsp;中）出现过与&nbsp;t[i]&nbsp;相同&nbsp;字符出现的次数。\n\n字符串 t&nbsp;的&nbsp;分数&nbsp;为所有下标&nbsp;i&nbsp;的&nbsp;cost(i)&nbsp;之 和&nbsp;。\n\n比方说，字符串&nbsp;t = \"aab\"&nbsp;：\n\n\tcost(0) = 0\n\tcost(1) = 1\n\tcost(2) = 0\n\t所以，字符串&nbsp;\"aab\"&nbsp;的分数为&nbsp;0 + 1 + 0 = 1&nbsp;。\n\n你的任务是用小写英文字母&nbsp;替换 s&nbsp;中 所有 问号，使 s&nbsp;的 分数最小&nbsp;。\n\n请你返回替换所有问号&nbsp;'?'&nbsp;之后且分数最小的字符串。如果有多个字符串的&nbsp;分数最小&nbsp;，那么返回字典序最小的一个。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"???\" \n\n输出：&nbsp;\"abc\" \n\n解释：这个例子中，我们将 s&nbsp;中的问号&nbsp;'?'&nbsp;替换得到&nbsp;\"abc\"&nbsp;。\n\n对于字符串&nbsp;\"abc\"&nbsp;，cost(0) = 0&nbsp;，cost(1) = 0&nbsp;和&nbsp;cost(2) = 0&nbsp;。\n\n\"abc\"&nbsp;的分数为&nbsp;0&nbsp;。\n\n其他修改 s&nbsp;得到分数 0&nbsp;的字符串为&nbsp;\"cba\"&nbsp;，\"abz\"&nbsp;和&nbsp;\"hey\"&nbsp;。\n\n这些字符串中，我们返回字典序最小的。\n\n示例 2：\n\n输入： s = \"a?a?\"\n\n输出： \"abac\"\n\n解释：这个例子中，我们将&nbsp;s&nbsp;中的问号&nbsp;'?'&nbsp;替换得到&nbsp;\"abac\"&nbsp;。\n\n对于字符串&nbsp;\"abac\"&nbsp;，cost(0) = 0&nbsp;，cost(1) = 0&nbsp;，cost(2) = 1&nbsp;和&nbsp;cost(3) = 0&nbsp;。\n\n\"abac\"&nbsp;的分数为&nbsp;1&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts[i]&nbsp;要么是小写英文字母，要么是&nbsp;'?' 。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i]&nbsp;要么是小写英文字母，要么是&nbsp;'?' 。"
+  ]
+}

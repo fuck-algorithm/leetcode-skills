@@ -1,0 +1,14 @@
+{
+  "number": "120",
+  "title_cn": "三角形最小路径和",
+  "title_en": "Triangle",
+  "slug": "triangle",
+  "difficulty": "Medium",
+  "description": "给定一个三角形 triangle ，找出自顶向下的最小路径和。\n\n每一步只能移动到下一行中相邻的结点上。相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。也就是说，如果正位于当前行的下标 i ，那么下一步可以移动到下一行的下标 i 或 i + 1 。\n\n示例 1：\n\n输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]\n输出：11\n解释：如下面简图所示：\n   2\n  3 4\n 6 5 7\n4 1 8 3\n自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。\n\n示例 2：\n\n输入：triangle = [[-10]]\n输出：-10\n\n提示：\n\n\t1 \n\ttriangle[0].length == 1\n\ttriangle[i].length == triangle[i - 1].length + 1\n\t-104 4\n\n进阶：\n\n\t你可以只使用 O(n) 的额外空间（n 为三角形的总行数）来解决这个问题吗？",
+  "constraints": [
+    "1",
+    "triangle[0].length == 1",
+    "triangle[i].length == triangle[i - 1].length + 1",
+    "-104 4"
+  ]
+}

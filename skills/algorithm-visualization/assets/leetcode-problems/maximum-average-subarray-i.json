@@ -1,0 +1,13 @@
+{
+  "number": "643",
+  "title_cn": "子数组最大平均数 I",
+  "title_en": "Maximum Average Subarray I",
+  "slug": "maximum-average-subarray-i",
+  "difficulty": "Easy",
+  "description": "给你一个由 n 个元素组成的整数数组 nums 和一个整数 k 。\n\n请你找出平均数最大且 长度为 k 的连续子数组，并输出该最大平均数。\n\n任何误差小于 10-5 的答案都将被视为正确答案。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,12,-5,-6,50,3], k = 4\n输出：12.75\n解释：最大平均数 (12-5-6+50)/4 = 51/4 = 12.75\n\n示例 2：\n\n输入：nums = [5], k = 1\n输出：5.00000\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= k <= n <= 105\n\t-104 <= nums[i] <= 104",
+  "constraints": [
+    "n == nums.length",
+    "1 <= k <= n <= 105",
+    "-104 <= nums[i] <= 104"
+  ]
+}

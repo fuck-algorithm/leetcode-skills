@@ -1,0 +1,12 @@
+{
+  "number": "872",
+  "title_cn": "叶子相似的树",
+  "title_en": "Leaf-Similar Trees",
+  "slug": "leaf-similar-trees",
+  "difficulty": "Easy",
+  "description": "请考虑一棵二叉树上所有的叶子，这些叶子的值按从左到右的顺序排列形成一个&nbsp;叶值序列 。\n\n举个例子，如上图所示，给定一棵叶值序列为&nbsp;(6, 7, 4, 9, 8)&nbsp;的树。\n\n如果有两棵二叉树的叶值序列是相同，那么我们就认为它们是&nbsp;叶相似&nbsp;的。\n\n如果给定的两个根结点分别为&nbsp;root1 和&nbsp;root2&nbsp;的树是叶相似的，则返回&nbsp;true；否则返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]\n输出：true\n\n示例 2：\n\n输入：root1 = [1,2,3], root2 = [1,3,2]\n输出：false\n\n&nbsp;\n\n提示：\n\n\t给定的两棵树结点数在&nbsp;[1, 200] 范围内\n\t给定的两棵树上的值在&nbsp;[0, 200] 范围内",
+  "constraints": [
+    "给定的两棵树结点数在&nbsp;[1, 200] 范围内",
+    "给定的两棵树上的值在&nbsp;[0, 200] 范围内"
+  ]
+}

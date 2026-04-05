@@ -1,0 +1,12 @@
+{
+  "number": "3503",
+  "title_cn": "子字符串连接后的最长回文串 I",
+  "title_en": "Longest Palindrome After Substring Concatenation I",
+  "slug": "longest-palindrome-after-substring-concatenation-i",
+  "difficulty": "Medium",
+  "description": "给你两个字符串 s 和 t。\n\n你可以从 s 中选择一个子串（可以为空）以及从 t 中选择一个子串（可以为空），然后将它们 按顺序 连接，得到一个新的字符串。\n\n返回可以由上述方法构造出的 最长 回文串的长度。\n\n回文串 是指正着读和反着读都相同的字符串。\n\n子字符串 是指字符串中的一个连续字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"a\", t = \"a\"\n\n输出： 2\n\n解释：\n\n从 s 中选择 \"a\"，从 t 中选择 \"a\"，拼接得到 \"aa\"，这是一个长度为 2 的回文串。\n\n示例 2：\n\n输入： s = \"abc\", t = \"def\"\n\n输出： 1\n\n解释：\n\n由于两个字符串的所有字符都不同，最长的回文串只能是任意一个单独的字符，因此答案是 1。\n\n示例 3：\n\n输入： s = \"b\", t = \"aaaa\"\n\n输出： 4\n\n解释：\n\n可以选择 \"aaaa\" 作为回文串，其长度为 4。\n\n示例 4：\n\n输入： s = \"abcde\", t = \"ecdba\"\n\n输出： 5\n\n解释：\n\n从 s 中选择 \"abc\"，从 t 中选择 \"ba\"，拼接得到 \"abcba\"，这是一个长度为 5 的回文串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, t.length <= 30\n\ts 和 t 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length, t.length <= 30",
+    "s 和 t 仅由小写英文字母组成。"
+  ]
+}

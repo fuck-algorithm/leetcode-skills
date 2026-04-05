@@ -1,0 +1,9 @@
+{
+  "number": "1474",
+  "title_cn": "删除链表 M 个节点之后的 N 个节点",
+  "title_en": "Delete N Nodes After M Nodes of a Linked List",
+  "slug": "delete-n-nodes-after-m-nodes-of-a-linked-list",
+  "difficulty": "Easy",
+  "description": "",
+  "constraints": []
+}

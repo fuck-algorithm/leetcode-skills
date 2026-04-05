@@ -1,0 +1,17 @@
+{
+  "number": "2768",
+  "title_cn": "黑格子的数目",
+  "title_en": "Number of Black Blocks",
+  "slug": "number-of-black-blocks",
+  "difficulty": "Medium",
+  "description": "给你两个整数&nbsp;m 和&nbsp;n&nbsp;，表示一个下标从 0&nbsp;开始的&nbsp;m x n&nbsp;的网格图。\n\n给你一个下标从 0&nbsp;开始的二维整数矩阵&nbsp;coordinates&nbsp;，其中&nbsp;coordinates[i] = [x, y]&nbsp;表示坐标为&nbsp;[x, y]&nbsp;的格子是 黑色的&nbsp;，所有没出现在&nbsp;coordinates&nbsp;中的格子都是 白色的。\n\n一个块定义为网格图中&nbsp;2 x 2&nbsp;的一个子矩阵。更正式的，对于左上角格子为 [x, y] 的块，其中 0 <= x < m - 1 且&nbsp;0 <= y < n - 1 ，包含坐标为&nbsp;[x, y]&nbsp;，[x + 1, y]&nbsp;，[x, y + 1]&nbsp;和&nbsp;[x + 1, y + 1]&nbsp;的格子。\n\n请你返回一个下标从 0&nbsp;开始长度为 5&nbsp;的整数数组&nbsp;arr&nbsp;，arr[i]&nbsp;表示恰好包含&nbsp;i&nbsp;个&nbsp;黑色&nbsp;格子的块的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：m = 3, n = 3, coordinates = [[0,0]]\n输出：[3,1,0,0,0]\n解释：网格图如下：\n\n只有 1 个块有一个黑色格子，这个块是左上角为 [0,0] 的块。\n其他 3 个左上角分别为 [0,1] ，[1,0] 和 [1,1] 的块都有 0 个黑格子。\n所以我们返回 [3,1,0,0,0] 。\n\n示例 2：\n\n输入：m = 3, n = 3, coordinates = [[0,0],[1,1],[0,2]]\n输出：[0,2,2,0,0]\n解释：网格图如下：\n\n有 2 个块有 2 个黑色格子（左上角格子分别为 [0,0] 和 [0,1]）。\n左上角为 [1,0] 和 [1,1] 的两个块，都有 1 个黑格子。\n所以我们返回 [0,2,2,0,0] 。\n\n&nbsp;\n\n提示：\n\n\t2 <= m <= 105\n\t2 <= n <= 105\n\t0 <= coordinates.length <= 104\n\tcoordinates[i].length == 2\n\t0 <= coordinates[i][0] < m\n\t0 <= coordinates[i][1] < n\n\tcoordinates&nbsp;中的坐标对两两互不相同。",
+  "constraints": [
+    "2 <= m <= 105",
+    "2 <= n <= 105",
+    "0 <= coordinates.length <= 104",
+    "coordinates[i].length == 2",
+    "0 <= coordinates[i][0] < m",
+    "0 <= coordinates[i][1] < n",
+    "coordinates&nbsp;中的坐标对两两互不相同。"
+  ]
+}

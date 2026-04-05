@@ -1,0 +1,15 @@
+{
+  "number": "2476",
+  "title_cn": "二叉搜索树最近节点查询",
+  "title_en": "Closest Nodes Queries in a Binary Search Tree",
+  "slug": "closest-nodes-queries-in-a-binary-search-tree",
+  "difficulty": "Medium",
+  "description": "给你一个 二叉搜索树 的根节点 root ，和一个由正整数组成、长度为 n 的数组 queries 。\n\n请你找出一个长度为 n 的 二维 答案数组 answer ，其中 answer[i] = [mini, maxi] ：\n\n\tmini 是树中小于等于&nbsp;queries[i] 的 最大值 。如果不存在这样的值，则使用 -1 代替。\n\tmaxi 是树中大于等于&nbsp;queries[i] 的 最小值 。如果不存在这样的值，则使用 -1 代替。\n\n返回数组 answer 。\n\n&nbsp;\n\n示例 1 ：\n\n输入：root = [6,2,13,1,4,9,15,null,null,null,null,null,null,14], queries = [2,5,16]\n输出：[[2,2],[4,6],[15,-1]]\n解释：按下面的描述找出并返回查询的答案：\n- 树中小于等于 2 的最大值是 2 ，且大于等于 2 的最小值也是 2 。所以第一个查询的答案是 [2,2] 。\n- 树中小于等于 5 的最大值是 4 ，且大于等于 5 的最小值是 6 。所以第二个查询的答案是 [4,6] 。\n- 树中小于等于 16 的最大值是 15 ，且大于等于 16 的最小值不存在。所以第三个查询的答案是 [15,-1] 。\n\n示例 2 ：\n\n输入：root = [4,null,9], queries = [3]\n输出：[[-1,4]]\n解释：树中不存在小于等于 3 的最大值，且大于等于 3 的最小值是 4 。所以查询的答案是 [-1,4] 。\n\n&nbsp;\n\n提示：\n\n\t树中节点的数目在范围 [2, 105] 内\n\t1 <= Node.val <= 106\n\tn == queries.length\n\t1 <= n <= 105\n\t1 <= queries[i] <= 106",
+  "constraints": [
+    "树中节点的数目在范围 [2, 105] 内",
+    "1 <= Node.val <= 106",
+    "n == queries.length",
+    "1 <= n <= 105",
+    "1 <= queries[i] <= 106"
+  ]
+}

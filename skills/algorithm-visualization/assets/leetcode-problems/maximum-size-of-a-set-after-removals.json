@@ -1,0 +1,14 @@
+{
+  "number": "3002",
+  "title_cn": "移除后集合的最多元素数",
+  "title_en": "Maximum Size of a Set After Removals",
+  "slug": "maximum-size-of-a-set-after-removals",
+  "difficulty": "Medium",
+  "description": "给你两个下标从 0 开始的整数数组 nums1 和 nums2 ，它们的长度都是偶数 n 。\n\n你必须从 nums1 中移除 n / 2 个元素，同时从 nums2 中也移除 n / 2 个元素。移除之后，你将 nums1 和 nums2 中剩下的元素插入到集合 s 中。\n\n返回集合 s可能的 最多 包含多少元素。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,2,1,2], nums2 = [1,1,1,1]\n输出：2\n解释：从 nums1 和 nums2 中移除两个 1 。移除后，数组变为 nums1 = [2,2] 和 nums2 = [1,1] 。因此，s = {1,2} 。\n可以证明，在移除之后，集合 s 最多可以包含 2 个元素。\n\n示例 2：\n\n输入：nums1 = [1,2,3,4,5,6], nums2 = [2,3,2,3,2,3]\n输出：5\n解释：从 nums1 中移除 2、3 和 6 ，同时从 nums2 中移除两个 3 和一个 2 。移除后，数组变为 nums1 = [1,4,5] 和 nums2 = [2,3,2] 。因此，s = {1,2,3,4,5} 。\n可以证明，在移除之后，集合 s 最多可以包含 5 个元素。 \n\n示例 3：\n\n输入：nums1 = [1,1,2,2,3,3], nums2 = [4,4,5,5,6,6]\n输出：6\n解释：从 nums1 中移除 1、2 和 3 ，同时从 nums2 中移除 4、5 和 6 。移除后，数组变为 nums1 = [1,2,3] 和 nums2 = [4,5,6] 。因此，s = {1,2,3,4,5,6} 。\n可以证明，在移除之后，集合 s 最多可以包含 6 个元素。 \n\n&nbsp;\n\n提示：\n\n\tn == nums1.length == nums2.length\n\t1 <= n <= 2 * 104\n\tn是偶数。\n\t1 <= nums1[i], nums2[i] <= 109",
+  "constraints": [
+    "n == nums1.length == nums2.length",
+    "1 <= n <= 2 * 104",
+    "n是偶数。",
+    "1 <= nums1[i], nums2[i] <= 109"
+  ]
+}

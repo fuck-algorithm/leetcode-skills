@@ -1,0 +1,14 @@
+{
+  "number": "3376",
+  "title_cn": "破解锁的最少时间 I",
+  "title_en": "Minimum Time to Break Locks I",
+  "slug": "minimum-time-to-break-locks-i",
+  "difficulty": "Medium",
+  "description": "Bob 被困在了一个地窖里，他需要破解 n&nbsp;个锁才能逃出地窖，每一个锁都需要一定的 能量&nbsp;才能打开。每一个锁需要的能量存放在一个数组&nbsp;strength&nbsp;里，其中&nbsp;strength[i]&nbsp;表示打开第 i&nbsp;个锁需要的能量。\n\nBob 有一把剑，它具备以下的特征：\n\n\t一开始剑的能量为 0 。\n\t剑的能量增加因子&nbsp;X&nbsp;一开始的值为 1 。\n\t每分钟，剑的能量都会增加当前的&nbsp;X&nbsp;值。\n\t打开第 i&nbsp;把锁，剑的能量需要到达 至少&nbsp;strength[i]&nbsp;。\n\t打开一把锁以后，剑的能量会变回 0 ，X&nbsp;的值会增加一个给定的值 K&nbsp;。\n\n你的任务是打开所有 n&nbsp;把锁并逃出地窖，请你求出需要的 最少&nbsp;分钟数。\n\n请你返回 Bob&nbsp;打开所有 n&nbsp;把锁需要的 最少&nbsp;时间。\n\n&nbsp;\n\n示例 1：\n\n输入：strength = [3,4,1], K = 1\n\n输出：4\n\n解释：\n\n\t\t\t时间\n\t\t\t能量\n\t\t\tX\n\t\t\t操作\n\t\t\t更新后的 X\n\n\t\t\t0\n\t\t\t0\n\t\t\t1\n\t\t\t什么也不做\n\t\t\t1\n\n\t\t\t1\n\t\t\t1\n\t\t\t1\n\t\t\t打开第 3&nbsp;把锁\n\t\t\t2\n\n\t\t\t2\n\t\t\t2\n\t\t\t2\n\t\t\t什么也不做\n\t\t\t2\n\n\t\t\t3\n\t\t\t4\n\t\t\t2\n\t\t\t打开第 2 把锁\n\t\t\t3\n\n\t\t\t4\n\t\t\t3\n\t\t\t3\n\t\t\t打开第 1 把锁\n\t\t\t3\n\n无法用少于 4 分钟打开所有的锁，所以答案为 4 。\n\n示例 2：\n\n输入：strength = [2,5,4], K = 2\n\n输出：5\n\n解释：\n\n\t\t\t时间\n\t\t\t能量\n\t\t\tX\n\t\t\t操作\n\t\t\t更新后的 X\n\n\t\t\t0\n\t\t\t0\n\t\t\t1\n\t\t\t什么也不做\n\t\t\t1\n\n\t\t\t1\n\t\t\t1\n\t\t\t1\n\t\t\t什么也不做\n\t\t\t1\n\n\t\t\t2\n\t\t\t2\n\t\t\t1\n\t\t\t打开第 1 把锁\n\t\t\t3\n\n\t\t\t3\n\t\t\t3\n\t\t\t3\n\t\t\t什么也不做\n\t\t\t3\n\n\t\t\t4\n\t\t\t6\n\t\t\t3\n\t\t\t打开第 2 把锁\n\t\t\t5\n\n\t\t\t5\n\t\t\t5\n\t\t\t5\n\t\t\t打开第 3 把锁\n\t\t\t7\n\n无法用少于 5 分钟打开所有的锁，所以答案为 5 。\n\n&nbsp;\n\n提示：\n\n\tn == strength.length\n\t1 <= n <= 8\n\t1 <= K <= 10\n\t1 <= strength[i] <= 106",
+  "constraints": [
+    "n == strength.length",
+    "1 <= n <= 8",
+    "1 <= K <= 10",
+    "1 <= strength[i] <= 106"
+  ]
+}

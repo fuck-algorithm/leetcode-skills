@@ -1,0 +1,11 @@
+{
+  "number": "12",
+  "title_cn": "整数转罗马数字",
+  "title_en": "Integer to Roman",
+  "slug": "integer-to-roman",
+  "difficulty": "Medium",
+  "description": "七个不同的符号代表罗马数字，其值如下：\n\n\t\t\t符号\n\t\t\t值\n\n\t\t\tI\n\t\t\t1\n\n\t\t\tV\n\t\t\t5\n\n\t\t\tX\n\t\t\t10\n\n\t\t\tL\n\t\t\t50\n\n\t\t\tC\n\t\t\t100\n\n\t\t\tD\n\t\t\t500\n\n\t\t\tM\n\t\t\t1000\n\n罗马数字是通过添加从最高到最低的小数位值的转换而形成的。将小数位值转换为罗马数字有以下规则：\n\n\t如果该值不是以 4 或 9 开头，请选择可以从输入中减去的最大值的符号，将该符号附加到结果，减去其值，然后将其余部分转换为罗马数字。\n\t如果该值以 4 或 9 开头，使用 减法形式，表示从以下符号中减去一个符号，例如&nbsp;4 是 5 (V) 减 1 (I): IV&nbsp;，9 是 10 (X) 减&nbsp;1 (I)：IX。仅使用以下减法形式：4 (IV)，9 (IX)，40 (XL)，90 (XC)，400 (CD) 和&nbsp;900 (CM)。\n\t只有 10 的次方（I, X, C, M）最多可以连续附加 3 次以代表 10 的倍数。你不能多次附加&nbsp;5&nbsp;(V)，50 (L) 或 500 (D)。如果需要将符号附加4次，请使用 减法形式。\n\n给定一个整数，将其转换为罗马数字。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 3749\n\n输出：&nbsp;\"MMMDCCXLIX\"\n\n解释：\n\n3000 = MMM 由于 1000 (M) + 1000 (M) + 1000 (M)\n 700 = DCC 由于 500 (D) + 100 (C) + 100 (C)\n  40 = XL 由于 50 (L) 减 10 (X)\n   9 = IX 由于 10 (X) 减 1 (I)\n注意：49 不是 50 (L) 减 1 (I) 因为转换是基于小数位\n\n示例 2：\n\n输入：num = 58\n\n输出：\"LVIII\"\n\n解释：\n\n50 = L\n 8 = VIII\n\n示例 3：\n\n输入：num = 1994\n\n输出：\"MCMXCIV\"\n\n解释：\n\n1000 = M\n 900 = CM\n  90 = XC\n   4 = IV\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 3999",
+  "constraints": [
+    "1 <= num <= 3999"
+  ]
+}

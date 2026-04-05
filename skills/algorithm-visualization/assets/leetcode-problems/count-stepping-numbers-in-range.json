@@ -1,0 +1,14 @@
+{
+  "number": "2801",
+  "title_cn": "统计范围内的步进数字数目",
+  "title_en": "Count Stepping Numbers in Range",
+  "slug": "count-stepping-numbers-in-range",
+  "difficulty": "Hard",
+  "description": "给你两个正整数&nbsp;low 和&nbsp;high&nbsp;，都用字符串表示，请你统计闭区间 [low, high]&nbsp;内的 步进数字&nbsp;数目。\n\n如果一个整数相邻数位之间差的绝对值都 恰好&nbsp;是 1&nbsp;，那么这个数字被称为 步进数字&nbsp;。\n\n请你返回一个整数，表示闭区间&nbsp;[low, high]&nbsp;之间步进数字的数目。\n\n由于答案可能很大，请你将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n注意：步进数字不能有前导 0 。\n\n&nbsp;\n\n示例 1：\n\n输入：low = \"1\", high = \"11\"\n输出：10\n解释：区间 [1,11] 内的步进数字为 1 ，2 ，3 ，4 ，5 ，6 ，7 ，8 ，9 和 10 。总共有 10 个步进数字。所以输出为 10 。\n\n示例 2：\n\n输入：low = \"90\", high = \"101\"\n输出：2\n解释：区间 [90,101] 内的步进数字为 98 和 101 。总共有 2 个步进数字。所以输出为 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= int(low) <= int(high) < 10100\n\t1 <= low.length, high.length <= 100\n\tlow 和&nbsp;high&nbsp;只包含数字。\n\tlow 和&nbsp;high&nbsp;都不含前导 0 。",
+  "constraints": [
+    "1 <= int(low) <= int(high) < 10100",
+    "1 <= low.length, high.length <= 100",
+    "low 和&nbsp;high&nbsp;只包含数字。",
+    "low 和&nbsp;high&nbsp;都不含前导 0 。"
+  ]
+}

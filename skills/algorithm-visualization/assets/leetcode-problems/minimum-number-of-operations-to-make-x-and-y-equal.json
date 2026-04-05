@@ -1,0 +1,11 @@
+{
+  "number": "2998",
+  "title_cn": "使 X 和 Y 相等的最少操作次数",
+  "title_en": "Minimum Number of Operations to Make X and Y Equal",
+  "slug": "minimum-number-of-operations-to-make-x-and-y-equal",
+  "difficulty": "Medium",
+  "description": "给你两个正整数&nbsp;x 和&nbsp;y&nbsp;。\n\n一次操作中，你可以执行以下四种操作之一：\n\n\t如果 x&nbsp;是 11&nbsp;的倍数，将&nbsp;x&nbsp;除以&nbsp;11&nbsp;。\n\t如果 x&nbsp;是 5&nbsp;的倍数，将 x&nbsp;除以 5&nbsp;。\n\t将&nbsp;x 减&nbsp;1&nbsp;。\n\t将&nbsp;x&nbsp;加&nbsp;1&nbsp;。\n\n请你返回让 x&nbsp;和 y&nbsp;相等的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：x = 26, y = 1\n输出：3\n解释：我们可以通过以下操作将 26 变为 1 ：\n1. 将 x 减 1\n2. 将 x 除以 5\n3. 将 x 除以 5\n将 26 变为 1 最少需要 3 次操作。\n\n示例 2：\n\n输入：x = 54, y = 2\n输出：4\n解释：我们可以通过以下操作将 54 变为 2 ：\n1. 将 x 加 1\n2. 将 x 除以 11\n3. 将 x 除以 5\n4. 将 x 加 1\n将 54 变为 2 最少需要 4 次操作。\n\n示例 3：\n\n输入：x = 25, y = 30\n输出：5\n解释：我们可以通过以下操作将 25 变为 30 ：\n1. 将 x 加 1\n2. 将 x 加 1\n3. 将 x 加 1\n4. 将 x 加 1\n5. 将 x 加 1\n将 25 变为 30 最少需要 5 次操作。\n\n&nbsp;\n\n提示：\n\n\t1 <= x, y <= 104",
+  "constraints": [
+    "1 <= x, y <= 104"
+  ]
+}

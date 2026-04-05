@@ -1,0 +1,12 @@
+{
+  "number": "3223",
+  "title_cn": "操作后字符串的最短长度",
+  "title_en": "Minimum Length of String After Operations",
+  "slug": "minimum-length-of-string-after-operations",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;。\n\n你需要对 s&nbsp;执行以下操作 任意&nbsp;次：\n\n\t选择一个下标 i&nbsp;，满足 s[i]&nbsp;左边和右边都&nbsp;至少&nbsp;有一个字符与它相同。\n\t删除 i&nbsp;左边&nbsp;离它 最近&nbsp;的&nbsp;s[i] 字符。\n\t删除 i&nbsp;右边&nbsp;离它 最近&nbsp;的&nbsp;s[i] 字符。\n\n请你返回执行完所有操作后， s&nbsp;的 最短&nbsp;长度。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abaacbcbb\"\n\n输出：5\n\n解释：\n我们执行以下操作：\n\n\t选择下标 2 ，然后删除下标 0 和 3 处的字符，得到&nbsp;s = \"bacbcbb\"&nbsp;。\n\t选择下标 3 ，然后删除下标 0 和 5 处的字符，得到&nbsp;s = \"acbcb\"&nbsp;。\n\n示例 2：\n\n输入：s = \"aa\"\n\n输出：2\n\n解释：\n无法对字符串进行任何操作，所以返回初始字符串的长度。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2 * 105\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 2 * 105",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

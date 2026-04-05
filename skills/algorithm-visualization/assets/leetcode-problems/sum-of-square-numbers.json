@@ -1,0 +1,11 @@
+{
+  "number": "633",
+  "title_cn": "平方数之和",
+  "title_en": "Sum of Square Numbers",
+  "slug": "sum-of-square-numbers",
+  "difficulty": "Medium",
+  "description": "给定一个非负整数&nbsp;c&nbsp;，你要判断是否存在两个整数 a 和 b，使得&nbsp;a2 + b2 = c 。\n\n&nbsp;\n\n示例 1：\n\n输入：c = 5\n输出：true\n解释：1 * 1 + 2 * 2 = 5\n\n示例 2：\n\n输入：c = 3\n输出：false\n\n&nbsp;\n\n提示：\n\n\t0 <= c <= 231 - 1",
+  "constraints": [
+    "0 <= c <= 231 - 1"
+  ]
+}

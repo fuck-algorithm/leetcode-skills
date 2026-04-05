@@ -1,0 +1,12 @@
+{
+  "number": "3591",
+  "title_cn": "检查元素频次是否为质数",
+  "title_en": "Check if Any Element Has Prime Frequency",
+  "slug": "check-if-any-element-has-prime-frequency",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums。\n\n如果数组中任一元素的&nbsp;频次&nbsp;是&nbsp;质数，返回 true；否则，返回 false。\n\n元素 x 的&nbsp;频次&nbsp;是它在数组中出现的次数。\n\n质数是一个大于 1 的自然数，并且只有两个因数：1 和它本身。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2,3,4,5,4]\n\n输出： true\n\n解释：\n\n数字 4 的频次是 2，而 2 是质数。\n\n示例 2：\n\n输入： nums = [1,2,3,4,5]\n\n输出： false\n\n解释：\n\n所有元素的频次都是 1。\n\n示例 3：\n\n输入： nums = [2,2,2,4,4]\n\n输出： true\n\n解释：\n\n数字 2 和 4 的频次都是质数。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t0 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 100"
+  ]
+}

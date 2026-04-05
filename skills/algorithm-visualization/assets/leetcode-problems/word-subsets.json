@@ -1,0 +1,14 @@
+{
+  "number": "916",
+  "title_cn": "单词子集",
+  "title_en": "Word Subsets",
+  "slug": "word-subsets",
+  "difficulty": "Medium",
+  "description": "给你两个字符串数组 words1&nbsp;和&nbsp;words2。\n\n现在，如果&nbsp;b 中的每个字母都出现在 a 中，包括重复出现的字母，那么称字符串 b 是字符串 a 的 子集 。\n\n\t例如，\"wrr\" 是 \"warrior\" 的子集，但不是 \"world\" 的子集。\n\n如果对 words2 中的每一个单词&nbsp;b，b 都是 a 的子集，那么我们称&nbsp;words1 中的单词 a 是 通用单词 。\n\n以数组形式返回&nbsp;words1 中所有的 通用 单词。你可以按 任意顺序 返回答案。\n\n&nbsp;\n\n示例 1：\n\n输入：words1 = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], words2 = [\"e\",\"o\"]\n\n输出：[\"facebook\",\"google\",\"leetcode\"]\n\n示例 2：\n\n输入：words1 = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], words2 = [\"lc\",\"eo\"]\n\n输出：[\"leetcode\"]\n\n示例 3：\n\n输入：words1 = [\"acaac\",\"cccbb\",\"aacbb\",\"caacc\",\"bcbbb\"], words2 = [\"c\",\"cc\",\"b\"]\n\n输出：[\"cccbb\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= words1.length, words2.length <= 104\n\t1 <= words1[i].length, words2[i].length <= 10\n\twords1[i] 和 words2[i] 仅由小写英文字母组成\n\twords1 中的所有字符串 互不相同",
+  "constraints": [
+    "1 <= words1.length, words2.length <= 104",
+    "1 <= words1[i].length, words2[i].length <= 10",
+    "words1[i] 和 words2[i] 仅由小写英文字母组成",
+    "words1 中的所有字符串 互不相同"
+  ]
+}

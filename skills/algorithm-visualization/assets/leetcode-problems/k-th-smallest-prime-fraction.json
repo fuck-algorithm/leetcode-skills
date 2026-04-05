@@ -1,0 +1,16 @@
+{
+  "number": "786",
+  "title_cn": "第 K 个最小的质数分数",
+  "title_en": "K-th Smallest Prime Fraction",
+  "slug": "k-th-smallest-prime-fraction",
+  "difficulty": "Medium",
+  "description": "给你一个按递增顺序排序的数组 arr 和一个整数 k 。数组 arr 由 1 和若干 质数 组成，且其中所有整数互不相同。\n\n对于每对满足 0 <= i < j < arr.length 的 i 和 j ，可以得到分数 arr[i] / arr[j] 。\n\n那么第&nbsp;k&nbsp;个最小的分数是多少呢?&nbsp; 以长度为 2 的整数数组返回你的答案, 这里&nbsp;answer[0] == arr[i]&nbsp;且&nbsp;answer[1] == arr[j] 。\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,2,3,5], k = 3\n输出：[2,5]\n解释：已构造好的分数,排序后如下所示: \n1/5, 1/3, 2/5, 1/2, 3/5, 2/3\n很明显第三个最小的分数是 2/5\n\n示例 2：\n\n输入：arr = [1,7], k = 1\n输出：[1,7]\n\n&nbsp;\n\n提示：\n\n\t2 <= arr.length <= 1000\n\t1 <= arr[i] <= 3 * 104\n\tarr[0] == 1\n\tarr[i] 是一个 质数 ，i > 0\n\tarr 中的所有数字 互不相同 ，且按 严格递增 排序\n\t1 <= k <= arr.length * (arr.length - 1) / 2\n\n&nbsp;\n\n进阶：你可以设计并实现时间复杂度小于 O(n2) 的算法解决此问题吗？",
+  "constraints": [
+    "2 <= arr.length <= 1000",
+    "1 <= arr[i] <= 3 * 104",
+    "arr[0] == 1",
+    "arr[i] 是一个 质数 ，i > 0",
+    "arr 中的所有数字 互不相同 ，且按 严格递增 排序",
+    "1 <= k <= arr.length * (arr.length - 1) / 2"
+  ]
+}

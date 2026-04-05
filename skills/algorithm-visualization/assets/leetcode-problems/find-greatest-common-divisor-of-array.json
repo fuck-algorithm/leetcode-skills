@@ -1,0 +1,12 @@
+{
+  "number": "1979",
+  "title_cn": "找出数组的最大公约数",
+  "title_en": "Find Greatest Common Divisor of Array",
+  "slug": "find-greatest-common-divisor-of-array",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums ，返回数组中最大数和最小数的 最大公约数 。\n\n两个数的&nbsp;最大公约数 是能够被两个数整除的最大正整数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,5,6,9,10]\n输出：2\n解释：\nnums 中最小的数是 2\nnums 中最大的数是 10\n2 和 10 的最大公约数是 2\n\n示例 2：\n\n输入：nums = [7,5,6,8,3]\n输出：1\n解释：\nnums 中最小的数是 3\nnums 中最大的数是 8\n3 和 8 的最大公约数是 1\n\n示例 3：\n\n输入：nums = [3,3]\n输出：3\n解释：\nnums 中最小的数是 3\nnums 中最大的数是 3\n3 和 3 的最大公约数是 3\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 1000\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "2 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000"
+  ]
+}

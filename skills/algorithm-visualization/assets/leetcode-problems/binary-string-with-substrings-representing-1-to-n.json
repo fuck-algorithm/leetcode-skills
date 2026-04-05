@@ -1,0 +1,13 @@
+{
+  "number": "1016",
+  "title_cn": "子串能表示从 1 到 N 数字的二进制串",
+  "title_en": "Binary String With Substrings Representing 1 To N",
+  "slug": "binary-string-with-substrings-representing-1-to-n",
+  "difficulty": "Medium",
+  "description": "给定一个二进制字符串&nbsp;s&nbsp;和一个正整数&nbsp;n，如果对于&nbsp;[1, n]&nbsp;范围内的每个整数，其二进制表示都是&nbsp;s 的 子字符串 ，就返回 true，否则返回 false&nbsp;。\n\n子字符串&nbsp;是字符串中连续的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"0110\", n = 3\n输出：true\n\n示例 2：\n\n输入：s = \"0110\", n = 4\n输出：false\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts[i]&nbsp;不是&nbsp;'0'&nbsp;就是&nbsp;'1'\n\t1 <= n <= 109",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i]&nbsp;不是&nbsp;'0'&nbsp;就是&nbsp;'1'",
+    "1 <= n <= 109"
+  ]
+}

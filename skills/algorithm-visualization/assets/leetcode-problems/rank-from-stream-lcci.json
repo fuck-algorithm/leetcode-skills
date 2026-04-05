@@ -1,0 +1,12 @@
+{
+  "number": "面试题 10.10",
+  "title_cn": "数字流的秩",
+  "title_en": "Rank from Stream LCCI",
+  "slug": "rank-from-stream-lcci",
+  "difficulty": "Medium",
+  "description": "假设你正在读取一串整数。每隔一段时间，你希望能找出数字 x 的秩(小于或等于 x 的值的个数)。请实现数据结构和算法来支持这些操作，也就是说：\n\n实现 track(int x)&nbsp;方法，每读入一个数字都会调用该方法；\n\n实现 getRankOfNumber(int x) 方法，返回小于或等于 x 的值的个数。\n\n注意：本题相对原题稍作改动\n\n示例：\n\n输入：\n[\"StreamRank\", \"getRankOfNumber\", \"track\", \"getRankOfNumber\"]\n[[], [1], [0], [0]]\n输出：\n[null,0,null,1]\n\n提示：\n\n\tx <= 50000\n\ttrack&nbsp;和&nbsp;getRankOfNumber 方法的调用次数均不超过 2000 次",
+  "constraints": [
+    "x <= 50000",
+    "track&nbsp;和&nbsp;getRankOfNumber 方法的调用次数均不超过 2000 次"
+  ]
+}

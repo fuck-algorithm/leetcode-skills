@@ -1,0 +1,12 @@
+{
+  "number": "3",
+  "title_cn": "无重复字符的最长子串",
+  "title_en": "Longest Substring Without Repeating Characters",
+  "slug": "longest-substring-without-repeating-characters",
+  "difficulty": "Medium",
+  "description": "给定一个字符串 s ，请你找出其中不含有重复字符的&nbsp;最长 子串&nbsp;的长度。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: s = \"abcabcbb\"\n输出: 3 \n解释: 因为无重复字符的最长子串是 \"abc\"，所以其长度为 3。注意 \"bca\" 和 \"cab\" 也是正确答案。\n\n示例 2:\n\n输入: s = \"bbbbb\"\n输出: 1\n解释: 因为无重复字符的最长子串是 \"b\"，所以其长度为 1。\n\n示例 3:\n\n输入: s = \"pwwkew\"\n输出: 3\n解释: 因为无重复字符的最长子串是&nbsp;\"wke\"，所以其长度为 3。\n&nbsp;    请注意，你的答案必须是 子串 的长度，\"pwke\"&nbsp;是一个子序列，不是子串。\n\n&nbsp;\n\n提示：\n\n\t0 <= s.length <= 5 * 104\n\ts&nbsp;由英文字母、数字、符号和空格组成",
+  "constraints": [
+    "0 <= s.length <= 5 * 104",
+    "s&nbsp;由英文字母、数字、符号和空格组成"
+  ]
+}

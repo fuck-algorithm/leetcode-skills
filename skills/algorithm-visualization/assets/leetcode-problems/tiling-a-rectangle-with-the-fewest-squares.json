@@ -1,0 +1,11 @@
+{
+  "number": "1240",
+  "title_cn": "铺瓷砖",
+  "title_en": "Tiling a Rectangle with the Fewest Squares",
+  "slug": "tiling-a-rectangle-with-the-fewest-squares",
+  "difficulty": "Hard",
+  "description": "给定一个大小为&nbsp;n&nbsp;x&nbsp;m&nbsp;的长方形，返回贴满矩形所需的整数边正方形的最小数量。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2, m = 3\n输出：3\n解释：需要 3 个正方形来覆盖长方形。\n     2 个 1x1 的正方形\n     1 个 2x2 的正方形\n\n示例 2：\n\n输入：n = 5, m = 8\n输出：5\n\n示例 3：\n\n输入：n = 11, m = 13\n输出：6\n\n&nbsp;\n\n提示：\n\n\t1 <= n, m <= 13",
+  "constraints": [
+    "1 <= n, m <= 13"
+  ]
+}

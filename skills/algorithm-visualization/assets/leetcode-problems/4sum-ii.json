@@ -1,0 +1,9 @@
+{
+  "number": "454",
+  "title_cn": "四数相加 II",
+  "title_en": "4Sum II",
+  "slug": "4sum-ii",
+  "difficulty": "Medium",
+  "description": "给你四个整数数组 nums1、nums2、nums3 和 nums4 ，数组长度都是 n ，请你计算有多少个元组 (i, j, k, l) 能满足：\n\n\t0 <= i, j, k, l < n\n\tnums1[i] + nums2[j] + nums3[k] + nums4[l] == 0\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,2], nums2 = [-2,-1], nums3 = [-1,2], nums4 = [0,2]\n输出：2\n解释：\n两个元组如下：\n1. (0, 0, 0, 1) -> nums1[0] + nums2[0] + nums3[0] + nums4[1] = 1 + (-2) + (-1) + 2 = 0\n2. (1, 1, 0, 0) -> nums1[1] + nums2[1] + nums3[0] + nums4[0] = 2 + (-1) + (-1) + 0 = 0\n\n示例 2：\n\n输入：nums1 = [0], nums2 = [0], nums3 = [0], nums4 = [0]\n输出：1\n\n&nbsp;\n\n&nbsp; 提示：\n\n\tn == nums1.length\n\tn == nums2.length\n\tn == nums3.length\n\tn == nums4.length\n\t1 <= n <= 200\n\t-228 <= nums1[i], nums2[i], nums3[i], nums4[i] <= 228",
+  "constraints": []
+}

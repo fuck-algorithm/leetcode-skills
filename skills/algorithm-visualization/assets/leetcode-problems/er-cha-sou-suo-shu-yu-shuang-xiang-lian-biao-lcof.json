@@ -1,0 +1,15 @@
+{
+  "number": "LCR 155",
+  "title_cn": "将二叉搜索树转化为排序的双向链表",
+  "title_en": "将二叉搜索树转化为排序的双向链表",
+  "slug": "er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof",
+  "difficulty": "Medium",
+  "description": "将一个 二叉搜索树 就地转化为一个 已排序的双向循环链表 。\n\n对于双向循环列表，你可以将左右孩子指针作为双向循环链表的前驱和后继指针，第一个节点的前驱是最后一个节点，最后一个节点的后继是第一个节点。\n\n特别地，我们希望可以 就地 完成转换操作。当转化完成以后，树中节点的左指针需要指向前驱，树中节点的右指针需要指向后继。还需要返回链表中最小元素的指针。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [4,2,5,1,3] \n\n输出：[1,2,3,4,5]\n\n解释：下图显示了转化后的二叉搜索树，实线表示后继关系，虚线表示前驱关系。\n\n示例 2：\n\n输入：root = [2,1,3]\n输出：[1,2,3]\n\n示例 3：\n\n输入：root = []\n输出：[]\n解释：输入是空树，所以输出也是空链表。\n\n示例 4：\n\n输入：root = [1]\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t-1000 <= Node.val <= 1000\n\tNode.left.val < Node.val < Node.right.val\n\tNode.val 的所有值都是独一无二的\n\t0 <= Number of Nodes <= 2000\n\n注意：本题与主站 426 题相同：https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/",
+  "constraints": [
+    "-1000 <= Node.val <= 1000",
+    "Node.left.val < Node.val < Node.right.val",
+    "Node.val 的所有值都是独一无二的",
+    "0 <= Number of Nodes <= 2000",
+    "注意：本题与主站 426 题相同：https://leetcode.cn/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/"
+  ]
+}

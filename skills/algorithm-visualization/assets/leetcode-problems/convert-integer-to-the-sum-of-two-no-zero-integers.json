@@ -1,0 +1,11 @@
+{
+  "number": "1317",
+  "title_cn": "将整数转换为两个无零整数的和",
+  "title_en": "Convert Integer to the Sum of Two No-Zero Integers",
+  "slug": "convert-integer-to-the-sum-of-two-no-zero-integers",
+  "difficulty": "Easy",
+  "description": "「无零整数」是十进制表示中 不含任何 0&nbsp;的正整数。\n\n给你一个整数&nbsp;n，请你返回一个 由两个整数组成的列表 [a, b]，满足：\n\n\ta 和 b&nbsp;都是无零整数\n\ta + b = n\n\n题目数据保证至少有一个有效的解决方案。\n\n如果存在多个有效解决方案，你可以返回其中任意一个。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2\n输出：[1,1]\n解释：a = 1, b = 1。a + b = n 并且 a 和 b 的十进制表示形式都不包含任何 0。\n\n示例 2：\n\n输入：n = 11\n输出：[2,9]\n\n示例 3：\n\n输入：n = 10000\n输出：[1,9999]\n\n示例 4：\n\n输入：n = 69\n输出：[1,68]\n\n示例 5：\n\n输入：n = 1010\n输出：[11,999]\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 104",
+  "constraints": [
+    "2 <= n <= 104"
+  ]
+}

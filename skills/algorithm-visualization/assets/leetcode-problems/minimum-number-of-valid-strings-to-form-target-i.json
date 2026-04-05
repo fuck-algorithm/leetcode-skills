@@ -1,0 +1,12 @@
+{
+  "number": "3291",
+  "title_cn": "形成目标字符串需要的最少字符串数 I",
+  "title_en": "Minimum Number of Valid Strings to Form Target I",
+  "slug": "minimum-number-of-valid-strings-to-form-target-i",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 words 和一个字符串 target。\n\n如果字符串 x 是 words 中 任意 字符串的 前缀，则认为 x 是一个 有效 字符串。\n\n现计划通过 连接 有效字符串形成 target ，请你计算并返回需要连接的 最少 字符串数量。如果无法通过这种方式形成 target，则返回 -1。\n\n&nbsp;\n\n示例 1：\n\n输入： words = [\"abc\",\"aaaaa\",\"bcdef\"], target = \"aabcdabc\"\n\n输出： 3\n\n解释：\n\ntarget 字符串可以通过连接以下有效字符串形成：\n\n\twords[1] 的长度为 2 的前缀，即 \"aa\"。\n\twords[2] 的长度为 3 的前缀，即 \"bcd\"。\n\twords[0] 的长度为 3 的前缀，即 \"abc\"。\n\n示例 2：\n\n输入： words = [\"abababab\",\"ab\"], target = \"ababaababa\"\n\n输出： 2\n\n解释：\n\ntarget 字符串可以通过连接以下有效字符串形成：\n\n\twords[0] 的长度为 5 的前缀，即 \"ababa\"。\n\twords[0] 的长度为 5 的前缀，即 \"ababa\"。\n\n示例 3：\n\n输入： words = [\"abcdef\"], target = \"xyz\"\n\n输出： -1\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 100\n\t1 <= words[i].length <= 5 * 103\n\t输入确保 sum(words[i].length) <= 105。\n\twords[i] 只包含小写英文字母。\n\t1 <= target.length <= 5 * 103\n\ttarget 只包含小写英文字母。",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 5 * 103"
+  ]
+}

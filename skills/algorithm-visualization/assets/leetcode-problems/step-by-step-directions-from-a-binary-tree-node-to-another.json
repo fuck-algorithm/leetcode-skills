@@ -1,0 +1,16 @@
+{
+  "number": "2096",
+  "title_cn": "从二叉树一个节点到另一个节点每一步的方向",
+  "title_en": "Step-By-Step Directions From a Binary Tree Node to Another",
+  "slug": "step-by-step-directions-from-a-binary-tree-node-to-another",
+  "difficulty": "Medium",
+  "description": "给你一棵 二叉树&nbsp;的根节点&nbsp;root&nbsp;，这棵二叉树总共有&nbsp;n&nbsp;个节点。每个节点的值为&nbsp;1&nbsp;到&nbsp;n&nbsp;中的一个整数，且互不相同。给你一个整数&nbsp;startValue&nbsp;，表示起点节点 s&nbsp;的值，和另一个不同的整数&nbsp;destValue&nbsp;，表示终点节点&nbsp;t&nbsp;的值。\n\n请找到从节点&nbsp;s&nbsp;到节点 t&nbsp;的 最短路径&nbsp;，并以字符串的形式返回每一步的方向。每一步用 大写&nbsp;字母&nbsp;'L'&nbsp;，'R'&nbsp;和&nbsp;'U'&nbsp;分别表示一种方向：\n\n\t'L'&nbsp;表示从一个节点前往它的 左孩子&nbsp;节点。\n\t'R'&nbsp;表示从一个节点前往它的 右孩子&nbsp;节点。\n\t'U'&nbsp;表示从一个节点前往它的 父&nbsp;节点。\n\n请你返回从 s&nbsp;到 t&nbsp;最短路径&nbsp;每一步的方向。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6\n输出：\"UURL\"\n解释：最短路径为：3 → 1 → 5 → 2 → 6 。\n\n示例 2：\n\n输入：root = [2,1], startValue = 2, destValue = 1\n输出：\"L\"\n解释：最短路径为：2 → 1 。\n\n&nbsp;\n\n提示：\n\n\t树中节点数目为&nbsp;n&nbsp;。\n\t2 <= n <= 105\n\t1 <= Node.val <= n\n\t树中所有节点的值 互不相同&nbsp;。\n\t1 <= startValue, destValue <= n\n\tstartValue != destValue",
+  "constraints": [
+    "树中节点数目为&nbsp;n&nbsp;。",
+    "2 <= n <= 105",
+    "1 <= Node.val <= n",
+    "树中所有节点的值 互不相同&nbsp;。",
+    "1 <= startValue, destValue <= n",
+    "startValue != destValue"
+  ]
+}

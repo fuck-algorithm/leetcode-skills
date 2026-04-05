@@ -1,0 +1,16 @@
+{
+  "number": "LCR 129",
+  "title_cn": "字母迷宫",
+  "title_en": "字母迷宫",
+  "slug": "ju-zhen-zhong-de-lu-jing-lcof",
+  "difficulty": "Medium",
+  "description": "字母迷宫游戏初始界面记作 m x n 二维字符串数组 grid，请判断玩家是否能在 grid 中找到目标单词 target。\n注意：寻找单词时 必须 按照字母顺序，通过水平或垂直方向相邻的单元格内的字母构成，同时，同一个单元格内的字母&nbsp;不允许被重复使用&nbsp;。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], target = \"ABCCED\"\n输出：true\n\n示例 2：\n\n输入：grid = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], target = \"SEE\"\n输出：true\n\n示例 3：\n\n输入：grid = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], target = \"ABCB\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn = grid[i].length\n\t1 <= m, n <= 6\n\t1 <= target.length <= 15\n\tgrid 和 target 仅由大小写英文字母组成\n\n&nbsp;\n\n注意：本题与主站 79 题相同：https://leetcode.cn/problems/word-search/\n\n&nbsp;\n\n&nbsp;",
+  "constraints": [
+    "m == grid.length",
+    "n = grid[i].length",
+    "1 <= m, n <= 6",
+    "1 <= target.length <= 15",
+    "grid 和 target 仅由大小写英文字母组成",
+    "注意：本题与主站 79 题相同：https://leetcode.cn/problems/word-search/"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "2446",
+  "title_cn": "判断两个事件是否存在冲突",
+  "title_en": "Determine if Two Events Have Conflict",
+  "slug": "determine-if-two-events-have-conflict",
+  "difficulty": "Easy",
+  "description": "给你两个字符串数组 event1 和&nbsp;event2&nbsp;，表示发生在同一天的两个闭区间时间段事件，其中：\n\n\tevent1 = [startTime1, endTime1] 且\n\tevent2 = [startTime2, endTime2]\n\n事件的时间为有效的 24 小时制且按&nbsp;HH:MM&nbsp;格式给出。\n\n当两个事件存在某个非空的交集时（即，某些时刻是两个事件都包含的），则认为出现 冲突&nbsp;。\n\n如果两个事件之间存在冲突，返回&nbsp;true&nbsp;；否则，返回&nbsp;false 。\n\n&nbsp;\n\n示例 1：\n\n输入：event1 = [\"01:15\",\"02:00\"], event2 = [\"02:00\",\"03:00\"]\n输出：true\n解释：两个事件在 2:00 出现交集。\n\n示例 2：\n\n输入：event1 = [\"01:00\",\"02:00\"], event2 = [\"01:20\",\"03:00\"]\n输出：true\n解释：两个事件的交集从 01:20 开始，到 02:00 结束。\n\n示例 3：\n\n输入：event1 = [\"10:00\",\"11:00\"], event2 = [\"14:00\",\"15:00\"]\n输出：false\n解释：两个事件不存在交集。\n\n&nbsp;\n\n提示：\n\n\tevent1.length == event2.length == 2\n\tevent1[i].length == event2[i].length == 5\n\tstartTime1 <= endTime1\n\tstartTime2 <= endTime2\n\t所有事件的时间都按照&nbsp;HH:MM&nbsp;格式给出",
+  "constraints": [
+    "event1.length == event2.length == 2",
+    "event1[i].length == event2[i].length == 5",
+    "startTime1 <= endTime1",
+    "startTime2 <= endTime2",
+    "所有事件的时间都按照&nbsp;HH:MM&nbsp;格式给出"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "number": "2538",
+  "title_cn": "最大价值和与最小价值和的差值",
+  "title_en": "Difference Between Maximum and Minimum Price Sum",
+  "slug": "difference-between-maximum-and-minimum-price-sum",
+  "difficulty": "Hard",
+  "description": "给你一个 n&nbsp;个节点的无向无根图，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;。给你一个整数&nbsp;n&nbsp;和一个长度为 n - 1&nbsp;的二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示树中节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条边。\n\n每个节点都有一个价值。给你一个整数数组&nbsp;price&nbsp;，其中&nbsp;price[i]&nbsp;是第 i&nbsp;个节点的价值。\n\n一条路径的 价值和&nbsp;是这条路径上所有节点的价值之和。\n\n你可以选择树中任意一个节点作为根节点&nbsp;root&nbsp;。选择 root&nbsp;为根的 开销&nbsp;是以 root&nbsp;为起点的所有路径中，价值和&nbsp;最大的一条路径与最小的一条路径的差值。\n\n请你返回所有节点作为根节点的选择中，最大&nbsp;的 开销&nbsp;为多少。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6, edges = [[0,1],[1,2],[1,3],[3,4],[3,5]], price = [9,8,7,6,10,5]\n输出：24\n解释：上图展示了以节点 2 为根的树。左图（红色的节点）是最大价值和路径，右图（蓝色的节点）是最小价值和路径。\n- 第一条路径节点为 [2,1,3,4]：价值为 [7,8,6,10] ，价值和为 31 。\n- 第二条路径节点为 [2] ，价值为 [7] 。\n最大路径和与最小路径和的差值为 24 。24 是所有方案中的最大开销。\n\n示例 2：\n\n输入：n = 3, edges = [[0,1],[1,2]], price = [1,1,1]\n输出：2\n解释：上图展示了以节点 0 为根的树。左图（红色的节点）是最大价值和路径，右图（蓝色的节点）是最小价值和路径。\n- 第一条路径包含节点 [0,1,2]：价值为 [1,1,1] ，价值和为 3 。\n- 第二条路径节点为 [0] ，价值为 [1] 。\n最大路径和与最小路径和的差值为 2 。2 是所有方案中的最大开销。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105\n\tedges.length == n - 1\n\t0 <= ai, bi <= n - 1\n\tedges 表示一棵符合题面要求的树。\n\tprice.length == n\n\t1 <= price[i] <= 105",
+  "constraints": [
+    "1 <= n <= 105",
+    "edges.length == n - 1",
+    "0 <= ai, bi <= n - 1",
+    "edges 表示一棵符合题面要求的树。",
+    "price.length == n",
+    "1 <= price[i] <= 105"
+  ]
+}

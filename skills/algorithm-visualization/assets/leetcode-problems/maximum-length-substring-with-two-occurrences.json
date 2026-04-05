@@ -1,0 +1,12 @@
+{
+  "number": "3090",
+  "title_cn": "每个字符最多出现两次的最长子字符串",
+  "title_en": "Maximum Length Substring With Two Occurrences",
+  "slug": "maximum-length-substring-with-two-occurrences",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s ，请找出满足每个字符最多出现两次的最长子字符串，并返回该子字符串的 最大 长度。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"bcbbbcba\"\n\n输出： 4\n\n解释：\n\n以下子字符串长度为 4，并且每个字符最多出现两次：\"bcbbbcba\"。\n\n示例 2：\n\n输入： s = \"aaaa\"\n\n输出： 2\n\n解释：\n\n以下子字符串长度为 2，并且每个字符最多出现两次：\"aaaa\"。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 100\n\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "2 <= s.length <= 100",
+    "s 仅由小写英文字母组成。"
+  ]
+}

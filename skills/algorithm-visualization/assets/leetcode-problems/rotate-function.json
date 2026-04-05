@@ -1,0 +1,13 @@
+{
+  "number": "396",
+  "title_cn": "旋转函数",
+  "title_en": "Rotate Function",
+  "slug": "rotate-function",
+  "difficulty": "Medium",
+  "description": "给定一个长度为 n 的整数数组&nbsp;nums&nbsp;。\n\n假设&nbsp;arrk&nbsp;是数组&nbsp;nums&nbsp;顺时针旋转 k 个位置后的数组，我们定义&nbsp;nums&nbsp;的 旋转函数&nbsp;&nbsp;F&nbsp;为：\n\n\tF(k) = 0 * arrk[0] + 1 * arrk[1] + ... + (n - 1) * arrk[n - 1]\n\n返回&nbsp;F(0), F(1), ..., F(n-1)中的最大值&nbsp;。\n\n生成的测试用例让答案符合&nbsp;32 位 整数。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [4,3,2,6]\n输出: 26\n解释:\nF(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25\nF(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16\nF(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23\nF(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26\n所以 F(0), F(1), F(2), F(3) 中的最大值是 F(3) = 26 。\n\n示例 2:\n\n输入: nums = [100]\n输出: 0\n\n&nbsp;\n\n提示:\n\n\tn == nums.length\n\t1 <= n <= 105\n\t-100 <= nums[i] <= 100",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 105",
+    "-100 <= nums[i] <= 100"
+  ]
+}

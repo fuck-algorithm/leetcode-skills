@@ -1,0 +1,14 @@
+{
+  "number": "2876",
+  "title_cn": "有向图访问计数",
+  "title_en": "Count Visited Nodes in a Directed Graph",
+  "slug": "count-visited-nodes-in-a-directed-graph",
+  "difficulty": "Hard",
+  "description": "现有一个有向图，其中包含 n 个节点，节点编号从 0 到 n - 1 。此外，该图还包含了 n 条有向边。\n\n给你一个下标从 0 开始的数组 edges ，其中 edges[i] 表示存在一条从节点 i 到节点 edges[i] 的边。\n\n想象在图上发生以下过程：\n\n\t你从节点 x 开始，通过边访问其他节点，直到你在 此过程 中再次访问到之前已经访问过的节点。\n\n返回数组 answer 作为答案，其中 answer[i] 表示如果从节点 i 开始执行该过程，你可以访问到的不同节点数。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [1,2,0,0]\n输出：[3,3,3,4]\n解释：从每个节点开始执行该过程，记录如下：\n- 从节点 0 开始，访问节点 0 -> 1 -> 2 -> 0 。访问的不同节点数是 3 。\n- 从节点 1 开始，访问节点 1 -> 2 -> 0 -> 1 。访问的不同节点数是 3 。\n- 从节点 2 开始，访问节点 2 -> 0 -> 1 -> 2 。访问的不同节点数是 3 。\n- 从节点 3 开始，访问节点 3 -> 0 -> 1 -> 2 -> 0 。访问的不同节点数是 4 。\n\n示例 2：\n\n输入：edges = [1,2,3,4,0]\n输出：[5,5,5,5,5]\n解释：无论从哪个节点开始，在这个过程中，都可以访问到图中的每一个节点。\n\n&nbsp;\n\n提示：\n\n\tn == edges.length\n\t2 <= n <= 105\n\t0 <= edges[i] <= n - 1\n\tedges[i] != i",
+  "constraints": [
+    "n == edges.length",
+    "2 <= n <= 105",
+    "0 <= edges[i] <= n - 1",
+    "edges[i] != i"
+  ]
+}

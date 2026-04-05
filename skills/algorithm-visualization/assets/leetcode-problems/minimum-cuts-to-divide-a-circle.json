@@ -1,0 +1,11 @@
+{
+  "number": "2481",
+  "title_cn": "分割圆的最少切割次数",
+  "title_en": "Minimum Cuts to Divide a Circle",
+  "slug": "minimum-cuts-to-divide-a-circle",
+  "difficulty": "Easy",
+  "description": "圆内一个 有效切割&nbsp;，符合以下二者之一：\n\n\t该切割是两个端点在圆上的线段，且该线段经过圆心。\n\t该切割是一端在圆心另一端在圆上的线段。\n\n一些有效和无效的切割如下图所示。\n\n给你一个整数&nbsp;n&nbsp;，请你返回将圆切割成相等的&nbsp;n&nbsp;等分的&nbsp;最少&nbsp;切割次数。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4\n输出：2\n解释：\n上图展示了切割圆 2 次，得到四等分。\n\n示例 2：\n\n输入：n = 3\n输出：3\n解释：\n最少需要切割 3 次，将圆切成三等分。\n少于 3 次切割无法将圆切成大小相等面积相同的 3 等分。\n同时可以观察到，第一次切割无法将圆切割开。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 100",
+  "constraints": [
+    "1 <= n <= 100"
+  ]
+}

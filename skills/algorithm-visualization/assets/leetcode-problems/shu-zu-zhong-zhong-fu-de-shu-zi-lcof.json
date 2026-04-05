@@ -1,0 +1,12 @@
+{
+  "number": "LCR 120",
+  "title_cn": "寻找文件副本",
+  "title_en": "寻找文件副本",
+  "slug": "shu-zu-zhong-zhong-fu-de-shu-zi-lcof",
+  "difficulty": "Easy",
+  "description": "设备中存有 n 个文件，文件 id 记于数组 documents。若文件 id 相同，则定义为该文件存在副本。请返回任一存在副本的文件 id。\n\n&nbsp;\n\n示例 1：\n\n输入：documents = [2, 5, 3, 0, 5, 0]\n输出：0 或 5\n\n&nbsp;\n\n提示：\n\n\t0 ≤ documents[i] ≤ n-1\n\t2 <= n <= 100000\n\n&nbsp;",
+  "constraints": [
+    "0 ≤ documents[i] ≤ n-1",
+    "2 <= n <= 100000"
+  ]
+}

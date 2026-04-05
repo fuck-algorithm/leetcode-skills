@@ -1,0 +1,12 @@
+{
+  "number": "3101",
+  "title_cn": "交替子数组计数",
+  "title_en": "Count Alternating Subarrays",
+  "slug": "count-alternating-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个二进制数组 nums 。\n\n如果一个子数组中 不存在 两个 相邻 元素的值 相同 的情况，我们称这样的子数组为 交替子数组 。\n\n返回数组 nums 中交替子数组的数量。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [0,1,1,1]\n\n输出： 5\n\n解释：\n\n以下子数组是交替子数组：[0] 、[1] 、[1] 、[1] 以及 [0,1] 。\n\n示例 2：\n\n输入： nums = [1,0,1,0]\n\n输出： 10\n\n解释：\n\n数组的每个子数组都是交替子数组。可以统计在内的子数组共有 10 个。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\tnums[i] 不是 0 就是 1 。",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "nums[i] 不是 0 就是 1 。"
+  ]
+}

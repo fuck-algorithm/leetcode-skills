@@ -1,0 +1,13 @@
+{
+  "number": "2064",
+  "title_cn": "分配给商店的最多商品的最小值",
+  "title_en": "Minimized Maximum of Products Distributed to Any Store",
+  "slug": "minimized-maximum-of-products-distributed-to-any-store",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;n&nbsp;，表示有&nbsp;n&nbsp;间零售商店。总共有&nbsp;m&nbsp;种商品，每种商品的数目用一个下标从 0&nbsp;开始的整数数组&nbsp;quantities&nbsp;表示，其中&nbsp;quantities[i]&nbsp;表示第&nbsp;i&nbsp;种商品的数目。\n\n你需要将 所有商品&nbsp;分配到零售商店，并遵守这些规则：\n\n\t一间商店 至多&nbsp;只能有 一种商品 ，但一间商店拥有的商品数目可以为&nbsp;任意&nbsp;件。\n\t分配后，每间商店都会被分配一定数目的商品（可能为 0&nbsp;件）。用&nbsp;x&nbsp;表示所有商店中分配商品数目的最大值，你希望 x&nbsp;越小越好。也就是说，你想 最小化&nbsp;分配给任意商店商品数目的 最大值&nbsp;。\n\n请你返回最小的可能的&nbsp;x&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6, quantities = [11,6]\n输出：3\n解释： 一种最优方案为：\n- 11 件种类为 0 的商品被分配到前 4 间商店，分配数目分别为：2，3，3，3 。\n- 6 件种类为 1 的商品被分配到另外 2 间商店，分配数目分别为：3，3 。\n分配给所有商店的最大商品数目为 max(2, 3, 3, 3, 3, 3) = 3 。\n\n示例 2：\n\n输入：n = 7, quantities = [15,10,10]\n输出：5\n解释：一种最优方案为：\n- 15 件种类为 0 的商品被分配到前 3 间商店，分配数目为：5，5，5 。\n- 10 件种类为 1 的商品被分配到接下来 2 间商店，数目为：5，5 。\n- 10 件种类为 2 的商品被分配到最后 2 间商店，数目为：5，5 。\n分配给所有商店的最大商品数目为 max(5, 5, 5, 5, 5, 5, 5) = 5 。\n\n示例 3：\n\n输入：n = 1, quantities = [100000]\n输出：100000\n解释：唯一一种最优方案为：\n- 所有 100000 件商品 0 都分配到唯一的商店中。\n分配给所有商店的最大商品数目为 max(100000) = 100000 。\n\n&nbsp;\n\n提示：\n\n\tm == quantities.length\n\t1 <= m <= n <= 105\n\t1 <= quantities[i] <= 105",
+  "constraints": [
+    "m == quantities.length",
+    "1 <= m <= n <= 105",
+    "1 <= quantities[i] <= 105"
+  ]
+}

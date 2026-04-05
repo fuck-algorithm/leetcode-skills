@@ -1,0 +1,9 @@
+{
+  "number": "2450",
+  "title_cn": "应用操作后不同二进制字符串的数量",
+  "title_en": "Number of Distinct Binary Strings After Applying Operations",
+  "slug": "number-of-distinct-binary-strings-after-applying-operations",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

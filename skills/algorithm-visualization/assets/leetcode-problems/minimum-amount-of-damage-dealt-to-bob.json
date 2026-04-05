@@ -1,0 +1,13 @@
+{
+  "number": "3273",
+  "title_cn": "对 Bob 造成的最少伤害",
+  "title_en": "Minimum Amount of Damage Dealt to Bob",
+  "slug": "minimum-amount-of-damage-dealt-to-bob",
+  "difficulty": "Hard",
+  "description": "给你一个整数&nbsp;power&nbsp;和两个整数数组&nbsp;damage 和&nbsp;health&nbsp;，两个数组的长度都为&nbsp;n&nbsp;。\n\nBob 有&nbsp;n&nbsp;个敌人，如果第&nbsp;i&nbsp;个敌人还活着（也就是健康值&nbsp;health[i] > 0&nbsp;的时候），每秒钟会对 Bob 造成&nbsp;damage[i]&nbsp;点&nbsp;伤害。\n\n每一秒中，在敌人对 Bob 造成伤害 之后&nbsp;，Bob 会选择 一个&nbsp;还活着的敌人进行攻击，该敌人的健康值减少 power&nbsp;。\n\n请你返回 Bob 将 所有&nbsp;n&nbsp;个敌人都消灭之前，最少&nbsp;会受到多少伤害。\n\n&nbsp;\n\n示例 1：\n\n输入：power = 4, damage = [1,2,3,4], health = [4,5,6,8]\n\n输出：39\n\n解释：\n\n\t最开始 2 秒内都攻击敌人 3 ，然后敌人 3 会被消灭，这段时间内对 Bob 的总伤害是&nbsp;10 + 10 = 20&nbsp;点。\n\t接下来 2 秒内都攻击敌人 2 ，然后敌人 2 会被消灭，这段时间内对 Bob 的总伤害是&nbsp;6 + 6 = 12&nbsp;点。\n\t接下来 1 秒内都攻击敌人 0 ，然后敌人 0 会被消灭，这段时间内对 Bob 的总伤害是&nbsp;3&nbsp;点。\n\t接下来 2 秒内都攻击敌人 1 ，然后敌人 1 会被消灭，这段时间内对 Bob 的总伤害是&nbsp;2 + 2 = 4&nbsp;点。\n\n示例 2：\n\n输入：power = 1, damage = [1,1,1,1], health = [1,2,3,4]\n\n输出：20\n\n解释：\n\n\t最开始 1 秒内都攻击敌人 0 ，然后敌人 0 会被消灭，这段时间对 Bob 的总伤害是&nbsp;4&nbsp;点。\n\t接下来 2 秒内都攻击敌人 1 ，然后敌人 1 会被消灭，这段时间对 Bob 的总伤害是&nbsp;3 + 3 = 6&nbsp;点。\n\t接下来 3 秒内都攻击敌人 2 ，然后敌人 2 会被消灭，这段时间对 Bob 的总伤害是&nbsp;2 + 2 + 2 = 6&nbsp;点。\n\t接下来 4 秒内都攻击敌人 3 ，然后敌人 3 会被消灭，这段时间对 Bob 的总伤害是&nbsp;1 + 1 + 1 + 1 = 4&nbsp;点。\n\n示例 3：\n\n输入：power = 8, damage = [40], health = [59]\n\n输出：320\n\n&nbsp;\n\n提示：\n\n\t1 <= power <= 104\n\t1 <= n == damage.length == health.length <= 105\n\t1 <= damage[i], health[i] <= 104",
+  "constraints": [
+    "1 <= power <= 104",
+    "1 <= n == damage.length == health.length <= 105",
+    "1 <= damage[i], health[i] <= 104"
+  ]
+}

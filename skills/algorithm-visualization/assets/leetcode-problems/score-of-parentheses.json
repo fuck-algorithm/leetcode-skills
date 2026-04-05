@@ -1,0 +1,12 @@
+{
+  "number": "856",
+  "title_cn": "括号的分数",
+  "title_en": "Score of Parentheses",
+  "slug": "score-of-parentheses",
+  "difficulty": "Medium",
+  "description": "给定一个平衡括号字符串&nbsp;S，按下述规则计算该字符串的分数：\n\n\t() 得 1 分。\n\tAB 得&nbsp;A + B&nbsp;分，其中 A 和 B 是平衡括号字符串。\n\t(A) 得&nbsp;2 * A&nbsp;分，其中 A 是平衡括号字符串。\n\n&nbsp;\n\n示例 1：\n\n输入： \"()\"\n输出： 1\n\n示例 2：\n\n输入： \"(())\"\n输出： 2\n\n示例&nbsp;3：\n\n输入： \"()()\"\n输出： 2\n\n示例&nbsp;4：\n\n输入： \"(()(()))\"\n输出： 6\n\n&nbsp;\n\n提示：\n\n\tS&nbsp;是平衡括号字符串，且只含有&nbsp;(&nbsp;和&nbsp;)&nbsp;。\n\t2 <= S.length <= 50",
+  "constraints": [
+    "S&nbsp;是平衡括号字符串，且只含有&nbsp;(&nbsp;和&nbsp;)&nbsp;。",
+    "2 <= S.length <= 50"
+  ]
+}

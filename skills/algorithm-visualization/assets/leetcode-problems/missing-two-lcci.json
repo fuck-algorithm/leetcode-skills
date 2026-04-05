@@ -1,0 +1,11 @@
+{
+  "number": "面试题 17.19",
+  "title_cn": "消失的两个数字",
+  "title_en": "Missing Two LCCI",
+  "slug": "missing-two-lcci",
+  "difficulty": "Hard",
+  "description": "给定一个数组，包含从 1 到 N 所有的整数，但其中缺了两个数字。你能在 O(N) 时间内只用 O(1) 的空间找到它们吗？\n\n以任意顺序返回这两个数字均可。\n\n示例 1：\n\n输入：[1]\n输出：[2,3]\n\n示例 2：\n\n输入：[2,3]\n输出：[1,4]\n\n提示：\n\n\tnums.length <=&nbsp;30000",
+  "constraints": [
+    "nums.length <=&nbsp;30000"
+  ]
+}

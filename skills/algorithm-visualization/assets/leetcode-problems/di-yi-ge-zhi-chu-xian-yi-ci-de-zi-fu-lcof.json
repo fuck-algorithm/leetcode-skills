@@ -1,0 +1,11 @@
+{
+  "number": "LCR 169",
+  "title_cn": "招式拆解 II",
+  "title_en": "招式拆解 II",
+  "slug": "di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof",
+  "difficulty": "Easy",
+  "description": "某套连招动作记作仅由小写字母组成的序列 arr，其中 arr[i] 第 i 个招式的名字。请返回第一个只出现一次的招式名称，如不存在请返回空格。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = \"abbccdeff\"\n输出：'a'\n\n示例 2：\n\n输入：arr = \"ccdd\"\n输出：' '\n\n&nbsp;\n\n限制：\n\n0 <= arr.length&nbsp;<= 50000",
+  "constraints": [
+    "0 <= arr.length&nbsp;<= 50000"
+  ]
+}

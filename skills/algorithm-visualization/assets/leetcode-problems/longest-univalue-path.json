@@ -1,0 +1,13 @@
+{
+  "number": "687",
+  "title_cn": "最长同值路径",
+  "title_en": "Longest Univalue Path",
+  "slug": "longest-univalue-path",
+  "difficulty": "Medium",
+  "description": "给定一个二叉树的&nbsp;root&nbsp;，返回&nbsp;最长的路径的长度 ，这个路径中的&nbsp;每个节点具有相同值&nbsp;。 这条路径可以经过也可以不经过根节点。\n\n两个节点之间的路径长度&nbsp;由它们之间的边数表示。\n\n&nbsp;\n\n示例 1:\n\n输入：root = [5,4,5,1,1,5]\n输出：2\n\n示例 2:\n\n输入：root = [1,4,5,4,4,5]\n输出：2\n\n&nbsp;\n\n提示:\n\n\t树的节点数的范围是&nbsp;[0, 104]&nbsp;\n\t-1000 <= Node.val <= 1000\n\t树的深度将不超过 1000&nbsp;",
+  "constraints": [
+    "树的节点数的范围是&nbsp;[0, 104]&nbsp;",
+    "-1000 <= Node.val <= 1000",
+    "树的深度将不超过 1000&nbsp;"
+  ]
+}

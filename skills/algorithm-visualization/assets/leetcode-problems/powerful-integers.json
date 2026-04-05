@@ -1,0 +1,12 @@
+{
+  "number": "970",
+  "title_cn": "强整数",
+  "title_en": "Powerful Integers",
+  "slug": "powerful-integers",
+  "difficulty": "Medium",
+  "description": "给定三个整数 x&nbsp;、&nbsp;y&nbsp;和&nbsp;bound&nbsp;，返回 值小于或等于&nbsp;bound&nbsp;的所有&nbsp;强整数&nbsp;组成的列表&nbsp;。\n\n如果某一整数可以表示为&nbsp;xi&nbsp;+ yj&nbsp;，其中整数&nbsp;i >= 0 且&nbsp;j >= 0，那么我们认为该整数是一个&nbsp;强整数&nbsp;。\n\n你可以按 任何顺序 返回答案。在你的回答中，每个值 最多 出现一次。\n\n&nbsp;\n\n示例 1：\n\n输入：x = 2, y = 3, bound = 10\n输出：[2,3,4,5,7,9,10]\n解释： \n2 = 20 + 30\n3 = 21 + 30\n4 = 20 + 31\n5 = 21 + 31\n7 = 22 + 31\n9 = 23 + 30\n10 = 20 + 32\n\n示例&nbsp;2：\n\n输入：x = 3, y = 5, bound = 15\n输出：[2,4,6,8,10,14]\n\n&nbsp;\n\n提示：\n\n\t1 <= x, y <= 100\n\t0 <= bound <= 106",
+  "constraints": [
+    "1 <= x, y <= 100",
+    "0 <= bound <= 106"
+  ]
+}

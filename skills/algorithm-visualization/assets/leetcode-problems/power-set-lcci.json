@@ -1,0 +1,9 @@
+{
+  "number": "面试题 08.04",
+  "title_cn": "幂集",
+  "title_en": "Power Set LCCI",
+  "slug": "power-set-lcci",
+  "difficulty": "Medium",
+  "description": "幂集。编写一种方法，返回某集合的所有子集。集合中&nbsp;不包含重复的元素。\n\n说明：解集不能包含重复的子集。\n\n示例：\n\n 输入：nums = [1,2,3]\n 输出：\n[\n  [3],\n&nbsp; [1],\n&nbsp; [2],\n&nbsp; [1,2,3],\n&nbsp; [1,3],\n&nbsp; [2,3],\n&nbsp; [1,2],\n&nbsp; []\n]",
+  "constraints": []
+}

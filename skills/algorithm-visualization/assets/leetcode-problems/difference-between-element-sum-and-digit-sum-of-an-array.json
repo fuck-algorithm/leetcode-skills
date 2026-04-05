@@ -1,0 +1,12 @@
+{
+  "number": "2535",
+  "title_cn": "数组元素和与数字和的绝对差",
+  "title_en": "Difference Between Element Sum and Digit Sum of an Array",
+  "slug": "difference-between-element-sum-and-digit-sum-of-an-array",
+  "difficulty": "Easy",
+  "description": "给你一个正整数数组 nums 。\n\n\t元素和 是 nums 中的所有元素相加求和。\n\t数字和 是&nbsp;nums 中每一个元素的每一数位（重复数位需多次求和）相加求和。\n\n返回 元素和 与 数字和 的绝对差。\n\n注意：两个整数 x 和 y 的绝对差定义为 |x - y| 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,15,6,3]\n输出：9\n解释：\nnums 的元素和是 1 + 15 + 6 + 3 = 25 。\nnums 的数字和是 1 + 1 + 5 + 6 + 3 = 16 。\n元素和与数字和的绝对差是 |25 - 16| = 9 。\n\n示例 2：\n\n输入：nums = [1,2,3,4]\n输出：0\n解释：\nnums 的元素和是 1 + 2 + 3 + 4 = 10 。\nnums 的数字和是 1 + 2 + 3 + 4 = 10 。\n元素和与数字和的绝对差是 |10 - 10| = 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 2000\n\t1 <= nums[i] <= 2000",
+  "constraints": [
+    "1 <= nums.length <= 2000",
+    "1 <= nums[i] <= 2000"
+  ]
+}

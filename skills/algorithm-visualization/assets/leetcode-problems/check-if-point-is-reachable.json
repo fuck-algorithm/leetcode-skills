@@ -1,0 +1,11 @@
+{
+  "number": "2543",
+  "title_cn": "判断一个点是否可以到达",
+  "title_en": "Check if Point Is Reachable",
+  "slug": "check-if-point-is-reachable",
+  "difficulty": "Hard",
+  "description": "给你一个无穷大的网格图。一开始你在&nbsp;(1, 1)&nbsp;，你需要通过有限步移动到达点&nbsp;(targetX, targetY)&nbsp;。\n\n每一步&nbsp;，你可以从点&nbsp;(x, y)&nbsp;移动到以下点之一：\n\n\t(x, y - x)\n\t(x - y, y)\n\t(2 * x, y)\n\t(x, 2 * y)\n\n给你两个整数&nbsp;targetX 和&nbsp;targetY&nbsp;，分别表示你最后需要到达点的 X 和 Y 坐标。如果你可以从&nbsp;(1, 1)&nbsp;出发到达这个点，请你返回true ，否则返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：targetX = 6, targetY = 9\n输出：false\n解释：没法从 (1,1) 出发到达 (6,9) ，所以返回 false 。\n\n示例 2：\n\n输入：targetX = 4, targetY = 7\n输出：true\n解释：你可以按照以下路径到达：(1,1) -> (1,2) -> (1,4) -> (1,8) -> (1,7) -> (2,7) -> (4,7) 。\n\n&nbsp;\n\n提示：\n\n\t1 <= targetX, targetY&nbsp;<= 109",
+  "constraints": [
+    "1 <= targetX, targetY&nbsp;<= 109"
+  ]
+}

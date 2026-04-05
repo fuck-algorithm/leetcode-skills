@@ -1,0 +1,13 @@
+{
+  "number": "2496",
+  "title_cn": "数组中字符串的最大值",
+  "title_en": "Maximum Value of a String in an Array",
+  "slug": "maximum-value-of-a-string-in-an-array",
+  "difficulty": "Easy",
+  "description": "一个由字母和数字组成的字符串的 值&nbsp;定义如下：\n\n\t如果字符串 只 包含数字，那么值为该字符串在 10&nbsp;进制下的所表示的数字。\n\t否则，值为字符串的 长度&nbsp;。\n\n给你一个字符串数组&nbsp;strs&nbsp;，每个字符串都只由字母和数字组成，请你返回 strs&nbsp;中字符串的 最大值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：strs = [\"alic3\",\"bob\",\"3\",\"4\",\"00000\"]\n输出：5\n解释：\n- \"alic3\" 包含字母和数字，所以值为长度 5 。\n- \"bob\" 只包含字母，所以值为长度 3 。\n- \"3\" 只包含数字，所以值为 3 。\n- \"4\" 只包含数字，所以值为 4 。\n- \"00000\" 只包含数字，所以值为 0 。\n所以最大的值为 5 ，是字符串 \"alic3\" 的值。\n\n示例 2：\n\n输入：strs = [\"1\",\"01\",\"001\",\"0001\"]\n输出：1\n解释：\n数组中所有字符串的值都是 1 ，所以我们返回 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= strs.length <= 100\n\t1 <= strs[i].length <= 9\n\tstrs[i]&nbsp;只包含小写英文字母和数字。",
+  "constraints": [
+    "1 <= strs.length <= 100",
+    "1 <= strs[i].length <= 9",
+    "strs[i]&nbsp;只包含小写英文字母和数字。"
+  ]
+}

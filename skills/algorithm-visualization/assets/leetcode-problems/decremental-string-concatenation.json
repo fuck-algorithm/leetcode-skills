@@ -1,0 +1,13 @@
+{
+  "number": "2746",
+  "title_cn": "字符串连接删减字母",
+  "title_en": "Decremental String Concatenation",
+  "slug": "decremental-string-concatenation",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的数组&nbsp;words&nbsp;，它包含 n&nbsp;个字符串。\n\n定义 连接&nbsp;操作&nbsp;join(x, y)&nbsp;表示将字符串&nbsp;x 和&nbsp;y&nbsp;连在一起，得到&nbsp;xy&nbsp;。如果&nbsp;x&nbsp;的最后一个字符与&nbsp;y&nbsp;的第一个字符相等，连接后两个字符中的一个会被&nbsp;删除&nbsp;。\n\n比方说&nbsp;join(\"ab\", \"ba\") = \"aba\"&nbsp;，&nbsp;join(\"ab\", \"cde\") = \"abcde\"&nbsp;。\n\n你需要执行&nbsp;n - 1&nbsp;次&nbsp;连接&nbsp;操作。令&nbsp;str0 = words[0]&nbsp;，从&nbsp;i = 1 直到&nbsp;i = n - 1&nbsp;，对于第&nbsp;i&nbsp;个操作，你可以执行以下操作之一：\n\n\t令&nbsp;stri = join(stri - 1, words[i])\n\t令&nbsp;stri = join(words[i], stri - 1)\n\n你的任务是使&nbsp;strn - 1&nbsp;的长度&nbsp;最小&nbsp;。\n\n请你返回一个整数，表示&nbsp;strn - 1&nbsp;的最小长度。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"aa\",\"ab\",\"bc\"]\n输出：4\n解释：这个例子中，我们按以下顺序执行连接操作，得到 str2 的最小长度：\nstr0 = \"aa\"\nstr1 = join(str0, \"ab\") = \"aab\"\nstr2 = join(str1, \"bc\") = \"aabc\" \nstr2 的最小长度为 4 。\n\n示例 2：\n\n输入：words = [\"ab\",\"b\"]\n输出：2\n解释：这个例子中，str0 = \"ab\"，可以得到两个不同的 str1：\njoin(str0, \"b\") = \"ab\" 或者 join(\"b\", str0) = \"bab\" 。\n第一个字符串 \"ab\" 的长度最短，所以答案为 2 。\n\n示例 3：\n\n输入：words = [\"aaa\",\"c\",\"aba\"]\n输出：6\n解释：这个例子中，我们按以下顺序执行连接操作，得到 str2&nbsp;的最小长度：\nstr0 = \"aaa\"\nstr1 = join(str0, \"c\") = \"aaac\"\nstr2 = join(\"aba\", str1) = \"abaaac\"\nstr2 的最小长度为 6 。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 1000\n\t1 <= words[i].length <= 50\n\twords[i]&nbsp;中只包含小写英文字母。",
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length <= 50",
+    "words[i]&nbsp;中只包含小写英文字母。"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "2271",
+  "title_cn": "毯子覆盖的最多白色砖块数",
+  "title_en": "Maximum White Tiles Covered by a Carpet",
+  "slug": "maximum-white-tiles-covered-by-a-carpet",
+  "difficulty": "Medium",
+  "description": "给你一个二维整数数组&nbsp;tiles&nbsp;，其中&nbsp;tiles[i] = [li, ri]&nbsp;，表示所有在&nbsp;li <= j <= ri&nbsp;之间的每个瓷砖位置 j&nbsp;都被涂成了白色。\n\n同时给你一个整数&nbsp;carpetLen&nbsp;，表示可以放在&nbsp;任何位置&nbsp;的一块毯子的长度。\n\n请你返回使用这块毯子，最多&nbsp;可以盖住多少块白色瓷砖。\n\n&nbsp;\n\n示例 1：\n\n输入：tiles = [[1,5],[10,11],[12,18],[20,25],[30,32]], carpetLen = 10\n输出：9\n解释：将毯子从瓷砖 10 开始放置。\n总共覆盖 9 块瓷砖，所以返回 9 。\n注意可能有其他方案也可以覆盖 9 块瓷砖。\n可以看出，瓷砖无法覆盖超过 9 块瓷砖。\n\n示例 2：\n\n输入：tiles = [[10,11],[1,1]], carpetLen = 2\n输出：2\n解释：将毯子从瓷砖 10 开始放置。\n总共覆盖 2 块瓷砖，所以我们返回 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= tiles.length <= 5 * 104\n\ttiles[i].length == 2\n\t1 <= li <= ri <= 109\n\t1 <= carpetLen <= 109\n\ttiles&nbsp;互相 不会重叠&nbsp;。",
+  "constraints": [
+    "1 <= tiles.length <= 5 * 104",
+    "tiles[i].length == 2",
+    "1 <= li <= ri <= 109",
+    "1 <= carpetLen <= 109",
+    "tiles&nbsp;互相 不会重叠&nbsp;。"
+  ]
+}

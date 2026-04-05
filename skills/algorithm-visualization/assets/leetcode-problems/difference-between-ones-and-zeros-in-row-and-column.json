@@ -1,0 +1,15 @@
+{
+  "number": "2482",
+  "title_cn": "行和列中一和零的差值",
+  "title_en": "Difference Between Ones and Zeros in Row and Column",
+  "slug": "difference-between-ones-and-zeros-in-row-and-column",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的&nbsp;m x n&nbsp;二进制矩阵&nbsp;grid&nbsp;。\n\n我们按照如下过程，定义一个下标从 0&nbsp;开始的&nbsp;m x n&nbsp;差值矩阵&nbsp;diff&nbsp;：\n\n\t令第&nbsp;i&nbsp;行一的数目为&nbsp;onesRowi&nbsp;。\n\t令第&nbsp;j&nbsp;列一的数目为&nbsp;onesColj&nbsp;。\n\t令第&nbsp;i&nbsp;行零的数目为&nbsp;zerosRowi&nbsp;。\n\t令第&nbsp;j&nbsp;列零的数目为&nbsp;zerosColj&nbsp;。\n\tdiff[i][j] = onesRowi + onesColj - zerosRowi - zerosColj\n\n请你返回差值矩阵&nbsp;diff&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,1,1],[1,0,1],[0,0,1]]\n输出：[[0,0,4],[0,0,4],[-2,-2,2]]\n解释：\n- diff[0][0] = onesRow0 + onesCol0 - zerosRow0 - zerosCol0 = 2 + 1 - 1 - 2 = 0 \n- diff[0][1] = onesRow0 + onesCol1 - zerosRow0 - zerosCol1 = 2 + 1 - 1 - 2 = 0 \n- diff[0][2] = onesRow0 + onesCol2 - zerosRow0 - zerosCol2 = 2 + 3 - 1 - 0 = 4 \n- diff[1][0] = onesRow1 + onesCol0 - zerosRow1 - zerosCol0 = 2 + 1 - 1 - 2 = 0 \n- diff[1][1] = onesRow1 + onesCol1 - zerosRow1 - zerosCol1 = 2 + 1 - 1 - 2 = 0 \n- diff[1][2] = onesRow1 + onesCol2 - zerosRow1 - zerosCol2 = 2 + 3 - 1 - 0 = 4 \n- diff[2][0] = onesRow2 + onesCol0 - zerosRow2 - zerosCol0 = 1 + 1 - 2 - 2 = -2\n- diff[2][1] = onesRow2 + onesCol1 - zerosRow2 - zerosCol1 = 1 + 1 - 2 - 2 = -2\n- diff[2][2] = onesRow2 + onesCol2 - zerosRow2 - zerosCol2 = 1 + 3 - 2 - 0 = 2\n\n示例 2：\n\n输入：grid = [[1,1,1],[1,1,1]]\n输出：[[5,5,5],[5,5,5]]\n解释：\n- diff[0][0] = onesRow0 + onesCol0 - zerosRow0 - zerosCol0 = 3 + 2 - 0 - 0 = 5\n- diff[0][1] = onesRow0 + onesCol1 - zerosRow0 - zerosCol1 = 3 + 2 - 0 - 0 = 5\n- diff[0][2] = onesRow0 + onesCol2 - zerosRow0 - zerosCol2 = 3 + 2 - 0 - 0 = 5\n- diff[1][0] = onesRow1 + onesCol0 - zerosRow1 - zerosCol0 = 3 + 2 - 0 - 0 = 5\n- diff[1][1] = onesRow1 + onesCol1 - zerosRow1 - zerosCol1 = 3 + 2 - 0 - 0 = 5\n- diff[1][2] = onesRow1 + onesCol2 - zerosRow1 - zerosCol2 = 3 + 2 - 0 - 0 = 5\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 105\n\t1 <= m * n <= 105\n\tgrid[i][j]&nbsp;要么是&nbsp;0&nbsp;，要么是&nbsp;1 。",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 105",
+    "1 <= m * n <= 105",
+    "grid[i][j]&nbsp;要么是&nbsp;0&nbsp;，要么是&nbsp;1 。"
+  ]
+}

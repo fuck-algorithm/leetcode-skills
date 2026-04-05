@@ -1,0 +1,12 @@
+{
+  "number": "3692",
+  "title_cn": "众数频率字符",
+  "title_en": "Majority Frequency Characters",
+  "slug": "majority-frequency-characters",
+  "difficulty": "Easy",
+  "description": "给你一个由小写英文字母组成的字符串 s。\n\n对于一个值 k，频率组 是在 s 中恰好出现 k 次的字符集合。\n\n众数频率组 是包含 不同&nbsp;字符数量最多的频率组。\n\n返回一个字符串，包含众数频率组中的所有字符，字符的顺序 不限&nbsp;。如果两个或多个频率组的大小并列最大，则选择其频率 k 较大&nbsp;的那个组。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"aaabbbccdddde\"\n\n输出: \"ab\"\n\n解释:\n\n\t\t\t频率 (k)\n\t\t\t组中不同字符\n\t\t\t组大小\n\t\t\t是否众数?\n\n\t\t\t4\n\t\t\t{d}\n\t\t\t1\n\t\t\t否\n\n\t\t\t3\n\t\t\t{a, b}\n\t\t\t2\n\t\t\t是\n\n\t\t\t2\n\t\t\t{c}\n\t\t\t1\n\t\t\t否\n\n\t\t\t1\n\t\t\t{e}\n\t\t\t1\n\t\t\t否\n\n字符 'a' 和 'b' 的频率相同，都为 3，它们在众数频率组中。\n\n示例 2:\n\n输入: s = \"abcd\"\n\n输出: \"abcd\"\n\n解释:\n\n\t\t\t频率 (k)\n\t\t\t组中不同字符\n\t\t\t组大小\n\t\t\t是否众数?\n\n\t\t\t1\n\t\t\t{a, b, c, d}\n\t\t\t4\n\t\t\t是\n\n所有字符的频率都相同，都为 1，它们都在众数频率组中。\n\n示例 3:\n\n输入: s = \"pfpfgi\"\n\n输出: \"fp\"\n\n解释:\n\n\t\t\t频率 (k)\n\t\t\t组中不同字符\n\t\t\t组大小\n\t\t\t是否众数?\n\n\t\t\t2\n\t\t\t{p, f}\n\t\t\t2\n\t\t\t是\n\n\t\t\t1\n\t\t\t{g, i}\n\t\t\t2\n\t\t\t否 (组大小并列，选择频率更大的 k = 2)\n\n字符 'p' 和 'f' 的频率相同，都为 2，它们在众数频率组中。频率为 1 的组大小并列，但我们选择频率更高的组 2。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 100\n\ts 只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 只包含小写英文字母。"
+  ]
+}

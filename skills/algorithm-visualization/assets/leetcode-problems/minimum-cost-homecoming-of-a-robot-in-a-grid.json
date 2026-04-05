@@ -1,0 +1,18 @@
+{
+  "number": "2087",
+  "title_cn": "网格图中机器人回家的最小代价",
+  "title_en": "Minimum Cost Homecoming of a Robot in a Grid",
+  "slug": "minimum-cost-homecoming-of-a-robot-in-a-grid",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;m x n&nbsp;的网格图，其中&nbsp;(0, 0)&nbsp;是最左上角的格子，(m - 1, n - 1)&nbsp;是最右下角的格子。给你一个整数数组&nbsp;startPos&nbsp;，startPos = [startrow, startcol]&nbsp;表示 初始&nbsp;有一个 机器人&nbsp;在格子&nbsp;(startrow, startcol)&nbsp;处。同时给你一个整数数组&nbsp;homePos&nbsp;，homePos = [homerow, homecol]&nbsp;表示机器人的 家&nbsp;在格子&nbsp;(homerow, homecol)&nbsp;处。\n\n机器人需要回家。每一步它可以往四个方向移动：上，下，左，右，同时机器人不能移出边界。每一步移动都有一定代价。再给你两个下标从&nbsp;0&nbsp;开始的额整数数组：长度为&nbsp;m&nbsp;的数组&nbsp;rowCosts &nbsp;和长度为 n&nbsp;的数组&nbsp;colCosts&nbsp;。\n\n\t如果机器人往 上&nbsp;或者往 下&nbsp;移动到第 r&nbsp;行&nbsp;的格子，那么代价为&nbsp;rowCosts[r]&nbsp;。\n\t如果机器人往 左&nbsp;或者往 右&nbsp;移动到第 c&nbsp;列 的格子，那么代价为&nbsp;colCosts[c]&nbsp;。\n\n请你返回机器人回家需要的 最小总代价&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]\n输出：18\n解释：一个最优路径为：\n从 (1, 0) 开始\n-> 往下走到 (2, 0) 。代价为 rowCosts[2] = 3 。\n-> 往右走到 (2, 1) 。代价为 colCosts[1] = 2 。\n-> 往右走到 (2, 2) 。代价为 colCosts[2] = 6 。\n-> 往右走到 (2, 3) 。代价为 colCosts[3] = 7 。\n总代价为 3 + 2 + 6 + 7 = 18\n\n示例 2：\n\n输入：startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]\n输出：0\n解释：机器人已经在家了，所以不需要移动。总代价为 0 。\n\n&nbsp;\n\n提示：\n\n\tm == rowCosts.length\n\tn == colCosts.length\n\t1 <= m, n <= 105\n\t0 <= rowCosts[r], colCosts[c] <= 104\n\tstartPos.length == 2\n\thomePos.length == 2\n\t0 <= startrow, homerow < m\n\t0 <= startcol, homecol < n",
+  "constraints": [
+    "m == rowCosts.length",
+    "n == colCosts.length",
+    "1 <= m, n <= 105",
+    "0 <= rowCosts[r], colCosts[c] <= 104",
+    "startPos.length == 2",
+    "homePos.length == 2",
+    "0 <= startrow, homerow < m",
+    "0 <= startcol, homecol < n"
+  ]
+}

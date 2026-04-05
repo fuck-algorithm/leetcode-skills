@@ -1,0 +1,15 @@
+{
+  "number": "848",
+  "title_cn": "字母移位",
+  "title_en": "Shifting Letters",
+  "slug": "shifting-letters",
+  "difficulty": "Medium",
+  "description": "有一个由小写字母组成的字符串 s，和一个长度相同的整数数组 shifts。\n\n我们将字母表中的下一个字母称为原字母的 移位&nbsp;shift()&nbsp;（由于字母表是环绕的， 'z'&nbsp;将会变成&nbsp;'a'）。\n\n\t例如，shift('a') = 'b',&nbsp;shift('t') = 'u',&nbsp;以及&nbsp;shift('z') = 'a'。\n\n对于每个&nbsp;shifts[i] = x&nbsp;， 我们会将 s&nbsp;中的前&nbsp;i + 1&nbsp;个字母移位&nbsp;x&nbsp;次。\n\n返回 将所有这些移位都应用到 s 后最终得到的字符串 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abc\", shifts = [3,5,9]\n输出：\"rpl\"\n解释： \n我们以 \"abc\" 开始。\n将 S 中的第 1 个字母移位 3 次后，我们得到 \"dbc\"。\n再将 S 中的前 2 个字母移位 5 次后，我们得到 \"igc\"。\n最后将 S 中的这 3 个字母移位 9 次后，我们得到答案 \"rpl\"。\n\n示例 2:\n\n输入: s = \"aaa\", shifts = [1,2,3]\n输出: \"gfd\"\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 105\n\ts&nbsp;由小写英文字母组成\n\tshifts.length == s.length\n\t0 <= shifts[i] <= 109\n\n​​​​​​",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;由小写英文字母组成",
+    "shifts.length == s.length",
+    "0 <= shifts[i] <= 109",
+    "​​​​​​"
+  ]
+}

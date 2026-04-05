@@ -1,0 +1,12 @@
+{
+  "number": "349",
+  "title_cn": "两个数组的交集",
+  "title_en": "Intersection of Two Arrays",
+  "slug": "intersection-of-two-arrays",
+  "difficulty": "Easy",
+  "description": "给定两个数组&nbsp;nums1&nbsp;和&nbsp;nums2 ，返回 它们的 交集&nbsp;。输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,2,2,1], nums2 = [2,2]\n输出：[2]\n\n示例 2：\n\n输入：nums1 = [4,9,5], nums2 = [9,4,9,8,4]\n输出：[9,4]\n解释：[4,9] 也是可通过的\n\n&nbsp;\n\n提示：\n\n\t1 <= nums1.length, nums2.length <= 1000\n\t0 <= nums1[i], nums2[i] <= 1000",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 1000",
+    "0 <= nums1[i], nums2[i] <= 1000"
+  ]
+}

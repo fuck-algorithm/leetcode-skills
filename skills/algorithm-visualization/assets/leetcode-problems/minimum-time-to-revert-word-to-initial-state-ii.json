@@ -1,0 +1,13 @@
+{
+  "number": "3031",
+  "title_cn": "将单词恢复初始状态所需的最短时间 II",
+  "title_en": "Minimum Time to Revert Word to Initial State II",
+  "slug": "minimum-time-to-revert-word-to-initial-state-ii",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0 开始的字符串 word 和一个整数 k 。\n\n在每一秒，你必须执行以下操作：\n\n\t移除 word 的前 k 个字符。\n\t在 word 的末尾添加 k 个任意字符。\n\n注意 添加的字符不必和移除的字符相同。但是，必须在每一秒钟都执行 两种 操作。\n\n返回将 word 恢复到其 初始 状态所需的 最短 时间（该时间必须大于零）。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"abacaba\", k = 3\n输出：2\n解释：\n第 1 秒，移除 word 的前缀 \"aba\"，并在末尾添加 \"bac\" 。因此，word 变为 \"cababac\"。\n第 2 秒，移除 word 的前缀 \"cab\"，并在末尾添加 \"aba\" 。因此，word 变为 \"abacaba\" 并恢复到始状态。\n可以证明，2 秒是 word 恢复到其初始状态所需的最短时间。\n\n示例 2：\n\n输入：word = \"abacaba\", k = 4\n输出：1\n解释：\n第 1 秒，移除 word 的前缀 \"abac\"，并在末尾添加 \"caba\" 。因此，word 变为 \"abacaba\" 并恢复到初始状态。\n可以证明，1 秒是 word 恢复到其初始状态所需的最短时间。\n\n示例 3：\n\n输入：word = \"abcbabcd\", k = 2\n输出：4\n解释：\n每一秒，我们都移除 word 的前 2 个字符，并在 word 末尾添加相同的字符。\n4 秒后，word 变为 \"abcbabcd\" 并恢复到初始状态。\n可以证明，4 秒是 word 恢复到其初始状态所需的最短时间。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 106\n\t1 <= k <= word.length\n\tword仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= word.length <= 106",
+    "1 <= k <= word.length",
+    "word仅由小写英文字母组成。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "282",
+  "title_cn": "给表达式添加运算符",
+  "title_en": "Expression Add Operators",
+  "slug": "expression-add-operators",
+  "difficulty": "Hard",
+  "description": "给定一个仅包含数字&nbsp;0-9&nbsp;的字符串 num 和一个目标值整数 target ，在 num 的数字之间添加 二元 运算符（不是一元）+、-&nbsp;或&nbsp;*&nbsp;，返回 所有 能够得到 target&nbsp;的表达式。\n\n注意，返回表达式中的操作数 不应该 包含前导零。\n\n注意，一个数字可以包含多个数位。\n\n&nbsp;\n\n示例 1:\n\n输入: num = \"123\", target = 6\n输出: [\"1+2+3\", \"1*2*3\"] \n解释: “1*2*3” 和 “1+2+3” 的值都是6。\n\n示例&nbsp;2:\n\n输入: num = \"232\", target = 8\n输出: [\"2*3+2\", \"2+3*2\"]\n解释: “2*3+2” 和 “2+3*2” 的值都是8。\n\n示例 3:\n\n输入: num = \"3456237490\", target = 9191\n输出: []\n解释: 表达式 “3456237490” 无法得到 9191 。\n\n&nbsp;\n\n提示：\n\n\t1 <= num.length <= 10\n\tnum 仅含数字\n\t-231 <= target <= 231 - 1",
+  "constraints": [
+    "1 <= num.length <= 10",
+    "num 仅含数字",
+    "-231 <= target <= 231 - 1"
+  ]
+}

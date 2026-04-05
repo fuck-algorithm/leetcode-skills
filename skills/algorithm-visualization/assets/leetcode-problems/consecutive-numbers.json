@@ -1,0 +1,9 @@
+{
+  "number": "180",
+  "title_cn": "连续出现的数字",
+  "title_en": "Consecutive Numbers",
+  "slug": "consecutive-numbers",
+  "difficulty": "Medium",
+  "description": "表：Logs\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| num         | varchar |\n+-------------+---------+\n在 SQL 中，id 是该表的主键。\nid 是一个自增列。\n\n&nbsp;\n\n找出所有至少连续出现三次的数字。\n\n返回的结果表中的数据可以按 任意顺序 排列。\n\n结果格式如下面的例子所示：\n\n&nbsp;\n\n示例 1:\n\n输入：\nLogs 表：\n+----+-----+\n| id | num |\n+----+-----+\n| 1  | 1   |\n| 2  | 1   |\n| 3  | 1   |\n| 4  | 2   |\n| 5  | 1   |\n| 6  | 2   |\n| 7  | 2   |\n+----+-----+\n输出：\nResult 表：\n+-----------------+\n| ConsecutiveNums |\n+-----------------+\n| 1               |\n+-----------------+\n解释：1 是唯一连续出现至少三次的数字。",
+  "constraints": []
+}

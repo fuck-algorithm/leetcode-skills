@@ -1,0 +1,13 @@
+{
+  "number": "面试题 02.04",
+  "title_cn": "分割链表",
+  "title_en": "Partition List LCCI",
+  "slug": "partition-list-lcci",
+  "difficulty": "Medium",
+  "description": "给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。\n\n你不需要&nbsp;保留&nbsp;每个分区中各节点的初始相对位置。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,4,3,2,5,2], x = 3\n输出：[1,2,2,4,3,5]\n\n示例 2：\n\n输入：head = [2,1], x = 2\n输出：[1,2]\n\n&nbsp;\n\n提示：\n\n\t链表中节点的数目在范围 [0, 200] 内\n\t-100 <= Node.val <= 100\n\t-200 <= x <= 200",
+  "constraints": [
+    "链表中节点的数目在范围 [0, 200] 内",
+    "-100 <= Node.val <= 100",
+    "-200 <= x <= 200"
+  ]
+}

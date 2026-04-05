@@ -1,0 +1,14 @@
+{
+  "number": "3407",
+  "title_cn": "子字符串匹配模式",
+  "title_en": "Substring Matching Pattern",
+  "slug": "substring-matching-pattern",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;s&nbsp;和一个模式字符串&nbsp;p&nbsp;，其中&nbsp;p 恰好&nbsp;包含 一个&nbsp;'*'&nbsp;符号。\n\np&nbsp;中的 '*'&nbsp;符号可以被替换为零个或多个字符组成的任意字符序列。\n\n如果 p&nbsp;可以变成 s&nbsp;的 子字符串，那么返回&nbsp;true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"leetcode\", p = \"ee*e\"\n\n输出：true\n\n解释：\n\n将&nbsp;'*'&nbsp;替换为&nbsp;\"tcod\"&nbsp;，子字符串&nbsp;\"eetcode\"&nbsp;匹配模式串。\n\n示例 2：\n\n输入：s = \"car\", p = \"c*v\"\n\n输出：false\n\n解释：\n\n不存在匹配模式串的子字符串。\n\n示例 3：\n\n输入：s = \"luck\", p = \"u*\"\n\n输出：true\n\n解释：\n\n子字符串&nbsp;\"u\"&nbsp;，\"uc\"&nbsp;和&nbsp;\"uck\"&nbsp;都匹配模式串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 50\n\t1 <= p.length <= 50 \n\ts&nbsp;只包含小写英文字母。\n\tp&nbsp;只包含小写英文字母和一个&nbsp;'*' 符号。",
+  "constraints": [
+    "1 <= s.length <= 50",
+    "1 <= p.length <= 50",
+    "s&nbsp;只包含小写英文字母。",
+    "p&nbsp;只包含小写英文字母和一个&nbsp;'*' 符号。"
+  ]
+}

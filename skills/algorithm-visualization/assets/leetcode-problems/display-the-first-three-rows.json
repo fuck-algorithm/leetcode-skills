@@ -1,0 +1,9 @@
+{
+  "number": "2879",
+  "title_cn": "显示前三行",
+  "title_en": "Display the First Three Rows",
+  "slug": "display-the-first-three-rows",
+  "difficulty": "Easy",
+  "description": "DataFrame: employees\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| employee_id | int    |\n| name        | object |\n| department  | object |\n| salary      | int    |\n+-------------+--------+\n\n编写一个解决方案，显示这个 DataFrame 的 前&nbsp;&nbsp;3&nbsp;行。\n\n&nbsp;\n\n示例 1:\n\n输入：\nDataFrame employees\n+-------------+-----------+-----------------------+--------+\n| employee_id | name      | department            | salary |\n+-------------+-----------+-----------------------+--------+\n| 3           | Bob       | Operations            | 48675  |\n| 90          | Alice     | Sales                 | 11096  |\n| 9           | Tatiana   | Engineering           | 33805  |\n| 60          | Annabelle | InformationTechnology | 37678  |\n| 49          | Jonathan  | HumanResources        | 23793  |\n| 43          | Khaled    | Administration        | 40454  |\n+-------------+-----------+-----------------------+--------+\n输出：\n+-------------+---------+-------------+--------+\n| employee_id | name    | department  | salary |\n+-------------+---------+-------------+--------+\n| 3           | Bob     | Operations  | 48675  |\n| 90          | Alice   | Sales       | 11096  |\n| 9           | Tatiana | Engineering | 33805  |\n+-------------+---------+-------------+--------+\n解释：\n只有前 3 行被显示。",
+  "constraints": []
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2217",
+  "title_cn": "找到指定长度的回文数",
+  "title_en": "Find Palindrome With Fixed Length",
+  "slug": "find-palindrome-with-fixed-length",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;queries&nbsp;和一个 正&nbsp;整数&nbsp;intLength&nbsp;，请你返回一个数组&nbsp;answer&nbsp;，其中&nbsp;answer[i] 是长度为&nbsp;intLength&nbsp;的&nbsp;正回文数 中第&nbsp;queries[i]&nbsp;小的数字，如果不存在这样的回文数，则为 -1&nbsp;。\n\n回文数 指的是从前往后和从后往前读一模一样的数字。回文数不能有前导 0 。\n\n&nbsp;\n\n示例 1：\n\n输入：queries = [1,2,3,4,5,90], intLength = 3\n输出：[101,111,121,131,141,999]\n解释：\n长度为 3 的最小回文数依次是：\n101, 111, 121, 131, 141, 151, 161, 171, 181, 191, 202, ...\n第 90 个长度为 3 的回文数是 999 。\n\n示例 2：\n\n输入：queries = [2,4,6], intLength = 4\n输出：[1111,1331,1551]\n解释：\n长度为 4 的前 6 个回文数是：\n1001, 1111, 1221, 1331, 1441 和 1551 。\n\n&nbsp;\n\n提示：\n\n\t1 <= queries.length <= 5 * 104\n\t1 <= queries[i] <= 109\n\t1 <= intLength&nbsp;<= 15",
+  "constraints": [
+    "1 <= queries.length <= 5 * 104",
+    "1 <= queries[i] <= 109",
+    "1 <= intLength&nbsp;<= 15"
+  ]
+}

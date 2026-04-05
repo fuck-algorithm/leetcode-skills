@@ -1,0 +1,17 @@
+{
+  "number": "LCR 078",
+  "title_cn": "合并 K 个升序链表",
+  "title_en": "合并 K 个升序链表",
+  "slug": "vvXgSW",
+  "difficulty": "Hard",
+  "description": "给定一个链表数组，每个链表都已经按升序排列。\n\n请将所有链表合并到一个升序链表中，返回合并后的链表。\n\n&nbsp;\n\n示例 1：\n\n输入：lists = [[1,4,5],[1,3,4],[2,6]]\n输出：[1,1,2,3,4,4,5,6]\n解释：链表数组如下：\n[\n  1->4->5,\n  1->3->4,\n  2->6\n]\n将它们合并到一个有序链表中得到。\n1->1->2->3->4->4->5->6\n\n示例 2：\n\n输入：lists = []\n输出：[]\n\n示例 3：\n\n输入：lists = [[]]\n输出：[]\n\n&nbsp;\n\n提示：\n\n\tk == lists.length\n\t0 <= k <= 10^4\n\t0 <= lists[i].length <= 500\n\t-10^4 <= lists[i][j] <= 10^4\n\tlists[i] 按 升序 排列\n\tlists[i].length 的总和不超过 10^4\n\n&nbsp;\n\n注意：本题与主站 23&nbsp;题相同：&nbsp;https://leetcode.cn/problems/merge-k-sorted-lists/",
+  "constraints": [
+    "k == lists.length",
+    "0 <= k <= 10^4",
+    "0 <= lists[i].length <= 500",
+    "-10^4 <= lists[i][j] <= 10^4",
+    "lists[i] 按 升序 排列",
+    "lists[i].length 的总和不超过 10^4",
+    "注意：本题与主站 23&nbsp;题相同：&nbsp;https://leetcode.cn/problems/merge-k-sorted-lists/"
+  ]
+}

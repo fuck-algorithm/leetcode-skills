@@ -1,0 +1,16 @@
+{
+  "number": "LCR 137",
+  "title_cn": "模糊搜索验证",
+  "title_en": "模糊搜索验证",
+  "slug": "zheng-ze-biao-da-shi-pi-pei-lcof",
+  "difficulty": "Hard",
+  "description": "请设计一个程序来支持用户在文本编辑器中的模糊搜索功能。用户输入内容中可能使用到如下两种通配符：\n\n\t'.' 匹配任意单个字符。\n\t'*' 匹配零个或多个前面的那一个元素。\n\n&nbsp;\n\n请返回用户输入内容 input 所有字符是否可以匹配原文字符串 article。\n\n&nbsp;\n\n示例 1：\n\n输入：article = \"aa\", input = \"a\"\n输出：false\n解释：\"a\" 无法匹配 \"aa\" 整个字符串。\n\n示例 2：\n\n输入：article = \"aa\", input = \"a*\"\n输出：true\n解释：因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 \"aa\" 可被视为 'a' 重复了一次。\n\n示例&nbsp;3：\n\n输入：article = \"ab\", input = \".*\"\n输出：true\n解释：\".*\" 表示可匹配零个或多个（'*'）任意字符（'.'）。\n\n&nbsp;\n\n提示：\n\n\t1 <= article.length <= 20\n\t1 <= input.length <= 20\n\tarticle 只包含从 a-z 的小写字母。\n\tinput 只包含从 a-z 的小写字母，以及字符 . 和 * 。\n\t保证每次出现字符 * 时，前面都匹配到有效的字符\n\n&nbsp;\n\n注意：本题与主站 10&nbsp;题相同：https://leetcode.cn/problems/regular-expression-matching/\n\n&nbsp;",
+  "constraints": [
+    "1 <= article.length <= 20",
+    "1 <= input.length <= 20",
+    "article 只包含从 a-z 的小写字母。",
+    "input 只包含从 a-z 的小写字母，以及字符 . 和 * 。",
+    "保证每次出现字符 * 时，前面都匹配到有效的字符",
+    "注意：本题与主站 10&nbsp;题相同：https://leetcode.cn/problems/regular-expression-matching/"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "number": "864",
+  "title_cn": "获取所有钥匙的最短路径",
+  "title_en": "Shortest Path to Get All Keys",
+  "slug": "shortest-path-to-get-all-keys",
+  "difficulty": "Hard",
+  "description": "给定一个二维网格&nbsp;grid&nbsp;，其中：\n\n\t'.' 代表一个空房间\n\t'#' 代表一堵墙\n\t'@'&nbsp;是起点\n\t小写字母代表钥匙\n\t大写字母代表锁\n\n我们从起点开始出发，一次移动是指向四个基本方向之一行走一个单位空间。我们不能在网格外面行走，也无法穿过一堵墙。如果途经一个钥匙，我们就把它捡起来。除非我们手里有对应的钥匙，否则无法通过锁。\n\n假设 k&nbsp;为 钥匙/锁 的个数，且满足&nbsp;1 <= k&nbsp;<= 6，字母表中的前 k&nbsp;个字母在网格中都有自己对应的一个小写和一个大写字母。换言之，每个锁有唯一对应的钥匙，每个钥匙也有唯一对应的锁。另外，代表钥匙和锁的字母互为大小写并按字母顺序排列。\n\n返回获取所有钥匙所需要的移动的最少次数。如果无法获取所有钥匙，返回&nbsp;-1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [\"@.a..\",\"###.#\",\"b.A.B\"]\n输出：8\n解释：目标是获得所有钥匙，而不是打开所有锁。\n\n示例 2：\n\n输入：grid = [\"@..aA\",\"..B#.\",\"....b\"]\n输出：6\n\n示例 3:\n\n输入: grid = [\"@Aa\"]\n输出: -1\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 30\n\tgrid[i][j]&nbsp;只含有&nbsp;'.',&nbsp;'#',&nbsp;'@',&nbsp;'a'-'f'&nbsp;以及&nbsp;'A'-'F'\n\t钥匙的数目范围是&nbsp;[1, 6]&nbsp;\n\t每个钥匙都对应一个 不同 的字母\n\t每个钥匙正好打开一个对应的锁",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 30",
+    "grid[i][j]&nbsp;只含有&nbsp;'.',&nbsp;'#',&nbsp;'@',&nbsp;'a'-'f'&nbsp;以及&nbsp;'A'-'F'",
+    "钥匙的数目范围是&nbsp;[1, 6]&nbsp;",
+    "每个钥匙都对应一个 不同 的字母",
+    "每个钥匙正好打开一个对应的锁"
+  ]
+}

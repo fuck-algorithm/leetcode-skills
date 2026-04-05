@@ -1,0 +1,15 @@
+{
+  "number": "744",
+  "title_cn": "寻找比目标字母大的最小字母",
+  "title_en": "Find Smallest Letter Greater Than Target",
+  "slug": "find-smallest-letter-greater-than-target",
+  "difficulty": "Easy",
+  "description": "给你一个字符数组 letters，该数组按&nbsp;非递减顺序&nbsp;排序，以及一个字符 target。letters&nbsp;里至少有两个不同的字符。\n\n返回&nbsp;letters&nbsp;中大于 target 的最小的字符。如果不存在这样的字符，则返回&nbsp;letters 的第一个字符。\n\n&nbsp;\n\n示例 1：\n\n输入: letters = ['c', 'f', 'j'], target = 'a'\n输出: 'c'\n解释：letters 中字典上比 'a' 大的最小字符是 'c'。\n\n示例 2:\n\n输入: letters = ['c','f','j'], target = 'c'\n输出: 'f'\n解释：letters 中字典顺序上大于 'c' 的最小字符是 'f'。\n\n示例 3:\n\n输入: letters = ['x','x','y','y'], target = 'z'\n输出: 'x'\n解释：letters 中没有一个字符在字典上大于 'z'，所以我们返回 letters[0]。\n\n&nbsp;\n\n提示：\n\n\t2 <= letters.length <= 104\n\tletters[i]&nbsp;是一个小写字母\n\tletters 按非递减顺序排序\n\tletters 最少包含两个不同的字母\n\ttarget 是一个小写字母",
+  "constraints": [
+    "2 <= letters.length <= 104",
+    "letters[i]&nbsp;是一个小写字母",
+    "letters 按非递减顺序排序",
+    "letters 最少包含两个不同的字母",
+    "target 是一个小写字母"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2475",
+  "title_cn": "数组中不等三元组的数目",
+  "title_en": "Number of Unequal Triplets in Array",
+  "slug": "number-of-unequal-triplets-in-array",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始的正整数数组 nums 。请你找出并统计满足下述条件的三元组 (i, j, k) 的数目：\n\n\t0 <= i < j < k < nums.length\n\tnums[i]、nums[j] 和 nums[k] 两两不同 。\n\n\t\t换句话说：nums[i] != nums[j]、nums[i] != nums[k] 且 nums[j] != nums[k] 。\n\n返回满足上述条件三元组的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,4,2,4,3]\n输出：3\n解释：下面列出的三元组均满足题目条件：\n- (0, 2, 4) 因为 4 != 2 != 3\n- (1, 2, 4) 因为 4 != 2 != 3\n- (2, 3, 4) 因为 2 != 4 != 3\n共计 3 个三元组，返回 3 。\n注意 (2, 0, 4) 不是有效的三元组，因为 2 > 0 。\n\n示例 2：\n\n输入：nums = [1,1,1,1,1]\n输出：0\n解释：不存在满足条件的三元组，所以返回 0 。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 100\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "3 <= nums.length <= 100",
+    "1 <= nums[i] <= 1000"
+  ]
+}

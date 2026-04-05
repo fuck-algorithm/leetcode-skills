@@ -1,0 +1,12 @@
+{
+  "number": "3745",
+  "title_cn": "三元素表达式的最大值",
+  "title_en": "Maximize Expression of Three Elements",
+  "slug": "maximize-expression-of-three-elements",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums。\n\n从 nums 中选择三个元素 a、b 和 c，它们的下标需&nbsp;互不相同&nbsp;，使表达式 a + b - c 的值最大化。\n\n返回该表达式可能的&nbsp;最大值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,4,2,5]\n\n输出： 8\n\n解释：\n\n可以选择 a = 4，b = 5，c = 1。表达式的值为 4 + 5 - 1 = 8，这是可能的最大值。\n\n示例 2：\n\n输入： nums = [-2,0,5,-2,4]\n\n输出： 11\n\n解释：\n\n可以选择 a = 5，b = 4，c = -2。表达式的值为 5 + 4 - (-2) = 11，这是可能的最大值。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 100\n\t-100 <= nums[i] <= 100",
+  "constraints": [
+    "3 <= nums.length <= 100",
+    "-100 <= nums[i] <= 100"
+  ]
+}

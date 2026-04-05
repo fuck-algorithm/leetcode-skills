@@ -1,0 +1,12 @@
+{
+  "number": "1328",
+  "title_cn": "破坏回文串",
+  "title_en": "Break a Palindrome",
+  "slug": "break-a-palindrome",
+  "difficulty": "Medium",
+  "description": "给你一个由小写英文字母组成的回文字符串&nbsp;palindrome ，请你将其中&nbsp;一个 字符用任意小写英文字母替换，使得结果字符串的 字典序最小 ，且&nbsp;不是&nbsp;回文串。\n\n请你返回结果字符串。如果无法做到，则返回一个 空串 。\n\n如果两个字符串长度相同，那么字符串 a 字典序比字符串 b 小可以这样定义：在 a 和 b 出现不同的第一个位置上，字符串 a 中的字符严格小于 b 中的对应字符。例如，\"abcc” 字典序比 \"abcd\" 小，因为不同的第一个位置是在第四个字符，显然 'c' 比 'd' 小。\n&nbsp;\n\n示例 1：\n\n输入：palindrome = \"abccba\"\n输出：\"aaccba\"\n解释：存在多种方法可以使 \"abccba\" 不是回文，例如 \"zbccba\", \"aaccba\", 和 \"abacba\" 。\n在所有方法中，\"aaccba\" 的字典序最小。\n\n示例 2：\n\n输入：palindrome = \"a\"\n输出：\"\"\n解释：不存在替换一个字符使 \"a\" 变成非回文的方法，所以返回空字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= palindrome.length <= 1000\n\tpalindrome&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= palindrome.length <= 1000",
+    "palindrome&nbsp;只包含小写英文字母。"
+  ]
+}

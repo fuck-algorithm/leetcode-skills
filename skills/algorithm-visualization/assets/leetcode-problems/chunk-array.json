@@ -1,0 +1,13 @@
+{
+  "number": "2677",
+  "title_cn": "分块数组",
+  "title_en": "Chunk Array",
+  "slug": "chunk-array",
+  "difficulty": "Easy",
+  "description": "给定一个数组&nbsp;arr&nbsp;和一个块大小&nbsp;size&nbsp;，返回一个 分块&nbsp;的数组。\n\n分块&nbsp;的数组包含了&nbsp;arr&nbsp;中的原始元素，但是每个子数组的长度都是&nbsp;size&nbsp;。如果&nbsp;arr.length&nbsp;不能被&nbsp;size&nbsp;整除，那么最后一个子数组的长度可能小于&nbsp;size&nbsp;。\n\n你可以假设该数组是&nbsp;JSON.parse&nbsp;的输出结果。换句话说，它是有效的JSON。\n\n请你在不使用 lodash 的函数&nbsp;_.chunk&nbsp;的情况下解决这个问题。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,2,3,4,5], size = 1\n输出：[[1],[2],[3],[4],[5]]\n解释：数组 arr 被分割成了每个只有一个元素的子数组。\n\n示例 2：\n\n输入：arr = [1,9,6,3,2], size = 3\n输出：[[1,9,6],[3,2]]\n解释：数组 arr 被分割成了每个有三个元素的子数组。然而，第二个子数组只有两个元素。\n\n示例 3：\n\n输入：arr = [8,5,3,2,6], size = 6\n输出：[[8,5,3,2,6]]\n解释：size 大于 arr.length ，因此所有元素都在第一个子数组中。\n\n示例 4：\n\n输入：arr = [], size = 1\n输出：[]\n解释：没有元素需要分块，因此返回一个空数组。\n\n&nbsp;\n\n提示：\n\n\tarr&nbsp;是表示数组的字符串。\n\t2 <= JSON.stringify(arr).length <= 105\n\t1 <= size <= arr.length + 1",
+  "constraints": [
+    "arr&nbsp;是表示数组的字符串。",
+    "2 <= JSON.stringify(arr).length <= 105",
+    "1 <= size <= arr.length + 1"
+  ]
+}

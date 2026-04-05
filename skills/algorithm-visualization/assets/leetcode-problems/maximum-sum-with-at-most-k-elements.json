@@ -1,0 +1,16 @@
+{
+  "number": "3462",
+  "title_cn": "提取至多 K 个元素的最大总和",
+  "title_en": "Maximum Sum With at Most K Elements",
+  "slug": "maximum-sum-with-at-most-k-elements",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 n x m&nbsp;的二维矩阵&nbsp;grid&nbsp;，以及一个长度为 n&nbsp;的整数数组&nbsp;limits&nbsp;，和一个整数&nbsp;k&nbsp;。你的目标是从矩阵 grid 中提取出&nbsp;至多 k&nbsp;个元素，并计算这些元素的最大总和，提取时需满足以下限制：\n\n\t从 grid&nbsp;的第 i 行提取的元素数量不超过 limits[i] 。\n\n返回最大总和。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,2],[3,4]], limits = [1,2], k = 2\n\n输出：7\n\n解释：\n\n\t从第 2 行提取至多 2 个元素，取出 4 和 3 。\n\t至多提取 2 个元素时的最大总和&nbsp;4 + 3 = 7&nbsp;。\n\n示例 2：\n\n输入：grid = [[5,3,7],[8,2,6]], limits = [2,2], k = 3\n\n输出：21\n\n解释：\n\n\t从第 1&nbsp;行提取至多 2 个元素，取出 7 。\n\t从第 2 行提取至多 2 个元素，取出&nbsp;8 和 6 。\n\t至多提取 3&nbsp;个元素时的最大总和 7 + 8 + 6 = 21&nbsp;。\n\n&nbsp;\n\n提示：\n\n\tn == grid.length == limits.length\n\tm == grid[i].length\n\t1 <= n, m <= 500\n\t0 <= grid[i][j] <= 105\n\t0 <= limits[i] <= m\n\t0 <= k <= min(n * m, sum(limits))",
+  "constraints": [
+    "n == grid.length == limits.length",
+    "m == grid[i].length",
+    "1 <= n, m <= 500",
+    "0 <= grid[i][j] <= 105",
+    "0 <= limits[i] <= m",
+    "0 <= k <= min(n * m, sum(limits))"
+  ]
+}

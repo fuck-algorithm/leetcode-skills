@@ -1,0 +1,12 @@
+{
+  "number": "1312",
+  "title_cn": "让字符串成为回文串的最少插入次数",
+  "title_en": "Minimum Insertion Steps to Make a String Palindrome",
+  "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;，每一次操作你都可以在字符串的任意位置插入任意字符。\n\n请你返回让&nbsp;s&nbsp;成为回文串的&nbsp;最少操作次数&nbsp;。\n\n「回文串」是正读和反读都相同的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"zzazz\"\n输出：0\n解释：字符串 \"zzazz\" 已经是回文串了，所以不需要做任何插入操作。\n\n示例 2：\n\n输入：s = \"mbadm\"\n输出：2\n解释：字符串可变为 \"mbdadbm\" 或者 \"mdbabdm\" 。\n\n示例 3：\n\n输入：s = \"leetcode\"\n输出：5\n解释：插入 5 个字符后字符串变为 \"leetcodocteel\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 500\n\ts&nbsp;中所有字符都是小写字母。",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s&nbsp;中所有字符都是小写字母。"
+  ]
+}

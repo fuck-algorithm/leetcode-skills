@@ -1,0 +1,14 @@
+{
+  "number": "960",
+  "title_cn": "删列造序 III",
+  "title_en": "Delete Columns to Make Sorted III",
+  "slug": "delete-columns-to-make-sorted-iii",
+  "difficulty": "Hard",
+  "description": "给定由&nbsp;n&nbsp;个小写字母字符串组成的数组&nbsp;strs&nbsp;，其中每个字符串长度相等。\n\n选取一个删除索引序列，对于&nbsp;strs&nbsp;中的每个字符串，删除对应每个索引处的字符。\n\n比如，有&nbsp;strs = [\"abcdef\",\"uvwxyz\"]&nbsp;，删除索引序列&nbsp;{0, 2, 3}&nbsp;，删除后为&nbsp;[\"bef\", \"vyz\"]&nbsp;。\n\n假设，我们选择了一组删除索引&nbsp;answer&nbsp;，那么在执行删除操作之后，最终得到的数组的行中的 每个元素 都是按字典序排列的（即&nbsp;(strs[0][0] <= strs[0][1] <= ... <= strs[0][strs[0].length - 1])&nbsp;和&nbsp;(strs[1][0] <= strs[1][1] <= ... <= strs[1][strs[1].length - 1]) ，依此类推）。\n\n请返回&nbsp;answer.length&nbsp;的最小可能值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：strs = [\"babca\",\"bbazb\"]\n输出：3\n解释：\n删除 0、1 和 4 这三列后，最终得到的数组是 strs = [\"bc\", \"az\"]。\n这两行是分别按字典序排列的（即，strs[0][0] <= strs[0][1] 且 strs[1][0] <= strs[1][1]）。\n注意，strs[0] > strs[1] —— 数组 strs 不一定是按字典序排列的。\n\n示例 2：\n\n输入：strs = [\"edcba\"]\n输出：4\n解释：如果删除的列少于 4 列，则剩下的行都不会按字典序排列。\n\n示例 3：\n\n输入：strs = [\"ghi\",\"def\",\"abc\"]\n输出：0\n解释：所有行都已按字典序排列。\n\n&nbsp;\n\n提示：\n\n\tn == strs.length\n\t1 <= n <= 100\n\t1 <= strs[i].length <= 100\n\tstrs[i]&nbsp;由小写英文字母组成",
+  "constraints": [
+    "n == strs.length",
+    "1 <= n <= 100",
+    "1 <= strs[i].length <= 100",
+    "strs[i]&nbsp;由小写英文字母组成"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "796",
+  "title_cn": "旋转字符串",
+  "title_en": "Rotate String",
+  "slug": "rotate-string",
+  "difficulty": "Easy",
+  "description": "给定两个字符串, s&nbsp;和&nbsp;goal。如果在若干次旋转操作之后，s&nbsp;能变成&nbsp;goal&nbsp;，那么返回&nbsp;true&nbsp;。\n\ns&nbsp;的 旋转操作 就是将&nbsp;s 最左边的字符移动到最右边。&nbsp;\n\n\t例如, 若&nbsp;s = 'abcde'，在旋转一次之后结果就是'bcdea'&nbsp;。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"abcde\", goal = \"cdeab\"\n输出: true\n\n示例 2:\n\n输入: s = \"abcde\", goal = \"abced\"\n输出: false\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length, goal.length <= 100\n\ts&nbsp;和&nbsp;goal&nbsp;由小写英文字母组成",
+  "constraints": [
+    "1 <= s.length, goal.length <= 100",
+    "s&nbsp;和&nbsp;goal&nbsp;由小写英文字母组成"
+  ]
+}

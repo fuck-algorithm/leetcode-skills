@@ -1,0 +1,14 @@
+{
+  "number": "453",
+  "title_cn": "最小操作次数使数组元素相等",
+  "title_en": "Minimum Moves to Equal Array Elements",
+  "slug": "minimum-moves-to-equal-array-elements",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组，每次操作将会使 n - 1 个元素增加 1 。返回让数组所有元素相等的最小操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3]\n输出：3\n解释：\n只需要3次操作（注意每次操作会增加两个元素的值）：\n[1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]\n\n示例 2：\n\n输入：nums = [1,1,1]\n输出：0\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= nums.length <= 105\n\t-109 <= nums[i] <= 109\n\t答案保证符合 32-bit 整数",
+  "constraints": [
+    "n == nums.length",
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109",
+    "答案保证符合 32-bit 整数"
+  ]
+}

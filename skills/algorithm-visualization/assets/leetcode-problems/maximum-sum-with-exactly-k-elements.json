@@ -1,0 +1,13 @@
+{
+  "number": "2656",
+  "title_cn": "K 个元素的最大和",
+  "title_en": "Maximum Sum With Exactly K Elements ",
+  "slug": "maximum-sum-with-exactly-k-elements",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums 和一个整数&nbsp;k&nbsp;。你需要执行以下操作&nbsp;恰好 k&nbsp;次，最大化你的得分：\n\n\t从 nums&nbsp;中选择一个元素&nbsp;m&nbsp;。\n\t将选中的元素&nbsp;m&nbsp;从数组中删除。\n\t将新元素&nbsp;m + 1&nbsp;添加到数组中。\n\t你的得分增加&nbsp;m&nbsp;。\n\n请你返回执行以上操作恰好 k&nbsp;次后的最大得分。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5], k = 3\n输出：18\n解释：我们需要从 nums 中恰好选择 3 个元素并最大化得分。\n第一次选择 5 。和为 5 ，nums = [1,2,3,4,6] 。\n第二次选择 6 。和为 6 ，nums = [1,2,3,4,7] 。\n第三次选择 7 。和为 5 + 6 + 7 = 18 ，nums = [1,2,3,4,8] 。\n所以我们返回 18 。\n18 是可以得到的最大答案。\n\n示例 2：\n\n输入：nums = [5,5,5], k = 2\n输出：11\n解释：我们需要从 nums 中恰好选择 2 个元素并最大化得分。\n第一次选择 5 。和为 5 ，nums = [5,5,6] 。\n第二次选择 6 。和为 6 ，nums = [5,5,7] 。\n所以我们返回 11 。\n11 是可以得到的最大答案。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100\n\t1 <= k <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= 100"
+  ]
+}

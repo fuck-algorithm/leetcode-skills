@@ -1,0 +1,17 @@
+{
+  "number": "3123",
+  "title_cn": "最短路径中的边",
+  "title_en": "Find Edges in Shortest Paths",
+  "slug": "find-edges-in-shortest-paths",
+  "difficulty": "Hard",
+  "description": "给你一个 n&nbsp;个节点的无向带权图，节点编号为 0&nbsp;到 n - 1&nbsp;。图中总共有 m&nbsp;条边，用二维数组&nbsp;edges&nbsp;表示，其中&nbsp;edges[i] = [ai, bi, wi]&nbsp;表示节点 ai 和&nbsp;bi&nbsp;之间有一条边权为&nbsp;wi&nbsp;的边。\n\n对于节点 0&nbsp;为出发点，节点 n - 1&nbsp;为结束点的所有最短路，你需要返回一个长度为 m&nbsp;的 boolean&nbsp;数组&nbsp;answer&nbsp;，如果&nbsp;edges[i]&nbsp;至少&nbsp;在其中一条最短路上，那么&nbsp;answer[i]&nbsp;为&nbsp;true&nbsp;，否则&nbsp;answer[i]&nbsp;为&nbsp;false&nbsp;。\n\n请你返回数组&nbsp;answer&nbsp;。\n\n注意，图可能不连通。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6, edges = [[0,1,4],[0,2,1],[1,3,2],[1,4,3],[1,5,1],[2,3,1],[3,5,3],[4,5,2]]\n\n输出：[true,true,true,false,true,true,true,false]\n\n解释：\n\n以下为节点 0 出发到达节点 5 的 所有&nbsp;最短路：\n\n\t路径&nbsp;0 -> 1 -> 5&nbsp;：边权和为&nbsp;4 + 1 = 5&nbsp;。\n\t路径&nbsp;0 -> 2 -> 3 -> 5&nbsp;：边权和为&nbsp;1 + 1 + 3 = 5&nbsp;。\n\t路径&nbsp;0 -> 2 -> 3 -> 1 -> 5&nbsp;：边权和为&nbsp;1 + 1 + 2 + 1 = 5&nbsp;。\n\n示例 2：\n\n输入：n = 4, edges = [[2,0,1],[0,1,1],[0,3,4],[3,2,2]]\n\n输出：[true,false,false,true]\n\n解释：\n\n只有一条从节点 0 出发到达节点 3 的最短路&nbsp;0 -> 2 -> 3&nbsp;，边权和为&nbsp;1 + 2 = 3&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 5 * 104\n\tm == edges.length\n\t1 <= m <= min(5 * 104, n * (n - 1) / 2)\n\t0 <= ai, bi < n\n\tai != bi\n\t1 <= wi <= 105\n\t图中没有重边。",
+  "constraints": [
+    "2 <= n <= 5 * 104",
+    "m == edges.length",
+    "1 <= m <= min(5 * 104, n * (n - 1) / 2)",
+    "0 <= ai, bi < n",
+    "ai != bi",
+    "1 <= wi <= 105",
+    "图中没有重边。"
+  ]
+}

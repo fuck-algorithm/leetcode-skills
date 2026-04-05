@@ -1,0 +1,11 @@
+{
+  "number": "932",
+  "title_cn": "漂亮数组",
+  "title_en": "Beautiful Array",
+  "slug": "beautiful-array",
+  "difficulty": "Medium",
+  "description": "如果长度为 n 的数组 nums 满足下述条件，则认为该数组是一个 漂亮数组 ：\n\n\tnums 是由范围 [1, n] 的整数组成的一个排列。\n\t对于每个 0 <= i < j < n ，均不存在下标 k（i < k < j）使得 2 * nums[k] == nums[i] + nums[j] 。\n\n给你整数 n ，返回长度为 n 的任一 漂亮数组 。本题保证对于给定的 n 至少存在一个有效答案。\n\n&nbsp;\n\n示例 1 ：\n\n输入：n = 4\n输出：[2,1,4,3]\n\n示例 2 ：\n\n输入：n = 5\n输出：[3,1,2,5,4]\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1000\n\n&nbsp;",
+  "constraints": [
+    "1 <= n <= 1000"
+  ]
+}

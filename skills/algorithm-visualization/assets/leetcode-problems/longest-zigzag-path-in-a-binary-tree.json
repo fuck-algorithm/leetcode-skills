@@ -1,0 +1,12 @@
+{
+  "number": "1372",
+  "title_cn": "二叉树中的最长交错路径",
+  "title_en": "Longest ZigZag Path in a Binary Tree",
+  "slug": "longest-zigzag-path-in-a-binary-tree",
+  "difficulty": "Medium",
+  "description": "给你一棵以&nbsp;root&nbsp;为根的二叉树，二叉树中的交错路径定义如下：\n\n\t选择二叉树中 任意&nbsp;节点和一个方向（左或者右）。\n\t如果前进方向为右，那么移动到当前节点的的右子节点，否则移动到它的左子节点。\n\t改变前进方向：左变右或者右变左。\n\t重复第二步和第三步，直到你在树中无法继续移动。\n\n交错路径的长度定义为：访问过的节点数目 - 1（单个节点的路径长度为 0 ）。\n\n请你返回给定树中最长 交错路径&nbsp;的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]\n输出：3\n解释：蓝色节点为树中最长交错路径（右 -> 左 -> 右）。\n\n示例 2：\n\n输入：root = [1,1,1,null,1,null,null,1,1,null,1]\n输出：4\n解释：蓝色节点为树中最长交错路径（左 -> 右 -> 左 -> 右）。\n\n示例 3：\n\n输入：root = [1]\n输出：0\n\n&nbsp;\n\n提示：\n\n\t每棵树最多有&nbsp;50000&nbsp;个节点。\n\t每个节点的值在&nbsp;[1, 100] 之间。",
+  "constraints": [
+    "每棵树最多有&nbsp;50000&nbsp;个节点。",
+    "每个节点的值在&nbsp;[1, 100] 之间。"
+  ]
+}

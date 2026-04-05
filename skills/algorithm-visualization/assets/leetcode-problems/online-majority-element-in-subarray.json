@@ -1,0 +1,16 @@
+{
+  "number": "1157",
+  "title_cn": "子数组中占绝大多数的元素",
+  "title_en": "Online Majority Element In Subarray",
+  "slug": "online-majority-element-in-subarray",
+  "difficulty": "Hard",
+  "description": "设计一个数据结构，有效地找到给定子数组的 多数元素 。\n\n子数组的 多数元素 是在子数组中出现&nbsp;threshold&nbsp;次数或次数以上的元素。\n\n实现 MajorityChecker 类:\n\n\tMajorityChecker(int[] arr)&nbsp;会用给定的数组 arr&nbsp;对&nbsp;MajorityChecker 初始化。\n\tint query(int left, int right, int threshold)&nbsp;返回子数组中的元素 &nbsp;arr[left...right]&nbsp;至少出现&nbsp;threshold&nbsp;次数，如果不存在这样的元素则返回 -1。\n\n&nbsp;\n\n示例 1：\n\n输入:\n[\"MajorityChecker\", \"query\", \"query\", \"query\"]\n[[[1, 1, 2, 2, 1, 1]], [0, 5, 4], [0, 3, 3], [2, 3, 2]]\n输出：\n[null, 1, -1, 2]\n\n解释：\nMajorityChecker majorityChecker = new MajorityChecker([1,1,2,2,1,1]);\nmajorityChecker.query(0,5,4); // 返回 1\nmajorityChecker.query(0,3,3); // 返回 -1\nmajorityChecker.query(2,3,2); // 返回 2\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 2 * 104\n\t1 <= arr[i] <= 2 * 104\n\t0 <= left <= right < arr.length\n\tthreshold <= right - left + 1\n\t2 * threshold > right - left + 1\n\t调用&nbsp;query&nbsp;的次数最多为&nbsp;104&nbsp;",
+  "constraints": [
+    "1 <= arr.length <= 2 * 104",
+    "1 <= arr[i] <= 2 * 104",
+    "0 <= left <= right < arr.length",
+    "threshold <= right - left + 1",
+    "2 * threshold > right - left + 1",
+    "调用&nbsp;query&nbsp;的次数最多为&nbsp;104&nbsp;"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "1338",
+  "title_cn": "数组大小减半",
+  "title_en": "Reduce Array Size to The Half",
+  "slug": "reduce-array-size-to-the-half",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;arr。你可以从中选出一个整数集合，并删除这些整数在数组中的每次出现。\n\n返回&nbsp;至少&nbsp;能删除数组中的一半整数的整数集合的最小大小。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [3,3,3,3,5,5,5,2,2,7]\n输出：2\n解释：选择 {3,7} 使得结果数组为 [5,5,5,2,2]、长度为 5（原数组长度的一半）。\n大小为 2 的可行集合有 {3,5},{3,2},{5,2}。\n选择 {2,7} 是不可行的，它的结果数组为 [3,3,3,3,5,5,5]，新数组长度大于原数组的二分之一。\n\n示例 2：\n\n输入：arr = [7,7,7,7,7,7]\n输出：1\n解释：我们只能选择集合 {7}，结果数组为空。\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 105\n\tarr.length&nbsp;为偶数\n\t1 <= arr[i] <= 105",
+  "constraints": [
+    "1 <= arr.length <= 105",
+    "arr.length&nbsp;为偶数",
+    "1 <= arr[i] <= 105"
+  ]
+}

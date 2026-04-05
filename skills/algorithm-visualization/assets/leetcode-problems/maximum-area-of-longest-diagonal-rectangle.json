@@ -1,0 +1,13 @@
+{
+  "number": "3000",
+  "title_cn": "对角线最长的矩形的面积",
+  "title_en": "Maximum Area of Longest Diagonal Rectangle",
+  "slug": "maximum-area-of-longest-diagonal-rectangle",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始的二维整数数组 dimensions。\n\n对于所有下标 i（0 <= i < dimensions.length），dimensions[i][0] 表示矩形  i 的长度，而 dimensions[i][1] 表示矩形  i 的宽度。\n\n返回对角线最 长 的矩形的 面积 。如果存在多个对角线长度相同的矩形，返回其中面积最 大 的矩形的面积。\n\n&nbsp;\n\n示例 1：\n\n输入：dimensions = [[9,3],[8,6]]\n输出：48\n解释：\n下标 = 0，长度 = 9，宽度 = 3。对角线长度 = sqrt(9 * 9 + 3 * 3) = sqrt(90) ≈ 9.487。\n下标 = 1，长度 = 8，宽度 = 6。对角线长度 = sqrt(8 * 8 + 6 * 6) = sqrt(100) = 10。\n因此，下标为 1 的矩形对角线更长，所以返回面积 = 8 * 6 = 48。\n\n示例 2：\n\n输入：dimensions = [[3,4],[4,3]]\n输出：12\n解释：两个矩形的对角线长度相同，为 5，所以最大面积 = 12。\n\n&nbsp;\n\n提示：\n\n\t1 <= dimensions.length <= 100\n\tdimensions[i].length == 2\n\t1 <= dimensions[i][0], dimensions[i][1] <= 100",
+  "constraints": [
+    "1 <= dimensions.length <= 100",
+    "dimensions[i].length == 2",
+    "1 <= dimensions[i][0], dimensions[i][1] <= 100"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "2571",
+  "title_cn": "将整数减少到零需要的最少操作数",
+  "title_en": "Minimum Operations to Reduce an Integer to 0",
+  "slug": "minimum-operations-to-reduce-an-integer-to-0",
+  "difficulty": "Medium",
+  "description": "给你一个正整数 n ，你可以执行下述操作 任意 次：\n\n\tn 加上或减去 2 的某个 幂\n\n返回使 n 等于 0 需要执行的 最少 操作数。\n\n如果 x == 2i 且其中 i >= 0 ，则数字 x 是 2 的幂。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 39\n输出：3\n解释：我们可以执行下述操作：\n- n 加上 20 = 1 ，得到 n = 40 。\n- n 减去 23 = 8 ，得到 n = 32 。\n- n 减去 25 = 32 ，得到 n = 0 。\n可以证明使 n 等于 0 需要执行的最少操作数是 3 。\n\n示例 2：\n\n输入：n = 54\n输出：3\n解释：我们可以执行下述操作：\n- n 加上 21 = 2 ，得到 n = 56 。\n- n 加上 23 = 8 ，得到 n = 64 。\n- n 减去 26 = 64 ，得到 n = 0 。\n使 n 等于 0 需要执行的最少操作数是 3 。 \n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105",
+  "constraints": [
+    "1 <= n <= 105"
+  ]
+}

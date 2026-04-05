@@ -1,0 +1,17 @@
+{
+  "number": "2115",
+  "title_cn": "从给定原材料中找到所有可以做出的菜",
+  "title_en": "Find All Possible Recipes from Given Supplies",
+  "slug": "find-all-possible-recipes-from-given-supplies",
+  "difficulty": "Medium",
+  "description": "你有 n&nbsp;道不同菜的信息。给你一个字符串数组&nbsp;recipes&nbsp;和一个二维字符串数组&nbsp;ingredients&nbsp;。第&nbsp;i&nbsp;道菜的名字为&nbsp;recipes[i]&nbsp;，如果你有它&nbsp;所有&nbsp;的原材料&nbsp;ingredients[i]&nbsp;，那么你可以&nbsp;做出&nbsp;这道菜。一份食谱也可以是 其它&nbsp;食谱的原料，也就是说&nbsp;ingredients[i]&nbsp;可能包含&nbsp;recipes&nbsp;中另一个字符串。\n\n同时给你一个字符串数组&nbsp;supplies&nbsp;，它包含你初始时拥有的所有原材料，每一种原材料你都有无限多。\n\n请你返回你可以做出的所有菜。你可以以 任意顺序&nbsp;返回它们。\n\n注意两道菜在它们的原材料中可能互相包含。\n\n&nbsp;\n\n示例 1：\n\n输入：recipes = [\"bread\"], ingredients = [[\"yeast\",\"flour\"]], supplies = [\"yeast\",\"flour\",\"corn\"]\n输出：[\"bread\"]\n解释：\n我们可以做出 \"bread\" ，因为我们有原材料 \"yeast\" 和 \"flour\" 。\n\n示例 2：\n\n输入：recipes = [\"bread\",\"sandwich\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"]], supplies = [\"yeast\",\"flour\",\"meat\"]\n输出：[\"bread\",\"sandwich\"]\n解释：\n我们可以做出 \"bread\" ，因为我们有原材料 \"yeast\" 和 \"flour\" 。\n我们可以做出 \"sandwich\" ，因为我们有原材料 \"meat\" 且可以做出原材料 \"bread\" 。\n\n示例 3：\n\n输入：recipes = [\"bread\",\"sandwich\",\"burger\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]], supplies = [\"yeast\",\"flour\",\"meat\"]\n输出：[\"bread\",\"sandwich\",\"burger\"]\n解释：\n我们可以做出 \"bread\" ，因为我们有原材料 \"yeast\" 和 \"flour\" 。\n我们可以做出 \"sandwich\" ，因为我们有原材料 \"meat\" 且可以做出原材料 \"bread\" 。\n我们可以做出 \"burger\" ，因为我们有原材料 \"meat\" 且可以做出原材料 \"bread\" 和 \"sandwich\" 。\n\n示例 4：\n\n输入：recipes = [\"bread\"], ingredients = [[\"yeast\",\"flour\"]], supplies = [\"yeast\"]\n输出：[]\n解释：\n我们没法做出任何菜，因为我们只有原材料 \"yeast\" 。\n\n&nbsp;\n\n提示：\n\n\tn == recipes.length == ingredients.length\n\t1 <= n <= 100\n\t1 <= ingredients[i].length, supplies.length <= 100\n\t1 <= recipes[i].length, ingredients[i][j].length, supplies[k].length <= 10\n\trecipes[i], ingredients[i][j]&nbsp;和&nbsp;supplies[k]&nbsp;只包含小写英文字母。\n\t所有&nbsp;recipes 和&nbsp;supplies&nbsp;中的值互不相同。\n\tingredients[i]&nbsp;中的字符串互不相同。",
+  "constraints": [
+    "n == recipes.length == ingredients.length",
+    "1 <= n <= 100",
+    "1 <= ingredients[i].length, supplies.length <= 100",
+    "1 <= recipes[i].length, ingredients[i][j].length, supplies[k].length <= 10",
+    "recipes[i], ingredients[i][j]&nbsp;和&nbsp;supplies[k]&nbsp;只包含小写英文字母。",
+    "所有&nbsp;recipes 和&nbsp;supplies&nbsp;中的值互不相同。",
+    "ingredients[i]&nbsp;中的字符串互不相同。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "771",
+  "title_cn": "宝石与石头",
+  "title_en": "Jewels and Stones",
+  "slug": "jewels-and-stones",
+  "difficulty": "Easy",
+  "description": "&nbsp;给你一个字符串 jewels&nbsp;代表石头中宝石的类型，另有一个字符串 stones 代表你拥有的石头。&nbsp;stones&nbsp;中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。\n\n字母区分大小写，因此 \"a\" 和 \"A\" 是不同类型的石头。\n\n&nbsp;\n\n示例 1：\n\n输入：jewels = \"aA\", stones = \"aAAbbbb\"\n输出：3\n\n示例 2：\n\n输入：jewels = \"z\", stones = \"ZZ\"\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <=&nbsp;jewels.length, stones.length <= 50\n\tjewels 和 stones 仅由英文字母组成\n\tjewels 中的所有字符都是 唯一的",
+  "constraints": [
+    "1 <=&nbsp;jewels.length, stones.length <= 50",
+    "jewels 和 stones 仅由英文字母组成",
+    "jewels 中的所有字符都是 唯一的"
+  ]
+}

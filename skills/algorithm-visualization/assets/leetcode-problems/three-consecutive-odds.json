@@ -1,0 +1,12 @@
+{
+  "number": "1550",
+  "title_cn": "存在连续三个奇数的数组",
+  "title_en": "Three Consecutive Odds",
+  "slug": "three-consecutive-odds",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 arr，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [2,6,4,1]\n输出：false\n解释：不存在连续三个元素都是奇数的情况。\n\n示例 2：\n\n输入：arr = [1,2,34,3,4,5,7,23,12]\n输出：true\n解释：存在连续三个元素都是奇数的情况，即 [5,7,23] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 1000\n\t1 <= arr[i] <= 1000",
+  "constraints": [
+    "1 <= arr.length <= 1000",
+    "1 <= arr[i] <= 1000"
+  ]
+}

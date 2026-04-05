@@ -1,0 +1,13 @@
+{
+  "number": "2013",
+  "title_cn": "检测正方形",
+  "title_en": "Detect Squares",
+  "slug": "detect-squares",
+  "difficulty": "Medium",
+  "description": "给你一个在 X-Y 平面上的点构成的数据流。设计一个满足下述要求的算法：\n\n\t添加 一个在数据流中的新点到某个数据结构中。可以添加 重复 的点，并会视作不同的点进行处理。\n\t给你一个查询点，请你从数据结构中选出三个点，使这三个点和查询点一同构成一个 面积为正 的 轴对齐正方形 ，统计 满足该要求的方案数目。\n\n轴对齐正方形 是一个正方形，除四条边长度相同外，还满足每条边都与 x-轴 或 y-轴 平行或垂直。\n\n实现 DetectSquares 类：\n\n\tDetectSquares() 使用空数据结构初始化对象\n\tvoid add(int[] point) 向数据结构添加一个新的点 point = [x, y]\n\tint count(int[] point) 统计按上述方式与点 point = [x, y] 共同构造 轴对齐正方形 的方案数。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"DetectSquares\", \"add\", \"add\", \"add\", \"count\", \"count\", \"add\", \"count\"]\n[[], [[3, 10]], [[11, 2]], [[3, 2]], [[11, 10]], [[14, 8]], [[11, 2]], [[11, 10]]]\n输出：\n[null, null, null, null, 1, 0, null, 2]\n\n解释：\nDetectSquares detectSquares = new DetectSquares();\ndetectSquares.add([3, 10]);\ndetectSquares.add([11, 2]);\ndetectSquares.add([3, 2]);\ndetectSquares.count([11, 10]); // 返回 1 。你可以选择：\n                               //   - 第一个，第二个，和第三个点\ndetectSquares.count([14, 8]);  // 返回 0 。查询点无法与数据结构中的这些点构成正方形。\ndetectSquares.add([11, 2]);    // 允许添加重复的点。\ndetectSquares.count([11, 10]); // 返回 2 。你可以选择：\n                               //   - 第一个，第二个，和第三个点\n                               //   - 第一个，第三个，和第四个点\n\n&nbsp;\n\n提示：\n\n\tpoint.length == 2\n\t0 <= x, y <= 1000\n\t调用&nbsp;add 和 count 的 总次数 最多为 5000",
+  "constraints": [
+    "point.length == 2",
+    "0 <= x, y <= 1000",
+    "调用&nbsp;add 和 count 的 总次数 最多为 5000"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "3248",
+  "title_cn": "矩阵中的蛇",
+  "title_en": "Snake in Matrix",
+  "slug": "snake-in-matrix",
+  "difficulty": "Easy",
+  "description": "大小为 n x n 的矩阵 grid 中有一条蛇。蛇可以朝 四个可能的方向 移动。矩阵中的每个单元格都使用位置进行标识： grid[i][j] = (i * n) + j。\n\n蛇从单元格 0 开始，并遵循一系列命令移动。\n\n给你一个整数 n 表示 grid 的大小，另给你一个字符串数组 commands，其中包括 \"UP\"、\"RIGHT\"、\"DOWN\" 和 \"LEFT\"。题目测评数据保证蛇在整个移动过程中将始终位于 grid 边界内。\n\n返回执行 commands 后蛇所停留的最终单元格的位置。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2, commands = [\"RIGHT\",\"DOWN\"]\n\n输出：3\n\n解释：\n\n\t\t\t0\n\t\t\t1\n\n\t\t\t2\n\t\t\t3\n\n\t\t\t0\n\t\t\t1\n\n\t\t\t2\n\t\t\t3\n\n\t\t\t0\n\t\t\t1\n\n\t\t\t2\n\t\t\t3\n\n示例 2：\n\n输入：n = 3, commands = [\"DOWN\",\"RIGHT\",\"UP\"]\n\n输出：1\n\n解释：\n\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 10\n\t1 <= commands.length <= 100\n\tcommands 仅由 \"UP\"、\"RIGHT\"、\"DOWN\" 和 \"LEFT\" 组成。\n\t生成的测评数据确保蛇不会移动到矩阵的边界外。",
+  "constraints": [
+    "2 <= n <= 10",
+    "1 <= commands.length <= 100",
+    "commands 仅由 \"UP\"、\"RIGHT\"、\"DOWN\" 和 \"LEFT\" 组成。",
+    "生成的测评数据确保蛇不会移动到矩阵的边界外。"
+  ]
+}

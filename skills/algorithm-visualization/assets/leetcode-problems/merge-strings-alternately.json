@@ -1,0 +1,12 @@
+{
+  "number": "1768",
+  "title_cn": "交替合并字符串",
+  "title_en": "Merge Strings Alternately",
+  "slug": "merge-strings-alternately",
+  "difficulty": "Easy",
+  "description": "给你两个字符串 word1 和 word2 。请你从 word1 开始，通过交替添加字母来合并字符串。如果一个字符串比另一个字符串长，就将多出来的字母追加到合并后字符串的末尾。\n\n返回 合并后的字符串 。\n\n示例 1：\n\n输入：word1 = \"abc\", word2 = \"pqr\"\n输出：\"apbqcr\"\n解释：字符串合并情况如下所示：\nword1：  a   b   c\nword2：    p   q   r\n合并后：  a p b q c r\n\n示例 2：\n\n输入：word1 = \"ab\", word2 = \"pqrs\"\n输出：\"apbqrs\"\n解释：注意，word2 比 word1 长，\"rs\" 需要追加到合并后字符串的末尾。\nword1：  a   b \nword2：    p   q   r   s\n合并后：  a p b q   r   s\n\n示例 3：\n\n输入：word1 = \"abcd\", word2 = \"pq\"\n输出：\"apbqcd\"\n解释：注意，word1 比 word2 长，\"cd\" 需要追加到合并后字符串的末尾。\nword1：  a   b   c   d\nword2：    p   q \n合并后：  a p b q c   d\n\n提示：\n\n\t1 \n\tword1 和 word2 由小写英文字母组成",
+  "constraints": [
+    "1",
+    "word1 和 word2 由小写英文字母组成"
+  ]
+}

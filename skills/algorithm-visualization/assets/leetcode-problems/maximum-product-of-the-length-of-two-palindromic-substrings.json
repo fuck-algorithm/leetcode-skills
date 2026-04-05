@@ -1,0 +1,12 @@
+{
+  "number": "1960",
+  "title_cn": "两个回文子字符串长度的最大乘积",
+  "title_en": "Maximum Product of the Length of Two Palindromic Substrings",
+  "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;，你需要找到两个 不重叠的回文&nbsp;子字符串，它们的长度都必须为 奇数&nbsp;，使得它们长度的乘积最大。\n\n更正式地，你想要选择四个整数&nbsp;i&nbsp;，j&nbsp;，k&nbsp;，l&nbsp;，使得&nbsp;0 <= i <= j < k <= l < s.length&nbsp;，且子字符串&nbsp;s[i...j] 和&nbsp;s[k...l]&nbsp;都是回文串且长度为奇数。s[i...j]&nbsp;表示下标从 i&nbsp;到 j&nbsp;且 包含&nbsp;两端下标的子字符串。\n\n请你返回两个不重叠回文子字符串长度的 最大&nbsp;乘积。\n\n回文字符串&nbsp;指的是一个从前往后读和从后往前读一模一样的字符串。子字符串&nbsp;指的是一个字符串中一段连续字符。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"ababbb\"\n输出：9\n解释：子字符串 \"aba\" 和 \"bbb\" 为奇数长度的回文串。乘积为 3 * 3 = 9 。\n\n示例 2：\n\n输入：s = \"zaaaxbbby\"\n输出：9\n解释：子字符串 \"aaa\" 和 \"bbb\" 为奇数长度的回文串。乘积为 3 * 3 = 9 。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 105\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "2 <= s.length <= 105",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

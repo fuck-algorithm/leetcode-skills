@@ -1,0 +1,12 @@
+{
+  "number": "3678",
+  "title_cn": "大于平均值的最小未出现正整数",
+  "title_en": "Smallest Absent Positive Greater Than Average",
+  "slug": "smallest-absent-positive-greater-than-average",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums。\n\n返回 nums 中 严格大于 nums 中所有元素 平均值 的 最小未出现正整数。\n数组的 平均值 定义为数组中所有元素的总和除以元素的数量。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [3,5]\n\n输出: 6\n\n解释:\n\n\tnums 的平均值是 (3 + 5) / 2 = 8 / 2 = 4 。\n\t大于 4 的最小未出现正整数是 6。\n\n示例 2:\n\n输入: nums = [-1,1,2]\n\n输出: 3\n\n解释:\n\n\tnums 的平均值是 (-1 + 1 + 2) / 3 = 2 / 3 = 0.667 。\n\t大于 0.667 的最小未出现正整数是 3 。\n\n示例 3:\n\n输入: nums = [4,-1]\n\n输出: 2\n\n解释:\n\n\tnums 的平均值是 (4 + (-1)) / 2 = 3 / 2 = 1.50。\n\t大于 1.50 的最小未出现正整数是 2。\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 100\n\t-100 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "-100 <= nums[i] <= 100"
+  ]
+}

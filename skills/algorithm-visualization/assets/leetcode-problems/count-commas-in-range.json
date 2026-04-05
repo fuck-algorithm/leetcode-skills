@@ -1,0 +1,11 @@
+{
+  "number": "3870",
+  "title_cn": "统计范围内的逗号",
+  "title_en": "Count Commas in Range",
+  "slug": "count-commas-in-range",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n。\n\n返回将所有从 [1, n]（包含两端）范围内的整数以&nbsp;标准&nbsp;数字格式书写时所用到的&nbsp;逗号总数。\n\n在&nbsp;标准&nbsp;格式中：\n\n\t从右边开始，每&nbsp;三位&nbsp;数字后插入一个逗号。\n\t位数&nbsp;少于四位&nbsp;的数字不包含逗号。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 1002\n\n输出： 3\n\n解释：\n\n数字 \"1,000\"、\"1,001\" 和 \"1,002\" 每个都包含一个逗号，总计 3 个逗号。\n\n示例 2：\n\n输入： n = 998\n\n输出： 0\n\n解释：\n\n从 1 到 998 的所有数字位数都少于四位，因此没有使用逗号。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105",
+  "constraints": [
+    "1 <= n <= 105"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "number": "1970",
+  "title_cn": "你能穿过矩阵的最后一天",
+  "title_en": "Last Day Where You Can Still Cross",
+  "slug": "last-day-where-you-can-still-cross",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 1&nbsp;开始的二进制矩阵，其中&nbsp;0&nbsp;表示陆地，1&nbsp;表示水域。同时给你&nbsp;row 和&nbsp;col&nbsp;分别表示矩阵中行和列的数目。\n\n一开始在第&nbsp;0&nbsp;天，整个&nbsp;矩阵都是&nbsp;陆地&nbsp;。但每一天都会有一块新陆地被&nbsp;水&nbsp;淹没变成水域。给你一个下标从&nbsp;1&nbsp;开始的二维数组&nbsp;cells&nbsp;，其中&nbsp;cells[i] = [ri, ci]&nbsp;表示在第&nbsp;i&nbsp;天，第&nbsp;ri&nbsp;行&nbsp;ci&nbsp;列（下标都是从 1&nbsp;开始）的陆地会变成 水域&nbsp;（也就是 0&nbsp;变成 1&nbsp;）。\n\n你想知道从矩阵最 上面&nbsp;一行走到最 下面&nbsp;一行，且只经过陆地格子的 最后一天&nbsp;是哪一天。你可以从最上面一行的&nbsp;任意&nbsp;格子出发，到达最下面一行的&nbsp;任意&nbsp;格子。你只能沿着&nbsp;四个&nbsp;基本方向移动（也就是上下左右）。\n\n请返回只经过陆地格子能从最 上面&nbsp;一行走到最 下面&nbsp;一行的 最后一天&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]\n输出：2\n解释：上图描述了矩阵从第 0 天开始是如何变化的。\n可以从最上面一行到最下面一行的最后一天是第 2 天。\n\n示例 2：\n\n输入：row = 2, col = 2, cells = [[1,1],[1,2],[2,1],[2,2]]\n输出：1\n解释：上图描述了矩阵从第 0 天开始是如何变化的。\n可以从最上面一行到最下面一行的最后一天是第 1 天。\n\n示例 3：\n\n输入：row = 3, col = 3, cells = [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]\n输出：3\n解释：上图描述了矩阵从第 0 天开始是如何变化的。\n可以从最上面一行到最下面一行的最后一天是第 3 天。\n\n&nbsp;\n\n提示：\n\n\t2 <= row, col <= 2 * 104\n\t4 <= row * col <= 2 * 104\n\tcells.length == row * col\n\t1 <= ri <= row\n\t1 <= ci <= col\n\tcells&nbsp;中的所有格子坐标都是 唯一&nbsp;的。",
+  "constraints": [
+    "2 <= row, col <= 2 * 104",
+    "4 <= row * col <= 2 * 104",
+    "cells.length == row * col",
+    "1 <= ri <= row",
+    "1 <= ci <= col",
+    "cells&nbsp;中的所有格子坐标都是 唯一&nbsp;的。"
+  ]
+}

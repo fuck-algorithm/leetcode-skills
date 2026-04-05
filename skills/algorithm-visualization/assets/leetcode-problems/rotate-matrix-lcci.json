@@ -1,0 +1,9 @@
+{
+  "number": "面试题 01.07",
+  "title_cn": "旋转矩阵",
+  "title_en": "Rotate Matrix LCCI",
+  "slug": "rotate-matrix-lcci",
+  "difficulty": "Medium",
+  "description": "给你一幅由 N × N 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。\n\n不占用额外内存空间能否做到？\n\n&nbsp;\n\n示例 1：\n\n给定 matrix = \n[\n  [1,2,3],\n  [4,5,6],\n  [7,8,9]\n],\n\n原地旋转输入矩阵，使其变为:\n[\n  [7,4,1],\n  [8,5,2],\n  [9,6,3]\n]\n\n示例 2：\n\n给定 matrix =\n[\n  [ 5, 1, 9,11],\n  [ 2, 4, 8,10],\n  [13, 3, 6, 7],\n  [15,14,12,16]\n], \n\n原地旋转输入矩阵，使其变为:\n[\n  [15,13, 2, 5],\n  [14, 3, 4, 1],\n  [12, 6, 8, 9],\n  [16, 7,10,11]\n]\n\n注意：本题与主站 48&nbsp;题相同：https://leetcode.cn/problems/rotate-image/",
+  "constraints": []
+}

@@ -1,0 +1,15 @@
+{
+  "number": "1109",
+  "title_cn": "航班预订统计",
+  "title_en": "Corporate Flight Bookings",
+  "slug": "corporate-flight-bookings",
+  "difficulty": "Medium",
+  "description": "这里有&nbsp;n&nbsp;个航班，它们分别从 1 到 n 进行编号。\n\n有一份航班预订表&nbsp;bookings ，表中第&nbsp;i&nbsp;条预订记录&nbsp;bookings[i] = [firsti, lasti, seatsi]&nbsp;意味着在从 firsti&nbsp;到 lasti （包含 firsti 和 lasti ）的 每个航班 上预订了 seatsi&nbsp;个座位。\n\n请你返回一个长度为 n 的数组&nbsp;answer，里面的元素是每个航班预定的座位总数。\n\n&nbsp;\n\n示例 1：\n\n输入：bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5\n输出：[10,55,45,25,25]\n解释：\n航班编号        1   2   3   4   5\n预订记录 1 ：   10  10\n预订记录 2 ：       20  20\n预订记录 3 ：       25  25  25  25\n总座位数：      10  55  45  25  25\n因此，answer = [10,55,45,25,25]\n\n示例 2：\n\n输入：bookings = [[1,2,10],[2,2,15]], n = 2\n输出：[10,25]\n解释：\n航班编号        1   2\n预订记录 1 ：   10  10\n预订记录 2 ：       15\n总座位数：      10  25\n因此，answer = [10,25]\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 2 * 104\n\t1 <= bookings.length <= 2 * 104\n\tbookings[i].length == 3\n\t1 <= firsti <= lasti <= n\n\t1 <= seatsi <= 104",
+  "constraints": [
+    "1 <= n <= 2 * 104",
+    "1 <= bookings.length <= 2 * 104",
+    "bookings[i].length == 3",
+    "1 <= firsti <= lasti <= n",
+    "1 <= seatsi <= 104"
+  ]
+}

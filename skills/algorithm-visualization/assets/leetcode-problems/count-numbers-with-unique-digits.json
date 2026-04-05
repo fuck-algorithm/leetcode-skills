@@ -1,0 +1,11 @@
+{
+  "number": "357",
+  "title_cn": "统计各位数字都不同的数字个数",
+  "title_en": "Count Numbers with Unique Digits",
+  "slug": "count-numbers-with-unique-digits",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n ，统计并返回各位数字都不同的数字 x 的个数，其中 0 <= x < 10n&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2\n输出：91\n解释：答案应为除去 11、22、33、44、55、66、77、88、99 外，在 0 ≤ x < 100 范围内的所有数字。 \n\n示例 2：\n\n输入：n = 0\n输出：1\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 8",
+  "constraints": [
+    "0 <= n <= 8"
+  ]
+}

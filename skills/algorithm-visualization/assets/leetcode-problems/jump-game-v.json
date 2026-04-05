@@ -1,0 +1,13 @@
+{
+  "number": "1340",
+  "title_cn": "跳跃游戏 V",
+  "title_en": "Jump Game V",
+  "slug": "jump-game-v",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;arr 和一个整数&nbsp;d 。每一步你可以从下标&nbsp;i&nbsp;跳到：\n\n\ti + x&nbsp;，其中&nbsp;i + x < arr.length&nbsp;且&nbsp;0 < x <= d&nbsp;。\n\ti - x&nbsp;，其中&nbsp;i - x >= 0&nbsp;且&nbsp;0 < x <= d&nbsp;。\n\n除此以外，你从下标&nbsp;i 跳到下标 j&nbsp;需要满足：arr[i] > arr[j]&nbsp;且 arr[i] > arr[k]&nbsp;，其中下标&nbsp;k&nbsp;是所有 i&nbsp;到 j&nbsp;之间的数字（更正式的，min(i, j) < k < max(i, j)）。\n\n你可以选择数组的任意下标开始跳跃。请你返回你 最多&nbsp;可以访问多少个下标。\n\n请注意，任何时刻你都不能跳到数组的外面。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [6,4,14,6,8,13,9,7,10,6,12], d = 2\n输出：4\n解释：你可以从下标 10 出发，然后如上图依次经过 10 --> 8 --> 6 --> 7 。\n注意，如果你从下标 6 开始，你只能跳到下标 7 处。你不能跳到下标 5 处因为 13 > 9 。你也不能跳到下标 4 处，因为下标 5 在下标 4 和 6 之间且 13 > 9 。\n类似的，你不能从下标 3 处跳到下标 2 或者下标 1 处。\n\n示例 2：\n\n输入：arr = [3,3,3,3,3], d = 3\n输出：1\n解释：你可以从任意下标处开始且你永远无法跳到任何其他坐标。\n\n示例 3：\n\n输入：arr = [7,6,5,4,3,2,1], d = 1\n输出：7\n解释：从下标 0 处开始，你可以按照数值从大到小，访问所有的下标。\n\n示例 4：\n\n输入：arr = [7,1,7,1,7,1], d = 2\n输出：2\n\n示例 5：\n\n输入：arr = [66], d = 1\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 1000\n\t1 <= arr[i] <= 10^5\n\t1 <= d <= arr.length",
+  "constraints": [
+    "1 <= arr.length <= 1000",
+    "1 <= arr[i] <= 10^5",
+    "1 <= d <= arr.length"
+  ]
+}

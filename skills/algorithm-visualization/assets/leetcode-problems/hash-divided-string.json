@@ -1,0 +1,14 @@
+{
+  "number": "3271",
+  "title_cn": "哈希分割字符串",
+  "title_en": "Hash Divided String",
+  "slug": "hash-divided-string",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n&nbsp;的字符串 s&nbsp;和一个整数&nbsp;k&nbsp;，n&nbsp;是 k&nbsp;的 倍数&nbsp;。你的任务是将字符串 s&nbsp;哈希为一个长度为 n / k&nbsp;的新字符串&nbsp;result&nbsp;。\n\n首先，将&nbsp;s&nbsp;分割成&nbsp;n / k&nbsp;个&nbsp;子字符串&nbsp;，每个子字符串的长度都为&nbsp;k&nbsp;。然后，将&nbsp;result&nbsp;初始化为一个 空&nbsp;字符串。\n\n我们依次从前往后处理每一个 子字符串&nbsp;：\n\n\t一个字符的 哈希值&nbsp;是它在 字母表&nbsp;中的下标（也就是&nbsp;'a' → 0&nbsp;，'b' → 1&nbsp;，... ，'z' → 25）。\n\t将子字符串中字母的 哈希值&nbsp;求和。\n\t将和对 26 取余，将结果记为&nbsp;hashedChar&nbsp;。\n\t找到小写字母表中 hashedChar&nbsp;对应的字符。\n\t将该字符添加到&nbsp;result&nbsp;的末尾。\n\n返回&nbsp;result&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abcd\", k = 2\n\n输出：\"bf\"\n\n解释：\n\n第一个字符串为&nbsp;\"ab\"&nbsp;，0 + 1 = 1&nbsp;，1 % 26 = 1&nbsp;，result[0] = 'b'&nbsp;。\n\n第二个字符串为： \"cd\"&nbsp;，2 + 3 = 5&nbsp;，5 % 26 = 5&nbsp;，result[1] = 'f'&nbsp;。\n\n示例 2：\n\n输入：s = \"mxz\", k = 3\n\n输出：\"i\"\n\n解释：\n\n唯一的子字符串为&nbsp;\"mxz\"&nbsp;，12 + 23 + 25 = 60&nbsp;，60 % 26 = 8&nbsp;，result[0] = 'i'&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= 100\n\tk <= s.length <= 1000\n\ts.length&nbsp;能被 k&nbsp;整除。\n\ts 只含有小写英文字母。",
+  "constraints": [
+    "1 <= k <= 100",
+    "k <= s.length <= 1000",
+    "s.length&nbsp;能被 k&nbsp;整除。",
+    "s 只含有小写英文字母。"
+  ]
+}

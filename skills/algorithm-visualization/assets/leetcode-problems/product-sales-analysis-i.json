@@ -1,0 +1,9 @@
+{
+  "number": "1068",
+  "title_cn": "产品销售分析 I",
+  "title_en": "Product Sales Analysis I",
+  "slug": "product-sales-analysis-i",
+  "difficulty": "Easy",
+  "description": "销售表&nbsp;Sales：\n\n+-------------+-------+\n| Column Name | Type  |\n+-------------+-------+\n| sale_id     | int   |\n| product_id  | int   |\n| year        | int   |\n| quantity    | int   |\n| price       | int   |\n+-------------+-------+\n(sale_id, year) 是销售表 Sales 的主键（具有唯一值的列的组合）。\nproduct_id 是关联到产品表 Product 的外键（reference 列）。\n该表的每一行显示 product_id 在某一年的销售情况。\n注意: price 表示每单位价格。\n\n产品表&nbsp;Product：\n\n+--------------+---------+\n| Column Name  | Type    |\n+--------------+---------+\n| product_id   | int     |\n| product_name | varchar |\n+--------------+---------+\nproduct_id&nbsp;是表的主键（具有唯一值的列）。\n该表的每一行表示每种产品的产品名称。\n\n&nbsp;\n\n编写解决方案，以获取 Sales&nbsp;表中所有 sale_id 对应的&nbsp;product_name 以及该产品的所有&nbsp;year&nbsp;和&nbsp;price 。\n\n返回结果表&nbsp;无顺序要求 。\n\n结果格式示例如下。\n\n&nbsp;\n\n示例 1：\n\n输入：\nSales 表：\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+\nProduct 表：\n+------------+--------------+\n| product_id | product_name |\n+------------+--------------+\n| 100        | Nokia        |\n| 200        | Apple        |\n| 300        | Samsung      |\n+------------+--------------+\n输出：\n+--------------+-------+-------+\n| product_name | year  | price |\n+--------------+-------+-------+\n| Nokia        | 2008  | 5000  |\n| Nokia        | 2009  | 5000  |\n| Apple        | 2011  | 9000  |\n+--------------+-------+-------+",
+  "constraints": []
+}

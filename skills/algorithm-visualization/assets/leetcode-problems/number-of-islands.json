@@ -1,0 +1,14 @@
+{
+  "number": "200",
+  "title_cn": "岛屿数量",
+  "title_en": "Number of Islands",
+  "slug": "number-of-islands",
+  "difficulty": "Medium",
+  "description": "给你一个由&nbsp;'1'（陆地）和 '0'（水）组成的的二维网格，请你计算网格中岛屿的数量。\n\n岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。\n\n此外，你可以假设该网格的四条边均被水包围。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [\n&nbsp; ['1','1','1','1','0'],\n&nbsp; ['1','1','0','1','0'],\n&nbsp; ['1','1','0','0','0'],\n&nbsp; ['0','0','0','0','0']\n]\n输出：1\n\n示例 2：\n\n输入：grid = [\n&nbsp; ['1','1','0','0','0'],\n&nbsp; ['1','1','0','0','0'],\n&nbsp; ['0','0','1','0','0'],\n&nbsp; ['0','0','0','1','1']\n]\n输出：3\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 300\n\tgrid[i][j] 的值为 '0' 或 '1'",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 300",
+    "grid[i][j] 的值为 '0' 或 '1'"
+  ]
+}

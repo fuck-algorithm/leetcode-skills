@@ -1,0 +1,13 @@
+{
+  "number": "71",
+  "title_cn": "简化路径",
+  "title_en": "Simplify Path",
+  "slug": "simplify-path",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 path ，表示指向某一文件或目录的&nbsp;Unix 风格 绝对路径 （以 '/' 开头），请你将其转化为 更加简洁的规范路径。\n\n在 Unix 风格的文件系统中规则如下：\n\n\t一个点&nbsp;'.'&nbsp;表示当前目录本身。\n\t此外，两个点 '..'&nbsp;表示将目录切换到上一级（指向父目录）。\n\t任意多个连续的斜杠（即，'//'&nbsp;或 '///'）都被视为单个斜杠 '/'。\n\t任何其他格式的点（例如，'...'&nbsp;或 '....'）均被视为有效的文件/目录名称。\n\n返回的 简化路径 必须遵循下述格式：\n\n\t始终以斜杠 '/' 开头。\n\t两个目录名之间必须只有一个斜杠 '/' 。\n\t最后一个目录名（如果存在）不能 以 '/' 结尾。\n\t此外，路径仅包含从根目录到目标文件或目录的路径上的目录（即，不含 '.' 或 '..'）。\n\n返回简化后得到的 规范路径 。\n\n&nbsp;\n\n示例 1：\n\n输入：path = \"/home/\"\n\n输出：\"/home\"\n\n解释：\n\n应删除尾随斜杠。\n\n示例 2：\n\n输入：path = \"/home//foo/\"\n\n输出：\"/home/foo\"\n\n解释：\n\n多个连续的斜杠被单个斜杠替换。\n\n示例 3：\n\n输入：path = \"/home/user/Documents/../Pictures\"\n\n输出：\"/home/user/Pictures\"\n\n解释：\n\n两个点&nbsp;\"..\"&nbsp;表示上一级目录（父目录）。\n\n示例 4：\n\n输入：path = \"/../\"\n\n输出：\"/\"\n\n解释：\n\n不可能从根目录上升一级目录。\n\n示例 5：\n\n输入：path = \"/.../a/../b/c/../d/./\"\n\n输出：\"/.../b/d\"\n\n解释：\n\n\"...\"&nbsp;在这个问题中是一个合法的目录名。\n\n&nbsp;\n\n提示：\n\n\t1 <= path.length <= 3000\n\tpath 由英文字母，数字，'.'，'/' 或 '_' 组成。\n\tpath 是一个有效的 Unix 风格绝对路径。",
+  "constraints": [
+    "1 <= path.length <= 3000",
+    "path 由英文字母，数字，'.'，'/' 或 '_' 组成。",
+    "path 是一个有效的 Unix 风格绝对路径。"
+  ]
+}

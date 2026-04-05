@@ -1,0 +1,16 @@
+{
+  "number": "3619",
+  "title_cn": "总价值可以被 K 整除的岛屿数目",
+  "title_en": "Count Islands With Total Value Divisible by K",
+  "slug": "count-islands-with-total-value-divisible-by-k",
+  "difficulty": "Medium",
+  "description": "给你一个 m x n 的矩阵 grid 和一个正整数 k。一个&nbsp;岛屿&nbsp;是由&nbsp;正&nbsp;整数（表示陆地）组成的，并且陆地间&nbsp;四周&nbsp;连通（水平或垂直）。\n\n一个岛屿的总价值是该岛屿中所有单元格的值之和。\n\n返回总价值可以被 k 整除&nbsp;的岛屿数量。\n\n&nbsp;\n\n示例 1:\n\n输入: grid = [[0,2,1,0,0],[0,5,0,0,5],[0,0,1,0,0],[0,1,4,7,0],[0,2,0,0,8]], k = 5\n\n输出: 2\n\n解释:\n\n网格中包含四个岛屿。蓝色高亮显示的岛屿的总价值可以被 5 整除，而红色高亮显示的岛屿则不能。\n\n示例 2:\n\n输入: grid = [[3,0,3,0], [0,3,0,3], [3,0,3,0]], k = 3\n\n输出: 6\n\n解释:\n\n网格中包含六个岛屿，每个岛屿的总价值都可以被 3 整除。\n\n&nbsp;\n\n提示:\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 1000\n\t1 <= m * n <= 105\n\t0 <= grid[i][j] <= 106\n\t1 <= k < = 106",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 1000",
+    "1 <= m * n <= 105",
+    "0 <= grid[i][j] <= 106",
+    "1 <= k < = 106"
+  ]
+}

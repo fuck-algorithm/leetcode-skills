@@ -1,0 +1,13 @@
+{
+  "number": "3712",
+  "title_cn": "出现次数能被 K 整除的元素总和",
+  "title_en": "Sum of Elements With Frequency Divisible by K",
+  "slug": "sum-of-elements-with-frequency-divisible-by-k",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums 和一个整数 k。\n\n请返回一个整数，表示 nums 中所有其 出现次数 能被 k 整除的元素的总和；如果没有这样的元素，则返回 0 。\n\n注意： 若某个元素在数组中的总出现次数能被 k 整除，则它在求和中会被计算 恰好 与其出现次数相同的次数。\n\n元素 x 的&nbsp;出现次数&nbsp;指它在数组中出现的次数。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2,2,3,3,3,3,4], k = 2\n\n输出： 16\n\n解释：\n\n\t数字 1 出现 1 次（奇数次）。\n\t数字 2 出现 2 次（偶数次）。\n\t数字 3 出现 4 次（偶数次）。\n\t数字 4 出现 1 次（奇数次）。\n\n因此总和为 2 + 2 + 3 + 3 + 3 + 3 = 16。\n\n示例 2：\n\n输入： nums = [1,2,3,4,5], k = 2\n\n输出： 0\n\n解释：\n\n没有元素出现偶数次，因此总和为 0。\n\n示例 3：\n\n输入： nums = [4,4,4,1,2,3], k = 3\n\n输出： 12\n\n解释：\n\n\t数字 1 出现 1 次。\n\t数字 2 出现 1 次。\n\t数字 3 出现 1 次。\n\t数字 4 出现 3 次。\n\n因此总和为 4 + 4 + 4 = 12。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100\n\t1 <= k <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= 100"
+  ]
+}

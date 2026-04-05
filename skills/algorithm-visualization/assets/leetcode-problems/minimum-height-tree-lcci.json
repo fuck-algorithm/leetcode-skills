@@ -1,0 +1,9 @@
+{
+  "number": "面试题 04.02",
+  "title_cn": "最小高度树",
+  "title_en": "Minimum Height Tree LCCI",
+  "slug": "minimum-height-tree-lcci",
+  "difficulty": "Easy",
+  "description": "给定一个有序整数数组，元素各不相同且按升序排列，编写一个算法，创建一棵高度最小的二叉搜索树。\n示例：\n\n给定有序数组: [-10,-3,0,5,9],\n\n一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：\n\n          0 \n         / \\ \n       -3   9 \n       /   / \n     -10  5",
+  "constraints": []
+}

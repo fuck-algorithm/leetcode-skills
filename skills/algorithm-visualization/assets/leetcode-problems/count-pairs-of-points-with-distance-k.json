@@ -1,0 +1,13 @@
+{
+  "number": "2857",
+  "title_cn": "统计距离为 k 的点对",
+  "title_en": "Count Pairs of Points With Distance k",
+  "slug": "count-pairs-of-points-with-distance-k",
+  "difficulty": "Medium",
+  "description": "给你一个 二维&nbsp;整数数组&nbsp;coordinates&nbsp;和一个整数&nbsp;k&nbsp;，其中&nbsp;coordinates[i] = [xi, yi]&nbsp;是第 i&nbsp;个点在二维平面里的坐标。\n\n我们定义两个点&nbsp;(x1, y1)&nbsp;和&nbsp;(x2, y2)&nbsp;的 距离&nbsp;为&nbsp;(x1 XOR x2) + (y1 XOR y2) ，XOR&nbsp;指的是按位异或运算。\n\n请你返回满足&nbsp;i < j&nbsp;且点&nbsp;i 和点&nbsp;j之间距离为&nbsp;k&nbsp;的点对数目。\n\n&nbsp;\n\n示例 1：\n\n输入：coordinates = [[1,2],[4,2],[1,3],[5,2]], k = 5\n输出：2\n解释：以下点对距离为 k ：\n- (0, 1)：(1 XOR 4) + (2 XOR 2) = 5 。\n- (2, 3)：(1 XOR 5) + (3 XOR 2) = 5 。\n\n示例 2：\n\n输入：coordinates = [[1,3],[1,3],[1,3],[1,3],[1,3]], k = 0\n输出：10\n解释：任何两个点之间的距离都为 0 ，所以总共有 10 组点对。\n\n&nbsp;\n\n提示：\n\n\t2 <= coordinates.length <= 50000\n\t0 <= xi, yi <= 106\n\t0 <= k <= 100",
+  "constraints": [
+    "2 <= coordinates.length <= 50000",
+    "0 <= xi, yi <= 106",
+    "0 <= k <= 100"
+  ]
+}

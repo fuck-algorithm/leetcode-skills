@@ -1,0 +1,13 @@
+{
+  "number": "2875",
+  "title_cn": "无限数组的最短子数组",
+  "title_en": "Minimum Size Subarray in Infinite Array",
+  "slug": "minimum-size-subarray-in-infinite-array",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的数组 nums 和一个整数 target 。\n\n下标从 0 开始的数组 infinite_nums 是通过无限地将 nums 的元素追加到自己之后生成的。\n\n请你从 infinite_nums 中找出满足 元素和 等于&nbsp;target 的 最短 子数组，并返回该子数组的长度。如果不存在满足条件的子数组，返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3], target = 5\n输出：2\n解释：在这个例子中 infinite_nums = [1,2,3,1,2,3,1,2,...] 。\n区间 [1,2] 内的子数组的元素和等于 target = 5 ，且长度 length = 2 。\n可以证明，当元素和等于目标值 target = 5 时，2 是子数组的最短长度。\n\n示例 2：\n\n输入：nums = [1,1,1,2,3], target = 4\n输出：2\n解释：在这个例子中 infinite_nums = [1,1,1,2,3,1,1,1,2,3,1,1,...].\n区间 [4,5] 内的子数组的元素和等于 target = 4 ，且长度 length = 2 。\n可以证明，当元素和等于目标值 target = 4 时，2 是子数组的最短长度。\n\n示例 3：\n\n输入：nums = [2,4,6,8], target = 3\n输出：-1\n解释：在这个例子中 infinite_nums = [2,4,6,8,2,4,6,8,...] 。\n可以证明，不存在元素和等于目标值 target = 3 的子数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 105\n\t1 <= target <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 105",
+    "1 <= target <= 109"
+  ]
+}

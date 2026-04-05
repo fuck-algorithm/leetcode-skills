@@ -1,0 +1,12 @@
+{
+  "number": "567",
+  "title_cn": "字符串的排列",
+  "title_en": "Permutation in String",
+  "slug": "permutation-in-string",
+  "difficulty": "Medium",
+  "description": "给你两个字符串&nbsp;s1&nbsp;和&nbsp;s2 ，写一个函数来判断 s2 是否包含 s1&nbsp;的 排列。如果是，返回 true ；否则，返回 false 。\n\n换句话说，s1 的排列之一是 s2 的 子串 。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"ab\" s2 = \"eidbaooo\"\n输出：true\n解释：s2 包含 s1 的排列之一 (\"ba\").\n\n示例 2：\n\n输入：s1= \"ab\" s2 = \"eidboaoo\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length, s2.length <= 104\n\ts1 和 s2 仅包含小写字母",
+  "constraints": [
+    "1 <= s1.length, s2.length <= 104",
+    "s1 和 s2 仅包含小写字母"
+  ]
+}

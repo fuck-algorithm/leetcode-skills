@@ -1,0 +1,12 @@
+{
+  "number": "1839",
+  "title_cn": "所有元音按顺序排布的最长子字符串",
+  "title_en": "Longest Substring Of All Vowels in Order",
+  "slug": "longest-substring-of-all-vowels-in-order",
+  "difficulty": "Medium",
+  "description": "当一个字符串满足如下条件时，我们称它是 美丽的 ：\n\n\t所有 5 个英文元音字母（'a' ，'e' ，'i' ，'o' ，'u'）都必须 至少 出现一次。\n\t这些元音字母的顺序都必须按照 字典序 升序排布（也就是说所有的 'a' 都在 'e' 前面，所有的 'e' 都在 'i' 前面，以此类推）\n\n比方说，字符串 \"aeiou\" 和 \"aaaaaaeiiiioou\" 都是 美丽的 ，但是 \"uaeio\" ，\"aeoiu\" 和 \"aaaeeeooo\" 不是美丽的 。\n\n给你一个只包含英文元音字母的字符串 word ，请你返回 word 中 最长美丽子字符串的长度 。如果不存在这样的子字符串，请返回 0 。\n\n子字符串 是字符串中一个连续的字符序列。\n\n示例 1：\n\n输入：word = \"aeiaaioaaaaeiiiiouuuooaauuaeiu\"\n输出：13\n解释：最长子字符串是 \"aaaaeiiiiouuu\" ，长度为 13 。\n\n示例 2：\n\n输入：word = \"aeeeiiiioooauuuaeiou\"\n输出：5\n解释：最长子字符串是 \"aeiou\" ，长度为 5 。\n\n示例 3：\n\n输入：word = \"a\"\n输出：0\n解释：没有美丽子字符串，所以返回 0 。\n\n提示：\n\n\t1 5\n\tword 只包含字符 'a'，'e'，'i'，'o' 和 'u' 。",
+  "constraints": [
+    "1 5",
+    "word 只包含字符 'a'，'e'，'i'，'o' 和 'u' 。"
+  ]
+}

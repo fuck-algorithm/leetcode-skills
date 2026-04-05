@@ -1,0 +1,12 @@
+{
+  "number": "2357",
+  "title_cn": "使数组中所有元素都等于零",
+  "title_en": "Make Array Zero by Subtracting Equal Amounts",
+  "slug": "make-array-zero-by-subtracting-equal-amounts",
+  "difficulty": "Easy",
+  "description": "给你一个非负整数数组 nums 。在一步操作中，你必须：\n\n\t选出一个正整数 x ，x 需要小于或等于 nums 中 最小 的 非零 元素。\n\tnums 中的每个正整数都减去 x。\n\n返回使 nums 中所有元素都等于 0 需要的 最少 操作数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,5,0,3,5]\n输出：3\n解释：\n第一步操作：选出 x = 1 ，之后 nums = [0,4,0,2,4] 。\n第二步操作：选出 x = 2 ，之后 nums = [0,2,0,0,2] 。\n第三步操作：选出 x = 2 ，之后 nums = [0,0,0,0,0] 。\n\n示例 2：\n\n输入：nums = [0]\n输出：0\n解释：nums 中的每个元素都已经是 0 ，所以不需要执行任何操作。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t0 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 100"
+  ]
+}

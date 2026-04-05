@@ -1,0 +1,9 @@
+{
+  "number": "175",
+  "title_cn": "组合两个表",
+  "title_en": "Combine Two Tables",
+  "slug": "combine-two-tables",
+  "difficulty": "Easy",
+  "description": "表: Person\n\n+-------------+---------+\n| 列名         | 类型     |\n+-------------+---------+\n| PersonId    | int     |\n| FirstName   | varchar |\n| LastName    | varchar |\n+-------------+---------+\npersonId 是该表的主键（具有唯一值的列）。\n该表包含一些人的 ID 和他们的姓和名的信息。\n\n&nbsp;\n\n表: Address\n\n+-------------+---------+\n| 列名         | 类型    |\n+-------------+---------+\n| AddressId   | int     |\n| PersonId    | int     |\n| City        | varchar |\n| State       | varchar |\n+-------------+---------+\naddressId 是该表的主键（具有唯一值的列）。\n该表的每一行都包含一个 ID = PersonId 的人的城市和州的信息。\n\n&nbsp;\n\n编写解决方案，报告 Person 表中每个人的姓、名、城市和州。如果 personId 的地址不在&nbsp;Address&nbsp;表中，则报告为&nbsp;null&nbsp;。\n\n以 任意顺序 返回结果表。\n\n结果格式如下所示。\n\n&nbsp;\n\n示例 1:\n\n输入: \nPerson表:\n+----------+----------+-----------+\n| personId | lastName | firstName |\n+----------+----------+-----------+\n| 1        | Wang     | Allen     |\n| 2        | Alice    | Bob       |\n+----------+----------+-----------+\nAddress表:\n+-----------+----------+---------------+------------+\n| addressId | personId | city          | state      |\n+-----------+----------+---------------+------------+\n| 1         | 2        | New York City | New York   |\n| 2         | 3        | Leetcode      | California |\n+-----------+----------+---------------+------------+\n输出: \n+-----------+----------+---------------+----------+\n| firstName | lastName | city          | state    |\n+-----------+----------+---------------+----------+\n| Allen     | Wang     | Null          | Null     |\n| Bob       | Alice    | New York City | New York |\n+-----------+----------+---------------+----------+\n解释: \n地址表中没有 personId = 1 的地址，所以它们的城市和州返回 null。\naddressId = 1 包含了 personId = 2 的地址信息。",
+  "constraints": []
+}

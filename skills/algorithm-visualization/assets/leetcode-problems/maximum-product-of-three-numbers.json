@@ -1,0 +1,12 @@
+{
+  "number": "628",
+  "title_cn": "三个数的最大乘积",
+  "title_en": "Maximum Product of Three Numbers",
+  "slug": "maximum-product-of-three-numbers",
+  "difficulty": "Easy",
+  "description": "给你一个整型数组 nums ，在数组中找出由三个数组成的最大乘积，并输出这个乘积。\n\n示例 1：\n\n输入：nums = [1,2,3]\n输出：6\n\n示例 2：\n\n输入：nums = [1,2,3,4]\n输出：24\n\n示例 3：\n\n输入：nums = [-1,-2,-3]\n输出：-6\n\n提示：\n\n\t3 4\n\t-1000",
+  "constraints": [
+    "3 4",
+    "-1000"
+  ]
+}

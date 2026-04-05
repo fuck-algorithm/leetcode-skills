@@ -1,0 +1,15 @@
+{
+  "number": "985",
+  "title_cn": "查询后的偶数和",
+  "title_en": "Sum of Even Numbers After Queries",
+  "slug": "sum-of-even-numbers-after-queries",
+  "difficulty": "Medium",
+  "description": "给出一个整数数组&nbsp;A&nbsp;和一个查询数组&nbsp;queries。\n\n对于第&nbsp;i&nbsp;次查询，有&nbsp;val =&nbsp;queries[i][0], index&nbsp;= queries[i][1]，我们会把&nbsp;val&nbsp;加到&nbsp;A[index]&nbsp;上。然后，第&nbsp;i&nbsp;次查询的答案是 A 中偶数值的和。\n\n（此处给定的&nbsp;index = queries[i][1]&nbsp;是从 0 开始的索引，每次查询都会永久修改数组&nbsp;A。）\n\n返回所有查询的答案。你的答案应当以数组&nbsp;answer&nbsp;给出，answer[i]&nbsp;为第&nbsp;i&nbsp;次查询的答案。\n\n&nbsp;\n\n示例：\n\n输入：A = [1,2,3,4], queries = [[1,0],[-3,1],[-4,0],[2,3]]\n输出：[8,6,2,4]\n解释：\n开始时，数组为 [1,2,3,4]。\n将 1 加到 A[0] 上之后，数组为 [2,2,3,4]，偶数值之和为 2 + 2 + 4 = 8。\n将 -3 加到 A[1] 上之后，数组为 [2,-1,3,4]，偶数值之和为 2 + 4 = 6。\n将 -4 加到 A[0] 上之后，数组为 [-2,-1,3,4]，偶数值之和为 -2 + 4 = 2。\n将 2 加到 A[3] 上之后，数组为 [-2,-1,3,6]，偶数值之和为 -2 + 6 = 4。\n\n&nbsp;\n\n提示：\n\n\t1 <= A.length <= 10000\n\t-10000 <= A[i] <= 10000\n\t1 <= queries.length <= 10000\n\t-10000 <= queries[i][0] <= 10000\n\t0 <= queries[i][1] < A.length",
+  "constraints": [
+    "1 <= A.length <= 10000",
+    "-10000 <= A[i] <= 10000",
+    "1 <= queries.length <= 10000",
+    "-10000 <= queries[i][0] <= 10000",
+    "0 <= queries[i][1] < A.length"
+  ]
+}

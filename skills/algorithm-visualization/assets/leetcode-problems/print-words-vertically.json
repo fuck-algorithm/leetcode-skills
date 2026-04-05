@@ -1,0 +1,13 @@
+{
+  "number": "1324",
+  "title_cn": "竖直打印单词",
+  "title_en": "Print Words Vertically",
+  "slug": "print-words-vertically",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s。请你按照单词在 s 中的出现顺序将它们全部竖直返回。\n单词应该以字符串列表的形式返回，必要时用空格补位，但输出尾部的空格需要删除（不允许尾随空格）。\n每个单词只能放在一列上，每一列中也只能有一个单词。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"HOW ARE YOU\"\n输出：[\"HAY\",\"ORO\",\"WEU\"]\n解释：每个单词都应该竖直打印。 \n \"HAY\"\n&nbsp;\"ORO\"\n&nbsp;\"WEU\"\n\n示例 2：\n\n输入：s = \"TO BE OR NOT TO BE\"\n输出：[\"TBONTB\",\"OEROOE\",\"   T\"]\n解释：题目允许使用空格补位，但不允许输出末尾出现空格。\n\"TBONTB\"\n\"OEROOE\"\n\"   T\"\n\n示例 3：\n\n输入：s = \"CONTEST IS COMING\"\n输出：[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 200\n\ts&nbsp;仅含大写英文字母。\n\t题目数据保证两个单词之间只有一个空格。",
+  "constraints": [
+    "1 <= s.length <= 200",
+    "s&nbsp;仅含大写英文字母。",
+    "题目数据保证两个单词之间只有一个空格。"
+  ]
+}

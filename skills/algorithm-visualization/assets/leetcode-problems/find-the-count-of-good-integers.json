@@ -1,0 +1,12 @@
+{
+  "number": "3272",
+  "title_cn": "统计好整数的数目",
+  "title_en": "Find the Count of Good Integers",
+  "slug": "find-the-count-of-good-integers",
+  "difficulty": "Hard",
+  "description": "给你两个 正&nbsp;整数&nbsp;n 和&nbsp;k&nbsp;。\n\n如果一个整数&nbsp;x&nbsp;满足以下条件，那么它被称为 k&nbsp;回文&nbsp;整数&nbsp;。\n\n\tx&nbsp;是一个&nbsp;回文整数 。\n\tx&nbsp;能被 k&nbsp;整除。\n\n如果一个整数的数位重新排列后能得到一个 k 回文整数&nbsp;，那么我们称这个整数为&nbsp;好 整数。比方说，k = 2&nbsp;，那么&nbsp;2020 可以重新排列得到 2002 ，2002 是一个 k 回文串，所以 2020 是一个好整数。而 1010 无法重新排列数位得到一个 k 回文整数。\n\n请你返回 n&nbsp;个数位的整数中，有多少个 好&nbsp;整数。\n\n注意&nbsp;，任何整数在重新排列数位之前或者之后 都不能 有前导 0 。比方说 1010 不能重排列得到&nbsp;101 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, k = 5\n\n输出：27\n\n解释：\n\n部分好整数如下：\n\n\t551 ，因为它可以重排列得到 515 。\n\t525 ，因为它已经是一个 k 回文整数。\n\n示例 2：\n\n输入：n = 1, k = 4\n\n输出：2\n\n解释：\n\n两个好整数分别是 4 和 8 。\n\n示例 3：\n\n输入：n = 5, k = 6\n\n输出：2468\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 10\n\t1 <= k <= 9",
+  "constraints": [
+    "1 <= n <= 10",
+    "1 <= k <= 9"
+  ]
+}

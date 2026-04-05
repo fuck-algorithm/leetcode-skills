@@ -1,0 +1,13 @@
+{
+  "number": "1622",
+  "title_cn": "奇妙序列",
+  "title_en": "Fancy Sequence",
+  "slug": "fancy-sequence",
+  "difficulty": "Hard",
+  "description": "请你实现三个 API append，addAll 和 multAll 来实现奇妙序列。\n\n请实现 Fancy 类 ：\n\n\tFancy() 初始化一个空序列对象。\n\tvoid append(val) 将整数 val 添加在序列末尾。\n\tvoid addAll(inc) 将所有序列中的现有数值都增加 inc 。\n\tvoid multAll(m) 将序列中的所有现有数值都乘以整数 m 。\n\tint getIndex(idx) 得到下标为 idx 处的数值（下标从 0 开始），并将结果对 109 + 7 取余。如果下标大于等于序列的长度，请返回 -1 。\n\n示例：\n\n输入：\n[\"Fancy\", \"append\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"getIndex\", \"getIndex\"]\n[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]\n输出：\n[null, null, null, null, null, 10, null, null, null, 26, 34, 20]\n\n解释：\nFancy fancy = new Fancy();\nfancy.append(2);   // 奇妙序列：[2]\nfancy.addAll(3);   // 奇妙序列：[2+3] -> [5]\nfancy.append(7);   // 奇妙序列：[5, 7]\nfancy.multAll(2);  // 奇妙序列：[5*2, 7*2] -> [10, 14]\nfancy.getIndex(0); // 返回 10\nfancy.addAll(3);   // 奇妙序列：[10+3, 14+3] -> [13, 17]\nfancy.append(10);  // 奇妙序列：[13, 17, 10]\nfancy.multAll(2);  // 奇妙序列：[13*2, 17*2, 10*2] -> [26, 34, 20]\nfancy.getIndex(0); // 返回 26\nfancy.getIndex(1); // 返回 34\nfancy.getIndex(2); // 返回 20\n\n提示：\n\n\t1 \n\t0 5\n\t总共最多会有 105 次对 append，addAll，multAll 和 getIndex 的调用。",
+  "constraints": [
+    "1",
+    "0 5",
+    "总共最多会有 105 次对 append，addAll，multAll 和 getIndex 的调用。"
+  ]
+}

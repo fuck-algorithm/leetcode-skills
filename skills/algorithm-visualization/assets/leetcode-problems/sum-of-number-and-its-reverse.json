@@ -1,0 +1,11 @@
+{
+  "number": "2443",
+  "title_cn": "反转之后的数字和",
+  "title_en": "Sum of Number and Its Reverse",
+  "slug": "sum-of-number-and-its-reverse",
+  "difficulty": "Medium",
+  "description": "给你一个 非负 整数 num 。如果存在某个 非负 整数 k 满足 k + reverse(k) = num&nbsp; ，则返回 true ；否则，返回 false 。\n\nreverse(k) 表示 k 反转每个数位后得到的数字。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 443\n输出：true\n解释：172 + 271 = 443 ，所以返回 true 。\n\n示例 2：\n\n输入：num = 63\n输出：false\n解释：63 不能表示为非负整数及其反转后数字之和，返回 false 。\n\n示例 3：\n\n输入：num = 181\n输出：true\n解释：140 + 041 = 181 ，所以返回 true 。注意，反转后的数字可能包含前导零。\n\n&nbsp;\n\n提示：\n\n\t0 <= num <= 105",
+  "constraints": [
+    "0 <= num <= 105"
+  ]
+}

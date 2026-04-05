@@ -1,0 +1,11 @@
+{
+  "number": "LCR 174",
+  "title_cn": "寻找二叉搜索树中的目标节点",
+  "title_en": "寻找二叉搜索树中的目标节点",
+  "slug": "er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof",
+  "difficulty": "Easy",
+  "description": "某公司组织架构以二叉搜索树形式记录，节点值为处于该职位的员工编号。请返回第 cnt 大的员工编号。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [7, 3, 9, 1, 5], cnt = 2\n       7\n      / \\\n     3   9\n    / \\\n   1   5\n输出：7\n\n示例 2：\n\n输入: root = [10, 5, 15, 2, 7, null, 20, 1, null, 6, 8], cnt = 4\n       10\n      / \\\n     5   15\n    / \\    \\\n   2   7    20\n  /   / \\ \n 1   6   8\n输出: 8\n\n&nbsp;\n\n提示：\n\n\t1 ≤ cnt&nbsp;≤ 二叉搜索树元素个数\n\n&nbsp;",
+  "constraints": [
+    "1 ≤ cnt&nbsp;≤ 二叉搜索树元素个数"
+  ]
+}

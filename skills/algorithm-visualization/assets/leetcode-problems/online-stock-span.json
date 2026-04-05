@@ -1,0 +1,12 @@
+{
+  "number": "901",
+  "title_cn": "股票价格跨度",
+  "title_en": "Online Stock Span",
+  "slug": "online-stock-span",
+  "difficulty": "Medium",
+  "description": "设计一个算法收集某些股票的每日报价，并返回该股票当日价格的 跨度 。\n\n当日股票价格的 跨度 被定义为股票价格小于或等于今天价格的最大连续日数（从今天开始往回数，包括今天）。\n\n\t例如，如果未来 7 天股票的价格是 [100,80,60,70,60,75,85]，那么股票跨度将是 [1,1,1,2,1,4,6] 。\n\n实现 StockSpanner 类：\n\n\tStockSpanner() 初始化类对象。\n\tint next(int price) 给出今天的股价 price ，返回该股票当日价格的 跨度 。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"StockSpanner\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\"]\n[[], [100], [80], [60], [70], [60], [75], [85]]\n输出：\n[null, 1, 1, 1, 2, 1, 4, 6]\n\n解释：\nStockSpanner stockSpanner = new StockSpanner();\nstockSpanner.next(100); // 返回 1\nstockSpanner.next(80);  // 返回 1\nstockSpanner.next(60);  // 返回 1\nstockSpanner.next(70);  // 返回 2\nstockSpanner.next(60);  // 返回 1\nstockSpanner.next(75);  // 返回 4 ，因为截至今天的最后 4 个股价 (包括今天的股价 75) 都小于或等于今天的股价。\nstockSpanner.next(85);  // 返回 6\n\n&nbsp;\n\n提示：\n\n\t1 <= price <= 105\n\t最多调用 next 方法 104 次",
+  "constraints": [
+    "1 <= price <= 105",
+    "最多调用 next 方法 104 次"
+  ]
+}

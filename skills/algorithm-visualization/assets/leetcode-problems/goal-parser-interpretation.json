@@ -1,0 +1,12 @@
+{
+  "number": "1678",
+  "title_cn": "设计 Goal 解析器",
+  "title_en": "Goal Parser Interpretation",
+  "slug": "goal-parser-interpretation",
+  "difficulty": "Easy",
+  "description": "请你设计一个可以解释字符串 command 的 Goal 解析器 。command 由 \"G\"、\"()\" 和/或 \"(al)\" 按某种顺序组成。Goal 解析器会将 \"G\" 解释为字符串 \"G\"、\"()\" 解释为字符串 \"o\" ，\"(al)\" 解释为字符串 \"al\" 。然后，按原顺序将经解释得到的字符串连接成一个字符串。\n\n给你字符串 command ，返回 Goal 解析器 对 command 的解释结果。\n\n示例 1：\n\n输入：command = \"G()(al)\"\n输出：\"Goal\"\n解释：Goal 解析器解释命令的步骤如下所示：\nG -> G\n() -> o\n(al) -> al\n最后连接得到的结果是 \"Goal\"\n\n示例 2：\n\n输入：command = \"G()()()()(al)\"\n输出：\"Gooooal\"\n\n示例 3：\n\n输入：command = \"(al)G(al)()()G\"\n输出：\"alGalooG\"\n\n提示：\n\n\t1 <= command.length <= 100\n\tcommand 由 \"G\"、\"()\" 和/或 \"(al)\" 按某种顺序组成",
+  "constraints": [
+    "1 <= command.length <= 100",
+    "command 由 \"G\"、\"()\" 和/或 \"(al)\" 按某种顺序组成"
+  ]
+}

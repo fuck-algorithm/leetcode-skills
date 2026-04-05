@@ -1,0 +1,12 @@
+{
+  "number": "1567",
+  "title_cn": "乘积为正数的最长子数组长度",
+  "title_en": "Maximum Length of Subarray With Positive Product",
+  "slug": "maximum-length-of-subarray-with-positive-product",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums&nbsp;，请你求出乘积为正数的最长子数组的长度。\n\n一个数组的子数组是由原数组中零个或者更多个连续数字组成的数组。\n\n请你返回乘积为正数的最长子数组长度。\n\n&nbsp;\n\n示例&nbsp; 1：\n\n输入：nums = [1,-2,-3,4]\n输出：4\n解释：数组本身乘积就是正数，值为 24 。\n\n示例 2：\n\n输入：nums = [0,1,-2,-3,-4]\n输出：3\n解释：最长乘积为正数的子数组为 [1,-2,-3] ，乘积为 6 。\n注意，我们不能把 0 也包括到子数组中，因为这样乘积为 0 ，不是正数。\n\n示例 3：\n\n输入：nums = [-1,-2,-3,0,1]\n输出：2\n解释：乘积为正数的最长子数组是 [-1,-2] 或者 [-2,-3] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 10^5\n\t-10^9 <= nums[i]&nbsp;<= 10^9\n\n&nbsp;",
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "-10^9 <= nums[i]&nbsp;<= 10^9"
+  ]
+}

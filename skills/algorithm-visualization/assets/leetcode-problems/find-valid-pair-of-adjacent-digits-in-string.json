@@ -1,0 +1,12 @@
+{
+  "number": "3438",
+  "title_cn": "找到字符串中合法的相邻数字",
+  "title_en": "Find Valid Pair of Adjacent Digits in String",
+  "slug": "find-valid-pair-of-adjacent-digits-in-string",
+  "difficulty": "Easy",
+  "description": "给你一个只包含数字的字符串&nbsp;s&nbsp;。如果 s&nbsp;中两个 相邻&nbsp;的数字满足以下条件，我们称它们是 合法的&nbsp;：\n\n\t前面的数字 不等于 第二个数字。\n\t两个数字在 s&nbsp;中出现的次数 恰好&nbsp;分别等于这个数字本身。\n\n请你从左到右遍历字符串 s&nbsp;，并返回最先找到的 合法&nbsp;相邻数字。如果这样的相邻数字不存在，请你返回一个空字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"2523533\"\n\n输出：\"23\"\n\n解释：\n\n数字&nbsp;'2'&nbsp;出现 2 次，数字&nbsp;'3'&nbsp;出现 3 次。\"23\"&nbsp;中每个数字在 s&nbsp;中出现的次数都恰好分别等于数字本身。所以输出&nbsp;\"23\"&nbsp;。\n\n示例 2：\n\n输入：s = \"221\"\n\n输出：\"21\"\n\n解释：\n\n数字&nbsp;'2'&nbsp;出现 2 次，数字&nbsp;'1'&nbsp;出现 1 次。所以输出&nbsp;\"21\"&nbsp;。\n\n示例 3：\n\n输入：s = \"22\"\n\n输出：\"\"\n\n解释：\n\n没有合法的相邻数字。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 100\n\ts&nbsp;只包含&nbsp;'1' 到&nbsp;'9' 的数字。",
+  "constraints": [
+    "2 <= s.length <= 100",
+    "s&nbsp;只包含&nbsp;'1' 到&nbsp;'9' 的数字。"
+  ]
+}

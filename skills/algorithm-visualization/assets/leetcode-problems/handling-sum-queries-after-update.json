@@ -1,0 +1,18 @@
+{
+  "number": "2569",
+  "title_cn": "更新数组后处理求和查询",
+  "title_en": "Handling Sum Queries After Update",
+  "slug": "handling-sum-queries-after-update",
+  "difficulty": "Hard",
+  "description": "给你两个下标从 0&nbsp;开始的数组&nbsp;nums1 和&nbsp;nums2&nbsp;，和一个二维数组&nbsp;queries&nbsp;表示一些操作。总共有 3 种类型的操作：\n\n\t操作类型 1 为&nbsp;queries[i]&nbsp;= [1, l, r]&nbsp;。你需要将 nums1&nbsp;从下标&nbsp;l&nbsp;到下标 r&nbsp;的所有 0&nbsp;反转成 1 并且所有&nbsp;1&nbsp;反转成 0&nbsp;。l&nbsp;和 r&nbsp;下标都从 0&nbsp;开始。\n\t操作类型 2 为&nbsp;queries[i]&nbsp;= [2, p, 0]&nbsp;。对于&nbsp;0 <= i < n&nbsp;中的所有下标，令&nbsp;nums2[i] =&nbsp;nums2[i]&nbsp;+ nums1[i]&nbsp;* p&nbsp;。\n\t操作类型 3 为&nbsp;queries[i]&nbsp;= [3, 0, 0]&nbsp;。求&nbsp;nums2&nbsp;中所有元素的和。\n\n请你返回一个&nbsp;数组，包含&nbsp;所有第三种操作类型&nbsp;的答案。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,0,1], nums2 = [0,0,0], queries = [[1,1,1],[2,1,0],[3,0,0]]\n输出：[3]\n解释：第一个操作后 nums1 变为 [1,1,1] 。第二个操作后，nums2 变成 [1,1,1] ，所以第三个操作的答案为 3 。所以返回 [3] 。\n\n示例 2：\n\n输入：nums1 = [1], nums2 = [5], queries = [[2,0,0],[3,0,0]]\n输出：[5]\n解释：第一个操作后，nums2 保持不变为 [5] ，所以第二个操作的答案是 5 。所以返回 [5] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums1.length,nums2.length <= 105\n\tnums1.length = nums2.length\n\t1 <= queries.length <= 105\n\tqueries[i].length = 3\n\t0 <= l <= r <= nums1.length - 1\n\t0 <= p <= 106\n\t0 <= nums1[i] <= 1\n\t0 <= nums2[i] <= 109",
+  "constraints": [
+    "1 <= nums1.length,nums2.length <= 105",
+    "nums1.length = nums2.length",
+    "1 <= queries.length <= 105",
+    "queries[i].length = 3",
+    "0 <= l <= r <= nums1.length - 1",
+    "0 <= p <= 106",
+    "0 <= nums1[i] <= 1",
+    "0 <= nums2[i] <= 109"
+  ]
+}

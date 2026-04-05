@@ -1,0 +1,13 @@
+{
+  "number": "78",
+  "title_cn": "子集",
+  "title_en": "Subsets",
+  "slug": "subsets",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。\n\n解集 不能 包含重复的子集。你可以按 任意顺序 返回解集。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3]\n输出：[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]\n\n示例 2：\n\n输入：nums = [0]\n输出：[[],[0]]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 10\n\t-10 <= nums[i] <= 10\n\tnums 中的所有元素 互不相同",
+  "constraints": [
+    "1 <= nums.length <= 10",
+    "-10 <= nums[i] <= 10",
+    "nums 中的所有元素 互不相同"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2594",
+  "title_cn": "修车的最少时间",
+  "title_en": "Minimum Time to Repair Cars",
+  "slug": "minimum-time-to-repair-cars",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;ranks&nbsp;，表示一些机械工的 能力值&nbsp;。ranksi 是第 i 位机械工的能力值。能力值为&nbsp;r&nbsp;的机械工可以在&nbsp;r * n2&nbsp;分钟内修好&nbsp;n&nbsp;辆车。\n\n同时给你一个整数&nbsp;cars&nbsp;，表示总共需要修理的汽车数目。\n\n请你返回修理所有汽车&nbsp;最少&nbsp;需要多少时间。\n\n注意：所有机械工可以同时修理汽车。\n\n&nbsp;\n\n示例 1：\n\n输入：ranks = [4,2,3,1], cars = 10\n输出：16\n解释：\n- 第一位机械工修 2 辆车，需要 4 * 2 * 2 = 16 分钟。\n- 第二位机械工修 2 辆车，需要 2 * 2 * 2 = 8 分钟。\n- 第三位机械工修 2 辆车，需要 3 * 2 * 2 = 12 分钟。\n- 第四位机械工修 4 辆车，需要 1 * 4 * 4 = 16 分钟。\n16 分钟是修理完所有车需要的最少时间。\n\n示例 2：\n\n输入：ranks = [5,1,8], cars = 6\n输出：16\n解释：\n- 第一位机械工修 1 辆车，需要 5 * 1 * 1 = 5 分钟。\n- 第二位机械工修 4 辆车，需要 1 * 4 * 4 = 16 分钟。\n- 第三位机械工修 1 辆车，需要 8 * 1 * 1 = 8 分钟。\n16 分钟时修理完所有车需要的最少时间。\n\n&nbsp;\n\n提示：\n\n\t1 <= ranks.length <= 105\n\t1 <= ranks[i] <= 100\n\t1 <= cars <= 106",
+  "constraints": [
+    "1 <= ranks.length <= 105",
+    "1 <= ranks[i] <= 100",
+    "1 <= cars <= 106"
+  ]
+}

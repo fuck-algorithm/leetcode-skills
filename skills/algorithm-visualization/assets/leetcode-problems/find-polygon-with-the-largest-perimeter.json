@@ -1,0 +1,12 @@
+{
+  "number": "2971",
+  "title_cn": "找到最大周长的多边形",
+  "title_en": "Find Polygon With the Largest Perimeter",
+  "slug": "find-polygon-with-the-largest-perimeter",
+  "difficulty": "Medium",
+  "description": "给你一个长度为&nbsp;n&nbsp;的&nbsp;正&nbsp;整数数组&nbsp;nums&nbsp;。\n\n多边形&nbsp;指的是一个至少有 3&nbsp;条边的封闭二维图形。多边形的 最长边&nbsp;一定 小于&nbsp;所有其他边长度之和。\n\n如果你有&nbsp;k&nbsp;（k >= 3）个&nbsp;正&nbsp;数&nbsp;a1，a2，a3, ...，ak 满足&nbsp;a1 <= a2 <= a3 <= ... <= ak 且 a1 + a2 + a3 + ... + ak-1 > ak&nbsp;，那么 一定&nbsp;存在一个&nbsp;k&nbsp;条边的多边形，每条边的长度分别为&nbsp;a1&nbsp;，a2&nbsp;，a3&nbsp;，&nbsp;...，ak&nbsp;。\n\n一个多边形的 周长&nbsp;指的是它所有边之和。\n\n请你返回从 nums&nbsp;中可以构造的 多边形&nbsp;的 最大周长&nbsp;。如果不能构造出任何多边形，请你返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,5,5]\n输出：15\n解释：nums 中唯一可以构造的多边形为三角形，每条边的长度分别为 5 ，5 和 5 ，周长为 5 + 5 + 5 = 15 。\n\n示例 2：\n\n输入：nums = [1,12,1,2,5,50,3]\n输出：12\n解释：最大周长多边形为五边形，每条边的长度分别为 1 ，1 ，2 ，3 和 5 ，周长为 1 + 1 + 2 + 3 + 5 = 12 。\n我们无法构造一个包含变长为 12 或者 50 的多边形，因为其他边之和没法大于两者中的任何一个。\n所以最大周长为 12 。\n\n示例 3：\n\n输入：nums = [5,5,50]\n输出：-1\n解释：无法构造任何多边形，因为多边形至少要有 3 条边且 50 > 5 + 5 。\n\n&nbsp;\n\n提示：\n\n\t3 <= n <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "3 <= n <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

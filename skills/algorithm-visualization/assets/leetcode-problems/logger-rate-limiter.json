@@ -1,0 +1,9 @@
+{
+  "number": "359",
+  "title_cn": "日志速率限制器",
+  "title_en": "Logger Rate Limiter",
+  "slug": "logger-rate-limiter",
+  "difficulty": "Easy",
+  "description": "",
+  "constraints": []
+}

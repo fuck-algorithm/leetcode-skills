@@ -1,0 +1,16 @@
+{
+  "number": "3277",
+  "title_cn": "查询子数组最大异或值",
+  "title_en": "Maximum XOR Score Subarray Queries",
+  "slug": "maximum-xor-score-subarray-queries",
+  "difficulty": "Hard",
+  "description": "给你一个由 n 个整数组成的数组 nums，以及一个大小为 q 的二维整数数组 queries，其中 queries[i] = [li, ri]。\n\n对于每一个查询，你需要找出 nums[li..ri] 中任意 子数组 的 最大异或值。\n\n数组的异或值 需要对数组 a 反复执行以下操作，直到只剩一个元素，剩下的那个元素就是 异或值：\n\n\t对于除最后一个下标以外的所有下标 i，同时将 a[i] 替换为 a[i] XOR a[i + 1] 。\n\t移除数组的最后一个元素。\n\n返回一个大小为 q 的数组 answer，其中 answer[i] 表示查询 i 的答案。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [2,8,4,32,16,1], queries = [[0,2],[1,4],[0,5]]\n\n输出： [12,60,60]\n\n解释：\n\n在第一个查询中，nums[0..2] 的子数组分别是 [2], [8], [4], [2, 8], [8, 4], 和 [2, 8, 4]，它们的异或值分别为 2, 8, 4, 10, 12, 和 6。查询的答案是 12，所有异或值中的最大值。\n\n在第二个查询中，nums[1..4] 的子数组中最大的异或值是子数组 nums[1..4] 的异或值，为 60。\n\n在第三个查询中，nums[0..5] 的子数组中最大的异或值是子数组 nums[1..4] 的异或值，为 60。\n\n示例 2：\n\n输入： nums = [0,7,3,2,8,5,1], queries = [[0,3],[1,5],[2,4],[2,6],[5,6]]\n\n输出： [7,14,11,14,5]\n\n解释：\n\n\t\t\t下标\n\t\t\tnums[li..ri]\n\t\t\t最大异或值子数组\n\t\t\t子数组最大异或值\n\n\t\t\t0\n\t\t\t[0, 7, 3, 2]\n\t\t\t[7]\n\t\t\t7\n\n\t\t\t1\n\t\t\t[7, 3, 2, 8, 5]\n\t\t\t[7, 3, 2, 8]\n\t\t\t14\n\n\t\t\t2\n\t\t\t[3, 2, 8]\n\t\t\t[3, 2, 8]\n\t\t\t11\n\n\t\t\t3\n\t\t\t[3, 2, 8, 5, 1]\n\t\t\t[2, 8, 5, 1]\n\t\t\t14\n\n\t\t\t4\n\t\t\t[5, 1]\n\t\t\t[5]\n\t\t\t5\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 2000\n\t0 <= nums[i] <= 231 - 1\n\t1 <= q == queries.length <= 105\n\tqueries[i].length == 2\n\tqueries[i] = [li, ri]\n\t0 <= li <= ri <= n - 1",
+  "constraints": [
+    "1 <= n == nums.length <= 2000",
+    "0 <= nums[i] <= 231 - 1",
+    "1 <= q == queries.length <= 105",
+    "queries[i].length == 2",
+    "queries[i] = [li, ri]",
+    "0 <= li <= ri <= n - 1"
+  ]
+}

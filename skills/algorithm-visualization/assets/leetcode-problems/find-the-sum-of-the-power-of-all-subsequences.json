@@ -1,0 +1,13 @@
+{
+  "number": "3082",
+  "title_cn": "求出所有子序列的能量和",
+  "title_en": "Find the Sum of the Power of All Subsequences",
+  "slug": "find-the-sum-of-the-power-of-all-subsequences",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;和一个 正&nbsp;整数&nbsp;k&nbsp;。\n\n一个整数数组的 能量&nbsp;定义为和 等于&nbsp;k&nbsp;的子序列的数目。\n\n请你返回 nums&nbsp;中所有子序列的 能量和&nbsp;。\n\n由于答案可能很大，请你将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：  nums = [1,2,3], k = 3 \n\n输出：  6 \n\n解释：\n\n总共有&nbsp;5&nbsp;个能量不为 0 的子序列：\n\n\t子序列&nbsp;[1,2,3] 有&nbsp;2&nbsp;个和为&nbsp;3&nbsp;的子序列：[1,2,3] 和 [1,2,3]&nbsp;。\n\t子序列&nbsp;[1,2,3]&nbsp;有 1&nbsp;个和为&nbsp;3&nbsp;的子序列：[1,2,3]&nbsp;。\n\t子序列&nbsp;[1,2,3] 有&nbsp;1&nbsp;个和为&nbsp;3&nbsp;的子序列：[1,2,3]&nbsp;。\n\t子序列&nbsp;[1,2,3]&nbsp;有&nbsp;1&nbsp;个和为&nbsp;3&nbsp;的子序列：[1,2,3]&nbsp;。\n\t子序列&nbsp;[1,2,3]&nbsp;有&nbsp;1&nbsp;个和为&nbsp;3&nbsp;的子序列：[1,2,3]&nbsp;。\n\n所以答案为&nbsp;2 + 1 + 1 + 1 + 1 = 6&nbsp;。\n\n示例 2：\n\n输入：  nums = [2,3,3], k = 5 \n\n输出：  4 \n\n解释：\n\n总共有&nbsp;3&nbsp;个能量不为 0 的子序列：\n\n\t子序列&nbsp;[2,3,3]&nbsp;有 2 个子序列和为&nbsp;5&nbsp;：[2,3,3] 和&nbsp;[2,3,3]&nbsp;。\n\t子序列&nbsp;[2,3,3]&nbsp;有 1 个子序列和为&nbsp;5&nbsp;：[2,3,3]&nbsp;。\n\t子序列&nbsp;[2,3,3]&nbsp;有 1 个子序列和为 5&nbsp;：[2,3,3]&nbsp;。\n\n所以答案为&nbsp;2 + 1 + 1 = 4&nbsp;。\n\n示例 3：\n\n输入：  nums = [1,2,3], k = 7 \n\n输出：  0 \n\n解释：不存在和为 7&nbsp;的子序列，所以 nums&nbsp;的能量和为&nbsp;0&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 100\n\t1 <= nums[i] <= 104\n\t1 <= k <= 100",
+  "constraints": [
+    "1 <= n <= 100",
+    "1 <= nums[i] <= 104",
+    "1 <= k <= 100"
+  ]
+}

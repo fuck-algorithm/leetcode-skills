@@ -1,0 +1,14 @@
+{
+  "number": "LCR 030",
+  "title_cn": "O(1) 时间插入、删除和获取随机元素",
+  "title_en": "O(1) 时间插入、删除和获取随机元素",
+  "slug": "FortPu",
+  "difficulty": "Medium",
+  "description": "设计一个支持在平均&nbsp;时间复杂度 O(1)&nbsp;下，执行以下操作的数据结构：\n\n\tinsert(val)：当元素 val 不存在时返回 true&nbsp;，并向集合中插入该项，否则返回 false 。\n\tremove(val)：当元素 val 存在时返回 true&nbsp;，并从集合中移除该项，否则返回 false&nbsp;。\n\tgetRandom：随机返回现有集合中的一项。每个元素应该有&nbsp;相同的概率&nbsp;被返回。\n\n&nbsp;\n\n示例 1：\n\n输入: inputs = [\"RandomizedSet\", \"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\"]\n[[], [1], [2], [2], [], [1], [2], []]\n输出: [null, true, false, true, 2, true, false, 2]\n解释:\nRandomizedSet randomSet = new RandomizedSet();  // 初始化一个空的集合\nrandomSet.insert(1); // 向集合中插入 1 ， 返回 true 表示 1 被成功地插入\n\nrandomSet.remove(2); // 返回 false，表示集合中不存在 2 \n\nrandomSet.insert(2); // 向集合中插入 2 返回 true ，集合现在包含 [1,2] \n\nrandomSet.getRandom(); // getRandom 应随机返回 1 或 2 \n\nrandomSet.remove(1); // 从集合中移除 1 返回 true 。集合现在包含 [2] \n\nrandomSet.insert(2); // 2 已在集合中，所以返回 false \n\nrandomSet.getRandom(); // 由于 2 是集合中唯一的数字，getRandom 总是返回 2 \n\n&nbsp;\n\n提示：\n\n\t-231&nbsp;<= val <= 231&nbsp;- 1\n\t最多进行 2 * 105 次&nbsp;insert ， remove 和 getRandom 方法调用\n\t当调用&nbsp;getRandom 方法时，集合中至少有一个元素\n\n&nbsp;\n\n注意：本题与主站 380&nbsp;题相同：https://leetcode.cn/problems/insert-delete-getrandom-o1/",
+  "constraints": [
+    "-231&nbsp;<= val <= 231&nbsp;- 1",
+    "最多进行 2 * 105 次&nbsp;insert ， remove 和 getRandom 方法调用",
+    "当调用&nbsp;getRandom 方法时，集合中至少有一个元素",
+    "注意：本题与主站 380&nbsp;题相同：https://leetcode.cn/problems/insert-delete-getrandom-o1/"
+  ]
+}

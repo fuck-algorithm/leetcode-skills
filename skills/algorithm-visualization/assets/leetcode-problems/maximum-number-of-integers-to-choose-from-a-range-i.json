@@ -1,0 +1,13 @@
+{
+  "number": "2554",
+  "title_cn": "从一个范围内选择最多整数 I",
+  "title_en": "Maximum Number of Integers to Choose From a Range I",
+  "slug": "maximum-number-of-integers-to-choose-from-a-range-i",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;banned&nbsp;和两个整数&nbsp;n 和&nbsp;maxSum&nbsp;。你需要按照以下规则选择一些整数：\n\n\t被选择整数的范围是&nbsp;[1, n]&nbsp;。\n\t每个整数 至多&nbsp;选择 一次&nbsp;。\n\t被选择整数不能在数组&nbsp;banned&nbsp;中。\n\t被选择整数的和不超过&nbsp;maxSum&nbsp;。\n\n请你返回按照上述规则 最多&nbsp;可以选择的整数数目。\n\n&nbsp;\n\n示例 1：\n\n输入：banned = [1,6,5], n = 5, maxSum = 6\n输出：2\n解释：你可以选择整数 2 和 4 。\n2 和 4 在范围 [1, 5] 内，且它们都不在 banned 中，它们的和是 6 ，没有超过 maxSum 。\n\n示例 2：\n\n输入：banned = [1,2,3,4,5,6,7], n = 8, maxSum = 1\n输出：0\n解释：按照上述规则无法选择任何整数。\n\n示例 3：\n\n输入：banned = [11], n = 7, maxSum = 50\n输出：7\n解释：你可以选择整数 1, 2, 3, 4, 5, 6 和 7 。\n它们都在范围 [1, 7] 中，且都没出现在 banned 中，它们的和是 28 ，没有超过 maxSum 。\n\n&nbsp;\n\n提示：\n\n\t1 <= banned.length <= 104\n\t1 <= banned[i], n <= 104\n\t1 <= maxSum <= 109",
+  "constraints": [
+    "1 <= banned.length <= 104",
+    "1 <= banned[i], n <= 104",
+    "1 <= maxSum <= 109"
+  ]
+}

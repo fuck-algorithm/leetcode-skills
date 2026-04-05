@@ -1,0 +1,12 @@
+{
+  "number": "678",
+  "title_cn": "有效的括号字符串",
+  "title_en": "Valid Parenthesis String",
+  "slug": "valid-parenthesis-string",
+  "difficulty": "Medium",
+  "description": "给你一个只包含三种字符的字符串，支持的字符类型分别是 '('、')' 和 '*'。请你检验这个字符串是否为有效字符串，如果是 有效 字符串返回 true 。\n\n有效 字符串符合如下规则：\n\n\t任何左括号 '('&nbsp;必须有相应的右括号 ')'。\n\t任何右括号 ')'&nbsp;必须有相应的左括号 '('&nbsp;。\n\t左括号 '(' 必须在对应的右括号之前 ')'。\n\t'*'&nbsp;可以被视为单个右括号 ')'&nbsp;，或单个左括号 '('&nbsp;，或一个空字符串 \"\"。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"()\"\n输出：true\n\n示例 2：\n\n输入：s = \"(*)\"\n输出：true\n\n示例 3：\n\n输入：s = \"(*))\"\n输出：true\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts[i] 为 '('、')' 或 '*'",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s[i] 为 '('、')' 或 '*'"
+  ]
+}

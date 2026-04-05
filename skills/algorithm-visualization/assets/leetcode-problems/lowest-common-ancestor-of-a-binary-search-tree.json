@@ -1,0 +1,9 @@
+{
+  "number": "235",
+  "title_cn": "二叉搜索树的最近公共祖先",
+  "title_en": "Lowest Common Ancestor of a Binary Search Tree",
+  "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+  "difficulty": "Medium",
+  "description": "给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。\n\n百度百科中最近公共祖先的定义为：&ldquo;对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。&rdquo;\n\n例如，给定如下二叉搜索树:&nbsp; root =&nbsp;[6,2,8,0,4,7,9,null,null,3,5]\n\n&nbsp;\n\n示例 1:\n\n输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\n输出: 6 \n解释: 节点 2 和节点 8 的最近公共祖先是 6。\n\n示例 2:\n\n输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\n输出: 2\n解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。\n\n&nbsp;\n\n说明:\n\n\t所有节点的值都是唯一的。\n\tp、q 为不同节点且均存在于给定的二叉搜索树中。",
+  "constraints": []
+}

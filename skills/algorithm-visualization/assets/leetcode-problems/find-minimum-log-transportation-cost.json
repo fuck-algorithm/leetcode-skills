@@ -1,0 +1,12 @@
+{
+  "number": "3560",
+  "title_cn": "木材运输的最小成本",
+  "title_en": "Find Minimum Log Transportation Cost",
+  "slug": "find-minimum-log-transportation-cost",
+  "difficulty": "Easy",
+  "description": "给你三个整数 n、m 和 k。\n\n有两根长度分别为 n 和 m 单位的木材，需要通过三辆卡车运输。每辆卡车最多只能装载一根长度&nbsp;不超过 k 单位的木材。\n\n你可以将木材切成更小的段，其中将长度为 x 的木材切割成长度为 len1 和 len2 的段的成本为 cost = len1 * len2，并且满足 len1 + len2 = x。\n\n返回将木材分配到卡车上的&nbsp;最小总成本&nbsp;。如果木材不需要切割，总成本为 0。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 6, m = 5, k = 5\n\n输出： 5\n\n解释：\n\n将长度为 6 的木材切割成长度为 1 和 5 的两段，成本为 1 * 5 == 5。现在三段长度分别为 1、5 和 5 的木材可以分别装载到每辆卡车。\n\n示例 2：\n\n输入： n = 4, m = 4, k = 6\n\n输出： 0\n\n解释：\n\n两根木材已经可以直接装载到卡车上，因此不需要切割。\n\n&nbsp;\n\n提示：\n\n\t2 <= k <= 105\n\t1 <= n, m <= 2 * k\n\t输入数据保证木材总存在能被运输的方案。",
+  "constraints": [
+    "2 <= k <= 105",
+    "1 <= n, m <= 2 * k"
+  ]
+}

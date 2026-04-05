@@ -1,0 +1,12 @@
+{
+  "number": "2407",
+  "title_cn": "最长递增子序列 II",
+  "title_en": "Longest Increasing Subsequence II",
+  "slug": "longest-increasing-subsequence-ii",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。\n\n找到&nbsp;nums&nbsp;中满足以下要求的最长子序列：\n\n\t子序列 严格递增\n\t子序列中相邻元素的差值 不超过&nbsp;k&nbsp;。\n\n请你返回满足上述要求的 最长子序列&nbsp;的长度。\n\n子序列&nbsp;是从一个数组中删除部分元素后，剩余元素不改变顺序得到的数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,2,1,4,3,4,5,8,15], k = 3\n输出：5\n解释：\n满足要求的最长子序列是 [1,3,4,5,8] 。\n子序列长度为 5 ，所以我们返回 5 。\n注意子序列 [1,3,4,5,8,15] 不满足要求，因为 15 - 8 = 7 大于 3 。\n\n示例 2：\n\n输入：nums = [7,4,5,1,8,12,4,7], k = 5\n输出：4\n解释：\n满足要求的最长子序列是 [4,5,8,12] 。\n子序列长度为 4 ，所以我们返回 4 。\n\n示例 3：\n\n输入：nums = [1,5], k = 1\n输出：1\n解释：\n满足要求的最长子序列是 [1] 。\n子序列长度为 1 ，所以我们返回 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i], k <= 105",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i], k <= 105"
+  ]
+}

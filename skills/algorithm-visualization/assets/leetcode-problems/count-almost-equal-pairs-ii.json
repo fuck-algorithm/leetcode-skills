@@ -1,0 +1,12 @@
+{
+  "number": "3267",
+  "title_cn": "统计近似相等数对 II",
+  "title_en": "Count Almost Equal Pairs II",
+  "slug": "count-almost-equal-pairs-ii",
+  "difficulty": "Hard",
+  "description": "注意：在这个问题中，操作次数增加为至多&nbsp;两次&nbsp;。\n\n给你一个正整数数组&nbsp;nums&nbsp;。\n\n如果我们执行以下操作 至多两次&nbsp;可以让两个整数&nbsp;x 和&nbsp;y&nbsp;相等，那么我们称这个数对是 近似相等&nbsp;的：\n\n\t选择&nbsp;x 或者&nbsp;y &nbsp;之一，将这个数字中的两个数位交换。\n\n请你返回 nums&nbsp;中，下标 i&nbsp;和 j&nbsp;满足&nbsp;i < j&nbsp;且&nbsp;nums[i] 和&nbsp;nums[j] 近似相等&nbsp;的数对数目。\n\n注意&nbsp;，执行操作后得到的整数可以有前导 0 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1023,2310,2130,213]\n\n输出：4\n\n解释：\n\n近似相等数对包括：\n\n\t1023 和 2310 。交换 1023 中数位 1 和 2 ，然后交换数位 0 和 3 ，得到 2310 。\n\t1023 和 213 。交换 1023 中数位 1 和 0 ，然后交换数位 1 和 2 ，得到 0213 ，也就是 213 。\n\t2310 和 213 。交换 2310 中数位 2 和 0 ，然后交换数位 3 和 2 ，得到 0213 ，也就是 213 。\n\t2310 和 2130 。交换 2310 中数位 3 和 1 ，得到 2130 。\n\n示例 2：\n\n输入：nums = [1,10,100]\n\n输出：3\n\n解释：\n\n近似相等数对包括：\n\n\t1 和 10 。交换 10 中数位 1 和 0&nbsp;，得到 01 ，也就是 1&nbsp;。\n\t1 和 100 。交换 100 中数位 1 和从左往右的第二个 0 ，得到 001 ，也就是 1 。\n\t10 和 100 。交换 100 中数位 1 和从左往右的第一个 0 ，得到 010 ，也就是 10 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 5000\n\t1 <= nums[i] <&nbsp;107",
+  "constraints": [
+    "2 <= nums.length <= 5000",
+    "1 <= nums[i] <&nbsp;107"
+  ]
+}

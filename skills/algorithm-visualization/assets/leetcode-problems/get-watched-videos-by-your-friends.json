@@ -1,0 +1,19 @@
+{
+  "number": "1311",
+  "title_cn": "获取你好友已观看的视频",
+  "title_en": "Get Watched Videos by Your Friends",
+  "slug": "get-watched-videos-by-your-friends",
+  "difficulty": "Medium",
+  "description": "有&nbsp;n 个人，每个人都有一个&nbsp; 0&nbsp;到&nbsp;n-1&nbsp;的唯一&nbsp;id&nbsp;。\n\n给你数组 watchedVideos&nbsp; 和&nbsp;friends&nbsp;，其中&nbsp;watchedVideos[i]&nbsp; 和&nbsp;friends[i]&nbsp;分别表示&nbsp;id = i&nbsp;的人观看过的视频列表和他的好友列表。\n\nLevel&nbsp;1&nbsp;的视频包含所有你好友观看过的视频，level&nbsp;2&nbsp;的视频包含所有你好友的好友观看过的视频，以此类推。一般的，Level 为 k&nbsp;的视频包含所有从你出发，最短距离为&nbsp;k&nbsp;的好友观看过的视频。\n\n给定你的&nbsp;id&nbsp; 和一个&nbsp;level&nbsp;值，请你找出所有指定 level 的视频，并将它们按观看频率升序返回。如果有频率相同的视频，请将它们按字母顺序从小到大排列。\n\n&nbsp;\n\n示例 1：\n\n输入：watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1\n输出：[\"B\",\"C\"] \n解释：\n你的 id 为 0（绿色），你的朋友包括（黄色）：\nid 为 1 -> watchedVideos = [\"C\"]&nbsp;\nid 为 2 -> watchedVideos = [\"B\",\"C\"]&nbsp;\n你朋友观看过视频的频率为：\nB -> 1&nbsp;\nC -> 2\n\n示例 2：\n\n输入：watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2\n输出：[\"D\"]\n解释：\n你的 id 为 0（绿色），你朋友的朋友只有一个人，他的 id 为 3（黄色）。\n\n&nbsp;\n\n提示：\n\n\tn == watchedVideos.length ==&nbsp;friends.length\n\t2 <= n&nbsp;<= 100\n\t1 <=&nbsp;watchedVideos[i].length <= 100\n\t1 <=&nbsp;watchedVideos[i][j].length <= 8\n\t0 <= friends[i].length < n\n\t0 <= friends[i][j]&nbsp;< n\n\t0 <= id < n\n\t1 <= level < n\n\t如果&nbsp;friends[i] 包含&nbsp;j&nbsp;，那么&nbsp;friends[j] 包含&nbsp;i",
+  "constraints": [
+    "n == watchedVideos.length ==&nbsp;friends.length",
+    "2 <= n&nbsp;<= 100",
+    "1 <=&nbsp;watchedVideos[i].length <= 100",
+    "1 <=&nbsp;watchedVideos[i][j].length <= 8",
+    "0 <= friends[i].length < n",
+    "0 <= friends[i][j]&nbsp;< n",
+    "0 <= id < n",
+    "1 <= level < n",
+    "如果&nbsp;friends[i] 包含&nbsp;j&nbsp;，那么&nbsp;friends[j] 包含&nbsp;i"
+  ]
+}

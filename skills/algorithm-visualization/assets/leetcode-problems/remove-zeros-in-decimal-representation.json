@@ -1,0 +1,11 @@
+{
+  "number": "3726",
+  "title_cn": "移除十进制表示中的所有零",
+  "title_en": "Remove Zeros in Decimal Representation",
+  "slug": "remove-zeros-in-decimal-representation",
+  "difficulty": "Easy",
+  "description": "给你一个正整数n。\n\n返回一个整数，该整数是将 n 的十进制表示中所有的零都移除后得到的结果。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 1020030\n\n输出： 123\n\n解释：\n\n从 1020030 中移除所有的零后，得到 123。\n\n示例 2：\n\n输入： n = 1\n\n输出： 1\n\n解释：\n\n1 的十进制表示中没有零，因此结果为 1。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1015",
+  "constraints": [
+    "1 <= n <= 1015"
+  ]
+}

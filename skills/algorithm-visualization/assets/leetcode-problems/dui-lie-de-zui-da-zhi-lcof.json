@@ -1,0 +1,12 @@
+{
+  "number": "LCR 184",
+  "title_cn": "设计自助结算系统",
+  "title_en": "设计自助结算系统",
+  "slug": "dui-lie-de-zui-da-zhi-lcof",
+  "difficulty": "Medium",
+  "description": "请设计一个自助结账系统，该系统需要通过一个队列来模拟顾客通过购物车的结算过程，需要实现的功能有：\n\n\tget_max()：获取结算商品中的最高价格，如果队列为空，则返回 -1\n\tadd(value)：将价格为 value 的商品加入待结算商品队列的尾部\n\tremove()：移除第一个待结算的商品价格，如果队列为空，则返回 -1\n\n注意，为保证该系统运转高效性，以上函数的均摊时间复杂度均为 O(1)\n\n&nbsp;\n\n示例 1：\n\n输入: \n[\"Checkout\",\"add\",\"add\",\"get_max\",\"remove\",\"get_max\"]\n[[],[4],[7],[],[],[]]\n\n输出: [null,null,null,7,4,7]\n\n示例 2：\n\n输入: \n[\"Checkout\",\"remove\",\"get_max\"]\n[[],[],[]]\n\n输出: [null,-1,-1]\n\n&nbsp;\n\n提示：\n\n\t1 <= get_max, add, remove 的总操作数&nbsp;<= 10000\n\t1 <= value <= 10^5\n\n&nbsp;",
+  "constraints": [
+    "1 <= get_max, add, remove 的总操作数&nbsp;<= 10000",
+    "1 <= value <= 10^5"
+  ]
+}

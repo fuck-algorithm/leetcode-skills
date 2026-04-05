@@ -1,0 +1,12 @@
+{
+  "number": "3862",
+  "title_cn": "找出最小平衡下标",
+  "title_en": "Find the Smallest Balanced Index",
+  "slug": "find-the-smallest-balanced-index",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。\n\n如果某个下标&nbsp;i 满足以下条件，则称其为 平衡下标：&nbsp;i 左侧所有元素的总和等于 i 右侧所有元素的乘积。\n\n如果左侧没有元素，则总和视为 0。同样，如果右侧没有元素，则乘积视为 1。\n\n要求返回最小的 平衡下标，如果不存在平衡下标，则返回 -1。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [2,1,2]\n\n输出： 1\n\n解释：\n\n对于下标&nbsp;i = 1：\n\n\t左侧总和 = nums[0] = 2\n\t右侧乘积 = nums[2] = 2\n\t由于左侧总和等于右侧乘积，下标 1 是平衡下标。\n\n没有更小的下标满足条件，因此答案是 1。\n\n示例 2：\n\n输入： nums = [2,8,2,2,5]\n\n输出： 2\n\n解释：\n\n对于下标&nbsp;i = 2：\n\n\t左侧总和 = 2 + 8 = 10\n\t右侧乘积 = 2 * 5 = 10\n\t由于左侧总和等于右侧乘积，下标&nbsp;2 是平衡下标。\n\n没有更小的下标满足条件，因此答案是 2。\n\n示例 3：\n\n输入： nums = [1]\n\n输出： -1\n\n对于下标&nbsp;i = 0：\n\n\t左侧为空，因此左侧总和为 0。\n\t右侧为空，因此右侧乘积为 1。\n\t由于左侧总和不等于右侧乘积，下标&nbsp;0 不是平衡下标。\n\n因此，不存在平衡下标，答案是 -1。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

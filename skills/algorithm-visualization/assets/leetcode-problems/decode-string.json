@@ -1,0 +1,14 @@
+{
+  "number": "394",
+  "title_cn": "字符串解码",
+  "title_en": "Decode String",
+  "slug": "decode-string",
+  "difficulty": "Medium",
+  "description": "给定一个经过编码的字符串，返回它解码后的字符串。\n\n编码规则为: k[encoded_string]，表示其中方括号内部的 encoded_string 正好重复 k 次。注意 k 保证为正整数。\n\n你可以认为输入字符串总是有效的；输入字符串中没有额外的空格，且输入的方括号总是符合格式要求的。\n\n此外，你可以认为原始数据不包含数字，所有的数字只表示重复的次数 k ，例如不会出现像&nbsp;3a&nbsp;或&nbsp;2[4]&nbsp;的输入。\n\n测试用例保证输出的长度不会超过&nbsp;105。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"3[a]2[bc]\"\n输出：\"aaabcbc\"\n\n示例 2：\n\n输入：s = \"3[a2[c]]\"\n输出：\"accaccacc\"\n\n示例 3：\n\n输入：s = \"2[abc]3[cd]ef\"\n输出：\"abcabccdcdcdef\"\n\n示例 4：\n\n输入：s = \"abc3[cd]xyz\"\n输出：\"abccdcdcdxyz\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 30\n\ts&nbsp;由小写英文字母、数字和方括号&nbsp;'[]' 组成\n\ts&nbsp;保证是一个&nbsp;有效&nbsp;的输入。\n\ts&nbsp;中所有整数的取值范围为&nbsp;[1, 300]&nbsp;",
+  "constraints": [
+    "1 <= s.length <= 30",
+    "s&nbsp;由小写英文字母、数字和方括号&nbsp;'[]' 组成",
+    "s&nbsp;保证是一个&nbsp;有效&nbsp;的输入。",
+    "s&nbsp;中所有整数的取值范围为&nbsp;[1, 300]&nbsp;"
+  ]
+}

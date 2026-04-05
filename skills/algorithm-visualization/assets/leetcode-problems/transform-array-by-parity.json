@@ -1,0 +1,12 @@
+{
+  "number": "3467",
+  "title_cn": "将数组按照奇偶性转化",
+  "title_en": "Transform Array by Parity",
+  "slug": "transform-array-by-parity",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums。请你按照以下顺序 依次&nbsp;执行操作，转换 nums：\n\n\t将每个偶数替换为 0。\n\t将每个奇数替换为 1。\n\t按&nbsp;非递减&nbsp;顺序排序修改后的数组。\n\n执行完这些操作后，返回结果数组。\n\n&nbsp;\n\n示例 1:\n\n输入：nums = [4,3,2,1]\n\n输出：[0,0,1,1]\n\n解释：\n\n\t将偶数（4 和 2）替换为 0，将奇数（3 和 1）替换为 1。现在，nums = [0, 1, 0, 1]。\n\t按非递减顺序排序 nums，得到 nums = [0, 0, 1, 1]。\n\n示例 2:\n\n输入：nums = [1,5,1,4,2]\n\n输出：[0,0,1,1,1]\n\n解释：\n\n\t将偶数（4 和 2）替换为 0，将奇数（1, 5 和 1）替换为 1。现在，nums = [1, 1, 1, 0, 0]。\n\t按非递减顺序排序&nbsp;nums，得到 nums = [0, 0, 1, 1, 1]。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 1000"
+  ]
+}

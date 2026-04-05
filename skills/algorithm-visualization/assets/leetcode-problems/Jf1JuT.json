@@ -1,0 +1,14 @@
+{
+  "number": "LCR 114",
+  "title_cn": "火星词典",
+  "title_en": "火星词典",
+  "slug": "Jf1JuT",
+  "difficulty": "Hard",
+  "description": "现有一种使用英语字母的外星文语言，这门语言的字母顺序与英语顺序不同。\n\n给定一个字符串列表 words ，作为这门语言的词典，words 中的字符串已经 按这门新语言的字母顺序进行了排序 。\n\n请你根据该词典还原出此语言中已知的字母顺序，并 按字母递增顺序 排列。若不存在合法字母顺序，返回 \"\" 。若存在多种可能的合法字母顺序，返回其中 任意一种 顺序即可。\n\n字符串 s 字典顺序小于 字符串 t 有两种情况：\n\n\t在第一个不同字母处，如果 s 中的字母在这门外星语言的字母顺序中位于 t 中字母之前，那么&nbsp;s 的字典顺序小于 t 。\n\t如果前面 min(s.length, t.length) 字母都相同，那么 s.length < t.length 时，s 的字典顺序也小于 t 。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]\n输出：\"wertf\"\n\n示例 2：\n\n输入：words = [\"z\",\"x\"]\n输出：\"zx\"\n\n示例 3：\n\n输入：words = [\"z\",\"x\",\"z\"]\n输出：\"\"\n解释：不存在合法字母顺序，因此返回 \"\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 100\n\t1 <= words[i].length <= 100\n\twords[i] 仅由小写英文字母组成\n\n&nbsp;\n\n注意：本题与主站 269&nbsp;题相同：&nbsp;https://leetcode.cn/problems/alien-dictionary/",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 100",
+    "words[i] 仅由小写英文字母组成",
+    "注意：本题与主站 269&nbsp;题相同：&nbsp;https://leetcode.cn/problems/alien-dictionary/"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "3091",
+  "title_cn": "执行操作使数据元素之和大于等于 K",
+  "title_en": "Apply Operations to Make Sum of Array Greater Than or Equal to k",
+  "slug": "apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
+  "difficulty": "Medium",
+  "description": "给你一个正整数 k 。最初，你有一个数组 nums = [1] 。\n\n你可以对数组执行以下 任意 操作 任意 次数（可能为零）：\n\n\t选择数组中的任何一个元素，然后将它的值 增加 1 。\n\t复制数组中的任何一个元素，然后将它附加到数组的末尾。\n\n返回使得最终数组元素之 和 大于或等于 k 所需的 最少 操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：k = 11\n\n输出：5\n\n解释：\n\n可以对数组 nums = [1] 执行以下操作：\n\n\t将元素的值增加 1 三次。结果数组为 nums = [4] 。\n\t复制元素两次。结果数组为 nums = [4,4,4] 。\n\n最终数组的和为 4 + 4 + 4 = 12 ，大于等于 k = 11 。\n执行的总操作次数为 3 + 2 = 5 。\n\n示例 2：\n\n输入：k = 1\n\n输出：0\n\n解释：\n\n原始数组的和已经大于等于 1 ，因此不需要执行操作。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= 105",
+  "constraints": [
+    "1 <= k <= 105"
+  ]
+}

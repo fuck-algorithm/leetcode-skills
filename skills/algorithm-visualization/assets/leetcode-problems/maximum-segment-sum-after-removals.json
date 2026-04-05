@@ -1,0 +1,15 @@
+{
+  "number": "2382",
+  "title_cn": "删除操作后的最大子段和",
+  "title_en": "Maximum Segment Sum After Removals",
+  "slug": "maximum-segment-sum-after-removals",
+  "difficulty": "Hard",
+  "description": "给你两个下标从 0&nbsp;开始的整数数组&nbsp;nums 和&nbsp;removeQueries&nbsp;，两者长度都为&nbsp;n&nbsp;。对于第&nbsp;i&nbsp;个查询，nums&nbsp;中位于下标&nbsp;removeQueries[i]&nbsp;处的元素被删除，将 nums&nbsp;分割成更小的子段。\n\n一个 子段&nbsp;是 nums&nbsp;中连续 正&nbsp;整数形成的序列。子段和&nbsp;是子段中所有元素的和。\n\n请你返回一个长度为 n&nbsp;的整数数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]是第&nbsp;i&nbsp;次删除操作以后的&nbsp;最大&nbsp;子段和。\n\n注意：一个下标至多只会被删除一次。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,5,6,1], removeQueries = [0,3,2,4,1]\n输出：[14,7,2,2,0]\n解释：用 0 表示被删除的元素，答案如下所示：\n查询 1 ：删除第 0 个元素，nums 变成 [0,2,5,6,1] ，最大子段和为子段 [2,5,6,1] 的和 14 。\n查询 2 ：删除第 3 个元素，nums 变成 [0,2,5,0,1] ，最大子段和为子段 [2,5] 的和 7 。\n查询 3 ：删除第 2 个元素，nums 变成 [0,2,0,0,1] ，最大子段和为子段 [2] 的和 2 。\n查询 4 ：删除第 4 个元素，nums 变成 [0,2,0,0,0] ，最大子段和为子段 [2] 的和 2 。\n查询 5 ：删除第 1 个元素，nums 变成 [0,0,0,0,0] ，最大子段和为 0 ，因为没有任何子段存在。\n所以，我们返回 [14,7,2,2,0] 。\n\n示例 2：\n\n输入：nums = [3,2,11,1], removeQueries = [3,2,1,0]\n输出：[16,5,3,0]\n解释：用 0 表示被删除的元素，答案如下所示：\n查询 1 ：删除第 3 个元素，nums 变成 [3,2,11,0] ，最大子段和为子段 [3,2,11] 的和 16 。\n查询 2 ：删除第 2 个元素，nums 变成 [3,2,0,0] ，最大子段和为子段 [3,2] 的和 5 。\n查询 3 ：删除第 1 个元素，nums 变成 [3,0,0,0] ，最大子段和为子段 [3] 的和 3 。\n查询 5 ：删除第 0 个元素，nums 变成 [0,0,0,0] ，最大子段和为 0 ，因为没有任何子段存在。\n所以，我们返回 [16,5,3,0] 。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length == removeQueries.length\n\t1 <= n <= 105\n\t1 <= nums[i] <= 109\n\t0 <= removeQueries[i] < n\n\tremoveQueries&nbsp;中所有数字 互不相同&nbsp;。",
+  "constraints": [
+    "n == nums.length == removeQueries.length",
+    "1 <= n <= 105",
+    "1 <= nums[i] <= 109",
+    "0 <= removeQueries[i] < n",
+    "removeQueries&nbsp;中所有数字 互不相同&nbsp;。"
+  ]
+}

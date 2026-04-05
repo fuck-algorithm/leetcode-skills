@@ -1,0 +1,13 @@
+{
+  "number": "1569",
+  "title_cn": "将子数组重新排序得到同一个二叉搜索树的方案数",
+  "title_en": "Number of Ways to Reorder Array to Get Same BST",
+  "slug": "number-of-ways-to-reorder-array-to-get-same-bst",
+  "difficulty": "Hard",
+  "description": "给你一个数组 nums&nbsp;表示 1&nbsp;到 n&nbsp;的一个排列。我们按照元素在 nums&nbsp;中的顺序依次插入一个初始为空的二叉搜索树（BST）。请你统计将 nums&nbsp;重新排序后，统计满足如下条件的方案数：重排后得到的二叉搜索树与 nums&nbsp;原本数字顺序得到的二叉搜索树相同。\n\n\t比方说，给你&nbsp;nums = [2,1,3]，我们得到一棵 2 为根，1 为左孩子，3 为右孩子的树。数组&nbsp;[2,3,1]&nbsp;也能得到相同的 BST，但&nbsp;[3,2,1]&nbsp;会得到一棵不同的&nbsp;BST 。\n\n请你返回重排 nums&nbsp;后，与原数组 nums 得到相同二叉搜索树的方案数。\n\n由于答案可能会很大，请将结果对&nbsp;109 + 7&nbsp;取余数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,3]\n输出：1\n解释：我们将 nums 重排， [2,3,1] 能得到相同的 BST 。没有其他得到相同 BST 的方案了。\n\n示例 2：\n\n输入：nums = [3,4,5,1,2]\n输出：5\n解释：下面 5 个数组会得到相同的 BST：\n[3,1,2,4,5]\n[3,1,4,2,5]\n[3,1,4,5,2]\n[3,4,1,2,5]\n[3,4,1,5,2]\n\n示例 3：\n\n输入：nums = [1,2,3]\n输出：0\n解释：没有别的排列顺序能得到相同的 BST 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i] <= nums.length\n\tnums&nbsp;中所有数 互不相同&nbsp;。",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= nums.length",
+    "nums&nbsp;中所有数 互不相同&nbsp;。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "number": "2718",
+  "title_cn": "查询后矩阵的和",
+  "title_en": "Sum of Matrix After Queries",
+  "slug": "sum-of-matrix-after-queries",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;n&nbsp;和一个下标从 0&nbsp;开始的 二维数组&nbsp;queries&nbsp;，其中&nbsp;queries[i] = [typei, indexi, vali]&nbsp;。\n\n一开始，给你一个下标从 0&nbsp;开始的&nbsp;n x n&nbsp;矩阵，所有元素均为 0&nbsp;。每一个查询，你需要执行以下操作之一：\n\n\t如果&nbsp;typei == 0&nbsp;，将第&nbsp;indexi&nbsp;行的元素全部修改为&nbsp;vali&nbsp;，覆盖任何之前的值。\n\t如果&nbsp;typei == 1&nbsp;，将第&nbsp;indexi&nbsp;列的元素全部修改为 vali&nbsp;，覆盖任何之前的值。\n\n请你执行完所有查询以后，返回矩阵中所有整数的和。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]\n输出：23\n解释：上图展示了每个查询以后矩阵的值。所有操作执行完以后，矩阵元素之和为 23 。\n\n示例 2：\n\n输入：n = 3, queries = [[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]\n输出：17\n解释：上图展示了每一个查询操作之后的矩阵。所有操作执行完以后，矩阵元素之和为 17 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 104\n\t1 <= queries.length <= 5 * 104\n\tqueries[i].length == 3\n\t0 <= typei <= 1\n\t0 <= indexi&nbsp;< n\n\t0 <= vali <= 105",
+  "constraints": [
+    "1 <= n <= 104",
+    "1 <= queries.length <= 5 * 104",
+    "queries[i].length == 3",
+    "0 <= typei <= 1",
+    "0 <= indexi&nbsp;< n",
+    "0 <= vali <= 105"
+  ]
+}

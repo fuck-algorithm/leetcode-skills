@@ -1,0 +1,13 @@
+{
+  "number": "466",
+  "title_cn": "统计重复个数",
+  "title_en": "Count The Repetitions",
+  "slug": "count-the-repetitions",
+  "difficulty": "Hard",
+  "description": "定义 str = [s, n] 表示 str 由 n 个字符串 s 连接构成。\n\n\t例如，str == [\"abc\", 3] ==\"abcabcabc\" 。\n\n如果可以从 s2 中删除某些字符使其变为 s1，则称字符串 s1 可以从字符串 s2 获得。\n\n\t例如，根据定义，s1 = \"abc\" 可以从 s2 = \"abdbec\" 获得，仅需要删除加粗且用斜体标识的字符。\n\n现在给你两个字符串 s1 和 s2 和两个整数 n1 和 n2 。由此构造得到两个字符串，其中 str1 = [s1, n1]、str2 = [s2, n2] 。\n\n请你找出一个最大整数 m ，以满足 str = [str2, m] 可以从 str1 获得。\n\n示例 1：\n\n输入：s1 = \"acb\", n1 = 4, s2 = \"ab\", n2 = 2\n输出：2\n\n示例 2：\n\n输入：s1 = \"acb\", n1 = 1, s2 = \"acb\", n2 = 1\n输出：1\n\n提示：\n\n\t1 \n\ts1 和 s2 由小写英文字母组成\n\t1 6",
+  "constraints": [
+    "1",
+    "s1 和 s2 由小写英文字母组成",
+    "1 6"
+  ]
+}

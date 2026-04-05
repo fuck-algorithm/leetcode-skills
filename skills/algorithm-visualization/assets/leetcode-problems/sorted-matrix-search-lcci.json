@@ -1,0 +1,9 @@
+{
+  "number": "面试题 10.09",
+  "title_cn": "排序矩阵查找",
+  "title_en": "Sorted Matrix Search LCCI",
+  "slug": "sorted-matrix-search-lcci",
+  "difficulty": "Medium",
+  "description": "给定 M×N 矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。\n\n示例：\n\n现有矩阵 matrix 如下：\n\n[\n  [1,   4,  7, 11, 15],\n  [2,   5,  8, 12, 19],\n  [3,   6,  9, 16, 22],\n  [10, 13, 14, 17, 24],\n  [18, 21, 23, 26, 30]\n]\n\n给定 target&nbsp;=&nbsp;5，返回&nbsp;true。\n\n给定&nbsp;target&nbsp;=&nbsp;20，返回&nbsp;false。",
+  "constraints": []
+}

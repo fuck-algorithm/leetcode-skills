@@ -1,0 +1,9 @@
+{
+  "number": "493",
+  "title_cn": "翻转对",
+  "title_en": "Reverse Pairs",
+  "slug": "reverse-pairs",
+  "difficulty": "Hard",
+  "description": "给定一个数组&nbsp;nums&nbsp;，如果&nbsp;i < j&nbsp;且&nbsp;nums[i] > 2*nums[j]&nbsp;我们就将&nbsp;(i, j)&nbsp;称作一个重要翻转对。\n\n你需要返回给定数组中的重要翻转对的数量。\n\n示例 1:\n\n输入: [1,3,2,3,1]\n输出: 2\n\n示例 2:\n\n输入: [2,4,3,5,1]\n输出: 3\n\n注意:\n\n\t给定数组的长度不会超过50000。\n\t输入数组中的所有数字都在32位整数的表示范围内。",
+  "constraints": []
+}

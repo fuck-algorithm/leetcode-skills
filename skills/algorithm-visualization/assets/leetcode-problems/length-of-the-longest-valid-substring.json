@@ -1,0 +1,15 @@
+{
+  "number": "2781",
+  "title_cn": "最长合法子字符串的长度",
+  "title_en": "Length of the Longest Valid Substring",
+  "slug": "length-of-the-longest-valid-substring",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;word&nbsp;和一个字符串数组&nbsp;forbidden&nbsp;。\n\n如果一个字符串不包含&nbsp;forbidden&nbsp;中的任何字符串，我们称这个字符串是&nbsp;合法&nbsp;的。\n\n请你返回字符串 word&nbsp;的一个 最长合法子字符串&nbsp;的长度。\n\n子字符串 指的是一个字符串中一段连续的字符，它可以为空。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"cbaaaabc\", forbidden = [\"aaa\",\"cb\"]\n输出：4\n解释：总共有 11 个合法子字符串：\"c\", \"b\", \"a\", \"ba\", \"aa\", \"bc\", \"baa\", \"aab\", \"ab\", \"abc\" 和 \"aabc\"。最长合法子字符串的长度为 4 。\n其他子字符串都要么包含 \"aaa\" ，要么包含 \"cb\" 。\n\n示例 2：\n\n输入：word = \"leetcode\", forbidden = [\"de\",\"le\",\"e\"]\n输出：4\n解释：总共有 11 个合法子字符串：\"l\" ，\"t\" ，\"c\" ，\"o\" ，\"d\" ，\"tc\" ，\"co\" ，\"od\" ，\"tco\" ，\"cod\" 和 \"tcod\" 。最长合法子字符串的长度为 4 。\n所有其他子字符串都至少包含 \"de\" ，\"le\" 和 \"e\" 之一。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 105\n\tword&nbsp;只包含小写英文字母。\n\t1 <= forbidden.length <= 105\n\t1 <= forbidden[i].length <= 10\n\tforbidden[i]&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= word.length <= 105",
+    "word&nbsp;只包含小写英文字母。",
+    "1 <= forbidden.length <= 105",
+    "1 <= forbidden[i].length <= 10",
+    "forbidden[i]&nbsp;只包含小写英文字母。"
+  ]
+}

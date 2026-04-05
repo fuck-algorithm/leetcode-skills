@@ -1,0 +1,12 @@
+{
+  "number": "1339",
+  "title_cn": "分裂二叉树的最大乘积",
+  "title_en": "Maximum Product of Splitted Binary Tree",
+  "slug": "maximum-product-of-splitted-binary-tree",
+  "difficulty": "Medium",
+  "description": "给你一棵二叉树，它的根为&nbsp;root 。请你删除 1 条边，使二叉树分裂成两棵子树，且它们子树和的乘积尽可能大。\n\n由于答案可能会很大，请你将结果对 10^9 + 7 取模后再返回。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,2,3,4,5,6]\n输出：110\n解释：删除红色的边，得到 2 棵子树，和分别为 11 和 10 。它们的乘积是 110 （11*10）\n\n示例 2：\n\n输入：root = [1,null,2,3,4,null,null,5,6]\n输出：90\n解释：移除红色的边，得到 2 棵子树，和分别是 15 和 6 。它们的乘积为 90 （15*6）\n\n示例 3：\n\n输入：root = [2,3,9,10,7,8,6,5,4,11,1]\n输出：1025\n\n示例 4：\n\n输入：root = [1,1]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t每棵树最多有&nbsp;50000&nbsp;个节点，且至少有&nbsp;2&nbsp;个节点。\n\t每个节点的值在&nbsp;[1, 10000]&nbsp;之间。",
+  "constraints": [
+    "每棵树最多有&nbsp;50000&nbsp;个节点，且至少有&nbsp;2&nbsp;个节点。",
+    "每个节点的值在&nbsp;[1, 10000]&nbsp;之间。"
+  ]
+}

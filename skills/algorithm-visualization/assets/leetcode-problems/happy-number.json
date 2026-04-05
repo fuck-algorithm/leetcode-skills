@@ -1,0 +1,11 @@
+{
+  "number": "202",
+  "title_cn": "快乐数",
+  "title_en": "Happy Number",
+  "slug": "happy-number",
+  "difficulty": "Easy",
+  "description": "编写一个算法来判断一个数 n 是不是快乐数。\n\n「快乐数」&nbsp;定义为：\n\n\t对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。\n\t然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。\n\t如果这个过程 结果为&nbsp;1，那么这个数就是快乐数。\n\n如果 n 是 快乐数 就返回 true ；不是，则返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 19\n输出：true\n解释：\n12 + 92 = 82\n82 + 22 = 68\n62 + 82 = 100\n12 + 02 + 02 = 1\n\n示例 2：\n\n输入：n = 2\n输出：false\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 231 - 1",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ]
+}

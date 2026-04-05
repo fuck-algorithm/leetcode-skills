@@ -1,0 +1,12 @@
+{
+  "number": "2588",
+  "title_cn": "统计美丽子数组数目",
+  "title_en": "Count the Number of Beautiful Subarrays",
+  "slug": "count-the-number-of-beautiful-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组nums&nbsp;。每次操作中，你可以：\n\n\t选择两个满足&nbsp;0 <= i, j < nums.length&nbsp;的不同下标&nbsp;i&nbsp;和&nbsp;j&nbsp;。\n\t选择一个非负整数&nbsp;k&nbsp;，满足 nums[i]&nbsp;和 nums[j]&nbsp;在二进制下的第 k&nbsp;位（下标编号从 0&nbsp;开始）是 1&nbsp;。\n\t将 nums[i]&nbsp;和 nums[j]&nbsp;都减去&nbsp;2k&nbsp;。\n\n如果一个子数组内执行上述操作若干次（包括 0 次）后，该子数组可以变成一个全为 0&nbsp;的数组，那么我们称它是一个 美丽&nbsp;的子数组。\n\n请你返回数组 nums&nbsp;中 美丽子数组&nbsp;的数目。\n\n子数组是一个数组中一段连续 非空&nbsp;的元素序列。\n\n注意：所有元素最初都是 0 的子数组被认为是美丽的，因为不需要进行任何操作。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,3,1,2,4]\n输出：2\n解释：nums 中有 2 个美丽子数组：[4,3,1,2,4] 和 [4,3,1,2,4] 。\n- 按照下述步骤，我们可以将子数组 [3,1,2] 中所有元素变成 0 ：\n  - 选择 [3, 1, 2] 和 k = 1 。将 2 个数字都减去 21 ，子数组变成 [1, 1, 0] 。\n  - 选择 [1, 1, 0] 和 k = 0 。将 2 个数字都减去 20 ，子数组变成 [0, 0, 0] 。\n- 按照下述步骤，我们可以将子数组 [4,3,1,2,4] 中所有元素变成 0 ：\n  - 选择 [4, 3, 1, 2, 4] 和 k = 2 。将 2 个数字都减去 22 ，子数组变成 [0, 3, 1, 2, 0] 。\n  - 选择 [0, 3, 1, 2, 0] 和 k = 0 。将 2 个数字都减去 20 ，子数组变成 [0, 2, 0, 2, 0] 。\n  - 选择 [0, 2, 0, 2, 0] 和 k = 1 。将 2 个数字都减去 21 ，子数组变成 [0, 0, 0, 0, 0] 。\n\n示例 2：\n\n输入：nums = [1,10,4]\n输出：0\n解释：nums 中没有任何美丽子数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 106",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 106"
+  ]
+}

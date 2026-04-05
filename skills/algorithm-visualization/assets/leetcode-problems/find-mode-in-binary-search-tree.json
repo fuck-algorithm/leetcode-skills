@@ -1,0 +1,12 @@
+{
+  "number": "501",
+  "title_cn": "二叉搜索树中的众数",
+  "title_en": "Find Mode in Binary Search Tree",
+  "slug": "find-mode-in-binary-search-tree",
+  "difficulty": "Easy",
+  "description": "给你一个含重复值的二叉搜索树（BST）的根节点 root ，找出并返回 BST 中的所有 众数（即，出现频率最高的元素）。\n\n如果树中有不止一个众数，可以按 任意顺序 返回。\n\n假定 BST 满足如下定义：\n\n\t结点左子树中所含节点的值 小于等于 当前节点的值\n\t结点右子树中所含节点的值 大于等于 当前节点的值\n\t左子树和右子树都是二叉搜索树\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,null,2,2]\n输出：[2]\n\n示例 2：\n\n输入：root = [0]\n输出：[0]\n\n&nbsp;\n\n提示：\n\n\t树中节点的数目在范围 [1, 104] 内\n\t-105 <= Node.val <= 105\n\n&nbsp;\n\n进阶：你可以不使用额外的空间吗？（假设由递归产生的隐式调用栈的开销不被计算在内）",
+  "constraints": [
+    "树中节点的数目在范围 [1, 104] 内",
+    "-105 <= Node.val <= 105"
+  ]
+}

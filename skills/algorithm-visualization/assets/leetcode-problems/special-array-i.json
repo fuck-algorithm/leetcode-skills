@@ -1,0 +1,12 @@
+{
+  "number": "3151",
+  "title_cn": "特殊数组 I",
+  "title_en": "Special Array I",
+  "slug": "special-array-i",
+  "difficulty": "Easy",
+  "description": "如果数组的每一对相邻元素都是两个奇偶性不同的数字，则该数组被认为是一个 特殊数组。换句话说，每一对中的元素 必须 有一个是偶数，另一个是奇数。\n\n你有一个整数数组 nums。如果 nums 是一个 特殊数组 ，返回 true，否则返回 false。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1]\n\n输出：true\n\n解释：\n\n只有一个元素，所以答案为 true。\n\n示例 2：\n\n输入：nums = [2,1,4]\n\n输出：true\n\n解释：\n\n只有两对相邻元素： (2,1) 和 (1,4)，它们都包含了奇偶性不同的数字，因此答案为 true。\n\n示例 3：\n\n输入：nums = [4,3,1,6]\n\n输出：false\n\n解释：\n\nnums[1] 和 nums[2] 都是奇数。因此答案为 false。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ]
+}

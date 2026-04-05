@@ -1,0 +1,14 @@
+{
+  "number": "3361",
+  "title_cn": "两个字符串的切换距离",
+  "title_en": "Shift Distance Between Two Strings",
+  "slug": "shift-distance-between-two-strings",
+  "difficulty": "Medium",
+  "description": "给你两个长度相同的字符串&nbsp;s 和&nbsp;t&nbsp;，以及两个整数数组&nbsp;nextCost 和&nbsp;previousCost&nbsp;。\n\n一次操作中，你可以选择 s&nbsp;中的一个下标 i&nbsp;，执行以下操作 之一&nbsp;：\n\n\t将&nbsp;s[i]&nbsp;切换为字母表中的下一个字母，如果&nbsp;s[i] == 'z'&nbsp;，切换后得到&nbsp;'a'&nbsp;。操作的代价为&nbsp;nextCost[j]&nbsp;，其中&nbsp;j&nbsp;表示&nbsp;s[i]&nbsp;在字母表中的下标。\n\t将&nbsp;s[i]&nbsp;切换为字母表中的上一个字母，如果&nbsp;s[i] == 'a'&nbsp;，切换后得到&nbsp;'z'&nbsp;。操作的代价为&nbsp;previousCost[j]&nbsp;，其中&nbsp;j 是&nbsp;s[i]&nbsp;在字母表中的下标。\n\n切换距离&nbsp;指的是将字符串 s&nbsp;变为字符串 t&nbsp;的 最少&nbsp;操作代价总和。\n\n请你返回从 s&nbsp;到 t&nbsp;的 切换距离&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abab\", t = \"baba\", nextCost = [100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], previousCost = [1,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]\n\n输出：2\n\n解释：\n\n\t选择下标&nbsp;i = 0&nbsp;并将&nbsp;s[0]&nbsp;向前切换 25 次，总代价为 1 。\n\t选择下标&nbsp;i = 1&nbsp;并将&nbsp;s[1]&nbsp;向后切换 25 次，总代价为 0 。\n\t选择下标&nbsp;i = 2&nbsp;并将&nbsp;s[2]&nbsp;向前切换 25 次，总代价为 1 。\n\t选择下标&nbsp;i = 3&nbsp;并将&nbsp;s[3]&nbsp;向后切换 25 次，总代价为 0 。\n\n示例 2：\n\n输入：s = \"leet\", t = \"code\", nextCost = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], previousCost = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n\n输出：31\n\n解释：\n\n\t选择下标&nbsp;i = 0&nbsp;并将&nbsp;s[0]&nbsp;向前切换 9 次，总代价为 9 。\n\t选择下标&nbsp;i = 1&nbsp;并将&nbsp;s[1]&nbsp;向后切换 10 次，总代价为 10 。\n\t选择下标&nbsp;i = 2 并将&nbsp;s[2]&nbsp;向前切换 1 次，总代价为 1 。\n\t选择下标 i = 3 并将&nbsp;s[3]&nbsp;向后切换 11 次，总代价为 11 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length == t.length <= 105\n\ts 和&nbsp;t&nbsp;都只包含小写英文字母。\n\tnextCost.length == previousCost.length == 26\n\t0 <= nextCost[i], previousCost[i] <= 109",
+  "constraints": [
+    "1 <= s.length == t.length <= 105",
+    "s 和&nbsp;t&nbsp;都只包含小写英文字母。",
+    "nextCost.length == previousCost.length == 26",
+    "0 <= nextCost[i], previousCost[i] <= 109"
+  ]
+}

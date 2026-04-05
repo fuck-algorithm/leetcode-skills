@@ -1,0 +1,13 @@
+{
+  "number": "11",
+  "title_cn": "盛最多水的容器",
+  "title_en": "Container With Most Water",
+  "slug": "container-with-most-water",
+  "difficulty": "Medium",
+  "description": "给定一个长度为 n 的整数数组&nbsp;height&nbsp;。有&nbsp;n&nbsp;条垂线，第 i 条线的两个端点是&nbsp;(i, 0)&nbsp;和&nbsp;(i, height[i])&nbsp;。\n\n找出其中的两条线，使得它们与&nbsp;x&nbsp;轴共同构成的容器可以容纳最多的水。\n\n返回容器可以储存的最大水量。\n\n说明：你不能倾斜容器。\n\n&nbsp;\n\n示例 1：\n\n输入：[1,8,6,2,5,4,8,3,7]\n输出：49 \n解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为&nbsp;49。\n\n示例 2：\n\n输入：height = [1,1]\n输出：1\n\n&nbsp;\n\n提示：\n\n\tn == height.length\n\t2 <= n <= 105\n\t0 <= height[i] <= 104",
+  "constraints": [
+    "n == height.length",
+    "2 <= n <= 105",
+    "0 <= height[i] <= 104"
+  ]
+}

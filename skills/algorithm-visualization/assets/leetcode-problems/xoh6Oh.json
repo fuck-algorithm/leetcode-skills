@@ -1,0 +1,13 @@
+{
+  "number": "LCR 001",
+  "title_cn": "两数相除",
+  "title_en": "两数相除",
+  "slug": "xoh6Oh",
+  "difficulty": "Easy",
+  "description": "给定两个整数 a 和 b ，求它们的除法的商 a/b ，要求不得使用乘号 &#39;*&#39;、除号 &#39;/&#39; 以及求余符号 &#39;%&#39;&nbsp;。\n\n&nbsp;\n\n注意：\n\n\t整数除法的结果应当截去（truncate）其小数部分，例如：truncate(8.345) = 8&nbsp;以及&nbsp;truncate(-2.7335) = -2\n\t假设我们的环境只能存储 32 位有符号整数，其数值范围是 [&minus;231,&nbsp;231&minus;1]。本题中，如果除法结果溢出，则返回 231&nbsp;&minus; 1\n\n&nbsp;\n\n示例 1：\n\n输入：a = 15, b = 2\n输出：7\n解释：15/2 = truncate(7.5) = 7\n\n示例 2：\n\n输入：a = 7, b = -3\n输出：-2\n解释：7/-3 = truncate(-2.33333..) = -2\n\n示例 3：\n\n输入：a = 0, b = 1\n输出：0\n\n示例 4：\n\n输入：a = 1, b = 1\n输出：1\n\n&nbsp;\n\n提示:\n\n\t-231&nbsp;<= a, b <= 231&nbsp;- 1\n\tb != 0\n\n&nbsp;\n\n注意：本题与主站 29&nbsp;题相同：https://leetcode.cn/problems/divide-two-integers/\n\n&nbsp;",
+  "constraints": [
+    "-231&nbsp;<= a, b <= 231&nbsp;- 1",
+    "b != 0",
+    "注意：本题与主站 29&nbsp;题相同：https://leetcode.cn/problems/divide-two-integers/"
+  ]
+}

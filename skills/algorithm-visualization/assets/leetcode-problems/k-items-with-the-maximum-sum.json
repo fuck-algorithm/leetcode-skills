@@ -1,0 +1,12 @@
+{
+  "number": "2600",
+  "title_cn": "K 件物品的最大和",
+  "title_en": "K Items With the Maximum Sum",
+  "slug": "k-items-with-the-maximum-sum",
+  "difficulty": "Easy",
+  "description": "袋子中装有一些物品，每个物品上都标记着数字 1 、0 或 -1 。\n\n给你四个非负整数 numOnes 、numZeros 、numNegOnes 和 k 。\n\n袋子最初包含：\n\n\tnumOnes 件标记为 1 的物品。\n\tnumZeros 件标记为 0 的物品。\n\tnumNegOnes 件标记为 -1 的物品。\n\n现计划从这些物品中恰好选出 k 件物品。返回所有可行方案中，物品上所标记数字之和的最大值。\n\n&nbsp;\n\n示例 1：\n\n输入：numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2\n输出：2\n解释：袋子中的物品分别标记为 {1, 1, 1, 0, 0} 。取 2 件标记为 1 的物品，得到的数字之和为 2 。\n可以证明 2 是所有可行方案中的最大值。\n\n示例 2：\n\n输入：numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4\n输出：3\n解释：袋子中的物品分别标记为 {1, 1, 1, 0, 0} 。取 3 件标记为 1 的物品，1 件标记为 0 的物品，得到的数字之和为 3 。\n可以证明 3 是所有可行方案中的最大值。\n\n&nbsp;\n\n提示：\n\n\t0 <= numOnes, numZeros, numNegOnes <= 50\n\t0 <= k <= numOnes + numZeros + numNegOnes",
+  "constraints": [
+    "0 <= numOnes, numZeros, numNegOnes <= 50",
+    "0 <= k <= numOnes + numZeros + numNegOnes"
+  ]
+}

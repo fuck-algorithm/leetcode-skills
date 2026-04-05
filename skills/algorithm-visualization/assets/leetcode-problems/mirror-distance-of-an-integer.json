@@ -1,0 +1,11 @@
+{
+  "number": "3783",
+  "title_cn": "整数的镜像距离",
+  "title_en": "Mirror Distance of an Integer",
+  "slug": "mirror-distance-of-an-integer",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n。\n\n定义它的&nbsp;镜像距离&nbsp;为：abs(n - reverse(n))​​​​​​​，其中 reverse(n) 表示将 n 的数字反转后形成的整数。\n\n返回表示 n 的镜像距离的整数。\n\n其中，abs(x) 表示 x 的绝对值。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 25\n\n输出： 27\n\n解释：\n\n\treverse(25) = 52。\n\t因此，答案为 abs(25 - 52) = 27。\n\n示例 2：\n\n输入： n = 10\n\n输出： 9\n\n解释：\n\n\treverse(10) = 01，即 1。\n\t因此，答案为 abs(10 - 1) = 9。\n\n示例 3：\n\n输入： n = 7\n\n输出： 0\n\n解释：\n\n\treverse(7) = 7。\n\t因此，答案为 abs(7 - 7) = 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 109",
+  "constraints": [
+    "1 <= n <= 109"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2866",
+  "title_cn": "美丽塔 II",
+  "title_en": "Beautiful Towers II",
+  "slug": "beautiful-towers-ii",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;maxHeights&nbsp;。\n\n你的任务是在坐标轴上建 n&nbsp;座塔。第&nbsp;i&nbsp;座塔的下标为 i&nbsp;，高度为&nbsp;heights[i]&nbsp;。\n\n如果以下条件满足，我们称这些塔是 美丽&nbsp;的：\n\n\t1 <= heights[i] <= maxHeights[i]\n\theights&nbsp;是一个 山脉 数组。\n\n如果存在下标 i&nbsp;满足以下条件，那么我们称数组&nbsp;heights&nbsp;是一个 山脉 数组：\n\n\t对于所有&nbsp;0 < j <= i&nbsp;，都有&nbsp;heights[j - 1] <= heights[j]\n\t对于所有&nbsp;i <= k < n - 1&nbsp;，都有&nbsp;heights[k + 1] <= heights[k]\n\n请你返回满足 美丽塔&nbsp;要求的方案中，高度和的最大值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：maxHeights = [5,3,4,1,1]\n输出：13\n解释：和最大的美丽塔方案为 heights = [5,3,3,1,1] ，这是一个美丽塔方案，因为：\n- 1 <= heights[i] <= maxHeights[i]  \n- heights 是个山脉数组，峰值在 i = 0 处。\n13 是所有美丽塔方案中的最大高度和。\n\n示例 2：\n\n输入：maxHeights = [6,5,3,9,2,7]\n输出：22\n解释： 和最大的美丽塔方案为 heights = [3,3,3,9,2,2] ，这是一个美丽塔方案，因为：\n- 1 <= heights[i] <= maxHeights[i]\n- heights 是个山脉数组，峰值在 i = 3 处。\n22 是所有美丽塔方案中的最大高度和。\n\n示例 3：\n\n输入：maxHeights = [3,2,5,5,2,3]\n输出：18\n解释：和最大的美丽塔方案为 heights = [2,2,5,5,2,2] ，这是一个美丽塔方案，因为：\n- 1 <= heights[i] <= maxHeights[i]\n- heights 是个山脉数组，最大值在 i = 2 处。\n注意，在这个方案中，i = 3 也是一个峰值。\n18 是所有美丽塔方案中的最大高度和。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == maxHeights&nbsp;<= 105\n\t1 <= maxHeights[i] <= 109",
+  "constraints": [
+    "1 <= n == maxHeights&nbsp;<= 105",
+    "1 <= maxHeights[i] <= 109"
+  ]
+}

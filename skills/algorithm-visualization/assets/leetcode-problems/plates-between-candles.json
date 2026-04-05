@@ -1,0 +1,15 @@
+{
+  "number": "2055",
+  "title_cn": "蜡烛之间的盘子",
+  "title_en": "Plates Between Candles",
+  "slug": "plates-between-candles",
+  "difficulty": "Medium",
+  "description": "给你一个长桌子，桌子上盘子和蜡烛排成一列。给你一个下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;，它只包含字符&nbsp;'*' 和&nbsp;'|'&nbsp;，其中&nbsp;'*'&nbsp;表示一个 盘子&nbsp;，'|'&nbsp;表示一支&nbsp;蜡烛&nbsp;。\n\n同时给你一个下标从 0&nbsp;开始的二维整数数组&nbsp;queries&nbsp;，其中&nbsp;queries[i] = [lefti, righti]&nbsp;表示 子字符串&nbsp;s[lefti...righti]&nbsp;（包含左右端点的字符）。对于每个查询，你需要找到 子字符串中&nbsp;在 两支蜡烛之间&nbsp;的盘子的 数目&nbsp;。如果一个盘子在 子字符串中&nbsp;左边和右边 都&nbsp;至少有一支蜡烛，那么这个盘子满足在 两支蜡烛之间&nbsp;。\n\n\t比方说，s = \"||**||**|*\"&nbsp;，查询&nbsp;[3, 8]&nbsp;，表示的是子字符串&nbsp;\"*||**|\"&nbsp;。子字符串中在两支蜡烛之间的盘子数目为&nbsp;2&nbsp;，子字符串中右边两个盘子在它们左边和右边 都 至少有一支蜡烛。\n\n请你返回一个整数数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]&nbsp;是第&nbsp;i&nbsp;个查询的答案。\n\n&nbsp;\n\n示例 1:\n\n输入：s = \"**|**|***|\", queries = [[2,5],[5,9]]\n输出：[2,3]\n解释：\n- queries[0] 有两个盘子在蜡烛之间。\n- queries[1] 有三个盘子在蜡烛之间。\n\n示例 2:\n\n输入：s = \"***|**|*****|**||**|*\", queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]\n输出：[9,0,0,0,0]\n解释：\n- queries[0] 有 9 个盘子在蜡烛之间。\n- 另一个查询没有盘子在蜡烛之间。\n\n&nbsp;\n\n提示：\n\n\t3 <= s.length <= 105\n\ts&nbsp;只包含字符&nbsp;'*' 和&nbsp;'|'&nbsp;。\n\t1 <= queries.length <= 105\n\tqueries[i].length == 2\n\t0 <= lefti <= righti < s.length",
+  "constraints": [
+    "3 <= s.length <= 105",
+    "s&nbsp;只包含字符&nbsp;'*' 和&nbsp;'|'&nbsp;。",
+    "1 <= queries.length <= 105",
+    "queries[i].length == 2",
+    "0 <= lefti <= righti < s.length"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "2595",
+  "title_cn": "奇偶位数",
+  "title_en": "Number of Even and Odd Bits",
+  "slug": "number-of-even-and-odd-bits",
+  "difficulty": "Easy",
+  "description": "给你一个 正 整数 n 。\n\n用 even 表示在 n 的二进制形式（下标从 0 开始）中值为 1 的偶数下标的个数。\n\n用 odd 表示在 n 的二进制形式（下标从 0 开始）中值为 1 的奇数下标的个数。\n\n请注意，在数字的二进制表示中，位下标的顺序&nbsp;从右到左。\n\n返回整数数组 answer ，其中 answer = [even, odd] 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 50\n\n输出：[1,2]\n\n解释：\n\n50 的二进制表示是&nbsp;110010。\n\n在下标 1，4，5 对应的值为&nbsp;1。\n\n示例 2：\n\n输入：n = 2\n\n输出：[0,1]\n\n解释：\n\n2 的二进制表示是&nbsp;10。\n\n只有下标 1 对应的值为&nbsp;1。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1000",
+  "constraints": [
+    "1 <= n <= 1000"
+  ]
+}

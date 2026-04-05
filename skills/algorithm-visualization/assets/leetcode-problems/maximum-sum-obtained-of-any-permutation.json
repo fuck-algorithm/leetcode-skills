@@ -1,0 +1,16 @@
+{
+  "number": "1589",
+  "title_cn": "所有排列中的最大和",
+  "title_en": "Maximum Sum Obtained of Any Permutation",
+  "slug": "maximum-sum-obtained-of-any-permutation",
+  "difficulty": "Medium",
+  "description": "有一个整数数组&nbsp;nums&nbsp;，和一个查询数组&nbsp;requests&nbsp;，其中&nbsp;requests[i] = [starti, endi]&nbsp;。第&nbsp;i&nbsp;个查询求&nbsp;nums[starti] + nums[starti + 1] + ... + nums[endi - 1] + nums[endi]&nbsp;的结果&nbsp;，starti 和&nbsp;endi&nbsp;数组索引都是 从 0 开始 的。\n\n你可以任意排列 nums&nbsp;中的数字，请你返回所有查询结果之和的最大值。\n\n由于答案可能会很大，请你将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5], requests = [[1,3],[0,1]]\n输出：19\n解释：一个可行的 nums 排列为 [2,1,3,4,5]，并有如下结果：\nrequests[0] -> nums[1] + nums[2] + nums[3] = 1 + 3 + 4 = 8\nrequests[1] -> nums[0] + nums[1] = 2 + 1 = 3\n总和为：8 + 3 = 11。\n一个总和更大的排列为 [3,5,4,2,1]，并有如下结果：\nrequests[0] -> nums[1] + nums[2] + nums[3] = 5 + 4 + 2 = 11\nrequests[1] -> nums[0] + nums[1] = 3 + 5  = 8\n总和为： 11 + 8 = 19，这个方案是所有排列中查询之和最大的结果。\n\n示例 2：\n\n输入：nums = [1,2,3,4,5,6], requests = [[0,1]]\n输出：11\n解释：一个总和最大的排列为 [6,5,4,3,2,1] ，查询和为 [11]。\n\n示例 3：\n\n输入：nums = [1,2,3,4,5,10], requests = [[0,2],[1,3],[1,1]]\n输出：47\n解释：一个和最大的排列为 [4,10,5,3,2,1] ，查询结果分别为 [19,18,10]。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 105\n\t0 <= nums[i]&nbsp;<= 105\n\t1 <= requests.length <=&nbsp;105\n\trequests[i].length == 2\n\t0 <= starti&nbsp;<= endi&nbsp;<&nbsp;n",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 105",
+    "0 <= nums[i]&nbsp;<= 105",
+    "1 <= requests.length <=&nbsp;105",
+    "requests[i].length == 2",
+    "0 <= starti&nbsp;<= endi&nbsp;<&nbsp;n"
+  ]
+}

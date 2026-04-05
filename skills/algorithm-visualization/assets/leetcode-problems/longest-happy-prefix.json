@@ -1,0 +1,12 @@
+{
+  "number": "1392",
+  "title_cn": "最长快乐前缀",
+  "title_en": "Longest Happy Prefix",
+  "slug": "longest-happy-prefix",
+  "difficulty": "Hard",
+  "description": "「快乐前缀」&nbsp;是在原字符串中既是&nbsp;非空 前缀也是后缀（不包括原字符串自身）的字符串。\n\n给你一个字符串 s，请你返回它的 最长快乐前缀。如果不存在满足题意的前缀，则返回一个空字符串&nbsp;\"\"&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"level\"\n输出：\"l\"\n解释：不包括 s 自己，一共有 4 个前缀（\"l\", \"le\", \"lev\", \"leve\"）和 4 个后缀（\"l\", \"el\", \"vel\", \"evel\"）。最长的既是前缀也是后缀的字符串是 \"l\" 。\n\n示例 2：\n\n输入：s = \"ababab\"\n输出：\"abab\"\n解释：\"abab\" 是最长的既是前缀也是后缀的字符串。题目允许前后缀在原字符串中重叠。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 只含有小写英文字母",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 只含有小写英文字母"
+  ]
+}

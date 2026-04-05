@@ -1,0 +1,9 @@
+{
+  "number": "2878",
+  "title_cn": "获取 DataFrame 的大小",
+  "title_en": "Get the Size of a DataFrame",
+  "slug": "get-the-size-of-a-dataframe",
+  "difficulty": "Easy",
+  "description": "DataFrame players:\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| player_id   | int    |\n| name        | object |\n| age         | int    |\n| position    | object |\n| ...         | ...    |\n+-------------+--------+\n\n编写一个解决方案，计算并显示&nbsp;players&nbsp;的&nbsp;行数和列数。\n\n将结果返回为一个数组：\n\n[number of rows, number of columns]\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\n+-----------+----------+-----+-------------+--------------------+\n| player_id | name     | age | position    | team               |\n+-----------+----------+-----+-------------+--------------------+\n| 846       | Mason    | 21  | Forward     | RealMadrid         |\n| 749       | Riley    | 30  | Winger      | Barcelona          |\n| 155       | Bob      | 28  | Striker     | ManchesterUnited   |\n| 583       | Isabella | 32  | Goalkeeper  | Liverpool          |\n| 388       | Zachary  | 24  | Midfielder  | BayernMunich       |\n| 883       | Ava      | 23  | Defender    | Chelsea            |\n| 355       | Violet   | 18  | Striker     | Juventus           |\n| 247       | Thomas   | 27  | Striker     | ParisSaint-Germain |\n| 761       | Jack     | 33  | Midfielder  | ManchesterCity     |\n| 642       | Charlie  | 36  | Center-back | Arsenal            |\n+-----------+----------+-----+-------------+--------------------+\n输出：\n[10, 5]\n解释：\n这个 DataFrame 包含 10 行和 5 列。",
+  "constraints": []
+}

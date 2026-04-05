@@ -1,0 +1,15 @@
+{
+  "number": "3355",
+  "title_cn": "零数组变换 I",
+  "title_en": "Zero Array Transformation I",
+  "slug": "zero-array-transformation-i",
+  "difficulty": "Medium",
+  "description": "给定一个长度为 n 的整数数组 nums 和一个二维数组 queries，其中 queries[i] = [li, ri]。\n\n对于每个查询&nbsp;queries[i]：\n\n\t在&nbsp;nums&nbsp;的下标范围&nbsp;[li, ri]&nbsp;内选择一个下标 子集。\n\t将选中的每个下标对应的元素值减 1。\n\n零数组&nbsp;是指所有元素都等于 0 的数组。\n\n如果在按顺序处理所有查询后，可以将 nums 转换为&nbsp;零数组&nbsp;，则返回 true，否则返回 false。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,0,1], queries = [[0,2]]\n\n输出： true\n\n解释：\n\n\t对于 i = 0：\n\n\t\t选择下标子集 [0, 2] 并将这些下标处的值减 1。\n\t\t数组将变为 [0, 0, 0]，这是一个零数组。\n\n示例 2：\n\n输入： nums = [4,3,2,1], queries = [[1,3],[0,2]]\n\n输出： false\n\n解释：\n\n\t对于 i = 0：&nbsp;\n\n\t\t选择下标子集 [1, 2, 3] 并将这些下标处的值减 1。\n\t\t数组将变为 [4, 2, 1, 0]。\n\n\t对于 i = 1：\n\n\t\t选择下标子集 [0, 1, 2] 并将这些下标处的值减 1。\n\t\t数组将变为 [3, 1, 0, 0]，这不是一个零数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 105\n\t1 <= queries.length <= 105\n\tqueries[i].length == 2\n\t0 <= li <= ri < nums.length",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 105",
+    "1 <= queries.length <= 105",
+    "queries[i].length == 2",
+    "0 <= li <= ri < nums.length"
+  ]
+}

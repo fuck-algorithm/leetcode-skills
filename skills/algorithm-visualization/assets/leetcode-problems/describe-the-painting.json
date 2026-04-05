@@ -1,0 +1,15 @@
+{
+  "number": "1943",
+  "title_cn": "描述绘画结果",
+  "title_en": "Describe the Painting",
+  "slug": "describe-the-painting",
+  "difficulty": "Medium",
+  "description": "给你一个细长的画，用数轴表示。这幅画由若干有重叠的线段表示，每个线段有 独一无二&nbsp;的颜色。给你二维整数数组&nbsp;segments&nbsp;，其中&nbsp;segments[i] = [starti, endi, colori]&nbsp;表示线段为&nbsp;半开区间&nbsp;[starti, endi) 且颜色为&nbsp;colori&nbsp;。\n\n线段间重叠部分的颜色会被 混合&nbsp;。如果有两种或者更多颜色混合时，它们会形成一种新的颜色，用一个 集合&nbsp;表示这个混合颜色。\n\n\t比方说，如果颜色&nbsp;2&nbsp;，4&nbsp;和&nbsp;6&nbsp;被混合，那么结果颜色为&nbsp;{2,4,6}&nbsp;。\n\n为了简化题目，你不需要输出整个集合，只需要用集合中所有元素的 和&nbsp;来表示颜色集合。\n\n你想要用 最少数目&nbsp;不重叠 半开区间&nbsp;来 表示&nbsp;这幅混合颜色的画。这些线段可以用二维数组&nbsp;painting&nbsp;表示，其中 painting[j] = [leftj, rightj, mixj]&nbsp;表示一个&nbsp;半开区间[leftj, rightj)&nbsp;的颜色 和&nbsp;为&nbsp;mixj&nbsp;。\n\n\t比方说，这幅画由&nbsp;segments = [[1,4,5],[1,7,7]]&nbsp;组成，那么它可以表示为&nbsp;painting = [[1,4,12],[4,7,7]]&nbsp;，因为：\n\n\t\t[1,4)&nbsp;由颜色&nbsp;{5,7}&nbsp;组成（和为&nbsp;12），分别来自第一个线段和第二个线段。\n\t\t[4,7)&nbsp;由颜色 {7}&nbsp;组成，来自第二个线段。\n\n请你返回二维数组&nbsp;painting&nbsp;，它表示最终绘画的结果（没有&nbsp;被涂色的部分不出现在结果中）。你可以按 任意顺序 返回最终数组的结果。\n\n半开区间&nbsp;[a, b)&nbsp;是数轴上点&nbsp;a 和点&nbsp;b&nbsp;之间的部分，包含 点&nbsp;a&nbsp;且 不包含&nbsp;点&nbsp;b&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：segments = [[1,4,5],[4,7,7],[1,7,9]]\n输出：[[1,4,14],[4,7,16]]\n解释：绘画结果可以表示为：\n- [1,4) 颜色为 {5,9} （和为 14），分别来自第一和第二个线段。\n- [4,7) 颜色为 {7,9} （和为 16），分别来自第二和第三个线段。\n\n示例 2：\n\n输入：segments = [[1,7,9],[6,8,15],[8,10,7]]\n输出：[[1,6,9],[6,7,24],[7,8,15],[8,10,7]]\n解释：绘画结果可以以表示为：\n- [1,6) 颜色为 9 ，来自第一个线段。\n- [6,7) 颜色为 {9,15} （和为 24），来自第一和第二个线段。\n- [7,8) 颜色为 15 ，来自第二个线段。\n- [8,10) 颜色为 7 ，来自第三个线段。\n\n示例 3：\n\n输入：segments = [[1,4,5],[1,4,7],[4,7,1],[4,7,11]]\n输出：[[1,4,12],[4,7,12]]\n解释：绘画结果可以表示为：\n- [1,4) 颜色为 {5,7} （和为 12），分别来自第一和第二个线段。\n- [4,7) 颜色为 {1,11} （和为 12），分别来自第三和第四个线段。\n注意，只返回一个单独的线段 [1,7) 是不正确的，因为混合颜色的集合不相同。\n\n&nbsp;\n\n提示：\n\n\t1 <= segments.length <= 2 * 104\n\tsegments[i].length == 3\n\t1 <= starti < endi <= 105\n\t1 <= colori <= 109\n\t每种颜色&nbsp;colori&nbsp;互不相同。",
+  "constraints": [
+    "1 <= segments.length <= 2 * 104",
+    "segments[i].length == 3",
+    "1 <= starti < endi <= 105",
+    "1 <= colori <= 109",
+    "每种颜色&nbsp;colori&nbsp;互不相同。"
+  ]
+}

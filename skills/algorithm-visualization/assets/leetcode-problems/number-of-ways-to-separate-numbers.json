@@ -1,0 +1,12 @@
+{
+  "number": "1977",
+  "title_cn": "划分数字的方案数",
+  "title_en": "Number of Ways to Separate Numbers",
+  "slug": "number-of-ways-to-separate-numbers",
+  "difficulty": "Hard",
+  "description": "你写下了若干 正整数&nbsp;，并将它们连接成了一个字符串&nbsp;num&nbsp;。但是你忘记给这些数字之间加逗号了。你只记得这一列数字是 非递减&nbsp;的且&nbsp;没有 任何数字有前导 0 。\n\n请你返回有多少种可能的 正整数数组&nbsp;可以得到字符串&nbsp;num&nbsp;。由于答案可能很大，将结果对 109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：num = \"327\"\n输出：2\n解释：以下为可能的方案：\n3, 27\n327\n\n示例 2：\n\n输入：num = \"094\"\n输出：0\n解释：不能有数字有前导 0 ，且所有数字均为正数。\n\n示例 3：\n\n输入：num = \"0\"\n输出：0\n解释：不能有数字有前导 0 ，且所有数字均为正数。\n\n示例 4：\n\n输入：num = \"9999999999999\"\n输出：101\n\n&nbsp;\n\n提示：\n\n\t1 <= num.length <= 3500\n\tnum&nbsp;只含有数字&nbsp;'0' 到&nbsp;'9'&nbsp;。",
+  "constraints": [
+    "1 <= num.length <= 3500",
+    "num&nbsp;只含有数字&nbsp;'0' 到&nbsp;'9'&nbsp;。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2276",
+  "title_cn": "统计区间中的整数数目",
+  "title_en": "Count Integers in Intervals",
+  "slug": "count-integers-in-intervals",
+  "difficulty": "Hard",
+  "description": "给你区间的 空 集，请你设计并实现满足要求的数据结构：\n\n\t新增：添加一个区间到这个区间集合中。\n\t统计：计算出现在 至少一个 区间中的整数个数。\n\n实现 CountIntervals 类：\n\n\tCountIntervals() 使用区间的空集初始化对象\n\tvoid add(int left, int right) 添加区间 [left, right] 到区间集合之中。\n\tint count() 返回出现在 至少一个 区间中的整数个数。\n\n注意：区间 [left, right] 表示满足 left <= x <= right 的所有整数 x 。\n\n&nbsp;\n\n示例 1：\n\n输入\n[\"CountIntervals\", \"add\", \"add\", \"count\", \"add\", \"count\"]\n[[], [2, 3], [7, 10], [], [5, 8], []]\n输出\n[null, null, null, 6, null, 8]\n\n解释\nCountIntervals countIntervals = new CountIntervals(); // 用一个区间空集初始化对象\ncountIntervals.add(2, 3);  // 将 [2, 3] 添加到区间集合中\ncountIntervals.add(7, 10); // 将 [7, 10] 添加到区间集合中\ncountIntervals.count();    // 返回 6\n                           // 整数 2 和 3 出现在区间 [2, 3] 中\n                           // 整数 7、8、9、10 出现在区间 [7, 10] 中\ncountIntervals.add(5, 8);  // 将 [5, 8] 添加到区间集合中\ncountIntervals.count();    // 返回 8\n                           // 整数 2 和 3 出现在区间 [2, 3] 中\n                           // 整数 5 和 6 出现在区间 [5, 8] 中\n                           // 整数 7 和 8 出现在区间 [5, 8] 和区间 [7, 10] 中\n                           // 整数 9 和 10 出现在区间 [7, 10] 中\n\n&nbsp;\n\n提示：\n\n\t1 <= left <= right <= 109\n\t最多调用&nbsp; add 和 count 方法 总计 105 次\n\t调用 count 方法至少一次",
+  "constraints": [
+    "1 <= left <= right <= 109",
+    "最多调用&nbsp; add 和 count 方法 总计 105 次",
+    "调用 count 方法至少一次"
+  ]
+}

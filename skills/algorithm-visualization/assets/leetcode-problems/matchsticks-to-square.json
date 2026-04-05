@@ -1,0 +1,12 @@
+{
+  "number": "473",
+  "title_cn": "火柴拼正方形",
+  "title_en": "Matchsticks to Square",
+  "slug": "matchsticks-to-square",
+  "difficulty": "Medium",
+  "description": "你将得到一个整数数组 matchsticks ，其中 matchsticks[i] 是第 i&nbsp;个火柴棒的长度。你要用 所有的火柴棍&nbsp;拼成一个正方形。你 不能折断 任何一根火柴棒，但你可以把它们连在一起，而且每根火柴棒必须 使用一次 。\n\n如果你能使这个正方形，则返回 true ，否则返回 false 。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: matchsticks = [1,1,2,2,2]\n输出: true\n解释: 能拼成一个边长为2的正方形，每边两根火柴。\n\n示例&nbsp;2:\n\n输入: matchsticks = [3,3,3,3,4]\n输出: false\n解释: 不能用所有火柴拼成一个正方形。\n\n&nbsp;\n\n提示:\n\n\t1 <= matchsticks.length <= 15\n\t1 <= matchsticks[i] <= 108",
+  "constraints": [
+    "1 <= matchsticks.length <= 15",
+    "1 <= matchsticks[i] <= 108"
+  ]
+}

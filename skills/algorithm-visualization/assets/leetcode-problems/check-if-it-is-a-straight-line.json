@@ -1,0 +1,14 @@
+{
+  "number": "1232",
+  "title_cn": "缀点成线",
+  "title_en": "Check If It Is a Straight Line",
+  "slug": "check-if-it-is-a-straight-line",
+  "difficulty": "Easy",
+  "description": "给定一个整数数组&nbsp;coordinates&nbsp;，其中&nbsp;coordinates[i] = [x, y]&nbsp;，&nbsp;[x, y]&nbsp;表示横坐标为 x、纵坐标为 y&nbsp;的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。\n\n&nbsp;\n\n示例 1：\n\n输入：coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]\n输出：true\n\n示例 2：\n\n输入：coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]\n输出：false\n\n&nbsp;\n\n提示：\n\n\t2 <=&nbsp;coordinates.length <= 1000\n\tcoordinates[i].length == 2\n\t-104 <=&nbsp;coordinates[i][0],&nbsp;coordinates[i][1] <= 104\n\tcoordinates&nbsp;中不含重复的点",
+  "constraints": [
+    "2 <=&nbsp;coordinates.length <= 1000",
+    "coordinates[i].length == 2",
+    "-104 <=&nbsp;coordinates[i][0],&nbsp;coordinates[i][1] <= 104",
+    "coordinates&nbsp;中不含重复的点"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2719",
+  "title_cn": "统计整数数目",
+  "title_en": "Count of Integers",
+  "slug": "count-of-integers",
+  "difficulty": "Hard",
+  "description": "给你两个数字字符串&nbsp;num1&nbsp;和&nbsp;num2&nbsp;，以及两个整数&nbsp;max_sum 和&nbsp;min_sum&nbsp;。如果一个整数&nbsp;x&nbsp;满足以下条件，我们称它是一个好整数：\n\n\tnum1 <= x <= num2\n\tmin_sum <= digit_sum(x) <= max_sum.\n\n请你返回好整数的数目。答案可能很大，请返回答案对&nbsp;109 + 7&nbsp;取余后的结果。\n\n注意，digit_sum(x)&nbsp;表示&nbsp;x&nbsp;各位数字之和。\n\n&nbsp;\n\n示例 1：\n\n输入：num1 = \"1\", num2 = \"12\", min_sum = 1, max_sum = 8\n输出：11\n解释：总共有 11 个整数的数位和在 1 到 8 之间，分别是 1,2,3,4,5,6,7,8,10,11 和 12 。所以我们返回 11 。\n\n示例 2：\n\n输入：num1 = \"1\", num2 = \"5\", min_sum = 1, max_sum = 5\n输出：5\n解释：数位和在 1 到 5 之间的 5 个整数分别为 1,2,3,4 和 5 。所以我们返回 5 。\n\n&nbsp;\n\n提示：\n\n\t1 <= num1 <= num2 <= 1022\n\t1 <= min_sum <= max_sum <= 400",
+  "constraints": [
+    "1 <= num1 <= num2 <= 1022",
+    "1 <= min_sum <= max_sum <= 400"
+  ]
+}

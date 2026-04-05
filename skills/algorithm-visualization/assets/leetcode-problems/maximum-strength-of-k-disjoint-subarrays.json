@@ -1,0 +1,15 @@
+{
+  "number": "3077",
+  "title_cn": "K 个不相交子数组的最大能量值",
+  "title_en": "Maximum Strength of K Disjoint Subarrays",
+  "slug": "maximum-strength-of-k-disjoint-subarrays",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个 正奇数&nbsp;整数&nbsp;k&nbsp;。\n\nx 个子数组的能量值定义为&nbsp;strength = sum[1] * x - sum[2] * (x - 1) + sum[3] * (x - 2) - sum[4] * (x - 3) + ... + sum[x] * 1 ，其中&nbsp;sum[i]&nbsp;是第 i&nbsp;个子数组的和。更正式的，能量值是满足&nbsp;1 <= i <= x&nbsp;的所有&nbsp;i&nbsp;对应的&nbsp;(-1)i+1 * sum[i] * (x - i + 1)&nbsp;之和。\n\n你需要在 nums&nbsp;中选择 k&nbsp;个 不相交子数组&nbsp;，使得&nbsp;能量值最大&nbsp;。\n\n请你返回可以得到的 最大能量值&nbsp;。\n\n注意，选出来的所有子数组&nbsp;不&nbsp;需要覆盖整个数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,-1,2], k = 3\n输出：22\n解释：选择 3 个子数组的最好方式是选择：nums[0..2] ，nums[3..3] 和 nums[4..4] 。能量值为 (1 + 2 + 3) * 3 - (-1) * 2 + 2 * 1 = 22 。\n\n示例 2：\n\n输入：nums = [12,-2,-2,-2,-2], k = 5\n输出：64\n解释：唯一一种选 5 个不相交子数组的方案是：nums[0..0] ，nums[1..1] ，nums[2..2] ，nums[3..3] 和 nums[4..4] 。能量值为 12 * 5 - (-2) * 4 + (-2) * 3 - (-2) * 2 + (-2) * 1 = 64 。\n\n示例 3：\n\n输入：nums = [-1,-2,-3], k = 1\n输出：-1\n解释：选择 1 个子数组的最优方案是：nums[0..0] 。能量值为 -1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 104\n\t-109 <= nums[i] <= 109\n\t1 <= k <= n\n\t1 <= n * k <= 106\n\tk 是奇数。",
+  "constraints": [
+    "1 <= n <= 104",
+    "-109 <= nums[i] <= 109",
+    "1 <= k <= n",
+    "1 <= n * k <= 106",
+    "k 是奇数。"
+  ]
+}

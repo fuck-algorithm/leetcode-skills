@@ -1,0 +1,15 @@
+{
+  "number": "2188",
+  "title_cn": "完成比赛的最少时间",
+  "title_en": "Minimum Time to Finish the Race",
+  "slug": "minimum-time-to-finish-the-race",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的二维整数数组&nbsp;tires&nbsp;，其中&nbsp;tires[i] = [fi, ri]&nbsp;表示第&nbsp;i&nbsp;种轮胎如果连续使用，第&nbsp;x&nbsp;圈需要耗时&nbsp;fi * ri(x-1)&nbsp;秒。\n\n\t比方说，如果&nbsp;fi = 3&nbsp;且&nbsp;ri = 2&nbsp;，且一直使用这种类型的同一条轮胎，那么该轮胎完成第&nbsp;1&nbsp;圈赛道耗时 3&nbsp;秒，完成第 2&nbsp;圈耗时&nbsp;3 * 2 = 6&nbsp;秒，完成第 3&nbsp;圈耗时&nbsp;3 * 22 = 12&nbsp;秒，依次类推。\n\n同时给你一个整数&nbsp;changeTime&nbsp;和一个整数&nbsp;numLaps&nbsp;。\n\n比赛总共包含&nbsp;numLaps&nbsp;圈，你可以选择 任意&nbsp;一种轮胎开始比赛。每一种轮胎都有 无数条&nbsp;。每一圈后，你可以选择耗费 changeTime&nbsp;秒 换成&nbsp;任意一种轮胎（也可以换成当前种类的新轮胎）。\n\n请你返回完成比赛需要耗费的 最少&nbsp;时间。\n\n&nbsp;\n\n示例 1：\n\n输入：tires = [[2,3],[3,4]], changeTime = 5, numLaps = 4\n输出：21\n解释：\n第 1 圈：使用轮胎 0 ，耗时 2 秒。\n第 2 圈：继续使用轮胎 0 ，耗时 2 * 3 = 6 秒。\n第 3 圈：耗费 5 秒换一条新的轮胎 0 ，然后耗时 2 秒完成这一圈。\n第 4 圈：继续使用轮胎 0 ，耗时 2 * 3 = 6 秒。\n总耗时 = 2 + 6 + 5 + 2 + 6 = 21 秒。\n完成比赛的最少时间为 21 秒。\n\n示例 2：\n\n输入：tires = [[1,10],[2,2],[3,4]], changeTime = 6, numLaps = 5\n输出：25\n解释：\n第 1 圈：使用轮胎 1 ，耗时 2 秒。\n第 2 圈：继续使用轮胎 1 ，耗时 2 * 2 = 4 秒。\n第 3 圈：耗时 6 秒换一条新的轮胎 1 ，然后耗时 2 秒完成这一圈。\n第 4 圈：继续使用轮胎 1 ，耗时 2 * 2 = 4 秒。\n第 5 圈：耗时 6 秒换成轮胎 0 ，然后耗时 1 秒完成这一圈。\n总耗时 = 2 + 4 + 6 + 2 + 4 + 6 + 1 = 25 秒。\n完成比赛的最少时间为 25 秒。\n\n&nbsp;\n\n提示：\n\n\t1 <= tires.length <= 105\n\ttires[i].length == 2\n\t1 <= fi, changeTime <= 105\n\t2 <= ri <= 105\n\t1 <= numLaps <= 1000",
+  "constraints": [
+    "1 <= tires.length <= 105",
+    "tires[i].length == 2",
+    "1 <= fi, changeTime <= 105",
+    "2 <= ri <= 105",
+    "1 <= numLaps <= 1000"
+  ]
+}

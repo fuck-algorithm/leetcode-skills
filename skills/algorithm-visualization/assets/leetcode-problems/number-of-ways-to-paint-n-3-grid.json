@@ -1,0 +1,13 @@
+{
+  "number": "1411",
+  "title_cn": "给 N x 3 网格图涂色的方案数",
+  "title_en": "Number of Ways to Paint N × 3 Grid",
+  "slug": "number-of-ways-to-paint-n-3-grid",
+  "difficulty": "Hard",
+  "description": "你有一个 n x 3&nbsp;的网格图 grid&nbsp;，你需要用 红，黄，绿&nbsp;三种颜色之一给每一个格子上色，且确保相邻格子颜色不同（也就是有相同水平边或者垂直边的格子颜色不同）。\n\n给你网格图的行数 n&nbsp;。\n\n请你返回给&nbsp;grid&nbsp;涂色的方案数。由于答案可能会非常大，请你返回答案对&nbsp;10^9 + 7&nbsp;取余的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1\n输出：12\n解释：总共有 12 种可行的方法：\n\n示例 2：\n\n输入：n = 2\n输出：54\n\n示例 3：\n\n输入：n = 3\n输出：246\n\n示例 4：\n\n输入：n = 7\n输出：106494\n\n示例 5：\n\n输入：n = 5000\n输出：30228214\n\n&nbsp;\n\n提示：\n\n\tn == grid.length\n\tgrid[i].length == 3\n\t1 <= n <= 5000",
+  "constraints": [
+    "n == grid.length",
+    "grid[i].length == 3",
+    "1 <= n <= 5000"
+  ]
+}

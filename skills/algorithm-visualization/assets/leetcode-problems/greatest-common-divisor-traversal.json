@@ -1,0 +1,12 @@
+{
+  "number": "2709",
+  "title_cn": "最大公约数遍历",
+  "title_en": "Greatest Common Divisor Traversal",
+  "slug": "greatest-common-divisor-traversal",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，你可以在一些下标之间遍历。对于两个下标&nbsp;i&nbsp;和&nbsp;j（i != j），当且仅当&nbsp;gcd(nums[i], nums[j]) > 1&nbsp;时，我们可以在两个下标之间通行，其中&nbsp;gcd&nbsp;是两个数的 最大公约数&nbsp;。\n\n你需要判断 nums&nbsp;数组中&nbsp;任意&nbsp;两个满足 i < j&nbsp;的下标&nbsp;i&nbsp;和&nbsp;j ，是否存在若干次通行可以从 i&nbsp;遍历到 j&nbsp;。\n\n如果任意满足条件的下标对都可以遍历，那么返回 true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,6]\n输出：true\n解释：这个例子中，总共有 3 个下标对：(0, 1) ，(0, 2) 和 (1, 2) 。\n从下标 0 到下标 1 ，我们可以遍历 0 -> 2 -> 1 ，我们可以从下标 0 到 2 是因为 gcd(nums[0], nums[2]) = gcd(2, 6) = 2 > 1 ，从下标 2 到 1 是因为 gcd(nums[2], nums[1]) = gcd(6, 3) = 3 > 1 。\n从下标 0 到下标 2 ，我们可以直接遍历，因为 gcd(nums[0], nums[2]) = gcd(2, 6) = 2 > 1 。同理，我们也可以从下标 1 到 2 因为 gcd(nums[1], nums[2]) = gcd(3, 6) = 3 > 1 。\n\n示例 2：\n\n输入：nums = [3,9,5]\n输出：false\n解释：我们没法从下标 0 到 2 ，所以返回 false 。\n\n示例 3：\n\n输入：nums = [4,3,12,8]\n输出：true\n解释：总共有 6 个下标对：(0, 1) ，(0, 2) ，(0, 3) ，(1, 2) ，(1, 3) 和 (2, 3) 。所有下标对之间都存在可行的遍历，所以返回 true 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 105",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 105"
+  ]
+}

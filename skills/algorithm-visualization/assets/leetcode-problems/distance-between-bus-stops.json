@@ -1,0 +1,14 @@
+{
+  "number": "1184",
+  "title_cn": "公交站间的距离",
+  "title_en": "Distance Between Bus Stops",
+  "slug": "distance-between-bus-stops",
+  "difficulty": "Easy",
+  "description": "环形公交路线上有&nbsp;n&nbsp;个站，按次序从&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;进行编号。我们已知每一对相邻公交站之间的距离，distance[i]&nbsp;表示编号为&nbsp;i&nbsp;的车站和编号为&nbsp;(i + 1) % n&nbsp;的车站之间的距离。\n\n环线上的公交车都可以按顺时针和逆时针的方向行驶。\n\n返回乘客从出发点&nbsp;start&nbsp;到目的地&nbsp;destination&nbsp;之间的最短距离。\n\n&nbsp;\n\n示例 1：\n\n输入：distance = [1,2,3,4], start = 0, destination = 1\n输出：1\n解释：公交站 0 和 1 之间的距离是 1 或 9，最小值是 1。\n\n&nbsp;\n\n示例 2：\n\n输入：distance = [1,2,3,4], start = 0, destination = 2\n输出：3\n解释：公交站 0 和 2 之间的距离是 3 或 7，最小值是 3。\n\n&nbsp;\n\n示例 3：\n\n输入：distance = [1,2,3,4], start = 0, destination = 3\n输出：4\n解释：公交站 0 和 3 之间的距离是 6 或 4，最小值是 4。\n\n&nbsp;\n\n提示：\n\n\t1 <= n&nbsp;<= 10^4\n\tdistance.length == n\n\t0 <= start, destination < n\n\t0 <= distance[i] <= 10^4",
+  "constraints": [
+    "1 <= n&nbsp;<= 10^4",
+    "distance.length == n",
+    "0 <= start, destination < n",
+    "0 <= distance[i] <= 10^4"
+  ]
+}

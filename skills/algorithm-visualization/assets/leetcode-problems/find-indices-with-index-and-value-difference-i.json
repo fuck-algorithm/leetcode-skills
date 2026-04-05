@@ -1,0 +1,14 @@
+{
+  "number": "2903",
+  "title_cn": "找出满足差值条件的下标 I",
+  "title_en": "Find Indices With Index and Value Difference I",
+  "slug": "find-indices-with-index-and-value-difference-i",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始、长度为 n 的整数数组 nums ，以及整数 indexDifference 和整数 valueDifference 。\n\n你的任务是从范围 [0, n - 1] 内找出&nbsp; 2 个满足下述所有条件的下标 i 和 j ：\n\n\tabs(i - j) >= indexDifference 且\n\tabs(nums[i] - nums[j]) >= valueDifference\n\n返回整数数组 answer。如果存在满足题目要求的两个下标，则 answer = [i, j] ；否则，answer = [-1, -1] 。如果存在多组可供选择的下标对，只需要返回其中任意一组即可。\n\n注意：i 和 j 可能 相等 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,1,4,1], indexDifference = 2, valueDifference = 4\n输出：[0,3]\n解释：在示例中，可以选择 i = 0 和 j = 3 。\nabs(0 - 3) >= 2 且 abs(nums[0] - nums[3]) >= 4 。\n因此，[0,3] 是一个符合题目要求的答案。\n[3,0] 也是符合题目要求的答案。\n\n示例 2：\n\n输入：nums = [2,1], indexDifference = 0, valueDifference = 0\n输出：[0,0]\n解释：\n在示例中，可以选择 i = 0 和 j = 0 。 \nabs(0 - 0) >= 0 且 abs(nums[0] - nums[0]) >= 0 。 \n因此，[0,0] 是一个符合题目要求的答案。 \n[0,1]、[1,0] 和 [1,1] 也是符合题目要求的答案。 \n\n示例 3：\n\n输入：nums = [1,2,3], indexDifference = 2, valueDifference = 4\n输出：[-1,-1]\n解释：在示例中，可以证明无法找出 2 个满足所有条件的下标。\n因此，返回 [-1,-1] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 100\n\t0 <= nums[i] <= 50\n\t0 <= indexDifference <= 100\n\t0 <= valueDifference <= 50",
+  "constraints": [
+    "1 <= n == nums.length <= 100",
+    "0 <= nums[i] <= 50",
+    "0 <= indexDifference <= 100",
+    "0 <= valueDifference <= 50"
+  ]
+}

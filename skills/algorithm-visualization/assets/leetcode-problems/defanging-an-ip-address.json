@@ -1,0 +1,11 @@
+{
+  "number": "1108",
+  "title_cn": "IP 地址无效化",
+  "title_en": "Defanging an IP Address",
+  "slug": "defanging-an-ip-address",
+  "difficulty": "Easy",
+  "description": "给你一个有效的 IPv4 地址&nbsp;address，返回这个 IP 地址的无效化版本。\n\n所谓无效化&nbsp;IP 地址，其实就是用&nbsp;\"[.]\"&nbsp;代替了每个 \".\"。\n\n&nbsp;\n\n示例 1：\n\n输入：address = \"1.1.1.1\"\n输出：\"1[.]1[.]1[.]1\"\n\n示例 2：\n\n输入：address = \"255.100.50.0\"\n输出：\"255[.]100[.]50[.]0\"\n\n&nbsp;\n\n提示：\n\n\t给出的&nbsp;address&nbsp;是一个有效的 IPv4 地址",
+  "constraints": [
+    "给出的&nbsp;address&nbsp;是一个有效的 IPv4 地址"
+  ]
+}

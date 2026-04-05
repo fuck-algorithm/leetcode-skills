@@ -1,0 +1,17 @@
+{
+  "number": "1655",
+  "title_cn": "分配重复整数",
+  "title_en": "Distribute Repeating Integers",
+  "slug": "distribute-repeating-integers",
+  "difficulty": "Hard",
+  "description": "给你一个长度为&nbsp;n&nbsp;的整数数组&nbsp;nums&nbsp;，这个数组中至多有&nbsp;50&nbsp;个不同的值。同时你有 m&nbsp;个顾客的订单 quantity&nbsp;，其中，整数&nbsp;quantity[i]&nbsp;是第&nbsp;i&nbsp;位顾客订单的数目。请你判断是否能将 nums&nbsp;中的整数分配给这些顾客，且满足：\n\n\t第&nbsp;i&nbsp;位顾客 恰好&nbsp;有&nbsp;quantity[i]&nbsp;个整数。\n\t第&nbsp;i&nbsp;位顾客拿到的整数都是 相同的&nbsp;。\n\t每位顾客都满足上述两个要求。\n\n如果你可以分配 nums&nbsp;中的整数满足上面的要求，那么请返回&nbsp;true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4], quantity = [2]\n输出：false\n解释：第 0 位顾客没办法得到两个相同的整数。\n\n示例 2：\n\n输入：nums = [1,2,3,3], quantity = [2]\n输出：true\n解释：第 0 位顾客得到 [3,3] 。整数 [1,2] 都没有被使用。\n\n示例 3：\n\n输入：nums = [1,1,2,2], quantity = [2,2]\n输出：true\n解释：第 0 位顾客得到 [1,1] ，第 1 位顾客得到 [2,2] 。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 105\n\t1 <= nums[i] <= 1000\n\tm == quantity.length\n\t1 <= m <= 10\n\t1 <= quantity[i] <= 105\n\tnums&nbsp;中至多有&nbsp;50&nbsp;个不同的数字。",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 105",
+    "1 <= nums[i] <= 1000",
+    "m == quantity.length",
+    "1 <= m <= 10",
+    "1 <= quantity[i] <= 105",
+    "nums&nbsp;中至多有&nbsp;50&nbsp;个不同的数字。"
+  ]
+}

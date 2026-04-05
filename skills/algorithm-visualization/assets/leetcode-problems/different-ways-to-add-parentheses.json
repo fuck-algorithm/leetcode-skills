@@ -1,0 +1,12 @@
+{
+  "number": "241",
+  "title_cn": "为运算表达式设计优先级",
+  "title_en": "Different Ways to Add Parentheses",
+  "slug": "different-ways-to-add-parentheses",
+  "difficulty": "Medium",
+  "description": "给你一个由数字和运算符组成的字符串&nbsp;expression ，按不同优先级组合数字和运算符，计算并返回所有可能组合的结果。你可以 按任意顺序 返回答案。\n\n生成的测试用例满足其对应输出值符合 32 位整数范围，不同结果的数量不超过 104 。\n\n&nbsp;\n\n示例 1：\n\n输入：expression = \"2-1-1\"\n输出：[0,2]\n解释：\n((2-1)-1) = 0 \n(2-(1-1)) = 2\n\n示例 2：\n\n输入：expression = \"2*3-4*5\"\n输出：[-34,-14,-10,-10,10]\n解释：\n(2*(3-(4*5))) = -34 \n((2*3)-(4*5)) = -14 \n((2*(3-4))*5) = -10 \n(2*((3-4)*5)) = -10 \n(((2*3)-4)*5) = 10\n\n&nbsp;\n\n提示：\n\n\t1 <= expression.length <= 20\n\texpression 由数字和算符 '+'、'-' 和 '*' 组成。\n\t输入表达式中的所有整数值在范围 [0, 99]&nbsp;\n\t输入表达式中的所有整数都没有前导&nbsp;'-'&nbsp;或&nbsp;'+' 表示符号。",
+  "constraints": [
+    "1 <= expression.length <= 20",
+    "expression 由数字和算符 '+'、'-' 和 '*' 组成。"
+  ]
+}

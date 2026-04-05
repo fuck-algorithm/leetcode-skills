@@ -1,0 +1,11 @@
+{
+  "number": "3200",
+  "title_cn": "三角形的最大高度",
+  "title_en": "Maximum Height of a Triangle",
+  "slug": "maximum-height-of-a-triangle",
+  "difficulty": "Easy",
+  "description": "给你两个整数 red 和 blue，分别表示红色球和蓝色球的数量。你需要使用这些球来组成一个三角形，满足第 1 行有 1 个球，第 2 行有 2 个球，第 3 行有 3 个球，依此类推。\n\n每一行的球必须是 相同 颜色，且相邻行的颜色必须 不同。\n\n返回可以实现的三角形的 最大 高度。\n\n&nbsp;\n\n示例 1：\n\n输入： red = 2, blue = 4\n\n输出： 3\n\n解释：\n\n上图显示了唯一可能的排列方式。\n\n示例 2：\n\n输入： red = 2, blue = 1\n\n输出： 2\n\n解释：\n\n上图显示了唯一可能的排列方式。\n\n示例 3：\n\n输入： red = 1, blue = 1\n\n输出： 1\n\n示例 4：\n\n输入： red = 10, blue = 1\n\n输出： 2\n\n解释：\n\n上图显示了唯一可能的排列方式。\n\n&nbsp;\n\n提示：\n\n\t1 <= red, blue <= 100",
+  "constraints": [
+    "1 <= red, blue <= 100"
+  ]
+}

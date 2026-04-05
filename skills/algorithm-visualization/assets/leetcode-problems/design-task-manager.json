@@ -1,0 +1,16 @@
+{
+  "number": "3408",
+  "title_cn": "设计任务管理器",
+  "title_en": "Design Task Manager",
+  "slug": "design-task-manager",
+  "difficulty": "Medium",
+  "description": "一个任务管理器系统可以让用户管理他们的任务，每个任务有一个优先级。这个系统需要高效地处理添加、修改、执行和删除任务的操作。\n\n请你设计一个&nbsp;TaskManager&nbsp;类：\n\n\tTaskManager(vector<vector<int>>& tasks)&nbsp;初始化任务管理器，初始化的数组格式为&nbsp;[userId, taskId, priority]&nbsp;，表示给 userId&nbsp;添加一个优先级为 priority&nbsp;的任务 taskId&nbsp;。\n\n\tvoid add(int userId, int taskId, int priority)&nbsp;表示给用户 userId&nbsp;添加一个优先级为 priority&nbsp;的任务 taskId&nbsp;，输入 保证&nbsp;taskId&nbsp;不在系统中。\n\n\tvoid edit(int taskId, int newPriority)&nbsp;更新已经存在的任务&nbsp;taskId&nbsp;的优先级为&nbsp;newPriority&nbsp;。输入 保证&nbsp;taskId&nbsp;存在于系统中。\n\n\tvoid rmv(int taskId)&nbsp;从系统中删除任务&nbsp;taskId&nbsp;。输入 保证&nbsp;taskId&nbsp;存在于系统中。\n\n\tint execTop()&nbsp;执行所有用户的任务中优先级 最高&nbsp;的任务，如果有多个任务优先级相同且都为 最高&nbsp;，执行&nbsp;taskId&nbsp;最大的一个任务。执行完任务后，taskId&nbsp;从系统中 删除&nbsp;。同时请你返回这个任务所属的用户&nbsp;userId&nbsp;。如果不存在任何任务，返回&nbsp;-1 。\n\n注意 ，一个用户可能被安排多个任务。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"TaskManager\", \"add\", \"edit\", \"execTop\", \"rmv\", \"add\", \"execTop\"]\n[[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]\n\n输出：\n[null, null, null, 3, null, null, 5] \n\n解释：\nTaskManager taskManager = new TaskManager([[1, 101, 10], [2, 102, 20], [3, 103, 15]]); // 分别给用户 1 ，2 和 3 初始化一个任务。\ntaskManager.add(4, 104, 5); // 给用户 4 添加优先级为 5 的任务 104 。\ntaskManager.edit(102, 8); // 更新任务 102 的优先级为 8 。\ntaskManager.execTop(); // 返回 3 。执行用户 3 的任务 103 。\ntaskManager.rmv(101); // 将系统中的任务 101 删除。\ntaskManager.add(5, 105, 15); // 给用户 5 添加优先级为 15 的任务 105 。\ntaskManager.execTop(); // 返回 5 。执行用户 5 的任务 105 。\n\n&nbsp;\n\n提示：\n\n\t1 <= tasks.length <= 105\n\t0 <= userId <= 105\n\t0 <= taskId <= 105\n\t0 <= priority <= 109\n\t0 <= newPriority <= 109\n\tadd&nbsp;，edit&nbsp;，rmv&nbsp;和&nbsp;execTop&nbsp;的总操作次数 加起来&nbsp;不超过&nbsp;2 * 105 次。\n\t输入保证&nbsp;taskId 是合法的。",
+  "constraints": [
+    "1 <= tasks.length <= 105",
+    "0 <= userId <= 105",
+    "0 <= taskId <= 105",
+    "0 <= priority <= 109",
+    "0 <= newPriority <= 109",
+    "add&nbsp;，edit&nbsp;，rmv&nbsp;和&nbsp;execTop&nbsp;的总操作次数 加起来&nbsp;不超过&nbsp;2 * 105 次。"
+  ]
+}

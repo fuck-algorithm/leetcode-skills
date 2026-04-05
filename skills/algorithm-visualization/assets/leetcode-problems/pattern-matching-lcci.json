@@ -1,0 +1,13 @@
+{
+  "number": "面试题 16.18",
+  "title_cn": "模式匹配",
+  "title_en": "Pattern Matching LCCI",
+  "slug": "pattern-matching-lcci",
+  "difficulty": "Medium",
+  "description": "你有两个字符串，即pattern和value。 pattern字符串由字母\"a\"和\"b\"组成，用于描述字符串中的模式。例如，字符串\"catcatgocatgo\"匹配模式\"aabab\"（其中\"cat\"是\"a\"，\"go\"是\"b\"），该字符串也匹配像\"a\"、\"ab\"和\"b\"这样的模式。但需注意\"a\"和\"b\"不能同时表示相同的字符串。编写一个方法判断value字符串是否匹配pattern字符串。\n\n示例 1：\n\n输入： pattern = \"abba\", value = \"dogcatcatdog\"\n输出： true\n\n示例 2：\n\n输入： pattern = \"abba\", value = \"dogcatcatfish\"\n输出： false\n\n示例 3：\n\n输入： pattern = \"aaaa\", value = \"dogcatcatdog\"\n输出： false\n\n示例 4：\n\n输入： pattern = \"abba\", value = \"dogdogdogdog\"\n输出： true\n解释： \"a\"=\"dogdog\",b=\"\"，反之也符合规则\n\n提示：\n\n\t0 <= len(pattern) <= 1000\n\t0 <= len(value) <= 1000\n\t你可以假设pattern只包含字母\"a\"和\"b\"，value仅包含小写字母。",
+  "constraints": [
+    "0 <= len(pattern) <= 1000",
+    "0 <= len(value) <= 1000",
+    "你可以假设pattern只包含字母\"a\"和\"b\"，value仅包含小写字母。"
+  ]
+}

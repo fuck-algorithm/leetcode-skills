@@ -1,0 +1,13 @@
+{
+  "number": "14",
+  "title_cn": "最长公共前缀",
+  "title_en": "Longest Common Prefix",
+  "slug": "longest-common-prefix",
+  "difficulty": "Easy",
+  "description": "编写一个函数来查找字符串数组中的最长公共前缀。\n\n如果不存在公共前缀，返回空字符串&nbsp;\"\"。\n\n&nbsp;\n\n示例 1：\n\n输入：strs = [\"flower\",\"flow\",\"flight\"]\n输出：\"fl\"\n\n示例 2：\n\n输入：strs = [\"dog\",\"racecar\",\"car\"]\n输出：\"\"\n解释：输入不存在公共前缀。\n\n&nbsp;\n\n提示：\n\n\t1 <= strs.length <= 200\n\t0 <= strs[i].length <= 200\n\tstrs[i]&nbsp;如果非空，则仅由小写英文字母组成",
+  "constraints": [
+    "1 <= strs.length <= 200",
+    "0 <= strs[i].length <= 200",
+    "strs[i]&nbsp;如果非空，则仅由小写英文字母组成"
+  ]
+}

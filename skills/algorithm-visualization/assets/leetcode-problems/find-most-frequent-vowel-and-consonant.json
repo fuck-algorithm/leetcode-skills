@@ -1,0 +1,12 @@
+{
+  "number": "3541",
+  "title_cn": "找到频率最高的元音和辅音",
+  "title_en": "Find Most Frequent Vowel and Consonant",
+  "slug": "find-most-frequent-vowel-and-consonant",
+  "difficulty": "Easy",
+  "description": "给你一个由小写英文字母（'a' 到 'z'）组成的字符串 s。你的任务是找出出现频率&nbsp;最高&nbsp;的元音（'a'、'e'、'i'、'o'、'u' 中的一个）和出现频率最高的辅音（除元音以外的所有字母），并返回这两个频数之和。\n\n注意：如果有多个元音或辅音具有相同的最高频率，可以任选其中一个。如果字符串中没有元音或没有辅音，则其频率视为 0。\n一个字母 x 的&nbsp;频率&nbsp;是它在字符串中出现的次数。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"successes\"\n\n输出: 6\n\n解释:\n\n\t元音有：'u' 出现 1 次，'e' 出现 2 次。最大元音频率 = 2。\n\t辅音有：'s' 出现 4 次，'c' 出现 2 次。最大辅音频率 = 4。\n\t输出为 2 + 4 = 6。\n\n示例 2：\n\n输入: s = \"aeiaeia\"\n\n输出: 3\n\n解释:\n\n\t元音有：'a' 出现 3 次，'e' 出现 2 次，'i' 出现 2 次。最大元音频率 = 3。\n\ts 中没有辅音。因此，最大辅音频率 = 0。\n\t输出为 3 + 0 = 3。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 100\n\ts 只包含小写英文字母",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 只包含小写英文字母"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2333",
+  "title_cn": "最小差值平方和",
+  "title_en": "Minimum Sum of Squared Difference",
+  "slug": "minimum-sum-of-squared-difference",
+  "difficulty": "Medium",
+  "description": "给你两个下标从 0&nbsp;开始的整数数组&nbsp;nums1 和&nbsp;nums2&nbsp;，长度为&nbsp;n&nbsp;。\n\n数组&nbsp;nums1 和&nbsp;nums2&nbsp;的 差值平方和&nbsp;定义为所有满足&nbsp;0 <= i < n&nbsp;的&nbsp;(nums1[i] - nums2[i])2&nbsp;之和。\n\n同时给你两个正整数&nbsp;k1 和&nbsp;k2&nbsp;。你可以将&nbsp;nums1&nbsp;中的任意元素&nbsp;+1 或者&nbsp;-1&nbsp;至多&nbsp;k1&nbsp;次。类似的，你可以将&nbsp;nums2&nbsp;中的任意元素&nbsp;+1 或者&nbsp;-1&nbsp;至多&nbsp;k2&nbsp;次。\n\n请你返回修改数组&nbsp;nums1&nbsp;至多&nbsp;k1&nbsp;次且修改数组&nbsp;nums2&nbsp;至多 k2&nbsp;次后的最小&nbsp;差值平方和&nbsp;。\n\n注意：你可以将数组中的元素变成&nbsp;负&nbsp;整数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,2,3,4], nums2 = [2,10,20,19], k1 = 0, k2 = 0\n输出：579\n解释：nums1 和 nums2 中的元素不能修改，因为 k1 = 0 和 k2 = 0 。\n差值平方和为：(1 - 2)2 + (2 - 10)2 + (3 - 20)2 + (4 - 19)2&nbsp;= 579 。\n\n示例 2：\n\n输入：nums1 = [1,4,10,12], nums2 = [5,8,6,9], k1 = 1, k2 = 1\n输出：43\n解释：一种得到最小差值平方和的方式为：\n- 将 nums1[0] 增加一次。\n- 将 nums2[2] 增加一次。\n最小差值平方和为：\n(2 - 5)2 + (4 - 8)2 + (10 - 7)2 + (12 - 9)2&nbsp;= 43 。\n注意，也有其他方式可以得到最小差值平方和，但没有得到比 43 更小答案的方案。\n\n&nbsp;\n\n提示：\n\n\tn == nums1.length == nums2.length\n\t1 <= n <= 105\n\t0 <= nums1[i], nums2[i] <= 105\n\t0 <= k1, k2 <= 109",
+  "constraints": [
+    "n == nums1.length == nums2.length",
+    "1 <= n <= 105",
+    "0 <= nums1[i], nums2[i] <= 105",
+    "0 <= k1, k2 <= 109"
+  ]
+}

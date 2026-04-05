@@ -1,0 +1,13 @@
+{
+  "number": "2068",
+  "title_cn": "检查两个字符串是否几乎相等",
+  "title_en": "Check Whether Two Strings are Almost Equivalent",
+  "slug": "check-whether-two-strings-are-almost-equivalent",
+  "difficulty": "Easy",
+  "description": "如果两个字符串 word1&nbsp;和 word2&nbsp;中从 'a'&nbsp;到 'z'&nbsp;每一个字母出现频率之差都 不超过&nbsp;3&nbsp;，那么我们称这两个字符串&nbsp;word1 和&nbsp;word2 几乎相等&nbsp;。\n\n给你两个长度都为&nbsp;n&nbsp;的字符串&nbsp;word1 和&nbsp;word2&nbsp;，如果&nbsp;word1&nbsp;和&nbsp;word2&nbsp;几乎相等&nbsp;，请你返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。\n\n一个字母 x&nbsp;的出现 频率&nbsp;指的是它在字符串中出现的次数。\n\n&nbsp;\n\n示例 1：\n\n输入：word1 = \"aaaa\", word2 = \"bccb\"\n输出：false\n解释：字符串 \"aaaa\" 中有 4 个 'a' ，但是 \"bccb\" 中有 0 个 'a' 。\n两者之差为 4 ，大于上限 3 。\n\n示例 2：\n\n输入：word1 = \"abcdeef\", word2 = \"abaaacc\"\n输出：true\n解释：word1 和 word2 中每个字母出现频率之差至多为 3 ：\n- 'a' 在 word1 中出现了 1 次，在 word2 中出现了 4 次，差为 3 。\n- 'b' 在 word1 中出现了 1 次，在 word2 中出现了 1 次，差为 0 。\n- 'c' 在 word1 中出现了 1 次，在 word2 中出现了 2 次，差为 1 。\n- 'd' 在 word1 中出现了 1 次，在 word2 中出现了 0 次，差为 1 。\n- 'e' 在 word1 中出现了 2 次，在 word2 中出现了 0 次，差为 2 。\n- 'f' 在 word1 中出现了 1 次，在 word2 中出现了 0 次，差为 1 。\n\n示例 3：\n\n输入：word1 = \"cccddabba\", word2 = \"babababab\"\n输出：true\n解释：word1 和 word2 中每个字母出现频率之差至多为 3 ：\n- 'a' 在 word1 中出现了 2 次，在 word2 中出现了 4 次，差为 2 。\n- 'b' 在 word1 中出现了 2 次，在 word2 中出现了 5 次，差为 3 。\n- 'c' 在 word1 中出现了 3 次，在 word2 中出现了 0 次，差为 3 。\n- 'd' 在 word1 中出现了 2 次，在 word2 中出现了 0 次，差为 2 。\n\n&nbsp;\n\n提示：\n\n\tn == word1.length == word2.length\n\t1 <= n <= 100\n\tword1 和&nbsp;word2&nbsp;都只包含小写英文字母。",
+  "constraints": [
+    "n == word1.length == word2.length",
+    "1 <= n <= 100",
+    "word1 和&nbsp;word2&nbsp;都只包含小写英文字母。"
+  ]
+}

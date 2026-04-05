@@ -1,0 +1,12 @@
+{
+  "number": "3597",
+  "title_cn": "分割字符串",
+  "title_en": "Partition String ",
+  "slug": "partition-string",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s，按照以下步骤将其分割为 互不相同的段&nbsp;：\n\n\t从下标&nbsp;0 开始构建一个段。\n\t逐字符扩展当前段，直到该段之前未曾出现过。\n\t只要当前段是唯一的，就将其加入段列表，标记为已经出现过，并从下一个下标开始构建新的段。\n\t重复上述步骤，直到处理完整个字符串 s。\n\n返回字符串数组 segments，其中 segments[i] 表示创建的第 i 段。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"abbccccd\"\n\n输出： [\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]\n\n解释：\n\n\t\t\t下标\n\t\t\t添加后的段\n\t\t\t已经出现过的段\n\t\t\t当前段是否已经出现过？\n\t\t\t新段\n\t\t\t更新后已经出现过的段\n\n\t\t\t0\n\t\t\t\"a\"\n\t\t\t[]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\"]\n\n\t\t\t1\n\t\t\t\"b\"\n\t\t\t[\"a\"]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\"]\n\n\t\t\t2\n\t\t\t\"b\"\n\t\t\t[\"a\", \"b\"]\n\t\t\t是\n\t\t\t\"b\"\n\t\t\t[\"a\", \"b\"]\n\n\t\t\t3\n\t\t\t\"bc\"\n\t\t\t[\"a\", \"b\"]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\"]\n\n\t\t\t4\n\t\t\t\"c\"\n\t\t\t[\"a\", \"b\", \"bc\"]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\n\t\t\t5\n\t\t\t\"c\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\t\t\t是\n\t\t\t\"c\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\n\t\t\t6\n\t\t\t\"cc\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\", \"cc\"]\n\n\t\t\t7\n\t\t\t\"d\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\", \"cc\"]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\", \"cc\", \"d\"]\n\n因此，最终输出为 [\"a\", \"b\", \"bc\", \"c\", \"cc\", \"d\"]。\n\n示例 2：\n\n输入： s = \"aaaa\"\n\n输出： [\"a\",\"aa\"]\n\n解释：\n\n\t\t\t下标\n\t\t\t添加后的段\n\t\t\t已经出现过的段\n\t\t\t当前段是否已经出现过？\n\t\t\t新段\n\t\t\t更新后已经出现过的段\n\n\t\t\t0\n\t\t\t\"a\"\n\t\t\t[]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\"]\n\n\t\t\t1\n\t\t\t\"a\"\n\t\t\t[\"a\"]\n\t\t\t是\n\t\t\t\"a\"\n\t\t\t[\"a\"]\n\n\t\t\t2\n\t\t\t\"aa\"\n\t\t\t[\"a\"]\n\t\t\t否\n\t\t\t\"\"\n\t\t\t[\"a\", \"aa\"]\n\n\t\t\t3\n\t\t\t\"a\"\n\t\t\t[\"a\", \"aa\"]\n\t\t\t是\n\t\t\t\"a\"\n\t\t\t[\"a\", \"aa\"]\n\n因此，最终输出为 [\"a\", \"aa\"]。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅包含小写英文字母。"
+  ]
+}

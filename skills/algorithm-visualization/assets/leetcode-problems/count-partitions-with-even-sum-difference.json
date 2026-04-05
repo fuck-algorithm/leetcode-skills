@@ -1,0 +1,12 @@
+{
+  "number": "3432",
+  "title_cn": "统计元素和差值为偶数的分区方案",
+  "title_en": "Count Partitions with Even Sum Difference",
+  "slug": "count-partitions-with-even-sum-difference",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;。\n\n分区&nbsp;是指将数组按照下标&nbsp;i&nbsp;（0 <= i < n - 1）划分成两个 非空 子数组，其中：\n\n\t左子数组包含区间&nbsp;[0, i]&nbsp;内的所有下标。\n\t右子数组包含区间&nbsp;[i + 1, n - 1]&nbsp;内的所有下标。\n\n对左子数组和右子数组先求元素 和 再做 差 ，统计并返回差值为 偶数 的 分区 方案数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [10,10,3,7,6]\n\n输出：4\n\n解释：\n\n共有 4 个满足题意的分区方案：\n\n\t[10]、[10, 3, 7, 6]&nbsp;元素和的差值为&nbsp;10 - 26 = -16&nbsp;，是偶数。\n\t[10, 10]、[3, 7, 6] 元素和的差值为&nbsp;20 - 16 = 4，是偶数。\n\t[10, 10, 3]、[7, 6] 元素和的差值为&nbsp;23 - 13 = 10，是偶数。\n\t[10, 10, 3, 7]、[6] 元素和的差值为&nbsp;30 - 6 = 24，是偶数。\n\n示例 2：\n\n输入：nums = [1,2,2]\n\n输出：0\n\n解释：\n\n不存在元素和的差值为偶数的分区方案。\n\n示例 3：\n\n输入：nums = [2,4,6,8]\n\n输出：3\n\n解释：\n\n所有分区方案都满足元素和的差值为偶数。\n\n&nbsp;\n\n提示：\n\n\t2 <= n == nums.length <= 100\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "2 <= n == nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ]
+}

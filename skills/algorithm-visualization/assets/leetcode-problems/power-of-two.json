@@ -1,0 +1,11 @@
+{
+  "number": "231",
+  "title_cn": "2 的幂",
+  "title_en": "Power of Two",
+  "slug": "power-of-two",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n，请你判断该整数是否是 2 的幂次方。如果是，返回 true ；否则，返回 false 。\n\n如果存在一个整数 x 使得&nbsp;n == 2x ，则认为 n 是 2 的幂次方。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1\n输出：true\n解释：20 = 1\n\n示例 2：\n\n输入：n = 16\n输出：true\n解释：24 = 16\n\n示例 3：\n\n输入：n = 3\n输出：false\n\n&nbsp;\n\n提示：\n\n\t-231 <= n <= 231 - 1\n\n&nbsp;\n\n进阶：你能够不使用循环/递归解决此问题吗？",
+  "constraints": [
+    "-231 <= n <= 231 - 1"
+  ]
+}

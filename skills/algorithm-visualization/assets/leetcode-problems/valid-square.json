@@ -1,0 +1,12 @@
+{
+  "number": "593",
+  "title_cn": "有效的正方形",
+  "title_en": "Valid Square",
+  "slug": "valid-square",
+  "difficulty": "Medium",
+  "description": "给定2D空间中四个点的坐标&nbsp;p1,&nbsp;p2,&nbsp;p3&nbsp;和&nbsp;p4，如果这四个点构成一个正方形，则返回 true 。\n\n点的坐标&nbsp;pi 表示为 [xi, yi] 。 输入没有任何顺序 。\n\n一个 有效的正方形 有四条等边和四个等角(90度角)。\n\n&nbsp;\n\n示例 1:\n\n输入: p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]\n输出: true\n\n示例 2:\n\n输入：p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,12]\n输出：false\n\n示例 3:\n\n输入：p1 = [1,0], p2 = [-1,0], p3 = [0,1], p4 = [0,-1]\n输出：true\n\n&nbsp;\n\n提示:\n\n\tp1.length == p2.length == p3.length == p4.length == 2\n\t-104&nbsp;<= xi, yi&nbsp;<= 104",
+  "constraints": [
+    "p1.length == p2.length == p3.length == p4.length == 2",
+    "-104&nbsp;<= xi, yi&nbsp;<= 104"
+  ]
+}

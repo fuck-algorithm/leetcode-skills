@@ -1,0 +1,12 @@
+{
+  "number": "229",
+  "title_cn": "多数元素 II",
+  "title_en": "Majority Element II",
+  "slug": "majority-element-ii",
+  "difficulty": "Medium",
+  "description": "给定一个大小为&nbsp;n&nbsp;的整数数组，找出其中所有出现超过&nbsp;⌊ n/3 ⌋&nbsp;次的元素。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：nums = [3,2,3]\n输出：[3]\n\n示例 2：\n\n输入：nums = [1]\n输出：[1]\n\n示例 3：\n\n输入：nums = [1,2]\n输出：[1,2]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 5 * 104\n\t-109 <= nums[i] <= 109\n\n&nbsp;\n\n进阶：尝试设计时间复杂度为 O(n)、空间复杂度为 O(1)的算法解决此问题。",
+  "constraints": [
+    "1 <= nums.length <= 5 * 104",
+    "-109 <= nums[i] <= 109"
+  ]
+}

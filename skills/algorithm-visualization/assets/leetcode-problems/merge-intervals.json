@@ -1,0 +1,13 @@
+{
+  "number": "56",
+  "title_cn": "合并区间",
+  "title_en": "Merge Intervals",
+  "slug": "merge-intervals",
+  "difficulty": "Medium",
+  "description": "以数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。请你合并所有重叠的区间，并返回&nbsp;一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：intervals = [[1,3],[2,6],[8,10],[15,18]]\n输出：[[1,6],[8,10],[15,18]]\n解释：区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].\n\n示例&nbsp;2：\n\n输入：intervals = [[1,4],[4,5]]\n输出：[[1,5]]\n解释：区间 [1,4] 和 [4,5] 可被视为重叠区间。\n\n示例 3：\n\n输入：intervals = [[4,7],[1,4]]\n输出：[[1,7]]\n解释：区间 [1,4] 和 [4,7] 可被视为重叠区间。\n\n&nbsp;\n\n提示：\n\n\t1 <= intervals.length <= 104\n\tintervals[i].length == 2\n\t0 <= starti <= endi <= 104",
+  "constraints": [
+    "1 <= intervals.length <= 104",
+    "intervals[i].length == 2",
+    "0 <= starti <= endi <= 104"
+  ]
+}

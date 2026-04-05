@@ -1,0 +1,13 @@
+{
+  "number": "LCR 095",
+  "title_cn": "最长公共子序列",
+  "title_en": "最长公共子序列",
+  "slug": "qJnOS7",
+  "difficulty": "Medium",
+  "description": "给定两个字符串&nbsp;text1 和&nbsp;text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。\n\n一个字符串的&nbsp;子序列&nbsp;是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。\n\n\t例如，\"ace\" 是 \"abcde\" 的子序列，但 \"aec\" 不是 \"abcde\" 的子序列。\n\n两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。\n\n&nbsp;\n\n示例 1：\n\n输入：text1 = \"abcde\", text2 = \"ace\" \n输出：3  \n解释：最长公共子序列是 \"ace\" ，它的长度为 3 。\n\n示例 2：\n\n输入：text1 = \"abc\", text2 = \"abc\"\n输出：3\n解释：最长公共子序列是 \"abc\" ，它的长度为 3 。\n\n示例 3：\n\n输入：text1 = \"abc\", text2 = \"def\"\n输出：0\n解释：两个字符串没有公共子序列，返回 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= text1.length, text2.length <= 1000\n\ttext1 和&nbsp;text2 仅由小写英文字符组成。\n\n&nbsp;\n\n注意：本题与主站 1143&nbsp;题相同：&nbsp;https://leetcode.cn/problems/longest-common-subsequence/",
+  "constraints": [
+    "1 <= text1.length, text2.length <= 1000",
+    "text1 和&nbsp;text2 仅由小写英文字符组成。",
+    "注意：本题与主站 1143&nbsp;题相同：&nbsp;https://leetcode.cn/problems/longest-common-subsequence/"
+  ]
+}

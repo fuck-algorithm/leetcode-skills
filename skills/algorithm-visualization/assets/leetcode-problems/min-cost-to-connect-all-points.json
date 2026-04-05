@@ -1,0 +1,13 @@
+{
+  "number": "1584",
+  "title_cn": "连接所有点的最小费用",
+  "title_en": "Min Cost to Connect All Points",
+  "slug": "min-cost-to-connect-all-points",
+  "difficulty": "Medium",
+  "description": "给你一个points&nbsp;数组，表示 2D 平面上的一些点，其中&nbsp;points[i] = [xi, yi]&nbsp;。\n\n连接点&nbsp;[xi, yi] 和点&nbsp;[xj, yj]&nbsp;的费用为它们之间的 曼哈顿距离&nbsp;：|xi - xj| + |yi - yj|&nbsp;，其中&nbsp;|val|&nbsp;表示&nbsp;val&nbsp;的绝对值。\n\n请你返回将所有点连接的最小总费用。只有任意两点之间 有且仅有&nbsp;一条简单路径时，才认为所有点都已连接。\n\n&nbsp;\n\n示例 1：\n\n输入：points = [[0,0],[2,2],[3,10],[5,2],[7,0]]\n输出：20\n解释：\n\n我们可以按照上图所示连接所有点得到最小总费用，总费用为 20 。\n注意到任意两个点之间只有唯一一条路径互相到达。\n\n示例 2：\n\n输入：points = [[3,12],[-2,5],[-4,1]]\n输出：18\n\n示例 3：\n\n输入：points = [[0,0],[1,1],[1,0],[-1,1]]\n输出：4\n\n示例 4：\n\n输入：points = [[-1000000,-1000000],[1000000,1000000]]\n输出：4000000\n\n示例 5：\n\n输入：points = [[0,0]]\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= points.length <= 1000\n\t-106&nbsp;<= xi, yi <= 106\n\t所有点&nbsp;(xi, yi)&nbsp;两两不同。",
+  "constraints": [
+    "1 <= points.length <= 1000",
+    "-106&nbsp;<= xi, yi <= 106",
+    "所有点&nbsp;(xi, yi)&nbsp;两两不同。"
+  ]
+}

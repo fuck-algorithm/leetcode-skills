@@ -1,0 +1,11 @@
+{
+  "number": "3697",
+  "title_cn": "计算十进制表示",
+  "title_en": "Compute Decimal Representation",
+  "slug": "compute-decimal-representation",
+  "difficulty": "Easy",
+  "description": "给你一个&nbsp;正整数&nbsp;n。\n\n如果一个正整数可以表示为 1 到 9 的单个数字和 10 的非负整数次幂的乘积，则称这个整数是一个&nbsp;10 进制分量。例如，500、30 和 7 是&nbsp;10 进制分量&nbsp;，而 537、102 和 11 则不是。\n\n请将&nbsp;n&nbsp;表示为若干&nbsp;仅由&nbsp;10 进制分量组成的和，且使用的 10 进制分量个数&nbsp;最少&nbsp;。\n\n返回一个包含这些&nbsp;10 进制分量 的数组，并按分量大小&nbsp;降序&nbsp;排列。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 537\n\n输出：[500,30,7]\n\n解释：\n\n我们可以将 537 表示为500 + 30 + 7。无法用少于 3 个 10 进制分量表示 537。\n\n示例 2：\n\n输入：n = 102\n\n输出：[100,2]\n\n解释：\n\n我们可以将 102 表示为100 + 2。102 不是一个 10 进制分量，因此需要 2 个 10 进制分量。\n\n示例 3：\n\n输入：n = 6\n\n输出：[6]\n\n解释：\n\n6 是一个 10 进制分量。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 109",
+  "constraints": [
+    "1 <= n <= 109"
+  ]
+}

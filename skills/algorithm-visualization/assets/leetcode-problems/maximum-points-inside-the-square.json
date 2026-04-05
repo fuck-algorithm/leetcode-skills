@@ -1,0 +1,16 @@
+{
+  "number": "3143",
+  "title_cn": "正方形中的最多点数",
+  "title_en": "Maximum Points Inside the Square",
+  "slug": "maximum-points-inside-the-square",
+  "difficulty": "Medium",
+  "description": "给你一个二维数组&nbsp;points&nbsp;和一个字符串&nbsp;s&nbsp;，其中&nbsp;points[i]&nbsp;表示第 i&nbsp;个点的坐标，s[i]&nbsp;表示第 i&nbsp;个点的 标签&nbsp;。\n\n如果一个正方形的中心在&nbsp;(0, 0)&nbsp;，所有边都平行于坐标轴，且正方形内&nbsp;不&nbsp;存在标签相同的两个点，那么我们称这个正方形是&nbsp;合法&nbsp;的。\n\n请你返回 合法&nbsp;正方形中可以包含的 最多&nbsp;点数。\n\n注意：\n\n\t如果一个点位于正方形的边上或者在边以内，则认为该点位于正方形内。\n\t正方形的边长可以为零。\n\n&nbsp;\n\n示例 1：\n\n输入：points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = \"abdca\"\n\n输出：2\n\n解释：\n\n边长为 4 的正方形包含两个点&nbsp;points[0] 和&nbsp;points[1]&nbsp;。\n\n示例 2：\n\n输入：points = [[1,1],[-2,-2],[-2,2]], s = \"abb\"\n\n输出：1\n\n解释：\n\n边长为 2 的正方形包含 1 个点&nbsp;points[0]&nbsp;。\n\n示例 3：\n\n输入：points = [[1,1],[-1,-1],[2,-2]], s = \"ccd\"\n\n输出：0\n\n解释：\n\n任何正方形都无法只包含&nbsp;points[0] 和&nbsp;points[1]&nbsp;中的一个点，所以合法正方形中都不包含任何点。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, points.length <= 105\n\tpoints[i].length == 2\n\t-109 <= points[i][0], points[i][1] <= 109\n\ts.length == points.length\n\tpoints&nbsp;中的点坐标互不相同。\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length, points.length <= 105",
+    "points[i].length == 2",
+    "-109 <= points[i][0], points[i][1] <= 109",
+    "s.length == points.length",
+    "points&nbsp;中的点坐标互不相同。",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

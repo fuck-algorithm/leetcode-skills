@@ -1,0 +1,12 @@
+{
+  "number": "1305",
+  "title_cn": "两棵二叉搜索树中的所有元素",
+  "title_en": "All Elements in Two Binary Search Trees",
+  "slug": "all-elements-in-two-binary-search-trees",
+  "difficulty": "Medium",
+  "description": "给你&nbsp;root1 和 root2&nbsp;这两棵二叉搜索树。请你返回一个列表，其中包含&nbsp;两棵树&nbsp;中的所有整数并按 升序 排序。.\n\n&nbsp;\n\n示例 1：\n\n输入：root1 = [2,1,4], root2 = [1,0,3]\n输出：[0,1,1,2,3,4]\n\n示例 2：\n\n输入：root1 = [1,null,8], root2 = [8,1]\n输出：[1,1,8,8]\n\n&nbsp;\n\n提示：\n\n\t每棵树的节点数在&nbsp;[0, 5000] 范围内\n\t-105&nbsp;<= Node.val <= 105",
+  "constraints": [
+    "每棵树的节点数在&nbsp;[0, 5000] 范围内",
+    "-105&nbsp;<= Node.val <= 105"
+  ]
+}

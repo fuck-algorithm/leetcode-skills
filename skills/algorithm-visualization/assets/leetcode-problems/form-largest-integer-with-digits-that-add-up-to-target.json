@@ -1,0 +1,13 @@
+{
+  "number": "1449",
+  "title_cn": "数位成本和为目标值的最大数字",
+  "title_en": "Form Largest Integer With Digits That Add up to Target",
+  "slug": "form-largest-integer-with-digits-that-add-up-to-target",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 cost 和一个整数 target 。请你返回满足如下规则可以得到的 最大 整数：\n\n\t给当前结果添加一个数位（i + 1）的成本为 cost[i] （cost 数组下标从 0 开始）。\n\t总成本必须恰好等于 target 。\n\t添加的数位中没有数字 0 。\n\n由于答案可能会很大，请你以字符串形式返回。\n\n如果按照上述要求无法得到任何整数，请你返回 \"0\" 。\n\n示例 1：\n\n输入：cost = [4,3,2,5,6,7,2,5,5], target = 9\n输出：\"7772\"\n解释：添加数位 '7' 的成本为 2 ，添加数位 '2' 的成本为 3 。所以 \"7772\" 的代价为 2*3+ 3*1 = 9 。 \"977\" 也是满足要求的数字，但 \"7772\" 是较大的数字。\n 数字     成本\n  1  ->   4\n  2  ->   3\n  3  ->   2\n  4  ->   5\n  5  ->   6\n  6  ->   7\n  7  ->   2\n  8  ->   5\n  9  ->   5\n\n示例 2：\n\n输入：cost = [7,6,5,5,5,6,8,7,8], target = 12\n输出：\"85\"\n解释：添加数位 '8' 的成本是 7 ，添加数位 '5' 的成本是 5 。\"85\" 的成本为 7 + 5 = 12 。\n\n示例 3：\n\n输入：cost = [2,4,6,2,4,6,4,4,4], target = 5\n输出：\"0\"\n解释：总成本是 target 的条件下，无法生成任何整数。\n\n示例 4：\n\n输入：cost = [6,10,15,40,40,40,40,40,40], target = 47\n输出：\"32211\"\n\n提示：\n\n\tcost.length == 9\n\t1 \n\t1",
+  "constraints": [
+    "cost.length == 9",
+    "1",
+    "1"
+  ]
+}

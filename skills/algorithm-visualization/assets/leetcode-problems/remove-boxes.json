@@ -1,0 +1,12 @@
+{
+  "number": "546",
+  "title_cn": "移除盒子",
+  "title_en": "Remove Boxes",
+  "slug": "remove-boxes",
+  "difficulty": "Hard",
+  "description": "给出一些不同颜色的盒子&nbsp;boxes&nbsp;，盒子的颜色由不同的正数表示。\n\n你将经过若干轮操作去去掉盒子，直到所有的盒子都去掉为止。每一轮你可以移除具有相同颜色的连续 k 个盒子（k&nbsp;>= 1），这样一轮之后你将得到 k * k 个积分。\n\n返回 你能获得的最大积分和&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：boxes = [1,3,2,2,2,3,4,3,1]\n输出：23\n解释：\n[1, 3, 2, 2, 2, 3, 4, 3, 1] \n----> [1, 3, 3, 4, 3, 1] (3*3=9 分) \n----> [1, 3, 3, 3, 1] (1*1=1 分) \n----> [1, 1] (3*3=9 分) \n----> [] (2*2=4 分)\n\n示例 2：\n\n输入：boxes = [1,1,1]\n输出：9\n\n示例 3：\n\n输入：boxes = [1]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= boxes.length <= 100\n\t1 <= boxes[i]&nbsp;<= 100",
+  "constraints": [
+    "1 <= boxes.length <= 100",
+    "1 <= boxes[i]&nbsp;<= 100"
+  ]
+}

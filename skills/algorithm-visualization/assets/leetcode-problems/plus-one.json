@@ -1,0 +1,13 @@
+{
+  "number": "66",
+  "title_cn": "加一",
+  "title_en": "Plus One",
+  "slug": "plus-one",
+  "difficulty": "Easy",
+  "description": "给定一个表示 大整数 的整数数组 digits，其中 digits[i] 是整数的第 i 位数字。这些数字按从左到右，从最高位到最低位排列。这个大整数不包含任何前导 0。\n\n将大整数加 1，并返回结果的数字数组。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：digits = [1,2,3]\n输出：[1,2,4]\n解释：输入数组表示数字 123。\n加 1 后得到 123 + 1 = 124。\n因此，结果应该是 [1,2,4]。\n\n示例&nbsp;2：\n\n输入：digits = [4,3,2,1]\n输出：[4,3,2,2]\n解释：输入数组表示数字 4321。\n加 1 后得到 4321 + 1 = 4322。\n因此，结果应该是 [4,3,2,2]。\n\n示例 3：\n\n输入：digits = [9]\n输出：[1,0]\n解释：输入数组表示数字 9。\n加 1 得到了 9 + 1 = 10。\n因此，结果应该是 [1,0]。\n\n&nbsp;\n\n提示：\n\n\t1 <= digits.length <= 100\n\t0 <= digits[i] <= 9\n\tdigits&nbsp;不包含任何前导 0。",
+  "constraints": [
+    "1 <= digits.length <= 100",
+    "0 <= digits[i] <= 9",
+    "digits&nbsp;不包含任何前导 0。"
+  ]
+}

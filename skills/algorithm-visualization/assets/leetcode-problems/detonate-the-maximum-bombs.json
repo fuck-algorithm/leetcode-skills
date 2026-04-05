@@ -1,0 +1,13 @@
+{
+  "number": "2101",
+  "title_cn": "引爆最多的炸弹",
+  "title_en": "Detonate the Maximum Bombs",
+  "slug": "detonate-the-maximum-bombs",
+  "difficulty": "Medium",
+  "description": "给你一个炸弹列表。一个炸弹的 爆炸范围&nbsp;定义为以炸弹为圆心的一个圆。\n\n炸弹用一个下标从 0&nbsp;开始的二维整数数组&nbsp;bombs&nbsp;表示，其中&nbsp;bombs[i] = [xi, yi, ri]&nbsp;。xi 和&nbsp;yi&nbsp;表示第 i&nbsp;个炸弹的 X 和 Y 坐标，ri&nbsp;表示爆炸范围的 半径&nbsp;。\n\n你需要选择引爆 一个&nbsp;炸弹。当这个炸弹被引爆时，所有 在它爆炸范围内的炸弹都会被引爆，这些炸弹会进一步将它们爆炸范围内的其他炸弹引爆。\n\n给你数组&nbsp;bombs&nbsp;，请你返回在引爆&nbsp;一个&nbsp;炸弹的前提下，最多&nbsp;能引爆的炸弹数目。\n\n&nbsp;\n\n示例 1：\n\n输入：bombs = [[2,1,3],[6,1,4]]\n输出：2\n解释：\n上图展示了 2 个炸弹的位置和爆炸范围。\n如果我们引爆左边的炸弹，右边的炸弹不会被影响。\n但如果我们引爆右边的炸弹，两个炸弹都会爆炸。\n所以最多能引爆的炸弹数目是 max(1, 2) = 2 。\n\n示例 2：\n\n输入：bombs = [[1,1,5],[10,10,5]]\n输出：1\n解释：\n引爆任意一个炸弹都不会引爆另一个炸弹。所以最多能引爆的炸弹数目为 1 。\n\n示例 3：\n\n输入：bombs = [[1,2,3],[2,3,1],[3,4,2],[4,5,3],[5,6,4]]\n输出：5\n解释：\n最佳引爆炸弹为炸弹 0 ，因为：\n- 炸弹 0 引爆炸弹 1 和 2 。红色圆表示炸弹 0 的爆炸范围。\n- 炸弹 2 引爆炸弹 3 。蓝色圆表示炸弹 2 的爆炸范围。\n- 炸弹 3 引爆炸弹 4 。绿色圆表示炸弹 3 的爆炸范围。\n所以总共有 5 个炸弹被引爆。\n\n&nbsp;\n\n提示：\n\n\t1 <= bombs.length&nbsp;<= 100\n\tbombs[i].length == 3\n\t1 <= xi, yi, ri <= 105",
+  "constraints": [
+    "1 <= bombs.length&nbsp;<= 100",
+    "bombs[i].length == 3",
+    "1 <= xi, yi, ri <= 105"
+  ]
+}

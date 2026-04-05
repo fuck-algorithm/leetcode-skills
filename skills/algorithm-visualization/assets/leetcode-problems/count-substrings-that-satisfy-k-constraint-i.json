@@ -1,0 +1,13 @@
+{
+  "number": "3258",
+  "title_cn": "统计满足 K 约束的子字符串数量 I",
+  "title_en": "Count Substrings That Satisfy K-Constraint I",
+  "slug": "count-substrings-that-satisfy-k-constraint-i",
+  "difficulty": "Easy",
+  "description": "给你一个 二进制 字符串 s 和一个整数 k。\n\n如果一个 二进制字符串 满足以下任一条件，则认为该字符串满足 k 约束：\n\n\t字符串中 0 的数量最多为 k。\n\t字符串中 1 的数量最多为 k。\n\n返回一个整数，表示 s 的所有满足 k 约束 的子字符串的数量。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"10101\", k = 1\n\n输出：12\n\n解释：\n\ns 的所有子字符串中，除了 \"1010\"、\"10101\" 和 \"0101\" 外，其余子字符串都满足 k 约束。\n\n示例 2：\n\n输入：s = \"1010101\", k = 2\n\n输出：25\n\n解释：\n\ns 的所有子字符串中，除了长度大于 5 的子字符串外，其余子字符串都满足 k 约束。\n\n示例 3：\n\n输入：s = \"11111\", k = 1\n\n输出：15\n\n解释：\n\ns 的所有子字符串都满足 k 约束。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 50\n\t1 <= k <= s.length\n\ts[i] 是 '0' 或 '1'。",
+  "constraints": [
+    "1 <= s.length <= 50",
+    "1 <= k <= s.length",
+    "s[i] 是 '0' 或 '1'。"
+  ]
+}

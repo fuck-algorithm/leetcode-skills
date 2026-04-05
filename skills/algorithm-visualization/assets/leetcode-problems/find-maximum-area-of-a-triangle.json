@@ -1,0 +1,13 @@
+{
+  "number": "3588",
+  "title_cn": "找到最大三角形面积",
+  "title_en": "Find Maximum Area of a Triangle",
+  "slug": "find-maximum-area-of-a-triangle",
+  "difficulty": "Medium",
+  "description": "给你一个二维数组 coords，大小为 n x 2，表示一个无限笛卡尔平面上 n 个点的坐标。\n\n找出一个 最大&nbsp;三角形的 两倍&nbsp;面积，其中三角形的三个顶点来自 coords 中的任意三个点，并且该三角形至少有一条边与 x 轴或 y 轴平行。严格地说，如果该三角形的最大面积为 A，则返回 2 * A。\n\n如果不存在这样的三角形，返回 -1。\n\n注意，三角形的面积 不能 为零。\n\n&nbsp;\n\n示例 1：\n\n输入： coords = [[1,1],[1,2],[3,2],[3,3]]\n\n输出： 2\n\n解释：\n\n图中的三角形的底边为 1，高为 2。因此，它的面积为 1/2 * 底边 * 高 = 1。\n\n示例 2：\n\n输入： coords = [[1,1],[2,2],[3,3]]\n\n输出： -1\n\n解释：\n\n唯一可能的三角形的顶点是 (1, 1)、(2, 2) 和 (3, 3)。它的任意边都不与 x 轴或 y 轴平行。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == coords.length <= 105\n\t1 <= coords[i][0], coords[i][1] <= 106\n\t所有 coords[i] 都是 唯一 的。",
+  "constraints": [
+    "1 <= n == coords.length <= 105",
+    "1 <= coords[i][0], coords[i][1] <= 106",
+    "所有 coords[i] 都是 唯一 的。"
+  ]
+}

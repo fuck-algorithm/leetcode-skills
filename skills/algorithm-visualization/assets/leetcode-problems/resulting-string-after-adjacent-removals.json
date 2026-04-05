@@ -1,0 +1,12 @@
+{
+  "number": "3561",
+  "title_cn": "移除相邻字符",
+  "title_en": "Resulting String After Adjacent Removals",
+  "slug": "resulting-string-after-adjacent-removals",
+  "difficulty": "Medium",
+  "description": "给你一个由小写英文字母组成的字符串 s。\n\n你&nbsp;必须&nbsp;在字符串 s 中至少存在两个&nbsp;连续&nbsp;字符时，反复执行以下操作：\n\n\t移除字符串中&nbsp;最左边&nbsp;的一对按照字母表&nbsp;连续&nbsp;的相邻字符（无论是按顺序还是逆序，例如 'a' 和 'b'，或 'b' 和 'a'）。\n\t将剩余字符向左移动以填补空隙。\n\n当无法再执行任何操作时，返回最终的字符串。\n\n注意：字母表是循环的，因此 'a' 和 'z' 也视为连续。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"abc\"\n\n输出: \"c\"\n\n解释:\n\n\t从字符串中移除 \"ab\"，剩下 \"c\"。\n\t无法进行进一步操作。因此，所有可能移除操作后的最终字符串为 \"c\"。\n\n示例 2：\n\n输入: s = \"adcb\"\n\n输出: \"\"\n\n解释:\n\n\t从字符串中移除 \"dc\"，剩下 \"ab\"。\n\t从字符串中移除 \"ab\"，剩下 \"\"。\n\t无法进行进一步操作。因此，所有可能移除操作后的最终字符串为 \"\"。\n\n示例 3：\n\n输入: s = \"zadb\"\n\n输出: \"db\"\n\n解释:\n\n\t从字符串中移除 \"za\"，剩下 \"db\"。\n\t无法进行进一步操作。因此，所有可能移除操作后的最终字符串为 \"db\"。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 105\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由小写英文字母组成。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1009",
+  "title_cn": "十进制整数的反码",
+  "title_en": "Complement of Base 10 Integer",
+  "slug": "complement-of-base-10-integer",
+  "difficulty": "Easy",
+  "description": "每个非负整数&nbsp;N&nbsp;都有其二进制表示。例如，&nbsp;5&nbsp;可以被表示为二进制&nbsp;\"101\"，11 可以用二进制&nbsp;\"1011\"&nbsp;表示，依此类推。注意，除&nbsp;N = 0&nbsp;外，任何二进制表示中都不含前导零。\n\n二进制的反码表示是将每个&nbsp;1&nbsp;改为&nbsp;0&nbsp;且每个&nbsp;0&nbsp;变为&nbsp;1。例如，二进制数&nbsp;\"101\"&nbsp;的二进制反码为&nbsp;\"010\"。\n\n给你一个十进制数&nbsp;N，请你返回其二进制表示的反码所对应的十进制整数。\n\n&nbsp;\n\n示例 1：\n\n输入：5\n输出：2\n解释：5 的二进制表示为 \"101\"，其二进制反码为 \"010\"，也就是十进制中的 2 。\n\n示例 2：\n\n输入：7\n输出：0\n解释：7 的二进制表示为 \"111\"，其二进制反码为 \"000\"，也就是十进制中的 0 。\n\n示例 3：\n\n输入：10\n输出：5\n解释：10 的二进制表示为 \"1010\"，其二进制反码为 \"0101\"，也就是十进制中的 5 。\n\n&nbsp;\n\n提示：\n\n\t0 <= N < 10^9\n\t本题与 476：https://leetcode.cn/problems/number-complement/ 相同",
+  "constraints": [
+    "0 <= N < 10^9",
+    "本题与 476：https://leetcode.cn/problems/number-complement/ 相同"
+  ]
+}

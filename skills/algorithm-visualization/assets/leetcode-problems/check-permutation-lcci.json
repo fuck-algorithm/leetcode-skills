@@ -1,0 +1,9 @@
+{
+  "number": "面试题 01.02",
+  "title_cn": "判定是否互为字符重排",
+  "title_en": "Check Permutation LCCI",
+  "slug": "check-permutation-lcci",
+  "difficulty": "Easy",
+  "description": "给定两个由小写字母组成的字符串 s1 和 s2，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。\n\n示例 1：\n\n输入: s1 = \"abc\", s2 = \"bca\"\n输出: true \n\n示例 2：\n\n输入: s1 = \"abc\", s2 = \"bad\"\n输出: false\n\n说明：\n\n\t0 <= len(s1) <= 100 \n\t0 <= len(s2) <= 100",
+  "constraints": []
+}

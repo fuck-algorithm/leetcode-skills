@@ -1,0 +1,11 @@
+{
+  "number": "3754",
+  "title_cn": "连接非零数字并乘以其数字和 I",
+  "title_en": "Concatenate Non-Zero Digits and Multiply by Sum I",
+  "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n。\n\n将 n 中所有的&nbsp;非零数字&nbsp;按照它们的原始顺序连接起来，形成一个新的整数 x。如果不存在&nbsp;非零数字&nbsp;，则 x = 0。\n\nsum 为 x 中所有数字的&nbsp;数字和&nbsp;。\n\n返回一个整数，表示 x * sum 的值。\n\n&nbsp;\n\n示例 1：\n\n输入： n = 10203004\n\n输出： 12340\n\n解释：\n\n\t非零数字是 1、2、3 和 4。因此，x = 1234。\n\t数字和为 sum = 1 + 2 + 3 + 4 = 10。\n\t因此，答案是 x * sum = 1234 * 10 = 12340。\n\n示例 2：\n\n输入： n = 1000\n\n输出： 1\n\n解释：\n\n\t非零数字是 1，因此 x = 1 且 sum = 1。\n\t因此，答案是 x * sum = 1 * 1 = 1。\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 109",
+  "constraints": [
+    "0 <= n <= 109"
+  ]
+}

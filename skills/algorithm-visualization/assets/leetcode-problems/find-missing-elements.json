@@ -1,0 +1,12 @@
+{
+  "number": "3731",
+  "title_cn": "找出缺失的元素",
+  "title_en": "Find Missing Elements",
+  "slug": "find-missing-elements",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums ，数组由若干&nbsp;互不相同 的整数组成。\n\n数组 nums 原本包含了某个范围内的&nbsp;所有整数&nbsp;。但现在，其中可能 缺失 部分整数。\n\n该范围内的&nbsp;最小&nbsp;整数和&nbsp;最大&nbsp;整数仍然存在于 nums 中。\n\n返回一个&nbsp;有序&nbsp;列表，包含该范围内缺失的所有整数，并&nbsp;按从小到大排序。如果没有缺失的整数，返回一个&nbsp;空&nbsp;列表。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,4,2,5]\n\n输出： [3]\n\n解释：\n\n最小整数为 1，最大整数为 5，因此完整的范围应为 [1,2,3,4,5]。其中只有 3 缺失。\n\n示例 2：\n\n输入： nums = [7,8,6,9]\n\n输出： []\n\n解释：\n\n最小整数为 6，最大整数为 9，因此完整的范围为 [6,7,8,9]。所有整数均已存在，因此没有缺失的整数。\n\n示例 3：\n\n输入： nums = [5,1]\n\n输出： [2,3,4]\n\n解释：\n\n最小整数为 1，最大整数为 5，因此完整的范围应为 [1,2,3,4,5]。缺失的整数为 2、3 和 4。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 100\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "2 <= nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ]
+}

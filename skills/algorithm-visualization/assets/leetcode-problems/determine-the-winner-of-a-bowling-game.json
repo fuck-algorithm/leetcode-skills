@@ -1,0 +1,13 @@
+{
+  "number": "2660",
+  "title_cn": "保龄球游戏的获胜者",
+  "title_en": "Determine the Winner of a Bowling Game",
+  "slug": "determine-the-winner-of-a-bowling-game",
+  "difficulty": "Easy",
+  "description": "给你两个下标从 0 开始的整数数组 player1 和 player2 ，分别表示玩家 1 和玩家 2 击中的瓶数。\n\n保龄球比赛由 n 轮组成，每轮的瓶数恰好为 10 。\n\n假设玩家在第 i 轮中击中&nbsp;xi 个瓶子。玩家第 i 轮的价值为：\n\n\t如果玩家在该轮的前两轮的任何一轮中击中了 10 个瓶子，则为 2xi 。\n\t否则，为&nbsp;xi 。\n\n玩家的得分是其 n 轮价值的总和。\n\n返回\n\n\t如果玩家 1 的得分高于玩家 2 的得分，则为 1 ；\n\t如果玩家 2 的得分高于玩家 1 的得分，则为 2 ；\n\t如果平局，则为 0 。\n\n&nbsp;\n\n示例 1：\n\n输入：player1 = [5,10,3,2], player2 = [6,5,7,3]\n\n输出：1\n\n解释：\n\n玩家 1 的分数为 5 + 10 + 2*3 + 2*2 = 25。\n\n玩家 2&nbsp;的分数为 6 + 5 + 7 + 3 = 21。\n\n示例 2：\n\n输入：player1 = [3,5,7,6], player2 = [8,10,10,2]\n\n输出：2\n\n解释：\n\n玩家 1 的分数为 3 + 5 + 7 + 6 = 21。\n\n玩家 2&nbsp;的分数为 8 + 10 + 2*10 + 2*2 = 42。\n\n示例 3：\n\n输入：player1 = [2,3], player2 = [4,1]\n\n输出：0\n\n解释：\n\n玩家 1 的分数为&nbsp;2 + 3 = 5。\n\n玩家 2 的分数为&nbsp;4 + 1 = 5。\n\n示例 4：\n\n输入：player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1]\n\n输出：2\n\n解释：\n\n玩家 1 的分数为 1 + 1 + 1 + 10 + 2*10 + 2*10 + 2*10 = 73。\n\n玩家 2 的分数为 is 10 + 2*10 + 2*10 + 2*10 + 2*1 + 2*1 + 1 = 75。\n\n&nbsp;\n\n提示：\n\n\tn == player1.length == player2.length\n\t1 <= n <= 1000\n\t0 <= player1[i], player2[i] <= 10",
+  "constraints": [
+    "n == player1.length == player2.length",
+    "1 <= n <= 1000",
+    "0 <= player1[i], player2[i] <= 10"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2816",
+  "title_cn": "翻倍以链表形式表示的数字",
+  "title_en": "Double a Number Represented as a Linked List",
+  "slug": "double-a-number-represented-as-a-linked-list",
+  "difficulty": "Medium",
+  "description": "给你一个 非空 链表的头节点 head ，表示一个不含前导零的非负数整数。\n\n将链表 翻倍 后，返回头节点 head 。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,8,9]\n输出：[3,7,8]\n解释：上图中给出的链表，表示数字 189 。返回的链表表示数字 189 * 2 = 378 。\n\n示例 2：\n\n输入：head = [9,9,9]\n输出：[1,9,9,8]\n解释：上图中给出的链表，表示数字 999 。返回的链表表示数字 999 * 2 = 1998 。\n\n&nbsp;\n\n提示：\n\n\t链表中节点的数目在范围 [1, 104] 内\n\t0 <= Node.val <= 9\n\t生成的输入满足：链表表示一个不含前导零的数字，除了数字 0 本身。",
+  "constraints": [
+    "链表中节点的数目在范围 [1, 104] 内",
+    "0 <= Node.val <= 9",
+    "生成的输入满足：链表表示一个不含前导零的数字，除了数字 0 本身。"
+  ]
+}

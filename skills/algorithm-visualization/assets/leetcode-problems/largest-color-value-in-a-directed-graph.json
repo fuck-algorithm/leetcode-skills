@@ -1,0 +1,16 @@
+{
+  "number": "1857",
+  "title_cn": "有向图中最大颜色值",
+  "title_en": "Largest Color Value in a Directed Graph",
+  "slug": "largest-color-value-in-a-directed-graph",
+  "difficulty": "Hard",
+  "description": "给你一个&nbsp;有向图&nbsp;，它含有&nbsp;n&nbsp;个节点和 m&nbsp;条边。节点编号从&nbsp;0 到&nbsp;n - 1&nbsp;。\n\n给你一个字符串&nbsp;colors ，其中&nbsp;colors[i]&nbsp;是小写英文字母，表示图中第 i&nbsp;个节点的 颜色&nbsp;（下标从 0&nbsp;开始）。同时给你一个二维数组&nbsp;edges&nbsp;，其中&nbsp;edges[j] = [aj, bj]&nbsp;表示从节点&nbsp;aj&nbsp;到节点&nbsp;bj&nbsp;有一条&nbsp;有向边&nbsp;。\n\n图中一条有效 路径&nbsp;是一个点序列&nbsp;x1 -> x2 -> x3 -> ... -> xk&nbsp;，对于所有&nbsp;1 <= i < k&nbsp;，从&nbsp;xi 到&nbsp;xi+1&nbsp;在图中有一条有向边。路径的 颜色值&nbsp;是路径中 出现次数最多 颜色的节点数目。\n\n请你返回给定图中有效路径里面的&nbsp;最大颜色值&nbsp;。如果图中含有环，请返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：colors = \"abaca\", edges = [[0,1],[0,2],[2,3],[3,4]]\n输出：3\n解释：路径 0 -> 2 -> 3 -> 4 含有 3 个颜色为 \"a\" 的节点（上图中的红色节点）。\n\n示例 2：\n\n输入：colors = \"a\", edges = [[0,0]]\n输出：-1\n解释：从 0 到 0 有一个环。\n\n&nbsp;\n\n提示：\n\n\tn == colors.length\n\tm == edges.length\n\t1 <= n <= 105\n\t0 <= m <= 105\n\tcolors&nbsp;只含有小写英文字母。\n\t0 <= aj, bj&nbsp;< n",
+  "constraints": [
+    "n == colors.length",
+    "m == edges.length",
+    "1 <= n <= 105",
+    "0 <= m <= 105",
+    "colors&nbsp;只含有小写英文字母。",
+    "0 <= aj, bj&nbsp;< n"
+  ]
+}

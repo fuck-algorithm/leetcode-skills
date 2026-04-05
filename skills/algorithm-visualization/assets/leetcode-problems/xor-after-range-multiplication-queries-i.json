@@ -1,0 +1,17 @@
+{
+  "number": "3653",
+  "title_cn": "区间乘法查询后的异或 I",
+  "title_en": "XOR After Range Multiplication Queries I",
+  "slug": "xor-after-range-multiplication-queries-i",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组 nums 和一个大小为 q 的二维整数数组 queries，其中 queries[i] = [li, ri, ki, vi]。\n\n对于每个查询，按以下步骤执行操作：\n\n\t设定 idx = li。\n\t当 idx <= ri 时：\n\n\t\t更新：nums[idx] = (nums[idx] * vi) % (109 + 7)\n\t\t将 idx += ki。\n\n在处理完所有查询后，返回数组 nums 中所有元素的&nbsp;按位异或&nbsp;结果。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,1,1], queries = [[0,2,1,4]]\n\n输出： 4\n\n解释：\n\n\t唯一的查询 [0, 2, 1, 4] 将下标&nbsp;0 到下标&nbsp;2 的每个元素乘以 4。\n\t数组从 [1, 1, 1] 变为 [4, 4, 4]。\n\t所有元素的异或为 4 ^ 4 ^ 4 = 4。\n\n示例 2：\n\n输入： nums = [2,3,1,5,4], queries = [[1,4,2,3],[0,2,1,2]]\n\n输出： 31\n\n解释：\n\n\t第一个查询 [1, 4, 2, 3] 将下标&nbsp;1 和 3 的元素乘以 3，数组变为 [2, 9, 1, 15, 4]。\n\t第二个查询 [0, 2, 1, 2] 将下标&nbsp;0、1 和 2 的元素乘以 2，数组变为 [4, 18, 2, 15, 4]。\n\t所有元素的异或为 4 ^ 18 ^ 2 ^ 15 ^ 4 = 31。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 103\n\t1 <= nums[i] <= 109\n\t1 <= q == queries.length <= 103\n\tqueries[i] = [li, ri, ki, vi]\n\t0 <= li <= ri < n\n\t1 <= ki <= n\n\t1 <= vi <= 105",
+  "constraints": [
+    "1 <= n == nums.length <= 103",
+    "1 <= nums[i] <= 109",
+    "1 <= q == queries.length <= 103",
+    "queries[i] = [li, ri, ki, vi]",
+    "0 <= li <= ri < n",
+    "1 <= ki <= n",
+    "1 <= vi <= 105"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2080",
+  "title_cn": "区间内查询数字的频率",
+  "title_en": "Range Frequency Queries",
+  "slug": "range-frequency-queries",
+  "difficulty": "Medium",
+  "description": "请你设计一个数据结构，它能求出给定子数组内一个给定值的 频率&nbsp;。\n\n子数组中一个值的 频率&nbsp;指的是这个子数组中这个值的出现次数。\n\n请你实现&nbsp;RangeFreqQuery&nbsp;类：\n\n\tRangeFreqQuery(int[] arr)&nbsp;用下标从 0&nbsp;开始的整数数组&nbsp;arr&nbsp;构造一个类的实例。\n\tint query(int left, int right, int value)&nbsp;返回子数组&nbsp;arr[left...right]&nbsp;中&nbsp;value&nbsp;的&nbsp;频率&nbsp;。\n\n一个 子数组 指的是数组中一段连续的元素。arr[left...right]&nbsp;指的是 nums&nbsp;中包含下标 left&nbsp;和 right&nbsp;在内&nbsp;的中间一段连续元素。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"RangeFreqQuery\", \"query\", \"query\"]\n[[[12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56]], [1, 2, 4], [0, 11, 33]]\n输出：\n[null, 1, 2]\n\n解释：\nRangeFreqQuery rangeFreqQuery = new RangeFreqQuery([12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56]);\nrangeFreqQuery.query(1, 2, 4); // 返回 1 。4 在子数组 [33, 4] 中出现 1 次。\nrangeFreqQuery.query(0, 11, 33); // 返回 2 。33 在整个子数组中出现 2 次。\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 105\n\t1 <= arr[i], value <= 104\n\t0 <= left <= right < arr.length\n\t调用&nbsp;query&nbsp;不超过&nbsp;105&nbsp;次。",
+  "constraints": [
+    "1 <= arr.length <= 105",
+    "1 <= arr[i], value <= 104",
+    "0 <= left <= right < arr.length",
+    "调用&nbsp;query&nbsp;不超过&nbsp;105&nbsp;次。"
+  ]
+}

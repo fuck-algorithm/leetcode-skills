@@ -1,0 +1,14 @@
+{
+  "number": "3347",
+  "title_cn": "执行操作后元素的最高频率 II",
+  "title_en": "Maximum Frequency of an Element After Performing Operations II",
+  "slug": "maximum-frequency-of-an-element-after-performing-operations-ii",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和两个整数&nbsp;k 和&nbsp;numOperations&nbsp;。\n\n你必须对 nums&nbsp;执行 操作&nbsp; numOperations&nbsp;次。每次操作中，你可以：\n\n\t选择一个下标&nbsp;i&nbsp;，它在之前的操作中 没有&nbsp;被选择过。\n\t将 nums[i]&nbsp;增加范围&nbsp;[-k, k]&nbsp;中的一个整数。\n\n在执行完所有操作以后，请你返回 nums&nbsp;中出现 频率最高&nbsp;元素的出现次数。\n\n一个元素 x&nbsp;的 频率&nbsp;指的是它在数组中出现的次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,4,5], k = 1, numOperations = 2\n\n输出：2\n\n解释：\n\n通过以下操作得到最高频率 2 ：\n\n\t将&nbsp;nums[1]&nbsp;增加 0 ，nums 变为&nbsp;[1, 4, 5]&nbsp;。\n\t将&nbsp;nums[2]&nbsp;增加 -1 ，nums 变为&nbsp;[1, 4, 4]&nbsp;。\n\n示例 2：\n\n输入：nums = [5,11,20,20], k = 5, numOperations = 1\n\n输出：2\n\n解释：\n\n通过以下操作得到最高频率 2 ：\n\n\t将&nbsp;nums[1]&nbsp;增加 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t0 <= k <= 109\n\t0 <= numOperations <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "0 <= k <= 109",
+    "0 <= numOperations <= nums.length"
+  ]
+}

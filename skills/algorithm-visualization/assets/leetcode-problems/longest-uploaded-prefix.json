@@ -1,0 +1,15 @@
+{
+  "number": "2424",
+  "title_cn": "最长上传前缀",
+  "title_en": "Longest Uploaded Prefix",
+  "slug": "longest-uploaded-prefix",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;n&nbsp;个视频的上传序列，每个视频编号为&nbsp;1&nbsp;到&nbsp;n&nbsp;之间的 不同&nbsp;数字，你需要依次将这些视频上传到服务器。请你实现一个数据结构，在上传的过程中计算 最长上传前缀&nbsp;。\n\n如果&nbsp;闭区间&nbsp;1&nbsp;到&nbsp;i&nbsp;之间的视频全部都已经被上传到服务器，那么我们称 i&nbsp;是上传前缀。最长上传前缀指的是符合定义的 i&nbsp;中的 最大值&nbsp;。\n\n请你实现&nbsp;LUPrefix&nbsp;类：\n\n\tLUPrefix(int n)&nbsp;初始化一个 n&nbsp;个视频的流对象。\n\tvoid upload(int video)&nbsp;上传&nbsp;video&nbsp;到服务器。\n\tint longest()&nbsp;返回上述定义的 最长上传前缀&nbsp;的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"LUPrefix\", \"upload\", \"longest\", \"upload\", \"longest\", \"upload\", \"longest\"]\n[[4], [3], [], [1], [], [2], []]\n输出：\n[null, null, 0, null, 1, null, 3]\n\n解释：\nLUPrefix server = new LUPrefix(4);   // 初始化 4个视频的上传流\nserver.upload(3);                    // 上传视频 3 。\nserver.longest();                    // 由于视频 1 还没有被上传，最长上传前缀是 0 。\nserver.upload(1);                    // 上传视频 1 。\nserver.longest();                    // 前缀 [1] 是最长上传前缀，所以我们返回 1 。\nserver.upload(2);                    // 上传视频 2 。\nserver.longest();                    // 前缀 [1,2,3] 是最长上传前缀，所以我们返回 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105\n\t1 <= video <= 105\n\tvideo&nbsp;中所有值 互不相同&nbsp;。\n\tupload 和&nbsp;longest&nbsp;总调用 次数至多不超过&nbsp;2 * 105&nbsp;次。\n\t至少会调用&nbsp;longest&nbsp;一次。",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= video <= 105",
+    "video&nbsp;中所有值 互不相同&nbsp;。",
+    "upload 和&nbsp;longest&nbsp;总调用 次数至多不超过&nbsp;2 * 105&nbsp;次。",
+    "至少会调用&nbsp;longest&nbsp;一次。"
+  ]
+}

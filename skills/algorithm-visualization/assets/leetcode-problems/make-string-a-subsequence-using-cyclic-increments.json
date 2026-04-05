@@ -1,0 +1,13 @@
+{
+  "number": "2825",
+  "title_cn": "循环增长使字符串子序列等于另一个字符串",
+  "title_en": "Make String a Subsequence Using Cyclic Increments",
+  "slug": "make-string-a-subsequence-using-cyclic-increments",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;str1 和&nbsp;str2&nbsp;。\n\n一次操作中，你选择&nbsp;str1&nbsp;中的若干下标。对于选中的每一个下标&nbsp;i&nbsp;，你将&nbsp;str1[i]&nbsp;循环&nbsp;递增，变成下一个字符。也就是说&nbsp;'a'&nbsp;变成&nbsp;'b'&nbsp;，'b' 变成&nbsp;'c'&nbsp;，以此类推，'z' 变成&nbsp;'a'&nbsp;。\n\n如果执行以上操作 至多一次&nbsp;，可以让 str2&nbsp;成为 str1&nbsp;的子序列，请你返回 true&nbsp;，否则返回 false&nbsp;。\n\n注意：一个字符串的子序列指的是从原字符串中删除一些（可以一个字符也不删）字符后，剩下字符按照原本先后顺序组成的新字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：str1 = \"abc\", str2 = \"ad\"\n输出：true\n解释：选择 str1 中的下标 2 。\n将 str1[2] 循环递增，得到 'd' 。\n因此，str1 变成 \"abd\" 且 str2 现在是一个子序列。所以返回 true 。\n\n示例 2：\n\n输入：str1 = \"zc\", str2 = \"ad\"\n输出：true\n解释：选择 str1 中的下标 0 和 1 。\n将 str1[0] 循环递增得到 'a' 。\n将 str1[1] 循环递增得到 'd' 。\n因此，str1 变成 \"ad\" 且 str2 现在是一个子序列。所以返回 true 。\n\n示例 3：\n\n输入：str1 = \"ab\", str2 = \"d\"\n输出：false\n解释：这个例子中，没法在执行一次操作的前提下，将 str2 变为 str1 的子序列。\n所以返回 false 。\n\n&nbsp;\n\n提示：\n\n\t1 <= str1.length <= 105\n\t1 <= str2.length <= 105\n\tstr1&nbsp;和&nbsp;str2&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= str1.length <= 105",
+    "1 <= str2.length <= 105",
+    "str1&nbsp;和&nbsp;str2&nbsp;只包含小写英文字母。"
+  ]
+}

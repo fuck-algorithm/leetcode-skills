@@ -1,0 +1,11 @@
+{
+  "number": "LCR 149",
+  "title_cn": "彩灯装饰记录 I",
+  "title_en": "彩灯装饰记录 I",
+  "slug": "cong-shang-dao-xia-da-yin-er-cha-shu-lcof",
+  "difficulty": "Medium",
+  "description": "一棵圣诞树记作根节点为 root 的二叉树，节点值为该位置装饰彩灯的颜色编号。请按照从 左 到 右 的顺序返回每一层彩灯编号。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [8,17,21,18,null,null,6]\n输出：[8,17,21,18,6]\n\n&nbsp;\n\n提示：\n\n\t节点总数 <= 1000\n\n&nbsp;",
+  "constraints": [
+    "节点总数 <= 1000"
+  ]
+}

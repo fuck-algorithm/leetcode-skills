@@ -1,0 +1,9 @@
+{
+  "number": "3359",
+  "title_cn": "查找最大元素不超过 K 的有序子矩阵",
+  "title_en": "Find Sorted Submatrices With Maximum Element at Most K",
+  "slug": "find-sorted-submatrices-with-maximum-element-at-most-k",
+  "difficulty": "Hard",
+  "description": "",
+  "constraints": []
+}

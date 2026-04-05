@@ -1,0 +1,15 @@
+{
+  "number": "3238",
+  "title_cn": "求出胜利玩家的数目",
+  "title_en": "Find the Number of Winning Players",
+  "slug": "find-the-number-of-winning-players",
+  "difficulty": "Easy",
+  "description": "给你一个整数&nbsp;n&nbsp;，表示在一个游戏中的玩家数目。同时给你一个二维整数数组&nbsp;pick&nbsp;，其中&nbsp;pick[i] = [xi, yi]&nbsp;表示玩家&nbsp;xi&nbsp;获得了一个颜色为&nbsp;yi&nbsp;的球。\n\n如果玩家 i&nbsp;获得的球中任何一种颜色球的数目 严格大于&nbsp;i&nbsp;个，那么我们说玩家 i&nbsp;是胜利玩家。换句话说：\n\n\t如果玩家 0 获得了任何的球，那么玩家 0 是胜利玩家。\n\t如果玩家 1 获得了至少 2 个相同颜色的球，那么玩家 1 是胜利玩家。\n\t...\n\t如果玩家 i&nbsp;获得了至少&nbsp;i + 1&nbsp;个相同颜色的球，那么玩家 i&nbsp;是胜利玩家。\n\n请你返回游戏中 胜利玩家&nbsp;的数目。\n\n注意，可能有多个玩家是胜利玩家。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4, pick = [[0,0],[1,0],[1,0],[2,1],[2,1],[2,0]]\n\n输出：2\n\n解释：\n\n玩家 0 和玩家 1 是胜利玩家，玩家 2 和玩家 3 不是胜利玩家。\n\n示例 2：\n\n输入：n = 5, pick = [[1,1],[1,2],[1,3],[1,4]]\n\n输出：0\n\n解释：\n\n没有胜利玩家。\n\n示例 3：\n\n输入：n = 5, pick = [[1,1],[2,4],[2,4],[2,4]]\n\n输出：1\n\n解释：\n\n玩家 2 是胜利玩家，因为玩家 2 获得了 3 个颜色为 4 的球。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 10\n\t1 <= pick.length <= 100\n\tpick[i].length == 2\n\t0 <= xi <= n - 1 \n\t0 <= yi <= 10",
+  "constraints": [
+    "2 <= n <= 10",
+    "1 <= pick.length <= 100",
+    "pick[i].length == 2",
+    "0 <= xi <= n - 1",
+    "0 <= yi <= 10"
+  ]
+}

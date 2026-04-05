@@ -1,0 +1,14 @@
+{
+  "number": "LCR 153",
+  "title_cn": "二叉树中和为目标值的路径",
+  "title_en": "二叉树中和为目标值的路径",
+  "slug": "er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof",
+  "difficulty": "Medium",
+  "description": "给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出所有 从根节点到叶子节点 路径总和等于给定目标和的路径。\n\n叶子节点 是指没有子节点的节点。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22\n输出：[[5,4,11,2],[5,8,4,5]]\n\n示例 2：\n\n输入：root = [1,2,3], targetSum = 5\n输出：[]\n\n示例 3：\n\n输入：root = [1,2], targetSum = 0\n输出：[]\n\n&nbsp;\n\n提示：\n\n\t树中节点总数在范围 [0, 5000] 内\n\t-1000 <= Node.val <= 1000\n\t-1000 <= targetSum <= 1000\n\n注意：本题与主站 113&nbsp;题相同：https://leetcode.cn/problems/path-sum-ii/\n\n&nbsp;",
+  "constraints": [
+    "树中节点总数在范围 [0, 5000] 内",
+    "-1000 <= Node.val <= 1000",
+    "-1000 <= targetSum <= 1000",
+    "注意：本题与主站 113&nbsp;题相同：https://leetcode.cn/problems/path-sum-ii/"
+  ]
+}

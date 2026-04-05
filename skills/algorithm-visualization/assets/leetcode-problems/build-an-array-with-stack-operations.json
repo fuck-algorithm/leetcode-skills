@@ -1,0 +1,14 @@
+{
+  "number": "1441",
+  "title_cn": "用栈操作构建数组",
+  "title_en": "Build an Array With Stack Operations",
+  "slug": "build-an-array-with-stack-operations",
+  "difficulty": "Medium",
+  "description": "给你一个数组 target 和一个整数 n。\n\n给你一个空栈和两种操作：\n\n\t\"Push\"：将一个整数加到栈顶。\n\t\"Pop\"：从栈顶删除一个整数。\n\n同时给定一个范围 [1, n] 中的整数流。\n\n使用两个栈操作使栈中的数字（从底部到顶部）等于 target。你应该遵循以下规则：\n\n\t如果整数流不为空，从流中选取下一个整数并将其推送到栈顶。\n\t如果栈不为空，弹出栈顶的整数。\n\t如果，在任何时刻，栈中的元素（从底部到顶部）等于 target，则不要从流中读取新的整数，也不要对栈进行更多操作。\n\n请返回遵循上述规则构建&nbsp;target 所用的操作序列。如果存在多个合法答案，返回 任一 即可。\n\n&nbsp;\n\n示例 1：\n\n输入：target = [1,3], n = 3\n输出：[\"Push\",\"Push\",\"Pop\",\"Push\"]\n解释：一开始栈为空。最后一个元素是栈顶。\n从流中读取 1 并推入数组。s = [1]。\n从流中读取 2 并推入数组。s = [1,2]。\n从栈顶删除整数。s = [1]。\n从流中读取 3 并推入数组。s = [1,3]。\n\n示例 2：\n\n输入：target = [1,2,3], n = 3\n输出：[\"Push\",\"Push\",\"Push\"]\n解释：一开始栈为空。最后一个元素是栈顶。\n从流中读取 1 并推入数组。s = [1]。\n从流中读取 2 并推入数组。s = [1,2]。\n从流中读取 3 并推入数组。s = [1,2,3]。\n\n示例 3：\n\n输入：target = [1,2], n = 4\n输出：[\"Push\",\"Push\"]\n解释：一开始栈为空。最后一个元素是栈顶。\n从流中读取 1 并推入数组。s = [1]。\n从流中读取 2 并推入数组。s = [1,2]。\n由于栈（从底部到顶部）等于 target，我们停止栈操作。\n从流中读取整数 3 的答案不被接受。\n\n&nbsp;\n\n提示：\n\n\t1 <= target.length <= 100\n\t1 <= n <= 100\n\t1 <= target[i] <= n\n\ttarget 严格递增",
+  "constraints": [
+    "1 <= target.length <= 100",
+    "1 <= n <= 100",
+    "1 <= target[i] <= n",
+    "target 严格递增"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2916",
+  "title_cn": "子数组不同元素数目的平方和 II",
+  "title_en": "Subarrays Distinct Element Sum of Squares II",
+  "slug": "subarrays-distinct-element-sum-of-squares-ii",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;。\n\n定义 nums&nbsp;一个子数组的 不同计数&nbsp;值如下：\n\n\t令&nbsp;nums[i..j]&nbsp;表示 nums 中所有下标在 i 到 j 范围内的元素构成的子数组（满足 0 <= i <= j < nums.length ），那么我们称子数组&nbsp;nums[i..j]&nbsp;中不同值的数目为&nbsp;nums[i..j]&nbsp;的不同计数。\n\n请你返回 nums&nbsp;中所有子数组的 不同计数&nbsp;的 平方&nbsp;和。\n\n由于答案可能会很大，请你将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n子数组指的是一个数组里面一段连续 非空&nbsp;的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,1]\n输出：15\n解释：六个子数组分别为：\n[1]: 1 个互不相同的元素。\n[2]: 1 个互不相同的元素。\n[1]: 1 个互不相同的元素。\n[1,2]: 2 个互不相同的元素。\n[2,1]: 2 个互不相同的元素。\n[1,2,1]: 2 个互不相同的元素。\n所有不同计数的平方和为 12 + 12 + 12 + 22 + 22 + 22 = 15 。\n\n示例 2：\n\n输入：nums = [2,2]\n输出：3\n解释：三个子数组分别为：\n[2]: 1 个互不相同的元素。\n[2]: 1 个互不相同的元素。\n[2,2]: 1 个互不相同的元素。\n所有不同计数的平方和为 12 + 12 + 12 = 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 105",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 105"
+  ]
+}

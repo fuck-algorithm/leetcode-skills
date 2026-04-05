@@ -1,0 +1,11 @@
+{
+  "number": "441",
+  "title_cn": "排列硬币",
+  "title_en": "Arranging Coins",
+  "slug": "arranging-coins",
+  "difficulty": "Easy",
+  "description": "你总共有&nbsp;n&nbsp;枚硬币，并计划将它们按阶梯状排列。对于一个由 k 行组成的阶梯，其第 i 行必须正好有 i 枚硬币。阶梯的最后一行 可能 是不完整的。\n\n给你一个数字&nbsp;n ，计算并返回可形成 完整阶梯行 的总行数。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5\n输出：2\n解释：因为第三行不完整，所以返回 2 。\n\n示例 2：\n\n输入：n = 8\n输出：3\n解释：因为第四行不完整，所以返回 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 231 - 1",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ]
+}

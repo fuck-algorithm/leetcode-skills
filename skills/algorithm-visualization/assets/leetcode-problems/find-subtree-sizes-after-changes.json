@@ -1,0 +1,16 @@
+{
+  "number": "3331",
+  "title_cn": "修改后子树的大小",
+  "title_en": "Find Subtree Sizes After Changes",
+  "slug": "find-subtree-sizes-after-changes",
+  "difficulty": "Medium",
+  "description": "给你一棵 n&nbsp;个节点且根节点为编号 0 的树，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;。这棵树用一个长度为&nbsp;n&nbsp;的数组&nbsp;parent&nbsp;表示，其中&nbsp;parent[i]&nbsp;是第 i&nbsp;个节点的父亲节点的编号。由于节点 0 是根，parent[0] == -1&nbsp;。\n\n给你一个长度为 n&nbsp;的字符串&nbsp;s&nbsp;，其中&nbsp;s[i]&nbsp;是节点 i&nbsp;对应的字符。\n\n对于节点编号从 1&nbsp;到 n - 1&nbsp;的每个节点 x&nbsp;，我们 同时 执行以下操作 一次&nbsp;：\n\n\t找到距离节点 x&nbsp;最近&nbsp;的祖先节点 y&nbsp;，且&nbsp;s[x] == s[y]&nbsp;。\n\t如果节点 y&nbsp;不存在，那么不做任何修改。\n\t否则，将节点 x&nbsp;与它父亲节点之间的边 删除&nbsp;，在 x&nbsp;与 y&nbsp;之间连接一条边，使&nbsp;y&nbsp;变为 x&nbsp;新的父节点。\n\n请你返回一个长度为 n&nbsp;的数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]&nbsp;是 最终&nbsp;树中，节点 i&nbsp;为根的 子树 的 大小&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：parent = [-1,0,0,1,1,1], s = \"abaabc\"\n\n输出：[6,3,1,1,1,1]\n\n解释：\n\n节点 3 的父节点从节点 1 变为节点 0 。\n\n示例 2：\n\n输入：parent = [-1,0,4,0,1], s = \"abbba\"\n\n输出：[5,2,1,1,1]\n\n解释：\n\n以下变化会同时发生：\n\n\t节点 4 的父节点从节点 1 变为节点 0 。\n\t节点 2 的父节点从节点 4 变为节点 1 。\n\n&nbsp;\n\n提示：\n\n\tn == parent.length == s.length\n\t1 <= n <= 105\n\t对于所有的&nbsp;i >= 1&nbsp;，都有&nbsp;0 <= parent[i] <= n - 1&nbsp;。\n\tparent[0] == -1\n\tparent&nbsp;表示一棵合法的树。\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "n == parent.length == s.length",
+    "1 <= n <= 105",
+    "对于所有的&nbsp;i >= 1&nbsp;，都有&nbsp;0 <= parent[i] <= n - 1&nbsp;。",
+    "parent[0] == -1",
+    "parent&nbsp;表示一棵合法的树。",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

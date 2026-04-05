@@ -1,0 +1,13 @@
+{
+  "number": "1189",
+  "title_cn": "“气球” 的最大数量",
+  "title_en": "Maximum Number of Balloons",
+  "slug": "maximum-number-of-balloons",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;text，你需要使用 text 中的字母来拼凑尽可能多的单词&nbsp;\"balloon\"（气球）。\n\n字符串&nbsp;text 中的每个字母最多只能被使用一次。请你返回最多可以拼凑出多少个单词&nbsp;\"balloon\"。\n\n&nbsp;\n\n示例 1：\n\n输入：text = \"nlaebolko\"\n输出：1\n\n示例 2：\n\n输入：text = \"loonbalxballpoon\"\n输出：2\n\n示例 3：\n\n输入：text = \"leetcode\"\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= text.length <= 104\n\ttext&nbsp;全部由小写英文字母组成\n\n&nbsp;\n\n注意：本题与&nbsp;2287. 重排字符形成目标字符串&nbsp;相同。",
+  "constraints": [
+    "1 <= text.length <= 104",
+    "text&nbsp;全部由小写英文字母组成",
+    "注意：本题与&nbsp;2287. 重排字符形成目标字符串&nbsp;相同。"
+  ]
+}

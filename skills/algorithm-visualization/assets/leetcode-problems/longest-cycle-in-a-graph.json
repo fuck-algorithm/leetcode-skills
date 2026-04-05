@@ -1,0 +1,14 @@
+{
+  "number": "2360",
+  "title_cn": "图中的最长环",
+  "title_en": "Longest Cycle in a Graph",
+  "slug": "longest-cycle-in-a-graph",
+  "difficulty": "Hard",
+  "description": "给你一个 n&nbsp;个节点的 有向图&nbsp;，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;，其中每个节点&nbsp;至多&nbsp;有一条出边。\n\n图用一个大小为 n&nbsp;下标从&nbsp;0&nbsp;开始的数组&nbsp;edges&nbsp;表示，节点 i&nbsp;到节点&nbsp;edges[i]&nbsp;之间有一条有向边。如果节点&nbsp;i&nbsp;没有出边，那么&nbsp;edges[i] == -1&nbsp;。\n\n请你返回图中的 最长&nbsp;环，如果没有任何环，请返回 -1&nbsp;。\n\n一个环指的是起点和终点是 同一个&nbsp;节点的路径。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [3,3,4,2,3]\n输出去：3\n解释：图中的最长环是：2 -> 4 -> 3 -> 2 。\n这个环的长度为 3 ，所以返回 3 。\n\n示例 2：\n\n输入：edges = [2,-1,3,1]\n输出：-1\n解释：图中没有任何环。\n\n&nbsp;\n\n提示：\n\n\tn == edges.length\n\t2 <= n <= 105\n\t-1 <= edges[i] < n\n\tedges[i] != i",
+  "constraints": [
+    "n == edges.length",
+    "2 <= n <= 105",
+    "-1 <= edges[i] < n",
+    "edges[i] != i"
+  ]
+}

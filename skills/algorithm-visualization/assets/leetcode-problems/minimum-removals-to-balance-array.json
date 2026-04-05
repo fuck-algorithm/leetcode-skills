@@ -1,0 +1,13 @@
+{
+  "number": "3634",
+  "title_cn": "使数组平衡的最少移除数目",
+  "title_en": "Minimum Removals to Balance Array",
+  "slug": "minimum-removals-to-balance-array",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums 和一个整数 k。\n\n如果一个数组的&nbsp;最大&nbsp;元素的值&nbsp;至多&nbsp;是其&nbsp;最小&nbsp;元素的 k 倍，则该数组被称为是&nbsp;平衡&nbsp;的。\n\n你可以从 nums 中移除&nbsp;任意&nbsp;数量的元素，但不能使其变为&nbsp;空&nbsp;数组。\n\n返回为了使剩余数组平衡，需要移除的元素的&nbsp;最小&nbsp;数量。\n\n注意：大小为 1 的数组被认为是平衡的，因为其最大值和最小值相等，且条件总是成立。\n\n&nbsp;\n\n示例 1:\n\n输入：nums = [2,1,5], k = 2\n\n输出：1\n\n解释：\n\n\t移除 nums[2] = 5 得到 nums = [2, 1]。\n\t现在 max = 2, min = 1，且 max <= min * k，因为 2 <= 1 * 2。因此，答案是 1。\n\n示例 2:\n\n输入：nums = [1,6,2,9], k = 3\n\n输出：2\n\n解释：\n\n\t移除 nums[0] = 1 和 nums[3] = 9 得到 nums = [6, 2]。\n\t现在 max = 6, min = 2，且 max <= min * k，因为 6 <= 2 * 3。因此，答案是 2。\n\n示例 3:\n\n输入：nums = [4,6], k = 2\n\n输出：0\n\n解释：\n\n\t由于 nums 已经平衡，因为 6 <= 4 * 2，所以不需要移除任何元素。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t1 <= k <= 105",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 105"
+  ]
+}

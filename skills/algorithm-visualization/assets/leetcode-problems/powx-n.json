@@ -1,0 +1,15 @@
+{
+  "number": "50",
+  "title_cn": "Pow(x, n)",
+  "title_en": "Pow(x, n)",
+  "slug": "powx-n",
+  "difficulty": "Medium",
+  "description": "实现&nbsp;pow(x, n)&nbsp;，即计算 x 的整数&nbsp;n 次幂函数（即，xn ）。\n\n&nbsp;\n\n示例 1：\n\n输入：x = 2.00000, n = 10\n输出：1024.00000\n\n示例 2：\n\n输入：x = 2.10000, n = 3\n输出：9.26100\n\n示例 3：\n\n输入：x = 2.00000, n = -2\n输出：0.25000\n解释：2-2 = 1/22 = 1/4 = 0.25\n\n&nbsp;\n\n提示：\n\n\t-100.0 < x < 100.0\n\t-231 <= n <= 231-1\n\tn&nbsp;是一个整数\n\t要么 x 不为零，要么 n > 0 。\n\t-104 <= xn <= 104",
+  "constraints": [
+    "-100.0 < x < 100.0",
+    "-231 <= n <= 231-1",
+    "n&nbsp;是一个整数",
+    "要么 x 不为零，要么 n > 0 。",
+    "-104 <= xn <= 104"
+  ]
+}

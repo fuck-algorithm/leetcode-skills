@@ -1,0 +1,13 @@
+{
+  "number": "2108",
+  "title_cn": "找出数组中的第一个回文字符串",
+  "title_en": "Find First Palindromic String in the Array",
+  "slug": "find-first-palindromic-string-in-the-array",
+  "difficulty": "Easy",
+  "description": "给你一个字符串数组 words ，找出并返回数组中的 第一个回文字符串 。如果不存在满足要求的字符串，返回一个 空字符串 \"\" 。\n\n回文字符串 的定义为：如果一个字符串正着读和反着读一样，那么该字符串就是一个 回文字符串 。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]\n输出：\"ada\"\n解释：第一个回文字符串是 \"ada\" 。\n注意，\"racecar\" 也是回文字符串，但它不是第一个。\n\n示例 2：\n\n输入：words = [\"notapalindrome\",\"racecar\"]\n输出：\"racecar\"\n解释：第一个也是唯一一个回文字符串是 \"racecar\" 。\n\n示例 3：\n\n输入：words = [\"def\",\"ghi\"]\n输出：\"\"\n解释：不存在回文字符串，所以返回一个空字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 100\n\t1 <= words[i].length <= 100\n\twords[i] 仅由小写英文字母组成",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 100",
+    "words[i] 仅由小写英文字母组成"
+  ]
+}

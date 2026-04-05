@@ -1,0 +1,9 @@
+{
+  "number": "1683",
+  "title_cn": "无效的推文",
+  "title_en": "Invalid Tweets",
+  "slug": "invalid-tweets",
+  "difficulty": "Easy",
+  "description": "表：Tweets\n\n+----------------+---------+\n| Column Name    | Type    |\n+----------------+---------+\n| tweet_id       | int     |\n| content        | varchar |\n+----------------+---------+\n在 SQL 中，tweet_id 是这个表的主键。\ncontent 只包含字母数字字符，'!'，' '，不包含其它特殊字符。\n这个表包含某社交媒体 App 中所有的推文。\n\n&nbsp;\n\n查询所有无效推文的编号（ID）。当推文内容中的字符数严格大于 15 时，该推文是无效的。\n\n以任意顺序返回结果表。\n\n查询结果格式如下所示：\n\n&nbsp;\n\n示例 1：\n\n输入：\nTweets 表：\n+----------+----------------------------------+\n| tweet_id | content                          |\n+----------+----------------------------------+\n| 1        | Vote for Biden                   |\n| 2        | Let us make America great again! |\n+----------+----------------------------------+\n\n输出：\n+----------+\n| tweet_id |\n+----------+\n| 2        |\n+----------+\n解释：\n推文 1 的长度 length = 14。该推文是有效的。\n推文 2 的长度 length = 32。该推文是无效的。",
+  "constraints": []
+}

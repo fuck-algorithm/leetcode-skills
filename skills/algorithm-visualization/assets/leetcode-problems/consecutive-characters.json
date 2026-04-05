@@ -1,0 +1,12 @@
+{
+  "number": "1446",
+  "title_cn": "连续字符",
+  "title_en": "Consecutive Characters",
+  "slug": "consecutive-characters",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;s&nbsp;，字符串的「能量」定义为：只包含一种字符的最长非空子字符串的长度。\n\n请你返回字符串 s 的 能量。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"leetcode\"\n输出：2\n解释：子字符串 \"ee\" 长度为 2 ，只包含字符 'e' 。\n\n示例 2：\n\n输入：s = \"abbcccddddeeeeedcba\"\n输出：5\n解释：子字符串 \"eeeee\" 长度为 5 ，只包含字符 'e' 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 500\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

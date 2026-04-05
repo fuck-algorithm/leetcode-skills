@@ -1,0 +1,13 @@
+{
+  "number": "1081",
+  "title_cn": "不同字符的最小子序列",
+  "title_en": "Smallest Subsequence of Distinct Characters",
+  "slug": "smallest-subsequence-of-distinct-characters",
+  "difficulty": "Medium",
+  "description": "返回 s 字典序最小的子序列，该子序列包含 s 的所有不同字符，且只包含一次。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"bcabc\"\n输出：\"abc\"\n\n示例 2：\n\n输入：s = \"cbacdcbc\"\n输出：\"acdb\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts 由小写英文字母组成\n\n&nbsp;\n\n注意：该题与 316 https://leetcode.cn/problems/remove-duplicate-letters/ 相同",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s 由小写英文字母组成",
+    "注意：该题与 316 https://leetcode.cn/problems/remove-duplicate-letters/ 相同"
+  ]
+}

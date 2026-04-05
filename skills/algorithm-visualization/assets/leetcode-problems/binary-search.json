@@ -1,0 +1,13 @@
+{
+  "number": "704",
+  "title_cn": "二分查找",
+  "title_en": "Binary Search",
+  "slug": "binary-search",
+  "difficulty": "Easy",
+  "description": "给定一个&nbsp;n&nbsp;个元素有序的（升序）整型数组&nbsp;nums 和一个目标值&nbsp;target &nbsp;，写一个函数搜索&nbsp;nums&nbsp;中的 target，如果&nbsp;target 存在返回下标，否则返回 -1。\n\n你必须编写一个具有 O(log n) 时间复杂度的算法。\n\n示例 1:\n\n输入: nums = [-1,0,3,5,9,12], target = 9\n输出: 4\n解释: 9 出现在 nums 中并且下标为 4\n\n示例&nbsp;2:\n\n输入: nums = [-1,0,3,5,9,12], target = 2\n输出: -1\n解释: 2 不存在 nums 中因此返回 -1\n\n&nbsp;\n\n提示：\n\n\t你可以假设 nums&nbsp;中的所有元素是不重复的。\n\tn&nbsp;将在&nbsp;[1, 10000]之间。\n\tnums&nbsp;的每个元素都将在&nbsp;[-9999, 9999]之间。",
+  "constraints": [
+    "你可以假设 nums&nbsp;中的所有元素是不重复的。",
+    "n&nbsp;将在&nbsp;[1, 10000]之间。",
+    "nums&nbsp;的每个元素都将在&nbsp;[-9999, 9999]之间。"
+  ]
+}

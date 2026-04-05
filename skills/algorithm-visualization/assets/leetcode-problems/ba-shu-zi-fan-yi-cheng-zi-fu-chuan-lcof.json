@@ -1,0 +1,11 @@
+{
+  "number": "LCR 165",
+  "title_cn": "解密数字",
+  "title_en": "解密数字",
+  "slug": "ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof",
+  "difficulty": "Medium",
+  "description": "现有一串神秘的密文 ciphertext，经调查，密文的特点和规则如下：\n\n\t密文由非负整数组成\n\t数字 0-25 分别对应字母 a-z\n\n请根据上述规则将密文 ciphertext 解密为字母，并返回共有多少种解密结果。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：ciphertext = 216612\n输出：6\n解释：216612 解密后有 6 种不同的形式，分别是 \"cbggbc\"，\"vggbc\"，\"vggm\"，\"cbggm\"，\"cqgbc\" 和 \"cqgm\" \n\n&nbsp;\n\n提示：\n\n\t0 <= ciphertext < 231\n\n&nbsp;",
+  "constraints": [
+    "0 <= ciphertext < 231"
+  ]
+}

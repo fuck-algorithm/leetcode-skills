@@ -1,0 +1,13 @@
+{
+  "number": "3533",
+  "title_cn": "判断连接可整除性",
+  "title_en": "Concatenated Divisibility",
+  "slug": "concatenated-divisibility",
+  "difficulty": "Hard",
+  "description": "给你一个正整数数组 nums 和一个正整数 k。\n\n当&nbsp;nums&nbsp;的一个 排列 中的所有数字，按照排列顺序&nbsp;连接其十进制表示&nbsp;后形成的数可以&nbsp;被 k&nbsp; 整除时，我们称该排列形成了一个&nbsp;可整除连接&nbsp;。\n\n返回能够形成&nbsp;可整除连接 且&nbsp;字典序 最小 的排列（按整数列表的形式表示）。如果不存在这样的排列，返回一个空列表。\n\n&nbsp;\n\n示例 1：\n\n输入: nums = [3,12,45], k = 5\n\n输出: [3,12,45]\n\n解释:\n\n\t\t\t排列\n\t\t\t连接后的值\n\t\t\t是否能被 5 整除\n\n\t\t\t[3, 12, 45]\n\t\t\t31245\n\t\t\t是\n\n\t\t\t[3, 45, 12]\n\t\t\t34512\n\t\t\t否\n\n\t\t\t[12, 3, 45]\n\t\t\t12345\n\t\t\t是\n\n\t\t\t[12, 45, 3]\n\t\t\t12453\n\t\t\t否\n\n\t\t\t[45, 3, 12]\n\t\t\t45312\n\t\t\t否\n\n\t\t\t[45, 12, 3]\n\t\t\t45123\n\t\t\t否\n\n可以形成可整除连接且字典序最小的排列是 [3,12,45]。\n\n示例 2：\n\n输入: nums = [10,5], k = 10\n\n输出: [5,10]\n\n解释:\n\n\t\t\t排列\n\t\t\t连接后的值\n\t\t\t是否能被 10 整除\n\n\t\t\t[5, 10]\n\t\t\t510\n\t\t\t是\n\n\t\t\t[10, 5]\n\t\t\t105\n\t\t\t否\n\n可以形成可整除连接且字典序最小的排列是 [5,10]。\n\n示例 3：\n\n输入: nums = [1,2,3], k = 5\n\n输出: []\n\n解释:\n\n由于不存在任何可以形成有效可整除连接的排列，因此返回空列表。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 13\n\t1 <= nums[i] <= 105\n\t1 <= k <= 100",
+  "constraints": [
+    "1 <= nums.length <= 13",
+    "1 <= nums[i] <= 105",
+    "1 <= k <= 100"
+  ]
+}

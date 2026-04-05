@@ -1,0 +1,12 @@
+{
+  "number": "1638",
+  "title_cn": "统计只差一个字符的子串数目",
+  "title_en": "Count Substrings That Differ by One Character",
+  "slug": "count-substrings-that-differ-by-one-character",
+  "difficulty": "Medium",
+  "description": "给你两个字符串&nbsp;s 和&nbsp;t&nbsp;，请你找出 s&nbsp;中的非空子串的数目，这些子串满足替换 一个不同字符&nbsp;以后，是 t&nbsp;串的子串。换言之，请你找到 s&nbsp;和 t&nbsp;串中 恰好&nbsp;只有一个字符不同的子字符串对的数目。\n\n比方说，&nbsp;\"computer\"&nbsp;and&nbsp;\"computation\"&nbsp;只有一个字符不同：&nbsp;'e'/'a'&nbsp;，所以这一对子字符串会给答案加 1 。\n\n请你返回满足上述条件的不同子字符串对数目。\n\n一个 子字符串&nbsp;是一个字符串中连续的字符。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aba\", t = \"baba\"\n输出：6\n解释：以下为只相差 1 个字符的 s 和 t 串的子字符串对：\n(\"aba\", \"baba\")\n(\"aba\", \"baba\")\n(\"aba\", \"baba\")\n(\"aba\", \"baba\")\n(\"aba\", \"baba\")\n(\"aba\", \"baba\")\n加粗部分分别表示 s 和 t 串选出来的子字符串。\n\n示例 2：\n\n输入：s = \"ab\", t = \"bb\"\n输出：3\n解释：以下为只相差 1 个字符的 s 和 t 串的子字符串对：\n(\"ab\", \"bb\")\n(\"ab\", \"bb\")\n(\"ab\", \"bb\")\n加粗部分分别表示 s 和 t 串选出来的子字符串。\n\n示例 3：\n\n输入：s = \"a\", t = \"a\"\n输出：0\n\n示例 4：\n\n输入：s = \"abe\", t = \"bbc\"\n输出：10\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, t.length <= 100\n\ts 和&nbsp;t&nbsp;都只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length, t.length <= 100",
+    "s 和&nbsp;t&nbsp;都只包含小写英文字母。"
+  ]
+}

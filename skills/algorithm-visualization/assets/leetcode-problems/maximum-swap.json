@@ -1,0 +1,9 @@
+{
+  "number": "670",
+  "title_cn": "最大交换",
+  "title_en": "Maximum Swap",
+  "slug": "maximum-swap",
+  "difficulty": "Medium",
+  "description": "给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。\n\n示例 1 :\n\n输入: 2736\n输出: 7236\n解释: 交换数字2和数字7。\n\n示例 2 :\n\n输入: 9973\n输出: 9973\n解释: 不需要交换。\n\n注意:\n\n\t给定数字的范围是&nbsp;[0, 108]",
+  "constraints": []
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3144",
+  "title_cn": "分割字符频率相等的最少子字符串",
+  "title_en": "Minimum Substring Partition of Equal Character Frequency",
+  "slug": "minimum-substring-partition-of-equal-character-frequency",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;，你需要将它分割成一个或者更多的&nbsp;平衡&nbsp;子字符串。比方说，s == \"ababcc\"&nbsp;那么&nbsp;(\"abab\", \"c\", \"c\")&nbsp;，(\"ab\", \"abc\", \"c\")&nbsp;和&nbsp;(\"ababcc\")&nbsp;都是合法分割，但是&nbsp;(\"a\", \"bab\", \"cc\")&nbsp;，(\"aba\", \"bc\", \"c\")&nbsp;和&nbsp;(\"ab\", \"abcc\")&nbsp;不是，不平衡的子字符串用粗体表示。\n\n请你返回 s&nbsp;最少 能分割成多少个平衡子字符串。\n\n注意：一个 平衡&nbsp;字符串指的是字符串中所有字符出现的次数都相同。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"fabccddg\"\n\n输出：3\n\n解释：\n\n我们可以将 s&nbsp;分割成 3 个子字符串：(\"fab, \"ccdd\", \"g\")&nbsp;或者&nbsp;(\"fabc\", \"cd\", \"dg\")&nbsp;。\n\n示例 2：\n\n输入：s = \"abababaccddb\"\n\n输出：2\n\n解释：\n\n我们可以将&nbsp;s&nbsp;分割成 2 个子字符串：(\"abab\", \"abaccddb\")&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

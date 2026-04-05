@@ -1,0 +1,15 @@
+{
+  "number": "2766",
+  "title_cn": "重新放置石块",
+  "title_en": "Relocate Marbles",
+  "slug": "relocate-marbles",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，表示一些石块的初始位置。再给你两个长度&nbsp;相等&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;moveFrom 和&nbsp;moveTo&nbsp;。\n\n在&nbsp;moveFrom.length&nbsp;次操作内，你将改变石块的位置。在第&nbsp;i&nbsp;次操作中，你将位置在&nbsp;moveFrom[i]&nbsp;的所有石块移到位置&nbsp;moveTo[i]&nbsp;。\n\n完成这些操作后，请你按升序返回所有 有&nbsp;石块的位置。\n\n注意：\n\n\t如果一个位置至少有一个石块，我们称这个位置 有&nbsp;石块。\n\t一个位置可能会有多个石块。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,6,7,8], moveFrom = [1,7,2], moveTo = [2,9,5]\n输出：[5,6,8,9]\n解释：一开始，石块在位置 1,6,7,8 。\n第 i = 0 步操作中，我们将位置 1 处的石块移到位置 2 处，位置 2,6,7,8 有石块。\n第 i = 1 步操作中，我们将位置 7 处的石块移到位置 9 处，位置 2,6,8,9 有石块。\n第 i = 2 步操作中，我们将位置 2 处的石块移到位置 5 处，位置 5,6,8,9 有石块。\n最后，至少有一个石块的位置为 [5,6,8,9] 。\n\n示例 2：\n\n输入：nums = [1,1,3,3], moveFrom = [1,3], moveTo = [2,2]\n输出：[2]\n解释：一开始，石块在位置 [1,1,3,3] 。\n第 i = 0 步操作中，我们将位置 1 处的石块移到位置 2 处，有石块的位置为 [2,2,3,3] 。\n第 i = 1 步操作中，我们将位置 3 处的石块移到位置 2 处，有石块的位置为 [2,2,2,2] 。\n由于 2 是唯一有石块的位置，我们返回 [2] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= moveFrom.length <= 105\n\tmoveFrom.length == moveTo.length\n\t1 <= nums[i], moveFrom[i], moveTo[i] <= 109\n\t测试数据保证在进行第&nbsp;i&nbsp;步操作时，moveFrom[i]&nbsp;处至少有一个石块。",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= moveFrom.length <= 105",
+    "moveFrom.length == moveTo.length",
+    "1 <= nums[i], moveFrom[i], moveTo[i] <= 109",
+    "测试数据保证在进行第&nbsp;i&nbsp;步操作时，moveFrom[i]&nbsp;处至少有一个石块。"
+  ]
+}

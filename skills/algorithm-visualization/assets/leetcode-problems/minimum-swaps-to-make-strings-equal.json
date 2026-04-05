@@ -1,0 +1,13 @@
+{
+  "number": "1247",
+  "title_cn": "交换字符使得字符串相同",
+  "title_en": "Minimum Swaps to Make Strings Equal",
+  "slug": "minimum-swaps-to-make-strings-equal",
+  "difficulty": "Medium",
+  "description": "有两个长度相同的字符串&nbsp;s1 和&nbsp;s2，且它们其中&nbsp;只含有&nbsp;字符&nbsp;\"x\" 和&nbsp;\"y\"，你需要通过「交换字符」的方式使这两个字符串相同。\n\n每次「交换字符」的时候，你都可以在两个字符串中各选一个字符进行交换。\n\n交换只能发生在两个不同的字符串之间，绝对不能发生在同一个字符串内部。也就是说，我们可以交换&nbsp;s1[i] 和&nbsp;s2[j]，但不能交换&nbsp;s1[i] 和&nbsp;s1[j]。\n\n最后，请你返回使 s1 和 s2 相同的最小交换次数，如果没有方法能够使得这两个字符串相同，则返回&nbsp;-1 。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"xx\", s2 = \"yy\"\n输出：1\n解释：\n交换 s1[0] 和 s2[1]，得到 s1 = \"yx\"，s2 = \"yx\"。\n\n示例 2：\n\n输入：s1 = \"xy\", s2 = \"yx\"\n输出：2\n解释：\n交换 s1[0] 和 s2[0]，得到 s1 = \"yy\"，s2 = \"xx\" 。\n交换 s1[0] 和 s2[1]，得到 s1 = \"xy\"，s2 = \"xy\" 。\n注意，你不能交换 s1[0] 和 s1[1] 使得 s1 变成 \"yx\"，因为我们只能交换属于两个不同字符串的字符。\n\n示例 3：\n\n输入：s1 = \"xx\", s2 = \"xy\"\n输出：-1\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length, s2.length <= 1000\n\ts1.length == s2.length\n\ts1, s2&nbsp;只包含&nbsp;'x'&nbsp;或&nbsp;'y'。",
+  "constraints": [
+    "1 <= s1.length, s2.length <= 1000",
+    "s1.length == s2.length",
+    "s1, s2&nbsp;只包含&nbsp;'x'&nbsp;或&nbsp;'y'。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2721",
+  "title_cn": "并行执行异步函数",
+  "title_en": "Execute Asynchronous Functions in Parallel",
+  "slug": "execute-asynchronous-functions-in-parallel",
+  "difficulty": "Medium",
+  "description": "给定一个异步函数数组 functions，返回一个新的 promise 对象&nbsp;promise。数组中的每个函数都不接受参数并返回一个 promise。所有的 promise 都应该并行执行。\n\npromise resolve 条件：\n\n\t当所有从 functions 返回的 promise 都成功的并行解析时。promise 的解析值应该是一个按照它们在 functions 中的顺序排列的 promise 的解析值数组。promise 应该在数组中的所有异步函数并行执行完成时解析。\n\npromise&nbsp;reject 条件：\n\n\t当任何从 functions 返回的 promise 被拒绝时。promise 也会被拒绝，并返回第一个拒绝的原因。\n\n请在不使用内置的 Promise.all 函数的情况下解决。\n\n&nbsp;\n\n示例 1：\n\n输入：functions = [\n&nbsp; () => new Promise(resolve => setTimeout(() => resolve(5), 200))\n]\n输出：{\"t\": 200, \"resolved\": [5]}\n解释：\npromiseAll(functions).then(console.log); // [5]\n\n单个函数在 200 毫秒后以值 5 成功解析。\n\n示例 2：\n\n输入：functions = [\n    () => new Promise(resolve => setTimeout(() => resolve(1), 200)), \n    () => new Promise((resolve, reject) => setTimeout(() => reject(\"Error\"), 100))\n]\n输出：{\"t\": 100, \"rejected\": \"Error\"}\n解释：由于其中一个 promise 被拒绝，返回的 promise 也在同一时间被拒绝并返回相同的错误。\n\n示例 3：\n\n输入：functions = [\n    () => new Promise(resolve => setTimeout(() => resolve(4), 50)), \n    () => new Promise(resolve => setTimeout(() => resolve(10), 150)), \n    () => new Promise(resolve => setTimeout(() => resolve(16), 100))\n]\n输出：{\"t\": 150, \"resolved\": [4, 10, 16]}\n解释：所有的 promise 都成功执行。当最后一个 promise 被解析时，返回的 promise 也被解析了。\n\n&nbsp;\n\n提示：\n\n\t函数 functions 是一个返回 promise 的函数数组\n\t1 <= functions.length <= 10",
+  "constraints": [
+    "函数 functions 是一个返回 promise 的函数数组",
+    "1 <= functions.length <= 10"
+  ]
+}

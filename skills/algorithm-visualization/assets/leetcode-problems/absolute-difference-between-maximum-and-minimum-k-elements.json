@@ -1,0 +1,13 @@
+{
+  "number": "3774",
+  "title_cn": "最大和最小 K 个元素的绝对差",
+  "title_en": "Absolute Difference Between Maximum and Minimum K Elements",
+  "slug": "absolute-difference-between-maximum-and-minimum-k-elements",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums 和一个整数 k。\n\n请计算以下两者的绝对差值：\n\n\t数组中 k 个 最大 元素的总和；\n\t数组中 k 个 最小 元素的总和。\n\n返回表示此差值的整数。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [5,2,2,4], k = 2\n\n输出： 5\n\n解释：\n\n\tk = 2 个最大的元素是 4 和 5。它们的总和是 4 + 5 = 9。\n\tk = 2 个最小的元素是 2 和 2。它们的总和是 2 + 2 = 4。\n\t绝对差值是 abs(9 - 4) = 5。\n\n示例 2：\n\n输入： nums = [100], k = 1\n\n输出： 0\n\n解释：\n\n\t最大的元素是 100。\n\t最小的元素是 100。\n\t绝对差值是 abs(100 - 100) = 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 100\n\t1 <= nums[i] <= 100\n\t1 <= k <= n",
+  "constraints": [
+    "1 <= n == nums.length <= 100",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= n"
+  ]
+}

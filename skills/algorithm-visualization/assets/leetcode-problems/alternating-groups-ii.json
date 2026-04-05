@@ -1,0 +1,13 @@
+{
+  "number": "3208",
+  "title_cn": "交替组 II",
+  "title_en": "Alternating Groups II",
+  "slug": "alternating-groups-ii",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 colors&nbsp;和一个整数&nbsp;k&nbsp;，colors表示一个由红色和蓝色瓷砖组成的环，第 i&nbsp;块瓷砖的颜色为&nbsp;colors[i]&nbsp;：\n\n\tcolors[i] == 0&nbsp;表示第&nbsp;i&nbsp;块瓷砖的颜色是 红色&nbsp;。\n\tcolors[i] == 1&nbsp;表示第 i&nbsp;块瓷砖的颜色是 蓝色&nbsp;。\n\n环中连续 k&nbsp;块瓷砖的颜色如果是 交替&nbsp;颜色（也就是说除了第一块和最后一块瓷砖以外，中间瓷砖的颜色与它&nbsp;左边&nbsp;和 右边&nbsp;的颜色都不同），那么它被称为一个 交替&nbsp;组。\n\n请你返回 交替&nbsp;组的数目。\n\n注意&nbsp;，由于&nbsp;colors&nbsp;表示一个 环&nbsp;，第一块&nbsp;瓷砖和 最后一块&nbsp;瓷砖是相邻的。\n\n&nbsp;\n\n示例 1：\n\n输入：colors = [0,1,0,1,0], k = 3\n\n输出：3\n\n解释：\n\n交替组包括：\n\n示例 2：\n\n输入：colors = [0,1,0,0,1,0,1], k = 6\n\n输出：2\n\n解释：\n\n交替组包括：\n\n示例 3：\n\n输入：colors = [1,1,0,1], k = 4\n\n输出：0\n\n解释：\n\n&nbsp;\n\n提示：\n\n\t3 <= colors.length <= 105\n\t0 <= colors[i] <= 1\n\t3 <= k <= colors.length",
+  "constraints": [
+    "3 <= colors.length <= 105",
+    "0 <= colors[i] <= 1",
+    "3 <= k <= colors.length"
+  ]
+}

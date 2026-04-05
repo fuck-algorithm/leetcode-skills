@@ -1,0 +1,14 @@
+{
+  "number": "3447",
+  "title_cn": "将元素分配给有约束条件的组",
+  "title_en": "Assign Elements to Groups with Constraints",
+  "slug": "assign-elements-to-groups-with-constraints",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 groups，其中 groups[i] 表示第 i 组的大小。另给你一个整数数组 elements。\n\n请你根据以下规则为每个组分配&nbsp;一个&nbsp;元素：\n\n\t如果 groups[i] 能被 elements[j] 整除，则下标为&nbsp;j&nbsp;的元素可以分配给组 i。\n\t如果有多个元素满足条件，则分配 最小的下标&nbsp;j&nbsp;的元素。\n\t如果没有元素满足条件，则分配 -1 。\n\n返回一个整数数组 assigned，其中 assigned[i] 是分配给组 i 的元素的索引，若无合适的元素，则为 -1。\n\n注意：一个元素可以分配给多个组。\n\n&nbsp;\n\n示例 1：\n\n输入： groups = [8,4,3,2,4], elements = [4,2]\n\n输出： [0,0,-1,1,0]\n\n解释：\n\n\telements[0] = 4 被分配给组 0、1 和 4。\n\telements[1] = 2 被分配给组 3。\n\t无法为组 2 分配任何元素，分配 -1 。\n\n示例 2：\n\n输入： groups = [2,3,5,7], elements = [5,3,3]\n\n输出： [-1,1,0,-1]\n\n解释：\n\n\telements[1] = 3 被分配给组 1。\n\telements[0] = 5 被分配给组 2。\n\t无法为组 0 和组 3 分配任何元素，分配 -1 。\n\n示例 3：\n\n输入： groups = [10,21,30,41], elements = [2,1]\n\n输出： [0,1,0,1]\n\n解释：\n\nelements[0] = 2 被分配给所有偶数值的组，而 elements[1] = 1 被分配给所有奇数值的组。\n\n&nbsp;\n\n提示：\n\n\t1 <= groups.length <= 105\n\t1 <= elements.length <= 105\n\t1 <= groups[i] <= 105\n\t1 <= elements[i] <= 105",
+  "constraints": [
+    "1 <= groups.length <= 105",
+    "1 <= elements.length <= 105",
+    "1 <= groups[i] <= 105",
+    "1 <= elements[i] <= 105"
+  ]
+}

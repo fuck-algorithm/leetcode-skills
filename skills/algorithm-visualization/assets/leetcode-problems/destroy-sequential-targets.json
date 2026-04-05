@@ -1,0 +1,13 @@
+{
+  "number": "2453",
+  "title_cn": "摧毁一系列目标",
+  "title_en": "Destroy Sequential Targets",
+  "slug": "destroy-sequential-targets",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的数组&nbsp;nums&nbsp;，它包含若干正整数，表示数轴上你需要摧毁的目标所在的位置。同时给你一个整数&nbsp;space&nbsp;。\n\n你有一台机器可以摧毁目标。给机器 输入&nbsp;nums[i]&nbsp;，这台机器会摧毁所有位置在&nbsp;nums[i] + c * space&nbsp;的目标，其中&nbsp;c&nbsp;是任意非负整数。你想摧毁&nbsp;nums&nbsp;中 尽可能多&nbsp;的目标。\n\n请你返回在摧毁数目最多的前提下，nums[i]&nbsp;的 最小值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,7,8,1,1,5], space = 2\n输出：1\n解释：如果我们输入 nums[3] ，我们可以摧毁位于 1,3,5,7,9,... 这些位置的目标。\n这种情况下， 我们总共可以摧毁 5 个目标（除了 nums[2]）。\n没有办法摧毁多于 5 个目标，所以我们返回 nums[3] 。\n\n示例 2：\n\n输入：nums = [1,3,5,2,4,6], space = 2\n输出：1\n解释：输入 nums[0] 或者 nums[3] 都会摧毁 3 个目标。\n没有办法摧毁多于 3 个目标。\n由于 nums[0] 是最小的可以摧毁 3 个目标的整数，所以我们返回 1 。\n\n示例 3：\n\n输入：nums = [6,2,5], space = 100\n输出：2\n解释：无论我们输入哪个数字，都只能摧毁 1 个目标。输入的最小整数是 nums[1] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t1 <= space <=&nbsp;109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= space <=&nbsp;109"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "1773",
+  "title_cn": "统计匹配检索规则的物品数量",
+  "title_en": "Count Items Matching a Rule",
+  "slug": "count-items-matching-a-rule",
+  "difficulty": "Easy",
+  "description": "给你一个数组 items ，其中 items[i] = [typei, colori, namei] ，描述第 i 件物品的类型、颜色以及名称。\n\n另给你一条由两个字符串 ruleKey 和 ruleValue 表示的检索规则。\n\n如果第 i 件物品能满足下述条件之一，则认为该物品与给定的检索规则 匹配 ：\n\n\truleKey == \"type\" 且 ruleValue == typei 。\n\truleKey == \"color\" 且 ruleValue == colori 。\n\truleKey == \"name\" 且 ruleValue == namei 。\n\n统计并返回 匹配检索规则的物品数量 。\n\n示例 1：\n\n输入：items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"color\", ruleValue = \"silver\"\n输出：1\n解释：只有一件物品匹配检索规则，这件物品是 [\"computer\",\"silver\",\"lenovo\"] 。\n\n示例 2：\n\n输入：items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"phone\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"type\", ruleValue = \"phone\"\n输出：2\n解释：只有两件物品匹配检索规则，这两件物品分别是 [\"phone\",\"blue\",\"pixel\"] 和 [\"phone\",\"gold\",\"iphone\"] 。注意，[\"computer\",\"silver\",\"phone\"] 未匹配检索规则。\n\n提示：\n\n\t1 4\n\t1 i.length, colori.length, namei.length, ruleValue.length \n\truleKey 等于 \"type\"、\"color\" 或 \"name\"\n\t所有字符串仅由小写字母组成",
+  "constraints": [
+    "1 4",
+    "1 i.length, colori.length, namei.length, ruleValue.length",
+    "ruleKey 等于 \"type\"、\"color\" 或 \"name\"",
+    "所有字符串仅由小写字母组成"
+  ]
+}

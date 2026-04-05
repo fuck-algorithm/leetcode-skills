@@ -1,0 +1,14 @@
+{
+  "number": "LCR 164",
+  "title_cn": "破解闯关密码",
+  "title_en": "破解闯关密码",
+  "slug": "ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof",
+  "difficulty": "Medium",
+  "description": "闯关游戏需要破解一组密码，闯关组给出的有关密码的线索是：\n\n\t一个拥有密码所有元素的非负整数数组 password\n\t密码是 password 中所有元素拼接后得到的最小的一个数\n\n请编写一个程序返回这个密码。\n\n&nbsp;\n\n示例 1：\n\n输入：password = [15, 8, 7]\n输出：\"1578\"\n\n示例&nbsp;2：\n\n输入：password = [0, 3, 30, 34, 5, 9]\n输出：\"03033459\"\n\n&nbsp;\n\n提示：\n\n\t0 < password.length <= 100\n\n说明: \n\n\t输出结果可能非常大，所以你需要返回一个字符串而不是整数\n\t拼接起来的数字可能会有前导 0，最后结果不需要去掉前导 0\n\n&nbsp;",
+  "constraints": [
+    "0 < password.length <= 100",
+    "说明:",
+    "输出结果可能非常大，所以你需要返回一个字符串而不是整数",
+    "拼接起来的数字可能会有前导 0，最后结果不需要去掉前导 0"
+  ]
+}

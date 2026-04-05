@@ -1,0 +1,14 @@
+{
+  "number": "3266",
+  "title_cn": "K 次乘运算后的最终数组 II",
+  "title_en": "Final Array State After K Multiplication Operations II",
+  "slug": "final-array-state-after-k-multiplication-operations-ii",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;，一个整数&nbsp;k&nbsp;&nbsp;和一个整数&nbsp;multiplier&nbsp;。\n\n你需要对 nums&nbsp;执行 k&nbsp;次操作，每次操作中：\n\n\t找到 nums&nbsp;中的 最小&nbsp;值&nbsp;x&nbsp;，如果存在多个最小值，选择最 前面&nbsp;的一个。\n\t将 x&nbsp;替换为&nbsp;x * multiplier&nbsp;。\n\nk&nbsp;次操作以后，你需要将 nums&nbsp;中每一个数值对&nbsp;109 + 7&nbsp;取余。\n\n请你返回执行完 k&nbsp;次乘运算以及取余运算之后，最终的 nums&nbsp;数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,3,5,6], k = 5, multiplier = 2\n\n输出：[8,4,6,5,6]\n\n解释：\n\n\t\t\t操作\n\t\t\t结果\n\n\t\t\t1 次操作后\n\t\t\t[2, 2, 3, 5, 6]\n\n\t\t\t2 次操作后\n\t\t\t[4, 2, 3, 5, 6]\n\n\t\t\t3 次操作后\n\t\t\t[4, 4, 3, 5, 6]\n\n\t\t\t4 次操作后\n\t\t\t[4, 4, 6, 5, 6]\n\n\t\t\t5 次操作后\n\t\t\t[8, 4, 6, 5, 6]\n\n\t\t\t取余操作后\n\t\t\t[8, 4, 6, 5, 6]\n\n示例 2：\n\n输入：nums = [100000,2000], k = 2, multiplier = 1000000\n\n输出：[999999307,999999993]\n\n解释：\n\n\t\t\t操作\n\t\t\t结果\n\n\t\t\t1 次操作后\n\t\t\t[100000, 2000000000]\n\n\t\t\t2 次操作后\n\t\t\t[100000000000, 2000000000]\n\n\t\t\t取余操作后\n\t\t\t[999999307, 999999993]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 104\n\t1 <= nums[i] <= 109\n\t1 <= k <= 109\n\t1 <= multiplier <= 106",
+  "constraints": [
+    "1 <= nums.length <= 104",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 109",
+    "1 <= multiplier <= 106"
+  ]
+}

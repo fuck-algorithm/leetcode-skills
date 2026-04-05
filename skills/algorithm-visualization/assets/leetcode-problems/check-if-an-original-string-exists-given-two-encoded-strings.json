@@ -1,0 +1,13 @@
+{
+  "number": "2060",
+  "title_cn": "同源字符串检测",
+  "title_en": "Check if an Original String Exists Given Two Encoded Strings",
+  "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
+  "difficulty": "Hard",
+  "description": "原字符串由小写字母组成，可以按下述步骤编码：\n\n\t任意将其 分割 为由若干 非空 子字符串组成的一个 序列 。\n\t任意选择序列中的一些元素（也可能不选择），然后将这些元素替换为元素各自的长度（作为一个数字型的字符串）。\n\t重新 顺次连接 序列，得到编码后的字符串。\n\n例如，编码 \"abcdefghijklmnop\" 的一种方法可以描述为：\n\n\t将原字符串分割得到一个序列：[\"ab\", \"cdefghijklmn\", \"o\", \"p\"] 。\n\t选出其中第二个和第三个元素并分别替换为它们自身的长度。序列变为 [\"ab\", \"12\", \"1\", \"p\"] 。\n\t重新顺次连接序列中的元素，得到编码后的字符串：\"ab121p\" 。\n\n给你两个编码后的字符串 s1 和 s2 ，由小写英文字母和数字 1-9 组成。如果存在能够同时编码得到 s1 和 s2 原字符串，返回 true ；否则，返回 false。\n\n注意：生成的测试用例满足 s1 和 s2 中连续数字数不超过 3 。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"internationalization\", s2 = \"i18n\"\n输出：true\n解释：\"internationalization\" 可以作为原字符串\n- \"internationalization\" \n  -> 分割：      [\"internationalization\"]\n  -> 不替换任何元素\n  -> 连接：      \"internationalization\"，得到 s1\n- \"internationalization\"\n  -> 分割：      [\"i\", \"nternationalizatio\", \"n\"]\n  -> 替换：      [\"i\", \"18\",                 \"n\"]\n  -> 连接：      \"i18n\"，得到 s2\n\n示例 2：\n\n输入：s1 = \"l123e\", s2 = \"44\"\n输出：true\n解释：\"leetcode\" 可以作为原字符串\n- \"leetcode\" \n  -> 分割：       [\"l\", \"e\", \"et\", \"cod\", \"e\"]\n  -> 替换：       [\"l\", \"1\", \"2\",  \"3\",   \"e\"]\n  -> 连接：       \"l123e\"，得到 s1\n- \"leetcode\" \n  -> 分割：       [\"leet\", \"code\"]\n  -> 替换：       [\"4\",    \"4\"]\n  -> 连接：       \"44\"，得到 s2\n\n示例 3：\n\n输入：s1 = \"a5b\", s2 = \"c5b\"\n输出：false\n解释：不存在这样的原字符串\n- 编码为 s1 的字符串必须以字母 'a' 开头\n- 编码为 s2 的字符串必须以字母 'c' 开头\n\n示例 4：\n\n输入：s1 = \"112s\", s2 = \"g841\"\n输出：true\n解释：\"gaaaaaaaaaaaas\" 可以作为原字符串\n- \"gaaaaaaaaaaaas\"\n  -> 分割：       [\"g\", \"aaaaaaaaaaaa\", \"s\"]\n  -> 替换：       [\"1\", \"12\",           \"s\"]\n  -> 连接：       \"112s\"，得到 s1\n- \"gaaaaaaaaaaaas\"\n  -> 分割：       [\"g\", \"aaaaaaaa\", \"aaaa\", \"s\"]\n  -> 替换：       [\"g\", \"8\",        \"4\",    \"1\"]\n  -> 连接         \"g841\"，得到 s2\n\n示例 5：\n\n输入：s1 = \"ab\", s2 = \"a2\"\n输出：false\n解释：不存在这样的原字符串\n- 编码为 s1 的字符串由两个字母组成\n- 编码为 s2 的字符串由三个字母组成\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length, s2.length <= 40\n\ts1 和 s2 仅由数字 1-9 和小写英文字母组成\n\ts1 和 s2 中连续数字数不超过 3",
+  "constraints": [
+    "1 <= s1.length, s2.length <= 40",
+    "s1 和 s2 仅由数字 1-9 和小写英文字母组成",
+    "s1 和 s2 中连续数字数不超过 3"
+  ]
+}

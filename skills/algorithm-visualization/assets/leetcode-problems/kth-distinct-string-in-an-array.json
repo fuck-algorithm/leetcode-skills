@@ -1,0 +1,13 @@
+{
+  "number": "2053",
+  "title_cn": "数组中第 K 个独一无二的字符串",
+  "title_en": "Kth Distinct String in an Array",
+  "slug": "kth-distinct-string-in-an-array",
+  "difficulty": "Easy",
+  "description": "独一无二的字符串&nbsp;指的是在一个数组中只出现过 一次&nbsp;的字符串。\n\n给你一个字符串数组&nbsp;arr&nbsp;和一个整数&nbsp;k&nbsp;，请你返回&nbsp;arr&nbsp;中第&nbsp;k&nbsp;个&nbsp;独一无二的字符串&nbsp;。如果&nbsp;少于&nbsp;k&nbsp;个独一无二的字符串，那么返回&nbsp;空字符串&nbsp;\"\"&nbsp;。\n\n注意，按照字符串在原数组中的 顺序&nbsp;找到第 k&nbsp;个独一无二字符串。\n\n&nbsp;\n\n示例 1:\n\n输入：arr = [\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"], k = 2\n输出：\"a\"\n解释：\narr 中独一无二字符串包括 \"d\" 和 \"a\"&nbsp;。\n\"d\" 首先出现，所以它是第 1 个独一无二字符串。\n\"a\" 第二个出现，所以它是 2 个独一无二字符串。\n由于 k == 2 ，返回 \"a\" 。\n\n示例 2:\n\n输入：arr = [\"aaa\",\"aa\",\"a\"], k = 1\n输出：\"aaa\"\n解释：\narr 中所有字符串都是独一无二的，所以返回第 1 个字符串 \"aaa\" 。\n\n示例 3：\n\n输入：arr = [\"a\",\"b\",\"a\"], k = 3\n输出：\"\"\n解释：\n唯一一个独一无二字符串是 \"b\" 。由于少于 3 个独一无二字符串，我们返回空字符串 \"\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= arr.length <= 1000\n\t1 <= arr[i].length <= 5\n\tarr[i]&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= k <= arr.length <= 1000",
+    "1 <= arr[i].length <= 5",
+    "arr[i]&nbsp;只包含小写英文字母。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "2117",
+  "title_cn": "一个区间内所有数乘积的缩写",
+  "title_en": "Abbreviating the Product of a Range",
+  "slug": "abbreviating-the-product-of-a-range",
+  "difficulty": "Hard",
+  "description": "给你两个正整数&nbsp;left&nbsp;和&nbsp;right&nbsp;，满足&nbsp;left <= right&nbsp;。请你计算&nbsp;闭区间&nbsp;[left, right]&nbsp;中所有整数的&nbsp;乘积&nbsp;。\n\n由于乘积可能非常大，你需要将它按照以下步骤 缩写&nbsp;：\n\n\t统计乘积中&nbsp;后缀 0 的数目，并 移除 这些 0 ，将这个数目记为&nbsp;C&nbsp;。\n\n\t\t比方说，1000&nbsp;中有 3 个后缀 0&nbsp;，546&nbsp;中没有后缀 0 。\n\n\t将乘积中剩余数字的位数记为&nbsp;d&nbsp;。如果&nbsp;d > 10&nbsp;，那么将乘积表示为&nbsp;<pre>...<suf>&nbsp;的形式，其中&nbsp;<pre>&nbsp;表示乘积最 开始&nbsp;的 5&nbsp;个数位，<suf>&nbsp;表示删除后缀 0 之后&nbsp;结尾的 5&nbsp;个数位。如果&nbsp;d <= 10&nbsp;，我们不对它做修改。\n\n\t\t比方说，我们将&nbsp;1234567654321&nbsp;表示为&nbsp;12345...54321&nbsp;，但是&nbsp;1234567&nbsp;仍然表示为&nbsp;1234567&nbsp;。\n\n\t最后，将乘积表示为 字符串&nbsp;\"<pre>...<suf>eC\"&nbsp;。\n\n\t\t比方说，12345678987600000&nbsp;被表示为&nbsp;\"12345...89876e5\"&nbsp;。\n\n请你返回一个字符串，表示 闭区间&nbsp;[left, right]&nbsp;中所有整数&nbsp;乘积&nbsp;的&nbsp;缩写&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：left = 1, right = 4\n输出：\"24e0\"\n解释：\n乘积为 1 × 2 × 3 × 4 = 24 。\n由于没有后缀 0 ，所以 24 保持不变，缩写的结尾为 \"e0\" 。\n因为乘积的结果是 2 位数，小于 10 ，所欲我们不进一步将它缩写。\n所以，最终将乘积表示为 \"24e0\" 。\n\n示例 2：\n\n输入：left = 2, right = 11\n输出：\"399168e2\"\n解释：乘积为 39916800 。\n有 2 个后缀 0 ，删除后得到 399168 。缩写的结尾为 \"e2\" 。 \n删除后缀 0 后是 6 位数，不需要进一步缩写。 \n所以，最终将乘积表示为 \"399168e2\" 。\n\n示例 3：\n\n输入：left = 371, right = 375\n输出：\"7219856259e3\"\n解释：乘积为 7219856259000 。\n\n&nbsp;\n\n提示：\n\n\t1 <= left <= right <= 104",
+  "constraints": [
+    "1 <= left <= right <= 104"
+  ]
+}

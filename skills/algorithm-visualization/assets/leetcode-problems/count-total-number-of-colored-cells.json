@@ -1,0 +1,11 @@
+{
+  "number": "2579",
+  "title_cn": "统计染色格子数",
+  "title_en": "Count Total Number of Colored Cells",
+  "slug": "count-total-number-of-colored-cells",
+  "difficulty": "Medium",
+  "description": "有一个无穷大的二维网格图，一开始所有格子都未染色。给你一个正整数&nbsp;n&nbsp;，表示你需要执行以下步骤&nbsp;n&nbsp;分钟：\n\n\t第一分钟，将 任一 格子染成蓝色。\n\t之后的每一分钟，将与蓝色格子相邻的 所有 未染色格子染成蓝色。\n\n下图分别是 1、2、3 分钟后的网格图。\n\n请你返回 n&nbsp;分钟之后 被染色的格子&nbsp;数目。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1\n输出：1\n解释：1 分钟后，只有 1 个蓝色的格子，所以返回 1 。\n\n示例 2：\n\n输入：n = 2\n输出：5\n解释：2 分钟后，有 4 个在边缘的蓝色格子和 1 个在中间的蓝色格子，所以返回 5 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105",
+  "constraints": [
+    "1 <= n <= 105"
+  ]
+}

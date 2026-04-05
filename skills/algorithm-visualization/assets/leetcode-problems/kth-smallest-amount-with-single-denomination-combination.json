@@ -1,0 +1,14 @@
+{
+  "number": "3116",
+  "title_cn": "单面值组合的第 K 小金额",
+  "title_en": "Kth Smallest Amount With Single Denomination Combination",
+  "slug": "kth-smallest-amount-with-single-denomination-combination",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 coins 表示不同面额的硬币，另给你一个整数 k 。\n\n你有无限量的每种面额的硬币。但是，你 不能 组合使用不同面额的硬币。\n\n返回使用这些硬币能制造的 第 kth 小 金额。\n\n&nbsp;\n\n示例 1：\n\n输入： coins = [3,6,9], k = 3\n\n输出： 9\n\n解释：给定的硬币可以制造以下金额：\n3元硬币产生3的倍数：3, 6, 9, 12, 15等。\n6元硬币产生6的倍数：6, 12, 18, 24等。\n9元硬币产生9的倍数：9, 18, 27, 36等。\n所有硬币合起来可以产生：3, 6, 9, 12, 15等。\n\n示例 2：\n\n输入：coins = [5,2], k = 7\n\n输出：12\n\n解释：给定的硬币可以制造以下金额：\n5元硬币产生5的倍数：5, 10, 15, 20等。\n2元硬币产生2的倍数：2, 4, 6, 8, 10, 12等。\n所有硬币合起来可以产生：2, 4, 5, 6, 8, 10, 12, 14, 15等。\n\n&nbsp;\n\n提示：\n\n\t1 <= coins.length <= 15\n\t1 <= coins[i] <= 25\n\t1 <= k <= 2 * 109\n\tcoins 包含两两不同的整数。",
+  "constraints": [
+    "1 <= coins.length <= 15",
+    "1 <= coins[i] <= 25",
+    "1 <= k <= 2 * 109",
+    "coins 包含两两不同的整数。"
+  ]
+}

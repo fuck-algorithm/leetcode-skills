@@ -1,0 +1,13 @@
+{
+  "number": "LCR 140",
+  "title_cn": "训练计划 II",
+  "title_en": "训练计划 II",
+  "slug": "lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof",
+  "difficulty": "Easy",
+  "description": "给定一个头节点为 head 的链表用于记录一系列核心肌群训练项目编号，请查找并返回倒数第 cnt 个训练项目编号。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [2,4,7,8], cnt = 1\n输出：8\n\n&nbsp;\n\n提示：\n\n\t1 <= head.length <= 100\n\t0 <= head[i] <= 100\n\t1 <= cnt <= head.length\n\n&nbsp;",
+  "constraints": [
+    "1 <= head.length <= 100",
+    "0 <= head[i] <= 100",
+    "1 <= cnt <= head.length"
+  ]
+}

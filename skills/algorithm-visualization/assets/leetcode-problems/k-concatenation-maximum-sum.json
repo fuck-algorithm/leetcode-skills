@@ -1,0 +1,13 @@
+{
+  "number": "1191",
+  "title_cn": "K 次串联后最大子数组之和",
+  "title_en": "K-Concatenation Maximum Sum",
+  "slug": "k-concatenation-maximum-sum",
+  "difficulty": "Medium",
+  "description": "给定一个整数数组&nbsp;arr&nbsp;和一个整数&nbsp;k&nbsp;，通过重复&nbsp;k&nbsp;次来修改数组。\n\n例如，如果&nbsp;arr = [1, 2]&nbsp;，&nbsp;k = 3&nbsp;，那么修改后的数组将是 [1, 2, 1, 2, 1, 2] 。\n\n返回修改后的数组中的最大的子数组之和。注意，子数组长度可以是 0，在这种情况下它的总和也是 0。\n\n由于&nbsp;结果可能会很大，需要返回结果对&nbsp;109&nbsp;+ 7&nbsp;取&nbsp;模。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,2], k = 3\n输出：9\n\n示例 2：\n\n输入：arr = [1,-2,1], k = 5\n输出：2\n\n示例 3：\n\n输入：arr = [-1,-2], k = 7\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 105\n\t1 <= k <= 105\n\t-104&nbsp;<= arr[i] <= 104",
+  "constraints": [
+    "1 <= arr.length <= 105",
+    "1 <= k <= 105",
+    "-104&nbsp;<= arr[i] <= 104"
+  ]
+}

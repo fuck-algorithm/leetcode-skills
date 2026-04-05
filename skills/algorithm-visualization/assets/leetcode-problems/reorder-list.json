@@ -1,0 +1,12 @@
+{
+  "number": "143",
+  "title_cn": "重排链表",
+  "title_en": "Reorder List",
+  "slug": "reorder-list",
+  "difficulty": "Medium",
+  "description": "给定一个单链表 L 的头节点 head ，单链表 L 表示为：\n\nL0 → L1 → … → Ln - 1 → Ln\n\n请将其重新排列后变为：\n\nL0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …\n\n不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,2,3,4]\n输出：[1,4,2,3]\n\n示例 2：\n\n输入：head = [1,2,3,4,5]\n输出：[1,5,2,4,3]\n\n&nbsp;\n\n提示：\n\n\t链表的长度范围为 [1, 5 * 104]\n\t1 <= node.val <= 1000",
+  "constraints": [
+    "链表的长度范围为 [1, 5 * 104]",
+    "1 <= node.val <= 1000"
+  ]
+}

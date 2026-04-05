@@ -1,0 +1,12 @@
+{
+  "number": "2651",
+  "title_cn": "计算列车到站时间",
+  "title_en": "Calculate Delayed Arrival Time",
+  "slug": "calculate-delayed-arrival-time",
+  "difficulty": "Easy",
+  "description": "给你一个正整数 arrivalTime 表示列车正点到站的时间（单位：小时），另给你一个正整数 delayedTime 表示列车延误的小时数。\n\n返回列车实际到站的时间。\n\n注意，该问题中的时间采用 24 小时制。\n\n&nbsp;\n\n示例 1：\n\n输入：arrivalTime = 15, delayedTime = 5 \n输出：20 \n解释：列车正点到站时间是 15:00 ，延误 5 小时，所以列车实际到站的时间是 15 + 5 = 20（20:00）。\n\n示例 2：\n\n输入：arrivalTime = 13, delayedTime = 11\n输出：0\n解释：列车正点到站时间是 13:00 ，延误 11 小时，所以列车实际到站的时间是 13 + 11 = 24（在 24 小时制中表示为 00:00 ，所以返回 0）。\n\n&nbsp;\n\n提示：\n\n\t1 <= arrivaltime <&nbsp;24\n\t1 <= delayedTime <= 24",
+  "constraints": [
+    "1 <= arrivaltime <&nbsp;24",
+    "1 <= delayedTime <= 24"
+  ]
+}

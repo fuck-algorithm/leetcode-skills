@@ -1,0 +1,13 @@
+{
+  "number": "1239",
+  "title_cn": "串联字符串的最大长度",
+  "title_en": "Maximum Length of a Concatenated String with Unique Characters",
+  "slug": "maximum-length-of-a-concatenated-string-with-unique-characters",
+  "difficulty": "Medium",
+  "description": "给定一个字符串数组 arr，字符串 s 是将 arr&nbsp;的含有 不同字母 的&nbsp;子序列 字符串 连接 所得的字符串。\n\n请返回所有可行解 s 中最长长度。\n\n子序列 是一种可以从另一个数组派生而来的数组，通过删除某些元素或不删除元素而不改变其余元素的顺序。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [\"un\",\"iq\",\"ue\"]\n输出：4\n解释：所有可能的串联组合是：\n- \"\"\n- \"un\"\n- \"iq\"\n- \"ue\"\n- \"uniq\" (\"un\" + \"iq\")\n- \"ique\" (\"iq\" + \"ue\")\n最大长度为 4。\n\n示例 2：\n\n输入：arr = [\"cha\",\"r\",\"act\",\"ers\"]\n输出：6\n解释：可能的解答有 \"chaers\" 和 \"acters\"。\n\n示例 3：\n\n输入：arr = [\"abcdefghijklmnopqrstuvwxyz\"]\n输出：26\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 16\n\t1 <= arr[i].length <= 26\n\tarr[i]&nbsp;中只含有小写英文字母",
+  "constraints": [
+    "1 <= arr.length <= 16",
+    "1 <= arr[i].length <= 26",
+    "arr[i]&nbsp;中只含有小写英文字母"
+  ]
+}

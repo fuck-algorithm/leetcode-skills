@@ -1,0 +1,14 @@
+{
+  "number": "884",
+  "title_cn": "两句话中的不常见单词",
+  "title_en": "Uncommon Words from Two Sentences",
+  "slug": "uncommon-words-from-two-sentences",
+  "difficulty": "Easy",
+  "description": "句子 是一串由空格分隔的单词。每个 单词 仅由小写字母组成。\n\n如果某个单词在其中一个句子中恰好出现一次，在另一个句子中却 没有出现 ，那么这个单词就是 不常见的 。\n\n给你两个 句子 s1 和 s2 ，返回所有 不常用单词 的列表。返回列表中单词可以按 任意顺序 组织。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"this apple is sweet\", s2 = \"this apple is sour\"\n输出：[\"sweet\",\"sour\"]\n\n示例 2：\n\n输入：s1 = \"apple apple\", s2 = \"banana\"\n输出：[\"banana\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length, s2.length <= 200\n\ts1 和 s2 由小写英文字母和空格组成\n\ts1 和 s2 都不含前导或尾随空格\n\ts1 和 s2 中的所有单词间均由单个空格分隔",
+  "constraints": [
+    "1 <= s1.length, s2.length <= 200",
+    "s1 和 s2 由小写英文字母和空格组成",
+    "s1 和 s2 都不含前导或尾随空格",
+    "s1 和 s2 中的所有单词间均由单个空格分隔"
+  ]
+}

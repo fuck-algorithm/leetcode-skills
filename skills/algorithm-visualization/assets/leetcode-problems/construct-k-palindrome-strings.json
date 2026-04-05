@@ -1,0 +1,13 @@
+{
+  "number": "1400",
+  "title_cn": "构造 K 个回文字符串",
+  "title_en": "Construct K Palindrome Strings",
+  "slug": "construct-k-palindrome-strings",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s&nbsp;和一个整数 k&nbsp;。请你用 s&nbsp;字符串中 所有字符&nbsp;构造 k&nbsp;个非空 回文串&nbsp;。\n\n如果你可以用&nbsp;s&nbsp;中所有字符构造&nbsp;k&nbsp;个回文字符串，那么请你返回 True&nbsp;，否则返回&nbsp;False&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"annabelle\", k = 2\n输出：true\n解释：可以用 s 中所有字符构造 2 个回文字符串。\n一些可行的构造方案包括：\"anna\" + \"elble\"，\"anbna\" + \"elle\"，\"anellena\" + \"b\"\n\n示例 2：\n\n输入：s = \"leetcode\", k = 3\n输出：false\n解释：无法用 s 中所有字符构造 3 个回文串。\n\n示例 3：\n\n输入：s = \"true\", k = 4\n输出：true\n解释：唯一可行的方案是让 s 中每个字符单独构成一个字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts&nbsp;中所有字符都是小写英文字母。\n\t1 <= k <= 105",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;中所有字符都是小写英文字母。",
+    "1 <= k <= 105"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "442",
+  "title_cn": "数组中重复的数据",
+  "title_en": "Find All Duplicates in an Array",
+  "slug": "find-all-duplicates-in-an-array",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组 nums ，其中 nums 的所有整数都在范围 [1, n] 内，且每个整数出现 最多两次 。请你找出所有出现 两次 的整数，并以数组形式返回。\n\n你必须设计并实现一个时间复杂度为 O(n) 且仅使用常量额外空间（不包括存储输出所需的空间）的算法解决此问题。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,3,2,7,8,2,3,1]\n输出：[2,3]\n\n示例 2：\n\n输入：nums = [1,1,2]\n输出：[1]\n\n示例 3：\n\n输入：nums = [1]\n输出：[]\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 105\n\t1 <= nums[i] <= n\n\tnums 中的每个元素出现 一次 或 两次",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 105",
+    "1 <= nums[i] <= n",
+    "nums 中的每个元素出现 一次 或 两次"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "number": "3261",
+  "title_cn": "统计满足 K 约束的子字符串数量 II",
+  "title_en": "Count Substrings That Satisfy K-Constraint II",
+  "slug": "count-substrings-that-satisfy-k-constraint-ii",
+  "difficulty": "Hard",
+  "description": "给你一个 二进制 字符串 s 和一个整数 k。\n\n另给你一个二维整数数组 queries ，其中 queries[i] = [li, ri] 。\n\n如果一个 二进制字符串 满足以下任一条件，则认为该字符串满足 k 约束：\n\n\t字符串中 0 的数量最多为 k。\n\t字符串中 1 的数量最多为 k。\n\n返回一个整数数组 answer ，其中 answer[i] 表示 s[li..ri] 中满足 k 约束 的 子字符串 的数量。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"0001111\", k = 2, queries = [[0,6]]\n\n输出：[26]\n\n解释：\n\n对于查询 [0, 6]， s[0..6] = \"0001111\" 的所有子字符串中，除 s[0..5] = \"000111\" 和 s[0..6] = \"0001111\" 外，其余子字符串都满足 k 约束。\n\n示例 2：\n\n输入：s = \"010101\", k = 1, queries = [[0,5],[1,4],[2,3]]\n\n输出：[15,9,3]\n\n解释：\n\ns 的所有子字符串中，长度大于 3 的子字符串都不满足 k 约束。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts[i] 是 '0' 或 '1'\n\t1 <= k <= s.length\n\t1 <= queries.length <= 105\n\tqueries[i] == [li, ri]\n\t0 <= li <= ri < s.length\n\t所有查询互不相同",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] 是 '0' 或 '1'",
+    "1 <= k <= s.length",
+    "1 <= queries.length <= 105",
+    "queries[i] == [li, ri]",
+    "0 <= li <= ri < s.length",
+    "所有查询互不相同"
+  ]
+}

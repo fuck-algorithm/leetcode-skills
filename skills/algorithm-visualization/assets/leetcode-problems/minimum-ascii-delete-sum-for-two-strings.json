@@ -1,0 +1,12 @@
+{
+  "number": "712",
+  "title_cn": "两个字符串的最小ASCII删除和",
+  "title_en": "Minimum ASCII Delete Sum for Two Strings",
+  "slug": "minimum-ascii-delete-sum-for-two-strings",
+  "difficulty": "Medium",
+  "description": "给定两个字符串s1&nbsp;和&nbsp;s2，返回 使两个字符串相等所需删除字符的&nbsp;ASCII&nbsp;值的最小和&nbsp;。\n\n&nbsp;\n\n示例 1:\n\n输入: s1 = \"sea\", s2 = \"eat\"\n输出: 231\n解释: 在 \"sea\" 中删除 \"s\" 并将 \"s\" 的值(115)加入总和。\n在 \"eat\" 中删除 \"t\" 并将 116 加入总和。\n结束时，两个字符串相等，115 + 116 = 231 就是符合条件的最小和。\n\n示例&nbsp;2:\n\n输入: s1 = \"delete\", s2 = \"leet\"\n输出: 403\n解释: 在 \"delete\" 中删除 \"dee\" 字符串变成 \"let\"，\n将 100[d]+101[e]+101[e] 加入总和。在 \"leet\" 中删除 \"e\" 将 101[e] 加入总和。\n结束时，两个字符串都等于 \"let\"，结果即为 100+101+101+101 = 403 。\n如果改为将两个字符串转换为 \"lee\" 或 \"eet\"，我们会得到 433 或 417 的结果，比答案更大。\n\n&nbsp;\n\n提示:\n\n\t1 <= s1.length, s2.length <= 1000\n\ts1&nbsp;和&nbsp;s2&nbsp;由小写英文字母组成",
+  "constraints": [
+    "1 <= s1.length, s2.length <= 1000",
+    "s1&nbsp;和&nbsp;s2&nbsp;由小写英文字母组成"
+  ]
+}

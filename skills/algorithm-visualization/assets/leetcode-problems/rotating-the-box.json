@@ -1,0 +1,14 @@
+{
+  "number": "1861",
+  "title_cn": "旋转盒子",
+  "title_en": "Rotating the Box",
+  "slug": "rotating-the-box",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;m x n&nbsp;的字符矩阵&nbsp;boxGrid&nbsp;，它表示一个箱子的侧视图。箱子的每一个格子可能为：\n\n\t'#'&nbsp;表示石头\n\t'*'&nbsp;表示固定的障碍物\n\t'.'&nbsp;表示空位置\n\n这个箱子被 顺时针旋转 90 度&nbsp;，由于重力原因，部分石头的位置会发生改变。每个石头会垂直掉落，直到它遇到障碍物，另一个石头或者箱子的底部。重力 不会&nbsp;影响障碍物的位置，同时箱子旋转不会产生惯性&nbsp;，也就是说石头的水平位置不会发生改变。\n\n题目保证初始时&nbsp;boxGrid&nbsp;中的石头要么在一个障碍物上，要么在另一个石头上，要么在箱子的底部。\n\n请你返回一个&nbsp;n x m&nbsp;的矩阵，表示按照上述旋转后，箱子内的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：box = [[\"#\",\".\",\"#\"]]\n输出：[[\".\"],\n&nbsp;     [\"#\"],\n&nbsp;     [\"#\"]]\n\n示例 2：\n\n输入：box = [[\"#\",\".\",\"*\",\".\"],\n&nbsp;           [\"#\",\"#\",\"*\",\".\"]]\n输出：[[\"#\",\".\"],\n&nbsp;     [\"#\",\"#\"],\n&nbsp;     [\"*\",\"*\"],\n&nbsp;     [\".\",\".\"]]\n\n示例 3：\n\n输入：box = [[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],\n&nbsp;           [\"#\",\"#\",\"#\",\"*\",\".\",\".\"],\n&nbsp;           [\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]\n输出：[[\".\",\"#\",\"#\"],\n&nbsp;     [\".\",\"#\",\"#\"],\n&nbsp;     [\"#\",\"#\",\"*\"],\n&nbsp;     [\"#\",\"*\",\".\"],\n&nbsp;     [\"#\",\".\",\"*\"],\n&nbsp;     [\"#\",\".\",\".\"]]\n\n&nbsp;\n\n提示：\n\n\tm == boxGrid.length\n\tn == boxGrid[i].length\n\t1 <= m, n <= 500\n\tboxGrid[i][j]&nbsp;只可能是&nbsp;'#'&nbsp;，'*'&nbsp;或者&nbsp;'.'&nbsp;。",
+  "constraints": [
+    "m == boxGrid.length",
+    "n == boxGrid[i].length",
+    "1 <= m, n <= 500",
+    "boxGrid[i][j]&nbsp;只可能是&nbsp;'#'&nbsp;，'*'&nbsp;或者&nbsp;'.'&nbsp;。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2270",
+  "title_cn": "分割数组的方案数",
+  "title_en": "Number of Ways to Split Array",
+  "slug": "number-of-ways-to-split-array",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;。\n如果以下描述为真，那么 nums&nbsp;在下标 i&nbsp;处有一个 合法的分割&nbsp;：\n\n\t前&nbsp;i + 1&nbsp;个元素的和 大于等于&nbsp;剩下的&nbsp;n - i - 1&nbsp;个元素的和。\n\t下标 i&nbsp;的右边 至少有一个&nbsp;元素，也就是说下标&nbsp;i&nbsp;满足&nbsp;0 <= i < n - 1&nbsp;。\n\n请你返回&nbsp;nums&nbsp;中的&nbsp;合法分割&nbsp;方案数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [10,4,-8,7]\n输出：2\n解释：\n总共有 3 种不同的方案可以将 nums 分割成两个非空的部分：\n- 在下标 0 处分割 nums 。那么第一部分为 [10] ，和为 10 。第二部分为 [4,-8,7] ，和为 3 。因为 10 >= 3 ，所以 i = 0 是一个合法的分割。\n- 在下标 1 处分割 nums 。那么第一部分为 [10,4] ，和为 14 。第二部分为 [-8,7] ，和为 -1 。因为 14 >= -1 ，所以 i = 1 是一个合法的分割。\n- 在下标 2 处分割 nums 。那么第一部分为 [10,4,-8] ，和为 6 。第二部分为 [7] ，和为 7 。因为 6 < 7 ，所以 i = 2 不是一个合法的分割。\n所以 nums 中总共合法分割方案受为 2 。\n\n示例 2：\n\n输入：nums = [2,3,1,0]\n输出：2\n解释：\n总共有 2 种 nums 的合法分割：\n- 在下标 1 处分割 nums 。那么第一部分为 [2,3] ，和为 5 。第二部分为 [1,0] ，和为 1 。因为 5 >= 1 ，所以 i = 1 是一个合法的分割。\n- 在下标 2 处分割 nums 。那么第一部分为 [2,3,1] ，和为 6 。第二部分为 [0] ，和为 0 。因为 6 >= 0 ，所以 i = 2 是一个合法的分割。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t-105 <= nums[i] <= 105",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "-105 <= nums[i] <= 105"
+  ]
+}

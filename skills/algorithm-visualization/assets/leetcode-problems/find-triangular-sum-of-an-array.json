@@ -1,0 +1,12 @@
+{
+  "number": "2221",
+  "title_cn": "数组的三角和",
+  "title_en": "Find Triangular Sum of an Array",
+  "slug": "find-triangular-sum-of-an-array",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，其中&nbsp;nums[i]&nbsp;是 0&nbsp;到 9&nbsp;之间（两者都包含）的一个数字。\n\nnums&nbsp;的 三角和&nbsp;是执行以下操作以后最后剩下元素的值：\n\n\tnums&nbsp;初始包含&nbsp;n&nbsp;个元素。如果&nbsp;n == 1&nbsp;，终止&nbsp;操作。否则，创建&nbsp;一个新的下标从&nbsp;0&nbsp;开始的长度为 n - 1&nbsp;的整数数组&nbsp;newNums&nbsp;。\n\t对于满足&nbsp;0 <= i <&nbsp;n - 1&nbsp;的下标&nbsp;i&nbsp;，newNums[i] 赋值&nbsp;为&nbsp;(nums[i] + nums[i+1]) % 10&nbsp;，%&nbsp;表示取余运算。\n\t将&nbsp;newNums&nbsp;替换 数组&nbsp;nums&nbsp;。\n\t从步骤 1 开始&nbsp;重复&nbsp;整个过程。\n\n请你返回&nbsp;nums&nbsp;的三角和。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5]\n输出：8\n解释：\n上图展示了得到数组三角和的过程。\n\n示例 2：\n\n输入：nums = [5]\n输出：5\n解释：\n由于 nums 中只有一个元素，数组的三角和为这个元素自己。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t0 <= nums[i] <= 9",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "0 <= nums[i] <= 9"
+  ]
+}

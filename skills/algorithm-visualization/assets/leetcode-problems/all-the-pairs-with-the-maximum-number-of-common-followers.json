@@ -1,0 +1,9 @@
+{
+  "number": "1951",
+  "title_cn": "查询具有最多共同关注者的所有两两结对组",
+  "title_en": "All the Pairs With the Maximum Number of Common Followers",
+  "slug": "all-the-pairs-with-the-maximum-number-of-common-followers",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

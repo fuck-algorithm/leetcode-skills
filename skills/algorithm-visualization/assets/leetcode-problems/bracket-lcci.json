@@ -1,0 +1,9 @@
+{
+  "number": "面试题 08.09",
+  "title_cn": "括号",
+  "title_en": "Bracket LCCI",
+  "slug": "bracket-lcci",
+  "difficulty": "Medium",
+  "description": "括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。\n\n说明：解集不能包含重复的子集。\n\n示例：\n\n输入：n = 3\n输出：\n[\n  \"((()))\",\n  \"(()())\",\n  \"(())()\",\n  \"()(())\",\n  \"()()()\"\n]",
+  "constraints": []
+}

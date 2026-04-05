@@ -1,0 +1,14 @@
+{
+  "number": "LCR 043",
+  "title_cn": "完全二叉树插入器",
+  "title_en": "完全二叉树插入器",
+  "slug": "NaqhDT",
+  "difficulty": "Medium",
+  "description": "完全二叉树是每一层（除最后一层外）都是完全填充（即，节点数达到最大，第 n 层有 2n-1&nbsp;个节点）的，并且所有的节点都尽可能地集中在左侧。\n\n设计一个用完全二叉树初始化的数据结构&nbsp;CBTInserter，它支持以下几种操作：\n\n\tCBTInserter(TreeNode root)&nbsp;使用根节点为&nbsp;root&nbsp;的给定树初始化该数据结构；\n\tCBTInserter.insert(int v)&nbsp; 向树中插入一个新节点，节点类型为 TreeNode，值为 v 。使树保持完全二叉树的状态，并返回插入的新节点的父节点的值；\n\tCBTInserter.get_root() 将返回树的根节点。\n\n&nbsp;\n\n示例 1：\n\n输入：inputs = [\"CBTInserter\",\"insert\",\"get_root\"], inputs = [[[1]],[2],[]]\n输出：[null,1,[1,2]]\n\n示例 2：\n\n输入：inputs = [\"CBTInserter\",\"insert\",\"insert\",\"get_root\"], inputs = [[[1,2,3,4,5,6]],[7],[8],[]]\n输出：[null,3,4,[1,2,3,4,5,6,7,8]]\n\n&nbsp;\n\n提示：\n\n\t最初给定的树是完全二叉树，且包含&nbsp;1&nbsp;到&nbsp;1000&nbsp;个节点。\n\t每个测试用例最多调用&nbsp;CBTInserter.insert&nbsp; 操作&nbsp;10000&nbsp;次。\n\t给定节点或插入节点的每个值都在&nbsp;0&nbsp;到&nbsp;5000&nbsp;之间。\n\n&nbsp;\n\n注意：本题与主站 919&nbsp;题相同：&nbsp;https://leetcode.cn/problems/complete-binary-tree-inserter/",
+  "constraints": [
+    "最初给定的树是完全二叉树，且包含&nbsp;1&nbsp;到&nbsp;1000&nbsp;个节点。",
+    "每个测试用例最多调用&nbsp;CBTInserter.insert&nbsp; 操作&nbsp;10000&nbsp;次。",
+    "给定节点或插入节点的每个值都在&nbsp;0&nbsp;到&nbsp;5000&nbsp;之间。",
+    "注意：本题与主站 919&nbsp;题相同：&nbsp;https://leetcode.cn/problems/complete-binary-tree-inserter/"
+  ]
+}

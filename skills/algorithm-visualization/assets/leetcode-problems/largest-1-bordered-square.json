@@ -1,0 +1,13 @@
+{
+  "number": "1139",
+  "title_cn": "最大的以 1 为边界的正方形",
+  "title_en": "Largest 1-Bordered Square",
+  "slug": "largest-1-bordered-square",
+  "difficulty": "Medium",
+  "description": "给你一个由若干 0 和 1 组成的二维网格&nbsp;grid，请你找出边界全部由 1 组成的最大 正方形 子网格，并返回该子网格中的元素数量。如果不存在，则返回 0。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,1,1],[1,0,1],[1,1,1]]\n输出：9\n\n示例 2：\n\n输入：grid = [[1,1,0,0]]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= grid.length <= 100\n\t1 <= grid[0].length <= 100\n\tgrid[i][j] 为&nbsp;0&nbsp;或&nbsp;1",
+  "constraints": [
+    "1 <= grid.length <= 100",
+    "1 <= grid[0].length <= 100",
+    "grid[i][j] 为&nbsp;0&nbsp;或&nbsp;1"
+  ]
+}

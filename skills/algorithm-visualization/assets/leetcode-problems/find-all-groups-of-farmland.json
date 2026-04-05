@@ -1,0 +1,15 @@
+{
+  "number": "1992",
+  "title_cn": "找到所有的农场组",
+  "title_en": "Find All Groups of Farmland",
+  "slug": "find-all-groups-of-farmland",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始，大小为&nbsp;m x n&nbsp;的二进制矩阵&nbsp;land&nbsp;，其中 0&nbsp;表示一单位的森林土地，1&nbsp;表示一单位的农场土地。\n\n为了让农场保持有序，农场土地之间以矩形的 农场组 的形式存在。每一个农场组都 仅&nbsp;包含农场土地。且题目保证不会有两个农场组相邻，也就是说一个农场组中的任何一块土地都 不会&nbsp;与另一个农场组的任何一块土地在四个方向上相邻。\n\nland&nbsp;可以用坐标系统表示，其中 land&nbsp;左上角坐标为&nbsp;(0, 0)&nbsp;，右下角坐标为&nbsp;(m-1, n-1)&nbsp;。请你找到所有 农场组&nbsp;最左上角和最右下角的坐标。一个左上角坐标为&nbsp;(r1, c1)&nbsp;且右下角坐标为&nbsp;(r2, c2)&nbsp;的 农场组 用长度为 4 的数组&nbsp;[r1, c1, r2, c2]&nbsp;表示。\n\n请你返回一个二维数组，它包含若干个长度为 4 的子数组，每个子数组表示 land&nbsp;中的一个 农场组&nbsp;。如果没有任何农场组，请你返回一个空数组。可以以 任意顺序&nbsp;返回所有农场组。\n\n示例 1：\n\n输入：land = [[1,0,0],[0,1,1],[0,1,1]]\n输出：[[0,0,0,0],[1,1,2,2]]\n解释：\n第一个农场组的左上角为 land[0][0] ，右下角为 land[0][0] 。\n第二个农场组的左上角为 land[1][1] ，右下角为 land[2][2] 。\n\n示例 2：\n\n输入：land = [[1,1],[1,1]]\n输出：[[0,0,1,1]]\n解释：\n第一个农场组左上角为 land[0][0] ，右下角为 land[1][1] 。\n\n示例 3：\n\n输入：land = [[0]]\n输出：[]\n解释：\n没有任何农场组。\n\n&nbsp;\n\n提示：\n\n\tm == land.length\n\tn == land[i].length\n\t1 <= m, n <= 300\n\tland&nbsp;只包含&nbsp;0&nbsp;和&nbsp;1&nbsp;。\n\t农场组都是 矩形&nbsp;的形状。",
+  "constraints": [
+    "m == land.length",
+    "n == land[i].length",
+    "1 <= m, n <= 300",
+    "land&nbsp;只包含&nbsp;0&nbsp;和&nbsp;1&nbsp;。",
+    "农场组都是 矩形&nbsp;的形状。"
+  ]
+}

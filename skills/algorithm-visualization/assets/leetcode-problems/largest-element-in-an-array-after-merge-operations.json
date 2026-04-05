@@ -1,0 +1,12 @@
+{
+  "number": "2789",
+  "title_cn": "合并后数组中的最大元素",
+  "title_en": "Largest Element in an Array after Merge Operations",
+  "slug": "largest-element-in-an-array-after-merge-operations",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始、由正整数组成的数组 nums 。\n\n你可以在数组上执行下述操作 任意 次：\n\n\t选中一个同时满足&nbsp;0 <= i < nums.length - 1 和 nums[i] <= nums[i + 1] 的下标&nbsp;i 。将元素 nums[i + 1] 替换为 nums[i] + nums[i + 1] ，并从数组中删除元素 nums[i] 。\n\n返回你可以从最终数组中获得的 最大 元素的值。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,7,9,3]\n输出：21\n解释：我们可以在数组上执行下述操作：\n- 选中 i = 0 ，得到数组 nums = [5,7,9,3] 。\n- 选中 i = 1 ，得到数组 nums = [5,16,3] 。\n- 选中 i = 0 ，得到数组 nums = [21,3] 。\n最终数组中的最大元素是 21 。可以证明我们无法获得更大的元素。\n\n示例 2：\n\n输入：nums = [5,3,3]\n输出：11\n解释：我们可以在数组上执行下述操作：\n- 选中 i = 1 ，得到数组 nums = [5,6] 。\n- 选中 i = 0 ，得到数组 nums = [11] 。\n最终数组中只有一个元素，即 11 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 106",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 106"
+  ]
+}

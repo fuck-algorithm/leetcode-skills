@@ -1,0 +1,12 @@
+{
+  "number": "3105",
+  "title_cn": "最长的严格递增或递减子数组",
+  "title_en": "Longest Strictly Increasing or Strictly Decreasing Subarray",
+  "slug": "longest-strictly-increasing-or-strictly-decreasing-subarray",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums 。\n\n返回数组 nums 中 严格递增 或 严格递减 的最长非空子数组的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,4,3,3,2]\n\n输出：2\n\n解释：\n\nnums 中严格递增的子数组有[1]、[2]、[3]、[3]、[4] 以及 [1,4] 。\n\nnums 中严格递减的子数组有[1]、[2]、[3]、[3]、[4]、[3,2] 以及 [4,3] 。\n\n因此，返回 2 。\n\n示例 2：\n\n输入：nums = [3,3,3,3]\n\n输出：1\n\n解释：\n\nnums 中严格递增的子数组有 [3]、[3]、[3] 以及 [3] 。\n\nnums 中严格递减的子数组有 [3]、[3]、[3] 以及 [3] 。\n\n因此，返回 1 。\n\n示例 3：\n\n输入：nums = [3,2,1]\n\n输出：3\n\n解释：\n\nnums 中严格递增的子数组有 [3]、[2] 以及 [1] 。\n\nnums 中严格递减的子数组有 [3]、[2]、[1]、[3,2]、[2,1] 以及 [3,2,1] 。\n\n因此，返回 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 50\n\t1 <= nums[i] <= 50",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "1 <= nums[i] <= 50"
+  ]
+}

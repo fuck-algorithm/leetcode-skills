@@ -1,0 +1,11 @@
+{
+  "number": "829",
+  "title_cn": "连续整数求和",
+  "title_en": "Consecutive Numbers Sum",
+  "slug": "consecutive-numbers-sum",
+  "difficulty": "Hard",
+  "description": "给定一个正整数 n，返回 连续正整数满足所有数字之和为 n&nbsp;的组数 。&nbsp;\n\n&nbsp;\n\n示例 1:\n\n输入: n = 5\n输出: 2\n解释: 5 = 2 + 3，共有两组连续整数([5],[2,3])求和后为 5。\n\n示例 2:\n\n输入: n = 9\n输出: 3\n解释: 9 = 4 + 5 = 2 + 3 + 4\n\n示例 3:\n\n输入: n = 15\n输出: 4\n解释: 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5\n\n&nbsp;\n\n提示:\n\n\t1 <= n <= 109​​​​​​​",
+  "constraints": [
+    "1 <= n <= 109​​​​​​​"
+  ]
+}

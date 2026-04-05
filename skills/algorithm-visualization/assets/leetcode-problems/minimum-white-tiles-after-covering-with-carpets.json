@@ -1,0 +1,13 @@
+{
+  "number": "2209",
+  "title_cn": "用地毯覆盖后的最少白色砖块",
+  "title_en": "Minimum White Tiles After Covering With Carpets",
+  "slug": "minimum-white-tiles-after-covering-with-carpets",
+  "difficulty": "Hard",
+  "description": "给你一个下标从&nbsp;0&nbsp;开始的 二进制&nbsp;字符串&nbsp;floor&nbsp;，它表示地板上砖块的颜色。\n\n\tfloor[i] = '0'&nbsp;表示地板上第&nbsp;i&nbsp;块砖块的颜色是 黑色&nbsp;。\n\tfloor[i] = '1'&nbsp;表示地板上第&nbsp;i&nbsp;块砖块的颜色是 白色&nbsp;。\n\n同时给你&nbsp;numCarpets 和&nbsp;carpetLen&nbsp;。你有&nbsp;numCarpets&nbsp;条&nbsp;黑色&nbsp;的地毯，每一条&nbsp;黑色&nbsp;的地毯长度都为&nbsp;carpetLen&nbsp;块砖块。请你使用这些地毯去覆盖砖块，使得未被覆盖的剩余 白色&nbsp;砖块的数目 最小&nbsp;。地毯相互之间可以覆盖。\n\n请你返回没被覆盖的白色砖块的 最少&nbsp;数目。\n\n&nbsp;\n\n示例 1：\n\n输入：floor = \"10110101\", numCarpets = 2, carpetLen = 2\n输出：2\n解释：\n上图展示了剩余 2 块白色砖块的方案。\n没有其他方案可以使未被覆盖的白色砖块少于 2 块。\n\n示例 2：\n\n输入：floor = \"11111\", numCarpets = 2, carpetLen = 3\n输出：0\n解释：\n上图展示了所有白色砖块都被覆盖的一种方案。\n注意，地毯相互之间可以覆盖。\n\n&nbsp;\n\n提示：\n\n\t1 <= carpetLen <= floor.length <= 1000\n\tfloor[i] 要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1'&nbsp;。\n\t1 <= numCarpets <= 1000",
+  "constraints": [
+    "1 <= carpetLen <= floor.length <= 1000",
+    "floor[i] 要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1'&nbsp;。",
+    "1 <= numCarpets <= 1000"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "number": "2736",
+  "title_cn": "最大和查询",
+  "title_en": "Maximum Sum Queries",
+  "slug": "maximum-sum-queries",
+  "difficulty": "Hard",
+  "description": "给你两个长度为 n 、下标从 0 开始的整数数组 nums1 和 nums2 ，另给你一个下标从 1 开始的二维数组 queries ，其中 queries[i] = [xi, yi] 。\n\n对于第 i 个查询，在所有满足 nums1[j] >= xi 且 nums2[j] >= yi 的下标 j (0 <= j < n) 中，找出 nums1[j] + nums2[j] 的 最大值 ，如果不存在满足条件的 j 则返回 -1 。\n\n返回数组 answer ，其中 answer[i] 是第 i 个查询的答案。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [4,3,1,2], nums2 = [2,4,9,5], queries = [[4,1],[1,3],[2,5]]\n输出：[6,10,7]\n解释：\n对于第 1 个查询：xi = 4&nbsp;且&nbsp;yi = 1 ，可以选择下标&nbsp;j = 0&nbsp;，此时 nums1[j] >= 4&nbsp;且&nbsp;nums2[j] >= 1 。nums1[j] + nums2[j]&nbsp;等于 6 ，可以证明 6 是可以获得的最大值。\n对于第 2 个查询：xi = 1&nbsp;且&nbsp;yi = 3 ，可以选择下标&nbsp;j = 2&nbsp;，此时 nums1[j] >= 1&nbsp;且&nbsp;nums2[j] >= 3 。nums1[j] + nums2[j]&nbsp;等于 10 ，可以证明 10 是可以获得的最大值。\n对于第 3 个查询：xi = 2&nbsp;且&nbsp;yi = 5 ，可以选择下标&nbsp;j = 3&nbsp;，此时 nums1[j] >= 2&nbsp;且&nbsp;nums2[j] >= 5 。nums1[j] + nums2[j]&nbsp;等于 7 ，可以证明 7 是可以获得的最大值。\n因此，我们返回&nbsp;[6,10,7] 。\n\n示例 2：\n\n输入：nums1 = [3,2,5], nums2 = [2,3,4], queries = [[4,4],[3,2],[1,1]]\n输出：[9,9,9]\n解释：对于这个示例，我们可以选择下标&nbsp;j = 2&nbsp;，该下标可以满足每个查询的限制。\n\n示例 3：\n\n输入：nums1 = [2,1], nums2 = [2,3], queries = [[3,3]]\n输出：[-1]\n解释：示例中的查询 xi = 3 且 yi = 3 。对于每个下标 j ，都只满足 nums1[j] < xi 或者 nums2[j] < yi 。因此，不存在答案。 \n\n&nbsp;\n\n提示：\n\n\tnums1.length == nums2.length&nbsp;\n\tn ==&nbsp;nums1.length&nbsp;\n\t1 <= n <= 105\n\t1 <= nums1[i], nums2[i] <= 109&nbsp;\n\t1 <= queries.length <= 105\n\tqueries[i].length ==&nbsp;2\n\txi&nbsp;== queries[i][1]\n\tyi == queries[i][2]\n\t1 <= xi, yi <= 109",
+  "constraints": [
+    "nums1.length == nums2.length&nbsp;",
+    "n ==&nbsp;nums1.length&nbsp;",
+    "1 <= n <= 105",
+    "1 <= nums1[i], nums2[i] <= 109&nbsp;",
+    "1 <= queries.length <= 105",
+    "queries[i].length ==&nbsp;2",
+    "xi&nbsp;== queries[i][1]",
+    "yi == queries[i][2]",
+    "1 <= xi, yi <= 109"
+  ]
+}

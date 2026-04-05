@@ -1,0 +1,13 @@
+{
+  "number": "LCR 167",
+  "title_cn": "招式拆解 I",
+  "title_en": "招式拆解 I",
+  "slug": "zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof",
+  "difficulty": "Medium",
+  "description": "某套连招动作记作序列 arr，其中 arr[i] 为第 i 个招式的名字。请返回 arr 中最多可以出连续不重复的多少个招式。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = \"dbascDdad\"\n输出：6\n解释：因为连续且最长的招式序列是 \"dbascD\" 或 \"bascDd\"，所以其长度为 6。\n\n示例 2：\n\n输入：arr = \"KKK\"\n输出：1\n解释：因为无重复字符的最长子串是 \"K\"，所以其长度为 1。\n\n示例 3：\n\n输入：arr = \"pwwkew\"\n输出：3\n解释：因为连续且最长的招式序列是 \"wke\"，所以其长度为 3。&nbsp;    \n请注意区分 子串 与 子序列 的概念：你的答案必须是 连续招式 的长度，也就是 子串。而 \"pwke\" 是一个非连续的 子序列，不是 子串。\n\n&nbsp;\n\n提示：\n\n\t0 <= arr.length <= 40000\n\tarr 由英文字母、数字、符号和空格组成。\n\n&nbsp;\n\n注意：本题与主站 3 题相同：https://leetcode.cn/problems/longest-substring-without-repeating-characters/\n\n&nbsp;",
+  "constraints": [
+    "0 <= arr.length <= 40000",
+    "arr 由英文字母、数字、符号和空格组成。",
+    "注意：本题与主站 3 题相同：https://leetcode.cn/problems/longest-substring-without-repeating-characters/"
+  ]
+}

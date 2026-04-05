@@ -1,0 +1,13 @@
+{
+  "number": "3794",
+  "title_cn": "反转字符串前缀",
+  "title_en": "Reverse String Prefix",
+  "slug": "reverse-string-prefix",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s 和一个整数 k。\n\n反转 s 的前 k 个字符，并返回结果字符串。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"abcd\", k = 2\n\n输出: \"bacd\"\n\n解释:\n\n前 k = 2 个字符 \"ab\" 反转为 \"ba\"。最终得到的结果字符串为 \"bacd\"。\n\n示例 2:\n\n输入: s = \"xyz\", k = 3\n\n输出: \"zyx\"\n\n解释:\n\n前 k = 3 个字符 \"xyz\" 反转为 \"zyx\"。最终得到的结果字符串为 \"zyx\"。\n\n示例 3:\n\n输入: s = \"hey\", k = 1\n\n输出: \"hey\"\n\n解释:\n\n前 k = 1 个字符 \"h\" 在反转后保持不变。最终得到的结果字符串为 \"hey\"。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 100\n\ts 仅由小写英文字母组成。\n\t1 <= k <= s.length",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 仅由小写英文字母组成。",
+    "1 <= k <= s.length"
+  ]
+}

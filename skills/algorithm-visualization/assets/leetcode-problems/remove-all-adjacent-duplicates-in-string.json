@@ -1,0 +1,12 @@
+{
+  "number": "1047",
+  "title_cn": "删除字符串中的所有相邻重复项",
+  "title_en": "Remove All Adjacent Duplicates In String",
+  "slug": "remove-all-adjacent-duplicates-in-string",
+  "difficulty": "Easy",
+  "description": "给出由小写字母组成的字符串&nbsp;s，重复项删除操作会选择两个相邻且相同的字母，并删除它们。\n\n在 s 上反复执行重复项删除操作，直到无法继续删除。\n\n在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。\n\n&nbsp;\n\n示例：\n\n输入：\"abbaca\"\n输出：\"ca\"\n解释：\n例如，在 \"abbaca\" 中，我们可以删除 \"bb\" 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重复项。之后我们得到字符串 \"aaca\"，其中又只有 \"aa\" 可以执行重复项删除操作，所以最后的字符串为 \"ca\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由小写英文字母组成。"
+  ]
+}

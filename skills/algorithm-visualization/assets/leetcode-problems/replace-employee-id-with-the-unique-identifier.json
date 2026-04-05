@@ -1,0 +1,9 @@
+{
+  "number": "1378",
+  "title_cn": "使用唯一标识码替换员工ID",
+  "title_en": "Replace Employee ID With The Unique Identifier",
+  "slug": "replace-employee-id-with-the-unique-identifier",
+  "difficulty": "Easy",
+  "description": "Employees 表：\n\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| name          | varchar |\n+---------------+---------+\n在 SQL 中，id 是这张表的主键。\n这张表的每一行分别代表了某公司其中一位员工的名字和 ID 。\n\n&nbsp;\n\nEmployeeUNI&nbsp;表：\n\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| unique_id     | int     |\n+---------------+---------+\n在 SQL 中，(id, unique_id) 是这张表的主键。\n这张表的每一行包含了该公司某位员工的 ID 和他的唯一标识码（unique ID）。\n\n&nbsp;\n\n展示每位用户的 唯一标识码（unique ID ）；如果某位员工没有唯一标识码，使用 null 填充即可。\n\n你可以以 任意 顺序返回结果表。\n\n返回结果的格式如下例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\nEmployees 表:\n+----+----------+\n| id | name     |\n+----+----------+\n| 1  | Alice    |\n| 7  | Bob      |\n| 11 | Meir     |\n| 90 | Winston  |\n| 3  | Jonathan |\n+----+----------+\nEmployeeUNI 表:\n+----+-----------+\n| id | unique_id |\n+----+-----------+\n| 3  | 1         |\n| 11 | 2         |\n| 90 | 3         |\n+----+-----------+\n输出：\n+-----------+----------+\n| unique_id | name     |\n+-----------+----------+\n| null      | Alice    |\n| null      | Bob      |\n| 2         | Meir     |\n| 3         | Winston  |\n| 1         | Jonathan |\n+-----------+----------+\n解释：\nAlice and Bob 没有唯一标识码, 因此我们使用 null 替代。\nMeir 的唯一标识码是 2 。\nWinston 的唯一标识码是 3 。\nJonathan 唯一标识码是 1 。",
+  "constraints": []
+}

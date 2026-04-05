@@ -1,0 +1,13 @@
+{
+  "number": "42",
+  "title_cn": "接雨水",
+  "title_en": "Trapping Rain Water",
+  "slug": "trapping-rain-water",
+  "difficulty": "Hard",
+  "description": "给定&nbsp;n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。\n\n&nbsp;\n\n示例 1：\n\n输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]\n输出：6\n解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 \n\n示例 2：\n\n输入：height = [4,2,0,3,2,5]\n输出：9\n\n&nbsp;\n\n提示：\n\n\tn == height.length\n\t1 <= n <= 2 * 104\n\t0 <= height[i] <= 105",
+  "constraints": [
+    "n == height.length",
+    "1 <= n <= 2 * 104",
+    "0 <= height[i] <= 105"
+  ]
+}

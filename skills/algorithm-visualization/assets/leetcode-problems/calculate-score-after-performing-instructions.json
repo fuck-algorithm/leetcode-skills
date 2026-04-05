@@ -1,0 +1,14 @@
+{
+  "number": "3522",
+  "title_cn": "执行指令后的得分",
+  "title_en": "Calculate Score After Performing Instructions",
+  "slug": "calculate-score-after-performing-instructions",
+  "difficulty": "Medium",
+  "description": "给你两个数组：instructions 和 values，数组的长度均为 n。\n\n你需要根据以下规则模拟一个过程：\n\n\t从下标&nbsp;i = 0 的第一个指令开始，初始得分为 0。\n\t如果 instructions[i] 是 \"add\"：\n\n\t\t将 values[i] 加到你的得分中。\n\t\t移动到下一个指令 (i + 1)。\n\n\t如果 instructions[i] 是 \"jump\"：\n\n\t\t移动到下标为&nbsp;(i + values[i]) 的指令，但不修改你的得分。\n\n当以下任一情况发生时，过程会终止：\n\n\t越界（即 i < 0 或 i >= n），或\n\t尝试再次执行已经执行过的指令。被重复访问的指令不会再次执行。\n\n返回过程结束时的得分。\n\n&nbsp;\n\n示例 1：\n\n输入： instructions = [\"jump\",\"add\",\"add\",\"jump\",\"add\",\"jump\"], values = [2,1,3,1,-2,-3]\n\n输出： 1\n\n解释：\n\n从下标&nbsp;0 开始模拟过程：\n\n\t下标 0：指令是 \"jump\"，移动到下标&nbsp;0 + 2 = 2。\n\t下标 2：指令是 \"add\"，将 values[2] = 3 加到得分中，移动到下标&nbsp;3。得分变为 3。\n\t下标 3：指令是 \"jump\"，移动到下标&nbsp;3 + 1 = 4。\n\t下标 4：指令是 \"add\"，将 values[4] = -2 加到得分中，移动到下标&nbsp;5。得分变为 1。\n\t下标 5：指令是 \"jump\"，移动到下标&nbsp;5 + (-3) = 2。\n\t下标 2：已经访问过。过程结束。\n\n示例 2：\n\n输入： instructions = [\"jump\",\"add\",\"add\"], values = [3,1,1]\n\n输出： 0\n\n解释：\n\n从下标&nbsp;0 开始模拟过程：\n\n\t下标 0：指令是 \"jump\"，移动到下标&nbsp;0 + 3 = 3。\n\t下标 3：越界。过程结束。\n\n示例 3：\n\n输入： instructions = [\"jump\"], values = [0]\n\n输出： 0\n\n解释：\n\n从下标&nbsp;0 开始模拟过程：\n\n\t下标 0：指令是 \"jump\"，移动到下标&nbsp;0 + 0 = 0。\n\t下标 0：已经访问过。过程结束。\n\n&nbsp;\n\n提示：\n\n\tn == instructions.length == values.length\n\t1 <= n <= 105\n\tinstructions[i] 只能是 \"add\" 或 \"jump\"。\n\t-105 <= values[i] <= 105",
+  "constraints": [
+    "n == instructions.length == values.length",
+    "1 <= n <= 105",
+    "instructions[i] 只能是 \"add\" 或 \"jump\"。",
+    "-105 <= values[i] <= 105"
+  ]
+}

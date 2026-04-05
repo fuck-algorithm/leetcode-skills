@@ -1,0 +1,13 @@
+{
+  "number": "LCR 047",
+  "title_cn": "二叉树剪枝",
+  "title_en": "二叉树剪枝",
+  "slug": "pOCWxh",
+  "difficulty": "Medium",
+  "description": "给定一个二叉树 根节点&nbsp;root&nbsp;，树的每个节点的值要么是 0，要么是 1。请剪除该二叉树中所有节点的值为 0 的子树。\n\n节点 node 的子树为&nbsp;node 本身，以及所有 node&nbsp;的后代。\n\n&nbsp;\n\n示例 1：\n\n输入: [1,null,0,0,1]\n输出: [1,null,0,null,1] \n解释: \n只有红色节点满足条件&ldquo;所有不包含 1 的子树&rdquo;。\n右图为返回的答案。\n\n示例 2：\n\n输入: [1,0,1,0,0,0,1]\n输出: [1,null,1,null,1]\n解释: \n\n示例 3：\n\n输入: [1,1,0,1,1,0,1,0]\n输出: [1,1,0,1,1,null,1]\n解释: \n\n&nbsp;\n\n提示：\n\n\t二叉树的节点个数的范围是 [1,200]\n\t二叉树节点的值只会是 0 或 1\n\n&nbsp;\n\n注意：本题与主站 814&nbsp;题相同：https://leetcode.cn/problems/binary-tree-pruning/",
+  "constraints": [
+    "二叉树的节点个数的范围是 [1,200]",
+    "二叉树节点的值只会是 0 或 1",
+    "注意：本题与主站 814&nbsp;题相同：https://leetcode.cn/problems/binary-tree-pruning/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "155",
+  "title_cn": "最小栈",
+  "title_en": "Min Stack",
+  "slug": "min-stack",
+  "difficulty": "Medium",
+  "description": "设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。\n\n实现 MinStack 类:\n\n\tMinStack() 初始化堆栈对象。\n\tvoid push(int val) 将元素val推入堆栈。\n\tvoid pop() 删除堆栈顶部的元素。\n\tint top() 获取堆栈顶部的元素。\n\tint getMin() 获取堆栈中的最小元素。\n\n&nbsp;\n\n示例 1:\n\n输入：\n[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]\n\n输出：\n[null,null,null,null,-3,null,0,-2]\n\n解释：\nMinStack minStack = new MinStack();\nminStack.push(-2);\nminStack.push(0);\nminStack.push(-3);\nminStack.getMin();   --> 返回 -3.\nminStack.pop();\nminStack.top();      --> 返回 0.\nminStack.getMin();   --> 返回 -2.\n\n&nbsp;\n\n提示：\n\n\t-231&nbsp;<= val <= 231&nbsp;- 1\n\tpop、top 和 getMin 操作总是在 非空栈 上调用\n\tpush,&nbsp;pop,&nbsp;top, and&nbsp;getMin最多被调用&nbsp;3 * 104&nbsp;次",
+  "constraints": [
+    "-231&nbsp;<= val <= 231&nbsp;- 1",
+    "pop、top 和 getMin 操作总是在 非空栈 上调用",
+    "push,&nbsp;pop,&nbsp;top, and&nbsp;getMin最多被调用&nbsp;3 * 104&nbsp;次"
+  ]
+}

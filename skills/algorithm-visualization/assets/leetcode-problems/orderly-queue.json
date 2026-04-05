@@ -1,0 +1,12 @@
+{
+  "number": "899",
+  "title_cn": "有序队列",
+  "title_en": "Orderly Queue",
+  "slug": "orderly-queue",
+  "difficulty": "Hard",
+  "description": "给定一个字符串 s 和一个整数 k&nbsp;。你可以从 s 的前 k 个字母中选择一个，并把它加到字符串的末尾。\n\n返回 在应用上述步骤的任意数量的移动后，字典序最小的字符串&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"cba\", k = 1\n输出：\"acb\"\n解释：\n在第一步中，我们将第一个字符（“c”）移动到最后，获得字符串 “bac”。\n在第二步中，我们将第一个字符（“b”）移动到最后，获得最终结果 “acb”。\n\n示例 2：\n\n输入：s = \"baaca\", k = 3\n输出：\"aaabc\"\n解释：\n在第一步中，我们将第一个字符（“b”）移动到最后，获得字符串 “aacab”。\n在第二步中，我们将第三个字符（“c”）移动到最后，获得最终结果 “aaabc”。\n\n&nbsp;\n\n提示：\n\n\t1 <= k&nbsp;<= S.length&nbsp;<= 1000\n\ts&nbsp;只由小写字母组成。",
+  "constraints": [
+    "1 <= k&nbsp;<= S.length&nbsp;<= 1000",
+    "s&nbsp;只由小写字母组成。"
+  ]
+}

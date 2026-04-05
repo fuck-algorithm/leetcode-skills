@@ -1,0 +1,17 @@
+{
+  "number": "3310",
+  "title_cn": "移除可疑的方法",
+  "title_en": "Remove Methods From Project",
+  "slug": "remove-methods-from-project",
+  "difficulty": "Medium",
+  "description": "你正在维护一个项目，该项目有 n 个方法，编号从 0 到 n - 1。\n\n给你两个整数 n 和 k，以及一个二维整数数组 invocations，其中 invocations[i] = [ai, bi] 表示方法 ai 调用了方法 bi。\n\n已知如果方法 k 存在一个已知的 bug。那么方法 k 以及它直接或间接调用的任何方法都被视为 可疑方法 ，我们需要从项目中移除这些方法。\n\n只有当一组方法没有被这组之外的任何方法调用时，这组方法才能被移除。\n\n返回一个数组，包含移除所有 可疑方法 后剩下的所有方法。你可以以任意顺序返回答案。如果无法移除 所有 可疑方法，则 不 移除任何方法。\n\n&nbsp;\n\n示例 1:\n\n输入: n = 4, k = 1, invocations = [[1,2],[0,1],[3,2]]\n\n输出: [0,1,2,3]\n\n解释:\n\n方法 2 和方法 1 是可疑方法，但它们分别直接被方法 3 和方法 0 调用。由于方法 3 和方法 0 不是可疑方法，我们无法移除任何方法，故返回所有方法。\n\n示例 2:\n\n输入: n = 5, k = 0, invocations = [[1,2],[0,2],[0,1],[3,4]]\n\n输出: [3,4]\n\n解释:\n\n方法 0、方法 1 和方法 2 是可疑方法，且没有被任何其他方法直接调用。我们可以移除它们。\n\n示例 3:\n\n输入: n = 3, k = 2, invocations = [[1,2],[0,1],[2,0]]\n\n输出: []\n\n解释:\n\n所有方法都是可疑方法。我们可以移除它们。\n\n&nbsp;\n\n提示:\n\n\t1 <= n <= 105\n\t0 <= k <= n - 1\n\t0 <= invocations.length <= 2 * 105\n\tinvocations[i] == [ai, bi]\n\t0 <= ai, bi <= n - 1\n\tai != bi\n\tinvocations[i] != invocations[j]",
+  "constraints": [
+    "1 <= n <= 105",
+    "0 <= k <= n - 1",
+    "0 <= invocations.length <= 2 * 105",
+    "invocations[i] == [ai, bi]",
+    "0 <= ai, bi <= n - 1",
+    "ai != bi",
+    "invocations[i] != invocations[j]"
+  ]
+}

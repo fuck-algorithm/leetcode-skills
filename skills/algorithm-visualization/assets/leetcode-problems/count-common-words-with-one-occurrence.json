@@ -1,0 +1,13 @@
+{
+  "number": "2085",
+  "title_cn": "统计出现过一次的公共字符串",
+  "title_en": "Count Common Words With One Occurrence",
+  "slug": "count-common-words-with-one-occurrence",
+  "difficulty": "Easy",
+  "description": "给你两个字符串数组&nbsp;words1&nbsp;和&nbsp;words2&nbsp;，请你返回在两个字符串数组中 都恰好出现一次&nbsp;的字符串的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：words1 = [\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"], words2 = [\"amazing\",\"leetcode\",\"is\"]\n输出：2\n解释：\n- \"leetcode\" 在两个数组中都恰好出现一次，计入答案。\n- \"amazing\" 在两个数组中都恰好出现一次，计入答案。\n- \"is\" 在两个数组中都出现过，但在 words1 中出现了 2 次，不计入答案。\n- \"as\" 在 words1 中出现了一次，但是在 words2 中没有出现过，不计入答案。\n所以，有 2 个字符串在两个数组中都恰好出现了一次。\n\n示例 2：\n\n输入：words1 = [\"b\",\"bb\",\"bbb\"], words2 = [\"a\",\"aa\",\"aaa\"]\n输出：0\n解释：没有字符串在两个数组中都恰好出现一次。\n\n示例 3：\n\n输入：words1 = [\"a\",\"ab\"], words2 = [\"a\",\"a\",\"a\",\"ab\"]\n输出：1\n解释：唯一在两个数组中都出现一次的字符串是 \"ab\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= words1.length, words2.length <= 1000\n\t1 <= words1[i].length, words2[j].length <= 30\n\twords1[i] 和&nbsp;words2[j]&nbsp;都只包含小写英文字母。",
+  "constraints": [
+    "1 <= words1.length, words2.length <= 1000",
+    "1 <= words1[i].length, words2[j].length <= 30",
+    "words1[i] 和&nbsp;words2[j]&nbsp;都只包含小写英文字母。"
+  ]
+}

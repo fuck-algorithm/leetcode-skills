@@ -1,0 +1,14 @@
+{
+  "number": "92",
+  "title_cn": "反转链表 II",
+  "title_en": "Reverse Linked List II",
+  "slug": "reverse-linked-list-ii",
+  "difficulty": "Medium",
+  "description": "给你单链表的头指针 head 和两个整数 left 和 right ，其中 left  。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。\n\n示例 1：\n\n输入：head = [1,2,3,4,5], left = 2, right = 4\n输出：[1,4,3,2,5]\n\n示例 2：\n\n输入：head = [5], left = 1, right = 1\n输出：[5]\n\n提示：\n\n\t链表中节点数目为 n\n\t1 \n\t-500 \n\t1 \n\n进阶： 你可以使用一趟扫描完成反转吗？",
+  "constraints": [
+    "链表中节点数目为 n",
+    "1",
+    "-500",
+    "1"
+  ]
+}

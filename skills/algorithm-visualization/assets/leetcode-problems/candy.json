@@ -1,0 +1,13 @@
+{
+  "number": "135",
+  "title_cn": "分发糖果",
+  "title_en": "Candy",
+  "slug": "candy",
+  "difficulty": "Hard",
+  "description": "n 个孩子站成一排。给你一个整数数组 ratings 表示每个孩子的评分。\n\n你需要按照以下要求，给这些孩子分发糖果：\n\n\t每个孩子至少分配到 1 个糖果。\n\t相邻两个孩子中，评分更高的那个会获得更多的糖果。\n\n请你给每个孩子分发糖果，计算并返回需要准备的 最少糖果数目 。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：ratings = [1,0,2]\n输出：5\n解释：你可以分别给第一个、第二个、第三个孩子分发 2、1、2 颗糖果。\n\n示例&nbsp;2：\n\n输入：ratings = [1,2,2]\n输出：4\n解释：你可以分别给第一个、第二个、第三个孩子分发 1、2、1 颗糖果。\n     第三个孩子只得到 1 颗糖果，这满足题面中的两个条件。\n\n&nbsp;\n\n提示：\n\n\tn == ratings.length\n\t1 <= n <= 2 * 104\n\t0 <= ratings[i] <= 2 * 104",
+  "constraints": [
+    "n == ratings.length",
+    "1 <= n <= 2 * 104",
+    "0 <= ratings[i] <= 2 * 104"
+  ]
+}

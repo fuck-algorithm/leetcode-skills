@@ -1,0 +1,12 @@
+{
+  "number": "2790",
+  "title_cn": "长度递增组的最大数目",
+  "title_en": "Maximum Number of Groups With Increasing Length",
+  "slug": "maximum-number-of-groups-with-increasing-length",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0 开始、长度为 n 的数组 usageLimits 。\n\n你的任务是使用从 0 到 n - 1 的数字创建若干组，并确保每个数字 i 在 所有组 中使用的次数总共不超过 usageLimits[i] 次。此外，还必须满足以下条件：\n\n\t每个组必须由 不同 的数字组成，也就是说，单个组内不能存在重复的数字。\n\t每个组（除了第一个）的长度必须 严格大于 前一个组。\n\n在满足所有条件的情况下，以整数形式返回可以创建的最大组数。\n\n&nbsp;\n\n示例 1：\n\n输入：usageLimits = [1,2,5]\n输出：3\n解释：在这个示例中，我们可以使用 0 至多一次，使用 1 至多 2 次，使用 2 至多 5 次。\n一种既能满足所有条件，又能创建最多组的方式是： \n组 1 包含数字 [2] 。\n组 2 包含数字 [1,2] 。\n组 3 包含数字 [0,1,2] 。 \n可以证明能够创建的最大组数是 3 。 \n所以，输出是 3 。 \n\n示例 2：\n\n输入：usageLimits = [2,1,2]\n输出：2\n解释：在这个示例中，我们可以使用 0 至多 2 次，使用 1 至多 1 次，使用 2 至多 2 次。\n一种既能满足所有条件，又能创建最多组的方式是： \n组 1 包含数字 [0] 。 \n组 2 包含数字 [1,2] 。\n可以证明能够创建的最大组数是 2 。 \n所以，输出是 2 。 \n\n示例 3：\n\n输入：usageLimits = [1,1]\n输出：1\n解释：在这个示例中，我们可以使用 0 和 1 至多 1 次。 \n一种既能满足所有条件，又能创建最多组的方式是：\n组 1 包含数字 [0] 。\n可以证明能够创建的最大组数是 1 。 \n所以，输出是 1 。 \n\n&nbsp;\n\n提示：\n\n\t1 <= usageLimits.length <= 105\n\t1 <= usageLimits[i] <= 109",
+  "constraints": [
+    "1 <= usageLimits.length <= 105",
+    "1 <= usageLimits[i] <= 109"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2110",
+  "title_cn": "股票平滑下跌阶段的数目",
+  "title_en": "Number of Smooth Descent Periods of a Stock",
+  "slug": "number-of-smooth-descent-periods-of-a-stock",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;prices&nbsp;，表示一支股票的历史每日股价，其中&nbsp;prices[i]&nbsp;是这支股票第&nbsp;i&nbsp;天的价格。\n\n一个 平滑下降的阶段&nbsp;定义为：对于&nbsp;连续一天或者多天&nbsp;，每日股价都比 前一日股价恰好少 1&nbsp;，这个阶段第一天的股价没有限制。\n\n请你返回 平滑下降阶段&nbsp;的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：prices = [3,2,1,4]\n输出：7\n解释：总共有 7 个平滑下降阶段：\n[3], [2], [1], [4], [3,2], [2,1] 和 [3,2,1]\n注意，仅一天按照定义也是平滑下降阶段。\n\n示例 2：\n\n输入：prices = [8,6,7,7]\n输出：4\n解释：总共有 4 个连续平滑下降阶段：[8], [6], [7] 和 [7]\n由于 8 - 6 ≠ 1 ，所以 [8,6] 不是平滑下降阶段。\n\n示例 3：\n\n输入：prices = [1]\n输出：1\n解释：总共有 1 个平滑下降阶段：[1]\n\n&nbsp;\n\n提示：\n\n\t1 <= prices.length <= 105\n\t1 <= prices[i] <= 105",
+  "constraints": [
+    "1 <= prices.length <= 105",
+    "1 <= prices[i] <= 105"
+  ]
+}

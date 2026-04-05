@@ -1,0 +1,13 @@
+{
+  "number": "2161",
+  "title_cn": "根据给定数字划分数组",
+  "title_en": "Partition Array According to Given Pivot",
+  "slug": "partition-array-according-to-given-pivot",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个整数&nbsp;pivot&nbsp;。请你将&nbsp;nums&nbsp;重新排列，使得以下条件均成立：\n\n\t所有小于&nbsp;pivot&nbsp;的元素都出现在所有大于&nbsp;pivot&nbsp;的元素&nbsp;之前&nbsp;。\n\t所有等于&nbsp;pivot&nbsp;的元素都出现在小于和大于 pivot&nbsp;的元素 中间&nbsp;。\n\t小于 pivot&nbsp;的元素之间和大于 pivot&nbsp;的元素之间的 相对顺序&nbsp;不发生改变。\n\n\t\t更正式的，考虑每一对&nbsp;pi，pj&nbsp;，pi&nbsp;是初始时位置 i&nbsp;元素的新位置，pj&nbsp;是初始时位置&nbsp;j&nbsp;元素的新位置。如果&nbsp;i < j 且两个元素&nbsp;都&nbsp;小于（或大于）pivot，那么&nbsp;pi < pj&nbsp;。\n\n请你返回重新排列 nums&nbsp;数组后的结果数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [9,12,5,10,14,3,10], pivot = 10\n输出：[9,5,3,10,10,12,14]\n解释：\n元素 9 ，5 和 3 小于 pivot ，所以它们在数组的最左边。\n元素 12 和 14 大于 pivot ，所以它们在数组的最右边。\n小于 pivot 的元素的相对位置和大于 pivot 的元素的相对位置分别为 [9, 5, 3] 和 [12, 14] ，它们在结果数组中的相对顺序需要保留。\n\n示例 2：\n\n输入：nums = [-3,4,3,2], pivot = 2\n输出：[-3,2,4,3]\n解释：\n元素 -3 小于 pivot ，所以在数组的最左边。\n元素 4 和 3 大于 pivot ，所以它们在数组的最右边。\n小于 pivot 的元素的相对位置和大于 pivot 的元素的相对位置分别为 [-3] 和 [4, 3] ，它们在结果数组中的相对顺序需要保留。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-106 <= nums[i] <= 106\n\tpivot&nbsp;等于&nbsp;nums&nbsp;中的一个元素。",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-106 <= nums[i] <= 106",
+    "pivot&nbsp;等于&nbsp;nums&nbsp;中的一个元素。"
+  ]
+}

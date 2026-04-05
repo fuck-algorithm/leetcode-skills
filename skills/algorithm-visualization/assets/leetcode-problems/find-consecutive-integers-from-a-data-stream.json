@@ -1,0 +1,13 @@
+{
+  "number": "2526",
+  "title_cn": "找到数据流中的连续整数",
+  "title_en": "Find Consecutive Integers from a Data Stream",
+  "slug": "find-consecutive-integers-from-a-data-stream",
+  "difficulty": "Medium",
+  "description": "给你一个整数数据流，请你实现一个数据结构，检查数据流中最后&nbsp;k&nbsp;个整数是否 等于 给定值&nbsp;value&nbsp;。\n\n请你实现&nbsp;DataStream&nbsp;类：\n\n\tDataStream(int value, int k)&nbsp;用两个整数 value&nbsp;和 k&nbsp;初始化一个空的整数数据流。\n\tboolean consec(int num)&nbsp;将&nbsp;num&nbsp;添加到整数数据流。如果后 k&nbsp;个整数都等于&nbsp;value&nbsp;，返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。如果少于&nbsp;k&nbsp;个整数，条件不满足，所以也返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"DataStream\", \"consec\", \"consec\", \"consec\", \"consec\"]\n[[4, 3], [4], [4], [4], [3]]\n输出：\n[null, false, false, true, false]\n\n解释：\nDataStream dataStream = new DataStream(4, 3); // value = 4, k = 3 \ndataStream.consec(4); // 数据流中只有 1 个整数，所以返回 False 。\ndataStream.consec(4); // 数据流中只有 2 个整数\n                      // 由于 2 小于 k ，返回 False 。\ndataStream.consec(4); // 数据流最后 3 个整数都等于 value， 所以返回 True 。\ndataStream.consec(3); // 最后 k 个整数分别是 [4,4,3] 。\n                      // 由于 3 不等于 value ，返回 False 。\n\n&nbsp;\n\n提示：\n\n\t1 <= value, num <= 109\n\t1 <= k <= 105\n\t至多调用 consec&nbsp;次数为&nbsp;105&nbsp;次。",
+  "constraints": [
+    "1 <= value, num <= 109",
+    "1 <= k <= 105",
+    "至多调用 consec&nbsp;次数为&nbsp;105&nbsp;次。"
+  ]
+}

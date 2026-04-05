@@ -1,0 +1,18 @@
+{
+  "number": "2284",
+  "title_cn": "最多单词数的发件人",
+  "title_en": "Sender With Largest Word Count",
+  "slug": "sender-with-largest-word-count",
+  "difficulty": "Medium",
+  "description": "给你一个聊天记录，共包含 n&nbsp;条信息。给你两个字符串数组&nbsp;messages 和&nbsp;senders&nbsp;，其中&nbsp;messages[i]&nbsp;是&nbsp;senders[i]&nbsp;发出的一条&nbsp;信息&nbsp;。\n\n一条 信息&nbsp;是若干用单个空格连接的 单词&nbsp;，信息开头和结尾不会有多余空格。发件人的 单词计数&nbsp;是这个发件人总共发出的 单词数&nbsp;。注意，一个发件人可能会发出多于一条信息。\n\n请你返回发出单词数 最多&nbsp;的发件人名字。如果有多个发件人发出最多单词数，请你返回 字典序&nbsp;最大的名字。\n\n注意：\n\n\t字典序里，大写字母小于小写字母。\n\t\"Alice\" 和&nbsp;\"alice\"&nbsp;是不同的名字。\n\n&nbsp;\n\n示例 1：\n\n输入：messages = [\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"], senders = [\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]\n输出：\"Alice\"\n解释：Alice 总共发出了 2 + 3 = 5 个单词。\nuserTwo 发出了 2 个单词。\nuserThree 发出了 3 个单词。\n由于 Alice 发出单词数最多，所以我们返回 \"Alice\" 。\n\n示例 2：\n\n输入：messages = [\"How is leetcode for everyone\",\"Leetcode is useful for practice\"], senders = [\"Bob\",\"Charlie\"]\n输出：\"Charlie\"\n解释：Bob 总共发出了 5 个单词。\nCharlie 总共发出了 5 个单词。\n由于最多单词数打平，返回字典序最大的名字，也就是 Charlie 。\n\n&nbsp;\n\n提示：\n\n\tn == messages.length == senders.length\n\t1 <= n <= 104\n\t1 <= messages[i].length <= 100\n\t1 <= senders[i].length <= 10\n\tmessages[i]&nbsp;包含大写字母、小写字母和&nbsp;' '&nbsp;。\n\tmessages[i]&nbsp;中所有单词都由 单个空格&nbsp;隔开。\n\tmessages[i]&nbsp;不包含前导和后缀空格。\n\tsenders[i]&nbsp;只包含大写英文字母和小写英文字母。",
+  "constraints": [
+    "n == messages.length == senders.length",
+    "1 <= n <= 104",
+    "1 <= messages[i].length <= 100",
+    "1 <= senders[i].length <= 10",
+    "messages[i]&nbsp;包含大写字母、小写字母和&nbsp;' '&nbsp;。",
+    "messages[i]&nbsp;中所有单词都由 单个空格&nbsp;隔开。",
+    "messages[i]&nbsp;不包含前导和后缀空格。",
+    "senders[i]&nbsp;只包含大写英文字母和小写英文字母。"
+  ]
+}

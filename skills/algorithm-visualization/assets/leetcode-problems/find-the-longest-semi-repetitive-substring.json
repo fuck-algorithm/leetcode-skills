@@ -1,0 +1,12 @@
+{
+  "number": "2730",
+  "title_cn": "找到最长的半重复子字符串",
+  "title_en": "Find the Longest Semi-Repetitive Substring",
+  "slug": "find-the-longest-semi-repetitive-substring",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;，这个字符串只包含&nbsp;0&nbsp;到&nbsp;9&nbsp;的数字字符。\n\n如果一个字符串&nbsp;t&nbsp;中至多有一对相邻字符是相等的，那么称这个字符串 t 是 半重复的&nbsp;。例如，\"0010\"&nbsp;、\"002020\"&nbsp;、\"0123\"&nbsp;、\"2002\"&nbsp;和 \"54944\"&nbsp;是半重复字符串，而 \"00101022\"&nbsp;（相邻的相同数字对是 00 和 22）和 \"1101234883\"&nbsp;（相邻的相同数字对是 11 和 88）不是半重复字符串。\n\n请你返回 s&nbsp;中最长 半重复&nbsp;子字符串 的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"52233\"\n\n输出：4\n\n解释：\n\n最长的半重复子字符串是 \"5223\"。整个字符串 \"52233\" 有两个相邻的相同数字对 22 和 33，但最多只能选取一个。\n\n示例 2：\n\n输入：s = \"5494\"\n\n输出：4\n\n解释：\n\ns&nbsp;是一个半重复字符串。\n\n示例 3：\n\n输入：s = \"1111111\"\n\n输出：2\n\n解释：\n\n最长的半重复子字符串是 \"11\"。子字符串 \"111\" 有两个相邻的相同数字对，但最多允许选取一个。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 50\n\t'0' <= s[i] <= '9'",
+  "constraints": [
+    "1 <= s.length <= 50",
+    "'0' <= s[i] <= '9'"
+  ]
+}

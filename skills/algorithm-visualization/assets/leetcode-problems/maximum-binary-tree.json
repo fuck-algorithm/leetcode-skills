@@ -1,0 +1,13 @@
+{
+  "number": "654",
+  "title_cn": "最大二叉树",
+  "title_en": "Maximum Binary Tree",
+  "slug": "maximum-binary-tree",
+  "difficulty": "Medium",
+  "description": "给定一个不重复的整数数组&nbsp;nums 。&nbsp;最大二叉树&nbsp;可以用下面的算法从&nbsp;nums 递归地构建:\n\n\t创建一个根节点，其值为&nbsp;nums 中的最大值。\n\t递归地在最大值&nbsp;左边&nbsp;的&nbsp;子数组前缀上&nbsp;构建左子树。\n\t递归地在最大值 右边 的&nbsp;子数组后缀上&nbsp;构建右子树。\n\n返回&nbsp;nums 构建的 最大二叉树 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,2,1,6,0,5]\n输出：[6,3,5,null,2,0,null,null,1]\n解释：递归调用如下所示：\n- [3,2,1,6,0,5] 中的最大值是 6 ，左边部分是 [3,2,1] ，右边部分是 [0,5] 。\n    - [3,2,1] 中的最大值是 3 ，左边部分是 [] ，右边部分是 [2,1] 。\n        - 空数组，无子节点。\n        - [2,1] 中的最大值是 2 ，左边部分是 [] ，右边部分是 [1] 。\n            - 空数组，无子节点。\n            - 只有一个元素，所以子节点是一个值为 1 的节点。\n    - [0,5] 中的最大值是 5 ，左边部分是 [0] ，右边部分是 [] 。\n        - 只有一个元素，所以子节点是一个值为 0 的节点。\n        - 空数组，无子节点。\n\n示例 2：\n\n输入：nums = [3,2,1]\n输出：[3,null,2,null,1]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t0 <= nums[i] <= 1000\n\tnums 中的所有整数 互不相同",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "0 <= nums[i] <= 1000",
+    "nums 中的所有整数 互不相同"
+  ]
+}

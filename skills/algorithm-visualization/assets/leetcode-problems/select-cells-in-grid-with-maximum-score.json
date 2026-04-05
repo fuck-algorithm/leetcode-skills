@@ -1,0 +1,12 @@
+{
+  "number": "3276",
+  "title_cn": "选择矩阵中单元格的最大得分",
+  "title_en": "Select Cells in Grid With Maximum Score",
+  "slug": "select-cells-in-grid-with-maximum-score",
+  "difficulty": "Hard",
+  "description": "给你一个由正整数构成的二维矩阵 grid。\n\n你需要从矩阵中选择 一个或多个 单元格，选中的单元格应满足以下条件：\n\n\t所选单元格中的任意两个单元格都不会处于矩阵的 同一行。\n\t所选单元格的值 互不相同。\n\n你的得分为所选单元格值的总和。\n\n返回你能获得的 最大 得分。\n\n&nbsp;\n\n示例 1：\n\n输入： grid = [[1,2,3],[4,3,2],[1,1,1]]\n\n输出： 8\n\n解释：\n\n选择上图中用彩色标记的单元格，对应的值分别为 1、3 和 4 。\n\n示例 2：\n\n输入： grid = [[8,7,6],[8,3,2]]\n\n输出： 15\n\n解释：\n\n选择上图中用彩色标记的单元格，对应的值分别为 7 和 8 。\n\n&nbsp;\n\n提示：\n\n\t1 <= grid.length, grid[i].length <= 10\n\t1 <= grid[i][j] <= 100",
+  "constraints": [
+    "1 <= grid.length, grid[i].length <= 10",
+    "1 <= grid[i][j] <= 100"
+  ]
+}

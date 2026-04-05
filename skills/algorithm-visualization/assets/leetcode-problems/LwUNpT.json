@@ -1,0 +1,13 @@
+{
+  "number": "LCR 045",
+  "title_cn": "找树左下角的值",
+  "title_en": "找树左下角的值",
+  "slug": "LwUNpT",
+  "difficulty": "Medium",
+  "description": "给定一个二叉树的 根节点 root，请找出该二叉树的&nbsp;最底层&nbsp;最左边&nbsp;节点的值。\n\n假设二叉树中至少有一个节点。\n\n&nbsp;\n\n示例 1：\n\n输入: root = [2,1,3]\n输出: 1\n\n示例 2：\n\n输入: [1,2,3,4,null,5,6,null,null,7]\n输出: 7\n\n&nbsp;\n\n提示：\n\n\t二叉树的节点个数的范围是 [1,104]\n\t-231&nbsp;<= Node.val <= 231&nbsp;- 1&nbsp;\n\n&nbsp;\n\n注意：本题与主站 513&nbsp;题相同：&nbsp;https://leetcode.cn/problems/find-bottom-left-tree-value/",
+  "constraints": [
+    "二叉树的节点个数的范围是 [1,104]",
+    "-231&nbsp;<= Node.val <= 231&nbsp;- 1&nbsp;",
+    "注意：本题与主站 513&nbsp;题相同：&nbsp;https://leetcode.cn/problems/find-bottom-left-tree-value/"
+  ]
+}

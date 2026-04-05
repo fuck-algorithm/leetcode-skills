@@ -1,0 +1,14 @@
+{
+  "number": "LCR 031",
+  "title_cn": "LRU 缓存",
+  "title_en": "LRU 缓存",
+  "slug": "OrIXps",
+  "difficulty": "Medium",
+  "description": "运用所掌握的数据结构，设计和实现一个&nbsp; LRU (Least Recently Used，最近最少使用) 缓存机制 。\n\n实现 LRUCache 类：\n\n\tLRUCache(int capacity) 以正整数作为容量&nbsp;capacity 初始化 LRU 缓存\n\tint get(int key) 如果关键字 key 存在于缓存中，则返回关键字的值，否则返回 -1 。\n\tvoid put(int key, int value)&nbsp;如果关键字已经存在，则变更其数据值；如果关键字不存在，则插入该组「关键字-值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。\n\n&nbsp;\n\n示例：\n\n输入\n[\"LRUCache\", \"put\", \"put\", \"get\", \"put\", \"get\", \"put\", \"get\", \"get\", \"get\"]\n[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]\n输出\n[null, null, null, 1, null, -1, null, -1, 3, 4]\n\n解释\nLRUCache lRUCache = new LRUCache(2);\nlRUCache.put(1, 1); // 缓存是 {1=1}\nlRUCache.put(2, 2); // 缓存是 {1=1, 2=2}\nlRUCache.get(1);    // 返回 1\nlRUCache.put(3, 3); // 该操作会使得关键字 2 作废，缓存是 {1=1, 3=3}\nlRUCache.get(2);    // 返回 -1 (未找到)\nlRUCache.put(4, 4); // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}\nlRUCache.get(1);    // 返回 -1 (未找到)\nlRUCache.get(3);    // 返回 3\nlRUCache.get(4);    // 返回 4\n\n&nbsp;\n\n提示：\n\n\t1 <= capacity <= 3000\n\t0 <= key <= 10000\n\t0 <= value <= 105\n\t最多调用 2 * 105 次 get 和 put\n\n&nbsp;\n\n进阶：是否可以在&nbsp;O(1) 时间复杂度内完成这两种操作？\n\n&nbsp;\n\n注意：本题与主站 146&nbsp;题相同：https://leetcode.cn/problems/lru-cache/&nbsp;",
+  "constraints": [
+    "1 <= capacity <= 3000",
+    "0 <= key <= 10000",
+    "0 <= value <= 105",
+    "最多调用 2 * 105 次 get 和 put"
+  ]
+}

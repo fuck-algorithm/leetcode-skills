@@ -1,0 +1,13 @@
+{
+  "number": "1521",
+  "title_cn": "找到最接近目标值的函数值",
+  "title_en": "Find a Value of a Mysterious Function Closest to Target",
+  "slug": "find-a-value-of-a-mysterious-function-closest-to-target",
+  "difficulty": "Hard",
+  "description": "Winston 构造了一个如上所示的函数&nbsp;func&nbsp;。他有一个整数数组&nbsp;arr&nbsp;和一个整数&nbsp;target&nbsp;，他想找到让&nbsp;|func(arr, l, r) - target|&nbsp;最小的 l&nbsp;和 r&nbsp;。\n\n请你返回&nbsp;|func(arr, l, r) - target|&nbsp;的最小值。\n\n请注意，&nbsp;func 的输入参数&nbsp;l 和&nbsp;r&nbsp;需要满足&nbsp;0 <= l, r < arr.length&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [9,12,3,7,15], target = 5\n输出：2\n解释：所有可能的 [l,r] 数对包括 [[0,0],[1,1],[2,2],[3,3],[4,4],[0,1],[1,2],[2,3],[3,4],[0,2],[1,3],[2,4],[0,3],[1,4],[0,4]]， Winston 得到的相应结果为 [9,12,3,7,15,8,0,3,7,0,0,3,0,0,0] 。最接近 5 的值是 7 和 3，所以最小差值为 2 。\n\n示例 2：\n\n输入：arr = [1000000,1000000,1000000], target = 1\n输出：999999\n解释：Winston 输入函数的所有可能 [l,r] 数对得到的函数值都为 1000000 ，所以最小差值为 999999 。\n\n示例 3：\n\n输入：arr = [1,2,4,8,16], target = 0\n输出：0\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 10^5\n\t1 <= arr[i] <= 10^6\n\t0 <= target <= 10^7",
+  "constraints": [
+    "1 <= arr.length <= 10^5",
+    "1 <= arr[i] <= 10^6",
+    "0 <= target <= 10^7"
+  ]
+}

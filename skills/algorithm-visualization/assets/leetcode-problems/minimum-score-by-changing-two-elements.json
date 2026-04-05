@@ -1,0 +1,12 @@
+{
+  "number": "2567",
+  "title_cn": "修改两个元素的最小分数",
+  "title_en": "Minimum Score by Changing Two Elements",
+  "slug": "minimum-score-by-changing-two-elements",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;。\n\n\tnums 的 最小&nbsp;得分是满足 0 <= i < j < nums.length&nbsp;的&nbsp;|nums[i]&nbsp;- nums[j]|&nbsp;的最小值。\n\tnums的 最大 得分是满足 0 <= i < j < nums.length&nbsp;的&nbsp;|nums[i]&nbsp;- nums[j]|&nbsp;的最大值。\n\tnums&nbsp;的分数是 最大&nbsp;得分与 最小&nbsp;得分的和。\n\n我们的目标是最小化&nbsp;nums&nbsp;的分数。你 最多 可以修改&nbsp;nums&nbsp;中&nbsp;2&nbsp;个元素的值。\n\n请你返回修改&nbsp;nums&nbsp;中&nbsp;至多两个&nbsp;元素的值后，可以得到的 最小分数&nbsp;。\n\n|x|&nbsp;表示 x&nbsp;的绝对值。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,4,3]\n输出：0\n解释：将 nums[1] 和 nums[2] 的值改为 1 ，nums 变为 [1,1,1] 。|nums[i] - nums[j]| 的值永远为 0 ，所以我们返回 0 + 0 = 0 。\n\n示例 2：\n\n输入：nums = [1,4,7,8,5]\n输出：3\n解释：\n将 nums[0] 和 nums[1] 的值变为 6 ，nums 变为 [6,6,7,8,5] 。\n最小得分是 i = 0 且 j = 1 时得到的 |nums[i] - nums[j]| = |6 - 6| = 0 。\n最大得分是 i = 3 且 j = 4 时得到的 |nums[i] - nums[j]| = |8 - 5| = 3 。\n最大得分与最小得分之和为 3 。这是最优答案。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "3 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "number": "LCR 063",
+  "title_cn": "单词替换",
+  "title_en": "单词替换",
+  "slug": "UhWRSj",
+  "difficulty": "Medium",
+  "description": "在英语中，有一个叫做&nbsp;词根(root) 的概念，它可以跟着其他一些词组成另一个较长的单词&mdash;&mdash;我们称这个词为&nbsp;继承词(successor)。例如，词根an，跟随着单词&nbsp;other(其他)，可以形成新的单词&nbsp;another(另一个)。\n\n现在，给定一个由许多词根组成的词典和一个句子，需要将句子中的所有继承词用词根替换掉。如果继承词有许多可以形成它的词根，则用最短的词根替换它。\n\n需要输出替换之后的句子。\n\n&nbsp;\n\n示例 1：\n\n输入：dictionary = [\"cat\",\"bat\",\"rat\"], sentence = \"the cattle was rattled by the battery\"\n输出：\"the cat was rat by the bat\"\n\n示例 2：\n\n输入：dictionary = [\"a\",\"b\",\"c\"], sentence = \"aadsfasf absbs bbab cadsfafs\"\n输出：\"a a b c\"\n\n示例 3：\n\n输入：dictionary = [\"a\", \"aa\", \"aaa\", \"aaaa\"], sentence = \"a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa\"\n输出：\"a a a a a a a a bbb baba a\"\n\n示例 4：\n\n输入：dictionary = [\"catt\",\"cat\",\"bat\",\"rat\"], sentence = \"the cattle was rattled by the battery\"\n输出：\"the cat was rat by the bat\"\n\n示例 5：\n\n输入：dictionary = [\"ac\",\"ab\"], sentence = \"it is abnormal that this solution is accepted\"\n输出：\"it is ab that this solution is ac\"\n\n&nbsp;\n\n提示：\n\n\t1 <= dictionary.length&nbsp;<= 1000\n\t1 <= dictionary[i].length <= 100\n\tdictionary[i]&nbsp;仅由小写字母组成。\n\t1 <= sentence.length <= 10^6\n\tsentence&nbsp;仅由小写字母和空格组成。\n\tsentence 中单词的总量在范围 [1, 1000] 内。\n\tsentence 中每个单词的长度在范围 [1, 1000] 内。\n\tsentence 中单词之间由一个空格隔开。\n\tsentence&nbsp;没有前导或尾随空格。\n\n&nbsp;\n\n注意：本题与主站 648&nbsp;题相同：&nbsp;https://leetcode.cn/problems/replace-words/",
+  "constraints": [
+    "1 <= dictionary.length&nbsp;<= 1000",
+    "1 <= dictionary[i].length <= 100",
+    "dictionary[i]&nbsp;仅由小写字母组成。",
+    "1 <= sentence.length <= 10^6",
+    "sentence&nbsp;仅由小写字母和空格组成。",
+    "sentence 中单词的总量在范围 [1, 1000] 内。",
+    "sentence 中每个单词的长度在范围 [1, 1000] 内。",
+    "sentence 中单词之间由一个空格隔开。",
+    "sentence&nbsp;没有前导或尾随空格。",
+    "注意：本题与主站 648&nbsp;题相同：&nbsp;https://leetcode.cn/problems/replace-words/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "1190",
+  "title_cn": "反转每对括号间的子串",
+  "title_en": "Reverse Substrings Between Each Pair of Parentheses",
+  "slug": "reverse-substrings-between-each-pair-of-parentheses",
+  "difficulty": "Medium",
+  "description": "给出一个字符串&nbsp;s（仅含有小写英文字母和括号）。\n\n请你按照从括号内到外的顺序，逐层反转每对匹配括号中的字符串，并返回最终的结果。\n\n注意，您的结果中 不应 包含任何括号。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"(abcd)\"\n输出：\"dcba\"\n\n示例 2：\n\n输入：s = \"(u(love)i)\"\n输出：\"iloveu\"\n解释：先反转子字符串 \"love\" ，然后反转整个字符串。\n\n示例 3：\n\n输入：s = \"(ed(et(oc))el)\"\n输出：\"leetcode\"\n解释：先反转子字符串 \"oc\" ，接着反转 \"etco\" ，然后反转整个字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2000\n\ts 中只有小写英文字母和括号\n\t题目测试用例确保所有括号都是成对出现的",
+  "constraints": [
+    "1 <= s.length <= 2000",
+    "s 中只有小写英文字母和括号",
+    "题目测试用例确保所有括号都是成对出现的"
+  ]
+}

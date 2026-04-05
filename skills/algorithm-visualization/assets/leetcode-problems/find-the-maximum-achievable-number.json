@@ -1,0 +1,11 @@
+{
+  "number": "2769",
+  "title_cn": "找出最大的可达成数字",
+  "title_en": "Find the Maximum Achievable Number",
+  "slug": "find-the-maximum-achievable-number",
+  "difficulty": "Easy",
+  "description": "给你两个整数 num 和 t 。如果整数 x 可以在执行下述操作 不超过 t 次的情况下变为与 num 相等，则称其为 可达成数字 ：\n\n\t每次操作将 x 的值增加或减少 1 ，同时可以选择将 num 的值增加或减少 1 。\n\n返回所有可达成数字中的 最大 值 x。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 4, t = 1\n\n输出：6\n\n解释：\n\n执行下述操作可以使最大可达成数字等于 num ：\n\n\t最大可达成数字减少 1 ，同时 num 增加 1 。\n\n示例 2：\n\n输入：num = 3, t = 2\n\n输出：7\n\n解释：\n\n执行两次下述操作可以使最大可达成数字等于 num ：\n\n\t最大可达成数字减少 1 ，同时 num 增加 1。\n\n&nbsp;\n\n提示：\n\n\t1 <= num, t&nbsp;<= 50",
+  "constraints": [
+    "1 <= num, t&nbsp;<= 50"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "3168",
+  "title_cn": "候诊室中的最少椅子数",
+  "title_en": "Minimum Number of Chairs in a Waiting Room",
+  "slug": "minimum-number-of-chairs-in-a-waiting-room",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s，模拟每秒钟的事件 i：\n\n\t如果 s[i] == 'E'，表示有一位顾客进入候诊室并占用一把椅子。\n\t如果 s[i] == 'L'，表示有一位顾客离开候诊室，从而释放一把椅子。\n\n返回保证每位进入候诊室的顾客都能有椅子坐的 最少 椅子数，假设候诊室最初是 空的 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"EEEEEEE\"\n\n输出：7\n\n解释：\n\n每秒后都有一个顾客进入候诊室，没有人离开。因此，至少需要 7 把椅子。\n\n示例 2：\n\n输入：s = \"ELELEEL\"\n\n输出：2\n\n解释：\n\n假设候诊室里有 2 把椅子。下表显示了每秒钟等候室的状态。\n\n\t\t\t秒\n\t\t\t事件\n\t\t\t候诊室的人数\n\t\t\t可用的椅子数\n\n\t\t\t0\n\t\t\tEnter\n\t\t\t1\n\t\t\t1\n\n\t\t\t1\n\t\t\tLeave\n\t\t\t0\n\t\t\t2\n\n\t\t\t2\n\t\t\tEnter\n\t\t\t1\n\t\t\t1\n\n\t\t\t3\n\t\t\tLeave\n\t\t\t0\n\t\t\t2\n\n\t\t\t4\n\t\t\tEnter\n\t\t\t1\n\t\t\t1\n\n\t\t\t5\n\t\t\tEnter\n\t\t\t2\n\t\t\t0\n\n\t\t\t6\n\t\t\tLeave\n\t\t\t1\n\t\t\t1\n\n示例 3：\n\n输入：s = \"ELEELEELLL\"\n\n输出：3\n\n解释：\n\n假设候诊室里有 3 把椅子。下表显示了每秒钟等候室的状态。\n\n\t\t\t秒\n\t\t\t事件\n\t\t\t候诊室的人数\n\t\t\t可用的椅子数\n\n\t\t\t0\n\t\t\tEnter\n\t\t\t1\n\t\t\t2\n\n\t\t\t1\n\t\t\tLeave\n\t\t\t0\n\t\t\t3\n\n\t\t\t2\n\t\t\tEnter\n\t\t\t1\n\t\t\t2\n\n\t\t\t3\n\t\t\tEnter\n\t\t\t2\n\t\t\t1\n\n\t\t\t4\n\t\t\tLeave\n\t\t\t1\n\t\t\t2\n\n\t\t\t5\n\t\t\tEnter\n\t\t\t2\n\t\t\t1\n\n\t\t\t6\n\t\t\tEnter\n\t\t\t3\n\t\t\t0\n\n\t\t\t7\n\t\t\tLeave\n\t\t\t2\n\t\t\t1\n\n\t\t\t8\n\t\t\tLeave\n\t\t\t1\n\t\t\t2\n\n\t\t\t9\n\t\t\tLeave\n\t\t\t0\n\t\t\t3\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 50\n\ts 仅由字母 'E' 和 'L' 组成。\n\ts 表示一个有效的进出序列。",
+  "constraints": [
+    "1 <= s.length <= 50",
+    "s 仅由字母 'E' 和 'L' 组成。",
+    "s 表示一个有效的进出序列。"
+  ]
+}

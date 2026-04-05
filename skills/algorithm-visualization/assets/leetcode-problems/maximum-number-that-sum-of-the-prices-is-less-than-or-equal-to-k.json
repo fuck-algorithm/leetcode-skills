@@ -1,0 +1,12 @@
+{
+  "number": "3007",
+  "title_cn": "价值和小于等于 K 的最大数字",
+  "title_en": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+  "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;k&nbsp;和一个整数&nbsp;x&nbsp;。整数&nbsp;num&nbsp;的价值是它的二进制表示中在&nbsp;x，2x，3x&nbsp;等位置处&nbsp;设置位&nbsp;的数目（从最低有效位开始）。下面的表格包含了如何计算价值的例子。\n\n\t\t\tx\n\t\t\tnum\n\t\t\tBinary Representation\n\t\t\tPrice\n\n\t\t\t1\n\t\t\t13\n\t\t\t000001101\n\t\t\t3\n\n\t\t\t2\n\t\t\t13\n\t\t\t000001101\n\t\t\t1\n\n\t\t\t2\n\t\t\t233\n\t\t\t011101001\n\t\t\t3\n\n\t\t\t3\n\t\t\t13\n\t\t\t000001101\n\t\t\t1\n\n\t\t\t3\n\t\t\t362\n\t\t\t101101010\n\t\t\t2\n\n&nbsp;\n\nnum&nbsp;的 累加价值 是从&nbsp;1&nbsp;到&nbsp;num&nbsp;的数字的 总 价值。如果&nbsp;num&nbsp;的累加价值小于或等于&nbsp;k&nbsp;则被认为是 廉价 的。\n\n请你返回&nbsp;最大&nbsp;的廉价数字。\n\n&nbsp;\n\n示例 1：\n\n输入：k = 9, x = 1\n输出：6\n解释：由下表所示，6 是最大的廉价数字。\n\n\t\t\tx\n\t\t\tnum\n\t\t\tBinary Representation\n\t\t\tPrice\n\t\t\tAccumulated Price\n\n\t\t\t1\n\t\t\t1\n\t\t\t001\n\t\t\t1\n\t\t\t1\n\n\t\t\t1\n\t\t\t2\n\t\t\t010\n\t\t\t1\n\t\t\t2\n\n\t\t\t1\n\t\t\t3\n\t\t\t011\n\t\t\t2\n\t\t\t4\n\n\t\t\t1\n\t\t\t4\n\t\t\t100\n\t\t\t1\n\t\t\t5\n\n\t\t\t1\n\t\t\t5\n\t\t\t101\n\t\t\t2\n\t\t\t7\n\n\t\t\t1\n\t\t\t6\n\t\t\t110\n\t\t\t2\n\t\t\t9\n\n\t\t\t1\n\t\t\t7\n\t\t\t111\n\t\t\t3\n\t\t\t12\n\n示例 2：\n\n输入：k = 7, x = 2\n输出：9\n解释：由下表所示，9 是最大的廉价数字。\n\n\t\t\tx\n\t\t\tnum\n\t\t\tBinary Representation\n\t\t\tPrice\n\t\t\tAccumulated Price\n\n\t\t\t2\n\t\t\t1\n\t\t\t0001\n\t\t\t0\n\t\t\t0\n\n\t\t\t2\n\t\t\t2\n\t\t\t0010\n\t\t\t1\n\t\t\t1\n\n\t\t\t2\n\t\t\t3\n\t\t\t0011\n\t\t\t1\n\t\t\t2\n\n\t\t\t2\n\t\t\t4\n\t\t\t0100\n\t\t\t0\n\t\t\t2\n\n\t\t\t2\n\t\t\t5\n\t\t\t0101\n\t\t\t0\n\t\t\t2\n\n\t\t\t2\n\t\t\t6\n\t\t\t0110\n\t\t\t1\n\t\t\t3\n\n\t\t\t2\n\t\t\t7\n\t\t\t0111\n\t\t\t1\n\t\t\t4\n\n\t\t\t2\n\t\t\t8\n\t\t\t1000\n\t\t\t1\n\t\t\t5\n\n\t\t\t2\n\t\t\t9\n\t\t\t1001\n\t\t\t1\n\t\t\t6\n\n\t\t\t2\n\t\t\t10\n\t\t\t1010\n\t\t\t2\n\t\t\t8\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= 1015\n\t1 <= x <= 8",
+  "constraints": [
+    "1 <= k <= 1015",
+    "1 <= x <= 8"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2563",
+  "title_cn": "统计公平数对的数目",
+  "title_en": "Count the Number of Fair Pairs",
+  "slug": "count-the-number-of-fair-pairs",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始、长度为 n 的整数数组&nbsp;nums&nbsp;，和两个整数&nbsp;lower 和&nbsp;upper ，返回 公平数对的数目 。\n\n如果&nbsp;(i, j)&nbsp;数对满足以下情况，则认为它是一个 公平数对&nbsp;：\n\n\t0 <= i < j < n，且\n\tlower <= nums[i] + nums[j] <= upper\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,1,7,4,4,5], lower = 3, upper = 6\n输出：6\n解释：共计 6 个公平数对：(0,3)、(0,4)、(0,5)、(1,3)、(1,4) 和 (1,5) 。\n\n示例 2：\n\n输入：nums = [1,7,9,2,5], lower = 11, upper = 11\n输出：1\n解释：只有单个公平数对：(2,3) 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\tnums.length == n\n\t-109&nbsp;<= nums[i] <= 109\n\t-109&nbsp;<= lower <= upper <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "nums.length == n",
+    "-109&nbsp;<= nums[i] <= 109",
+    "-109&nbsp;<= lower <= upper <= 109"
+  ]
+}

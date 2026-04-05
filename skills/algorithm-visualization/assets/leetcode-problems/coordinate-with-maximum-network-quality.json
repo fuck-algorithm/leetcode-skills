@@ -1,0 +1,14 @@
+{
+  "number": "1620",
+  "title_cn": "网络信号最好的坐标",
+  "title_en": "Coordinate With Maximum Network Quality",
+  "slug": "coordinate-with-maximum-network-quality",
+  "difficulty": "Medium",
+  "description": "给你一个数组 towers&nbsp;和一个整数 radius 。\n\n数组&nbsp; towers&nbsp; 中包含一些网络信号塔，其中&nbsp;towers[i] = [xi, yi, qi]&nbsp;表示第&nbsp;i&nbsp;个网络信号塔的坐标是&nbsp;(xi, yi)&nbsp;且信号强度参数为&nbsp;qi&nbsp;。所有坐标都是在&nbsp; X-Y 坐标系内的&nbsp;整数&nbsp;坐标。两个坐标之间的距离用 欧几里得距离&nbsp;计算。\n\n整数&nbsp;radius&nbsp;表示一个塔 能到达&nbsp;的 最远距离&nbsp;。如果一个坐标跟塔的距离在 radius&nbsp;以内，那么该塔的信号可以到达该坐标。在这个范围以外信号会很微弱，所以 radius&nbsp;以外的距离该塔是 不能到达的&nbsp;。\n\n如果第 i&nbsp;个塔能到达 (x, y)&nbsp;，那么该塔在此处的信号为&nbsp;⌊qi / (1 + d)⌋&nbsp;，其中&nbsp;d&nbsp;是塔跟此坐标的距离。一个坐标的 信号强度 是所有 能到达&nbsp;该坐标的塔的信号强度之和。\n\n请你返回数组 [cx, cy] ，表示 信号强度 最大的 整数 坐标点&nbsp;(cx, cy) 。如果有多个坐标网络信号一样大，请你返回字典序最小的 非负 坐标。\n\n注意：\n\n\t坐标&nbsp;(x1, y1)&nbsp;字典序比另一个坐标&nbsp;(x2, y2) 小，需满足以下条件之一：\n\n\t\t要么&nbsp;x1 < x2&nbsp;，\n\t\t要么&nbsp;x1 == x2 且&nbsp;y1 < y2&nbsp;。\n\n\t⌊val⌋&nbsp;表示小于等于&nbsp;val&nbsp;的最大整数（向下取整函数）。\n\n&nbsp;\n\n示例 1：\n\n输入：towers = [[1,2,5],[2,1,7],[3,1,9]], radius = 2\n输出：[2,1]\n解释：\n坐标 (2, 1) 信号强度之和为 13\n- 塔 (2, 1) 强度参数为 7 ，在该点强度为 ⌊7 / (1 + sqrt(0)⌋ = ⌊7⌋ = 7\n- 塔 (1, 2) 强度参数为 5 ，在该点强度为 ⌊5 / (1 + sqrt(2)⌋ = ⌊2.07⌋ = 2\n- 塔 (3, 1) 强度参数为 9 ，在该点强度为 ⌊9 / (1 + sqrt(1)⌋ = ⌊4.5⌋ = 4\n没有别的坐标有更大的信号强度。\n\n示例 2：\n\n输入：towers = [[23,11,21]], radius = 9\n输出：[23,11]\n解释：由于仅存在一座信号塔，所以塔的位置信号强度最大。\n\n示例 3：\n\n输入：towers = [[1,2,13],[2,1,7],[0,1,9]], radius = 2\n输出：[1,2]\n解释：坐标 (1, 2) 的信号强度最大。\n\n&nbsp;\n\n提示：\n\n\t1 <= towers.length <= 50\n\ttowers[i].length == 3\n\t0 <= xi, yi, qi <= 50\n\t1 <= radius <= 50",
+  "constraints": [
+    "1 <= towers.length <= 50",
+    "towers[i].length == 3",
+    "0 <= xi, yi, qi <= 50",
+    "1 <= radius <= 50"
+  ]
+}

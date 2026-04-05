@@ -1,0 +1,15 @@
+{
+  "number": "3606",
+  "title_cn": "优惠券校验器",
+  "title_en": "Coupon Code Validator",
+  "slug": "coupon-code-validator",
+  "difficulty": "Easy",
+  "description": "给你三个长度为 n 的数组，分别描述 n 个优惠券的属性：code、businessLine 和 isActive。其中，第 i 个优惠券具有以下属性：\n\n\tcode[i]：一个 字符串，表示优惠券的标识符。\n\tbusinessLine[i]：一个 字符串，表示优惠券所属的业务类别。\n\tisActive[i]：一个 布尔值，表示优惠券是否当前有效。\n\n当以下所有条件都满足时，优惠券被认为是&nbsp;有效的&nbsp;：\n\n\tcode[i] 不能为空，并且仅由字母数字字符（a-z、A-Z、0-9）和下划线（_）组成。\n\tbusinessLine[i] 必须是以下四个类别之一：\"electronics\"、\"grocery\"、\"pharmacy\"、\"restaurant\"。\n\tisActive[i] 为 true&nbsp;。\n\n返回所有&nbsp;有效优惠券的标识符&nbsp;组成的数组，按照以下规则排序：\n\n\t先按照其 businessLine 的顺序排序：\"electronics\"、\"grocery\"、\"pharmacy\"、\"restaurant\"。\n\t在每个类别内，再按照 标识符的字典序（升序）排序。\n\n&nbsp;\n\n示例 1：\n\n输入： code = [\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"], businessLine = [\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"], isActive = [true,true,true,true]\n\n输出： [\"PHARMA5\",\"SAVE20\"]\n\n解释：\n\n\t第一个优惠券有效。\n\t第二个优惠券的标识符为空（无效）。\n\t第三个优惠券有效。\n\t第四个优惠券的标识符包含特殊字符 @（无效）。\n\n示例 2：\n\n输入： code = [\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"], businessLine = [\"grocery\",\"electronics\",\"invalid\"], isActive = [false,true,true]\n\n输出： [\"ELECTRONICS_50\"]\n\n解释：\n\n\t第一个优惠券无效，因为它未激活。\n\t第二个优惠券有效。\n\t第三个优惠券无效，因为其业务类别无效。\n\n&nbsp;\n\n提示：\n\n\tn == code.length == businessLine.length == isActive.length\n\t1 <= n <= 100\n\t0 <= code[i].length, businessLine[i].length <= 100\n\tcode[i] 和 businessLine[i] 由可打印的 ASCII 字符组成。\n\tisActive[i] 的值为 true 或 false。",
+  "constraints": [
+    "n == code.length == businessLine.length == isActive.length",
+    "1 <= n <= 100",
+    "0 <= code[i].length, businessLine[i].length <= 100",
+    "code[i] 和 businessLine[i] 由可打印的 ASCII 字符组成。",
+    "isActive[i] 的值为 true 或 false。"
+  ]
+}

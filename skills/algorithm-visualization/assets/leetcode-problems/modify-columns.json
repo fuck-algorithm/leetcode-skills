@@ -1,0 +1,9 @@
+{
+  "number": "2884",
+  "title_cn": "修改列",
+  "title_en": "Modify Columns",
+  "slug": "modify-columns",
+  "difficulty": "Easy",
+  "description": "DataFrame employees\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| name        | object |\n| salary      | int    |\n+-------------+--------+\n\n一家公司决定增加员工的薪水。\n\n编写一个解决方案，将每个员工的薪水乘以2来 修改&nbsp;salary&nbsp;列。\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\nDataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 19666  |\n| Piper   | 74754  |\n| Mia     | 62509  |\n| Ulysses | 54866  |\n+---------+--------+\n输出：\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 39332  |\n| Piper   | 149508 |\n| Mia     | 125018 |\n| Ulysses | 109732 |\n+---------+--------+\n解释：\n每个人的薪水都被加倍。",
+  "constraints": []
+}

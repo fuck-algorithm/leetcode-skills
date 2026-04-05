@@ -1,0 +1,14 @@
+{
+  "number": "LCR 154",
+  "title_cn": "复杂链表的复制",
+  "title_en": "随机链表的复制",
+  "slug": "fu-za-lian-biao-de-fu-zhi-lcof",
+  "difficulty": "Medium",
+  "description": "请实现 copyRandomList 函数，复制一个复杂链表。在复杂链表中，每个节点除了有一个 next 指针指向下一个节点，还有一个 random 指针指向链表中的任意节点或者 null。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [[7,null],[13,0],[11,4],[10,2],[1,0]]\n输出：[[7,null],[13,0],[11,4],[10,2],[1,0]]\n\n示例 2：\n\n输入：head = [[1,1],[2,1]]\n输出：[[1,1],[2,1]]\n\n示例 3：\n\n输入：head = [[3,null],[3,0],[3,null]]\n输出：[[3,null],[3,0],[3,null]]\n\n示例 4：\n\n输入：head = []\n输出：[]\n解释：给定的链表为空（空指针），因此返回 null。\n\n&nbsp;\n\n提示：\n\n\t-10000 <= Node.val <= 10000\n\tNode.random&nbsp;为空（null）或指向链表中的节点。\n\t节点数目不超过 1000 。\n\n&nbsp;\n\n注意：本题与主站 138 题相同：https://leetcode.cn/problems/copy-list-with-random-pointer/\n\n&nbsp;",
+  "constraints": [
+    "-10000 <= Node.val <= 10000",
+    "Node.random&nbsp;为空（null）或指向链表中的节点。",
+    "节点数目不超过 1000 。",
+    "注意：本题与主站 138 题相同：https://leetcode.cn/problems/copy-list-with-random-pointer/"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "263",
+  "title_cn": "丑数",
+  "title_en": "Ugly Number",
+  "slug": "ugly-number",
+  "difficulty": "Easy",
+  "description": "丑数 就是只包含质因数&nbsp;2、3 和 5&nbsp;的&nbsp;正&nbsp;整数。\n\n给你一个整数 n ，请你判断 n 是否为 丑数 。如果是，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6\n输出：true\n解释：6 = 2 × 3\n\n示例 2：\n\n输入：n = 1\n输出：true\n解释：1 没有质因数。\n\n示例 3：\n\n输入：n = 14\n输出：false\n解释：14 不是丑数，因为它包含了另外一个质因数&nbsp;7 。\n\n&nbsp;\n\n提示：\n\n\t-231 <= n <= 231 - 1",
+  "constraints": [
+    "-231 <= n <= 231 - 1"
+  ]
+}

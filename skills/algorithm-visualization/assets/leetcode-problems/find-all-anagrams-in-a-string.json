@@ -1,0 +1,12 @@
+{
+  "number": "438",
+  "title_cn": "找到字符串中所有字母异位词",
+  "title_en": "Find All Anagrams in a String",
+  "slug": "find-all-anagrams-in-a-string",
+  "difficulty": "Medium",
+  "description": "给定两个字符串&nbsp;s&nbsp;和 p，找到&nbsp;s&nbsp;中所有&nbsp;p&nbsp;的&nbsp;异位词&nbsp;的子串，返回这些子串的起始索引。不考虑答案输出的顺序。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: s = \"cbaebabacd\", p = \"abc\"\n输出: [0,6]\n解释:\n起始索引等于 0 的子串是 \"cba\", 它是 \"abc\" 的异位词。\n起始索引等于 6 的子串是 \"bac\", 它是 \"abc\" 的异位词。\n\n&nbsp;示例 2:\n\n输入: s = \"abab\", p = \"ab\"\n输出: [0,1,2]\n解释:\n起始索引等于 0 的子串是 \"ab\", 它是 \"ab\" 的异位词。\n起始索引等于 1 的子串是 \"ba\", 它是 \"ab\" 的异位词。\n起始索引等于 2 的子串是 \"ab\", 它是 \"ab\" 的异位词。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length, p.length <= 3 * 104\n\ts&nbsp;和&nbsp;p&nbsp;仅包含小写字母",
+  "constraints": [
+    "1 <= s.length, p.length <= 3 * 104",
+    "s&nbsp;和&nbsp;p&nbsp;仅包含小写字母"
+  ]
+}

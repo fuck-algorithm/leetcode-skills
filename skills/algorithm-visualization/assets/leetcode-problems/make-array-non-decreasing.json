@@ -1,0 +1,12 @@
+{
+  "number": "3523",
+  "title_cn": "非递减数组的最大长度",
+  "title_en": "Make Array Non-decreasing",
+  "slug": "make-array-non-decreasing",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。在一次操作中，你可以选择一个子数组，并将其替换为一个等于该子数组&nbsp;最大值&nbsp;的单个元素。\n\n返回经过零次或多次操作后，数组仍为&nbsp;非递减&nbsp;的情况下，数组&nbsp;可能的最大长度。\n\n子数组&nbsp;是数组中一个连续、非空&nbsp;的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [4,2,5,3,5]\n\n输出： 3\n\n解释：\n\n实现最大长度的一种方法是：\n\n\t将子数组 nums[1..2] = [2, 5] 替换为 5 → [4, 5, 3, 5]。\n\t将子数组 nums[2..3] = [3, 5] 替换为 5 → [4, 5, 5]。\n\n最终数组 [4, 5, 5] 是非递减的，长度为 3。\n\n示例 2：\n\n输入： nums = [1,2,3]\n\n输出： 3\n\n解释：\n\n无需任何操作，因为数组 [1,2,3] 已经是非递减的。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 2 * 105\n\t1 <= nums[i] <= 2 * 105",
+  "constraints": [
+    "1 <= nums.length <= 2 * 105",
+    "1 <= nums[i] <= 2 * 105"
+  ]
+}

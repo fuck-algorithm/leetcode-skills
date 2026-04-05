@@ -1,0 +1,13 @@
+{
+  "number": "LCR 039",
+  "title_cn": "柱状图中最大的矩形",
+  "title_en": "柱状图中最大的矩形",
+  "slug": "0ynMMM",
+  "difficulty": "Hard",
+  "description": "给定非负整数数组 heights&nbsp;，数组中的数字用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。\n\n求在该柱状图中，能够勾勒出来的矩形的最大面积。\n\n&nbsp;\n\n示例 1:\n\n输入：heights = [2,1,5,6,2,3]\n输出：10\n解释：最大的矩形为图中红色区域，面积为 10\n\n示例 2：\n\n输入： heights = [2,4]\n输出： 4\n\n&nbsp;\n\n提示：\n\n\t1 <= heights.length <=105\n\t0 <= heights[i] <= 104\n\n&nbsp;\n\n注意：本题与主站 84&nbsp;题相同：&nbsp;https://leetcode.cn/problems/largest-rectangle-in-histogram/",
+  "constraints": [
+    "1 <= heights.length <=105",
+    "0 <= heights[i] <= 104",
+    "注意：本题与主站 84&nbsp;题相同：&nbsp;https://leetcode.cn/problems/largest-rectangle-in-histogram/"
+  ]
+}

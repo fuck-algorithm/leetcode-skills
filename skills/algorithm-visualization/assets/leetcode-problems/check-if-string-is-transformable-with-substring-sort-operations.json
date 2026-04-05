@@ -1,0 +1,13 @@
+{
+  "number": "1585",
+  "title_cn": "检查字符串是否可以通过排序子字符串得到另一个字符串",
+  "title_en": "Check If String Is Transformable With Substring Sort Operations",
+  "slug": "check-if-string-is-transformable-with-substring-sort-operations",
+  "difficulty": "Hard",
+  "description": "给你两个字符串&nbsp;s 和&nbsp;t&nbsp;，请你通过若干次以下操作将字符串&nbsp;s&nbsp;转化成字符串&nbsp;t&nbsp;：\n\n\t选择 s&nbsp;中一个 非空&nbsp;子字符串并将它包含的字符就地 升序&nbsp;排序。\n\n比方说，对下划线所示的子字符串进行操作可以由&nbsp;\"14234\"&nbsp;得到&nbsp;\"12344\"&nbsp;。\n\n如果可以将字符串 s&nbsp;变成 t&nbsp;，返回 true&nbsp;。否则，返回 false&nbsp;。\n\n一个 子字符串&nbsp;定义为一个字符串中连续的若干字符。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"84532\", t = \"34852\"\n输出：true\n解释：你可以按以下操作将 s 转变为 t ：\n\"84532\" （从下标 2 到下标 3）-> \"84352\"\n\"84352\" （从下标 0 到下标 2） -> \"34852\"\n\n示例 2：\n\n输入：s = \"34521\", t = \"23415\"\n输出：true\n解释：你可以按以下操作将 s 转变为 t ：\n\"34521\" -> \"23451\"\n\"23451\" -> \"23415\"\n\n示例 3：\n\n输入：s = \"12345\", t = \"12435\"\n输出：false\n\n示例 4：\n\n输入：s = \"1\", t = \"2\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\ts.length == t.length\n\t1 <= s.length <= 105\n\ts 和&nbsp;t&nbsp;都只包含数字字符，即&nbsp;&#39;0&#39;&nbsp;到&nbsp;&#39;9&#39; 。",
+  "constraints": [
+    "s.length == t.length",
+    "1 <= s.length <= 105",
+    "s 和&nbsp;t&nbsp;都只包含数字字符，即&nbsp;&#39;0&#39;&nbsp;到&nbsp;&#39;9&#39; 。"
+  ]
+}

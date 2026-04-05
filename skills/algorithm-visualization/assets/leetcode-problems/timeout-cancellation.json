@@ -1,0 +1,15 @@
+{
+  "number": "2715",
+  "title_cn": "执行可取消的延迟函数",
+  "title_en": "Timeout Cancellation",
+  "slug": "timeout-cancellation",
+  "difficulty": "Easy",
+  "description": "给定一个函数 fn&nbsp;，一个参数数组 args 和一个以毫秒为单位的超时时间 t ，返回一个取消函数 cancelFn 。\n\n在 cancelTimeMs&nbsp;的延迟后，返回的取消函数 cancelFn 将被调用。\n\nsetTimeout(cancelFn, cancelTimeMs)\n\n最初，函数 fn 的执行应该延迟 t 毫秒。\n\n如果在 t 毫秒的延迟之前调用了函数 cancelFn，它应该取消 fn 的延迟执行。否则，如果在指定的延迟 t 内没有调用 cancelFn，则应执行 fn，并使用提供的 args 作为参数。\n\n&nbsp;\n\n示例 1:\n\n输入：fn = (x) => x * 5, args = [2], t = 20\n输出：[{\"time\": 20, \"returned\": 10}]\n解释：\nconst cancelTimeMs = 50;\nconst cancelFn = cancellable((x) => x * 5, [2], 20);\nsetTimeout(cancelFn, cancelTimeMs);\n\n取消操作被安排在延迟了 cancelTimeMs（50毫秒）后进行，这发生在 fn(2) 在20毫秒时执行之后。\n\n示例 2：\n\n输入：fn = (x) => x**2, args = [2], t = 100\n输出：[]\n解释：\nconst cancelTimeMs = 50;\nconst cancelFn = cancellable((x) => x**2, [2], 100);\nsetTimeout(cancelFn, cancelTimeMs);\n\n取消操作被安排在延迟了 cancelTimeMs（50毫秒）后进行，这发生在 fn(2) 在100毫秒时执行之前，导致 fn(2) 从未被调用。\n\n示例 3：\n\n输入：fn = (x1, x2) => x1 * x2, args = [2,4], t = 30\n输出：[{\"time\": 30, \"returned\": 8}]\n解释：\nconst cancelTimeMs = 100;\nconst cancelFn = cancellable((x1, x2) => x1 * x2, [2,4], 30);\nsetTimeout(cancelFn, cancelTimeMs);\n\n取消操作被安排在延迟了 cancelTimeMs（100毫秒）后进行，这发生在 fn(2,4) 在30毫秒时执行之后。\n\n&nbsp;\n\n提示：\n\n\tfn 是一个函数\n\targs 是一个有效的 JSON 数组\n\t1 <= args.length <= 10\n\t20 <= t <= 1000\n\t10 <= cancelTimeMs&nbsp;<= 1000",
+  "constraints": [
+    "fn 是一个函数",
+    "args 是一个有效的 JSON 数组",
+    "1 <= args.length <= 10",
+    "20 <= t <= 1000",
+    "10 <= cancelTimeMs&nbsp;<= 1000"
+  ]
+}

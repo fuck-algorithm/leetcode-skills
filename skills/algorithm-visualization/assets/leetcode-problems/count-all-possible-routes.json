@@ -1,0 +1,15 @@
+{
+  "number": "1575",
+  "title_cn": "统计所有可行路径",
+  "title_en": "Count All Possible Routes",
+  "slug": "count-all-possible-routes",
+  "difficulty": "Hard",
+  "description": "给你一个 互不相同&nbsp;的整数数组，其中&nbsp;locations[i]&nbsp;表示第&nbsp;i&nbsp;个城市的位置。同时给你&nbsp;start，finish&nbsp;和&nbsp;fuel&nbsp;分别表示出发城市、目的地城市和你初始拥有的汽油总量\n\n每一步中，如果你在城市 i&nbsp;，你可以选择任意一个城市 j&nbsp;，满足 &nbsp;j != i&nbsp;且&nbsp;0 <= j < locations.length&nbsp;，并移动到城市&nbsp;j&nbsp;。从城市&nbsp;i&nbsp;移动到&nbsp;j&nbsp;消耗的汽油量为&nbsp;|locations[i] - locations[j]|，|x|&nbsp;表示&nbsp;x&nbsp;的绝对值。\n\n请注意，&nbsp;fuel&nbsp;任何时刻都&nbsp;不能&nbsp;为负，且你&nbsp;可以&nbsp;经过任意城市超过一次（包括&nbsp;start&nbsp;和&nbsp;finish&nbsp;）。\n\n请你返回从&nbsp;start&nbsp;到&nbsp;finish&nbsp;所有可能路径的数目。\n\n由于答案可能很大， 请将它对&nbsp;10^9 + 7&nbsp;取余后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：locations = [2,3,6,8,4], start = 1, finish = 3, fuel = 5\n输出：4\n解释：以下为所有可能路径，每一条都用了 5 单位的汽油：\n1 -> 3\n1 -> 2 -> 3\n1 -> 4 -> 3\n1 -> 4 -> 2 -> 3\n\n示例 2：\n\n输入：locations = [4,3,1], start = 1, finish = 0, fuel = 6\n输出：5\n解释：以下为所有可能的路径：\n1 -> 0，使用汽油量为 fuel = 1\n1 -> 2 -> 0，使用汽油量为 fuel = 5\n1 -> 2 -> 1 -> 0，使用汽油量为 fuel = 5\n1 -> 0 -> 1 -> 0，使用汽油量为 fuel = 3\n1 -> 0 -> 1 -> 0 -> 1 -> 0，使用汽油量为 fuel = 5\n\n示例 3：\n\n输入：locations = [5,2,1], start = 0, finish = 2, fuel = 3\n输出：0\n解释：没有办法只用 3 单位的汽油从 0 到达 2 。因为最短路径需要 4 单位的汽油。\n\n&nbsp;\n\n提示：\n\n\t2 <= locations.length <= 100\n\t1 <= locations[i] <= 109\n\t所有&nbsp;locations&nbsp;中的整数 互不相同&nbsp;。\n\t0 <= start, finish <&nbsp;locations.length\n\t1 <= fuel <= 200",
+  "constraints": [
+    "2 <= locations.length <= 100",
+    "1 <= locations[i] <= 109",
+    "所有&nbsp;locations&nbsp;中的整数 互不相同&nbsp;。",
+    "0 <= start, finish <&nbsp;locations.length",
+    "1 <= fuel <= 200"
+  ]
+}

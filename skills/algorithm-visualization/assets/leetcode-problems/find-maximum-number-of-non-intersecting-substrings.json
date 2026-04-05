@@ -1,0 +1,12 @@
+{
+  "number": "3557",
+  "title_cn": "不相交子字符串的最大数量",
+  "title_en": "Find Maximum Number of Non Intersecting Substrings",
+  "slug": "find-maximum-number-of-non-intersecting-substrings",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 word。\n\n返回以&nbsp;首尾字母相同&nbsp;且&nbsp;长度至少为 4&nbsp;的&nbsp;不相交子字符串&nbsp;的最大数量。\n\n子字符串&nbsp;是字符串中连续的&nbsp;非空&nbsp;字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入： word = \"abcdeafdef\"\n\n输出： 2\n\n解释：\n\n两个子字符串是 \"abcdea\" 和 \"fdef\"。\n\n示例 2：\n\n输入： word = \"bcdaaaab\"\n\n输出： 1\n\n解释：\n\n唯一的子字符串是 \"aaaa\"。注意我们&nbsp;不能&nbsp;同时选择 \"bcdaaaab\"，因为它和另一个子字符串有重叠。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 2 * 105\n\tword 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= word.length <= 2 * 105",
+    "word 仅由小写英文字母组成。"
+  ]
+}

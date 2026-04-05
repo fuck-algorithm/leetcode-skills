@@ -1,0 +1,14 @@
+{
+  "number": "2906",
+  "title_cn": "构造乘积矩阵",
+  "title_en": "Construct Product Matrix",
+  "slug": "construct-product-matrix",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始、大小为 n * m 的二维整数矩阵 grid ，定义一个下标从 0 开始、大小为 n * m 的的二维矩阵 p。如果满足以下条件，则称 p 为 grid 的 乘积矩阵 ：\n\n\t对于每个元素 p[i][j] ，它的值等于除了 grid[i][j] 外所有元素的乘积。乘积对 12345 取余数。\n\n返回 grid 的乘积矩阵。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,2],[3,4]]\n输出：[[24,12],[8,6]]\n解释：p[0][0] = grid[0][1] * grid[1][0] * grid[1][1] = 2 * 3 * 4 = 24\np[0][1] = grid[0][0] * grid[1][0] * grid[1][1] = 1 * 3 * 4 = 12\np[1][0] = grid[0][0] * grid[0][1] * grid[1][1] = 1 * 2 * 4 = 8\np[1][1] = grid[0][0] * grid[0][1] * grid[1][0] = 1 * 2 * 3 = 6\n所以答案是 [[24,12],[8,6]] 。\n\n示例 2：\n\n输入：grid = [[12345],[2],[1]]\n输出：[[2],[0],[0]]\n解释：p[0][0] = grid[0][1] * grid[0][2] = 2 * 1 = 2\np[1][0] = grid[0][0] * grid[2][0] = 12345 * 1 = 12345. 12345 % 12345 = 0 ，所以 p[1][0] = 0\np[2][0] = grid[0][0] * grid[1][0] = 12345 * 2 = 24690. 24690 % 12345 = 0 ，所以 p[2][0] = 0\n所以答案是 [[2],[0],[0]] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == grid.length&nbsp;<= 105\n\t1 <= m == grid[i].length&nbsp;<= 105\n\t2 <= n * m <= 105\n\t1 <= grid[i][j] <= 109",
+  "constraints": [
+    "1 <= n == grid.length&nbsp;<= 105",
+    "1 <= m == grid[i].length&nbsp;<= 105",
+    "2 <= n * m <= 105",
+    "1 <= grid[i][j] <= 109"
+  ]
+}

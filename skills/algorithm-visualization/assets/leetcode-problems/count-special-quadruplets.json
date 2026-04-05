@@ -1,0 +1,12 @@
+{
+  "number": "1995",
+  "title_cn": "统计特殊四元组",
+  "title_en": "Count Special Quadruplets",
+  "slug": "count-special-quadruplets",
+  "difficulty": "Easy",
+  "description": "给你一个 下标从 0 开始 的整数数组 nums ，返回满足下述条件的 不同 四元组 (a, b, c, d) 的 数目 ：\n\n\tnums[a] + nums[b] + nums[c] == nums[d] ，且\n\ta < b < c < d\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,6]\n输出：1\n解释：满足要求的唯一一个四元组是 (0, 1, 2, 3) 因为 1 + 2 + 3 == 6 。\n\n示例 2：\n\n输入：nums = [3,3,6,4,5]\n输出：0\n解释：[3,3,6,4,5] 中不存在满足要求的四元组。\n\n示例 3：\n\n输入：nums = [1,1,1,3,5]\n输出：4\n解释：满足要求的 4 个四元组如下：\n- (0, 1, 2, 3): 1 + 1 + 1 == 3\n- (0, 1, 3, 4): 1 + 1 + 3 == 5\n- (0, 2, 3, 4): 1 + 1 + 3 == 5\n- (1, 2, 3, 4): 1 + 1 + 3 == 5\n\n&nbsp;\n\n提示：\n\n\t4 <= nums.length <= 50\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "4 <= nums.length <= 50",
+    "1 <= nums[i] <= 100"
+  ]
+}

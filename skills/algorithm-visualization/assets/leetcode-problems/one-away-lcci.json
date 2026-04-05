@@ -1,0 +1,9 @@
+{
+  "number": "面试题 01.05",
+  "title_cn": "一次编辑",
+  "title_en": "One Away LCCI",
+  "slug": "one-away-lcci",
+  "difficulty": "Medium",
+  "description": "字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。\n\n&nbsp;\n\n示例 1：\n\n输入：\nfirst = \"pale\"\nsecond = \"ple\"\n输出：True\n\n&nbsp;\n\n示例 2：\n\n输入：\nfirst = \"pales\"\nsecond = \"pal\"\n输出：False",
+  "constraints": []
+}

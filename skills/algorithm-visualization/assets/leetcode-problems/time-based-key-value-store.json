@@ -1,0 +1,15 @@
+{
+  "number": "981",
+  "title_cn": "基于时间的键值存储",
+  "title_en": "Time Based Key-Value Store",
+  "slug": "time-based-key-value-store",
+  "difficulty": "Medium",
+  "description": "设计一个基于时间的键值数据结构，该结构可以在不同时间戳存储对应同一个键的多个值，并针对特定时间戳检索键对应的值。\n\n实现 TimeMap 类：\n\n\tTimeMap() 初始化数据结构对象\n\tvoid set(String key, String value, int timestamp) 存储给定时间戳&nbsp;timestamp&nbsp;时的键&nbsp;key&nbsp;和值&nbsp;value。\n\tString get(String key, int timestamp)&nbsp;返回一个值，该值在之前调用了 set，其中&nbsp;timestamp_prev <= timestamp&nbsp;。如果有多个这样的值，它将返回与最大 &nbsp;timestamp_prev&nbsp;关联的值。如果没有值，则返回空字符串（\"\"）。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"TimeMap\", \"set\", \"get\", \"get\", \"set\", \"get\", \"get\"]\n[[], [\"foo\", \"bar\", 1], [\"foo\", 1], [\"foo\", 3], [\"foo\", \"bar2\", 4], [\"foo\", 4], [\"foo\", 5]]\n输出：\n[null, null, \"bar\", \"bar\", null, \"bar2\", \"bar2\"]\n\n解释：\nTimeMap timeMap = new TimeMap();\ntimeMap.set(\"foo\", \"bar\", 1);  // 存储键 \"foo\" 和值 \"bar\" ，时间戳 timestamp = 1 &nbsp; \ntimeMap.get(\"foo\", 1);         // 返回 \"bar\"\ntimeMap.get(\"foo\", 3);         // 返回 \"bar\", 因为在时间戳 3 和时间戳 2 处没有对应 \"foo\" 的值，所以唯一的值位于时间戳 1 处（即 \"bar\"） 。\ntimeMap.set(\"foo\", \"bar2\", 4); // 存储键 \"foo\" 和值 \"bar2\" ，时间戳 timestamp = 4&nbsp; \ntimeMap.get(\"foo\", 4);         // 返回 \"bar2\"\ntimeMap.get(\"foo\", 5);         // 返回 \"bar2\"\n\n&nbsp;\n\n提示：\n\n\t1 <= key.length, value.length <= 100\n\tkey 和 value 由小写英文字母和数字组成\n\t1 <= timestamp <= 107\n\tset 操作中的时间戳 timestamp 都是严格递增的\n\t最多调用&nbsp;set 和 get 操作 2 * 105 次",
+  "constraints": [
+    "1 <= key.length, value.length <= 100",
+    "key 和 value 由小写英文字母和数字组成",
+    "1 <= timestamp <= 107",
+    "set 操作中的时间戳 timestamp 都是严格递增的",
+    "最多调用&nbsp;set 和 get 操作 2 * 105 次"
+  ]
+}

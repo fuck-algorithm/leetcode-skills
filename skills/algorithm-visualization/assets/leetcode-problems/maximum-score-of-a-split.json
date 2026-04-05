@@ -1,0 +1,12 @@
+{
+  "number": "3788",
+  "title_cn": "分割的最大得分",
+  "title_en": "Maximum Score of a Split",
+  "slug": "maximum-score-of-a-split",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组 nums。\n\n请你选出一个下标 i&nbsp;以分割数组，该下标满足 0 <= i < n - 1。\n\n对于选择的分割下标 i：\n\n\t令 prefixSum(i) 表示数组前缀的和，即 nums[0] + nums[1] + ... + nums[i]。\n\t令 suffixMin(i) 表示数组后缀的最小值，即 nums[i + 1], nums[i + 2], ..., nums[n - 1] 中的最小值。\n\n在下标 i 的&nbsp;分割得分&nbsp;定义为：\n\nscore(i) = prefixSum(i) - suffixMin(i)\n\n返回所有有效分割下标中&nbsp;最大&nbsp;的分割得分。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [10,-1,3,-4,-5]\n\n输出： 17\n\n解释：\n\n最优的分割下标是 i = 2，score(2) = prefixSum(2) - suffixMin(2) = (10 + (-1) + 3) - (-5) = 17。\n\n示例 2：\n\n输入： nums = [-7,-5,3]\n\n输出： -2\n\n解释：\n\n最优的分割下标是 i = 0，score(0) = prefixSum(0) - suffixMin(0) = (-7) - (-5) = -2。\n\n示例 3：\n\n输入： nums = [1,1]\n\n输出： 0\n\n解释：\n\n唯一有效分割下标是 i = 0，score(0) = prefixSum(0) - suffixMin(0) = 1 - 1 = 0。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t-109​​​​​​​ <= nums[i] <= 109",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "-109​​​​​​​ <= nums[i] <= 109"
+  ]
+}

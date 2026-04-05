@@ -1,0 +1,9 @@
+{
+  "number": "325",
+  "title_cn": "和等于 k 的最长子数组长度",
+  "title_en": "Maximum Size Subarray Sum Equals k",
+  "slug": "maximum-size-subarray-sum-equals-k",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

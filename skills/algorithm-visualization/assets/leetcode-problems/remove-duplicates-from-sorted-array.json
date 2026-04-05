@@ -1,0 +1,13 @@
+{
+  "number": "26",
+  "title_cn": "删除有序数组中的重复项",
+  "title_en": "Remove Duplicates from Sorted Array",
+  "slug": "remove-duplicates-from-sorted-array",
+  "difficulty": "Easy",
+  "description": "给你一个 非严格递增排列 的数组 nums ，请你 原地 删除重复出现的元素，使每个元素 只出现一次 ，返回删除后数组的新长度。元素的 相对顺序 应该保持 一致 。然后返回 nums 中唯一元素的个数。\n\n考虑 nums 的唯一元素的数量为 k。去重后，返回唯一元素的数量 k。\n\nnums 的前 k 个元素应包含 排序后 的唯一数字。下标&nbsp;k - 1 之后的剩余元素可以忽略。\n\n判题标准:\n\n系统会用下面的代码来测试你的题解:\n\nint[] nums = [...]; // 输入数组\nint[] expectedNums = [...]; // 长度正确的期望答案\n\nint k = removeDuplicates(nums); // 调用\n\nassert k == expectedNums.length;\nfor (int i = 0; i < k; i++) {\n    assert nums[i] == expectedNums[i];\n}\n\n如果所有断言都通过，那么您的题解将被 通过。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,2]\n输出：2, nums = [1,2,_]\n解释：函数应该返回新的长度 2 ，并且原数组 nums 的前两个元素被修改为 1, 2 。不需要考虑数组中超出新长度后面的元素。\n\n示例 2：\n\n输入：nums = [0,0,1,1,1,2,2,3,3,4]\n输出：5, nums = [0,1,2,3,4,_,_,_,_,_]\n解释：函数应该返回新的长度 5 ， 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4 。不需要考虑数组中超出新长度后面的元素。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 3 * 104\n\t-100&nbsp;<= nums[i] <= 100\n\tnums 已按 非递减&nbsp;顺序排列。",
+  "constraints": [
+    "1 <= nums.length <= 3 * 104",
+    "-100&nbsp;<= nums[i] <= 100",
+    "nums 已按 非递减&nbsp;顺序排列。"
+  ]
+}

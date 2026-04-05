@@ -1,0 +1,16 @@
+{
+  "number": "3286",
+  "title_cn": "穿越网格图的安全路径",
+  "title_en": "Find a Safe Walk Through a Grid",
+  "slug": "find-a-safe-walk-through-a-grid",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;m x n&nbsp;的二进制矩形&nbsp;grid&nbsp;和一个整数&nbsp;health&nbsp;表示你的健康值。\n\n你开始于矩形的左上角&nbsp;(0, 0)&nbsp;，你的目标是矩形的右下角&nbsp;(m - 1, n - 1)&nbsp;。\n\n你可以在矩形中往上下左右相邻格子移动，但前提是你的健康值始终是 正数&nbsp;。\n\n对于格子&nbsp;(i, j)&nbsp;，如果&nbsp;grid[i][j] = 1&nbsp;，那么这个格子视为 不安全&nbsp;的，会使你的健康值减少 1 。\n\n如果你可以到达最终的格子，请你返回&nbsp;true&nbsp;，否则返回 false&nbsp;。\n\n注意&nbsp;，当你在最终格子的时候，你的健康值也必须为&nbsp;正数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]], health = 1\n\n输出：true\n\n解释：\n\n沿着下图中灰色格子走，可以安全到达最终的格子。\n\n示例 2：\n\n输入：grid = [[0,1,1,0,0,0],[1,0,1,0,0,0],[0,1,1,1,0,1],[0,0,1,0,1,0]], health = 3\n\n输出：false\n\n解释：\n\n健康值最少为 4 才能安全到达最后的格子。\n\n示例 3：\n\n输入：grid = [[1,1,1],[1,0,1],[1,1,1]], health = 5\n\n输出：true\n\n解释：\n\n沿着下图中灰色格子走，可以安全到达最终的格子。\n\n任何不经过格子&nbsp;(1, 1)&nbsp;的路径都是不安全的，因为你的健康值到达最终格子时，都会小于等于 0 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 50\n2 \n\t1 <= health <= m + n\n\tgrid[i][j]&nbsp;要么是 0 ，要么是 1 。",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 50",
+    "2",
+    "1 <= health <= m + n",
+    "grid[i][j]&nbsp;要么是 0 ，要么是 1 。"
+  ]
+}

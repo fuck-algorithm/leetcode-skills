@@ -1,0 +1,9 @@
+{
+  "number": "3297",
+  "title_cn": "统计重新排列后包含另一个字符串的子字符串数目 I",
+  "title_en": "Count Substrings That Can Be Rearranged to Contain a String I",
+  "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-i",
+  "difficulty": "Medium",
+  "description": "给你两个字符串&nbsp;word1 和&nbsp;word2&nbsp;。\n\n如果一个字符串 x&nbsp;重新排列后，word2&nbsp;是重排字符串的&nbsp;前缀&nbsp;，那么我们称字符串&nbsp;x&nbsp;是&nbsp;合法的&nbsp;。\n\n请你返回 word1&nbsp;中 合法&nbsp;子字符串&nbsp;的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：word1 = \"bcca\", word2 = \"abc\"\n\n输出：1\n\n解释：\n\n唯一合法的子字符串是&nbsp;\"bcca\"&nbsp;，可以重新排列得到&nbsp;\"abcc\"&nbsp;，\"abc\"&nbsp;是它的前缀。\n\n示例 2：\n\n输入：word1 = \"abcabc\", word2 = \"abc\"\n\n输出：10\n\n解释：\n\n除了长度为 1 和 2 的所有子字符串都是合法的。\n\n示例 3：\n\n输入：word1 = \"abcabc\", word2 = \"aaabc\"\n\n输出：0\n\n&nbsp;\n\n解释：\n\n\t1 <= word1.length <= 105\n\t1 <= word2.length <= 104\n\tword1 和&nbsp;word2&nbsp;都只包含小写英文字母。",
+  "constraints": []
+}

@@ -1,0 +1,14 @@
+{
+  "number": "1389",
+  "title_cn": "按既定顺序创建目标数组",
+  "title_en": "Create Target Array in the Given Order",
+  "slug": "create-target-array-in-the-given-order",
+  "difficulty": "Easy",
+  "description": "给你两个整数数组 nums 和 index。你需要按照以下规则创建目标数组：\n\n\t目标数组 target 最初为空。\n\t按从左到右的顺序依次读取 nums[i] 和 index[i]，在 target 数组中的下标 index[i] 处插入值 nums[i] 。\n\t重复上一步，直到在 nums 和 index 中都没有要读取的元素。\n\n请你返回目标数组。\n\n题目保证数字插入位置总是存在。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,1,2,3,4], index = [0,1,2,2,1]\n输出：[0,4,1,3,2]\n解释：\nnums       index     target\n0            0        [0]\n1            1        [0,1]\n2            2        [0,1,2]\n3            2        [0,1,3,2]\n4            1        [0,4,1,3,2]\n\n示例 2：\n\n输入：nums = [1,2,3,4,0], index = [0,1,2,3,0]\n输出：[0,1,2,3,4]\n解释：\nnums       index     target\n1            0        [1]\n2            1        [1,2]\n3            2        [1,2,3]\n4            3        [1,2,3,4]\n0            0        [0,1,2,3,4]\n\n示例 3：\n\n输入：nums = [1], index = [0]\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length, index.length <= 100\n\tnums.length == index.length\n\t0 <= nums[i] <= 100\n\t0 <= index[i] <= i",
+  "constraints": [
+    "1 <= nums.length, index.length <= 100",
+    "nums.length == index.length",
+    "0 <= nums[i] <= 100",
+    "0 <= index[i] <= i"
+  ]
+}

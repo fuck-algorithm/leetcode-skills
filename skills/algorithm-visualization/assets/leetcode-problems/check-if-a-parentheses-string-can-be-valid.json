@@ -1,0 +1,14 @@
+{
+  "number": "2116",
+  "title_cn": "判断一个括号字符串是否有效",
+  "title_en": "Check if a Parentheses String Can Be Valid",
+  "slug": "check-if-a-parentheses-string-can-be-valid",
+  "difficulty": "Medium",
+  "description": "一个括号字符串是只由&nbsp;'(' 和&nbsp;')'&nbsp;组成的&nbsp;非空&nbsp;字符串。如果一个字符串满足下面 任意&nbsp;一个条件，那么它就是有效的：\n\n\t字符串为&nbsp;().\n\t它可以表示为 AB（A&nbsp;与&nbsp;B&nbsp;连接），其中A 和&nbsp;B&nbsp;都是有效括号字符串。\n\t它可以表示为&nbsp;(A)&nbsp;，其中&nbsp;A&nbsp;是一个有效括号字符串。\n\n给你一个括号字符串&nbsp;s&nbsp;和一个字符串&nbsp;locked&nbsp;，两者长度都为&nbsp;n&nbsp;。locked&nbsp;是一个二进制字符串，只包含&nbsp;'0'&nbsp;和&nbsp;'1'&nbsp;。对于&nbsp;locked&nbsp;中&nbsp;每一个&nbsp;下标&nbsp;i ：\n\n\t如果&nbsp;locked[i]&nbsp;是&nbsp;'1'&nbsp;，你 不能&nbsp;改变&nbsp;s[i]&nbsp;。\n\t如果&nbsp;locked[i]&nbsp;是&nbsp;'0'&nbsp;，你&nbsp;可以&nbsp;将&nbsp;s[i]&nbsp;变为&nbsp;'('&nbsp;或者&nbsp;')'&nbsp;。\n\n如果你可以将 s&nbsp;变为有效括号字符串，请你返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"))()))\", locked = \"010100\"\n输出：true\n解释：locked[1] == '1' 和 locked[3] == '1' ，所以我们无法改变 s[1] 或者 s[3] 。\n我们可以将 s[0] 和 s[4] 变为 '(' ，不改变 s[2] 和 s[5] ，使 s 变为有效字符串。\n\n示例 2：\n\n输入：s = \"()()\", locked = \"0000\"\n输出：true\n解释：我们不需要做任何改变，因为 s 已经是有效字符串了。\n\n示例 3：\n\n输入：s = \")\", locked = \"0\"\n输出：false\n解释：locked 允许改变 s[0] 。\n但无论将 s[0] 变为 '(' 或者 ')' 都无法使 s 变为有效字符串。\n\n示例 4：\n\n输入：s = \"(((())(((())\", locked = \"111111010111\"\n输出：true\n解释：locked 允许我们改变 s[6] 和 s[8]。\n我们将 s[6] 和 s[8] 改为 ')' 使 s 变为有效字符串。\n\n&nbsp;\n\n提示：\n\n\tn == s.length == locked.length\n\t1 <= n <= 105\n\ts[i]&nbsp;要么是&nbsp;'('&nbsp;要么是&nbsp;')'&nbsp;。\n\tlocked[i] 要么是&nbsp;'0'&nbsp;要么是&nbsp;'1' 。",
+  "constraints": [
+    "n == s.length == locked.length",
+    "1 <= n <= 105",
+    "s[i]&nbsp;要么是&nbsp;'('&nbsp;要么是&nbsp;')'&nbsp;。",
+    "locked[i] 要么是&nbsp;'0'&nbsp;要么是&nbsp;'1' 。"
+  ]
+}

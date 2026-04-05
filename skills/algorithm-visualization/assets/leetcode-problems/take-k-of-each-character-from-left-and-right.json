@@ -1,0 +1,13 @@
+{
+  "number": "2516",
+  "title_cn": "每种字符至少取 K 个",
+  "title_en": "Take K of Each Character From Left and Right",
+  "slug": "take-k-of-each-character-from-left-and-right",
+  "difficulty": "Medium",
+  "description": "给你一个由字符 'a'、'b'、'c' 组成的字符串 s 和一个非负整数 k 。每分钟，你可以选择取走 s 最左侧 还是 最右侧 的那个字符。\n\n你必须取走每种字符 至少 k 个，返回需要的 最少 分钟数；如果无法取到，则返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aabaaaacaabc\", k = 2\n输出：8\n解释：\n从 s 的左侧取三个字符，现在共取到两个字符 'a' 、一个字符 'b' 。\n从 s 的右侧取五个字符，现在共取到四个字符 'a' 、两个字符 'b' 和两个字符 'c' 。\n共需要 3 + 5 = 8 分钟。\n可以证明需要的最少分钟数是 8 。\n\n示例 2：\n\n输入：s = \"a\", k = 1\n输出：-1\n解释：无法取到一个字符 'b' 或者 'c'，所以返回 -1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅由字母 'a'、'b'、'c' 组成\n\t0 <= k <= s.length",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由字母 'a'、'b'、'c' 组成",
+    "0 <= k <= s.length"
+  ]
+}

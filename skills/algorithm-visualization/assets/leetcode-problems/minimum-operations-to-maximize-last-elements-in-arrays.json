@@ -1,0 +1,13 @@
+{
+  "number": "2934",
+  "title_cn": "最大化数组末位元素的最少操作次数",
+  "title_en": "Minimum Operations to Maximize Last Elements in Arrays",
+  "slug": "minimum-operations-to-maximize-last-elements-in-arrays",
+  "difficulty": "Medium",
+  "description": "给你两个下标从 0 开始的整数数组 nums1 和 nums2 ，这两个数组的长度都是 n 。\n\n你可以执行一系列 操作（可能不执行）。\n\n在每次操作中，你可以选择一个在范围 [0, n - 1] 内的下标 i ，并交换 nums1[i] 和 nums2[i] 的值。\n\n你的任务是找到满足以下条件所需的 最小 操作次数：\n\n\tnums1[n - 1] 等于 nums1 中所有元素的 最大值 ，即 nums1[n - 1] = max(nums1[0], nums1[1], ..., nums1[n - 1]) 。\n\tnums2[n - 1] 等于 nums2 中所有元素的 最大值 ，即 nums2[n - 1] = max(nums2[0], nums2[1], ..., nums2[n - 1]) 。\n\n以整数形式，表示并返回满足上述 全部 条件所需的 最小 操作次数，如果无法同时满足两个条件，则返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,2,7]，nums2 = [4,5,3]\n输出：1\n解释：在这个示例中，可以选择下标 i = 2 执行一次操作。\n交换 nums1[2] 和 nums2[2] 的值，nums1 变为 [1,2,3] ，nums2 变为 [4,5,7] 。\n同时满足两个条件。\n可以证明，需要执行的最小操作次数为 1 。\n因此，答案是 1 。\n\n示例 2：\n\n输入：nums1 = [2,3,4,5,9]，nums2 = [8,8,4,4,4]\n输出：2\n解释：在这个示例中，可以执行以下操作：\n首先，选择下标 i = 4 执行操作。\n交换 nums1[4] 和 nums2[4] 的值，nums1 变为 [2,3,4,5,4] ，nums2 变为 [8,8,4,4,9] 。\n然后，选择下标 i = 3 执行操作。\n交换 nums1[3] 和 nums2[3] 的值，nums1 变为 [2,3,4,4,4] ，nums2 变为 [8,8,4,5,9] 。\n同时满足两个条件。 \n可以证明，需要执行的最小操作次数为 2 。 \n因此，答案是 2 。\n\n示例 3：\n\n输入：nums1 = [1,5,4]，nums2 = [2,5,3]\n输出：-1\n解释：在这个示例中，无法同时满足两个条件。\n因此，答案是 -1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums1.length == nums2.length <= 1000\n\t1 <= nums1[i] <= 109\n\t1 <= nums2[i] <= 109",
+  "constraints": [
+    "1 <= n == nums1.length == nums2.length <= 1000",
+    "1 <= nums1[i] <= 109",
+    "1 <= nums2[i] <= 109"
+  ]
+}

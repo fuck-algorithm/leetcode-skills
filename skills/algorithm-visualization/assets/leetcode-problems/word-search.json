@@ -1,0 +1,15 @@
+{
+  "number": "79",
+  "title_cn": "单词搜索",
+  "title_en": "Word Search",
+  "slug": "word-search",
+  "difficulty": "Medium",
+  "description": "给定一个&nbsp;m x n 二维字符网格&nbsp;board 和一个字符串单词&nbsp;word 。如果&nbsp;word 存在于网格中，返回 true ；否则，返回 false 。\n\n单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。\n\n&nbsp;\n\n示例 1：\n\n输入：board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = \"ABCCED\"\n输出：true\n\n示例 2：\n\n输入：board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = \"SEE\"\n输出：true\n\n示例 3：\n\n输入：board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = \"ABCB\"\n输出：false\n\n&nbsp;\n\n提示：\n\n\tm == board.length\n\tn = board[i].length\n\t1 <= m, n <= 6\n\t1 <= word.length <= 15\n\tboard 和 word 仅由大小写英文字母组成\n\n&nbsp;\n\n进阶：你可以使用搜索剪枝的技术来优化解决方案，使其在 board 更大的情况下可以更快解决问题？",
+  "constraints": [
+    "m == board.length",
+    "n = board[i].length",
+    "1 <= m, n <= 6",
+    "1 <= word.length <= 15",
+    "board 和 word 仅由大小写英文字母组成"
+  ]
+}

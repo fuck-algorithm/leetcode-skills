@@ -1,0 +1,14 @@
+{
+  "number": "890",
+  "title_cn": "查找和替换模式",
+  "title_en": "Find and Replace Pattern",
+  "slug": "find-and-replace-pattern",
+  "difficulty": "Medium",
+  "description": "你有一个单词列表&nbsp;words&nbsp;和一个模式&nbsp;&nbsp;pattern，你想知道 words 中的哪些单词与模式匹配。\n\n如果存在字母的排列 p&nbsp;，使得将模式中的每个字母 x 替换为 p(x) 之后，我们就得到了所需的单词，那么单词与模式是匹配的。\n\n（回想一下，字母的排列是从字母到字母的双射：每个字母映射到另一个字母，没有两个字母映射到同一个字母。）\n\n返回 words 中与给定模式匹配的单词列表。\n\n你可以按任何顺序返回答案。\n\n&nbsp;\n\n示例：\n\n输入：words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"\n输出：[\"mee\",\"aqq\"]\n解释：\n\"mee\" 与模式匹配，因为存在排列 {a -> m, b -> e, ...}。\n\"ccc\" 与模式不匹配，因为 {a -> c, b -> c, ...} 不是排列。\n因为 a 和 b 映射到同一个字母。\n\n&nbsp;\n\n提示：\n\n\t1 <= pattern.length <= 20\n\t1 <= words.length <= 50\n\twords[i].length == pattern.length\n\tpattern 和&nbsp;words[i]&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= pattern.length <= 20",
+    "1 <= words.length <= 50",
+    "words[i].length == pattern.length",
+    "pattern 和&nbsp;words[i]&nbsp;只包含小写英文字母。"
+  ]
+}

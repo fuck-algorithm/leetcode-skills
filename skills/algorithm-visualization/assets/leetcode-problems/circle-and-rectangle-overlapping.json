@@ -1,0 +1,14 @@
+{
+  "number": "1401",
+  "title_cn": "圆和矩形是否有重叠",
+  "title_en": "Circle and Rectangle Overlapping",
+  "slug": "circle-and-rectangle-overlapping",
+  "difficulty": "Medium",
+  "description": "给你一个以 (radius, xCenter, yCenter) 表示的圆和一个与坐标轴平行的矩形 (x1, y1, x2, y2) ，其中 (x1, y1) 是矩形左下角的坐标，而 (x2, y2) 是右上角的坐标。\n\n如果圆和矩形有重叠的部分，请你返回 true ，否则返回 false&nbsp;。\n\n换句话说，请你检测是否 存在 点 (xi, yi) ，它既在圆上也在矩形上（两者都包括点落在边界上的情况）。\n\n&nbsp;\n\n示例 1 ：\n\n输入：radius = 1, xCenter = 0, yCenter = 0, x1 = 1, y1 = -1, x2 = 3, y2 = 1\n输出：true\n解释：圆和矩形存在公共点 (1,0) 。\n\n示例 2 ：\n\n输入：radius = 1, xCenter = 1, yCenter = 1, x1 = 1, y1 = -3, x2 = 2, y2 = -1\n输出：false\n\n示例 3 ：\n\n输入：radius = 1, xCenter = 0, yCenter = 0, x1 = -1, y1 = 0, x2 = 0, y2 = 1\n输出：true\n\n&nbsp;\n\n提示：\n\n\t1 <= radius <= 2000\n\t-104 <= xCenter, yCenter <= 104\n\t-104 <= x1 < x2 <= 104\n\t-104 <= y1 < y2 <= 104",
+  "constraints": [
+    "1 <= radius <= 2000",
+    "-104 <= xCenter, yCenter <= 104",
+    "-104 <= x1 < x2 <= 104",
+    "-104 <= y1 < y2 <= 104"
+  ]
+}

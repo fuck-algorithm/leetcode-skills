@@ -1,0 +1,11 @@
+{
+  "number": "168",
+  "title_cn": "Excel 表列名称",
+  "title_en": "Excel Sheet Column Title",
+  "slug": "excel-sheet-column-title",
+  "difficulty": "Easy",
+  "description": "给你一个整数 columnNumber ，返回它在 Excel 表中相对应的列名称。\n\n例如：\n\nA -> 1\nB -> 2\nC -> 3\n...\nZ -> 26\nAA -> 27\nAB -> 28 \n...\n\n示例 1：\n\n输入：columnNumber = 1\n输出：\"A\"\n\n示例 2：\n\n输入：columnNumber = 28\n输出：\"AB\"\n\n示例 3：\n\n输入：columnNumber = 701\n输出：\"ZY\"\n\n示例 4：\n\n输入：columnNumber = 2147483647\n输出：\"FXSHRXW\"\n\n提示：\n\n\t1 31 - 1",
+  "constraints": [
+    "1 31 - 1"
+  ]
+}

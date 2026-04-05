@@ -1,0 +1,13 @@
+{
+  "number": "3281",
+  "title_cn": "范围内整数的最大得分",
+  "title_en": "Maximize Score of Numbers in Ranges",
+  "slug": "maximize-score-of-numbers-in-ranges",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 start 和一个整数 d，代表 n 个区间 [start[i], start[i] + d]。\n\n你需要选择 n 个整数，其中第 i 个整数必须属于第 i 个区间。所选整数的 得分 定义为所选整数两两之间的 最小 绝对差。\n\n返回所选整数的 最大可能得分 。\n\n&nbsp;\n\n示例 1：\n\n输入： start = [6,0,3], d = 2\n\n输出： 4\n\n解释：\n\n可以选择整数 8, 0 和 4 获得最大可能得分，得分为 min(|8 - 0|, |8 - 4|, |0 - 4|)，等于 4。\n\n示例 2：\n\n输入： start = [2,6,13,13], d = 5\n\n输出： 5\n\n解释：\n\n可以选择整数 2, 7, 13 和 18 获得最大可能得分，得分为 min(|2 - 7|, |2 - 13|, |2 - 18|, |7 - 13|, |7 - 18|, |13 - 18|)，等于 5。\n\n&nbsp;\n\n提示：\n\n\t2 <= start.length <= 105\n\t0 <= start[i] <= 109\n\t0 <= d <= 109",
+  "constraints": [
+    "2 <= start.length <= 105",
+    "0 <= start[i] <= 109",
+    "0 <= d <= 109"
+  ]
+}

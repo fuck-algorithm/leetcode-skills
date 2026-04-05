@@ -1,0 +1,13 @@
+{
+  "number": "3471",
+  "title_cn": "找出最大的几近缺失整数",
+  "title_en": "Find the Largest Almost Missing Integer",
+  "slug": "find-the-largest-almost-missing-integer",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k 。\n\n如果整数 x&nbsp;恰好仅出现在&nbsp;nums&nbsp;中的一个大小为 k&nbsp;的子数组中，则认为&nbsp;x&nbsp;是 nums&nbsp;中的几近缺失（almost missing）整数。\n\n返回 nums 中 最大的几近缺失 整数，如果不存在这样的整数，返回&nbsp;-1&nbsp;。\n子数组 是数组中的一个连续元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,9,2,1,7], k = 3\n\n输出：7\n\n解释：\n\n\t1 出现在两个大小为 3 的子数组中：[9, 2, 1]、[2, 1, 7]\n\t2 出现在三个大小为&nbsp;3 的子数组中：[3, 9, 2]、[9, 2, 1]、[2, 1, 7]\n\t3 出现在一个大小为 3 的子数组中：[3, 9, 2]\n\t7 出现在一个大小为 3 的子数组中：[2, 1, 7]\n\t9 出现在两个大小为 3 的子数组中：[3, 9, 2]、[9, 2, 1]\n\n返回 7 ，因为它满足题意的所有整数中最大的那个。\n\n示例 2：\n\n输入：nums = [3,9,7,2,1,7], k = 4\n\n输出：3\n\n解释：\n\n\t1 出现在两个大小为 4 的子数组中：[9, 7, 2, 1]、[7, 2, 1, 7]\n\t2 出现在三个大小为 4 的子数组中：[3, 9, 7, 2]、[9, 7, 2, 1]、[7, 2, 1, 7]\n\t3 出现在一个大小为 4 的子数组中：[3, 9, 7, 2]\n\t7 出现在三个大小为 4 的子数组中：[3, 9, 7, 2]、[9, 7, 2, 1]、[7, 2, 1, 7]\n\t9 出现在两个大小为 4 的子数组中：[3, 9, 7, 2]、[9, 7, 2, 1]\n\n返回 3&nbsp;，因为它满足题意的所有整数中最大的那个。\n\n示例 3：\n\n输入：nums = [0,0], k = 1\n\n输出：-1\n\n解释：\n\n不存在满足题意的整数。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 50\n\t0 <= nums[i] <= 50\n\t1 <= k <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 50",
+    "0 <= nums[i] <= 50",
+    "1 <= k <= nums.length"
+  ]
+}

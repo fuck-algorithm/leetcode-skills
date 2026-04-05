@@ -1,0 +1,12 @@
+{
+  "number": "2086",
+  "title_cn": "喂食仓鼠的最小食物桶数",
+  "title_en": "Minimum Number of Food Buckets to Feed the Hamsters",
+  "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;hamsters&nbsp;，其中&nbsp;hamsters[i]&nbsp; 要么是：\n\n\t'H'&nbsp;表示有一个仓鼠在下标&nbsp;i&nbsp;，或者\n\t'.'&nbsp;表示下标&nbsp;i&nbsp;是空的。\n\n你将要在空的位置上添加一定数量的食物桶来喂养仓鼠。如果仓鼠的左边或右边至少有一个食物桶，就可以喂食它。更正式地说，如果你在位置&nbsp;i - 1&nbsp;或者 i + 1&nbsp;放置一个食物桶，就可以喂养位置为 i&nbsp;处的仓鼠。\n\n在 空的位置 放置食物桶以喂养所有仓鼠的前提下，请你返回需要的 最少&nbsp;食物桶数。如果无解请返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：hamsters = \"H..H\"\n输出：2\n解释：\n我们可以在下标为 1 和 2 处放食物桶。\n可以发现如果我们只放置 1 个食物桶，其中一只仓鼠将得不到喂养。\n\n示例 2：\n\n输入：street = \".H.H.\"\n输出：1\n解释：\n我们可以在下标为 2 处放置一个食物桶。\n\n示例 3：\n\n输入：street = \".HHH.\"\n输出：-1\n解释：\n如果我们如图那样在每个空位放置食物桶，下标 2 处的仓鼠将吃不到食物。\n\n&nbsp;\n\n提示：\n\n\t1 <= hamsters.length <= 105\n\thamsters[i]&nbsp;要么是&nbsp;'H'&nbsp;，要么是&nbsp;'.' 。",
+  "constraints": [
+    "1 <= hamsters.length <= 105",
+    "hamsters[i]&nbsp;要么是&nbsp;'H'&nbsp;，要么是&nbsp;'.' 。"
+  ]
+}

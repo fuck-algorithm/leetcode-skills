@@ -1,0 +1,13 @@
+{
+  "number": "2069",
+  "title_cn": "模拟行走机器人 II",
+  "title_en": "Walking Robot Simulation II",
+  "slug": "walking-robot-simulation-ii",
+  "difficulty": "Medium",
+  "description": "给你一个在 XY 平面上的&nbsp;width x height&nbsp;的网格图，左下角&nbsp;的格子为&nbsp;(0, 0)&nbsp;，右上角&nbsp;的格子为&nbsp;(width - 1, height - 1)&nbsp;。网格图中相邻格子为四个基本方向之一（\"North\"，\"East\"，\"South\"&nbsp;和&nbsp;\"West\"）。一个机器人 初始&nbsp;在格子&nbsp;(0, 0)&nbsp;，方向为&nbsp;\"East\"&nbsp;。\n\n机器人可以根据指令移动指定的 步数&nbsp;。每一步，它可以执行以下操作。\n\n\t沿着当前方向尝试 往前一步&nbsp;。\n\t如果机器人下一步将到达的格子 超出了边界&nbsp;，机器人会 逆时针&nbsp;转 90 度，然后再尝试往前一步。\n\n如果机器人完成了指令要求的移动步数，它将停止移动并等待下一个指令。\n\n请你实现&nbsp;Robot&nbsp;类：\n\n\tRobot(int width, int height)&nbsp;初始化一个&nbsp;width x height&nbsp;的网格图，机器人初始在&nbsp;(0, 0)&nbsp;，方向朝&nbsp;\"East\"&nbsp;。\n\tvoid step(int num)&nbsp;给机器人下达前进&nbsp;num&nbsp;步的指令。\n\tint[] getPos()&nbsp;返回机器人当前所处的格子位置，用一个长度为 2 的数组&nbsp;[x, y]&nbsp;表示。\n\tString getDir()&nbsp;返回当前机器人的朝向，为&nbsp;\"North\"&nbsp;，\"East\"&nbsp;，\"South\"&nbsp;或者&nbsp;\"West\"&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"Robot\", \"step\", \"step\", \"getPos\", \"getDir\", \"step\", \"step\", \"step\", \"getPos\", \"getDir\"]\n[[6, 3], [2], [2], [], [], [2], [1], [4], [], []]\n输出：\n[null, null, null, [4, 0], \"East\", null, null, null, [1, 2], \"West\"]\n\n解释：\nRobot robot = new Robot(6, 3); // 初始化网格图，机器人在 (0, 0) ，朝东。\nrobot.step(2);  // 机器人朝东移动 2 步，到达 (2, 0) ，并朝东。\nrobot.step(2);  // 机器人朝东移动 2 步，到达 (4, 0) ，并朝东。\nrobot.getPos(); // 返回 [4, 0]\nrobot.getDir(); // 返回 \"East\"\nrobot.step(2);  // 朝东移动 1 步到达 (5, 0) ，并朝东。\n                // 下一步继续往东移动将出界，所以逆时针转变方向朝北。\n                // 然后，往北移动 1 步到达 (5, 1) ，并朝北。\nrobot.step(1);  // 朝北移动 1 步到达 (5, 2) ，并朝 北 （不是朝西）。\nrobot.step(4);  // 下一步继续往北移动将出界，所以逆时针转变方向朝西。\n                // 然后，移动 4 步到 (1, 2) ，并朝西。\nrobot.getPos(); // 返回 [1, 2]\nrobot.getDir(); // 返回 \"West\"\n\n&nbsp;\n\n提示：\n\n\t2 <= width, height <= 100\n\t1 <= num <= 105\n\tstep ，getPos&nbsp;和&nbsp;getDir&nbsp;总共&nbsp;调用次数不超过&nbsp;104&nbsp;次。",
+  "constraints": [
+    "2 <= width, height <= 100",
+    "1 <= num <= 105",
+    "step ，getPos&nbsp;和&nbsp;getDir&nbsp;总共&nbsp;调用次数不超过&nbsp;104&nbsp;次。"
+  ]
+}

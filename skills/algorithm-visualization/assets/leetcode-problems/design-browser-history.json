@@ -1,0 +1,15 @@
+{
+  "number": "1472",
+  "title_cn": "设计浏览器历史记录",
+  "title_en": "Design Browser History",
+  "slug": "design-browser-history",
+  "difficulty": "Medium",
+  "description": "你有一个只支持单个标签页的 浏览器&nbsp;，最开始你浏览的网页是&nbsp;homepage&nbsp;，你可以访问其他的网站&nbsp;url&nbsp;，也可以在浏览历史中后退&nbsp;steps&nbsp;步或前进&nbsp;steps&nbsp;步。\n\n请你实现&nbsp;BrowserHistory 类：\n\n\tBrowserHistory(string homepage)&nbsp;，用&nbsp;homepage&nbsp;初始化浏览器类。\n\tvoid visit(string url)&nbsp;从当前页跳转访问 url 对应的页面&nbsp;&nbsp;。执行此操作会把浏览历史前进的记录全部删除。\n\tstring back(int steps)&nbsp;在浏览历史中后退&nbsp;steps&nbsp;步。如果你只能在浏览历史中后退至多&nbsp;x 步且&nbsp;steps > x&nbsp;，那么你只后退&nbsp;x&nbsp;步。请返回后退 至多 steps&nbsp;步以后的&nbsp;url&nbsp;。\n\tstring forward(int steps)&nbsp;在浏览历史中前进&nbsp;steps&nbsp;步。如果你只能在浏览历史中前进至多&nbsp;x&nbsp;步且&nbsp;steps > x&nbsp;，那么你只前进 x&nbsp;步。请返回前进&nbsp;至多&nbsp;steps步以后的 url&nbsp;。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"BrowserHistory\",\"visit\",\"visit\",\"visit\",\"back\",\"back\",\"forward\",\"visit\",\"forward\",\"back\",\"back\"]\n[[\"leetcode.com\"],[\"google.com\"],[\"facebook.com\"],[\"youtube.com\"],[1],[1],[1],[\"linkedin.com\"],[2],[2],[7]]\n输出：\n[null,null,null,null,\"facebook.com\",\"google.com\",\"facebook.com\",null,\"linkedin.com\",\"google.com\",\"leetcode.com\"]\n\n解释：\nBrowserHistory browserHistory = new BrowserHistory(\"leetcode.com\");\nbrowserHistory.visit(\"google.com\");       // 你原本在浏览 \"leetcode.com\" 。访问 \"google.com\"\nbrowserHistory.visit(\"facebook.com\");     // 你原本在浏览 \"google.com\" 。访问 \"facebook.com\"\nbrowserHistory.visit(\"youtube.com\");      // 你原本在浏览 \"facebook.com\" 。访问 \"youtube.com\"\nbrowserHistory.back(1);                   // 你原本在浏览 \"youtube.com\" ，后退到 \"facebook.com\" 并返回 \"facebook.com\"\nbrowserHistory.back(1);                   // 你原本在浏览 \"facebook.com\" ，后退到 \"google.com\" 并返回 \"google.com\"\nbrowserHistory.forward(1);                // 你原本在浏览 \"google.com\" ，前进到 \"facebook.com\" 并返回 \"facebook.com\"\nbrowserHistory.visit(\"linkedin.com\");     // 你原本在浏览 \"facebook.com\" 。 访问 \"linkedin.com\"\nbrowserHistory.forward(2);                // 你原本在浏览 \"linkedin.com\" ，你无法前进任何步数。\nbrowserHistory.back(2);                   // 你原本在浏览 \"linkedin.com\" ，后退两步依次先到 \"facebook.com\" ，然后到 \"google.com\" ，并返回 \"google.com\"\nbrowserHistory.back(7);                   // 你原本在浏览 \"google.com\"， 你只能后退一步到 \"leetcode.com\" ，并返回 \"leetcode.com\"\n\n&nbsp;\n\n提示：\n\n\t1 <= homepage.length <= 20\n\t1 <= url.length <= 20\n\t1 <= steps <= 100\n\thomepage 和&nbsp;url&nbsp;都只包含&nbsp;&#39;.&#39; 或者小写英文字母。\n\t最多调用&nbsp;5000&nbsp;次&nbsp;visit，&nbsp;back&nbsp;和&nbsp;forward&nbsp;函数。",
+  "constraints": [
+    "1 <= homepage.length <= 20",
+    "1 <= url.length <= 20",
+    "1 <= steps <= 100",
+    "homepage 和&nbsp;url&nbsp;都只包含&nbsp;&#39;.&#39; 或者小写英文字母。",
+    "最多调用&nbsp;5000&nbsp;次&nbsp;visit，&nbsp;back&nbsp;和&nbsp;forward&nbsp;函数。"
+  ]
+}

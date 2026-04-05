@@ -1,0 +1,14 @@
+{
+  "number": "2961",
+  "title_cn": "双模幂运算",
+  "title_en": "Double Modular Exponentiation",
+  "slug": "double-modular-exponentiation",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的二维数组 variables ，其中 variables[i] = [ai, bi, ci, mi]，以及一个整数 target 。\n\n如果满足以下公式，则下标 i 是 好下标：\n\n\t0 <= i < variables.length\n\t((aibi % 10)ci) % mi == target\n\n返回一个由 好下标 组成的数组，顺序不限 。\n\n&nbsp;\n\n示例 1：\n\n输入：variables = [[2,3,3,10],[3,3,3,1],[6,1,1,4]], target = 2\n输出：[0,2]\n解释：对于 variables 数组中的每个下标 i ：\n1) 对于下标 0 ，variables[0] = [2,3,3,10] ，(23 % 10)3 % 10 = 2 。\n2) 对于下标 1 ，variables[1] = [3,3,3,1] ，(33 % 10)3 % 1 = 0 。\n3) 对于下标 2 ，variables[2] = [6,1,1,4] ，(61 % 10)1 % 4 = 2 。\n因此，返回 [0,2] 作为答案。\n\n示例 2：\n\n输入：variables = [[39,3,1000,1000]], target = 17\n输出：[]\n解释：对于 variables 数组中的每个下标 i ：\n1) 对于下标 0 ，variables[0] = [39,3,1000,1000] ，(393 % 10)1000 % 1000 = 1 。\n因此，返回 [] 作为答案。\n\n&nbsp;\n\n提示：\n\n\t1 <= variables.length <= 100\n\tvariables[i] == [ai, bi, ci, mi]\n\t1 <= ai, bi, ci, mi <= 103\n\t0 <= target <= 103",
+  "constraints": [
+    "1 <= variables.length <= 100",
+    "variables[i] == [ai, bi, ci, mi]",
+    "1 <= ai, bi, ci, mi <= 103",
+    "0 <= target <= 103"
+  ]
+}

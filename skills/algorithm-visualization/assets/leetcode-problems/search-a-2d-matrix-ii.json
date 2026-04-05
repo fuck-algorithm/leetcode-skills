@@ -1,0 +1,17 @@
+{
+  "number": "240",
+  "title_cn": "搜索二维矩阵 II",
+  "title_en": "Search a 2D Matrix II",
+  "slug": "search-a-2d-matrix-ii",
+  "difficulty": "Medium",
+  "description": "编写一个高效的算法来搜索&nbsp;m&nbsp;x&nbsp;n&nbsp;矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：\n\n\t每行的元素从左到右升序排列。\n\t每列的元素从上到下升序排列。\n\n&nbsp;\n\n示例 1：\n\n输入：matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5\n输出：true\n\n示例 2：\n\n输入：matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20\n输出：false\n\n&nbsp;\n\n提示：\n\n\tm == matrix.length\n\tn == matrix[i].length\n\t1 <= n, m <= 300\n\t-109&nbsp;<= matrix[i][j] <= 109\n\t每行的所有元素从左到右升序排列\n\t每列的所有元素从上到下升序排列\n\t-109&nbsp;<= target <= 109",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= n, m <= 300",
+    "-109&nbsp;<= matrix[i][j] <= 109",
+    "每行的所有元素从左到右升序排列",
+    "每列的所有元素从上到下升序排列",
+    "-109&nbsp;<= target <= 109"
+  ]
+}

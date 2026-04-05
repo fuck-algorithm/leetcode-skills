@@ -1,0 +1,9 @@
+{
+  "number": "LCP 76",
+  "title_cn": "魔法棋盘",
+  "title_en": "魔法棋盘",
+  "slug": "1ybDKD",
+  "difficulty": "Hard",
+  "description": "在大小为 `n * m` 的棋盘中，有两种不同的棋子：黑色，红色。当两颗颜色不同的棋子同时满足以下两种情况时，将会产生魔法共鸣：\n- 两颗异色棋子在同一行或者同一列\n- 两颗异色棋子之间恰好只有一颗棋子\n    > 注：异色棋子之间可以有空位\n\n由于棋盘上被施加了魔法禁制，棋盘上的部分格子变成问号。`chessboard[i][j]` 表示棋盘第 `i` 行 `j` 列的状态：\n- 若为 `.` ，表示当前格子确定为空\n- 若为 `B` ，表示当前格子确定为 黑棋\n- 若为 `R` ，表示当前格子确定为 红棋\n- 若为 `?` ，表示当前格子待定\n\n现在，探险家小扣的任务是确定所有问号位置的状态（留空/放黑棋/放红棋），使最终的棋盘上，任意两颗棋子间都 **无法** 产生共鸣。请返回可以满足上述条件的放置方案数量。\n\n**示例1：**\n> 输入：`n = 3, m = 3, chessboard = [\"..R\",\"..B\",\"?R?\"]`\n>\n> 输出：`5`\n>\n> 解释：给定的棋盘如图：\n>![image.png](https://pic.leetcode.cn/1681714583-unbRox-image.png){:height=150px}\n> 所有符合题意的最终局面如图：\n>![image.png](https://pic.leetcode.cn/1681714596-beaOHK-image.png){:height=150px}\n\n**示例2：**\n> 输入：`n = 3, m = 3, chessboard = [\"?R?\",\"B?B\",\"?R?\"]`\n>\n> 输出：`105`\n\n**提示：**\n- `n == chessboard.length`\n- `m == chessboard[i].length`\n- `1 <= n*m <= 30`\n- `chessboard` 中仅包含 `\".\"、\"B\"、\"R\"、\"?\"`",
+  "constraints": []
+}

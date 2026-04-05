@@ -1,0 +1,12 @@
+{
+  "number": "101",
+  "title_cn": "对称二叉树",
+  "title_en": "Symmetric Tree",
+  "slug": "symmetric-tree",
+  "difficulty": "Easy",
+  "description": "给你一个二叉树的根节点 root ， 检查它是否轴对称。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1,2,2,3,4,4,3]\n输出：true\n\n示例 2：\n\n输入：root = [1,2,2,null,3,null,3]\n输出：false\n\n&nbsp;\n\n提示：\n\n\t树中节点数目在范围 [1, 1000] 内\n\t-100 <= Node.val <= 100\n\n&nbsp;\n\n进阶：你可以运用递归和迭代两种方法解决这个问题吗？",
+  "constraints": [
+    "树中节点数目在范围 [1, 1000] 内",
+    "-100 <= Node.val <= 100"
+  ]
+}

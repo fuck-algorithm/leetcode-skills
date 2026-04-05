@@ -1,0 +1,14 @@
+{
+  "number": "1129",
+  "title_cn": "颜色交替的最短路径",
+  "title_en": "Shortest Path with Alternating Colors",
+  "slug": "shortest-path-with-alternating-colors",
+  "difficulty": "Medium",
+  "description": "给定一个整数 n，即有向图中的节点数，其中节点标记为 0 到 n - 1。图中的每条边为红色或者蓝色，并且可能存在自环或平行边。\n\n给定两个数组&nbsp;redEdges&nbsp;和&nbsp;blueEdges，其中：\n\n\tredEdges[i] = [ai, bi]&nbsp;表示图中存在一条从节点&nbsp;ai&nbsp;到节点&nbsp;bi&nbsp;的红色有向边，\n\tblueEdges[j] = [uj, vj]&nbsp;表示图中存在一条从节点&nbsp;uj&nbsp;到节点&nbsp;vj&nbsp;的蓝色有向边。\n\n返回长度为 n 的数组&nbsp;answer，其中&nbsp;answer[X]&nbsp;是从节点&nbsp;0&nbsp;到节点&nbsp;X&nbsp;的红色边和蓝色边交替出现的最短路径的长度。如果不存在这样的路径，那么 answer[x] = -1。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, red_edges = [[0,1],[1,2]], blue_edges = []\n输出：[0,1,-1]\n\n示例 2：\n\n输入：n = 3, red_edges = [[0,1]], blue_edges = [[2,1]]\n输出：[0,1,-1]\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 100\n\t0 <= redEdges.length,&nbsp;blueEdges.length <= 400\n\tredEdges[i].length == blueEdges[j].length == 2\n\t0 <= ai, bi, uj, vj&nbsp;< n",
+  "constraints": [
+    "1 <= n <= 100",
+    "0 <= redEdges.length,&nbsp;blueEdges.length <= 400",
+    "redEdges[i].length == blueEdges[j].length == 2",
+    "0 <= ai, bi, uj, vj&nbsp;< n"
+  ]
+}

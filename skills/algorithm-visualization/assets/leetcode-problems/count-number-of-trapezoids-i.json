@@ -1,0 +1,13 @@
+{
+  "number": "3623",
+  "title_cn": "统计梯形的数目 I",
+  "title_en": "Count Number of Trapezoids I",
+  "slug": "count-number-of-trapezoids-i",
+  "difficulty": "Medium",
+  "description": "给你一个二维整数数组 points，其中 points[i] = [xi, yi] 表示第 i 个点在笛卡尔平面上的坐标。\n\n水平梯形 是一种凸四边形，具有&nbsp;至少一对&nbsp;水平边（即平行于 x 轴的边）。两条直线平行当且仅当它们的斜率相同。\n\n返回可以从 points 中任意选择四个不同点组成的&nbsp;水平梯形 数量。\n\n由于答案可能非常大，请返回结果对 109 + 7 取余数后的值。\n\n&nbsp;\n\n示例 1：\n\n输入： points = [[1,0],[2,0],[3,0],[2,2],[3,2]]\n\n输出： 3\n\n解释：\n\n有三种不同方式选择四个点组成一个水平梯形：\n\n\t使用点 [1,0]、[2,0]、[3,2] 和 [2,2]。\n\t使用点 [2,0]、[3,0]、[3,2] 和 [2,2]。\n\t使用点 [1,0]、[3,0]、[3,2] 和 [2,2]。\n\n示例 2：\n\n输入： points = [[0,0],[1,0],[0,1],[2,1]]\n\n输出： 1\n\n解释：\n\n只有一种方式可以组成一个水平梯形。\n\n&nbsp;\n\n提示：\n\n\t4 <= points.length <= 105\n\t–108 <= xi, yi <= 108\n\t所有点两两不同。",
+  "constraints": [
+    "4 <= points.length <= 105",
+    "–108 <= xi, yi <= 108",
+    "所有点两两不同。"
+  ]
+}

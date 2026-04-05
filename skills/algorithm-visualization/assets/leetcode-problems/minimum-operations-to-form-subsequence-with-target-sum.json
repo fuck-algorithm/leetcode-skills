@@ -1,0 +1,14 @@
+{
+  "number": "2835",
+  "title_cn": "使子序列的和等于目标的最少操作次数",
+  "title_en": "Minimum Operations to Form Subsequence With Target Sum",
+  "slug": "minimum-operations-to-form-subsequence-with-target-sum",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的数组&nbsp;nums&nbsp;，它包含 非负&nbsp;整数，且全部为 2&nbsp;的幂，同时给你一个整数&nbsp;target&nbsp;。\n\n一次操作中，你必须对数组做以下修改：\n\n\t选择数组中一个元素&nbsp;nums[i]&nbsp;，满足&nbsp;nums[i] > 1&nbsp;。\n\t将&nbsp;nums[i]&nbsp;从数组中删除。\n\t在 nums&nbsp;的 末尾&nbsp;添加 两个&nbsp;数，值都为&nbsp;nums[i] / 2&nbsp;。\n\n你的目标是让 nums&nbsp;的一个 子序列&nbsp;的元素和等于&nbsp;target&nbsp;，请你返回达成这一目标的 最少操作次数&nbsp;。如果无法得到这样的子序列，请你返回 -1&nbsp;。\n\n数组中一个 子序列&nbsp;是通过删除原数组中一些元素，并且不改变剩余元素顺序得到的剩余数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,8], target = 7\n输出：1\n解释：第一次操作中，我们选择元素 nums[2] 。数组变为 nums = [1,2,4,4] 。\n这时候，nums 包含子序列 [1,2,4] ，和为 7 。\n无法通过更少的操作得到和为 7 的子序列。\n\n示例 2：\n\n输入：nums = [1,32,1,2], target = 12\n输出：2\n解释：第一次操作中，我们选择元素 nums[1] 。数组变为 nums = [1,1,2,16,16] 。\n第二次操作中，我们选择元素 nums[3] 。数组变为 nums = [1,1,2,16,8,8] 。\n这时候，nums 包含子序列 [1,1,2,8] ，和为 12 。\n无法通过更少的操作得到和为 12 的子序列。\n\n示例 3：\n\n输入：nums = [1,32,1], target = 35\n输出：-1\n解释：无法得到和为 35 的子序列。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i] <= 230\n\tnums&nbsp;只包含非负整数，且均为 2 的幂。\n\t1 <= target < 231",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 230",
+    "nums&nbsp;只包含非负整数，且均为 2 的幂。",
+    "1 <= target < 231"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "922",
+  "title_cn": "按奇偶排序数组 II",
+  "title_en": "Sort Array By Parity II",
+  "slug": "sort-array-by-parity-ii",
+  "difficulty": "Easy",
+  "description": "给定一个非负整数数组&nbsp;nums，&nbsp;&nbsp;nums 中一半整数是 奇数 ，一半整数是 偶数 。\n\n对数组进行排序，以便当&nbsp;nums[i] 为奇数时，i&nbsp;也是 奇数 ；当&nbsp;nums[i]&nbsp;为偶数时， i 也是 偶数 。\n\n你可以返回 任何满足上述条件的数组作为答案 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,2,5,7]\n输出：[4,5,2,7]\n解释：[4,7,2,5]，[2,5,4,7]，[2,7,4,5] 也会被接受。\n\n示例 2：\n\n输入：nums = [2,3]\n输出：[2,3]\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 2 * 104\n\tnums.length&nbsp;是偶数\n\tnums&nbsp;中一半是偶数\n\t0 <= nums[i] <= 1000\n\n&nbsp;\n\n进阶：可以不使用额外空间解决问题吗？",
+  "constraints": [
+    "2 <= nums.length <= 2 * 104",
+    "nums.length&nbsp;是偶数",
+    "nums&nbsp;中一半是偶数",
+    "0 <= nums[i] <= 1000"
+  ]
+}

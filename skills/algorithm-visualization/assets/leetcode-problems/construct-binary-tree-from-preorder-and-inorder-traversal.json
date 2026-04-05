@@ -1,0 +1,17 @@
+{
+  "number": "105",
+  "title_cn": "从前序与中序遍历序列构造二叉树",
+  "title_en": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "difficulty": "Medium",
+  "description": "给定两个整数数组&nbsp;preorder 和 inorder&nbsp;，其中&nbsp;preorder 是二叉树的先序遍历， inorder&nbsp;是同一棵树的中序遍历，请构造二叉树并返回其根节点。\n\n&nbsp;\n\n示例 1:\n\n输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]\n输出: [3,9,20,null,null,15,7]\n\n示例 2:\n\n输入: preorder = [-1], inorder = [-1]\n输出: [-1]\n\n&nbsp;\n\n提示:\n\n\t1 <= preorder.length <= 3000\n\tinorder.length == preorder.length\n\t-3000 <= preorder[i], inorder[i] <= 3000\n\tpreorder&nbsp;和&nbsp;inorder&nbsp;均 无重复 元素\n\tinorder&nbsp;均出现在&nbsp;preorder\n\tpreorder&nbsp;保证 为二叉树的前序遍历序列\n\tinorder&nbsp;保证 为二叉树的中序遍历序列",
+  "constraints": [
+    "1 <= preorder.length <= 3000",
+    "inorder.length == preorder.length",
+    "-3000 <= preorder[i], inorder[i] <= 3000",
+    "preorder&nbsp;和&nbsp;inorder&nbsp;均 无重复 元素",
+    "inorder&nbsp;均出现在&nbsp;preorder",
+    "preorder&nbsp;保证 为二叉树的前序遍历序列",
+    "inorder&nbsp;保证 为二叉树的中序遍历序列"
+  ]
+}

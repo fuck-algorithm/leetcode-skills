@@ -1,0 +1,13 @@
+{
+  "number": "3171",
+  "title_cn": "找到按位或最接近 K 的子数组",
+  "title_en": "Find Subarray With Bitwise OR Closest to K",
+  "slug": "find-subarray-with-bitwise-or-closest-to-k",
+  "difficulty": "Hard",
+  "description": "给你一个数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。你需要找到&nbsp;nums&nbsp;的一个&nbsp;子数组&nbsp;，满足子数组中所有元素按位或运算 OR 的值与 k&nbsp;的 绝对差&nbsp;尽可能 小&nbsp;。换言之，你需要选择一个子数组&nbsp;nums[l..r]&nbsp;满足 |k - (nums[l] OR nums[l + 1] ... OR nums[r])|&nbsp;最小。\n\n请你返回 最小&nbsp;的绝对差值。\n\n子数组 是数组中连续的&nbsp;非空&nbsp;元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,4,5], k = 3\n\n输出：0\n\n解释：\n\n子数组&nbsp;nums[0..1] 的按位 OR 运算值为 3 ，得到最小差值&nbsp;|3 - 3| = 0 。\n\n示例 2：\n\n输入：nums = [1,3,1,3], k = 2\n\n输出：1\n\n解释：\n\n子数组&nbsp;nums[1..1] 的按位 OR 运算值为 3 ，得到最小差值&nbsp;|3 - 2| = 1 。\n\n示例 3：\n\n输入：nums = [1], k = 10\n\n输出：9\n\n解释：\n\n只有一个子数组，按位 OR 运算值为 1 ，得到最小差值&nbsp;|10 - 1| = 9&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t1 <= k <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 109"
+  ]
+}

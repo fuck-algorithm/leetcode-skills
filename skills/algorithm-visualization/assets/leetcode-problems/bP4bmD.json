@@ -1,0 +1,16 @@
+{
+  "number": "LCR 110",
+  "title_cn": "所有可能的路径",
+  "title_en": "所有可能的路径",
+  "slug": "bP4bmD",
+  "difficulty": "Medium",
+  "description": "给定一个有&nbsp;n&nbsp;个节点的有向无环图，用二维数组&nbsp;graph&nbsp;表示，请找到所有从&nbsp;0&nbsp;到&nbsp;n-1&nbsp;的路径并输出（不要求按顺序）。\n\ngraph&nbsp;的第 i 个数组中的单元都表示有向图中 i&nbsp;号节点所能到达的下一些结点（译者注：有向图是有方向的，即规定了 a&rarr;b 你就不能从 b&rarr;a ），若为空，就是没有下一个节点了。\n\n&nbsp;\n\n示例 1：\n\n输入：graph = [[1,2],[3],[3],[]]\n输出：[[0,1,3],[0,2,3]]\n解释：有两条路径 0 -> 1 -> 3 和 0 -> 2 -> 3\n\n示例 2：\n\n输入：graph = [[4,3,1],[3,2,4],[3],[4],[]]\n输出：[[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]\n\n示例 3：\n\n输入：graph = [[1],[]]\n输出：[[0,1]]\n\n示例 4：\n\n输入：graph = [[1,2,3],[2],[3],[]]\n输出：[[0,1,2,3],[0,2,3],[0,3]]\n\n示例 5：\n\n输入：graph = [[1,3],[2],[3],[]]\n输出：[[0,1,2,3],[0,3]]\n\n&nbsp;\n\n提示：\n\n\tn == graph.length\n\t2 <= n <= 15\n\t0 <= graph[i][j] < n\n\tgraph[i][j] != i&nbsp;\n\t保证输入为有向无环图 (GAD)\n\n&nbsp;\n\n注意：本题与主站 797&nbsp;题相同：https://leetcode.cn/problems/all-paths-from-source-to-target/",
+  "constraints": [
+    "n == graph.length",
+    "2 <= n <= 15",
+    "0 <= graph[i][j] < n",
+    "graph[i][j] != i&nbsp;",
+    "保证输入为有向无环图 (GAD)",
+    "注意：本题与主站 797&nbsp;题相同：https://leetcode.cn/problems/all-paths-from-source-to-target/"
+  ]
+}

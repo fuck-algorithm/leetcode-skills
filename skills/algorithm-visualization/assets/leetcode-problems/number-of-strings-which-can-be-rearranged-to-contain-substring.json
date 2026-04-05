@@ -1,0 +1,11 @@
+{
+  "number": "2930",
+  "title_cn": "重新排列后包含指定子字符串的字符串数目",
+  "title_en": "Number of Strings Which Can Be Rearranged to Contain Substring",
+  "slug": "number-of-strings-which-can-be-rearranged-to-contain-substring",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;n&nbsp;。\n\n如果一个字符串&nbsp;s&nbsp;只包含小写英文字母，且&nbsp;将 s&nbsp;的字符重新排列后，新字符串包含&nbsp;子字符串&nbsp;\"leet\" ，那么我们称字符串 s&nbsp;是一个 好&nbsp;字符串。\n\n比方说：\n\n\t字符串&nbsp;\"lteer\"&nbsp;是好字符串，因为重新排列后可以得到&nbsp;\"leetr\"&nbsp;。\n\t\"letl\"&nbsp;不是好字符串，因为无法重新排列并得到子字符串&nbsp;\"leet\"&nbsp;。\n\n请你返回长度为 n&nbsp;的好字符串 总&nbsp;数目。\n\n由于答案可能很大，将答案对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n子字符串&nbsp;是一个字符串中一段连续的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4\n输出：12\n解释：总共有 12 个字符串重新排列后包含子字符串 \"leet\" ：\"eelt\" ，\"eetl\" ，\"elet\" ，\"elte\" ，\"etel\" ，\"etle\" ，\"leet\" ，\"lete\" ，\"ltee\" ，\"teel\" ，\"tele\" 和 \"tlee\" 。\n\n示例 2：\n\n输入：n = 10\n输出：83943898\n解释：长度为 10 的字符串重新排列后包含子字符串 \"leet\" 的方案数为 526083947580 。所以答案为 526083947580 % (109 + 7) = 83943898 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105",
+  "constraints": [
+    "1 <= n <= 105"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "number": "2603",
+  "title_cn": "收集树中金币",
+  "title_en": "Collect Coins in a Tree",
+  "slug": "collect-coins-in-a-tree",
+  "difficulty": "Hard",
+  "description": "给你一个 n&nbsp;个节点的无向无根树，节点编号从&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;。给你整数&nbsp;n&nbsp;和一个长度为 n - 1&nbsp;的二维整数数组 edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示树中节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条边。再给你一个长度为 n&nbsp;的数组&nbsp;coins&nbsp;，其中&nbsp;coins[i] 可能为&nbsp;0&nbsp;也可能为&nbsp;1&nbsp;，1&nbsp;表示节点 i&nbsp;处有一个金币。\n\n一开始，你需要选择树中任意一个节点出发。你可以执行下述操作任意次：\n\n\t收集距离当前节点距离为 2&nbsp;以内的所有金币，或者\n\t移动到树中一个相邻节点。\n\n你需要收集树中所有的金币，并且回到出发节点，请你返回最少经过的边数。\n\n如果你多次经过一条边，每一次经过都会给答案加一。\n\n&nbsp;\n\n示例 1：\n\n输入：coins = [1,0,0,0,0,1], edges = [[0,1],[1,2],[2,3],[3,4],[4,5]]\n输出：2\n解释：从节点 2 出发，收集节点 0 处的金币，移动到节点 3 ，收集节点 5 处的金币，然后移动回节点 2 。\n\n示例 2：\n\n输入：coins = [0,0,0,1,1,0,0,1], edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[5,6],[5,7]]\n输出：2\n解释：从节点 0 出发，收集节点 4 和 3 处的金币，移动到节点 2 处，收集节点 7 处的金币，移动回节点 0 。\n\n&nbsp;\n\n提示：\n\n\tn == coins.length\n\t1 <= n <= 3 * 104\n\t0 <= coins[i] <= 1\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ai, bi < n\n\tai != bi\n\tedges&nbsp;表示一棵合法的树。",
+  "constraints": [
+    "n == coins.length",
+    "1 <= n <= 3 * 104",
+    "0 <= coins[i] <= 1",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ai, bi < n",
+    "ai != bi",
+    "edges&nbsp;表示一棵合法的树。"
+  ]
+}

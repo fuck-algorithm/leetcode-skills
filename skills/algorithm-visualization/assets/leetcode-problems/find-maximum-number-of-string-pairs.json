@@ -1,0 +1,14 @@
+{
+  "number": "2744",
+  "title_cn": "最大字符串配对数目",
+  "title_en": "Find Maximum Number of String Pairs",
+  "slug": "find-maximum-number-of-string-pairs",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的数组&nbsp;words&nbsp;，数组中包含 互不相同&nbsp;的字符串。\n\n如果字符串&nbsp;words[i]&nbsp;与字符串 words[j]&nbsp;满足以下条件，我们称它们可以匹配：\n\n\t字符串&nbsp;words[i]&nbsp;等于&nbsp;words[j]&nbsp;的反转字符串。\n\t0 <= i < j < words.length\n\n请你返回数组 words&nbsp;中的&nbsp;最大&nbsp;匹配数目。\n\n注意，每个字符串最多匹配一次。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"cd\",\"ac\",\"dc\",\"ca\",\"zz\"]\n输出：2\n解释：在此示例中，我们可以通过以下方式匹配 2 对字符串：\n- 我们将第 0 个字符串与第 2 个字符串匹配，因为 word[0] 的反转字符串是 \"dc\" 并且等于 words[2]。\n- 我们将第 1 个字符串与第 3 个字符串匹配，因为 word[1] 的反转字符串是 \"ca\" 并且等于 words[3]。\n可以证明最多匹配数目是 2 。\n\n示例 2：\n\n输入：words = [\"ab\",\"ba\",\"cc\"]\n输出：1\n解释：在此示例中，我们可以通过以下方式匹配 1 对字符串：\n- 我们将第 0 个字符串与第 1 个字符串匹配，因为 words[1] 的反转字符串 \"ab\" 与 words[0] 相等。\n可以证明最多匹配数目是 1 。\n\n示例 3：\n\n输入：words = [\"aa\",\"ab\"]\n输出：0\n解释：这个例子中，无法匹配任何字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 50\n\twords[i].length == 2\n\twords&nbsp;包含的字符串互不相同。\n\twords[i]&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= words.length <= 50",
+    "words[i].length == 2",
+    "words&nbsp;包含的字符串互不相同。",
+    "words[i]&nbsp;只包含小写英文字母。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2958",
+  "title_cn": "最多 K 个重复元素的最长子数组",
+  "title_en": "Length of Longest Subarray With at Most K Frequency",
+  "slug": "length-of-longest-subarray-with-at-most-k-frequency",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。\n\n一个元素 x&nbsp;在数组中的 频率&nbsp;指的是它在数组中的出现次数。\n\n如果一个数组中所有元素的频率都 小于等于&nbsp;k&nbsp;，那么我们称这个数组是 好&nbsp;数组。\n\n请你返回 nums&nbsp;中 最长好&nbsp;子数组的长度。\n\n子数组 指的是一个数组中一段连续非空的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,1,2,3,1,2], k = 2\n输出：6\n解释：最长好子数组是 [1,2,3,1,2,3] ，值 1 ，2 和 3 在子数组中的频率都没有超过 k = 2 。[2,3,1,2,3,1] 和 [3,1,2,3,1,2] 也是好子数组。\n最长好子数组的长度为 6 。\n\n示例 2：\n\n输入：nums = [1,2,1,2,1,2,1,2], k = 1\n输出：2\n解释：最长好子数组是 [1,2] ，值 1 和 2 在子数组中的频率都没有超过 k = 1 。[2,1] 也是好子数组。\n最长好子数组的长度为 2 。\n\n示例 3：\n\n输入：nums = [5,5,5,5,5,5,5], k = 4\n输出：4\n解释：最长好子数组是 [5,5,5,5] ，值 5 在子数组中的频率没有超过 k = 4 。\n最长好子数组的长度为 4 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t1 <= k <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= nums.length"
+  ]
+}

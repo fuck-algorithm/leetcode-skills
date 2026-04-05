@@ -1,0 +1,12 @@
+{
+  "number": "2511",
+  "title_cn": "最多可以摧毁的敌人城堡数目",
+  "title_en": "Maximum Enemy Forts That Can Be Captured",
+  "slug": "maximum-enemy-forts-that-can-be-captured",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n&nbsp;，下标从 0&nbsp;开始的整数数组&nbsp;forts&nbsp;，表示一些城堡。forts[i] 可以是&nbsp;-1&nbsp;，0&nbsp;或者&nbsp;1&nbsp;，其中：\n\n\t-1&nbsp;表示第&nbsp;i&nbsp;个位置 没有&nbsp;城堡。\n\t0&nbsp;表示第&nbsp;i&nbsp;个位置有一个 敌人&nbsp;的城堡。\n\t1&nbsp;表示第&nbsp;i&nbsp;个位置有一个你控制的城堡。\n\n现在，你需要决定，将你的军队从某个你控制的城堡位置&nbsp;i&nbsp;移动到一个空的位置&nbsp;j&nbsp;，满足：\n\n\t0 <= i, j <= n - 1\n\t军队经过的位置 只有&nbsp;敌人的城堡。正式的，对于所有&nbsp;min(i,j) < k < max(i,j)&nbsp;的&nbsp;k&nbsp;，都满足&nbsp;forts[k] == 0&nbsp;。\n\n当军队移动时，所有途中经过的敌人城堡都会被 摧毁 。\n\n请你返回 最多&nbsp;可以摧毁的敌人城堡数目。如果 无法&nbsp;移动你的军队，或者没有你控制的城堡，请返回 0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：forts = [1,0,0,-1,0,0,0,0,1]\n输出：4\n解释：\n- 将军队从位置 0 移动到位置 3 ，摧毁 2 个敌人城堡，位置分别在 1 和 2 。\n- 将军队从位置 8 移动到位置 3 ，摧毁 4 个敌人城堡。\n4 是最多可以摧毁的敌人城堡数目，所以我们返回 4 。\n\n示例 2：\n\n输入：forts = [0,0,1,-1]\n输出：0\n解释：由于无法摧毁敌人的城堡，所以返回 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= forts.length <= 1000\n\t-1 <= forts[i] <= 1",
+  "constraints": [
+    "1 <= forts.length <= 1000",
+    "-1 <= forts[i] <= 1"
+  ]
+}

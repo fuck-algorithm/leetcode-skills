@@ -1,0 +1,9 @@
+{
+  "number": "1597",
+  "title_cn": "根据中缀表达式构造二叉表达式树",
+  "title_en": "Build Binary Expression Tree From Infix Expression",
+  "slug": "build-binary-expression-tree-from-infix-expression",
+  "difficulty": "Hard",
+  "description": "",
+  "constraints": []
+}

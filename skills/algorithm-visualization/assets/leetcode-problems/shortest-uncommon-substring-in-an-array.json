@@ -1,0 +1,14 @@
+{
+  "number": "3076",
+  "title_cn": "数组中的最短非公共子字符串",
+  "title_en": "Shortest Uncommon Substring in an Array",
+  "slug": "shortest-uncommon-substring-in-an-array",
+  "difficulty": "Medium",
+  "description": "给你一个数组 arr&nbsp;，数组中有 n&nbsp;个 非空&nbsp;字符串。\n\n请你求出一个长度为 n&nbsp;的字符串数组&nbsp;answer&nbsp;，满足：\n\n\tanswer[i]&nbsp;是 arr[i]&nbsp;最短&nbsp;的子字符串，且它不是 arr&nbsp;中其他任何字符串的子字符串。如果有多个这样的子字符串存在，answer[i]&nbsp;应该是它们中字典序最小的一个。如果不存在这样的子字符串，answer[i]&nbsp;为空字符串。\n\n请你返回数组&nbsp;answer&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [\"cab\",\"ad\",\"bad\",\"c\"]\n输出：[\"ab\",\"\",\"ba\",\"\"]\n解释：求解过程如下：\n- 对于字符串 \"cab\" ，最短没有在其他字符串中出现过的子字符串是 \"ca\" 或者 \"ab\" ，我们选择字典序更小的子字符串，也就是 \"ab\" 。\n- 对于字符串 \"ad\" ，不存在没有在其他字符串中出现过的子字符串。\n- 对于字符串 \"bad\" ，最短没有在其他字符串中出现过的子字符串是 \"ba\" 。\n- 对于字符串 \"c\" ，不存在没有在其他字符串中出现过的子字符串。\n\n示例 2：\n\n输入：arr = [\"abc\",\"bcd\",\"abcd\"]\n输出：[\"\",\"\",\"abcd\"]\n解释：求解过程如下：\n- 对于字符串 \"abc\" ，不存在没有在其他字符串中出现过的子字符串。\n- 对于字符串 \"bcd\" ，不存在没有在其他字符串中出现过的子字符串。\n- 对于字符串 \"abcd\" ，最短没有在其他字符串中出现过的子字符串是 \"abcd\" 。\n\n&nbsp;\n\n提示：\n\n\tn == arr.length\n\t2 <= n <= 100\n\t1 <= arr[i].length <= 20\n\tarr[i]&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "n == arr.length",
+    "2 <= n <= 100",
+    "1 <= arr[i].length <= 20",
+    "arr[i]&nbsp;只包含小写英文字母。"
+  ]
+}

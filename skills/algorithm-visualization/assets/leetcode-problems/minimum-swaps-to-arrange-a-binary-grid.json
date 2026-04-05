@@ -1,0 +1,14 @@
+{
+  "number": "1536",
+  "title_cn": "排布二进制网格的最少交换次数",
+  "title_en": "Minimum Swaps to Arrange a Binary Grid",
+  "slug": "minimum-swaps-to-arrange-a-binary-grid",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;n&nbsp;x n&nbsp;的二进制网格&nbsp;grid，每一次操作中，你可以选择网格的&nbsp;相邻两行&nbsp;进行交换。\n\n一个符合要求的网格需要满足主对角线以上的格子全部都是 0&nbsp;。\n\n请你返回使网格满足要求的最少操作次数，如果无法使网格符合要求，请你返回 -1&nbsp;。\n\n主对角线指的是从&nbsp;(1, 1)&nbsp;到&nbsp;(n, n)&nbsp;的这些格子。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,0,1],[1,1,0],[1,0,0]]\n输出：3\n\n示例 2：\n\n输入：grid = [[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]\n输出：-1\n解释：所有行都是一样的，交换相邻行无法使网格符合要求。\n\n示例 3：\n\n输入：grid = [[1,0,0],[1,1,0],[1,1,1]]\n输出：0\n\n&nbsp;\n\n提示：\n\n\tn == grid.length\n\tn == grid[i].length\n\t1 <= n&nbsp;<= 200\n\tgrid[i][j]&nbsp;要么是&nbsp;0&nbsp;要么是&nbsp;1&nbsp;。",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "1 <= n&nbsp;<= 200",
+    "grid[i][j]&nbsp;要么是&nbsp;0&nbsp;要么是&nbsp;1&nbsp;。"
+  ]
+}

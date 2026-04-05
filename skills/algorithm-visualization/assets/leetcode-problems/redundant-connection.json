@@ -1,0 +1,17 @@
+{
+  "number": "684",
+  "title_cn": "冗余连接",
+  "title_en": "Redundant Connection",
+  "slug": "redundant-connection",
+  "difficulty": "Medium",
+  "description": "树可以看成是一个连通且 无环&nbsp;的&nbsp;无向&nbsp;图。\n\n给定一个图，该图从一棵&nbsp;n 个节点 (节点值&nbsp;1～n) 的树中添加一条边后获得。添加的边的两个不同顶点编号在 1 到 n&nbsp;中间，且这条附加的边不属于树中已存在的边。图的信息记录于长度为 n 的二维数组 edges&nbsp;，edges[i] = [ai, bi]&nbsp;表示图中在 ai 和 bi 之间存在一条边。\n\n请找出一条可以删去的边，删除后可使得剩余部分是一个有着 n 个节点的树。如果有多个答案，则返回数组&nbsp;edges&nbsp;中最后出现的那个。\n\n&nbsp;\n\n示例 1：\n\n输入: edges = [[1,2], [1,3], [2,3]]\n输出: [2,3]\n\n示例 2：\n\n输入: edges = [[1,2], [2,3], [3,4], [1,4], [1,5]]\n输出: [1,4]\n\n&nbsp;\n\n提示:\n\n\tn == edges.length\n\t3 <= n <= 1000\n\tedges[i].length == 2\n\t1 <= ai&nbsp;< bi&nbsp;<= edges.length\n\tai != bi\n\tedges 中无重复元素\n\t给定的图是连通的&nbsp;",
+  "constraints": [
+    "n == edges.length",
+    "3 <= n <= 1000",
+    "edges[i].length == 2",
+    "1 <= ai&nbsp;< bi&nbsp;<= edges.length",
+    "ai != bi",
+    "edges 中无重复元素",
+    "给定的图是连通的&nbsp;"
+  ]
+}

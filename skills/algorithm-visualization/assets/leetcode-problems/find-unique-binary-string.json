@@ -1,0 +1,15 @@
+{
+  "number": "1980",
+  "title_cn": "找出不同的二进制字符串",
+  "title_en": "Find Unique Binary String",
+  "slug": "find-unique-binary-string",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 nums ，该数组由 n 个 互不相同 的二进制字符串组成，且每个字符串长度都是 n 。请你找出并返回一个长度为&nbsp;n&nbsp;且&nbsp;没有出现 在 nums 中的二进制字符串。如果存在多种答案，只需返回 任意一个 即可。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [\"01\",\"10\"]\n输出：\"11\"\n解释：\"11\" 没有出现在 nums 中。\"00\" 也是正确答案。\n\n示例 2：\n\n输入：nums = [\"00\",\"01\"]\n输出：\"11\"\n解释：\"11\" 没有出现在 nums 中。\"10\" 也是正确答案。\n\n示例 3：\n\n输入：nums = [\"111\",\"011\",\"001\"]\n输出：\"101\"\n解释：\"101\" 没有出现在 nums 中。\"000\"、\"010\"、\"100\"、\"110\" 也是正确答案。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 16\n\tnums[i].length == n\n\tnums[i] 为 '0' 或 '1'\n\tnums 中的所有字符串 互不相同",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 16",
+    "nums[i].length == n",
+    "nums[i] 为 '0' 或 '1'",
+    "nums 中的所有字符串 互不相同"
+  ]
+}

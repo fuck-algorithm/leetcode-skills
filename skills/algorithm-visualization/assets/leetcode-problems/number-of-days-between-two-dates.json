@@ -1,0 +1,11 @@
+{
+  "number": "1360",
+  "title_cn": "日期之间隔几天",
+  "title_en": "Number of Days Between Two Dates",
+  "slug": "number-of-days-between-two-dates",
+  "difficulty": "Easy",
+  "description": "请你编写一个程序来计算两个日期之间隔了多少天。\n\n日期以字符串形式给出，格式为&nbsp;YYYY-MM-DD，如示例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：date1 = \"2019-06-29\", date2 = \"2019-06-30\"\n输出：1\n\n示例 2：\n\n输入：date1 = \"2020-01-15\", date2 = \"2019-12-31\"\n输出：15\n\n&nbsp;\n\n提示：\n\n\t给定的日期是&nbsp;1971&nbsp;年到 2100&nbsp;年之间的有效日期。",
+  "constraints": [
+    "给定的日期是&nbsp;1971&nbsp;年到 2100&nbsp;年之间的有效日期。"
+  ]
+}

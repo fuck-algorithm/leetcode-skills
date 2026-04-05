@@ -1,0 +1,15 @@
+{
+  "number": "749",
+  "title_cn": "隔离病毒",
+  "title_en": "Contain Virus",
+  "slug": "contain-virus",
+  "difficulty": "Hard",
+  "description": "病毒扩散得很快，现在你的任务是尽可能地通过安装防火墙来隔离病毒。\n\n假设世界由&nbsp;m x n&nbsp;的二维矩阵&nbsp;isInfected&nbsp;组成，&nbsp;isInfected[i][j] == 0&nbsp;表示该区域未感染病毒，而 &nbsp;isInfected[i][j] == 1&nbsp;表示该区域已感染病毒。可以在任意 2 个相邻单元之间的共享边界上安装一个防火墙（并且只有一个防火墙）。\n\n每天晚上，病毒会从被感染区域向相邻未感染区域扩散，除非被防火墙隔离。现由于资源有限，每天你只能安装一系列防火墙来隔离其中一个被病毒感染的区域（一个区域或连续的一片区域），且该感染区域对未感染区域的威胁最大且 保证唯一&nbsp;。\n\n你需要努力使得最后有部分区域不被病毒感染，如果可以成功，那么返回需要使用的防火墙个数; 如果无法实现，则返回在世界被病毒全部感染时已安装的防火墙个数。\n\n&nbsp;\n\n示例 1：\n\n输入: isInfected = [[0,1,0,0,0,0,0,1],[0,1,0,0,0,0,0,1],[0,0,0,0,0,0,0,1],[0,0,0,0,0,0,0,0]]\n输出: 10\n解释:一共有两块被病毒感染的区域。\n在第一天，添加 5 墙隔离病毒区域的左侧。病毒传播后的状态是:\n\n第二天，在右侧添加 5 个墙来隔离病毒区域。此时病毒已经被完全控制住了。\n\n示例 2：\n\n输入: isInfected = [[1,1,1],[1,0,1],[1,1,1]]\n输出: 4\n解释: 虽然只保存了一个小区域，但却有四面墙。\n注意，防火墙只建立在两个不同区域的共享边界上。\n\n示例&nbsp;3:\n\n输入: isInfected = [[1,1,1,0,0,0,0,0,0],[1,0,1,0,1,1,1,1,1],[1,1,1,0,0,0,0,0,0]]\n输出: 13\n解释: 在隔离右边感染区域后，隔离左边病毒区域只需要 2 个防火墙。\n\n&nbsp;\n\n提示:\n\n\tm ==&nbsp;isInfected.length\n\tn ==&nbsp;isInfected[i].length\n\t1 <= m, n <= 50\n\tisInfected[i][j]&nbsp;is either&nbsp;0&nbsp;or&nbsp;1\n\t在整个描述的过程中，总有一个相邻的病毒区域，它将在下一轮 严格地感染更多未受污染的方块&nbsp;\n\n&nbsp;",
+  "constraints": [
+    "m ==&nbsp;isInfected.length",
+    "n ==&nbsp;isInfected[i].length",
+    "1 <= m, n <= 50",
+    "isInfected[i][j]&nbsp;is either&nbsp;0&nbsp;or&nbsp;1",
+    "在整个描述的过程中，总有一个相邻的病毒区域，它将在下一轮 严格地感染更多未受污染的方块&nbsp;"
+  ]
+}

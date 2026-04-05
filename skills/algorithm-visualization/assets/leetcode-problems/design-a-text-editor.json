@@ -1,0 +1,13 @@
+{
+  "number": "2296",
+  "title_cn": "设计一个文本编辑器",
+  "title_en": "Design a Text Editor",
+  "slug": "design-a-text-editor",
+  "difficulty": "Hard",
+  "description": "请你设计一个带光标的文本编辑器，它可以实现以下功能：\n\n\t添加：在光标所在处添加文本。\n\t删除：在光标所在处删除文本（模拟键盘的删除键）。\n\t移动：将光标往左或者往右移动。\n\n当删除文本时，只有光标左边的字符会被删除。光标会留在文本内，也就是说任意时候&nbsp;0 <= cursor.position <= currentText.length&nbsp;都成立。\n\n请你实现&nbsp;TextEditor&nbsp;类：\n\n\tTextEditor()&nbsp;用空文本初始化对象。\n\tvoid addText(string text)&nbsp;将&nbsp;text&nbsp;添加到光标所在位置。添加完后光标在&nbsp;text&nbsp;的右边。\n\tint deleteText(int k)&nbsp;删除光标左边&nbsp;k&nbsp;个字符。返回实际删除的字符数目。\n\tstring cursorLeft(int k) 将光标向左移动&nbsp;k&nbsp;次。返回移动后光标左边&nbsp;min(10, len)&nbsp;个字符，其中&nbsp;len&nbsp;是光标左边的字符数目。\n\tstring cursorRight(int k)&nbsp;将光标向右移动&nbsp;k&nbsp;次。返回移动后光标左边&nbsp;min(10, len)&nbsp;个字符，其中&nbsp;len&nbsp;是光标左边的字符数目。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"TextEditor\", \"addText\", \"deleteText\", \"addText\", \"cursorRight\", \"cursorLeft\", \"deleteText\", \"cursorLeft\", \"cursorRight\"]\n[[], [\"leetcode\"], [4], [\"practice\"], [3], [8], [10], [2], [6]]\n输出：\n[null, null, 4, null, \"etpractice\", \"leet\", 4, \"\", \"practi\"]\n\n解释：\nTextEditor textEditor = new TextEditor(); // 当前 text 为 \"|\" 。（'|' 字符表示光标）\ntextEditor.addText(\"leetcode\"); // 当前文本为 \"leetcode|\" 。\ntextEditor.deleteText(4); // 返回 4\n                          // 当前文本为 \"leet|\" 。\n                          // 删除了 4 个字符。\ntextEditor.addText(\"practice\"); // 当前文本为 \"leetpractice|\" 。\ntextEditor.cursorRight(3); // 返回 \"etpractice\"\n                           // 当前文本为 \"leetpractice|\". \n                           // 光标无法移动到文本以外，所以无法移动。\n                           // \"etpractice\" 是光标左边的 10 个字符。\ntextEditor.cursorLeft(8); // 返回 \"leet\"\n                          // 当前文本为 \"leet|practice\" 。\n                          // \"leet\" 是光标左边的 min(10, 4) = 4 个字符。\ntextEditor.deleteText(10); // 返回 4\n                           // 当前文本为 \"|practice\" 。\n                           // 只有 4 个字符被删除了。\ntextEditor.cursorLeft(2); // 返回 \"\"\n                          // 当前文本为 \"|practice\" 。\n                          // 光标无法移动到文本以外，所以无法移动。\n                          // \"\" 是光标左边的 min(10, 0) = 0 个字符。\ntextEditor.cursorRight(6); // 返回 \"practi\"\n                           // 当前文本为 \"practi|ce\" 。\n                           // \"practi\" 是光标左边的 min(10, 6) = 6 个字符。\n\n&nbsp;\n\n提示：\n\n\t1 <= text.length, k <= 40\n\ttext&nbsp;只含有小写英文字母。\n\t调用 addText&nbsp;，deleteText&nbsp;，cursorLeft 和&nbsp;cursorRight&nbsp;的 总 次数不超过&nbsp;2 * 104&nbsp;次。\n\n&nbsp;\n\n进阶：你能设计并实现一个每次调用时间复杂度为 O(k) 的解决方案吗？",
+  "constraints": [
+    "1 <= text.length, k <= 40",
+    "text&nbsp;只含有小写英文字母。",
+    "调用 addText&nbsp;，deleteText&nbsp;，cursorLeft 和&nbsp;cursorRight&nbsp;的 总 次数不超过&nbsp;2 * 104&nbsp;次。"
+  ]
+}

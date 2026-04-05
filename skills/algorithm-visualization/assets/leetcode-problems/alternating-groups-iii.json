@@ -1,0 +1,17 @@
+{
+  "number": "3245",
+  "title_cn": "交替组 III",
+  "title_en": "Alternating Groups III",
+  "slug": "alternating-groups-iii",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 colors 和一个二维整数数组 queries 。colors表示一个由红色和蓝色瓷砖组成的环，第 i&nbsp;块瓷砖的颜色为&nbsp;colors[i]&nbsp;：\n\n\tcolors[i] == 0&nbsp;表示第&nbsp;i&nbsp;块瓷砖的颜色是 红色&nbsp;。\n\tcolors[i] == 1&nbsp;表示第 i&nbsp;块瓷砖的颜色是 蓝色&nbsp;。\n\n环中连续若干块瓷砖的颜色如果是 交替&nbsp;颜色（也就是说这组瓷砖中除了第一块和最后一块瓷砖以外，中间瓷砖的颜色与它&nbsp;左边&nbsp;和 右边&nbsp;的颜色都不同），那么它被称为一个 交替组。\n\n你需要处理两种类型的查询：\n\n\tqueries[i] = [1, sizei]，确定大小为sizei的 交替组 的数量。\n\tqueries[i] = [2, indexi, colori]，将colors[indexi]更改为colori。\n\n返回数组 answer，数组中按顺序包含第一种类型查询的结果。\n\n注意&nbsp;，由于&nbsp;colors&nbsp;表示一个 环&nbsp;，第一块&nbsp;瓷砖和 最后一块&nbsp;瓷砖是相邻的。\n\n&nbsp;\n\n示例 1：\n\n输入：colors = [0,1,1,0,1], queries = [[2,1,0],[1,4]]\n\n输出：[2]\n\n解释：\n\n第一次查询：\n\n将 colors[1] 改为 0。\n\n第二次查询：\n\n统计大小为 4 的交替组的数量：\n\n示例 2：\n\n输入：colors = [0,0,1,0,1,1], queries = [[1,3],[2,3,0],[1,5]]\n\n输出：[2,0]\n\n解释：\n\n第一次查询：\n\n统计大小为 3 的交替组的数量。\n\n第二次查询：colors不变。\n\n第三次查询：不存在大小为 5 的交替组。\n\n&nbsp;\n\n提示：\n\n\t4 <= colors.length <= 5 * 104\n\t0 <= colors[i] <= 1\n\t1 <= queries.length <= 5 * 104\n\tqueries[i][0] == 1 或 queries[i][0] == 2\n\t对于所有的i：\n\n\t\tqueries[i][0] == 1： queries[i].length == 2, 3 <= queries[i][1] <= colors.length - 1\n\t\tqueries[i][0] == 2： queries[i].length == 3, 0 <= queries[i][1] <= colors.length - 1, 0 <= queries[i][2] <= 1",
+  "constraints": [
+    "4 <= colors.length <= 5 * 104",
+    "0 <= colors[i] <= 1",
+    "1 <= queries.length <= 5 * 104",
+    "queries[i][0] == 1 或 queries[i][0] == 2",
+    "对于所有的i：",
+    "queries[i][0] == 1： queries[i].length == 2, 3 <= queries[i][1] <= colors.length - 1",
+    "queries[i][0] == 2： queries[i].length == 3, 0 <= queries[i][1] <= colors.length - 1, 0 <= queries[i][2] <= 1"
+  ]
+}

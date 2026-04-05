@@ -1,0 +1,13 @@
+{
+  "number": "646",
+  "title_cn": "最长数对链",
+  "title_en": "Maximum Length of Pair Chain",
+  "slug": "maximum-length-of-pair-chain",
+  "difficulty": "Medium",
+  "description": "给你一个由&nbsp;n&nbsp;个数对组成的数对数组&nbsp;pairs&nbsp;，其中&nbsp;pairs[i] = [lefti, righti]&nbsp;且&nbsp;lefti&nbsp;< righti 。\n\n现在，我们定义一种 跟随 关系，当且仅当&nbsp;b < c&nbsp;时，数对&nbsp;p2 = [c, d]&nbsp;才可以跟在&nbsp;p1 = [a, b]&nbsp;后面。我们用这种形式来构造 数对链 。\n\n找出并返回能够形成的 最长数对链的长度 。\n\n你不需要用到所有的数对，你可以以任何顺序选择其中的一些数对来构造。\n\n&nbsp;\n\n示例 1：\n\n输入：pairs =&nbsp;[[1,2], [2,3], [3,4]]\n输出：2\n解释：最长的数对链是 [1,2] -> [3,4] 。\n\n示例 2：\n\n输入：pairs = [[1,2],[7,8],[4,5]]\n输出：3\n解释：最长的数对链是 [1,2] -> [4,5] -> [7,8] 。\n\n&nbsp;\n\n提示：\n\n\tn == pairs.length\n\t1 <= n <= 1000\n\t-1000 <= lefti&nbsp;< righti&nbsp;<= 1000",
+  "constraints": [
+    "n == pairs.length",
+    "1 <= n <= 1000",
+    "-1000 <= lefti&nbsp;< righti&nbsp;<= 1000"
+  ]
+}

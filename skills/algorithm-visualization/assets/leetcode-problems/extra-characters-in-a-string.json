@@ -1,0 +1,15 @@
+{
+  "number": "2707",
+  "title_cn": "字符串中的额外字符",
+  "title_en": "Extra Characters in a String",
+  "slug": "extra-characters-in-a-string",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;和一个单词字典&nbsp;dictionary&nbsp;。你需要将&nbsp;s&nbsp;分割成若干个 互不重叠&nbsp;的子字符串，每个子字符串都在&nbsp;dictionary&nbsp;中出现过。s&nbsp;中可能会有一些&nbsp;额外的字符&nbsp;不在任何子字符串中。\n\n请你采取最优策略分割 s&nbsp;，使剩下的字符 最少&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"leetscode\", dictionary = [\"leet\",\"code\",\"leetcode\"]\n输出：1\n解释：将 s 分成两个子字符串：下标从 0 到 3 的 \"leet\" 和下标从 5 到 8 的 \"code\" 。只有 1 个字符没有使用（下标为 4），所以我们返回 1 。\n\n示例 2：\n\n输入：s = \"sayhelloworld\", dictionary = [\"hello\",\"world\"]\n输出：3\n解释：将 s 分成两个子字符串：下标从 3 到 7 的 \"hello\" 和下标从 8 到 12 的 \"world\" 。下标为 0 ，1 和 2 的字符没有使用，所以我们返回 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 50\n\t1 <= dictionary.length <= 50\n\t1 <= dictionary[i].length <= 50\n\tdictionary[i]&nbsp;和&nbsp;s&nbsp;只包含小写英文字母。\n\tdictionary&nbsp;中的单词互不相同。",
+  "constraints": [
+    "1 <= s.length <= 50",
+    "1 <= dictionary.length <= 50",
+    "1 <= dictionary[i].length <= 50",
+    "dictionary[i]&nbsp;和&nbsp;s&nbsp;只包含小写英文字母。",
+    "dictionary&nbsp;中的单词互不相同。"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2673",
+  "title_cn": "使二叉树所有路径值相等的最小代价",
+  "title_en": "Make Costs of Paths Equal in a Binary Tree",
+  "slug": "make-costs-of-paths-equal-in-a-binary-tree",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;n&nbsp;表示一棵 满二叉树&nbsp;里面节点的数目，节点编号从 1&nbsp;到 n&nbsp;。根节点编号为 1&nbsp;，树中每个非叶子节点&nbsp;i&nbsp;都有两个孩子，分别是左孩子&nbsp;2 * i&nbsp;和右孩子&nbsp;2 * i + 1&nbsp;。\n\n树中每个节点都有一个值，用下标从&nbsp;0&nbsp;开始、长度为 n&nbsp;的整数数组&nbsp;cost&nbsp;表示，其中&nbsp;cost[i]&nbsp;是第&nbsp;i + 1&nbsp;个节点的值。每次操作，你可以将树中&nbsp;任意&nbsp;节点的值&nbsp;增加&nbsp;1&nbsp;。你可以执行操作 任意 次。\n\n你的目标是让根到每一个 叶子结点&nbsp;的路径值相等。请你返回 最少&nbsp;需要执行增加操作多少次。\n\n注意：\n\n\t满二叉树&nbsp;指的是一棵树，它满足树中除了叶子节点外每个节点都恰好有 2 个子节点，且所有叶子节点距离根节点距离相同。\n\t路径值 指的是路径上所有节点的值之和。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 7, cost = [1,5,2,2,3,3,1]\n输出：6\n解释：我们执行以下的增加操作：\n- 将节点 4 的值增加一次。\n- 将节点 3 的值增加三次。\n- 将节点 7 的值增加两次。\n从根到叶子的每一条路径值都为 9 。\n总共增加次数为 1 + 3 + 2 = 6 。\n这是最小的答案。\n\n示例 2：\n\n输入：n = 3, cost = [5,3,3]\n输出：0\n解释：两条路径已经有相等的路径值，所以不需要执行任何增加操作。\n\n&nbsp;\n\n提示：\n\n\t3 <= n <= 105\n\tn + 1 是&nbsp;2&nbsp;的幂\n\tcost.length == n\n\t1 <= cost[i] <= 104",
+  "constraints": [
+    "3 <= n <= 105",
+    "n + 1 是&nbsp;2&nbsp;的幂",
+    "cost.length == n",
+    "1 <= cost[i] <= 104"
+  ]
+}

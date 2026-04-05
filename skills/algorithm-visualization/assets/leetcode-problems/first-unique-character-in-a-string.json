@@ -1,0 +1,12 @@
+{
+  "number": "387",
+  "title_cn": "字符串中的第一个唯一字符",
+  "title_en": "First Unique Character in a String",
+  "slug": "first-unique-character-in-a-string",
+  "difficulty": "Easy",
+  "description": "给定一个字符串&nbsp;s&nbsp;，找到 它的第一个不重复的字符，并返回它的索引 。如果不存在，则返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"leetcode\"\n输出: 0\n\n示例 2:\n\n输入: s = \"loveleetcode\"\n输出: 2\n\n示例 3:\n\n输入: s = \"aabb\"\n输出: -1\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 105\n\ts&nbsp;只包含小写字母",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;只包含小写字母"
+  ]
+}

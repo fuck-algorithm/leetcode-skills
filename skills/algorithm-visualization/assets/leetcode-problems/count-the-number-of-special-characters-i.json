@@ -1,0 +1,12 @@
+{
+  "number": "3120",
+  "title_cn": "统计特殊字母的数量 I",
+  "title_en": "Count the Number of Special Characters I",
+  "slug": "count-the-number-of-special-characters-i",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 word。如果 word 中同时存在某个字母的小写形式和大写形式，则称这个字母为 特殊字母 。\n\n返回 word 中 特殊字母 的数量。\n\n&nbsp;\n\n示例 1:\n\n输入：word = \"aaAbcBC\"\n\n输出：3\n\n解释：\n\nword 中的特殊字母是 'a'、'b' 和 'c'。\n\n示例 2:\n\n输入：word = \"abc\"\n\n输出：0\n\n解释：\n\nword 中不存在大小写形式同时出现的字母。\n\n示例 3:\n\n输入：word = \"abBCab\"\n\n输出：1\n\n解释：\n\nword 中唯一的特殊字母是 'b'。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 50\n\tword 仅由小写和大写英文字母组成。",
+  "constraints": [
+    "1 <= word.length <= 50",
+    "word 仅由小写和大写英文字母组成。"
+  ]
+}

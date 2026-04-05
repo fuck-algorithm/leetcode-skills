@@ -1,0 +1,11 @@
+{
+  "number": "412",
+  "title_cn": "Fizz Buzz",
+  "title_en": "Fizz Buzz",
+  "slug": "fizz-buzz",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n ，返回一个字符串数组 answer（下标从 1 开始），其中：\n\n\tanswer[i] == \"FizzBuzz\" 如果 i 同时是 3 和 5 的倍数。\n\tanswer[i] == \"Fizz\" 如果 i 是 3 的倍数。\n\tanswer[i] == \"Buzz\" 如果 i 是 5 的倍数。\n\tanswer[i] == i （以字符串形式）如果上述条件全不满足。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3\n输出：[\"1\",\"2\",\"Fizz\"]\n\n示例 2：\n\n输入：n = 5\n输出：[\"1\",\"2\",\"Fizz\",\"4\",\"Buzz\"]\n\n示例 3：\n\n输入：n = 15\n输出：[\"1\",\"2\",\"Fizz\",\"4\",\"Buzz\",\"Fizz\",\"7\",\"8\",\"Fizz\",\"Buzz\",\"11\",\"Fizz\",\"13\",\"14\",\"FizzBuzz\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 104",
+  "constraints": [
+    "1 <= n <= 104"
+  ]
+}

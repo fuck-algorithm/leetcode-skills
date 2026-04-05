@@ -1,0 +1,12 @@
+{
+  "number": "485",
+  "title_cn": "最大连续 1 的个数",
+  "title_en": "Max Consecutive Ones",
+  "slug": "max-consecutive-ones",
+  "difficulty": "Easy",
+  "description": "给定一个二进制数组 nums ， 计算其中最大连续 1 的个数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,0,1,1,1]\n输出：3\n解释：开头的两位和最后的三位都是连续 1 ，所以最大连续 1 的个数是 3.\n\n示例 2:\n\n输入：nums = [1,0,1,1,0,1]\n输出：2\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\tnums[i]&nbsp;不是&nbsp;0&nbsp;就是&nbsp;1.",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "nums[i]&nbsp;不是&nbsp;0&nbsp;就是&nbsp;1."
+  ]
+}

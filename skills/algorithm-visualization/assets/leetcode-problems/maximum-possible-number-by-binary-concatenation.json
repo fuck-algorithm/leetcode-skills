@@ -1,0 +1,12 @@
+{
+  "number": "3309",
+  "title_cn": "连接二进制表示可形成的最大数值",
+  "title_en": "Maximum Possible Number by Binary Concatenation",
+  "slug": "maximum-possible-number-by-binary-concatenation",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 3 的整数数组 nums。\n\n现以某种顺序 连接 数组 nums 中所有元素的 二进制表示 ，请你返回可以由这种方法形成的 最大 数值。\n\n注意 任何数字的二进制表示 不含 前导零。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [1,2,3]\n\n输出: 30\n\n解释:\n\n按照顺序 [3, 1, 2] 连接数字的二进制表示，得到结果 \"11110\"，这是 30 的二进制表示。\n\n示例 2:\n\n输入: nums = [2,8,16]\n\n输出: 1296\n\n解释:\n\n按照顺序 [2, 8, 16] 连接数字的二进制表述，得到结果 \"10100010000\"，这是 1296 的二进制表示。\n\n&nbsp;\n\n提示:\n\n\tnums.length == 3\n\t1 <= nums[i] <= 127",
+  "constraints": [
+    "nums.length == 3",
+    "1 <= nums[i] <= 127"
+  ]
+}

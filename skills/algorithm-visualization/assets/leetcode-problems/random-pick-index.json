@@ -1,0 +1,14 @@
+{
+  "number": "398",
+  "title_cn": "随机数索引",
+  "title_en": "Random Pick Index",
+  "slug": "random-pick-index",
+  "difficulty": "Medium",
+  "description": "给你一个可能含有 重复元素 的整数数组&nbsp;nums ，请你随机输出给定的目标数字&nbsp;target 的索引。你可以假设给定的数字一定存在于数组中。\n\n实现 Solution 类：\n\n\tSolution(int[] nums) 用数组 nums 初始化对象。\n\tint pick(int target) 从 nums 中选出一个满足 nums[i] == target 的随机索引 i 。如果存在多个有效的索引，则每个索引的返回概率应当相等。\n\n&nbsp;\n\n示例：\n\n输入\n[\"Solution\", \"pick\", \"pick\", \"pick\"]\n[[[1, 2, 3, 3, 3]], [3], [1], [3]]\n输出\n[null, 4, 0, 2]\n\n解释\nSolution solution = new Solution([1, 2, 3, 3, 3]);\nsolution.pick(3); // 随机返回索引 2, 3 或者 4 之一。每个索引的返回概率应该相等。\nsolution.pick(1); // 返回 0 。因为只有 nums[0] 等于 1 。\nsolution.pick(3); // 随机返回索引 2, 3 或者 4 之一。每个索引的返回概率应该相等。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 2 * 104\n\t-231 <= nums[i] <= 231 - 1\n\ttarget 是 nums 中的一个整数\n\t最多调用 pick 函数 104 次\n\n&nbsp;",
+  "constraints": [
+    "1 <= nums.length <= 2 * 104",
+    "-231 <= nums[i] <= 231 - 1",
+    "target 是 nums 中的一个整数",
+    "最多调用 pick 函数 104 次"
+  ]
+}

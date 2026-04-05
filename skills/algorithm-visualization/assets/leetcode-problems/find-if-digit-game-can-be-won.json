@@ -1,0 +1,12 @@
+{
+  "number": "3232",
+  "title_cn": "判断是否可以赢得数字游戏",
+  "title_en": "Find if Digit Game Can Be Won",
+  "slug": "find-if-digit-game-can-be-won",
+  "difficulty": "Easy",
+  "description": "给你一个 正整数 数组 nums。\n\nAlice 和 Bob 正在玩游戏。在游戏中，Alice 可以从 nums 中选择所有个位数 或 所有两位数，剩余的数字归 Bob 所有。如果 Alice 所选数字之和 严格大于 Bob 的数字之和，则 Alice 获胜。\n\n如果 Alice 能赢得这场游戏，返回 true；否则，返回 false。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,10]\n\n输出：false\n\n解释：\n\nAlice&nbsp;不管选个位数还是两位数都无法赢得比赛。\n\n示例 2：\n\n输入：nums = [1,2,3,4,5,14]\n\n输出：true\n\n解释：\n\nAlice&nbsp;选择个位数可以赢得比赛，所选数字之和为 15。\n\n示例 3：\n\n输入：nums = [5,5,5,25]\n\n输出：true\n\n解释：\n\nAlice&nbsp;选择两位数可以赢得比赛，所选数字之和为 25。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 99",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 99"
+  ]
+}

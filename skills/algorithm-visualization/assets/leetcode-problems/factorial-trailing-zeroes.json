@@ -1,0 +1,11 @@
+{
+  "number": "172",
+  "title_cn": "阶乘后的零",
+  "title_en": "Factorial Trailing Zeroes",
+  "slug": "factorial-trailing-zeroes",
+  "difficulty": "Medium",
+  "description": "给定一个整数 n ，返回 n! 结果中尾随零的数量。\n\n提示&nbsp;n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3\n输出：0\n解释：3! = 6 ，不含尾随 0\n\n示例 2：\n\n输入：n = 5\n输出：1\n解释：5! = 120 ，有一个尾随 0\n\n示例 3：\n\n输入：n = 0\n输出：0\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 104\n\n&nbsp;\n\n进阶：你可以设计并实现对数时间复杂度的算法来解决此问题吗？",
+  "constraints": [
+    "0 <= n <= 104"
+  ]
+}

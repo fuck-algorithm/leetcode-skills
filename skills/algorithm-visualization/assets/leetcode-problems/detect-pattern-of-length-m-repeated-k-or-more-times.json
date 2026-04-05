@@ -1,0 +1,14 @@
+{
+  "number": "1566",
+  "title_cn": "重复至少 K 次且长度为 M 的模式",
+  "title_en": "Detect Pattern of Length M Repeated K or More Times",
+  "slug": "detect-pattern-of-length-m-repeated-k-or-more-times",
+  "difficulty": "Easy",
+  "description": "给你一个正整数数组 arr，请你找出一个长度为 m 且在数组中至少重复 k 次的模式。\n\n模式 是由一个或多个值组成的子数组（连续的子序列），连续 重复多次但 不重叠 。 模式由其长度和重复次数定义。\n\n如果数组中存在至少重复 k 次且长度为 m 的模式，则返回 true ，否则返回&nbsp; false 。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,2,4,4,4,4], m = 1, k = 3\n输出：true\n解释：模式 (4) 的长度为 1 ，且连续重复 4 次。注意，模式可以重复 k 次或更多次，但不能少于 k 次。\n\n示例 2：\n\n输入：arr = [1,2,1,2,1,1,1,3], m = 2, k = 2\n输出：true\n解释：模式 (1,2) 长度为 2 ，且连续重复 2 次。另一个符合题意的模式是 (2,1) ，同样重复 2 次。\n\n示例 3：\n\n输入：arr = [1,2,1,2,1,3], m = 2, k = 3\n输出：false\n解释：模式 (1,2) 长度为 2 ，但是只连续重复 2 次。不存在长度为 2 且至少重复 3 次的模式。\n\n示例 4：\n\n输入：arr = [1,2,3,1,2], m = 2, k = 2\n输出：false\n解释：模式 (1,2) 出现 2 次但并不连续，所以不能算作连续重复 2 次。\n\n示例 5：\n\n输入：arr = [2,2,2,2], m = 2, k = 3\n输出：false\n解释：长度为 2 的模式只有 (2,2) ，但是只连续重复 2 次。注意，不能计算重叠的重复次数。\n\n&nbsp;\n\n提示：\n\n\t2 <= arr.length <= 100\n\t1 <= arr[i] <= 100\n\t1 <= m&nbsp;<= 100\n\t2 <= k&nbsp;<= 100",
+  "constraints": [
+    "2 <= arr.length <= 100",
+    "1 <= arr[i] <= 100",
+    "1 <= m&nbsp;<= 100",
+    "2 <= k&nbsp;<= 100"
+  ]
+}

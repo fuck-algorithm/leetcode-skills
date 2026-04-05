@@ -1,0 +1,13 @@
+{
+  "number": "368",
+  "title_cn": "最大整除子集",
+  "title_en": "Largest Divisible Subset",
+  "slug": "largest-divisible-subset",
+  "difficulty": "Medium",
+  "description": "给你一个由 无重复 正整数组成的集合 nums ，请你找出并返回其中最大的整除子集 answer ，子集中每一元素对 (answer[i], answer[j]) 都应当满足：\n\n\tanswer[i] % answer[j] == 0 ，或\n\tanswer[j] % answer[i] == 0\n\n如果存在多个有效解子集，返回其中任何一个均可。\n\n示例 1：\n\n输入：nums = [1,2,3]\n输出：[1,2]\n解释：[1,3] 也会被视为正确答案。\n\n示例 2：\n\n输入：nums = [1,2,4,8]\n输出：[1,2,4,8]\n\n提示：\n\n\t1 \n\t1 9\n\tnums 中的所有整数 互不相同",
+  "constraints": [
+    "1",
+    "1 9",
+    "nums 中的所有整数 互不相同"
+  ]
+}

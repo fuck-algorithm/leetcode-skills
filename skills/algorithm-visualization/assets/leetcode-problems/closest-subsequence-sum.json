@@ -1,0 +1,13 @@
+{
+  "number": "1755",
+  "title_cn": "最接近目标值的子序列和",
+  "title_en": "Closest Subsequence Sum",
+  "slug": "closest-subsequence-sum",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 nums 和一个目标值 goal 。\n\n你需要从 nums 中选出一个子序列，使子序列元素总和最接近 goal 。也就是说，如果子序列元素和为 sum ，你需要 最小化绝对差 abs(sum - goal) 。\n\n返回 abs(sum - goal) 可能的 最小值 。\n\n注意，数组的子序列是通过移除原始数组中的某些元素（可能全部或无）而形成的数组。\n\n示例 1：\n\n输入：nums = [5,-7,3,5], goal = 6\n输出：0\n解释：选择整个数组作为选出的子序列，元素和为 6 。\n子序列和与目标值相等，所以绝对差为 0 。\n\n示例 2：\n\n输入：nums = [7,-9,15,-2], goal = -5\n输出：1\n解释：选出子序列 [7,-9,-2] ，元素和为 -4 。\n绝对差为 abs(-4 - (-5)) = abs(1) = 1 ，是可能的最小值。\n\n示例 3：\n\n输入：nums = [1,2,3], goal = -7\n输出：7\n\n提示：\n\n\t1 <= nums.length <= 40\n\t-107 <= nums[i] <= 107\n\t-109 <= goal <= 109",
+  "constraints": [
+    "1 <= nums.length <= 40",
+    "-107 <= nums[i] <= 107",
+    "-109 <= goal <= 109"
+  ]
+}

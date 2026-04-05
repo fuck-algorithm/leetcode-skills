@@ -1,0 +1,13 @@
+{
+  "number": "LCR 092",
+  "title_cn": "将字符串翻转到单调递增",
+  "title_en": "将字符串翻转到单调递增",
+  "slug": "cyJERH",
+  "difficulty": "Medium",
+  "description": "如果一个由&nbsp;&#39;0&#39; 和 &#39;1&#39;&nbsp;组成的字符串，是以一些 &#39;0&#39;（可能没有 &#39;0&#39;）后面跟着一些 &#39;1&#39;（也可能没有 &#39;1&#39;）的形式组成的，那么该字符串是&nbsp;单调递增&nbsp;的。\n\n我们给出一个由字符 &#39;0&#39; 和 &#39;1&#39;&nbsp;组成的字符串 s，我们可以将任何&nbsp;&#39;0&#39; 翻转为&nbsp;&#39;1&#39;&nbsp;或者将&nbsp;&#39;1&#39;&nbsp;翻转为&nbsp;&#39;0&#39;。\n\n返回使 s&nbsp;单调递增&nbsp;的最小翻转次数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"00110\"\n输出：1\n解释：我们翻转最后一位得到 00111.\n\n示例 2：\n\n输入：s = \"010110\"\n输出：2\n解释：我们翻转得到 011111，或者是 000111。\n\n示例 3：\n\n输入：s = \"00011000\"\n输出：2\n解释：我们翻转得到 00000000。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 20000\n\ts 中只包含字符&nbsp;&#39;0&#39;&nbsp;和&nbsp;&#39;1&#39;\n\n&nbsp;\n\n注意：本题与主站 926&nbsp;题相同：&nbsp;https://leetcode.cn/problems/flip-string-to-monotone-increasing/",
+  "constraints": [
+    "1 <= s.length <= 20000",
+    "s 中只包含字符&nbsp;&#39;0&#39;&nbsp;和&nbsp;&#39;1&#39;",
+    "注意：本题与主站 926&nbsp;题相同：&nbsp;https://leetcode.cn/problems/flip-string-to-monotone-increasing/"
+  ]
+}

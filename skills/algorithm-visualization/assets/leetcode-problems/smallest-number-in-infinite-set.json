@@ -1,0 +1,12 @@
+{
+  "number": "2336",
+  "title_cn": "无限集中的最小数字",
+  "title_en": "Smallest Number in Infinite Set",
+  "slug": "smallest-number-in-infinite-set",
+  "difficulty": "Medium",
+  "description": "现有一个包含所有正整数的集合 [1, 2, 3, 4, 5, ...] 。\n\n实现 SmallestInfiniteSet 类：\n\n\tSmallestInfiniteSet() 初始化 SmallestInfiniteSet 对象以包含 所有 正整数。\n\tint popSmallest() 移除 并返回该无限集中的最小整数。\n\tvoid addBack(int num) 如果正整数 num 不 存在于无限集中，则将一个 num 添加 到该无限集中。\n\n&nbsp;\n\n示例：\n\n输入\n[\"SmallestInfiniteSet\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\"]\n[[], [2], [], [], [], [1], [], [], []]\n输出\n[null, null, 1, 2, 3, null, 1, 4, 5]\n\n解释\nSmallestInfiniteSet smallestInfiniteSet = new SmallestInfiniteSet();\nsmallestInfiniteSet.addBack(2);    // 2 已经在集合中，所以不做任何变更。\nsmallestInfiniteSet.popSmallest(); // 返回 1 ，因为 1 是最小的整数，并将其从集合中移除。\nsmallestInfiniteSet.popSmallest(); // 返回 2 ，并将其从集合中移除。\nsmallestInfiniteSet.popSmallest(); // 返回 3 ，并将其从集合中移除。\nsmallestInfiniteSet.addBack(1);    // 将 1 添加到该集合中。\nsmallestInfiniteSet.popSmallest(); // 返回 1 ，因为 1 在上一步中被添加到集合中，\n                                   // 且 1 是最小的整数，并将其从集合中移除。\nsmallestInfiniteSet.popSmallest(); // 返回 4 ，并将其从集合中移除。\nsmallestInfiniteSet.popSmallest(); // 返回 5 ，并将其从集合中移除。\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 1000\n\t最多调用 popSmallest 和 addBack 方法 共计 1000 次",
+  "constraints": [
+    "1 <= num <= 1000",
+    "最多调用 popSmallest 和 addBack 方法 共计 1000 次"
+  ]
+}

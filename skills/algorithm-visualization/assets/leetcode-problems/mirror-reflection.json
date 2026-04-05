@@ -1,0 +1,11 @@
+{
+  "number": "858",
+  "title_cn": "镜面反射",
+  "title_en": "Mirror Reflection",
+  "slug": "mirror-reflection",
+  "difficulty": "Medium",
+  "description": "有一个特殊的正方形房间，每面墙上都有一面镜子。除西南角以外，每个角落都放有一个接受器，编号为&nbsp;0，&nbsp;1，以及&nbsp;2。\n\n正方形房间的墙壁长度为&nbsp;p，一束激光从西南角射出，首先会与东墙相遇，入射点到接收器 0 的距离为 q 。\n\n返回光线最先遇到的接收器的编号（保证光线最终会遇到一个接收器）。\n&nbsp;\n\n示例 1：\n\n输入：p = 2, q = 1\n输出：2\n解释：这条光线在第一次被反射回左边的墙时就遇到了接收器 2 。\n\n示例 2：\n\n输入：p = 3, q = 1\n输入：1\n\n&nbsp;\n\n提示：\n\n\t1 <= q <= p <= 1000",
+  "constraints": [
+    "1 <= q <= p <= 1000"
+  ]
+}

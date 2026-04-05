@@ -1,0 +1,18 @@
+{
+  "number": "497",
+  "title_cn": "非重叠矩形中的随机点",
+  "title_en": "Random Point in Non-overlapping Rectangles",
+  "slug": "random-point-in-non-overlapping-rectangles",
+  "difficulty": "Medium",
+  "description": "给定一个由非重叠的轴对齐矩形的数组 rects ，其中 rects[i] = [ai, bi, xi, yi] 表示 (ai, bi) 是第 i 个矩形的左下角点，(xi, yi) 是第 i 个矩形的右上角点。设计一个算法来随机挑选一个被某一矩形覆盖的整数点。矩形周长上的点也算做是被矩形覆盖。所有满足要求的点必须等概率被返回。\n\n在给定的矩形覆盖的空间内的任何整数点都有可能被返回。\n\n请注意&nbsp;，整数点是具有整数坐标的点。\n\n实现&nbsp;Solution&nbsp;类:\n\n\tSolution(int[][] rects)&nbsp;用给定的矩形数组&nbsp;rects 初始化对象。\n\tint[] pick()&nbsp;返回一个随机的整数点 [u, v] 在给定的矩形所覆盖的空间内。\n\n&nbsp;\n\n示例 1：\n\n输入: \n[\"Solution\", \"pick\", \"pick\", \"pick\", \"pick\", \"pick\"]\n[[[[-2, -2, 1, 1], [2, 2, 4, 6]]], [], [], [], [], []]\n输出: \n[null, [1, -2], [1, -1], [-1, -2], [-2, -2], [0, 0]]\n\n解释：\nSolution solution = new Solution([[-2, -2, 1, 1], [2, 2, 4, 6]]);\nsolution.pick(); // 返回 [1, -2]\nsolution.pick(); // 返回 [1, -1]\nsolution.pick(); // 返回 [-1, -2]\nsolution.pick(); // 返回 [-2, -2]\nsolution.pick(); // 返回 [0, 0]\n\n&nbsp;\n\n提示：\n\n\t1 <= rects.length <= 100\n\trects[i].length == 4\n\t-109&nbsp;<= ai&nbsp;< xi&nbsp;<= 109\n\t-109&nbsp;<= bi&nbsp;< yi&nbsp;<= 109\n\txi&nbsp;- ai&nbsp;<= 2000\n\tyi&nbsp;- bi&nbsp;<= 2000\n\t所有的矩形不重叠。\n\tpick 最多被调用&nbsp;104&nbsp;次。",
+  "constraints": [
+    "1 <= rects.length <= 100",
+    "rects[i].length == 4",
+    "-109&nbsp;<= ai&nbsp;< xi&nbsp;<= 109",
+    "-109&nbsp;<= bi&nbsp;< yi&nbsp;<= 109",
+    "xi&nbsp;- ai&nbsp;<= 2000",
+    "yi&nbsp;- bi&nbsp;<= 2000",
+    "所有的矩形不重叠。",
+    "pick 最多被调用&nbsp;104&nbsp;次。"
+  ]
+}

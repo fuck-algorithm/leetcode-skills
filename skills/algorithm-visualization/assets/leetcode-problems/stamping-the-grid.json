@@ -1,0 +1,16 @@
+{
+  "number": "2132",
+  "title_cn": "用邮票贴满网格图",
+  "title_en": "Stamping the Grid",
+  "slug": "stamping-the-grid",
+  "difficulty": "Hard",
+  "description": "给你一个&nbsp;m x n&nbsp;的二进制矩阵&nbsp;grid&nbsp;，每个格子要么为&nbsp;0&nbsp;（空）要么为&nbsp;1&nbsp;（被占据）。\n\n给你邮票的尺寸为&nbsp;stampHeight x stampWidth&nbsp;。我们想将邮票贴进二进制矩阵中，且满足以下&nbsp;限制&nbsp;和&nbsp;要求&nbsp;：\n\n\t覆盖所有 空&nbsp;格子。\n\t不覆盖任何 被占据&nbsp;的格子。\n\t我们可以放入任意数目的邮票。\n\t邮票可以相互有 重叠&nbsp;部分。\n\t邮票不允许 旋转&nbsp;。\n\t邮票必须完全在矩阵 内&nbsp;。\n\n如果在满足上述要求的前提下，可以放入邮票，请返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0],[1,0,0,0]], stampHeight = 4, stampWidth = 3\n输出：true\n解释：我们放入两个有重叠部分的邮票（图中标号为 1 和 2），它们能覆盖所有与空格子。\n\n示例 2：\n\n输入：grid = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]], stampHeight = 2, stampWidth = 2 \n输出：false \n解释：没办法放入邮票覆盖所有的空格子，且邮票不超出网格图以外。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[r].length\n\t1 <= m, n <= 105\n\t1 <= m * n <= 2 * 105\n\tgrid[r][c] 要么是&nbsp;0&nbsp;，要么是&nbsp;1 。\n\t1 <= stampHeight, stampWidth <= 105",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[r].length",
+    "1 <= m, n <= 105",
+    "1 <= m * n <= 2 * 105",
+    "grid[r][c] 要么是&nbsp;0&nbsp;，要么是&nbsp;1 。",
+    "1 <= stampHeight, stampWidth <= 105"
+  ]
+}

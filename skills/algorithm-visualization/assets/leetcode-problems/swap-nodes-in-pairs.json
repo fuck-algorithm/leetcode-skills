@@ -1,0 +1,12 @@
+{
+  "number": "24",
+  "title_cn": "两两交换链表中的节点",
+  "title_en": "Swap Nodes in Pairs",
+  "slug": "swap-nodes-in-pairs",
+  "difficulty": "Medium",
+  "description": "给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,2,3,4]\n输出：[2,1,4,3]\n\n示例 2：\n\n输入：head = []\n输出：[]\n\n示例 3：\n\n输入：head = [1]\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t链表中节点的数目在范围 [0, 100] 内\n\t0 <= Node.val <= 100",
+  "constraints": [
+    "链表中节点的数目在范围 [0, 100] 内",
+    "0 <= Node.val <= 100"
+  ]
+}

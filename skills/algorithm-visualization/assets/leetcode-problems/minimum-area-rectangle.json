@@ -1,0 +1,14 @@
+{
+  "number": "939",
+  "title_cn": "最小面积矩形",
+  "title_en": "Minimum Area Rectangle",
+  "slug": "minimum-area-rectangle",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;X-Y&nbsp;平面上的点数组 points，其中 points[i] = [xi, yi]。\n\n返回由这些点形成的矩形的最小面积，矩形的边与 X 轴和 Y 轴平行。如果不存在这样的矩形，则返回 0。\n\n&nbsp;\n\n示例 1：\n\n输入： points = [[1,1],[1,3],[3,1],[3,3],[2,2]]\n输出： 4\n\n示例 2：\n\n输入： points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]\n输出： 2\n\n&nbsp;\n\n提示：\n\n\t1 <= points.length <= 500\n\tpoints[i].length == 2\n\t0 <= xi, yi <= 4 * 104\n\t所有给定的点都是&nbsp;唯一&nbsp;的。",
+  "constraints": [
+    "1 <= points.length <= 500",
+    "points[i].length == 2",
+    "0 <= xi, yi <= 4 * 104",
+    "所有给定的点都是&nbsp;唯一&nbsp;的。"
+  ]
+}

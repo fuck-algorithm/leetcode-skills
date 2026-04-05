@@ -1,0 +1,11 @@
+{
+  "number": "1492",
+  "title_cn": "n 的第 k 个因子",
+  "title_en": "The kth Factor of n",
+  "slug": "the-kth-factor-of-n",
+  "difficulty": "Medium",
+  "description": "给你两个正整数&nbsp;n 和&nbsp;k&nbsp;。\n\n如果正整数 i 满足 n % i == 0 ，那么我们就说正整数 i 是整数 n&nbsp;的因子。\n\n考虑整数 n&nbsp;的所有因子，将它们 升序排列&nbsp;。请你返回第 k&nbsp;个因子。如果 n&nbsp;的因子数少于 k&nbsp;，请你返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 12, k = 3\n输出：3\n解释：因子列表包括 [1, 2, 3, 4, 6, 12]，第 3 个因子是 3 。\n\n示例 2：\n\n输入：n = 7, k = 2\n输出：7\n解释：因子列表包括 [1, 7] ，第 2 个因子是 7 。\n\n示例 3：\n\n输入：n = 4, k = 4\n输出：-1\n解释：因子列表包括 [1, 2, 4] ，只有 3 个因子，所以我们应该返回 -1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= n <= 1000\n\n&nbsp;\n\n进阶：\n\n你可以设计时间复杂度小于 O(n) 的算法来解决此问题吗？",
+  "constraints": [
+    "1 <= k <= n <= 1000"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "number": "LCR 136",
+  "title_cn": "删除链表的节点",
+  "title_en": "删除链表的节点",
+  "slug": "shan-chu-lian-biao-de-jie-dian-lcof",
+  "difficulty": "Easy",
+  "description": "给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。\n\n返回删除后的链表的头节点。\n\n示例 1：\n\n输入：head = [4,5,1,9], val = 5\n输出：[4,1,9]\n解释：给定你链表中值为&nbsp;5&nbsp;的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -> 1 -> 9.\n\n示例 2：\n\n输入：head = [4,5,1,9], val = 1\n输出：[4,5,9]\n解释：给定你链表中值为&nbsp;1&nbsp;的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -> 5 -> 9.\n\n&nbsp;\n\n说明：\n\n\t题目保证链表中节点的值互不相同\n\t若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点\n\n&nbsp;",
+  "constraints": []
+}

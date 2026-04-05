@@ -1,0 +1,12 @@
+{
+  "number": "3583",
+  "title_cn": "统计特殊三元组",
+  "title_en": "Count Special Triplets",
+  "slug": "count-special-triplets",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。\n\n特殊三元组 定义为满足以下条件的下标三元组 (i, j, k)：\n\n\t0 <= i < j < k < n，其中 n = nums.length\n\tnums[i] == nums[j] * 2\n\tnums[k] == nums[j] * 2\n\n返回数组中&nbsp;特殊三元组&nbsp;的总数。\n\n由于答案可能非常大，请返回结果对 109 + 7 取余数后的值。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [6,3,6]\n\n输出： 1\n\n解释：\n\n唯一的特殊三元组是 (i, j, k) = (0, 1, 2)，其中：\n\n\tnums[0] = 6, nums[1] = 3, nums[2] = 6\n\tnums[0] = nums[1] * 2 = 3 * 2 = 6\n\tnums[2] = nums[1] * 2 = 3 * 2 = 6\n\n示例 2：\n\n输入： nums = [0,1,0,0]\n\n输出： 1\n\n解释：\n\n唯一的特殊三元组是 (i, j, k) = (0, 2, 3)，其中：\n\n\tnums[0] = 0, nums[2] = 0, nums[3] = 0\n\tnums[0] = nums[2] * 2 = 0 * 2 = 0\n\tnums[3] = nums[2] * 2 = 0 * 2 = 0\n\n示例 3：\n\n输入： nums = [8,4,2,8,4]\n\n输出： 2\n\n解释：\n\n共有两个特殊三元组：\n\n\t(i, j, k) = (0, 1, 3)\n\n\t\tnums[0] = 8, nums[1] = 4, nums[3] = 8\n\t\tnums[0] = nums[1] * 2 = 4 * 2 = 8\n\t\tnums[3] = nums[1] * 2 = 4 * 2 = 8\n\n\t(i, j, k) = (1, 2, 4)\n\n\t\tnums[1] = 4, nums[2] = 2, nums[4] = 4\n\t\tnums[1] = nums[2] * 2 = 2 * 2 = 4\n\t\tnums[4] = nums[2] * 2 = 2 * 2 = 4\n\n&nbsp;\n\n提示：\n\n\t3 <= n == nums.length <= 105\n\t0 <= nums[i] <= 105",
+  "constraints": [
+    "3 <= n == nums.length <= 105",
+    "0 <= nums[i] <= 105"
+  ]
+}

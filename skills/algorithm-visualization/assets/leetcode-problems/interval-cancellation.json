@@ -1,0 +1,15 @@
+{
+  "number": "2725",
+  "title_cn": "间隔取消",
+  "title_en": "Interval Cancellation",
+  "slug": "interval-cancellation",
+  "difficulty": "Easy",
+  "description": "现给定一个函数 fn，一个参数数组 args 和一个时间间隔 t，返回一个取消函数 cancelFn。\n\n在经过 cancelTimeMs 毫秒的延迟后，将调用返回的取消函数 cancelFn。\n\nsetTimeout(cancelFn, cancelTimeMs)\n\n函数 fn 应立即使用参数 args 调用，然后每隔 t 毫秒调用一次，直到在 cancelTimeMs 毫秒时调用 cancelFn。\n\n&nbsp;\n\n示例 1：\n\n输入：fn = (x) => x * 2, args = [4], t = 35, cancelT = 190\n输出：\n[\n   {\"time\": 0, \"returned\": 8},\n   {\"time\": 35, \"returned\": 8},\n   {\"time\": 70, \"returned\": 8},\n   {\"time\": 105, \"returned\": 8},\n   {\"time\": 140, \"returned\": 8},\n   {\"time\": 175, \"returned\": 8}\n]\n解释： \nconst cancelTimeMs = 190;\nconst cancelFn = cancellable((x) => x * 2, [4], 35);\nsetTimeout(cancelFn, cancelTimeMs);\n\n每隔 35ms，调用 fn(4)。直到 t=190ms，然后取消。\n第一次调用 fn 是在 0ms。fn(4) 返回 8。\n第二次调用 fn 是在 35ms。fn(4) 返回 8。\n第三次调用 fn 是在 70ms。fn(4) 返回 8。\n第四次调用 fn 是在&nbsp;105ms。fn(4) 返回 8。\n第五次调用 fn 是在 140ms。fn(4) 返回 8。\n第六次调用 fn 是在 175ms。fn(4) 返回 8。\n在 t=190ms 时取消\n\n示例 2：\n\n输入：fn = (x1, x2) => (x1 * x2), args = [2, 5], t = 30, cancelT = 165\n输出： \n[\n   {\"time\": 0, \"returned\": 10},\n   {\"time\": 30, \"returned\": 10},\n   {\"time\": 60, \"returned\": 10},\n   {\"time\": 90, \"returned\": 10},\n   {\"time\": 120, \"returned\": 10},\n   {\"time\": 150, \"returned\": 10}\n]\n解释：\nconst cancelTimeMs = 165; \nconst cancelFn = cancellable((x1, x2) => (x1 * x2), [2, 5], 30) \nsetTimeout(cancelFn, cancelTimeMs)\n\n每隔 30ms，调用 fn(2, 5)。直到 t=165ms，然后取消。\n第一次调用 fn 是在 0ms\n第二次调用 fn 是在 30ms\n第三次调用 fn 是在 60ms\n第四次调用 fn 是在&nbsp;90ms\n第五次调用 fn 是在 120ms\n第六次调用 fn 是在 150ms\n在 165ms 取消\n\n示例 3：\n\n输入：fn = (x1, x2, x3) => (x1 + x2 + x3), args = [5, 1, 3], t = 50, cancelT = 180\n输出：\n[\n   {\"time\": 0, \"returned\": 9},\n   {\"time\": 50, \"returned\": 9},\n   {\"time\": 100, \"returned\": 9},\n   {\"time\": 150, \"returned\": 9}\n]\n解释：\nconst cancelTimeMs = 180;\nconst cancelFn = cancellable((x1, x2, x3) => (x1 + x2 + x3), [5, 1, 3], 50)\nsetTimeout(cancelFn, cancelTimeMs)\n\n每隔 50ms，调用 fn(5, 1, 3)。直到 t=180ms，然后取消。\n第一次调用 fn 是在 0ms\n第二次调用 fn 是在 50ms\n第三次调用 fn 是在 100ms\n第四次调用 fn 是在&nbsp;150ms\n在 180ms 取消\n\n&nbsp;\n\n提示：\n\n\tfn 是一个函数\n\targs 是一个有效的 JSON 数组\n\t1 <= args.length <= 10\n\t30 <= t <= 100\n\t10 <= cancelT <= 500",
+  "constraints": [
+    "fn 是一个函数",
+    "args 是一个有效的 JSON 数组",
+    "1 <= args.length <= 10",
+    "30 <= t <= 100",
+    "10 <= cancelT <= 500"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "1146",
+  "title_cn": "快照数组",
+  "title_en": "Snapshot Array",
+  "slug": "snapshot-array",
+  "difficulty": "Medium",
+  "description": "实现支持下列接口的「快照数组」-&nbsp;SnapshotArray：\n\n\tSnapshotArray(int length)&nbsp;- 初始化一个与指定长度相等的 类数组 的数据结构。初始时，每个元素都等于&nbsp;0。\n\tvoid set(index, val)&nbsp;- 会将指定索引&nbsp;index&nbsp;处的元素设置为&nbsp;val。\n\tint snap()&nbsp;- 获取该数组的快照，并返回快照的编号&nbsp;snap_id（快照号是调用&nbsp;snap()&nbsp;的总次数减去&nbsp;1）。\n\tint get(index, snap_id)&nbsp;- 根据指定的&nbsp;snap_id&nbsp;选择快照，并返回该快照指定索引 index&nbsp;的值。\n\n&nbsp;\n\n示例：\n\n输入：[\"SnapshotArray\",\"set\",\"snap\",\"set\",\"get\"]\n     [[3],[0,5],[],[0,6],[0,0]]\n输出：[null,null,0,null,5]\n解释：\nSnapshotArray snapshotArr = new SnapshotArray(3); // 初始化一个长度为 3 的快照数组\nsnapshotArr.set(0,5);  // 令 array[0] = 5\nsnapshotArr.snap();  // 获取快照，返回 snap_id = 0\nsnapshotArr.set(0,6);\nsnapshotArr.get(0,0);  // 获取 snap_id = 0 的快照中 array[0] 的值，返回 5\n\n&nbsp;\n\n提示：\n\n\t1 <= length&nbsp;<= 50000\n\t题目最多进行50000 次set，snap，和&nbsp;get的调用 。\n\t0 <= index&nbsp;<&nbsp;length\n\t0 <=&nbsp;snap_id <&nbsp;我们调用&nbsp;snap()&nbsp;的总次数\n\t0 <=&nbsp;val <= 10^9",
+  "constraints": [
+    "1 <= length&nbsp;<= 50000",
+    "题目最多进行50000 次set，snap，和&nbsp;get的调用 。",
+    "0 <= index&nbsp;<&nbsp;length",
+    "0 <=&nbsp;snap_id <&nbsp;我们调用&nbsp;snap()&nbsp;的总次数",
+    "0 <=&nbsp;val <= 10^9"
+  ]
+}

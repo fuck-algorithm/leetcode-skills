@@ -1,0 +1,16 @@
+{
+  "number": "1397",
+  "title_cn": "找到所有好字符串",
+  "title_en": "Find All Good Strings",
+  "slug": "find-all-good-strings",
+  "difficulty": "Hard",
+  "description": "给你两个长度为 n&nbsp;的字符串&nbsp;s1 和&nbsp;s2&nbsp;，以及一个字符串&nbsp;evil&nbsp;。请你返回 好字符串&nbsp;的数目。\n\n好字符串&nbsp;的定义为：它的长度为&nbsp;n&nbsp;，字典序大于等于&nbsp;s1&nbsp;，字典序小于等于&nbsp;s2&nbsp;，且不包含&nbsp;evil&nbsp;为子字符串。\n\n由于答案可能很大，请你返回答案对 10^9 + 7 取余的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2, s1 = \"aa\", s2 = \"da\", evil = \"b\"\n输出：51 \n解释：总共有 25 个以 &#39;a&#39; 开头的好字符串：\"aa\"，\"ac\"，\"ad\"，...，\"az\"。还有 25 个以 &#39;c&#39; 开头的好字符串：\"ca\"，\"cc\"，\"cd\"，...，\"cz\"。最后，还有一个以 &#39;d&#39; 开头的好字符串：\"da\"。\n\n示例 2：\n\n输入：n = 8, s1 = \"leetcode\", s2 = \"leetgoes\", evil = \"leet\"\n输出：0 \n解释：所有字典序大于等于 s1 且小于等于 s2 的字符串都以 evil 字符串 \"leet\" 开头。所以没有好字符串。\n\n示例 3：\n\n输入：n = 2, s1 = \"gx\", s2 = \"gz\", evil = \"x\"\n输出：2\n\n&nbsp;\n\n提示：\n\n\ts1.length == n\n\ts2.length == n\n\ts1 <= s2\n\t1 <= n <= 500\n\t1 <= evil.length <= 50\n\t所有字符串都只包含小写英文字母。",
+  "constraints": [
+    "s1.length == n",
+    "s2.length == n",
+    "s1 <= s2",
+    "1 <= n <= 500",
+    "1 <= evil.length <= 50",
+    "所有字符串都只包含小写英文字母。"
+  ]
+}

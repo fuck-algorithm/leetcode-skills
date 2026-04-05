@@ -1,0 +1,14 @@
+{
+  "number": "892",
+  "title_cn": "三维形体的表面积",
+  "title_en": "Surface Area of 3D Shapes",
+  "slug": "surface-area-of-3d-shapes",
+  "difficulty": "Easy",
+  "description": "给你一个 n * n 的网格&nbsp;grid ，上面放置着一些&nbsp;1 x 1 x 1&nbsp;的正方体。每个值&nbsp;v = grid[i][j]&nbsp;表示&nbsp;v&nbsp;个正方体叠放在对应单元格&nbsp;(i, j)&nbsp;上。\n\n放置好正方体后，任何直接相邻的正方体都会互相粘在一起，形成一些不规则的三维形体。\n\n请你返回最终这些形体的总表面积。\n\n注意：每个形体的底面也需要计入表面积中。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,2],[3,4]]\n输出：34\n\n示例 2：\n\n输入：grid = [[1,1,1],[1,0,1],[1,1,1]]\n输出：32\n\n示例 3：\n\n输入：grid = [[2,2,2],[2,1,2],[2,2,2]]\n输出：46\n\n&nbsp;\n\n提示：\n\n\tn == grid.length\n\tn == grid[i].length\n\t1 <= n <= 50\n\t0 <= grid[i][j] <= 50",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "1 <= n <= 50",
+    "0 <= grid[i][j] <= 50"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2344",
+  "title_cn": "使数组可以被整除的最少删除次数",
+  "title_en": "Minimum Deletions to Make Array Divisible",
+  "slug": "minimum-deletions-to-make-array-divisible",
+  "difficulty": "Hard",
+  "description": "给你两个正整数数组&nbsp;nums 和&nbsp;numsDivide&nbsp;。你可以从&nbsp;nums&nbsp;中删除任意数目的元素。\n\n请你返回使 nums&nbsp;中 最小&nbsp;元素可以整除 numsDivide&nbsp;中所有元素的 最少&nbsp;删除次数。如果无法得到这样的元素，返回 -1&nbsp;。\n\n如果&nbsp;y % x == 0&nbsp;，那么我们说整数&nbsp;x&nbsp;整除&nbsp;y&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,2,4,3], numsDivide = [9,6,9,3,15]\n输出：2\n解释：\n[2,3,2,4,3] 中最小元素是 2 ，它无法整除 numsDivide 中所有元素。\n我们从 nums 中删除 2 个大小为 2 的元素，得到 nums = [3,4,3] 。\n[3,4,3] 中最小元素为 3 ，它可以整除 numsDivide 中所有元素。\n可以证明 2 是最少删除次数。\n\n示例 2：\n\n输入：nums = [4,3,6], numsDivide = [8,2,6,10]\n输出：-1\n解释：\n我们想 nums 中的最小元素可以整除 numsDivide 中的所有元素。\n没有任何办法可以达到这一目的。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length, numsDivide.length <= 105\n\t1 <= nums[i], numsDivide[i] <= 109",
+  "constraints": [
+    "1 <= nums.length, numsDivide.length <= 105",
+    "1 <= nums[i], numsDivide[i] <= 109"
+  ]
+}

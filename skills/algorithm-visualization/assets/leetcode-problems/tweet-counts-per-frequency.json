@@ -1,0 +1,13 @@
+{
+  "number": "1348",
+  "title_cn": "推文计数",
+  "title_en": "Tweet Counts Per Frequency",
+  "slug": "tweet-counts-per-frequency",
+  "difficulty": "Medium",
+  "description": "一家社交媒体公司正试图通过分析特定时间段内出现的推文数量来监控其网站上的活动。这些时间段可以根据特定的频率（&nbsp;每分钟&nbsp;、每小时&nbsp;或 每一天 ）划分为更小的 时间段 。\n\n&nbsp;\n\n例如，周期 [10,10000]&nbsp;（以 秒 为单位）将被划分为以下频率的 时间块 :\n\n\t每 分钟 (60秒 块)：&nbsp;[10,69],&nbsp;[70,129],&nbsp;[130,189],&nbsp;...,&nbsp;[9970,10000]\n\t每 小时 (3600秒 块)：[10,3609],&nbsp;[3610,7209],&nbsp;[7210,10000]\n\t每 天 (86400秒 块)：&nbsp;[10,10000]\n\n注意，最后一个块可能比指定频率的块大小更短，并且总是以时间段的结束时间结束(在上面的示例中为 10000 )。\n\n设计和实现一个API来帮助公司进行分析。\n\n实现 TweetCounts 类:\n\n\tTweetCounts() 初始化 TweetCounts 对象。\n\t存储记录时间的 tweetName (以秒为单位)。\n\tList<integer> getTweetCountsPerFrequency(String freq, String tweetName, int startTime, int endTime)&nbsp;返回一个整数列表，表示给定时间 [startTime, endTime]&nbsp;（单位秒）和频率频率中，每个 时间块 中带有 tweetName 的 tweet 的数量。\n\n\t\tfreq 是 “minute” 、 “hour” 或 “day” 中的一个，分别表示 每分钟 、 每小时 或 每一天 的频率。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"TweetCounts\",\"recordTweet\",\"recordTweet\",\"recordTweet\",\"getTweetCountsPerFrequency\",\"getTweetCountsPerFrequency\",\"recordTweet\",\"getTweetCountsPerFrequency\"]\n[[],[\"tweet3\",0],[\"tweet3\",60],[\"tweet3\",10],[\"minute\",\"tweet3\",0,59],[\"minute\",\"tweet3\",0,60],[\"tweet3\",120],[\"hour\",\"tweet3\",0,210]]\n\n输出：\n[null,null,null,null,[2],[2,1],null,[4]]\n\n解释：\nTweetCounts tweetCounts = new TweetCounts();\ntweetCounts.recordTweet(\"tweet3\", 0);\ntweetCounts.recordTweet(\"tweet3\", 60);\ntweetCounts.recordTweet(\"tweet3\", 10);                             //&nbsp;\"tweet3\"&nbsp;发布推文的时间分别是&nbsp;0,&nbsp;10&nbsp;和&nbsp;60 。\ntweetCounts.getTweetCountsPerFrequency(\"minute\", \"tweet3\", 0, 59); //&nbsp;返回&nbsp;[2]。统计频率是每分钟（60 秒），因此只有一个有效时间间隔 [0,60>&nbsp;-&nbsp;>&nbsp;2&nbsp;条推文。\ntweetCounts.getTweetCountsPerFrequency(\"minute\", \"tweet3\", 0, 60); //&nbsp;返回&nbsp;[2,1]。统计频率是每分钟（60 秒），因此有两个有效时间间隔&nbsp;1)&nbsp;[0,60>&nbsp;-&nbsp;>&nbsp;2&nbsp;条推文，和&nbsp;2)&nbsp;[60,61>&nbsp;-&nbsp;>&nbsp;1&nbsp;条推文。 \ntweetCounts.recordTweet(\"tweet3\", 120);                            // \"tweet3\"&nbsp;发布推文的时间分别是 0, 10, 60 和 120 。\ntweetCounts.getTweetCountsPerFrequency(\"hour\", \"tweet3\", 0, 210);  //&nbsp;返回&nbsp;[4]。统计频率是每小时（3600 秒），因此只有一个有效时间间隔 [0,211>&nbsp;-&nbsp;>&nbsp;4&nbsp;条推文。\n\n&nbsp;\n\n提示：\n\n\t0 <= time, startTime, endTime <= 109\n\t0 <= endTime - startTime <= 104\n\trecordTweet&nbsp;和&nbsp;getTweetCountsPerFrequency，最多有&nbsp;104&nbsp;次操作。",
+  "constraints": [
+    "0 <= time, startTime, endTime <= 109",
+    "0 <= endTime - startTime <= 104",
+    "recordTweet&nbsp;和&nbsp;getTweetCountsPerFrequency，最多有&nbsp;104&nbsp;次操作。"
+  ]
+}

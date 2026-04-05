@@ -1,0 +1,13 @@
+{
+  "number": "424",
+  "title_cn": "替换后的最长重复字符",
+  "title_en": "Longest Repeating Character Replacement",
+  "slug": "longest-repeating-character-replacement",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个整数 k 。你可以选择字符串中的任一字符，并将其更改为任何其他大写英文字符。该操作最多可执行 k 次。\n\n在执行上述操作后，返回 包含相同字母的最长子字符串的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"ABAB\", k = 2\n输出：4\n解释：用两个'A'替换为两个'B',反之亦然。\n\n示例 2：\n\n输入：s = \"AABABBA\", k = 1\n输出：4\n解释：\n将中间的一个'A'替换为'B',字符串变为 \"AABBBBA\"。\n子串 \"BBBB\" 有最长重复字母, 答案为 4。\n可能存在其他的方法来得到同样的结果。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 仅由大写英文字母组成\n\t0 <= k <= s.length",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 仅由大写英文字母组成",
+    "0 <= k <= s.length"
+  ]
+}

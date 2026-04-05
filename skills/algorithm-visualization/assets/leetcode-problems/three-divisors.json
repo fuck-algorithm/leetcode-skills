@@ -1,0 +1,11 @@
+{
+  "number": "1952",
+  "title_cn": "三除数",
+  "title_en": "Three Divisors",
+  "slug": "three-divisors",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n 。如果 n 恰好有三个正除数 ，返回 true ；否则，返回 false 。\n\n如果存在整数 k ，满足 n = k * m ，那么整数 m 就是 n 的一个 除数 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2\n输出：false\n解释：2 只有两个除数：1 和 2 。\n\n示例 2：\n\n输入：n = 4\n输出：true\n解释：4 有三个除数：1、2 和 4 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 104",
+  "constraints": [
+    "1 <= n <= 104"
+  ]
+}

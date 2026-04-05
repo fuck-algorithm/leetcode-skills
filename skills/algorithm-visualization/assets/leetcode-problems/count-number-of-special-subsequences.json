@@ -1,0 +1,12 @@
+{
+  "number": "1955",
+  "title_cn": "统计特殊子序列的数目",
+  "title_en": "Count Number of Special Subsequences",
+  "slug": "count-number-of-special-subsequences",
+  "difficulty": "Hard",
+  "description": "特殊序列 是由&nbsp;正整数&nbsp;个 0&nbsp;，紧接着&nbsp;正整数&nbsp;个 1&nbsp;，最后 正整数&nbsp;个 2&nbsp;组成的序列。\n\n\t比方说，[0,1,2] 和&nbsp;[0,0,1,1,1,2]&nbsp;是特殊序列。\n\t相反，[2,1,0]&nbsp;，[1]&nbsp;和&nbsp;[0,1,2,0]&nbsp;就不是特殊序列。\n\n给你一个数组&nbsp;nums&nbsp;（仅&nbsp;包含整数&nbsp;0，1&nbsp;和&nbsp;2），请你返回 不同特殊子序列的数目&nbsp;。由于答案可能很大，请你将它对&nbsp;109 + 7 取余 后返回。\n\n一个数组的 子序列&nbsp;是从原数组中删除零个或者若干个元素后，剩下元素不改变顺序得到的序列。如果两个子序列的 下标集合&nbsp;不同，那么这两个子序列是 不同的&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,1,2,2]\n输出：3\n解释：特殊子序列为 [0,1,2,2]，[0,1,2,2] 和 [0,1,2,2] 。\n\n示例 2：\n\n输入：nums = [2,2,0,0]\n输出：0\n解释：数组 [2,2,0,0] 中没有特殊子序列。\n\n示例 3：\n\n输入：nums = [0,1,2,0,1,2]\n输出：7\n解释：特殊子序列包括：\n- [0,1,2,0,1,2]\n- [0,1,2,0,1,2]\n- [0,1,2,0,1,2]\n- [0,1,2,0,1,2]\n- [0,1,2,0,1,2]\n- [0,1,2,0,1,2]\n- [0,1,2,0,1,2]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 2",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 2"
+  ]
+}

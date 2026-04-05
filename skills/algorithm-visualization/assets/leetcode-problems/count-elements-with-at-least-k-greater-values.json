@@ -1,0 +1,13 @@
+{
+  "number": "3759",
+  "title_cn": "统计合格元素的数目",
+  "title_en": "Count Elements With at Least K Greater Values",
+  "slug": "count-elements-with-at-least-k-greater-values",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组 nums 和一个整数 k。\n\n如果数组 nums 中的某个元素满足以下条件，则称其为 合格元素：存在&nbsp;至少 k 个元素&nbsp;严格大于&nbsp;它。\n\n返回一个整数，表示数组 nums 中合格元素的总数。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [3,1,2], k = 1\n\n输出： 2\n\n解释：\n\n元素 1 和 2 均有至少 k = 1 个元素大于它们。\n没有元素比 3 更大。因此答案是 2。\n\n示例 2：\n\n输入： nums = [5,5,5], k = 2\n\n输出： 0\n\n解释：\n\n由于所有元素都等于 5，没有任何元素比其他元素大。因此答案是 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 105\n\t1 <= nums[i] <= 109\n\t0 <= k < n",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "0 <= k < n"
+  ]
+}

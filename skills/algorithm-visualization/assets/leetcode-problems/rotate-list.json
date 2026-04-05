@@ -1,0 +1,13 @@
+{
+  "number": "61",
+  "title_cn": "旋转链表",
+  "title_en": "Rotate List",
+  "slug": "rotate-list",
+  "difficulty": "Medium",
+  "description": "给你一个链表的头节点 head ，旋转链表，将链表每个节点向右移动&nbsp;k&nbsp;个位置。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,2,3,4,5], k = 2\n输出：[4,5,1,2,3]\n\n示例 2：\n\n输入：head = [0,1,2], k = 4\n输出：[2,0,1]\n\n&nbsp;\n\n提示：\n\n\t链表中节点的数目在范围 [0, 500] 内\n\t-100 <= Node.val <= 100\n\t0 <= k <= 2 * 109",
+  "constraints": [
+    "链表中节点的数目在范围 [0, 500] 内",
+    "-100 <= Node.val <= 100",
+    "0 <= k <= 2 * 109"
+  ]
+}

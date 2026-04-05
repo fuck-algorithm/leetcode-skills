@@ -1,0 +1,13 @@
+{
+  "number": "2947",
+  "title_cn": "统计美丽子字符串 I",
+  "title_en": "Count Beautiful Substrings I",
+  "slug": "count-beautiful-substrings-i",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个正整数 k 。\n\n用 vowels 和 consonants 分别表示字符串中元音字母和辅音字母的数量。\n\n如果某个字符串满足以下条件，则称其为 美丽字符串 ：\n\n\tvowels == consonants，即元音字母和辅音字母的数量相等。\n\t(vowels * consonants) % k == 0，即元音字母和辅音字母的数量的乘积能被 k 整除。\n\n返回字符串 s 中 非空美丽子字符串 的数量。\n\n子字符串是字符串中的一个连续字符序列。\n\n英语中的 元音字母 为 'a'、'e'、'i'、'o' 和 'u' 。\n\n英语中的 辅音字母 为除了元音字母之外的所有字母。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"baeyh\", k = 2\n输出：2\n解释：字符串 s 中有 2 个美丽子字符串。\n- 子字符串 \"baeyh\"，vowels = 2（[\"a\",\"e\"]），consonants = 2（[\"y\",\"h\"]）。\n可以看出字符串 \"aeyh\" 是美丽字符串，因为 vowels == consonants 且 vowels * consonants % k == 0 。\n- 子字符串 \"baeyh\"，vowels = 2（[\"a\",\"e\"]），consonants = 2（[\"b\",\"y\"]）。\n可以看出字符串 \"baey\" 是美丽字符串，因为 vowels == consonants 且 vowels * consonants % k == 0 。\n可以证明字符串 s 中只有 2 个美丽子字符串。\n\n示例 2：\n\n输入：s = \"abba\", k = 1\n输出：3\n解释：字符串 s 中有 3 个美丽子字符串。\n- 子字符串 \"abba\"，vowels = 1（[\"a\"]），consonants = 1（[\"b\"]）。\n- 子字符串 \"abba\"，vowels = 1（[\"a\"]），consonants = 1（[\"b\"]）。\n- 子字符串 \"abba\"，vowels = 2（[\"a\",\"a\"]），consonants = 2（[\"b\",\"b\"]）。\n可以证明字符串 s 中只有 3 个美丽子字符串。\n\n示例 3：\n\n输入：s = \"bcdf\", k = 1\n输出：0\n解释：字符串 s 中没有美丽子字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\t1 <= k <= 1000\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "1 <= k <= 1000",
+    "s 仅由小写英文字母组成。"
+  ]
+}

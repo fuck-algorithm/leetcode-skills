@@ -1,0 +1,9 @@
+{
+  "number": "2505",
+  "title_cn": "所有子序列和的按位或",
+  "title_en": "Bitwise OR of All Subsequence Sums",
+  "slug": "bitwise-or-of-all-subsequence-sums",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

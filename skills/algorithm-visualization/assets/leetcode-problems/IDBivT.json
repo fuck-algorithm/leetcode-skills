@@ -1,0 +1,12 @@
+{
+  "number": "LCR 085",
+  "title_cn": "括号生成",
+  "title_en": "括号生成",
+  "slug": "IDBivT",
+  "difficulty": "Medium",
+  "description": "正整数&nbsp;n&nbsp;代表生成括号的对数，请设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3\n输出：[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\n\n示例 2：\n\n输入：n = 1\n输出：[\"()\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 8\n\n&nbsp;\n\n注意：本题与主站 22&nbsp;题相同：&nbsp;https://leetcode.cn/problems/generate-parentheses/",
+  "constraints": [
+    "1 <= n <= 8",
+    "注意：本题与主站 22&nbsp;题相同：&nbsp;https://leetcode.cn/problems/generate-parentheses/"
+  ]
+}

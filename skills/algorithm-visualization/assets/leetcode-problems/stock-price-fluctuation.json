@@ -1,0 +1,13 @@
+{
+  "number": "2034",
+  "title_cn": "股票价格波动",
+  "title_en": "Stock Price Fluctuation ",
+  "slug": "stock-price-fluctuation",
+  "difficulty": "Medium",
+  "description": "给你一支股票价格的数据流。数据流中每一条记录包含一个 时间戳&nbsp;和该时间点股票对应的 价格&nbsp;。\n\n不巧的是，由于股票市场内在的波动性，股票价格记录可能不是按时间顺序到来的。某些情况下，有的记录可能是错的。如果两个有相同时间戳的记录出现在数据流中，前一条记录视为错误记录，后出现的记录 更正&nbsp;前一条错误的记录。\n\n请你设计一个算法，实现：\n\n\t更新 股票在某一时间戳的股票价格，如果有之前同一时间戳的价格，这一操作将&nbsp;更正&nbsp;之前的错误价格。\n\t找到当前记录里 最新股票价格&nbsp;。最新股票价格&nbsp;定义为时间戳最晚的股票价格。\n\t找到当前记录里股票的 最高价格&nbsp;。\n\t找到当前记录里股票的 最低价格&nbsp;。\n\n请你实现&nbsp;StockPrice&nbsp;类：\n\n\tStockPrice()&nbsp;初始化对象，当前无股票价格记录。\n\tvoid update(int timestamp, int price)&nbsp;在时间点 timestamp&nbsp;更新股票价格为 price&nbsp;。\n\tint current()&nbsp;返回股票 最新价格&nbsp;。\n\tint maximum()&nbsp;返回股票 最高价格&nbsp;。\n\tint minimum()&nbsp;返回股票 最低价格&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"StockPrice\", \"update\", \"update\", \"current\", \"maximum\", \"update\", \"maximum\", \"update\", \"minimum\"]\n[[], [1, 10], [2, 5], [], [], [1, 3], [], [4, 2], []]\n输出：\n[null, null, null, 5, 10, null, 5, null, 2]\n\n解释：\nStockPrice stockPrice = new StockPrice();\nstockPrice.update(1, 10); // 时间戳为 [1] ，对应的股票价格为 [10] 。\nstockPrice.update(2, 5);  // 时间戳为 [1,2] ，对应的股票价格为 [10,5] 。\nstockPrice.current();     // 返回 5 ，最新时间戳为 2 ，对应价格为 5 。\nstockPrice.maximum();     // 返回 10 ，最高价格的时间戳为 1 ，价格为 10 。\nstockPrice.update(1, 3);  // 之前时间戳为 1 的价格错误，价格更新为 3 。\n                          // 时间戳为 [1,2] ，对应股票价格为 [3,5] 。\nstockPrice.maximum();     // 返回 5 ，更正后最高价格为 5 。\nstockPrice.update(4, 2);  // 时间戳为 [1,2,4] ，对应价格为 [3,5,2] 。\nstockPrice.minimum();     // 返回 2 ，最低价格时间戳为 4 ，价格为 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= timestamp, price <= 109\n\tupdate，current，maximum&nbsp;和&nbsp;minimum&nbsp;总 调用次数不超过&nbsp;105&nbsp;。\n\tcurrent，maximum&nbsp;和&nbsp;minimum&nbsp;被调用时，update&nbsp;操作 至少&nbsp;已经被调用过 一次&nbsp;。",
+  "constraints": [
+    "1 <= timestamp, price <= 109",
+    "update，current，maximum&nbsp;和&nbsp;minimum&nbsp;总 调用次数不超过&nbsp;105&nbsp;。",
+    "current，maximum&nbsp;和&nbsp;minimum&nbsp;被调用时，update&nbsp;操作 至少&nbsp;已经被调用过 一次&nbsp;。"
+  ]
+}

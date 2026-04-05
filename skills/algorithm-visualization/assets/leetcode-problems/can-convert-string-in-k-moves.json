@@ -1,0 +1,13 @@
+{
+  "number": "1540",
+  "title_cn": "K 次操作转变字符串",
+  "title_en": "Can Convert String in K Moves",
+  "slug": "can-convert-string-in-k-moves",
+  "difficulty": "Medium",
+  "description": "给你两个字符串&nbsp;s&nbsp;和&nbsp;t&nbsp;，你的目标是在 k&nbsp;次操作以内把字符串&nbsp;s&nbsp;转变成&nbsp;t&nbsp;。\n\n在第 i&nbsp;次操作时（1 <= i <= k），你可以选择进行如下操作：\n\n\t选择字符串 s&nbsp;中满足 1 <= j <= s.length&nbsp;且之前未被选过的任意下标 j&nbsp;（下标从 1 开始），并将此位置的字符切换 i&nbsp;次。\n\t不进行任何操作。\n\n切换 1 个字符的意思是用字母表中该字母的下一个字母替换它（字母表环状接起来，所以 'z'&nbsp;切换后会变成 'a'）。第 i&nbsp;次操作意味着该字符应切换&nbsp;i&nbsp;次\n\n请记住任意一个下标 j&nbsp;最多只能被操作&nbsp;1 次。\n\n如果在不超过 k&nbsp;次操作内可以把字符串 s&nbsp;转变成 t&nbsp;，那么请你返回&nbsp;true&nbsp;，否则请你返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"input\", t = \"ouput\", k = 9\n输出：true\n解释：第 6 次操作时，我们将 'i' 切换 6 次得到 'o' 。第 7 次操作时，我们将 'n' 切换 7 次得到 'u' 。\n\n示例 2：\n\n输入：s = \"abc\", t = \"bcd\", k = 10\n输出：false\n解释：我们需要将每个字符切换 1 次才能得到 t 。我们可以在第 1 次操作时将 'a' 切换成 'b' ，但另外 2 个字母在剩余操作中无法再转变为 t 中对应字母。\n\n示例 3：\n\n输入：s = \"aab\", t = \"bbb\", k = 27\n输出：true\n解释：第 1 次操作时，我们将第一个 'a' 切换 1 次得到 'b' 。在第 27 次操作时，我们将第二个字母 'a' 切换 27 次得到 'b' 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, t.length <= 10^5\n\t0 <= k <= 10^9\n\ts&nbsp;和&nbsp;t&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length, t.length <= 10^5",
+    "0 <= k <= 10^9",
+    "s&nbsp;和&nbsp;t&nbsp;只包含小写英文字母。"
+  ]
+}

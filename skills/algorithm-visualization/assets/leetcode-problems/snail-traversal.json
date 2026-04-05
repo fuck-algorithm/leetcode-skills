@@ -1,0 +1,14 @@
+{
+  "number": "2624",
+  "title_cn": "蜗牛排序",
+  "title_en": "Snail Traversal",
+  "slug": "snail-traversal",
+  "difficulty": "Medium",
+  "description": "请你编写一段代码为所有数组实现&nbsp;&nbsp;snail(rowsCount，colsCount) 方法，该方法将 1D 数组转换为以蜗牛排序的模式的 2D 数组。无效的输入值应该输出一个空数组。当 rowsCount * colsCount&nbsp;!==nums.length&nbsp;时。这个输入被认为是无效的。\n\n蜗牛排序从左上角的单元格开始，从当前数组的第一个值开始。然后，它从上到下遍历第一列，接着移动到右边的下一列，并从下到上遍历它。将这种模式持续下去，每列交替变换遍历方向，直到覆盖整个数组。例如，当给定输入数组&nbsp;&nbsp;[19, 10, 3, 7, 9, 8, 5, 2, 1, 17, 16, 14, 12, 18, 6, 13, 11, 20, 4, 15] ，当 rowsCount = 5&nbsp;且&nbsp;colsCount = 4 时，需要输出矩阵如下图所示。注意，矩阵沿箭头方向对应于原数组中数字的顺序\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入：\nnums = [19, 10, 3, 7, 9, 8, 5, 2, 1, 17, 16, 14, 12, 18, 6, 13, 11, 20, 4, 15]\nrowsCount = 5\ncolsCount = 4\n输出：\n[\n [19,17,16,15],\n&nbsp;[10,1,14,4],\n&nbsp;[3,2,12,20],\n&nbsp;[7,5,18,11],\n&nbsp;[9,8,6,13]\n]\n\n示例 2：\n\n输入：\nnums = [1,2,3,4]\nrowsCount = 1\ncolsCount = 4\n输出：[[1, 2, 3, 4]]\n\n示例 3：\n\n输入：\nnums = [1,3]\nrowsCount = 2\ncolsCount = 2\n输出：[]\nExplanation: 2 * 2 = 4, 且原数组 [1,3] 的长度为 2; 所以，输入是无效的。\n\n&nbsp;\n\n提示：\n\n\t0 <= nums.length <= 250\n\t1 <= nums[i] <= 1000\n\t1 <= rowsCount <= 250\n\t1 <= colsCount <= 250",
+  "constraints": [
+    "0 <= nums.length <= 250",
+    "1 <= nums[i] <= 1000",
+    "1 <= rowsCount <= 250",
+    "1 <= colsCount <= 250"
+  ]
+}

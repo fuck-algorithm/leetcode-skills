@@ -1,0 +1,11 @@
+{
+  "number": "LCR 170",
+  "title_cn": "交易逆序对的总数",
+  "title_en": "交易逆序对的总数",
+  "slug": "shu-zu-zhong-de-ni-xu-dui-lcof",
+  "difficulty": "Hard",
+  "description": "在股票交易中，如果前一天的股价高于后一天的股价，则可以认为存在一个「交易逆序对」。请设计一个程序，输入一段时间内的股票交易记录 record，返回其中存在的「交易逆序对」总数。\n\n&nbsp;\n\n示例 1：\n\n输入：record = [9, 7, 5, 4, 6]\n输出：8\n解释：交易中的逆序对为 (9, 7), (9, 5), (9, 4), (9, 6), (7, 5), (7, 4), (7, 6), (5, 4)。\n\n&nbsp;\n\n提示：\n\n0 <= record.length <= 50000",
+  "constraints": [
+    "0 <= record.length <= 50000"
+  ]
+}

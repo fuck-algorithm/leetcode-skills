@@ -1,0 +1,12 @@
+{
+  "number": "1187",
+  "title_cn": "使数组严格递增",
+  "title_en": "Make Array Strictly Increasing",
+  "slug": "make-array-strictly-increasing",
+  "difficulty": "Hard",
+  "description": "给你两个整数数组&nbsp;arr1 和 arr2，返回使&nbsp;arr1&nbsp;严格递增所需要的最小「操作」数（可能为 0）。\n\n每一步「操作」中，你可以分别从 arr1 和 arr2 中各选出一个索引，分别为&nbsp;i 和&nbsp;j，0 <=&nbsp;i < arr1.length&nbsp;和&nbsp;0 <= j < arr2.length，然后进行赋值运算&nbsp;arr1[i] = arr2[j]。\n\n如果无法让&nbsp;arr1&nbsp;严格递增，请返回&nbsp;-1。\n\n&nbsp;\n\n示例 1：\n\n输入：arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]\n输出：1\n解释：用 2 来替换 5，之后 arr1 = [1, 2, 3, 6, 7]。\n\n示例 2：\n\n输入：arr1 = [1,5,3,6,7], arr2 = [4,3,1]\n输出：2\n解释：用 3 来替换 5，然后用 4 来替换 3，得到 arr1 = [1, 3, 4, 6, 7]。\n\n示例&nbsp;3：\n\n输入：arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]\n输出：-1\n解释：无法使 arr1 严格递增。\n\n&nbsp;\n\n提示：\n\n\t1 <= arr1.length, arr2.length <= 2000\n\t0 <= arr1[i], arr2[i] <= 10^9\n\n&nbsp;",
+  "constraints": [
+    "1 <= arr1.length, arr2.length <= 2000",
+    "0 <= arr1[i], arr2[i] <= 10^9"
+  ]
+}

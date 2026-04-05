@@ -1,0 +1,11 @@
+{
+  "number": "2578",
+  "title_cn": "最小和分割",
+  "title_en": "Split With Minimum Sum",
+  "slug": "split-with-minimum-sum",
+  "difficulty": "Easy",
+  "description": "给你一个正整数&nbsp;num&nbsp;，请你将它分割成两个非负整数&nbsp;num1 和&nbsp;num2&nbsp;，满足：\n\n\tnum1 和&nbsp;num2&nbsp;直接连起来，得到&nbsp;num&nbsp;各数位的一个排列。\n\n\t\t换句话说，num1 和&nbsp;num2&nbsp;中所有数字出现的次数之和等于&nbsp;num&nbsp;中所有数字出现的次数。\n\n\tnum1 和&nbsp;num2&nbsp;可以包含前导 0 。\n\n请你返回&nbsp;num1 和 num2&nbsp;可以得到的和的 最小 值。\n\n注意：\n\n\tnum&nbsp;保证没有前导 0 。\n\tnum1 和&nbsp;num2&nbsp;中数位顺序可以与&nbsp;num&nbsp;中数位顺序不同。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 4325\n输出：59\n解释：我们可以将 4325 分割成 num1 = 24 和 num2 = 35 ，和为 59 ，59 是最小和。\n\n示例 2：\n\n输入：num = 687\n输出：75\n解释：我们可以将 687 分割成 num1 = 68 和 num2 = 7 ，和为最优值 75 。\n\n&nbsp;\n\n提示：\n\n\t10 <= num <= 109",
+  "constraints": [
+    "10 <= num <= 109"
+  ]
+}

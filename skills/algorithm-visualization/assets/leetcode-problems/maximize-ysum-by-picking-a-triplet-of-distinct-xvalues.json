@@ -1,0 +1,13 @@
+{
+  "number": "3572",
+  "title_cn": "选择不同 X 值三元组使 Y 值之和最大",
+  "title_en": "Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values",
+  "slug": "maximize-ysum-by-picking-a-triplet-of-distinct-xvalues",
+  "difficulty": "Medium",
+  "description": "给你两个整数数组 x 和 y，长度均为 n。你必须选择三个&nbsp;不同&nbsp;的下标&nbsp;i&nbsp;，j 和 k，满足以下条件：\n\n\tx[i] != x[j]\n\tx[j] != x[k]\n\tx[k] != x[i]\n\n你的目标是在满足这些条件下&nbsp;最大化 y[i] + y[j] + y[k] 的值。返回通过选择这样一组三元组下标所能获得的&nbsp;最大&nbsp;可能和。\n\n如果不存在这样的三元组，返回 -1。\n\n&nbsp;\n\n示例 1：\n\n输入：x = [1,2,1,3,2], y = [5,3,4,6,2]\n\n输出：14\n\n解释：\n\n\t选择 i = 0（x[i] = 1，y[i] = 5），j = 1（x[j] = 2，y[j] = 3），k = 3（x[k] = 3，y[k] = 6）。\n\t选出的三个 x 中的值互不相同。5 + 3 + 6 = 14 是我们能获得的最大值。因此输出为 14。\n\n示例 2：\n\n输入：x = [1,2,1,2], y = [4,5,6,7]\n\n输出：-1\n\n解释：\n\n\tx 中只有两个不同的值。因此输出为 -1。\n\n&nbsp;\n\n提示：\n\n\tn == x.length == y.length\n\t3 <= n <= 105\n\t1 <= x[i], y[i] <= 106",
+  "constraints": [
+    "n == x.length == y.length",
+    "3 <= n <= 105",
+    "1 <= x[i], y[i] <= 106"
+  ]
+}

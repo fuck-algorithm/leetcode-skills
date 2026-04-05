@@ -1,0 +1,12 @@
+{
+  "number": "2434",
+  "title_cn": "使用机器人打印字典序最小的字符串",
+  "title_en": "Using a Robot to Print the Lexicographically Smallest String",
+  "slug": "using-a-robot-to-print-the-lexicographically-smallest-string",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;和一个机器人，机器人当前有一个空字符串&nbsp;t&nbsp;。执行以下操作之一，直到&nbsp;s 和&nbsp;t&nbsp;都变成空字符串：\n\n\t删除字符串&nbsp;s&nbsp;的 第一个&nbsp;字符，并将该字符给机器人。机器人把这个字符添加到 t&nbsp;的尾部。\n\t删除字符串&nbsp;t&nbsp;的&nbsp;最后一个&nbsp;字符，并将该字符给机器人。机器人将该字符写到纸上。\n\n请你返回纸上能写出的字典序最小的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"zza\"\n输出：\"azz\"\n解释：用 p 表示写出来的字符串。\n一开始，p=\"\" ，s=\"zza\" ，t=\"\" 。\n执行第一个操作三次，得到 p=\"\" ，s=\"\" ，t=\"zza\" 。\n执行第二个操作三次，得到 p=\"azz\" ，s=\"\" ，t=\"\" 。\n\n示例 2：\n\n输入：s = \"bac\"\n输出：\"abc\"\n解释：用 p 表示写出来的字符串。\n执行第一个操作两次，得到 p=\"\" ，s=\"c\" ，t=\"ba\" 。\n执行第二个操作两次，得到 p=\"ab\" ，s=\"c\" ，t=\"\" 。\n执行第一个操作，得到 p=\"ab\" ，s=\"\" ，t=\"c\" 。\n执行第二个操作，得到 p=\"abc\" ，s=\"\" ，t=\"\" 。\n\n示例 3：\n\n输入：s = \"bdda\"\n输出：\"addb\"\n解释：用 p 表示写出来的字符串。\n一开始，p=\"\" ，s=\"bdda\" ，t=\"\" 。\n执行第一个操作四次，得到 p=\"\" ，s=\"\" ，t=\"bdda\" 。\n执行第二个操作四次，得到 p=\"addb\" ，s=\"\" ，t=\"\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

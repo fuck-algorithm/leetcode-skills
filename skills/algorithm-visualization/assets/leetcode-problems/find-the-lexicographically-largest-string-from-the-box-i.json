@@ -1,0 +1,13 @@
+{
+  "number": "3403",
+  "title_cn": "从盒子中找出字典序最大的字符串 I",
+  "title_en": "Find the Lexicographically Largest String From the Box I",
+  "slug": "find-the-lexicographically-largest-string-from-the-box-i",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 word 和一个整数 numFriends。\n\nAlice 正在为她的 numFriends 位朋友组织一个游戏。游戏分为多个回合，在每一回合中：\n\n\tword 被分割成 numFriends 个&nbsp;非空&nbsp;字符串，且该分割方式与之前的任意回合所采用的都 不完全相同&nbsp;。\n\t所有分割出的字符串都会被放入一个盒子中。\n\n在所有回合结束后，找出盒子中&nbsp;字典序最大的&nbsp;字符串。\n\n&nbsp;\n\n示例 1：\n\n输入: word = \"dbca\", numFriends = 2\n\n输出: \"dbc\"\n\n解释:&nbsp;\n\n所有可能的分割方式为：\n\n\t\"d\" 和 \"bca\"。\n\t\"db\" 和 \"ca\"。\n\t\"dbc\" 和 \"a\"。\n\n示例 2：\n\n输入: word = \"gggg\", numFriends = 4\n\n输出: \"g\"\n\n解释:&nbsp;\n\n唯一可能的分割方式为：\"g\", \"g\", \"g\", 和 \"g\"。\n\n&nbsp;\n\n提示:\n\n\t1 <= word.length <= 5&nbsp;* 103\n\tword 仅由小写英文字母组成。\n\t1 <= numFriends <= word.length",
+  "constraints": [
+    "1 <= word.length <= 5&nbsp;* 103",
+    "word 仅由小写英文字母组成。",
+    "1 <= numFriends <= word.length"
+  ]
+}

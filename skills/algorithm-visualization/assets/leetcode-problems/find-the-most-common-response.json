@@ -1,0 +1,14 @@
+{
+  "number": "3527",
+  "title_cn": "找到最常见的回答",
+  "title_en": "Find the Most Common Response",
+  "slug": "find-the-most-common-response",
+  "difficulty": "Medium",
+  "description": "给你一个二维字符串数组 responses，其中每个 responses[i] 是一个字符串数组，表示第 i&nbsp;天调查的回答结果。\n\n请返回在对每个 responses[i] 中的回答&nbsp;去重 后，所有天数中&nbsp;最常见&nbsp;的回答。如果有多个回答出现频率相同，则返回&nbsp;字典序最小&nbsp;的那个回答。\n\n&nbsp;\n\n示例 1：\n\n输入： responses = [[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]\n\n输出： \"good\"\n\n解释：\n\n\t每个列表去重后，得到&nbsp;responses = [[\"good\", \"ok\"], [\"ok\", \"bad\", \"good\"], [\"good\"], [\"bad\"]]。\n\t\"good\" 出现了 3 次，\"ok\" 出现了 2 次，\"bad\" 也出现了 2 次。\n\t返回 \"good\"，因为它出现的频率最高。\n\n示例 2：\n\n输入： responses = [[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]\n\n输出： \"bad\"\n\n解释：\n\n\t每个列表去重后，responses = [[\"good\", \"ok\"], [\"ok\", \"bad\"], [\"bad\", \"notsure\"], [\"great\", \"good\"]]。\n\t\"bad\"、\"good\" 和 \"ok\" 都出现了 2 次。\n\t返回 \"bad\"，因为它在这些最高频率的词中字典序最小。\n\n&nbsp;\n\n提示：\n\n\t1 <= responses.length <= 1000\n\t1 <= responses[i].length <= 1000\n\t1 <= responses[i][j].length <= 10\n\tresponses[i][j] 仅由小写英文字母组成",
+  "constraints": [
+    "1 <= responses.length <= 1000",
+    "1 <= responses[i].length <= 1000",
+    "1 <= responses[i][j].length <= 10",
+    "responses[i][j] 仅由小写英文字母组成"
+  ]
+}

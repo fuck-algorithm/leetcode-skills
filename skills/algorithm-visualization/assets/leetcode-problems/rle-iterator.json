@@ -1,0 +1,15 @@
+{
+  "number": "900",
+  "title_cn": "RLE 迭代器",
+  "title_en": "RLE Iterator",
+  "slug": "rle-iterator",
+  "difficulty": "Medium",
+  "description": "我们可以使用游程编码(即&nbsp;RLE&nbsp;)来编码一个整数序列。在偶数长度&nbsp;encoding&nbsp;( 从 0 开始 )的游程编码数组中，对于所有偶数 i ，encoding[i]&nbsp;告诉我们非负整数&nbsp;encoding[i + 1]&nbsp;在序列中重复的次数。\n\n\t例如，序列&nbsp;arr = [8,8,8,5,5]&nbsp;可以被编码为 encoding =[3,8,2,5] 。encoding =[3,8,0,9,2,5]&nbsp;和 encoding =[2,8,1,8,2,5] 也是&nbsp;arr 有效的 RLE 。\n\n给定一个游程长度的编码数组，设计一个迭代器来遍历它。\n\n实现 RLEIterator 类:\n\n\tRLEIterator(int[] encoded)&nbsp;用编码后的数组初始化对象。\n\tint next(int n) 以这种方式耗尽后 n 个元素并返回最后一个耗尽的元素。如果没有剩余的元素要耗尽，则返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"RLEIterator\",\"next\",\"next\",\"next\",\"next\"]\n[[[3,8,0,9,2,5]],[2],[1],[1],[2]]\n输出：\n[null,8,8,5,-1]\n解释：\nRLEIterator rLEIterator = new RLEIterator([3, 8, 0, 9, 2, 5]); // 这映射到序列 [8,8,8,5,5]。\nrLEIterator.next(2); // 耗去序列的 2 个项，返回 8。现在剩下的序列是 [8, 5, 5]。\nrLEIterator.next(1); // 耗去序列的 1 个项，返回 8。现在剩下的序列是 [5, 5]。\nrLEIterator.next(1); // 耗去序列的 1 个项，返回 5。现在剩下的序列是 [5]。\nrLEIterator.next(2); // 耗去序列的 2 个项，返回 -1。 这是由于第一个被耗去的项是 5，\n但第二个项并不存在。由于最后一个要耗去的项不存在，我们返回 -1。\n\n&nbsp;\n\n提示：\n\n\t2 <= encoding.length <= 1000\n\tencoding.length&nbsp;为偶\n\t0 <= encoding[i] <= 109\n\t1 <= n <= 109\n\t每个测试用例调用next 不高于&nbsp;1000&nbsp;次&nbsp;",
+  "constraints": [
+    "2 <= encoding.length <= 1000",
+    "encoding.length&nbsp;为偶",
+    "0 <= encoding[i] <= 109",
+    "1 <= n <= 109",
+    "每个测试用例调用next 不高于&nbsp;1000&nbsp;次&nbsp;"
+  ]
+}

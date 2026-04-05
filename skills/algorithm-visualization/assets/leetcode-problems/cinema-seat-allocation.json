@@ -1,0 +1,16 @@
+{
+  "number": "1386",
+  "title_cn": "安排电影院座位",
+  "title_en": "Cinema Seat Allocation",
+  "slug": "cinema-seat-allocation",
+  "difficulty": "Medium",
+  "description": "如上图所示，电影院的观影厅中有 n&nbsp;行座位，行编号从 1&nbsp;到 n&nbsp;，且每一行内总共有 10 个座位，列编号从 1 到 10 。\n\n给你数组&nbsp;reservedSeats&nbsp;，包含所有已经被预约了的座位。比如说，reservedSeats[i]=[3,8]&nbsp;，它表示第&nbsp;3&nbsp;行第&nbsp;8&nbsp;个座位被预约了。\n\n请你返回&nbsp;最多能安排多少个 4 人家庭&nbsp;。4 人家庭要占据&nbsp;同一行内连续&nbsp;的 4 个座位。隔着过道的座位（比方说 [3,3] 和 [3,4]）不是连续的座位，但是如果你可以将 4 人家庭拆成过道两边各坐 2 人，这样子是允许的。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, reservedSeats = [[1,2],[1,3],[1,8],[2,6],[3,1],[3,10]]\n输出：4\n解释：上图所示是最优的安排方案，总共可以安排 4 个家庭。蓝色的叉表示被预约的座位，橙色的连续座位表示一个 4 人家庭。\n\n示例 2：\n\n输入：n = 2, reservedSeats = [[2,1],[1,8],[2,6]]\n输出：2\n\n示例 3：\n\n输入：n = 4, reservedSeats = [[4,3],[1,4],[4,6],[1,7]]\n输出：4\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 10^9\n\t1 <=&nbsp;reservedSeats.length <= min(10*n, 10^4)\n\treservedSeats[i].length == 2\n\t1&nbsp;<=&nbsp;reservedSeats[i][0] <= n\n\t1 <=&nbsp;reservedSeats[i][1] <= 10\n\t所有&nbsp;reservedSeats[i] 都是互不相同的。",
+  "constraints": [
+    "1 <= n <= 10^9",
+    "1 <=&nbsp;reservedSeats.length <= min(10*n, 10^4)",
+    "reservedSeats[i].length == 2",
+    "1&nbsp;<=&nbsp;reservedSeats[i][0] <= n",
+    "1 <=&nbsp;reservedSeats[i][1] <= 10",
+    "所有&nbsp;reservedSeats[i] 都是互不相同的。"
+  ]
+}

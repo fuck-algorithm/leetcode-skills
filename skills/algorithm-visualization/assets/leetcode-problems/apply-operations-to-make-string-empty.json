@@ -1,0 +1,12 @@
+{
+  "number": "3039",
+  "title_cn": "进行操作使字符串为空",
+  "title_en": "Apply Operations to Make String Empty",
+  "slug": "apply-operations-to-make-string-empty",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;。\n\n请你进行以下操作直到 s&nbsp;为 空&nbsp;：\n\n\t每次操作 依次 遍历 'a' 到 'z'，如果当前字符出现在 s 中，那么删除出现位置&nbsp;最早&nbsp;的该字符（如果存在的话）。\n\n例如，最初 s = \"aabcbbca\"。我们执行下述操作：\n\n\t移除下划线的字符&nbsp; s = \"aabcbbca\"。结果字符串为 s = \"abbca\"。\n\t移除下划线的字符&nbsp; s = \"abbca\"。结果字符串为 s = \"ba\"。\n\t移除下划线的字符&nbsp; s = \"ba\"。结果字符串为 s = \"\"。\n\n请你返回进行 最后&nbsp;一次操作 之前&nbsp;的字符串&nbsp;s&nbsp;。在上面的例子中，答案是&nbsp;\"ba\"。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aabcbbca\"\n输出：\"ba\"\n解释：已经在题目描述中解释。\n\n示例 2：\n\n输入：s = \"abcd\"\n输出：\"abcd\"\n解释：我们进行以下操作：\n- 删除 s = \"abcd\" 中加粗加斜字符，得到字符串 s = \"\" 。\n进行最后一次操作之前的字符串为 \"abcd\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 5 * 105\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 5 * 105",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

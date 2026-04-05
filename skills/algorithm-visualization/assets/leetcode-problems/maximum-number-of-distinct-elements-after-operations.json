@@ -1,0 +1,13 @@
+{
+  "number": "3397",
+  "title_cn": "执行操作后不同元素的最大数量",
+  "title_en": "Maximum Number of Distinct Elements After Operations",
+  "slug": "maximum-number-of-distinct-elements-after-operations",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums 和一个整数 k。\n\n你可以对数组中的每个元素&nbsp;最多 执行 一次&nbsp;以下操作：\n\n\t将一个在范围&nbsp;[-k, k] 内的整数加到该元素上。\n\n返回执行这些操作后，nums 中可能拥有的不同元素的&nbsp;最大&nbsp;数量。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2,2,3,3,4], k = 2\n\n输出： 6\n\n解释：\n\n对前四个元素执行操作，nums 变为 [-1, 0, 1, 2, 3, 4]，可以获得 6 个不同的元素。\n\n示例 2：\n\n输入： nums = [4,4,4,4], k = 1\n\n输出： 3\n\n解释：\n\n对 nums[0] 加 -1，以及对 nums[1] 加 1，nums 变为 [3, 5, 4, 4]，可以获得 3 个不同的元素。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\t0 <= k <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "0 <= k <= 109"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "3128",
+  "title_cn": "直角三角形",
+  "title_en": "Right Triangles",
+  "slug": "right-triangles",
+  "difficulty": "Medium",
+  "description": "给你一个二维 boolean 矩阵&nbsp;grid&nbsp;。\n\n如果&nbsp;grid 的 3 个元素的集合中，一个元素与另一个元素在 同一行，并且与第三个元素在 同一列，则该集合是一个 直角三角形。3 个元素 不必 彼此相邻。\n\n请你返回使用 grid&nbsp;中的 3 个元素可以构建的 直角三角形 数目，且满足 3 个元素值 都&nbsp;为 1 。\n\n&nbsp;\n\n示例 1：\n\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\n输入：grid = [[0,1,0],[0,1,1],[0,1,0]]\n\n输出：2\n\n解释：\n\n有 2 个值为 1 的直角三角形。注意蓝色的那个 没有&nbsp;组成直角三角形，因为 3 个元素在同一列。\n\n示例 2：\n\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\n输入：grid = [[1,0,0,0],[0,1,0,1],[1,0,0,0]]\n\n输出：0\n\n解释：\n\n没有值为 1 的直角三角形。注意蓝色的那个&nbsp;没有 组成直角三角形。\n\n示例 3：\n\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\n输入：grid = [[1,0,1],[1,0,0],[1,0,0]]\n\n输出：2\n\n解释：\n\n有两个值为 1 的直角三角形。\n\n&nbsp;\n\n提示：\n\n\t1 <= grid.length <= 1000\n\t1 <= grid[i].length <= 1000\n\t0 <= grid[i][j] <= 1",
+  "constraints": [
+    "1 <= grid.length <= 1000",
+    "1 <= grid[i].length <= 1000",
+    "0 <= grid[i][j] <= 1"
+  ]
+}

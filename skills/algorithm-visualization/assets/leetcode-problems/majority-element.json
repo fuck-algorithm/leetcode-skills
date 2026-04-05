@@ -1,0 +1,13 @@
+{
+  "number": "169",
+  "title_cn": "多数元素",
+  "title_en": "Majority Element",
+  "slug": "majority-element",
+  "difficulty": "Easy",
+  "description": "给定一个大小为 n 的数组&nbsp;nums ，返回其中的多数元素。多数元素是指在数组中出现次数 大于&nbsp;⌊ n/2 ⌋&nbsp;的元素。\n\n你可以假设数组是非空的，并且给定的数组总是存在多数元素。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：nums = [3,2,3]\n输出：3\n\n示例&nbsp;2：\n\n输入：nums = [2,2,1,1,1,2,2]\n输出：2\n\n&nbsp;\n提示：\n\n\tn == nums.length\n\t1 <= n <= 5 * 104\n\t-109 <= nums[i] <= 109\n\t输入保证数组中一定有一个多数元素。\n\n&nbsp;\n\n进阶：尝试设计时间复杂度为 O(n)、空间复杂度为 O(1) 的算法解决此问题。",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 5 * 104",
+    "-109 <= nums[i] <= 109"
+  ]
+}

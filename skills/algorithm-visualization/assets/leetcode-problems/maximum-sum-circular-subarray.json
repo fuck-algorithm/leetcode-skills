@@ -1,0 +1,13 @@
+{
+  "number": "918",
+  "title_cn": "环形子数组的最大和",
+  "title_en": "Maximum Sum Circular Subarray",
+  "slug": "maximum-sum-circular-subarray",
+  "difficulty": "Medium",
+  "description": "给定一个长度为 n 的环形整数数组&nbsp;nums&nbsp;，返回&nbsp;nums&nbsp;的非空 子数组 的最大可能和&nbsp;。\n\n环形数组&nbsp;意味着数组的末端将会与开头相连呈环状。形式上， nums[i] 的下一个元素是 nums[(i + 1) % n] ， nums[i]&nbsp;的前一个元素是 nums[(i - 1 + n) % n] 。\n\n子数组 最多只能包含固定缓冲区&nbsp;nums&nbsp;中的每个元素一次。形式上，对于子数组&nbsp;nums[i], nums[i + 1], ..., nums[j]&nbsp;，不存在&nbsp;i <= k1, k2 <= j&nbsp;其中&nbsp;k1 % n == k2 % n&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,-2,3,-2]\n输出：3\n解释：从子数组 [3] 得到最大和 3\n\n示例 2：\n\n输入：nums = [5,-3,5]\n输出：10\n解释：从子数组 [5,5] 得到最大和 5 + 5 = 10\n\n示例 3：\n\n输入：nums = [3,-2,2,-3]\n输出：3\n解释：从子数组 [3] 和 [3,-2,2] 都可以得到最大和 3\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t1 <= n <= 3 * 104\n\t-3 * 104&nbsp;<= nums[i] <= 3 * 104​​​​​​​",
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 3 * 104",
+    "-3 * 104&nbsp;<= nums[i] <= 3 * 104​​​​​​​"
+  ]
+}

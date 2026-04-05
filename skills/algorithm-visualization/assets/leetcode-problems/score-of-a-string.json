@@ -1,0 +1,12 @@
+{
+  "number": "3110",
+  "title_cn": "字符串的分数",
+  "title_en": "Score of a String",
+  "slug": "score-of-a-string",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;s&nbsp;。一个字符串的&nbsp;分数&nbsp;定义为相邻字符 ASCII&nbsp;码差值绝对值的和。\n\n请你返回 s&nbsp;的 分数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"hello\"\n\n输出：13\n\n解释：\n\ns&nbsp;中字符的 ASCII 码分别为：'h' = 104&nbsp;，'e' = 101&nbsp;，'l' = 108&nbsp;，'o' = 111&nbsp;。所以&nbsp;s&nbsp;的分数为&nbsp;|104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13&nbsp;。\n\n示例 2：\n\n输入：s = \"zaz\"\n\n输出：50\n\n解释：\n\ns&nbsp;中字符的 ASCII&nbsp;码分别为：'z' = 122&nbsp;，'a' = 97&nbsp;。所以&nbsp;s&nbsp;的分数为&nbsp;|122 - 97| + |97 - 122| = 25 + 25 = 50&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 100\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "2 <= s.length <= 100",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

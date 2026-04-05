@@ -1,0 +1,15 @@
+{
+  "number": "2732",
+  "title_cn": "找到矩阵中的好子集",
+  "title_en": "Find a Good Subset of the Matrix",
+  "slug": "find-a-good-subset-of-the-matrix",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始大小为&nbsp;m x n&nbsp;的二进制矩阵&nbsp;grid&nbsp;。\n\n从原矩阵中选出若干行构成一个行的 非空&nbsp;子集，如果子集中任何一列的和至多为子集大小的一半，那么我们称这个子集是 好子集。\n\n更正式的，如果选出来的行子集大小（即行的数量）为 k，那么每一列的和至多为&nbsp;floor(k / 2)&nbsp;。\n\n请你返回一个整数数组，它包含好子集的行下标，请你将其&nbsp;升序&nbsp;返回。\n\n如果有多个好子集，你可以返回任意一个。如果没有好子集，请你返回一个空数组。\n\n一个矩阵 grid&nbsp;的行 子集 ，是删除 grid&nbsp;中某些（也可能不删除）行后，剩余行构成的元素集合。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]\n输出：[0,1]\n解释：我们可以选择第 0 和第 1 行构成一个好子集。\n选出来的子集大小为 2 。\n- 第 0&nbsp;列的和为 0 + 0 = 0 ，小于等于子集大小的一半。\n- 第 1&nbsp;列的和为 1 + 0 = 1 ，小于等于子集大小的一半。\n- 第 2&nbsp;列的和为 1 + 0 = 1 ，小于等于子集大小的一半。\n- 第 3&nbsp;列的和为 0 + 1 = 1 ，小于等于子集大小的一半。\n\n示例 2：\n\n输入：grid = [[0]]\n输出：[0]\n解释：我们可以选择第 0 行构成一个好子集。\n选出来的子集大小为 1 。\n- 第 0 列的和为 0 ，小于等于子集大小的一半。\n\n示例 3：\n\n输入：grid = [[1,1,1],[1,1,1]]\n输出：[]\n解释：没有办法得到一个好子集。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m <= 104\n\t1 <= n <= 5\n\tgrid[i][j]&nbsp;要么是&nbsp;0&nbsp;，要么是&nbsp;1 。",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m <= 104",
+    "1 <= n <= 5",
+    "grid[i][j]&nbsp;要么是&nbsp;0&nbsp;，要么是&nbsp;1 。"
+  ]
+}

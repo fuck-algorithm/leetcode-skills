@@ -1,0 +1,15 @@
+{
+  "number": "2901",
+  "title_cn": "最长相邻不相等子序列 II",
+  "title_en": "Longest Unequal Adjacent Groups Subsequence II",
+  "slug": "longest-unequal-adjacent-groups-subsequence-ii",
+  "difficulty": "Medium",
+  "description": "给定一个字符串数组&nbsp;words&nbsp;，和一个数组&nbsp;groups&nbsp;，两个数组长度都是&nbsp;n&nbsp;。\n\n两个长度相等字符串的 汉明距离&nbsp;定义为对应位置字符&nbsp;不同&nbsp;的数目。\n\n你需要从下标&nbsp;[0, 1, ..., n - 1]&nbsp;中选出一个&nbsp;最长子序列&nbsp;，将这个子序列记作长度为 k 的&nbsp;[i0, i1, ..., ik - 1]&nbsp;，它需要满足以下条件：\n\n\t相邻 下标对应的 groups 值 不同。即，对于所有满足&nbsp;0 < j + 1 < k&nbsp;的&nbsp;j&nbsp;都有&nbsp;groups[ij] != groups[ij + 1]&nbsp;。\n\t对于所有&nbsp;0 < j + 1 < k&nbsp;的下标&nbsp;j&nbsp;，都满足&nbsp;words[ij] 和&nbsp;words[ij + 1]&nbsp;的长度 相等&nbsp;，且两个字符串之间的 汉明距离&nbsp;为 1&nbsp;。\n\n请你返回一个字符串数组，它是下标子序列&nbsp;依次&nbsp;对应&nbsp;words&nbsp;数组中的字符串连接形成的字符串数组。如果有多个答案，返回任意一个。\n\n子序列&nbsp;指的是从原数组中删掉一些（也可能一个也不删掉）元素，剩余元素不改变相对位置得到的新的数组。\n\n注意：words&nbsp;中的字符串长度可能&nbsp;不相等&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"bab\",\"dab\",\"cab\"], groups = [1,2,2]\n输出：[\"bab\",\"cab\"]\n解释：一个可行的子序列是 [0,2] 。\n- groups[0] != groups[2]\n- words[0].length == words[2].length 且它们之间的汉明距离为 1 。\n所以一个可行的答案是 [words[0],words[2]] = [\"bab\",\"cab\"] 。\n另一个可行的子序列是 [0,1] 。\n- groups[0] != groups[1]\n- words[0].length = words[1].length 且它们之间的汉明距离为 1 。\n所以另一个可行的答案是 [words[0],words[1]] = [\"bab\",\"dab\"] 。\n符合题意的最长子序列的长度为 2 。\n\n示例 2：\n\n输入：words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,2,3,4]\n输出：[\"a\",\"b\",\"c\",\"d\"]\n解释：我们选择子序列 [0,1,2,3] 。\n它同时满足两个条件。\n所以答案为 [words[0],words[1],words[2],words[3]] = [\"a\",\"b\",\"c\",\"d\"] 。\n它是所有下标子序列里最长且满足所有条件的。\n所以它是唯一的答案。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == words.length == groups.length <= 1000\n\t1 <= words[i].length <= 10\n\t1 <= groups[i] <= n\n\twords&nbsp;中的字符串&nbsp;互不相同&nbsp;。\n\twords[i] 只包含小写英文字母。",
+  "constraints": [
+    "1 <= n == words.length == groups.length <= 1000",
+    "1 <= words[i].length <= 10",
+    "1 <= groups[i] <= n",
+    "words&nbsp;中的字符串&nbsp;互不相同&nbsp;。",
+    "words[i] 只包含小写英文字母。"
+  ]
+}

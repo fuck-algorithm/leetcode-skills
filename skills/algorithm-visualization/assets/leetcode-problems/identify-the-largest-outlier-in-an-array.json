@@ -1,0 +1,12 @@
+{
+  "number": "3371",
+  "title_cn": "识别数组中的最大异常值",
+  "title_en": "Identify the Largest Outlier in an Array",
+  "slug": "identify-the-largest-outlier-in-an-array",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。该数组包含 n 个元素，其中&nbsp;恰好&nbsp;有 n - 2 个元素是&nbsp;特殊数字&nbsp;。剩下的&nbsp;两个&nbsp;元素中，一个是所有&nbsp;特殊数字&nbsp;的 和 ，另一个是&nbsp;异常值&nbsp;。\n\n异常值 的定义是：既不是原始特殊数字之一，也不是表示元素和的那个数。\n\n注意，特殊数字、和 以及 异常值 的下标必须&nbsp;不同&nbsp;，但可以共享&nbsp;相同 的值。\n\n返回 nums 中可能的&nbsp;最大异常值。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [2,3,5,10]\n\n输出： 10\n\n解释：\n\n特殊数字可以是 2 和 3，因此和为 5，异常值为 10。\n\n示例 2：\n\n输入： nums = [-2,-1,-3,-6,4]\n\n输出： 4\n\n解释：\n\n特殊数字可以是 -2、-1 和 -3，因此和为 -6，异常值为 4。\n\n示例 3：\n\n输入： nums = [1,1,1,1,1,5,5]\n\n输出： 5\n\n解释：\n\n特殊数字可以是 1、1、1、1 和 1，因此和为 5，另一个 5 为异常值。\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 105\n\t-1000 <= nums[i] <= 1000\n\t输入保证 nums 中至少存在&nbsp;一个&nbsp;可能的异常值。",
+  "constraints": [
+    "3 <= nums.length <= 105",
+    "-1000 <= nums[i] <= 1000"
+  ]
+}

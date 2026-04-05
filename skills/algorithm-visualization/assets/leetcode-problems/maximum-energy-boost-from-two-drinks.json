@@ -1,0 +1,13 @@
+{
+  "number": "3259",
+  "title_cn": "超级饮料的最大强化能量",
+  "title_en": "Maximum Energy Boost From Two Drinks",
+  "slug": "maximum-energy-boost-from-two-drinks",
+  "difficulty": "Medium",
+  "description": "来自未来的体育科学家给你两个整数数组 energyDrinkA 和 energyDrinkB，数组长度都等于 n。这两个数组分别代表 A、B 两种不同能量饮料每小时所能提供的强化能量。\n\n你需要每小时饮用一种能量饮料来 最大化 你的总强化能量。然而，如果从一种能量饮料切换到另一种，你需要等待一小时来梳理身体的能量体系（在那个小时里你将不会获得任何强化能量）。\n\n返回在接下来的 n 小时内你能获得的 最大 总强化能量。\n\n注意 你可以选择从饮用任意一种能量饮料开始。\n\n&nbsp;\n\n示例 1：\n\n输入：energyDrinkA = [1,3,1], energyDrinkB = [3,1,1]\n\n输出：5\n\n解释：\n\n要想获得 5 点强化能量，需要选择只饮用能量饮料 A（或者只饮用 B）。\n\n示例 2：\n\n输入：energyDrinkA = [4,1,1], energyDrinkB = [1,1,3]\n\n输出：7\n\n解释：\n\n\t第一个小时饮用能量饮料 A。\n\t切换到能量饮料 B ，在第二个小时无法获得强化能量。\n\t第三个小时饮用能量饮料 B ，并获得强化能量。\n\n&nbsp;\n\n提示：\n\n\tn == energyDrinkA.length == energyDrinkB.length\n\t3 <= n <= 105\n\t1 <= energyDrinkA[i], energyDrinkB[i] <= 105",
+  "constraints": [
+    "n == energyDrinkA.length == energyDrinkB.length",
+    "3 <= n <= 105",
+    "1 <= energyDrinkA[i], energyDrinkB[i] <= 105"
+  ]
+}

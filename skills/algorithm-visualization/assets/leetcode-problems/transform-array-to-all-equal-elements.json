@@ -1,0 +1,13 @@
+{
+  "number": "3576",
+  "title_cn": "数组元素相等转换",
+  "title_en": "Transform Array to All Equal Elements",
+  "slug": "transform-array-to-all-equal-elements",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 n 的整数数组 nums，其中只包含 1 和 -1，以及一个整数 k。\n\n你可以最多进行 k 次以下操作：\n\n\t选择一个下标&nbsp;i（0 <= i < n - 1），然后将 nums[i] 和 nums[i + 1] 同时&nbsp;乘以&nbsp;-1。\n\n注意：你可以在&nbsp;不同&nbsp;的操作中多次选择相同的下标&nbsp;i。\n\n如果在最多 k 次操作后可以使数组的所有元素相等，则返回 true；否则，返回 false。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,-1,1,-1,1], k = 3\n\n输出： true\n\n解释：\n\n我们可以通过以下两次操作使数组的所有元素相等：\n\n\t选择下标&nbsp;i = 1，将 nums[1] 和 nums[2] 同时乘以 -1。此时 nums = [1,1,-1,-1,1]。\n\t选择下标&nbsp;i = 2，将 nums[2] 和 nums[3] 同时乘以 -1。此时 nums = [1,1,1,1,1]。\n\n示例 2：\n\n输入： nums = [-1,-1,-1,1,1,1], k = 5\n\n输出： false\n\n解释：\n\n在最多 5 次操作内，无法使数组的所有元素相等。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 105\n\tnums[i] 的值为 -1 或 1。\n\t1 <= k <= n",
+  "constraints": [
+    "1 <= n == nums.length <= 105",
+    "nums[i] 的值为 -1 或 1。",
+    "1 <= k <= n"
+  ]
+}

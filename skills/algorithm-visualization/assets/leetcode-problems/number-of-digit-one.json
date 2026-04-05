@@ -1,0 +1,11 @@
+{
+  "number": "233",
+  "title_cn": "数字 1 的个数",
+  "title_en": "Number of Digit One",
+  "slug": "number-of-digit-one",
+  "difficulty": "Hard",
+  "description": "给定一个整数 n，计算所有小于等于 n 的非负整数中数字 1 出现的个数。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 13\n输出：6\n\n示例 2：\n\n输入：n = 0\n输出：0\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 109",
+  "constraints": [
+    "0 <= n <= 109"
+  ]
+}

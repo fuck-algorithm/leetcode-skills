@@ -1,0 +1,12 @@
+{
+  "number": "3138",
+  "title_cn": "同位字符串连接的最小长度",
+  "title_en": "Minimum Length of Anagram Concatenation",
+  "slug": "minimum-length-of-anagram-concatenation",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;，它由某个字符串&nbsp;t&nbsp;和若干&nbsp;t&nbsp; 的&nbsp;同位字符串&nbsp;连接而成。\n\n请你返回字符串 t&nbsp;的 最小&nbsp;可能长度。\n\n同位字符串&nbsp;指的是重新排列一个字符串的字母得到的另外一个字符串。例如，\"aab\"，\"aba\" 和 \"baa\" 是 \"aab\" 的同位字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abba\"\n\n输出：2\n\n解释：\n\n一个可能的字符串&nbsp;t&nbsp;为&nbsp;\"ba\"&nbsp;。\n\n示例 2：\n\n输入：s = \"cdef\"\n\n输出：4\n\n解释：\n\n一个可能的字符串&nbsp;t&nbsp;为&nbsp;\"cdef\"&nbsp;，注意&nbsp;t&nbsp;可能等于&nbsp;s&nbsp;。\n\n示例&nbsp;3：\n\n输入：s = \"abcbcacabbaccba\"\n\n输出：3\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

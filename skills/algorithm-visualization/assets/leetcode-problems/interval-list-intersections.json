@@ -1,0 +1,16 @@
+{
+  "number": "986",
+  "title_cn": "区间列表的交集",
+  "title_en": "Interval List Intersections",
+  "slug": "interval-list-intersections",
+  "difficulty": "Medium",
+  "description": "给定两个由一些 闭区间 组成的列表，firstList 和 secondList ，其中 firstList[i] = [starti, endi] 而 secondList[j] = [startj, endj] 。每个区间列表都是成对 不相交 的，并且 已经排序 。\n\n返回这 两个区间列表的交集 。\n\n形式上，闭区间 [a, b]（其中 a ）表示实数 x 的集合，而 a  。\n\n两个闭区间的 交集 是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3] 。\n\n示例 1：\n\n输入：firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]\n输出：[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]\n\n示例 2：\n\n输入：firstList = [[1,3],[5,9]], secondList = []\n输出：[]\n\n示例 3：\n\n输入：firstList = [], secondList = [[4,8],[10,12]]\n输出：[]\n\n示例 4：\n\n输入：firstList = [[1,7]], secondList = [[3,10]]\n输出：[[3,7]]\n\n提示：\n\n\t0 \n\tfirstList.length + secondList.length >= 1\n\t0 i i 9\n\tendi i+1\n\t0 j j 9 \n\tendj j+1",
+  "constraints": [
+    "0",
+    "firstList.length + secondList.length >= 1",
+    "0 i i 9",
+    "endi i+1",
+    "0 j j 9",
+    "endj j+1"
+  ]
+}

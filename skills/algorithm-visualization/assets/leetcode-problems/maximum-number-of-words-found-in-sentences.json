@@ -1,0 +1,15 @@
+{
+  "number": "2114",
+  "title_cn": "句子中的最多单词数",
+  "title_en": "Maximum Number of Words Found in Sentences",
+  "slug": "maximum-number-of-words-found-in-sentences",
+  "difficulty": "Easy",
+  "description": "一个 句子&nbsp;由一些 单词&nbsp;以及它们之间的单个空格组成，句子的开头和结尾不会有多余空格。\n\n给你一个字符串数组&nbsp;sentences&nbsp;，其中&nbsp;sentences[i]&nbsp;表示单个 句子&nbsp;。\n\n请你返回单个句子里 单词的最多数目&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：sentences = [\"alice and bob love leetcode\", \"i think so too\", \"this is great thanks very much\"]\n输出：6\n解释：\n- 第一个句子 \"alice and bob love leetcode\" 总共有 5 个单词。\n- 第二个句子 \"i think so too\" 总共有 4 个单词。\n- 第三个句子 \"this is great thanks very much\" 总共有 6 个单词。\n所以，单个句子中有最多单词数的是第三个句子，总共有 6 个单词。\n\n示例 2：\n\n输入：sentences = [\"please wait\", \"continue to fight\", \"continue to win\"]\n输出：3\n解释：可能有多个句子有相同单词数。\n这个例子中，第二个句子和第三个句子（加粗斜体）有相同数目的单词数。\n\n&nbsp;\n\n提示：\n\n\t1 <= sentences.length <= 100\n\t1 <= sentences[i].length <= 100\n\tsentences[i]&nbsp;只包含小写英文字母和&nbsp;' '&nbsp;。\n\tsentences[i]&nbsp;的开头和结尾都没有空格。\n\tsentences[i]&nbsp;中所有单词由单个空格隔开。",
+  "constraints": [
+    "1 <= sentences.length <= 100",
+    "1 <= sentences[i].length <= 100",
+    "sentences[i]&nbsp;只包含小写英文字母和&nbsp;' '&nbsp;。",
+    "sentences[i]&nbsp;的开头和结尾都没有空格。",
+    "sentences[i]&nbsp;中所有单词由单个空格隔开。"
+  ]
+}

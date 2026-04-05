@@ -1,0 +1,9 @@
+{
+  "number": "2168",
+  "title_cn": "每个数字的频率都相同的不同子字符串的数量",
+  "title_en": "Unique Substrings With Equal Digit Frequency",
+  "slug": "unique-substrings-with-equal-digit-frequency",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

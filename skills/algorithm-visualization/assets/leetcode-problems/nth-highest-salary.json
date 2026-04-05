@@ -1,0 +1,9 @@
+{
+  "number": "177",
+  "title_cn": "第N高的薪水",
+  "title_en": "Nth Highest Salary",
+  "slug": "nth-highest-salary",
+  "difficulty": "Medium",
+  "description": "表:&nbsp;Employee\n\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| id          | int  |\n| salary      | int  |\n+-------------+------+\nid 是该表的主键（列中的值互不相同）。\n该表的每一行都包含有关员工工资的信息。\n\n&nbsp;\n\n编写一个解决方案查询&nbsp;Employee 表中第 n 高的&nbsp;不同 工资。如果少于&nbsp;n 个不同工资，查询结果应该为&nbsp;null 。\n\n查询结果格式如下所示。\n\n&nbsp;\n\n示例 1:\n\n输入: \nEmployee table:\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n| 2  | 200    |\n| 3  | 300    |\n+----+--------+\nn = 2\n输出: \n+------------------------+\n| getNthHighestSalary(2) |\n+------------------------+\n| 200                    |\n+------------------------+\n\n示例 2:\n\n输入: \nEmployee 表:\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n+----+--------+\nn = 2\n输出: \n+------------------------+\n| getNthHighestSalary(2) |\n+------------------------+\n| null                   |\n+------------------------+",
+  "constraints": []
+}

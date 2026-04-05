@@ -1,0 +1,13 @@
+{
+  "number": "698",
+  "title_cn": "划分为k个相等的子集",
+  "title_en": "Partition to K Equal Sum Subsets",
+  "slug": "partition-to-k-equal-sum-subsets",
+  "difficulty": "Medium",
+  "description": "给定一个整数数组&nbsp;&nbsp;nums 和一个正整数 k，找出是否有可能把这个数组分成 k 个非空子集，其总和都相等。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [4, 3, 2, 3, 5, 2, 1], k = 4\n输出： True\n说明： 有可能将其分成 4 个子集（5），（1,4），（2,3），（2,3）等于总和。\n\n示例 2:\n\n输入: nums = [1,2,3,4], k = 3\n输出: false\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= len(nums) <= 16\n\t0 < nums[i] < 10000\n\t每个元素的频率在 [1,4] 范围内",
+  "constraints": [
+    "1 <= k <= len(nums) <= 16",
+    "0 < nums[i] < 10000",
+    "每个元素的频率在 [1,4] 范围内"
+  ]
+}

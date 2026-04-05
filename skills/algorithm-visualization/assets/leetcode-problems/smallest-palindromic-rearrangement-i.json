@@ -1,0 +1,13 @@
+{
+  "number": "3517",
+  "title_cn": "最小回文排列 I",
+  "title_en": "Smallest Palindromic Rearrangement I",
+  "slug": "smallest-palindromic-rearrangement-i",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;回文&nbsp;字符串 s。\n\n返回 s 的按字典序排列的&nbsp;最小&nbsp;回文排列。\n\n如果一个字符串从前往后和从后往前读都相同，那么这个字符串是一个&nbsp;回文 字符串。\n\n排列&nbsp;是字符串中所有字符的重排。\n如果字符串 a 按字典序小于字符串 b，则表示在第一个不同的位置，a 中的字符比 b 中的对应字符在字母表中更靠前。\n如果在前 min(a.length, b.length) 个字符中没有区别，则较短的字符串按字典序更小。\n\n&nbsp;\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"z\"\n\n输出： \"z\"\n\n解释：\n\n仅由一个字符组成的字符串已经是按字典序最小的回文。\n\n示例 2：\n\n输入： s = \"babab\"\n\n输出： \"abbba\"\n\n解释：\n\n通过重排 \"babab\" → \"abbba\"，可以得到按字典序最小的回文。\n\n示例 3：\n\n输入： s = \"daccad\"\n\n输出： \"acddca\"\n\n解释：\n\n通过重排 \"daccad\" → \"acddca\"，可以得到按字典序最小的回文。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 由小写英文字母组成。\n\t保证 s 是回文字符串。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 由小写英文字母组成。",
+    "保证 s 是回文字符串。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "1505",
+  "title_cn": "最多 K 次交换相邻数位后得到的最小整数",
+  "title_en": "Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+  "slug": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;num 和一个整数&nbsp;k 。其中，num 表示一个很大的整数，字符串中的每个字符依次对应整数上的各个 数位 。\n\n你可以交换这个整数相邻数位的数字 最多&nbsp;k&nbsp;次。\n\n请你返回你能得到的最小整数，并以字符串形式返回。\n\n&nbsp;\n\n示例 1：\n\n输入：num = \"4321\", k = 4\n输出：\"1342\"\n解释：4321 通过 4 次交换相邻数位得到最小整数的步骤如上图所示。\n\n示例 2：\n\n输入：num = \"100\", k = 1\n输出：\"010\"\n解释：输出可以包含前导 0 ，但输入保证不会有前导 0 。\n\n示例 3：\n\n输入：num = \"36789\", k = 1000\n输出：\"36789\"\n解释：不需要做任何交换。\n\n示例 4：\n\n输入：num = \"22\", k = 22\n输出：\"22\"\n\n示例 5：\n\n输入：num = \"9438957234785635408\", k = 23\n输出：\"0345989723478563548\"\n\n&nbsp;\n\n提示：\n\n\t1 <= num.length <= 30000\n\tnum&nbsp;只包含&nbsp;数字&nbsp;且不含有&nbsp;前导 0&nbsp;。\n\t1 <= k <= 10^9",
+  "constraints": [
+    "1 <= num.length <= 30000",
+    "num&nbsp;只包含&nbsp;数字&nbsp;且不含有&nbsp;前导 0&nbsp;。",
+    "1 <= k <= 10^9"
+  ]
+}

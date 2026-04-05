@@ -1,0 +1,12 @@
+{
+  "number": "1822",
+  "title_cn": "数组元素积的符号",
+  "title_en": "Sign of the Product of an Array",
+  "slug": "sign-of-the-product-of-an-array",
+  "difficulty": "Easy",
+  "description": "已知函数 signFunc(x) 将会根据 x 的正负返回特定值：\n\n\t如果 x 是正数，返回 1 。\n\t如果 x 是负数，返回 -1 。\n\t如果 x 是等于 0 ，返回 0 。\n\n给你一个整数数组 nums 。令 product 为数组 nums 中所有元素值的乘积。\n\n返回 signFunc(product) 。\n\n示例 1：\n\n输入：nums = [-1,-2,-3,-4,3,2,1]\n输出：1\n解释：数组中所有值的乘积是 144 ，且 signFunc(144) = 1\n\n示例 2：\n\n输入：nums = [1,5,0,2,-3]\n输出：0\n解释：数组中所有值的乘积是 0 ，且 signFunc(0) = 0\n\n示例 3：\n\n输入：nums = [-1,1,-1,1,-1]\n输出：-1\n解释：数组中所有值的乘积是 -1 ，且 signFunc(-1) = -1\n\n提示：\n\n\t1 \n\t-100",
+  "constraints": [
+    "1",
+    "-100"
+  ]
+}

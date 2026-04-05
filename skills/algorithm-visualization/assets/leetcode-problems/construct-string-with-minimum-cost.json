@@ -1,0 +1,16 @@
+{
+  "number": "3213",
+  "title_cn": "最小代价构造字符串",
+  "title_en": "Construct String with Minimum Cost",
+  "slug": "construct-string-with-minimum-cost",
+  "difficulty": "Hard",
+  "description": "给你一个字符串 target、一个字符串数组 words 以及一个整数数组 costs，这两个数组长度相同。\n\n设想一个空字符串 s。\n\n你可以执行以下操作任意次数（包括&nbsp;零&nbsp;次）：\n\n\t选择一个在范围&nbsp; [0, words.length - 1] 的索引 i。\n\t将 words[i] 追加到 s。\n\t该操作的成本是 costs[i]。\n\n返回使 s 等于 target 的 最小 成本。如果不可能，返回 -1。\n\n&nbsp;\n\n示例 1：\n\n输入： target = \"abcdef\", words = [\"abdef\",\"abc\",\"d\",\"def\",\"ef\"], costs = [100,1,1,10,5]\n\n输出： 7\n\n解释：\n\n\t选择索引 1 并以成本 1 将 \"abc\" 追加到 s，得到 s = \"abc\"。\n\t选择索引 2 并以成本 1 将 \"d\" 追加到 s，得到 s = \"abcd\"。\n\t选择索引 4 并以成本 5 将 \"ef\" 追加到 s，得到 s = \"abcdef\"。\n\n示例 2：\n\n输入： target = \"aaaa\", words = [\"z\",\"zz\",\"zzz\"], costs = [1,10,100]\n\n输出： -1\n\n解释：\n\n无法使 s 等于 target，因此返回 -1。\n\n&nbsp;\n\n提示：\n\n\t1 <= target.length <= 5 * 104\n\t1 <= words.length == costs.length <= 5 * 104\n\t1 <= words[i].length <= target.length\n\t所有 words[i].length 的总和小于或等于 5 * 104\n\ttarget 和 words[i] 仅由小写英文字母组成。\n\t1 <= costs[i] <= 104",
+  "constraints": [
+    "1 <= target.length <= 5 * 104",
+    "1 <= words.length == costs.length <= 5 * 104",
+    "1 <= words[i].length <= target.length",
+    "所有 words[i].length 的总和小于或等于 5 * 104",
+    "target 和 words[i] 仅由小写英文字母组成。",
+    "1 <= costs[i] <= 104"
+  ]
+}

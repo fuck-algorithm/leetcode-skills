@@ -1,0 +1,13 @@
+{
+  "number": "910",
+  "title_cn": "最小差值 II",
+  "title_en": "Smallest Range II",
+  "slug": "smallest-range-ii",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums，和一个整数&nbsp;k 。\n\n对于每个下标 i（0 <= i < nums.length），将 nums[i] 变成  nums[i] + k 或 nums[i] - k 。\n\nnums 的 分数 是 nums 中最大元素和最小元素的差值。\n\n在更改每个下标对应的值之后，返回 nums 的最小 分数 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1], k = 0\n输出：0\n解释：分数 = max(nums) - min(nums) = 1 - 1 = 0 。\n\n示例 2：\n\n输入：nums = [0,10], k = 2\n输出：6\n解释：将数组变为 [2, 8] 。分数 = max(nums) - min(nums) = 8 - 2 = 6 。\n\n示例 3：\n\n输入：nums = [1,3,6], k = 3\n输出：3\n解释：将数组变为 [4, 6, 3] 。分数 = max(nums) - min(nums) = 6 - 3 = 3 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 104\n\t0 <= nums[i] <= 104\n\t0 <= k <= 104",
+  "constraints": [
+    "1 <= nums.length <= 104",
+    "0 <= nums[i] <= 104",
+    "0 <= k <= 104"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1011",
+  "title_cn": "在 D 天内送达包裹的能力",
+  "title_en": "Capacity To Ship Packages Within D Days",
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "difficulty": "Medium",
+  "description": "传送带上的包裹必须在 days 天内从一个港口运送到另一个港口。\n\n传送带上的第 i&nbsp;个包裹的重量为&nbsp;weights[i]。每一天，我们都会按给出重量（weights）的顺序往传送带上装载包裹。我们装载的重量不会超过船的最大运载重量。\n\n返回能在 days 天内将传送带上的所有包裹送达的船的最低运载能力。\n\n&nbsp;\n\n示例 1：\n\n输入：weights = [1,2,3,4,5,6,7,8,9,10], days = 5\n输出：15\n解释：\n船舶最低载重 15 就能够在 5 天内送达所有包裹，如下所示：\n第 1 天：1, 2, 3, 4, 5\n第 2 天：6, 7\n第 3 天：8\n第 4 天：9\n第 5 天：10\n\n请注意，货物必须按照给定的顺序装运，因此使用载重能力为 14 的船舶并将包装分成 (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) 是不允许的。 \n\n示例 2：\n\n输入：weights = [3,2,2,4,1,4], days = 3\n输出：6\n解释：\n船舶最低载重 6 就能够在 3 天内送达所有包裹，如下所示：\n第 1 天：3, 2\n第 2 天：2, 4\n第 3 天：1, 4\n\n示例 3：\n\n输入：weights = [1,2,3,1,1], days = 4\n输出：3\n解释：\n第 1 天：1\n第 2 天：2\n第 3 天：3\n第 4 天：1, 1\n\n&nbsp;\n\n提示：\n\n\t1 <= days <= weights.length <= 5 * 104\n\t1 <= weights[i] <= 500",
+  "constraints": [
+    "1 <= days <= weights.length <= 5 * 104",
+    "1 <= weights[i] <= 500"
+  ]
+}

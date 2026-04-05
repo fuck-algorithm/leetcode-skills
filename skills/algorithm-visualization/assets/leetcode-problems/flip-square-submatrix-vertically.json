@@ -1,0 +1,17 @@
+{
+  "number": "3643",
+  "title_cn": "垂直翻转子矩阵",
+  "title_en": "Flip Square Submatrix Vertically",
+  "slug": "flip-square-submatrix-vertically",
+  "difficulty": "Easy",
+  "description": "给你一个 m x n 的整数矩阵 grid，以及三个整数 x、y 和 k。\n\n整数 x 和 y 表示一个&nbsp;正方形子矩阵&nbsp;的左上角下标，整数 k 表示该正方形子矩阵的边长。\n\n你的任务是垂直翻转子矩阵的行顺序。\n\n返回更新后的矩阵。\n\n&nbsp;\n\n示例 1：\n\n输入： grid = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]], x = 1, y = 0, k = 3\n\n输出： [[1,2,3,4],[13,14,15,8],[9,10,11,12],[5,6,7,16]]\n\n解释：\n\n上图展示了矩阵在变换前后的样子。\n\n示例 2：\n\n输入： grid = [[3,4,2,3],[2,3,4,2]], x = 0, y = 2, k = 2\n\n输出： [[3,4,4,2],[2,3,2,3]]\n\n解释：\n\n上图展示了矩阵在变换前后的样子。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 50\n\t1 <= grid[i][j] <= 100\n\t0 <= x < m\n\t0 <= y < n\n\t1 <= k <= min(m - x, n - y)",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 50",
+    "1 <= grid[i][j] <= 100",
+    "0 <= x < m",
+    "0 <= y < n",
+    "1 <= k <= min(m - x, n - y)"
+  ]
+}

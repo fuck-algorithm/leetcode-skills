@@ -1,0 +1,12 @@
+{
+  "number": "2266",
+  "title_cn": "统计打字方案数",
+  "title_en": "Count Number of Texts",
+  "slug": "count-number-of-texts",
+  "difficulty": "Medium",
+  "description": "Alice 在给 Bob 用手机打字。数字到字母的 对应&nbsp;如下图所示。\n\n为了 打出&nbsp;一个字母，Alice 需要 按&nbsp;对应字母 i&nbsp;次，i&nbsp;是该字母在这个按键上所处的位置。\n\n\t比方说，为了按出字母&nbsp;'s'&nbsp;，Alice 需要按&nbsp;'7'&nbsp;四次。类似的， Alice 需要按&nbsp;'5'&nbsp;两次得到字母&nbsp;&nbsp;'k'&nbsp;。\n\t注意，数字&nbsp;'0' 和&nbsp;'1'&nbsp;不映射到任何字母，所以&nbsp;Alice 不&nbsp;使用它们。\n\n但是，由于传输的错误，Bob 没有收到 Alice 打字的字母信息，反而收到了 按键的字符串信息&nbsp;。\n\n\t比方说，Alice 发出的信息为&nbsp;\"bob\"&nbsp;，Bob 将收到字符串&nbsp;\"2266622\"&nbsp;。\n\n给你一个字符串&nbsp;pressedKeys&nbsp;，表示 Bob 收到的字符串，请你返回 Alice 总共可能发出多少种文字信息&nbsp;。\n\n由于答案可能很大，将它对&nbsp;109 + 7&nbsp;取余 后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：pressedKeys = \"22233\"\n输出：8\n解释：\nAlice 可能发出的文字信息包括：\n\"aaadd\", \"abdd\", \"badd\", \"cdd\", \"aaae\", \"abe\", \"bae\" 和 \"ce\" 。\n由于总共有 8 种可能的信息，所以我们返回 8 。\n\n示例 2：\n\n输入：pressedKeys = \"222222222222222222222222222222222222\"\n输出：82876089\n解释：\n总共有 2082876103 种 Alice 可能发出的文字信息。\n由于我们需要将答案对 109 + 7 取余，所以我们返回 2082876103 % (109 + 7) = 82876089 。\n\n&nbsp;\n\n提示：\n\n\t1 <= pressedKeys.length <= 105\n\tpressedKeys 只包含数字&nbsp;'2'&nbsp;到&nbsp;'9'&nbsp;。",
+  "constraints": [
+    "1 <= pressedKeys.length <= 105",
+    "pressedKeys 只包含数字&nbsp;'2'&nbsp;到&nbsp;'9'&nbsp;。"
+  ]
+}

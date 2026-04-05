@@ -1,0 +1,12 @@
+{
+  "number": "1525",
+  "title_cn": "字符串的好分割数目",
+  "title_en": "Number of Good Ways to Split a String",
+  "slug": "number-of-good-ways-to-split-a-string",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;，一个分割被称为 「好分割」&nbsp;当它满足：将&nbsp;s&nbsp;分割成 2 个字符串&nbsp;p 和&nbsp;q&nbsp;，它们连接起来等于&nbsp;s&nbsp;且 p&nbsp;和 q&nbsp;中不同字符的数目相同。\n\n请你返回 s&nbsp;中好分割的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"aacaba\"\n输出：2\n解释：总共有 5 种分割字符串 \"aacaba\" 的方法，其中 2 种是好分割。\n(\"a\", \"acaba\") 左边字符串和右边字符串分别包含 1 个和 3 个不同的字符。\n(\"aa\", \"caba\") 左边字符串和右边字符串分别包含 1 个和 3 个不同的字符。\n(\"aac\", \"aba\") 左边字符串和右边字符串分别包含 2 个和 2 个不同的字符。这是一个好分割。\n(\"aaca\", \"ba\") 左边字符串和右边字符串分别包含 2 个和 2 个不同的字符。这是一个好分割。\n(\"aacab\", \"a\") 左边字符串和右边字符串分别包含 3 个和 1 个不同的字符。\n\n示例 2：\n\n输入：s = \"abcd\"\n输出：1\n解释：好分割为将字符串分割成 (\"ab\", \"cd\") 。\n\n示例 3：\n\n输入：s = \"aaaaa\"\n输出：4\n解释：所有分割都是好分割。\n\n示例 4：\n\n输入：s = \"acbadbaada\"\n输出：2\n\n&nbsp;\n\n提示：\n\n\ts&nbsp;只包含小写英文字母。\n\t1 <= s.length <= 10^5",
+  "constraints": [
+    "s&nbsp;只包含小写英文字母。",
+    "1 <= s.length <= 10^5"
+  ]
+}

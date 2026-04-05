@@ -1,0 +1,11 @@
+{
+  "number": "504",
+  "title_cn": "七进制数",
+  "title_en": "Base 7",
+  "slug": "base-7",
+  "difficulty": "Easy",
+  "description": "给定一个整数 num，将其转化为 7 进制，并以字符串形式输出。\n\n&nbsp;\n\n示例 1:\n\n输入: num = 100\n输出: \"202\"\n\n示例 2:\n\n输入: num = -7\n输出: \"-10\"\n\n&nbsp;\n\n提示：\n\n\t-107&nbsp;<= num <= 107",
+  "constraints": [
+    "-107&nbsp;<= num <= 107"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "面试题 05.02",
+  "title_cn": "二进制数转字符串",
+  "title_en": "Binary Number to String LCCI",
+  "slug": "binary-number-to-string-lcci",
+  "difficulty": "Medium",
+  "description": "二进制数转字符串。给定一个介于 0 和 1 之间的实数（如 0.72），类型为 double，打印它的二进制表达式。如果该数字无法精确地用 32 位以内的二进制表示，则打印“ERROR”。\n\n示例 1：\n\n输入：0.625\n输出：\"0.101\"\n\n示例 2：\n\n输入：0.1\n输出：\"ERROR\"\n提示：0.1 无法被二进制准确表示\n\n&nbsp;\n\n提示：\n\n\t32位包括输出中的 \"0.\" 这两位。\n\t题目保证输入用例的小数位数最多只有 6 位",
+  "constraints": [
+    "32位包括输出中的 \"0.\" 这两位。",
+    "题目保证输入用例的小数位数最多只有 6 位"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "1090",
+  "title_cn": "受标签影响的最大值",
+  "title_en": "Largest Values From Labels",
+  "slug": "largest-values-from-labels",
+  "difficulty": "Medium",
+  "description": "以两个整数数组 &nbsp;values&nbsp;和 labels&nbsp;给定&nbsp;n&nbsp;个项的值和标签，并且给出两个整数&nbsp;numWanted&nbsp;和 useLimit 。\n\n你的任务是从这些项中找到一个值的和 最大 的子集使得：\n\n\t项的数量 最多 为&nbsp;numWanted。\n\t相同标签的项的数量&nbsp;最多 为&nbsp;useLimit。\n\n返回最大的和。\n\n&nbsp;\n\n示例 1：\n\n输入：values = [5,4,3,2,1], labels = [1,1,2,2,3], numWanted = 3, useLimit = 1\n\n输出：9\n\n解释：\n\n选择的子集是第一个、第三个和第五个项，其值之和为 5 + 3 + 1。\n\n示例 2：\n\n输入：values = [5,4,3,2,1], labels = [1,3,3,3,2], numWanted = 3, useLimit = 2\n\n输出：12\n\n解释：\n\n选择的子集是第一个、第二个和第三个项，其值之和为 5 + 4 + 3。\n\n示例 3：\n\n输入：values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 1\n\n输出：16\n\n解释：\n\n选择的子集是第一个和第四个项，其值之和为 9 + 7。\n\n&nbsp;\n\n提示：\n\n\tn == values.length == labels.length\n\t1 <= n <= 2 * 104\n\t0 <= values[i], labels[i] <= 2 * 104\n\t1 <= numWanted, useLimit <= n",
+  "constraints": [
+    "n == values.length == labels.length",
+    "1 <= n <= 2 * 104",
+    "0 <= values[i], labels[i] <= 2 * 104",
+    "1 <= numWanted, useLimit <= n"
+  ]
+}

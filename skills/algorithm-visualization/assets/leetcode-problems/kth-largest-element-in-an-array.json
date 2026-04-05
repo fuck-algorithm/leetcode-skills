@@ -1,0 +1,12 @@
+{
+  "number": "215",
+  "title_cn": "数组中的第K个最大元素",
+  "title_en": "Kth Largest Element in an Array",
+  "slug": "kth-largest-element-in-an-array",
+  "difficulty": "Medium",
+  "description": "给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。\n\n请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。\n\n你必须设计并实现时间复杂度为 O(n) 的算法解决此问题。\n\n&nbsp;\n\n示例 1:\n\n输入: [3,2,1,5,6,4], k = 2\n输出: 5\n\n示例&nbsp;2:\n\n输入: [3,2,3,1,2,4,5,5,6], k = 4\n输出: 4\n\n&nbsp;\n\n提示： \n\n\t1 <= k <= nums.length <= 105\n\t-104&nbsp;<= nums[i] <= 104",
+  "constraints": [
+    "1 <= k <= nums.length <= 105",
+    "-104&nbsp;<= nums[i] <= 104"
+  ]
+}

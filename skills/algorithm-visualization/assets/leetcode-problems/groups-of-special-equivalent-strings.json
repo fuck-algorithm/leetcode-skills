@@ -1,0 +1,14 @@
+{
+  "number": "893",
+  "title_cn": "特殊等价字符串组",
+  "title_en": "Groups of Special-Equivalent Strings",
+  "slug": "groups-of-special-equivalent-strings",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 words。\n\n一步操作中，你可以交换字符串 words[i] 的任意两个偶数下标对应的字符或任意两个奇数下标对应的字符。\n\n对两个字符串&nbsp;words[i] 和 words[j] 而言，如果经过任意次数的操作，words[i] == words[j] ，那么这两个字符串是 特殊等价 的。\n\n\t例如，words[i] = \"zzxy\" 和 words[j] = \"xyzz\" 是一对 特殊等价 字符串，因为可以按 \"zzxy\" -> \"xzzy\" -> \"xyzz\" 的操作路径使&nbsp;words[i] == words[j] 。\n\n现在规定，words 的 一组特殊等价字符串 就是 words 的一个同时满足下述条件的非空子集：\n\n\t该组中的每一对字符串都是 特殊等价 的\n\t该组字符串已经涵盖了该类别中的所有特殊等价字符串，容量达到理论上的最大值（也就是说，如果一个字符串不在该组中，那么这个字符串就 不会 与该组内任何字符串特殊等价）\n\n返回 words 中 特殊等价字符串组 的数量。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"abcd\",\"cdab\",\"cbad\",\"xyzz\",\"zzxy\",\"zzyx\"]\n输出：3\n解释：\n其中一组为 [\"abcd\", \"cdab\", \"cbad\"]，因为它们是成对的特殊等价字符串，且没有其他字符串与这些字符串特殊等价。\n另外两组分别是 [\"xyzz\", \"zzxy\"] 和 [\"zzyx\"]。特别需要注意的是，\"zzxy\" 不与 \"zzyx\" 特殊等价。\n\n示例 2：\n\n输入：words = [\"abc\",\"acb\",\"bac\",\"bca\",\"cab\",\"cba\"]\n输出：3\n解释：3 组 [\"abc\",\"cba\"]，[\"acb\",\"bca\"]，[\"bac\",\"cab\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 1000\n\t1 <= words[i].length <= 20\n\t所有 words[i]&nbsp;都只由小写字母组成。\n\t所有 words[i]&nbsp;都具有相同的长度。",
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length <= 20",
+    "所有 words[i]&nbsp;都只由小写字母组成。",
+    "所有 words[i]&nbsp;都具有相同的长度。"
+  ]
+}

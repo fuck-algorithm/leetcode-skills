@@ -1,0 +1,16 @@
+{
+  "number": "1765",
+  "title_cn": "地图中的最高点",
+  "title_en": "Map of Highest Peak",
+  "slug": "map-of-highest-peak",
+  "difficulty": "Medium",
+  "description": "给你一个大小为&nbsp;m x n&nbsp;的整数矩阵&nbsp;isWater&nbsp;，它代表了一个由 陆地&nbsp;和 水域&nbsp;单元格组成的地图。\n\n\t如果&nbsp;isWater[i][j] == 0&nbsp;，格子&nbsp;(i, j)&nbsp;是一个 陆地&nbsp;格子。\n\t如果&nbsp;isWater[i][j] == 1&nbsp;，格子&nbsp;(i, j)&nbsp;是一个 水域&nbsp;格子。\n\n你需要按照如下规则给每个单元格安排高度：\n\n\t每个格子的高度都必须是非负的。\n\t如果一个格子是 水域&nbsp;，那么它的高度必须为 0&nbsp;。\n\t任意相邻的格子高度差 至多&nbsp;为 1&nbsp;。当两个格子在正东、南、西、北方向上相互紧挨着，就称它们为相邻的格子。（也就是说它们有一条公共边）\n\n找到一种安排高度的方案，使得矩阵中的最高高度值&nbsp;最大&nbsp;。\n\n请你返回一个大小为&nbsp;m x n&nbsp;的整数矩阵 height&nbsp;，其中 height[i][j]&nbsp;是格子 (i, j)&nbsp;的高度。如果有多种解法，请返回&nbsp;任意一个&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：isWater = [[0,1],[0,0]]\n输出：[[1,0],[2,1]]\n解释：上图展示了给各个格子安排的高度。\n蓝色格子是水域格，绿色格子是陆地格。\n\n示例 2：\n\n输入：isWater = [[0,0,1],[1,0,0],[0,0,0]]\n输出：[[1,1,0],[0,1,1],[1,2,2]]\n解释：所有安排方案中，最高可行高度为 2 。\n任意安排方案中，只要最高高度为 2 且符合上述规则的，都为可行方案。\n\n&nbsp;\n\n提示：\n\n\tm == isWater.length\n\tn == isWater[i].length\n\t1 <= m, n <= 1000\n\tisWater[i][j]&nbsp;要么是&nbsp;0&nbsp;，要么是&nbsp;1&nbsp;。\n\t至少有 1&nbsp;个水域格子。\n\n注意：本题与 542 题相同。",
+  "constraints": [
+    "m == isWater.length",
+    "n == isWater[i].length",
+    "1 <= m, n <= 1000",
+    "isWater[i][j]&nbsp;要么是&nbsp;0&nbsp;，要么是&nbsp;1&nbsp;。",
+    "至少有 1&nbsp;个水域格子。",
+    "注意：本题与 542 题相同。"
+  ]
+}

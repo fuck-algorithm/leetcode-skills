@@ -1,0 +1,12 @@
+{
+  "number": "LCR 175",
+  "title_cn": "计算二叉树的深度",
+  "title_en": "计算二叉树的深度",
+  "slug": "er-cha-shu-de-shen-du-lcof",
+  "difficulty": "Easy",
+  "description": "某公司架构以二叉树形式记录，请返回该公司的层级数。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [1, 2, 2, 3, null, null, 5, 4, null, null, 4]\n输出: 4\n解释: 上面示例中的二叉树的最大深度是 4，沿着路径 1 -> 2 -> 3 -> 4 或 1 -> 2 -> 5 -> 4 到达叶节点的最长路径上有 4 个节点。\n\n&nbsp;\n\n提示：\n\n\t节点总数 <= 10000\n\n注意：本题与主站 104&nbsp;题相同：https://leetcode.cn/problems/maximum-depth-of-binary-tree/\n\n&nbsp;",
+  "constraints": [
+    "节点总数 <= 10000",
+    "注意：本题与主站 104&nbsp;题相同：https://leetcode.cn/problems/maximum-depth-of-binary-tree/"
+  ]
+}

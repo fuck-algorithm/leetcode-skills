@@ -1,0 +1,13 @@
+{
+  "number": "870",
+  "title_cn": "优势洗牌",
+  "title_en": "Advantage Shuffle",
+  "slug": "advantage-shuffle",
+  "difficulty": "Medium",
+  "description": "给定两个长度相等的数组&nbsp;nums1&nbsp;和&nbsp;nums2，nums1&nbsp;相对于 nums2 的优势可以用满足&nbsp;nums1[i] > nums2[i]&nbsp;的索引 i&nbsp;的数目来描述。\n\n返回 nums1 的&nbsp;任意&nbsp;排列，使其相对于 nums2&nbsp;的优势最大化。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [2,7,11,15], nums2 = [1,10,4,11]\n输出：[2,11,7,15]\n\n示例 2：\n\n输入：nums1 = [12,24,8,32], nums2 = [13,25,32,11]\n输出：[24,32,8,12]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums1.length <= 105\n\tnums2.length == nums1.length\n\t0 <= nums1[i], nums2[i] <= 109",
+  "constraints": [
+    "1 <= nums1.length <= 105",
+    "nums2.length == nums1.length",
+    "0 <= nums1[i], nums2[i] <= 109"
+  ]
+}

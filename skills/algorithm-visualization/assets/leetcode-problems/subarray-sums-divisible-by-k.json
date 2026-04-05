@@ -1,0 +1,13 @@
+{
+  "number": "974",
+  "title_cn": "和可被 K 整除的子数组",
+  "title_en": "Subarray Sums Divisible by K",
+  "slug": "subarray-sums-divisible-by-k",
+  "difficulty": "Medium",
+  "description": "给定一个整数数组 nums&nbsp;和一个整数 k ，返回其中元素之和可被 k&nbsp;整除的非空&nbsp;子数组 的数目。\n\n子数组 是数组中&nbsp;连续&nbsp;的部分。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,5,0,-2,-3,1], k = 5\n输出：7\n解释：\n有 7 个子数组满足其元素之和可被 k = 5 整除：\n[4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]\n\n示例 2:\n\n输入: nums = [5], k = 9\n输出: 0\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 3 * 104\n\t-104&nbsp;<= nums[i] <= 104\n\t2 <= k <= 104",
+  "constraints": [
+    "1 <= nums.length <= 3 * 104",
+    "-104&nbsp;<= nums[i] <= 104",
+    "2 <= k <= 104"
+  ]
+}

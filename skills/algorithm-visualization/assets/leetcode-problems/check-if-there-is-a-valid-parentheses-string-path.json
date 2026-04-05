@@ -1,0 +1,14 @@
+{
+  "number": "2267",
+  "title_cn": "检查是否有合法括号字符串路径",
+  "title_en": " Check if There Is a Valid Parentheses String Path",
+  "slug": "check-if-there-is-a-valid-parentheses-string-path",
+  "difficulty": "Hard",
+  "description": "一个括号字符串是一个 非空&nbsp;且只包含&nbsp;'('&nbsp;和&nbsp;')'&nbsp;的字符串。如果下面&nbsp;任意&nbsp;条件为&nbsp;真&nbsp;，那么这个括号字符串就是&nbsp;合法的&nbsp;。\n\n\t字符串是&nbsp;()&nbsp;。\n\t字符串可以表示为&nbsp;AB（A&nbsp;连接&nbsp;B），A 和&nbsp;B&nbsp;都是合法括号序列。\n\t字符串可以表示为&nbsp;(A)&nbsp;，其中&nbsp;A&nbsp;是合法括号序列。\n\n给你一个&nbsp;m x n&nbsp;的括号网格图矩阵&nbsp;grid&nbsp;。网格图中一个&nbsp;合法括号路径&nbsp;是满足以下所有条件的一条路径：\n\n\t路径开始于左上角格子&nbsp;(0, 0)&nbsp;。\n\t路径结束于右下角格子&nbsp;(m - 1, n - 1)&nbsp;。\n\t路径每次只会向 下&nbsp;或者向 右&nbsp;移动。\n\t路径经过的格子组成的括号字符串是&nbsp;合法&nbsp;的。\n\n如果网格图中存在一条 合法括号路径&nbsp;，请返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]\n输出：true\n解释：上图展示了两条路径，它们都是合法括号字符串路径。\n第一条路径得到的合法字符串是 \"()(())\" 。\n第二条路径得到的合法字符串是 \"((()))\" 。\n注意可能有其他的合法括号字符串路径。\n\n示例 2：\n\n输入：grid = [[\")\",\")\"],[\"(\",\"(\"]]\n输出：false\n解释：两条可行路径分别得到 \"))(\" 和 \")((\" 。由于它们都不是合法括号字符串，我们返回 false 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 100\n\tgrid[i][j]&nbsp;要么是&nbsp;'('&nbsp;，要么是&nbsp;')' 。",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 100",
+    "grid[i][j]&nbsp;要么是&nbsp;'('&nbsp;，要么是&nbsp;')' 。"
+  ]
+}

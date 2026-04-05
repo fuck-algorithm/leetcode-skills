@@ -1,0 +1,14 @@
+{
+  "number": "284",
+  "title_cn": "窥视迭代器",
+  "title_en": "Peeking Iterator",
+  "slug": "peeking-iterator",
+  "difficulty": "Medium",
+  "description": "请你在设计一个迭代器，在集成现有迭代器拥有的&nbsp;hasNext 和 next 操作的基础上，还额外支持 peek 操作。\n\n实现 PeekingIterator 类：\n\n\tPeekingIterator(Iterator<int> nums) 使用指定整数迭代器&nbsp;nums 初始化迭代器。\n\tint next() 返回数组中的下一个元素，并将指针移动到下个元素处。\n\tbool hasNext() 如果数组中存在下一个元素，返回 true ；否则，返回 false 。\n\tint peek() 返回数组中的下一个元素，但 不 移动指针。\n\n注意：每种语言可能有不同的构造函数和迭代器&nbsp;Iterator，但均支持 int next() 和 boolean hasNext() 函数。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"PeekingIterator\", \"next\", \"peek\", \"next\", \"next\", \"hasNext\"]\n[[[1, 2, 3]], [], [], [], [], []]\n输出：\n[null, 1, 2, 2, 3, false]\n\n解释：\nPeekingIterator peekingIterator = new PeekingIterator([1, 2, 3]); // [1,2,3]\npeekingIterator.next();    // 返回 1 ，指针移动到下一个元素 [1,2,3]\npeekingIterator.peek();    // 返回 2 ，指针未发生移动 [1,2,3]\npeekingIterator.next();    // 返回 2 ，指针移动到下一个元素 [1,2,3]\npeekingIterator.next();    // 返回 3 ，指针移动到下一个元素 [1,2,3]\npeekingIterator.hasNext(); // 返回 False\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 1000\n\t1 <= nums[i] <= 1000\n\t对 next 和 peek 的调用均有效\n\tnext、hasNext 和 peek 最多调用&nbsp; 1000 次\n\n&nbsp;\n\n进阶：你将如何拓展你的设计？使之变得通用化，从而适应所有的类型，而不只是整数型？",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000",
+    "对 next 和 peek 的调用均有效",
+    "next、hasNext 和 peek 最多调用&nbsp; 1000 次"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "number": "619",
+  "title_cn": "只出现一次的最大数字",
+  "title_en": "Biggest Single Number",
+  "slug": "biggest-single-number",
+  "difficulty": "Easy",
+  "description": "MyNumbers 表：\n\n+-------------+------+\n| Column Name | Type |\n+-------------+------+\n| num         | int  |\n+-------------+------+\n该表可能包含重复项（换句话说，在SQL中，该表没有主键）。\n这张表的每一行都含有一个整数。\n\n&nbsp;\n\n单一数字 是在 MyNumbers 表中只出现一次的数字。\n\n找出最大的 单一数字 。如果不存在 单一数字 ，则返回&nbsp;null 。\n\n查询结果如下例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\nMyNumbers 表：\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 3   |\n| 3   |\n| 1   |\n| 4   |\n| 5   |\n| 6   |\n+-----+\n输出：\n+-----+\n| num |\n+-----+\n| 6   |\n+-----+\n解释：单一数字有 1、4、5 和 6 。\n6 是最大的单一数字，返回 6 。\n\n示例 2：\n\n输入：\nMyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 7   |\n| 7   |\n| 3   |\n| 3   |\n| 3   |\n+-----+\n输出：\n+------+\n| num  |\n+------+\n| null |\n+------+\n解释：输入的表中不存在单一数字，所以返回 null 。\n\n&nbsp;",
+  "constraints": []
+}

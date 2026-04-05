@@ -1,0 +1,13 @@
+{
+  "number": "1004",
+  "title_cn": "最大连续1的个数 III",
+  "title_en": "Max Consecutive Ones III",
+  "slug": "max-consecutive-ones-iii",
+  "difficulty": "Medium",
+  "description": "给定一个二进制数组&nbsp;nums&nbsp;和一个整数 k，假设最多可以翻转 k 个 0 ，则返回执行操作后 数组中连续 1 的最大个数 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,1,0,0,0,1,1,1,1,0], K = 2\n输出：6\n解释：[1,1,1,0,0,1,1,1,1,1,1]\n粗体数字从 0 翻转到 1，最长的子数组长度为 6。\n\n示例 2：\n\n输入：nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3\n输出：10\n解释：[0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]\n粗体数字从 0 翻转到 1，最长的子数组长度为 10。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\tnums[i]&nbsp;不是&nbsp;0&nbsp;就是&nbsp;1\n\t0 <= k <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "nums[i]&nbsp;不是&nbsp;0&nbsp;就是&nbsp;1",
+    "0 <= k <= nums.length"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "number": "2661",
+  "title_cn": "找出叠涂元素",
+  "title_en": "First Completely Painted Row or Column",
+  "slug": "first-completely-painted-row-or-column",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的整数数组 arr 和一个 m x n 的整数 矩阵 mat 。arr 和 mat 都包含范围 [1，m * n] 内的 所有 整数。\n\n从下标 0 开始遍历 arr 中的每个下标 i ，并将包含整数 arr[i] 的 mat 单元格涂色。\n\n请你找出 arr 中第一个使得&nbsp;mat 的某一行或某一列都被涂色的元素，并返回其下标 i 。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,3,4,2], mat = [[1,4],[2,3]]\n输出：2\n解释：遍历如上图所示，arr[2] 在矩阵中的第一行或第二列上都被涂色。\n\n示例 2：\n\n输入：arr = [2,8,7,4,1,3,5,6,9], mat = [[3,2,5],[1,4,6],[8,7,9]]\n输出：3\n解释：遍历如上图所示，arr[3] 在矩阵中的第二列上都被涂色。\n\n&nbsp;\n\n提示：\n\n\tm == mat.length\n\tn = mat[i].length\n\tarr.length == m * n\n\t1 <= m, n <= 105\n\t1 <= m * n <= 105\n\t1 <= arr[i], mat[r][c] <= m * n\n\tarr 中的所有整数 互不相同\n\tmat 中的所有整数 互不相同",
+  "constraints": [
+    "m == mat.length",
+    "n = mat[i].length",
+    "arr.length == m * n",
+    "1 <= m, n <= 105",
+    "1 <= m * n <= 105",
+    "1 <= arr[i], mat[r][c] <= m * n",
+    "arr 中的所有整数 互不相同",
+    "mat 中的所有整数 互不相同"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "3003",
+  "title_cn": "执行操作后的最大分割数量",
+  "title_en": "Maximize the Number of Partitions After Operations",
+  "slug": "maximize-the-number-of-partitions-after-operations",
+  "difficulty": "Hard",
+  "description": "给定一个字符串&nbsp;s&nbsp;和一个整数&nbsp;k。\n\n首先，你最多可以更改 s 中的 一处 下标对应字符为另一个小写英文字母。\n\n之后，执行以下分割操作，直到&nbsp;s&nbsp;变为&nbsp;空串：\n\n\t选择&nbsp;s&nbsp;的最长&nbsp;前缀，该前缀最多包含&nbsp;k&nbsp;个&nbsp;不同&nbsp;字符。\n\t从&nbsp;s 中&nbsp;删除&nbsp;这个前缀，并将分割数量加一。如果有剩余字符，它们在&nbsp;s&nbsp;中保持原来的顺序。\n\n返回一个整数，表示在 最多 改变一处下标对应字符的情况下，经过操作后得到的最大分割数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"accca\", k = 2\n\n输出：3\n\n解释：\n\n最好的方式是把&nbsp;s[2]&nbsp;变为除了 a 和 c 之外的东西，比如&nbsp;b。然后它变成了&nbsp;\"acbca\"。\n\n然后我们执行以下操作：\n\n\t最多包含 2 个不同字符的最长前缀是 \"ac\"，我们删除它然后&nbsp;s 变为&nbsp;\"bca\"。\n\t现在最多包含 2 个不同字符的最长前缀是&nbsp;\"bc\"，所以我们删除它然后&nbsp;s 变为&nbsp;\"a\"。\n\t最后，我们删除&nbsp;\"a\"&nbsp;并且&nbsp;s&nbsp;变成空串，所以该过程结束。\n\n进行操作时，字符串被分成 3 个部分，所以答案是 3。\n\n示例 2：\n\n输入：s = \"aabaab\", k = 3\n\n输出：1\n\n解释：\n\n一开始&nbsp;s&nbsp;包含 2 个不同的字符，所以无论我们改变哪个，&nbsp;它最多包含 3 个不同字符，因此最多包含 3 个不同字符的最长前缀始终是所有字符，因此答案是 1。\n\n示例 3：\n\n输入：s = \"xxyz\", k = 1\n\n输出：4\n\n解释：\n\n最好的方式是将&nbsp;s[0]&nbsp;或&nbsp;s[1]&nbsp;变为&nbsp;s&nbsp;中字符以外的东西，例如将&nbsp;s[0]&nbsp;变为&nbsp;w。\n\n然后&nbsp;s&nbsp;变为&nbsp;\"wxyz\"，包含 4 个不同的字符，所以当&nbsp;k&nbsp;为 1，它将分为 4 个部分。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts&nbsp;只包含小写英文字母。\n\t1 <= k <= 26",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s&nbsp;只包含小写英文字母。",
+    "1 <= k <= 26"
+  ]
+}

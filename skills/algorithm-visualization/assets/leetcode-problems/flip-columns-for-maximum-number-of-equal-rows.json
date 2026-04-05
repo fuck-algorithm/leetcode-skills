@@ -1,0 +1,14 @@
+{
+  "number": "1072",
+  "title_cn": "按列翻转得到最大值等行数",
+  "title_en": "Flip Columns For Maximum Number of Equal Rows",
+  "slug": "flip-columns-for-maximum-number-of-equal-rows",
+  "difficulty": "Medium",
+  "description": "给定&nbsp;m x n&nbsp;矩阵&nbsp;matrix&nbsp;。\n\n你可以从中选出任意数量的列并翻转其上的&nbsp;每个&nbsp;单元格。（即翻转后，单元格的值从 0 变成 1，或者从 1 变为 0 。）\n\n返回 经过一些翻转后，行内所有值都相等的最大行数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：matrix = [[0,1],[1,1]]\n输出：1\n解释：不进行翻转，有 1 行所有值都相等。\n\n示例 2：\n\n输入：matrix = [[0,1],[1,0]]\n输出：2\n解释：翻转第一列的值之后，这两行都由相等的值组成。\n\n示例 3：\n\n输入：matrix = [[0,0,0],[0,0,1],[1,1,0]]\n输出：2\n解释：翻转前两列的值之后，后两行由相等的值组成。\n\n&nbsp;\n\n提示：\n\n\tm == matrix.length\n\tn == matrix[i].length\n\t1 <= m, n <= 300\n\tmatrix[i][j] == 0 或&nbsp;1",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m, n <= 300",
+    "matrix[i][j] == 0 或&nbsp;1"
+  ]
+}

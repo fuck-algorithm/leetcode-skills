@@ -1,0 +1,13 @@
+{
+  "number": "3718",
+  "title_cn": "缺失的最小倍数",
+  "title_en": "Smallest Missing Multiple of K",
+  "slug": "smallest-missing-multiple-of-k",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums 和一个整数 k，请返回从 nums 中缺失的、最小的正整数 k 的倍数。\n\n倍数 指能被 k 整除的任意正整数。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [8,2,3,4,6], k = 2\n\n输出： 10\n\n解释：\n\n当 k = 2 时，其倍数为 2、4、6、8、10、12……，其中在 nums 中缺失的最小倍数是 10。\n\n示例 2：\n\n输入： nums = [1,4,7,10,15], k = 5\n\n输出： 5\n\n解释：\n\n当 k = 5 时，其倍数为 5、10、15、20……，其中在 nums 中缺失的最小倍数是 5。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100\n\t1 <= k <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100",
+    "1 <= k <= 100"
+  ]
+}

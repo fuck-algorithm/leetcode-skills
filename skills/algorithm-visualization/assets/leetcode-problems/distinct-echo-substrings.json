@@ -1,0 +1,12 @@
+{
+  "number": "1316",
+  "title_cn": "不同的循环子字符串",
+  "title_en": "Distinct Echo Substrings",
+  "slug": "distinct-echo-substrings",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;text ，请你返回满足下述条件的&nbsp;不同 非空子字符串的数目：\n\n\t可以写成某个字符串与其自身相连接的形式（即，可以写为 a&nbsp;+ a，其中 a 是某个字符串）。\n\n例如，abcabc&nbsp;就是&nbsp;abc&nbsp;和它自身连接形成的。\n\n&nbsp;\n\n示例 1：\n\n输入：text = \"abcabcabc\"\n输出：3\n解释：3 个子字符串分别为 \"abcabc\"，\"bcabca\" 和 \"cabcab\" 。\n\n示例 2：\n\n输入：text = \"leetcodeleetcode\"\n输出：2\n解释：2 个子字符串为 \"ee\" 和 \"leetcodeleetcode\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= text.length <= 2000\n\ttext&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= text.length <= 2000",
+    "text&nbsp;只包含小写英文字母。"
+  ]
+}

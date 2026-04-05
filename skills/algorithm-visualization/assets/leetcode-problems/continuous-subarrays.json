@@ -1,0 +1,12 @@
+{
+  "number": "2762",
+  "title_cn": "不间断子数组",
+  "title_en": "Continuous Subarrays",
+  "slug": "continuous-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;。nums&nbsp;的一个子数组如果满足以下条件，那么它是 不间断 的：\n\n\ti，i + 1&nbsp;，...，j &nbsp;表示子数组中的下标。对于所有满足&nbsp;i <= i1, i2 <= j&nbsp;的下标对，都有 0 <= |nums[i1] - nums[i2]| <= 2&nbsp;。\n\n请你返回 不间断 子数组的总数目。\n\n子数组是一个数组中一段连续 非空&nbsp;的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,4,2,4]\n输出：8\n解释：\n大小为 1 的不间断子数组：[5], [4], [2], [4] 。\n大小为 2 的不间断子数组：[5,4], [4,2], [2,4] 。\n大小为 3 的不间断子数组：[4,2,4] 。\n没有大小为 4 的不间断子数组。\n不间断子数组的总数目为 4 + 3 + 1 = 8 。\n除了这些以外，没有别的不间断子数组。\n\n示例 2：\n\n输入：nums = [1,2,3]\n输出：6\n解释：\n大小为 1 的不间断子数组：[1], [2], [3] 。\n大小为 2 的不间断子数组：[1,2], [2,3] 。\n大小为 3 的不间断子数组：[1,2,3] 。\n不间断子数组的总数目为 3 + 2 + 1 = 6 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

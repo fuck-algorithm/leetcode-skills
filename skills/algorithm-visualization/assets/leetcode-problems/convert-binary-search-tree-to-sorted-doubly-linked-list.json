@@ -1,0 +1,9 @@
+{
+  "number": "426",
+  "title_cn": "将二叉搜索树转化为排序的双向链表",
+  "title_en": "Convert Binary Search Tree to Sorted Doubly Linked List",
+  "slug": "convert-binary-search-tree-to-sorted-doubly-linked-list",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

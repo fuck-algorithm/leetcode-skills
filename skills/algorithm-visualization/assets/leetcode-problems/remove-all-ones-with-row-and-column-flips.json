@@ -1,0 +1,9 @@
+{
+  "number": "2128",
+  "title_cn": "通过翻转行或列来去除所有的 1",
+  "title_en": "Remove All Ones With Row and Column Flips",
+  "slug": "remove-all-ones-with-row-and-column-flips",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

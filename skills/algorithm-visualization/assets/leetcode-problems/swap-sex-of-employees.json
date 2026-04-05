@@ -1,0 +1,9 @@
+{
+  "number": "627",
+  "title_cn": "变更性别",
+  "title_en": "Swap Sex of Employees",
+  "slug": "swap-sex-of-employees",
+  "difficulty": "Easy",
+  "description": "Salary 表：\n\n+-------------+----------+\n| Column Name | Type     |\n+-------------+----------+\n| id          | int      |\n| name        | varchar  |\n| sex         | ENUM     |\n| salary      | int      |\n+-------------+----------+\nid 是这个表的主键（具有唯一值的列）。\nsex 这一列的值是 ENUM 类型，只能从 ('m', 'f') 中取。\n本表包含公司雇员的信息。\n\n&nbsp;\n\n请你编写一个解决方案来交换所有的 'f' 和 'm' （即，将所有 'f' 变为 'm' ，反之亦然），仅使用 单个 update 语句 ，且不产生中间临时表。\n\n注意，你必须仅使用一条 update 语句，且 不能 使用 select 语句。\n\n结果如下例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\nSalary 表：\n+----+------+-----+--------+\n| id | name | sex | salary |\n+----+------+-----+--------+\n| 1  | A    | m   | 2500   |\n| 2  | B    | f   | 1500   |\n| 3  | C    | m   | 5500   |\n| 4  | D    | f   | 500    |\n+----+------+-----+--------+\n输出：\n+----+------+-----+--------+\n| id | name | sex | salary |\n+----+------+-----+--------+\n| 1  | A    | f   | 2500   |\n| 2  | B    | m   | 1500   |\n| 3  | C    | f   | 5500   |\n| 4  | D    | m   | 500    |\n+----+------+-----+--------+\n解释：\n(1, A) 和 (3, C) 从 'm' 变为 'f' 。\n(2, B) 和 (4, D) 从 'f' 变为 'm' 。",
+  "constraints": []
+}

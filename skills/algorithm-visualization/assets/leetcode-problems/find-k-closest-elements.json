@@ -1,0 +1,14 @@
+{
+  "number": "658",
+  "title_cn": "找到 K 个最接近的元素",
+  "title_en": "Find K Closest Elements",
+  "slug": "find-k-closest-elements",
+  "difficulty": "Medium",
+  "description": "给定一个 排序好 的数组&nbsp;arr ，两个整数 k 和 x ，从数组中找到最靠近 x（两数之差最小）的 k 个数。返回的结果必须要是按升序排好的。\n\n整数 a 比整数 b 更接近 x 需要满足：\n\n\t|a - x| < |b - x| 或者\n\t|a - x| == |b - x| 且 a < b\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,2,3,4,5], k = 4, x = 3\n输出：[1,2,3,4]\n\n示例 2：\n\n输入：arr = [1,1,2,3,4,5], k = 4, x = -1\n输出：[1,1,2,3]\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= arr.length\n\t1 <= arr.length&nbsp;<= 104\n\tarr&nbsp;按 升序 排列\n\t-104&nbsp;<= arr[i], x <= 104",
+  "constraints": [
+    "1 <= k <= arr.length",
+    "1 <= arr.length&nbsp;<= 104",
+    "arr&nbsp;按 升序 排列",
+    "-104&nbsp;<= arr[i], x <= 104"
+  ]
+}

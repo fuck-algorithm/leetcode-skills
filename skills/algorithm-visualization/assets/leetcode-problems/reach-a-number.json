@@ -1,0 +1,12 @@
+{
+  "number": "754",
+  "title_cn": "到达终点数字",
+  "title_en": "Reach a Number",
+  "slug": "reach-a-number",
+  "difficulty": "Medium",
+  "description": "在一根无限长的数轴上，你站在0的位置。终点在target的位置。\n\n你可以做一些数量的移动 numMoves :\n\n\t每次你可以选择向左或向右移动。\n\t第 i&nbsp;次移动（从 &nbsp;i == 1&nbsp;开始，到&nbsp;i == numMoves ），在选择的方向上走 i&nbsp;步。\n\n给定整数&nbsp;target ，返回 到达目标所需的 最小&nbsp;移动次数(即最小 numMoves )&nbsp;。\n\n&nbsp;\n\n示例 1:\n\n输入: target = 2\n输出: 3\n解释:\n第一次移动，从 0 到 1 。\n第二次移动，从 1 到 -1 。\n第三次移动，从 -1 到 2 。\n\n示例 2:\n\n输入: target = 3\n输出: 2\n解释:\n第一次移动，从 0 到 1 。\n第二次移动，从 1 到 3 。\n\n&nbsp;\n\n提示:\n\n\t-109&nbsp;<= target <= 109\n\ttarget != 0",
+  "constraints": [
+    "-109&nbsp;<= target <= 109",
+    "target != 0"
+  ]
+}

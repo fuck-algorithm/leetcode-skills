@@ -1,0 +1,18 @@
+{
+  "number": "2492",
+  "title_cn": "两个城市间路径的最小分数",
+  "title_en": "Minimum Score of a Path Between Two Cities",
+  "slug": "minimum-score-of-a-path-between-two-cities",
+  "difficulty": "Medium",
+  "description": "给你一个正整数&nbsp;n&nbsp;，表示总共有&nbsp;n&nbsp;个城市，城市从&nbsp;1&nbsp;到&nbsp;n&nbsp;编号。给你一个二维数组&nbsp;roads&nbsp;，其中&nbsp;roads[i] = [ai, bi, distancei]&nbsp;表示城市&nbsp;ai 和&nbsp;bi&nbsp;之间有一条 双向&nbsp;道路，道路距离为&nbsp;distancei&nbsp;。城市构成的图不一定是连通的。\n\n两个城市之间一条路径的 分数&nbsp;定义为这条路径中道路的 最小&nbsp;距离。\n\n返回城市 1 和城市 n 之间的所有路径的 最小 分数。\n\n注意：\n\n\t一条路径指的是两个城市之间的道路序列。\n\t一条路径可以 多次 包含同一条道路，你也可以沿着路径多次到达城市 1&nbsp;和城市 n&nbsp;。\n\t测试数据保证城市 1&nbsp;和城市n&nbsp;之间 至少&nbsp;有一条路径。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]\n输出：5\n解释：城市 1 到城市 4 的路径中，分数最小的一条为：1 -> 2 -> 4 。这条路径的分数是 min(9,5) = 5 。\n不存在分数更小的路径。\n\n示例 2：\n\n输入：n = 4, roads = [[1,2,2],[1,3,4],[3,4,7]]\n输出：2\n解释：城市 1 到城市 4 分数最小的路径是：1 -> 2 -> 1 -> 3 -> 4 。这条路径的分数是 min(2,2,4,7) = 2 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 105\n\t1 <= roads.length <= 105\n\troads[i].length == 3\n\t1 <= ai, bi <= n\n\tai != bi\n\t1 <= distancei <= 104\n\t不会有重复的边。\n\t城市 1&nbsp;和城市 n&nbsp;之间至少有一条路径。",
+  "constraints": [
+    "2 <= n <= 105",
+    "1 <= roads.length <= 105",
+    "roads[i].length == 3",
+    "1 <= ai, bi <= n",
+    "ai != bi",
+    "1 <= distancei <= 104",
+    "不会有重复的边。",
+    "城市 1&nbsp;和城市 n&nbsp;之间至少有一条路径。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3582",
+  "title_cn": "为视频标题生成标签",
+  "title_en": "Generate Tag for Video Caption",
+  "slug": "generate-tag-for-video-caption",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 caption，表示一个视频的标题。\n\n需要按照以下步骤&nbsp;按顺序&nbsp;生成一个视频的&nbsp;有效标签&nbsp;：\n\n\t将 所有单词&nbsp;组合为单个&nbsp;驼峰命名字符串 ，并在前面加上 '#'。驼峰命名字符串&nbsp;指的是除第一个单词外，其余单词的首字母大写，且每个单词的首字母之后的字符必须是小写。\n\n\t移除&nbsp;所有不是英文字母的字符，但 保留&nbsp;第一个字符 '#'。\n\n\t将结果&nbsp;截断&nbsp;为最多 100 个字符。\n\n对 caption 执行上述操作后，返回生成的&nbsp;标签&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入： caption = \"Leetcode daily streak achieved\"\n\n输出： \"#leetcodeDailyStreakAchieved\"\n\n解释：\n\n除了 \"leetcode\" 以外的所有单词的首字母需要大写。\n\n示例 2：\n\n输入： caption = \"can I Go There\"\n\n输出： \"#canIGoThere\"\n\n解释：\n\n除了 \"can\" 以外的所有单词的首字母需要大写。\n\n示例 3：\n\n输入： caption = \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"\n\n输出： \"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"\n\n解释：\n\n由于第一个单词长度为 101，因此需要从单词末尾截去最后两个字符。\n\n&nbsp;\n\n提示：\n\n\t1 <= caption.length <= 150\n\tcaption 仅由英文字母和 ' ' 组成。",
+  "constraints": [
+    "1 <= caption.length <= 150",
+    "caption 仅由英文字母和 ' ' 组成。"
+  ]
+}

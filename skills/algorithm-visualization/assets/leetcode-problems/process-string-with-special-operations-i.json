@@ -1,0 +1,12 @@
+{
+  "number": "3612",
+  "title_cn": "用特殊操作处理字符串 I",
+  "title_en": "Process String with Special Operations I",
+  "slug": "process-string-with-special-operations-i",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s，它由小写英文字母和特殊字符：*、# 和 % 组成。\n\n请根据以下规则从左到右处理 s&nbsp;中的字符，构造一个新的字符串 result：\n\n\t如果字符是 小写 英文字母，则将其添加到 result 中。\n\t字符 '*' 会&nbsp;删除 result 中的最后一个字符（如果存在）。\n\t字符 '#' 会&nbsp;复制&nbsp;当前的 result 并&nbsp;追加&nbsp;到其自身后面。\n\t字符 '%' 会&nbsp;反转&nbsp;当前的 result。\n\n在处理完 s 中的所有字符后，返回最终的字符串 result。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"a#b%*\"\n\n输出： \"ba\"\n\n解释：\n\n\t\t\ti\n\t\t\ts[i]\n\t\t\t操作\n\t\t\t当前 result\n\n\t\t\t0\n\t\t\t'a'\n\t\t\t添加 'a'\n\t\t\t\"a\"\n\n\t\t\t1\n\t\t\t'#'\n\t\t\t复制 result\n\t\t\t\"aa\"\n\n\t\t\t2\n\t\t\t'b'\n\t\t\t添加 'b'\n\t\t\t\"aab\"\n\n\t\t\t3\n\t\t\t'%'\n\t\t\t反转 result\n\t\t\t\"baa\"\n\n\t\t\t4\n\t\t\t'*'\n\t\t\t删除最后一个字符\n\t\t\t\"ba\"\n\n因此，最终的 result 是 \"ba\"。\n\n示例 2：\n\n输入： s = \"z*#\"\n\n输出： \"\"\n\n解释：\n\n\t\t\ti\n\t\t\ts[i]\n\t\t\t操作\n\t\t\t当前 result\n\n\t\t\t0\n\t\t\t'z'\n\t\t\t添加 'z'\n\t\t\t\"z\"\n\n\t\t\t1\n\t\t\t'*'\n\t\t\t删除最后一个字符\n\t\t\t\"\"\n\n\t\t\t2\n\t\t\t'#'\n\t\t\t复制字符串\n\t\t\t\"\"\n\n因此，最终的 result 是 \"\"。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 20\n\ts 只包含小写英文字母和特殊字符 *、# 和 %。",
+  "constraints": [
+    "1 <= s.length <= 20",
+    "s 只包含小写英文字母和特殊字符 *、# 和 %。"
+  ]
+}

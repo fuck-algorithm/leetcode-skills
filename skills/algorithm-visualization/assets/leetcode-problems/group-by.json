@@ -1,0 +1,12 @@
+{
+  "number": "2631",
+  "title_cn": "分组",
+  "title_en": "Group By",
+  "slug": "group-by",
+  "difficulty": "Medium",
+  "description": "请你编写一段可应用于所有数组的代码，使任何数组调用 array. groupBy(fn) 方法时，它返回对该数组 分组后 的结果。\n\n数组 分组 是一个对象，其中的每个键都是 fn(arr[i]) 的输出的一个数组，该数组中含有原数组中具有该键的所有项。\n\n提供的回调函数 fn 将接受数组中的项并返回一个字符串类型的键。\n\n每个值列表的顺序应该与元素在数组中出现的顺序相同。任何顺序的键都是可以接受的。\n\n请在不使用 lodash 的&nbsp;_.groupBy 函数的前提下解决这个问题。\n\n&nbsp;\n\n示例 1：\n\n输入：\narray = [\n&nbsp; {\"id\":\"1\"},\n&nbsp; {\"id\":\"1\"},\n&nbsp; {\"id\":\"2\"}\n], \nfn = function (item) { \n&nbsp; return item.id; \n}\n输出：\n{ \n&nbsp; \"1\": [{\"id\": \"1\"}, {\"id\": \"1\"}], &nbsp; \n&nbsp; \"2\": [{\"id\": \"2\"}] \n}\n解释：\n输出来自函数 array.groupBy(fn)。\n分组选择方法是从数组中的每个项中获取 \"id\" 。\n有两个 \"id\" 为 1 的对象。所以将这两个对象都放在第一个数组中。\n有一个 \"id\" 为 2 的对象。所以该对象被放到第二个数组中。\n\n示例 2：\n\n输入：\narray = [\n&nbsp; [1, 2, 3],\n&nbsp; [1, 3, 5],\n&nbsp; [1, 5, 9]\n]\nfn = function (list) { \n&nbsp; return String(list[0]); \n}\n输出：\n{ \n&nbsp; \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}\n解释：\n数组可以是任何类型的。在本例中，分组选择方法是将键定义为数组中的第一个元素。\n所有数组的第一个元素都是1，所以它们被组合在一起。\n{\n  \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]]\n}\n\n示例 3：\n\n输出：\narray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n&nbsp; return String(n > 5);\n}\n输入：\n{\n&nbsp; \"true\": [6, 7, 8, 9, 10],\n&nbsp; \"false\": [1, 2, 3, 4, 5]\n}\n解释：\n分组选择方法是根据每个数字是否大于 5 来分割数组。\n\n&nbsp;\n\n提示：\n\n\t0 <= array.length <= 105\n\tfn 返回一个字符串",
+  "constraints": [
+    "0 <= array.length <= 105",
+    "fn 返回一个字符串"
+  ]
+}

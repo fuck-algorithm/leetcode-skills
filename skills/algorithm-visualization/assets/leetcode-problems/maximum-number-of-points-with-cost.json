@@ -1,0 +1,15 @@
+{
+  "number": "1937",
+  "title_cn": "扣分后的最大得分",
+  "title_en": "Maximum Number of Points with Cost",
+  "slug": "maximum-number-of-points-with-cost",
+  "difficulty": "Medium",
+  "description": "给你一个 m x n 的整数矩阵 points （下标从 0 开始）。一开始你的得分为 0 ，你想最大化从矩阵中得到的分数。\n\n你的得分方式为：每一行 中选取一个格子，选中坐标为 (r, c) 的格子会给你的总得分 增加 points[r][c] 。\n\n然而，相邻行之间被选中的格子如果隔得太远，你会失去一些得分。对于相邻行 r 和 r + 1 （其中 0 ），选中坐标为 (r, c1) 和 (r + 1, c2) 的格子，你的总得分 减少 abs(c1 - c2) 。\n\n请你返回你能得到的 最大 得分。\n\nabs(x) 定义为：\n\n\t如果 x >= 0 ，那么值为 x 。\n\t如果 x  ，那么值为 -x 。\n\n示例 1：\n\n输入：points = [[1,2,3],[1,5,1],[3,1,1]]\n输出：9\n解释：\n蓝色格子是最优方案选中的格子，坐标分别为 (0, 2)，(1, 1) 和 (2, 0) 。\n你的总得分增加 3 + 5 + 3 = 11 。\n但是你的总得分需要扣除 abs(2 - 1) + abs(1 - 0) = 2 。\n你的最终得分为 11 - 2 = 9 。\n\n示例 2：\n\n输入：points = [[1,5],[2,3],[4,2]]\n输出：11\n解释：\n蓝色格子是最优方案选中的格子，坐标分别为 (0, 1)，(1, 1) 和 (2, 0) 。\n你的总得分增加 5 + 3 + 4 = 12 。\n但是你的总得分需要扣除 abs(1 - 1) + abs(1 - 0) = 1 。\n你的最终得分为 12 - 1 = 11 。\n\n提示：\n\n\tm == points.length\n\tn == points[r].length\n\t1 5\n\t1 5\n\t0 5",
+  "constraints": [
+    "m == points.length",
+    "n == points[r].length",
+    "1 5",
+    "1 5",
+    "0 5"
+  ]
+}

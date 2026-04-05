@@ -1,0 +1,14 @@
+{
+  "number": "2658",
+  "title_cn": "网格图中鱼的最大数目",
+  "title_en": "Maximum Number of Fish in a Grid",
+  "slug": "maximum-number-of-fish-in-a-grid",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始大小为 m x n&nbsp;的二维整数数组&nbsp;grid&nbsp;，其中下标在&nbsp;(r, c)&nbsp;处的整数表示：\n\n\t如果&nbsp;grid[r][c] = 0&nbsp;，那么它是一块 陆地&nbsp;。\n\t如果&nbsp;grid[r][c] > 0&nbsp;，那么它是一块&nbsp;水域&nbsp;，且包含&nbsp;grid[r][c]&nbsp;条鱼。\n\n一位渔夫可以从任意 水域&nbsp;格子&nbsp;(r, c)&nbsp;出发，然后执行以下操作任意次：\n\n\t捕捞格子&nbsp;(r, c)&nbsp;处所有的鱼，或者\n\t移动到相邻的 水域&nbsp;格子。\n\n请你返回渔夫最优策略下，&nbsp;最多&nbsp;可以捕捞多少条鱼。如果没有水域格子，请你返回 0&nbsp;。\n\n格子&nbsp;(r, c)&nbsp;相邻&nbsp;的格子为&nbsp;(r, c + 1)&nbsp;，(r, c - 1)&nbsp;，(r + 1, c) 和&nbsp;(r - 1, c)&nbsp;，前提是相邻格子在网格图内。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]]\n输出：7\n解释：渔夫可以从格子 (1,3) 出发，捕捞 3 条鱼，然后移动到格子 (2,3)&nbsp;，捕捞 4 条鱼。\n\n示例 2：\n\n输入：grid = [[1,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,1]]\n输出：1\n解释：渔夫可以从格子 (0,0) 或者 (3,3) ，捕捞 1 条鱼。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 10\n\t0 <= grid[i][j] <= 10",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 10",
+    "0 <= grid[i][j] <= 10"
+  ]
+}

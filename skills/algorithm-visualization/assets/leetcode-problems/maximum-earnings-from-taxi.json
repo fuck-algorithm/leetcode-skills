@@ -1,0 +1,15 @@
+{
+  "number": "2008",
+  "title_cn": "出租车的最大盈利",
+  "title_en": "Maximum Earnings From Taxi",
+  "slug": "maximum-earnings-from-taxi",
+  "difficulty": "Medium",
+  "description": "你驾驶出租车行驶在一条有 n&nbsp;个地点的路上。这 n&nbsp;个地点从近到远编号为&nbsp;1&nbsp;到&nbsp;n&nbsp;，你想要从 1&nbsp;开到 n&nbsp;，通过接乘客订单盈利。你只能沿着编号递增的方向前进，不能改变方向。\n\n乘客信息用一个下标从 0&nbsp;开始的二维数组&nbsp;rides&nbsp;表示，其中&nbsp;rides[i] = [starti, endi, tipi]&nbsp;表示第&nbsp;i&nbsp;位乘客需要从地点&nbsp;starti&nbsp;前往&nbsp;endi&nbsp;，愿意支付&nbsp;tipi&nbsp;元的小费。\n\n每一位 你选择接单的乘客&nbsp;i&nbsp;，你可以 盈利&nbsp;endi - starti + tipi&nbsp;元。你同时&nbsp;最多&nbsp;只能接一个订单。\n\n给你 n&nbsp;和 rides&nbsp;，请你返回在最优接单方案下，你能盈利&nbsp;最多&nbsp;多少元。\n\n注意：你可以在一个地点放下一位乘客，并在同一个地点接上另一位乘客。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5, rides = [[2,5,4],[1,5,1]]\n输出：7\n解释：我们可以接乘客 0 的订单，获得 5 - 2 + 4 = 7 元。\n\n示例 2：\n\n输入：n = 20, rides = [[1,6,1],[3,10,2],[10,12,3],[11,12,2],[12,15,2],[13,18,1]]\n输出：20\n解释：我们可以接以下乘客的订单：\n- 将乘客 1 从地点 3 送往地点 10 ，获得 10 - 3 + 2 = 9 元。\n- 将乘客 2 从地点 10 送往地点 12 ，获得 12 - 10 + 3 = 5 元。\n- 将乘客 5 从地点 13 送往地点 18 ，获得 18 - 13 + 1 = 6 元。\n我们总共获得 9 + 5 + 6 = 20 元。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105\n\t1 <= rides.length <= 3 * 104\n\trides[i].length == 3\n\t1 <= starti < endi <= n\n\t1 <= tipi <= 105",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= rides.length <= 3 * 104",
+    "rides[i].length == 3",
+    "1 <= starti < endi <= n",
+    "1 <= tipi <= 105"
+  ]
+}

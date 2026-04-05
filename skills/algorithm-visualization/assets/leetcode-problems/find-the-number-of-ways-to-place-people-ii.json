@@ -1,0 +1,14 @@
+{
+  "number": "3027",
+  "title_cn": "人员站位的方案数 II",
+  "title_en": "Find the Number of Ways to Place People II",
+  "slug": "find-the-number-of-ways-to-place-people-ii",
+  "difficulty": "Hard",
+  "description": "给你一个&nbsp;&nbsp;n x 2&nbsp;的二维数组 points&nbsp;，它表示二维平面上的一些点坐标，其中&nbsp;points[i] = [xi, yi]&nbsp;。\n\n我们定义 x 轴的正方向为 右&nbsp;（x 轴递增的方向），x 轴的负方向为 左&nbsp;（x 轴递减的方向）。类似的，我们定义 y 轴的正方向为 上&nbsp;（y 轴递增的方向），y 轴的负方向为 下&nbsp;（y 轴递减的方向）。\n\n你需要安排这 n&nbsp;个人的站位，这 n&nbsp;个人中包括 Alice 和 Bob 。你需要确保每个点处&nbsp;恰好&nbsp;有&nbsp;一个&nbsp;人。同时，Alice 想跟 Bob 单独玩耍，所以&nbsp;Alice 会以 Alice&nbsp;的坐标为 左上角&nbsp;，Bob 的坐标为 右下角&nbsp;建立一个矩形的围栏（注意，围栏可能&nbsp;不 包含任何区域，也就是说围栏可能是一条线段）。如果围栏的 内部&nbsp;或者 边缘&nbsp;上有任何其他人，Alice 都会难过。\n\n请你在确保 Alice&nbsp;不会 难过的前提下，返回 Alice 和 Bob 可以选择的 点对&nbsp;数目。\n\n注意，Alice 建立的围栏必须确保 Alice 的位置是矩形的左上角，Bob 的位置是矩形的右下角。比方说，以&nbsp;(1, 1)&nbsp;，(1, 3)&nbsp;，(3, 1)&nbsp;和&nbsp;(3, 3)&nbsp;为矩形的四个角，给定下图的两个输入，Alice 都不能建立围栏，原因如下：\n\n\t图一中，Alice 在&nbsp;(3, 3)&nbsp;且 Bob 在&nbsp;(1, 1)&nbsp;，Alice 的位置不是左上角且 Bob 的位置不是右下角。\n\t图二中，Alice 在&nbsp;(1, 3)&nbsp;且 Bob 在&nbsp;(1, 1)（如图所示，用矩形代替线条），Bob 的位置不是在围栏的右下角。\n\n&nbsp;\n\n示例 1：\n\n输入：points = [[1,1],[2,2],[3,3]]\n输出：0\n解释：没有办法可以让 Alice 的围栏以 Alice 的位置为左上角且 Bob 的位置为右下角。所以我们返回 0 。\n\n示例 2：\n\n输入：points = [[6,2],[4,4],[2,6]]\n输出：2\n解释：总共有 2 种方案安排 Alice 和 Bob 的位置，使得 Alice 不会难过：\n- Alice 站在 (4, 4) ，Bob 站在 (6, 2) 。\n- Alice 站在 (2, 6) ，Bob 站在 (4, 4) 。\n不能安排 Alice 站在 (2, 6) 且 Bob 站在 (6, 2) ，因为站在 (4, 4) 的人处于围栏内。\n\n示例 3：\n\n输入：points = [[3,1],[1,3],[1,1]]\n输出：2\n解释：总共有 2 种方案安排 Alice 和 Bob 的位置，使得 Alice 不会难过：\n- Alice 站在 (1, 1) ，Bob 站在 (3, 1) 。\n- Alice 站在 (1, 3) ，Bob 站在 (1, 1) 。\n不能安排 Alice 站在 (1, 3) 且 Bob 站在 (3, 1) ，因为站在 (1, 1) 的人处于围栏内。\n注意围栏是可以不包含任何面积的，上图中第一和第二个围栏都是合法的。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 1000\n\tpoints[i].length == 2\n\t-109 <= points[i][0], points[i][1] <= 109\n\tpoints[i]&nbsp;点对两两不同。",
+  "constraints": [
+    "2 <= n <= 1000",
+    "points[i].length == 2",
+    "-109 <= points[i][0], points[i][1] <= 109",
+    "points[i]&nbsp;点对两两不同。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2190",
+  "title_cn": "数组中紧跟 key 之后出现最频繁的数字",
+  "title_en": "Most Frequent Number Following Key In an Array",
+  "slug": "most-frequent-number-following-key-in-an-array",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，同时给你一个整数&nbsp;key&nbsp;，它在&nbsp;nums&nbsp;出现过。\n\n统计&nbsp;在 nums&nbsp;数组中紧跟着 key&nbsp;后面出现的不同整数&nbsp;target&nbsp;的出现次数。换言之，target&nbsp;的出现次数为满足以下条件的 i&nbsp;的数目：\n\n\t0 <= i <= n - 2\n\tnums[i] == key&nbsp;且\n\tnums[i + 1] == target&nbsp;。\n\n请你返回出现 最多&nbsp;次数的&nbsp;target&nbsp;。测试数据保证出现次数最多的 target&nbsp;是唯一的。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,100,200,1,100], key = 1\n输出：100\n解释：对于 target = 100 ，在下标 1 和 4 处出现过 2 次，且都紧跟着 key 。\n没有其他整数在 key 后面紧跟着出现，所以我们返回 100 。\n\n示例 2：\n\n输入：nums = [2,2,2,2,3], key = 2\n输出：2\n解释：对于 target = 2 ，在下标 1 ，2 和 3 处出现过 3 次，且都紧跟着 key 。\n对于 target = 3 ，在下标 4 出出现过 1 次，且紧跟着 key 。\ntarget = 2 是紧跟着 key 之后出现次数最多的数字，所以我们返回 2 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 1000\n\t1 <= nums[i] <= 1000\n\t测试数据保证答案是唯一的。",
+  "constraints": [
+    "2 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000",
+    "测试数据保证答案是唯一的。"
+  ]
+}

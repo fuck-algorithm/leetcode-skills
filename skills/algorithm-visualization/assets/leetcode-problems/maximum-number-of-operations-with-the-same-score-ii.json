@@ -1,0 +1,12 @@
+{
+  "number": "3040",
+  "title_cn": "相同分数的最大操作数目 II",
+  "title_en": "Maximum Number of Operations With the Same Score II",
+  "slug": "maximum-number-of-operations-with-the-same-score-ii",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;，如果&nbsp;nums&nbsp;至少&nbsp;包含 2&nbsp;个元素，你可以执行以下操作中的&nbsp;任意&nbsp;一个：\n\n\t选择 nums&nbsp;中最前面两个元素并且删除它们。\n\t选择 nums&nbsp;中最后两个元素并且删除它们。\n\t选择 nums&nbsp;中第一个和最后一个元素并且删除它们。\n\n一次操作的&nbsp;分数&nbsp;是被删除元素的和。\n\n在确保&nbsp;所有操作分数相同&nbsp;的前提下，请你求出&nbsp;最多&nbsp;能进行多少次操作。\n\n请你返回按照上述要求&nbsp;最多&nbsp;可以进行的操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,2,1,2,3,4]\n输出：3\n解释：我们执行以下操作：\n- 删除前两个元素，分数为 3 + 2 = 5 ，nums = [1,2,3,4] 。\n- 删除第一个元素和最后一个元素，分数为 1 + 4 = 5 ，nums = [2,3] 。\n- 删除第一个元素和最后一个元素，分数为 2 + 3 = 5 ，nums = [] 。\n由于 nums 为空，我们无法继续进行任何操作。\n\n示例 2：\n\n输入：nums = [3,2,6,1,4]\n输出：2\n解释：我们执行以下操作：\n- 删除前两个元素，分数为 3 + 2 = 5 ，nums = [6,1,4] 。\n- 删除最后两个元素，分数为 1 + 4 = 5 ，nums = [6] 。\n至多进行 2 次操作。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 2000\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "2 <= nums.length <= 2000",
+    "1 <= nums[i] <= 1000"
+  ]
+}

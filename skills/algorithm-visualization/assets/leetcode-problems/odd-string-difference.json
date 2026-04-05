@@ -1,0 +1,14 @@
+{
+  "number": "2451",
+  "title_cn": "差值数组不同的字符串",
+  "title_en": "Odd String Difference",
+  "slug": "odd-string-difference",
+  "difficulty": "Easy",
+  "description": "给你一个字符串数组 words&nbsp;，每一个字符串长度都相同，令所有字符串的长度都为 n&nbsp;。\n\n每个字符串&nbsp;words[i]&nbsp;可以被转化为一个长度为&nbsp;n - 1&nbsp;的&nbsp;差值整数数组&nbsp;difference[i]&nbsp;，其中对于&nbsp;0 <= j <= n - 2&nbsp;有&nbsp;difference[i][j] = words[i][j+1] - words[i][j]&nbsp;。注意两个字母的差值定义为它们在字母表中&nbsp;位置&nbsp;之差，也就是说&nbsp;'a'&nbsp;的位置是&nbsp;0&nbsp;，'b'&nbsp;的位置是&nbsp;1&nbsp;，'z'&nbsp;的位置是&nbsp;25&nbsp;。\n\n\t比方说，字符串&nbsp;\"acb\"&nbsp;的差值整数数组是&nbsp;[2 - 0, 1 - 2] = [2, -1]&nbsp;。\n\nwords&nbsp;中所有字符串 除了一个字符串以外&nbsp;，其他字符串的差值整数数组都相同。你需要找到那个不同的字符串。\n\n请你返回&nbsp;words中&nbsp;差值整数数组&nbsp;不同的字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"adc\",\"wzy\",\"abc\"]\n输出：\"abc\"\n解释：\n- \"adc\" 的差值整数数组是 [3 - 0, 2 - 3] = [3, -1] 。\n- \"wzy\" 的差值整数数组是 [25 - 22, 24 - 25]= [3, -1] 。\n- \"abc\" 的差值整数数组是 [1 - 0, 2 - 1] = [1, 1] 。\n不同的数组是 [1, 1]，所以返回对应的字符串，\"abc\"。\n\n示例 2：\n\n输入：words = [\"aaa\",\"bob\",\"ccc\",\"ddd\"]\n输出：\"bob\"\n解释：除了 \"bob\" 的差值整数数组是 [13, -13] 以外，其他字符串的差值整数数组都是 [0, 0] 。\n\n&nbsp;\n\n提示：\n\n\t3 <= words.length <= 100\n\tn == words[i].length\n\t2 <= n <= 20\n\twords[i]&nbsp;只含有小写英文字母。",
+  "constraints": [
+    "3 <= words.length <= 100",
+    "n == words[i].length",
+    "2 <= n <= 20",
+    "words[i]&nbsp;只含有小写英文字母。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3618",
+  "title_cn": "根据质数下标分割数组",
+  "title_en": "Split Array by Prime Indices",
+  "slug": "split-array-by-prime-indices",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 nums。\n\n根据以下规则将 nums 分割成两个数组 A 和 B：\n\n\tnums 中位于&nbsp;质数 下标的元素必须放入数组 A。\n\t所有其他元素必须放入数组 B。\n\n返回两个数组和的&nbsp;绝对&nbsp;差值：|sum(A) - sum(B)|。\n\n质数&nbsp;是一个大于 1 的自然数，它只有两个因子，1和它本身。\n\n注意：空数组的和为 0。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [2,3,4]\n\n输出: 1\n\n解释:\n\n\t数组中唯一的质数下标是 2，所以 nums[2] = 4 被放入数组 A。\n\t其余元素 nums[0] = 2 和 nums[1] = 3 被放入数组 B。\n\tsum(A) = 4，sum(B) = 2 + 3 = 5。\n\t绝对差值是 |4 - 5| = 1。\n\n示例 2:\n\n输入: nums = [-1,5,7,0]\n\n输出: 3\n\n解释:\n\n\t数组中的质数下标是 2 和 3，所以 nums[2] = 7 和 nums[3] = 0 被放入数组 A。\n\t其余元素 nums[0] = -1 和 nums[1] = 5 被放入数组 B。\n\tsum(A) = 7 + 0 = 7，sum(B) = -1 + 5 = 4。\n\t绝对差值是 |7 - 4| = 3。\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 105\n\t-109 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109"
+  ]
+}

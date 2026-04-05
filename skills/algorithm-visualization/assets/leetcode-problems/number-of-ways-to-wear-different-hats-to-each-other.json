@@ -1,0 +1,15 @@
+{
+  "number": "1434",
+  "title_cn": "每个人戴不同帽子的方案数",
+  "title_en": "Number of Ways to Wear Different Hats to Each Other",
+  "slug": "number-of-ways-to-wear-different-hats-to-each-other",
+  "difficulty": "Hard",
+  "description": "总共有 n&nbsp;个人和 40 种不同的帽子，帽子编号从 1 到 40 。\n\n给你一个整数列表的列表&nbsp;hats&nbsp;，其中&nbsp;hats[i]&nbsp;是第 i&nbsp;个人所有喜欢帽子的列表。\n\n请你给每个人安排一顶他喜欢的帽子，确保每个人戴的帽子跟别人都不一样，并返回方案数。\n\n由于答案可能很大，请返回它对&nbsp;10^9 + 7&nbsp;取余后的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：hats = [[3,4],[4,5],[5]]\n输出：1\n解释：给定条件下只有一种方法选择帽子。\n第一个人选择帽子 3，第二个人选择帽子 4，最后一个人选择帽子 5。\n\n示例 2：\n\n输入：hats = [[3,5,1],[3,5]]\n输出：4\n解释：总共有 4 种安排帽子的方法：\n(3,5)，(5,3)，(1,3) 和 (1,5)\n\n示例 3：\n\n输入：hats = [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]\n输出：24\n解释：每个人都可以从编号为 1 到 4 的帽子中选。\n(1,2,3,4) 4 个帽子的排列方案数为 24 。\n\n&nbsp;\n\n提示：\n\n\tn == hats.length\n\t1 <= n <= 10\n\t1 <= hats[i].length <= 40\n\t1 <= hats[i][j] <= 40\n\thats[i]&nbsp;包含一个数字互不相同的整数列表。",
+  "constraints": [
+    "n == hats.length",
+    "1 <= n <= 10",
+    "1 <= hats[i].length <= 40",
+    "1 <= hats[i][j] <= 40",
+    "hats[i]&nbsp;包含一个数字互不相同的整数列表。"
+  ]
+}

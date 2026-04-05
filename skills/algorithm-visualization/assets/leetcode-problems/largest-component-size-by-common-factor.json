@@ -1,0 +1,13 @@
+{
+  "number": "952",
+  "title_cn": "按公因数计算最大组件大小",
+  "title_en": "Largest Component Size by Common Factor",
+  "slug": "largest-component-size-by-common-factor",
+  "difficulty": "Hard",
+  "description": "给定一个由不同正整数的组成的非空数组&nbsp;nums ，考虑下面的图：\n\n\t有&nbsp;nums.length&nbsp;个节点，按从&nbsp;nums[0]&nbsp;到&nbsp;nums[nums.length - 1]&nbsp;标记；\n\t只有当&nbsp;nums[i]&nbsp;和&nbsp;nums[j]&nbsp;共用一个大于 1 的公因数时，nums[i]&nbsp;和&nbsp;nums[j]之间才有一条边。\n\n返回 图中最大连通组件的大小 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,6,15,35]\n输出：4\n\n示例 2：\n\n输入：nums = [20,50,9,63]\n输出：2\n\n示例 3：\n\n输入：nums = [2,3,6,7,4,12,21,39]\n输出：8\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 2 * 104\n\t1 <= nums[i] <= 105\n\tnums&nbsp;中所有值都 不同",
+  "constraints": [
+    "1 <= nums.length <= 2 * 104",
+    "1 <= nums[i] <= 105",
+    "nums&nbsp;中所有值都 不同"
+  ]
+}

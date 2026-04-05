@@ -1,0 +1,12 @@
+{
+  "number": "3813",
+  "title_cn": "元音辅音得分",
+  "title_en": "Vowel-Consonant Score",
+  "slug": "vowel-consonant-score",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s，由小写英文字母、空格和数字组成。\n\n令 v 表示 s 中元音字母的数量，c 表示辅音字母的数量。\n\n元音字母是 'a'、'e'、'i'、'o' 和 'u'，而英文字母表中除元音外的其他字母均视为辅音字母。\n\n字符串 s 的&nbsp;得分&nbsp;定义如下：\n\n\t如果 c > 0，则 score&nbsp;= floor(v / c)，其中 floor 表示&nbsp;向下取整&nbsp;到最接近的整数。\n\t否则，如果 c = 0，则 score&nbsp;= 0。\n\n返回一个整数，表示字符串的得分。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"cooear\"\n\n输出: 2\n\n解释:\n\n字符串 s = \"cooear\" 包含 v = 4 个元音字母 ('o', 'o', 'e', 'a') 和 c = 2 个辅音字母 ('c', 'r')。\n\n得分为 floor(v / c) = floor(4 / 2) = 2。\n\n示例 2：\n\n输入: s = \"axeyizou\"\n\n输出: 1\n\n解释:\n\n字符串 s = \"axeyizou\" 包含 v = 5 个元音字母 ('a', 'e', 'i', 'o', 'u') 和 c = 3 个辅音字母 ('x', 'y', 'z')。\n\n得分为 floor(v / c) = floor(5 / 3) = 1。\n\n示例 3：\n\n输入: s = \"au 123\"\n\n输出: 0\n\n解释:\n\n字符串 s = \"au 123\" 不包含辅音字母 (c = 0)，因此得分为 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts 仅由小写英文字母、空格和数字组成。",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 仅由小写英文字母、空格和数字组成。"
+  ]
+}

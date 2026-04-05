@@ -1,0 +1,12 @@
+{
+  "number": "3592",
+  "title_cn": "硬币面值还原",
+  "title_en": "Inverse Coin Change",
+  "slug": "inverse-coin-change",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;从 1 开始计数&nbsp;的整数数组 numWays，其中 numWays[i] 表示使用某些&nbsp;固定&nbsp;面值的硬币（每种面值可以使用无限次）凑出总金额 i 的方法数。每种面值都是一个&nbsp;正整数&nbsp;，并且其值&nbsp;最多&nbsp;为 numWays.length。\n\n然而，具体的硬币面值已经&nbsp;丢失&nbsp;。你的任务是还原出可能生成这个 numWays 数组的面值集合。\n\n返回一个按从小到大顺序排列的数组，其中包含所有可能的&nbsp;唯一&nbsp;整数面值。\n\n如果不存在这样的集合，返回一个&nbsp;空&nbsp;数组。\n\n&nbsp;\n\n示例 1：\n\n输入： numWays = [0,1,0,2,0,3,0,4,0,5]\n\n输出： [2,4,6]\n\n解释：\n\n\t\t\t金额\n\t\t\t方法数\n\t\t\t解释\n\n\t\t\t1\n\t\t\t0\n\t\t\t无法用硬币凑出总金额 1。\n\n\t\t\t2\n\t\t\t1\n\t\t\t唯一的方法是 [2]。\n\n\t\t\t3\n\t\t\t0\n\t\t\t无法用硬币凑出总金额 3。\n\n\t\t\t4\n\t\t\t2\n\t\t\t可以用 [2, 2] 或 [4]。\n\n\t\t\t5\n\t\t\t0\n\t\t\t无法用硬币凑出总金额 5。\n\n\t\t\t6\n\t\t\t3\n\t\t\t可以用 [2, 2, 2]、[2, 4] 或 [6]。\n\n\t\t\t7\n\t\t\t0\n\t\t\t无法用硬币凑出总金额 7。\n\n\t\t\t8\n\t\t\t4\n\t\t\t可以用 [2, 2, 2, 2]、[2, 2, 4]、[2, 6] 或 [4, 4]。\n\n\t\t\t9\n\t\t\t0\n\t\t\t无法用硬币凑出总金额 9。\n\n\t\t\t10\n\t\t\t5\n\t\t\t可以用 [2, 2, 2, 2, 2]、[2, 2, 2, 4]、[2, 4, 4]、[2, 2, 6] 或 [4, 6]。\n\n示例 2：\n\n输入： numWays = [1,2,2,3,4]\n\n输出： [1,2,5]\n\n解释：\n\n\t\t\t金额\n\t\t\t方法数\n\t\t\t解释\n\n\t\t\t1\n\t\t\t1\n\t\t\t唯一的方法是 [1]。\n\n\t\t\t2\n\t\t\t2\n\t\t\t可以用 [1, 1] 或 [2]。\n\n\t\t\t3\n\t\t\t2\n\t\t\t可以用 [1, 1, 1] 或 [1, 2]。\n\n\t\t\t4\n\t\t\t3\n\t\t\t可以用 [1, 1, 1, 1]、[1, 1, 2] 或 [2, 2]。\n\n\t\t\t5\n\t\t\t4\n\t\t\t可以用 [1, 1, 1, 1, 1]、[1, 1, 1, 2]、[1, 2, 2] 或 [5]。\n\n示例 3：\n\n输入： numWays = [1,2,3,4,15]\n\n输出： []\n\n解释：\n\n没有任何面值集合可以生成该数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= numWays.length <= 100\n\t0 <= numWays[i] <= 2 * 108",
+  "constraints": [
+    "1 <= numWays.length <= 100",
+    "0 <= numWays[i] <= 2 * 108"
+  ]
+}

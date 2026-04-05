@@ -1,0 +1,15 @@
+{
+  "number": "2672",
+  "title_cn": "有相同颜色的相邻元素数目",
+  "title_en": "Number of Adjacent Elements With the Same Color",
+  "slug": "number-of-adjacent-elements-with-the-same-color",
+  "difficulty": "Medium",
+  "description": "给定一个整数&nbsp;n&nbsp;表示一个长度为&nbsp;n 的数组&nbsp; colors，初始所有元素均为 0 ，表示是 未染色 的。同时给定一个二维整数数组&nbsp;queries，其中&nbsp;queries[i] = [indexi, colori]。对于第&nbsp;i 个&nbsp;查询：\n\n\t将&nbsp;colors[indexi]&nbsp;染色为 colori。\n\t统计&nbsp;colors&nbsp;中颜色相同的相邻对的数量（无论 colori）。\n\n请你返回一个长度与 queries&nbsp;相等的数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]是前 i&nbsp;个操作的答案。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4, queries = [[0,2],[1,2],[3,1],[1,1],[2,1]]\n\n输出：[0,1,1,0,2]\n\n解释：\n\n\t一开始 colors = [0,0,0,0]，其中 0 表示数组中未染色的元素。\n\t在第 1 次查询后&nbsp;colors = [2,0,0,0]。颜色相同的相邻对的数量是 0。\n\t在第 2&nbsp;次查询后 colors = [2,2,0,0]。颜色相同的相邻对的数量是 1。\n\t在第 3&nbsp;次查询后 colors = [2,2,0,1]。颜色相同的相邻对的数量是 1。\n\t在第 4&nbsp;次查询后 colors = [2,1,0,1]。颜色相同的相邻对的数量是 0。\n\t在第 5&nbsp;次查询后 colors = [2,1,1,1]。颜色相同的相邻对的数量是 2。\n\n示例 2：\n\n输入：n = 1, queries = [[0,100000]]\n\n输出：[0]\n\n解释：\n\n在第一次查询后&nbsp;colors = [100000]。颜色相同的相邻对的数量是 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105\n\t1 <= queries.length <= 105\n\tqueries[i].length&nbsp;== 2\n\t0 <= indexi&nbsp;<= n - 1\n\t1 <=&nbsp; colori&nbsp;<= 105",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= queries.length <= 105",
+    "queries[i].length&nbsp;== 2",
+    "0 <= indexi&nbsp;<= n - 1",
+    "1 <=&nbsp; colori&nbsp;<= 105"
+  ]
+}

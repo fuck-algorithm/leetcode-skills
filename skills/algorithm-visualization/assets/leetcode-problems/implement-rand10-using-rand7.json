@@ -1,0 +1,11 @@
+{
+  "number": "470",
+  "title_cn": "用 Rand7() 实现 Rand10()",
+  "title_en": "Implement Rand10() Using Rand7()",
+  "slug": "implement-rand10-using-rand7",
+  "difficulty": "Medium",
+  "description": "给定方法&nbsp;rand7&nbsp;可生成 [1,7] 范围内的均匀随机整数，试写一个方法&nbsp;rand10&nbsp;生成 [1,10] 范围内的均匀随机整数。\n\n你只能调用&nbsp;rand7()&nbsp;且不能调用其他方法。请不要使用系统的&nbsp;Math.random()&nbsp;方法。\n\n每个测试用例将有一个内部参数 n，即你实现的函数 rand10() 在测试时将被调用的次数。请注意，这不是传递给 rand10() 的参数。\n\n&nbsp;\n\n示例 1:\n\n输入: 1\n输出: [2]\n\n示例 2:\n\n输入: 2\n输出: [2,8]\n\n示例 3:\n\n输入: 3\n输出: [3,8,10]\n\n&nbsp;\n\n提示:\n\n\t1 <= n <= 105\n\n&nbsp;\n\n进阶:\n\n\trand7()调用次数的&nbsp;期望值&nbsp;是多少&nbsp;?\n\t你能否尽量少调用 rand7() ?",
+  "constraints": [
+    "1 <= n <= 105"
+  ]
+}

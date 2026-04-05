@@ -1,0 +1,9 @@
+{
+  "number": "LCR 003",
+  "title_cn": "比特位计数",
+  "title_en": "比特位计数",
+  "slug": "w3tCBm",
+  "difficulty": "Easy",
+  "description": "给定一个非负整数 n&nbsp;，请计算 0 到 n 之间的每个数字的二进制表示中 1 的个数，并输出一个数组。\n\n&nbsp;\n\n示例 1:\n\n输入: n = 2\n输出: [0,1,1]\n解释: \n0 --> 0\n1 --> 1\n2 --> 10\n\n示例&nbsp;2:\n\n输入: n = 5\n输出: [0,1,1,2,1,2]\n解释:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\n\n&nbsp;\n\n说明 :\n\n\t0 <= n <= 105\n\n&nbsp;\n\n进阶:\n\n\t给出时间复杂度为&nbsp;O(n*sizeof(integer))&nbsp;的解答非常容易。但你可以在线性时间&nbsp;O(n)&nbsp;内用一趟扫描做到吗？\n\t要求算法的空间复杂度为&nbsp;O(n)&nbsp;。\n\t你能进一步完善解法吗？要求在C++或任何其他语言中不使用任何内置函数（如 C++ 中的&nbsp;__builtin_popcount&nbsp;）来执行此操作。\n\n&nbsp;\n\n注意：本题与主站 338&nbsp;题相同：https://leetcode.cn/problems/counting-bits/",
+  "constraints": []
+}

@@ -1,0 +1,13 @@
+{
+  "number": "3178",
+  "title_cn": "找出 K 秒后拿着球的孩子",
+  "title_en": "Find the Child Who Has the Ball After K Seconds",
+  "slug": "find-the-child-who-has-the-ball-after-k-seconds",
+  "difficulty": "Easy",
+  "description": "给你两个 正整数 n 和 k。有 n 个编号从 0 到 n - 1 的孩子按顺序从左到右站成一队。\n\n最初，编号为 0 的孩子拿着一个球，并且向右传球。每过一秒，拿着球的孩子就会将球传给他旁边的孩子。一旦球到达队列的 任一端 ，即编号为 0 的孩子或编号为 n - 1 的孩子处，传球方向就会 反转 。\n\n返回 k 秒后接到球的孩子的编号。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, k = 5\n\n输出：1\n\n解释：\n\n\t\t\t经过的时间\n\t\t\t孩子队列\n\n\t\t\t0\n\t\t\t[0, 1, 2]\n\n\t\t\t1\n\t\t\t[0, 1, 2]\n\n\t\t\t2\n\t\t\t[0, 1, 2]\n\n\t\t\t3\n\t\t\t[0, 1, 2]\n\n\t\t\t4\n\t\t\t[0, 1, 2]\n\n\t\t\t5\n\t\t\t[0, 1, 2]\n\n示例 2：\n\n输入：n = 5, k = 6\n\n输出：2\n\n解释：\n\n\t\t\t经过的时间\n\t\t\t孩子队列\n\n\t\t\t0\n\t\t\t[0, 1, 2, 3, 4]\n\n\t\t\t1\n\t\t\t[0, 1, 2, 3, 4]\n\n\t\t\t2\n\t\t\t[0, 1, 2, 3, 4]\n\n\t\t\t3\n\t\t\t[0, 1, 2, 3, 4]\n\n\t\t\t4\n\t\t\t[0, 1, 2, 3, 4]\n\n\t\t\t5\n\t\t\t[0, 1, 2, 3, 4]\n\n\t\t\t6\n\t\t\t[0, 1, 2, 3, 4]\n\n示例 3：\n\n输入：n = 4, k = 2\n\n输出：2\n\n解释：\n\n\t\t\t经过的时间\n\t\t\t孩子队列\n\n\t\t\t0\n\t\t\t[0, 1, 2, 3]\n\n\t\t\t1\n\t\t\t[0, 1, 2, 3]\n\n\t\t\t2\n\t\t\t[0, 1, 2, 3]\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 50\n\t1 <= k <= 50\n\n&nbsp;\n\n注意：此问题与 2582. 递枕头&nbsp;一致。",
+  "constraints": [
+    "2 <= n <= 50",
+    "1 <= k <= 50",
+    "注意：此问题与 2582. 递枕头&nbsp;一致。"
+  ]
+}

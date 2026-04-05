@@ -1,0 +1,13 @@
+{
+  "number": "3274",
+  "title_cn": "检查棋盘方格颜色是否相同",
+  "title_en": "Check if Two Chessboard Squares Have the Same Color",
+  "slug": "check-if-two-chessboard-squares-have-the-same-color",
+  "difficulty": "Easy",
+  "description": "给你两个字符串 coordinate1 和 coordinate2，代表 8 x 8 国际象棋棋盘上的两个方格的坐标。\n\n以下是棋盘的参考图。\n\n如果这两个方格颜色相同，返回 true，否则返回 false。\n\n坐标总是表示有效的棋盘方格。坐标的格式总是先字母（表示列），再数字（表示行）。\n\n&nbsp;\n\n示例 1：\n\n输入： coordinate1 = \"a1\", coordinate2 = \"c3\"\n\n输出： true\n\n解释：\n\n两个方格均为黑色。\n\n示例 2：\n\n输入： coordinate1 = \"a1\", coordinate2 = \"h3\"\n\n输出： false\n\n解释：\n\n方格 \"a1\" 是黑色，而 \"h3\" 是白色。\n\n&nbsp;\n\n提示：\n\n\tcoordinate1.length == coordinate2.length == 2\n\t'a' <= coordinate1[0], coordinate2[0] <= 'h'\n\t'1' <= coordinate1[1], coordinate2[1] <= '8'",
+  "constraints": [
+    "coordinate1.length == coordinate2.length == 2",
+    "'a' <= coordinate1[0], coordinate2[0] <= 'h'",
+    "'1' <= coordinate1[1], coordinate2[1] <= '8'"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "2681",
+  "title_cn": "英雄的力量",
+  "title_en": "Power of Heroes",
+  "slug": "power-of-heroes",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，它表示英雄的能力值。如果我们选出一部分英雄，这组英雄的 力量&nbsp;定义为：\n\n\ti0&nbsp;，i1&nbsp;，... ik&nbsp;表示这组英雄在数组中的下标。那么这组英雄的力量为&nbsp;max(nums[i0],nums[i1] ... nums[ik])2 * min(nums[i0],nums[i1] ... nums[ik]) 。\n\n请你返回所有可能的 非空 英雄组的 力量 之和。由于答案可能非常大，请你将结果对&nbsp;109 + 7&nbsp;取余。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,4]\n输出：141\n解释：\n第 1&nbsp;组：[2] 的力量为 22&nbsp;* 2 = 8 。\n第 2&nbsp;组：[1] 的力量为 12 * 1 = 1 。\n第 3&nbsp;组：[4] 的力量为 42 * 4 = 64 。\n第 4&nbsp;组：[2,1] 的力量为 22 * 1 = 4 。\n第 5 组：[2,4] 的力量为 42 * 2 = 32 。\n第 6&nbsp;组：[1,4] 的力量为 42 * 1 = 16 。\n第​ ​​​​​​7&nbsp;组：[2,1,4] 的力量为 42​​​​​​​ * 1 = 16 。\n所有英雄组的力量之和为 8 + 1 + 64 + 4 + 32 + 16 + 16 = 141 。\n\n示例 2：\n\n输入：nums = [1,1,1]\n输出：7\n解释：总共有 7 个英雄组，每一组的力量都是 1 。所以所有英雄组的力量之和为 7 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

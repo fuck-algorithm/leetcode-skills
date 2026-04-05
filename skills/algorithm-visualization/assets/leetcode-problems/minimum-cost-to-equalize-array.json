@@ -1,0 +1,14 @@
+{
+  "number": "3139",
+  "title_cn": "使数组中所有元素相等的最小开销",
+  "title_en": "Minimum Cost to Equalize Array",
+  "slug": "minimum-cost-to-equalize-array",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和两个整数&nbsp;cost1 和&nbsp;cost2&nbsp;。你可以执行以下&nbsp;任一&nbsp;操作&nbsp;任意&nbsp;次：\n\n\t从 nums&nbsp;中选择下标 i&nbsp;并且将 nums[i]&nbsp;增加 1&nbsp;，开销为 cost1。\n\t选择 nums&nbsp;中两个 不同&nbsp;下标 i&nbsp;和 j&nbsp;，并且将 nums[i]&nbsp;和 nums[j]&nbsp;都&nbsp;增加 1&nbsp;，开销为 cost2&nbsp;。\n\n你的目标是使数组中所有元素都 相等&nbsp;，请你返回需要的 最小开销&nbsp;之和。\n\n由于答案可能会很大，请你将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,1], cost1 = 5, cost2 = 2\n\n输出：15\n\n解释：\n\n执行以下操作可以使数组中所有元素相等：\n\n\t将&nbsp;nums[1]&nbsp;增加 1 ，开销为 5 ，nums 变为&nbsp;[4,2]&nbsp;。\n\t将&nbsp;nums[1]&nbsp;增加 1 ，开销为 5 ，nums 变为&nbsp;[4,3]&nbsp;。\n\t将&nbsp;nums[1]&nbsp;增加 1 ，开销为 5 ，nums 变为&nbsp;[4,4]&nbsp;。\n\n总开销为 15 。\n\n示例 2：\n\n输入：nums = [2,3,3,3,5], cost1 = 2, cost2 = 1\n\n输出：6\n\n解释：\n\n执行以下操作可以使数组中所有元素相等：\n\n\t将&nbsp;nums[0] 和&nbsp;nums[1]&nbsp;同时增加 1 ，开销为 1 ，nums 变为&nbsp;[3,4,3,3,5]&nbsp;。\n\t将&nbsp;nums[0] 和&nbsp;nums[2]&nbsp;同时增加 1 ，开销为 1 ，nums 变为&nbsp;[4,4,4,3,5]&nbsp;。\n\t将&nbsp;nums[0] 和&nbsp;nums[3]&nbsp;同时增加 1 ，开销为 1 ，nums 变为&nbsp;[5,4,4,4,5]&nbsp;。\n\t将&nbsp;nums[1] 和&nbsp;nums[2]&nbsp;同时增加 1 ，开销为 1 ，nums 变为&nbsp;[5,5,5,4,5]&nbsp;。\n\t将&nbsp;nums[3]&nbsp;增加 1 ，开销为 2 ，nums 变为&nbsp;[5,5,5,5,5]&nbsp;。\n\n总开销为 6 。\n\n示例 3：\n\n输入：nums = [3,5,3], cost1 = 1, cost2 = 3\n\n输出：4\n\n解释：\n\n执行以下操作可以使数组中所有元素相等：\n\n\t将&nbsp;nums[0]&nbsp;增加 1 ，开销为 1 ，nums 变为&nbsp;[4,5,3]&nbsp;。\n\t将&nbsp;nums[0]&nbsp;增加 1 ，开销为 1 ，nums 变为&nbsp;[5,5,3]&nbsp;。\n\t将&nbsp;nums[2]&nbsp;增加 1 ，开销为 1 ，nums 变为&nbsp;[5,5,4]&nbsp;。\n\t将&nbsp;nums[2]&nbsp;增加 1 ，开销为 1 ，nums 变为&nbsp;[5,5,5]&nbsp;。\n\n总开销为 4 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 106\n\t1 <= cost1 <= 106\n\t1 <= cost2 <= 106",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 106",
+    "1 <= cost1 <= 106",
+    "1 <= cost2 <= 106"
+  ]
+}

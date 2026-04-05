@@ -1,0 +1,12 @@
+{
+  "number": "334",
+  "title_cn": "递增的三元子序列",
+  "title_en": "Increasing Triplet Subsequence",
+  "slug": "increasing-triplet-subsequence",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums ，判断这个数组中是否存在长度为 3 的递增子序列。\n\n如果存在这样的三元组下标 (i, j, k)&nbsp;且满足 i < j < k ，使得&nbsp;nums[i] < nums[j] < nums[k] ，返回 true ；否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5]\n输出：true\n解释：任何 i < j < k 的三元组都满足题意\n\n示例 2：\n\n输入：nums = [5,4,3,2,1]\n输出：false\n解释：不存在满足题意的三元组\n\n示例 3：\n\n输入：nums = [2,1,5,0,4,6]\n输出：true\n解释：其中一个满足题意的三元组是 (1, 4, 5)，因为 nums[1] == 1 < nums[4] == 4 < nums[5] == 6\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 5 * 105\n\t-231 <= nums[i] <= 231 - 1\n\n&nbsp;\n\n进阶：你能实现时间复杂度为 O(n) ，空间复杂度为 O(1) 的解决方案吗？",
+  "constraints": [
+    "1 <= nums.length <= 5 * 105",
+    "-231 <= nums[i] <= 231 - 1"
+  ]
+}

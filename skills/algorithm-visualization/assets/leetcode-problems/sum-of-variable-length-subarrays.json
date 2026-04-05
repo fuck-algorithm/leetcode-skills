@@ -1,0 +1,12 @@
+{
+  "number": "3427",
+  "title_cn": "变长子数组求和",
+  "title_en": "Sum of Variable Length Subarrays",
+  "slug": "sum-of-variable-length-subarrays",
+  "difficulty": "Easy",
+  "description": "给你一个长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;。对于 每个 下标&nbsp;i（0 <= i < n），定义对应的子数组&nbsp;nums[start ... i]（start = max(0, i - nums[i])）。\n\n返回为数组中每个下标定义的子数组中所有元素的总和。\n子数组&nbsp;是数组中的一个连续、非空 的元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,1]\n\n输出：11\n\n解释：\n\n\t\t\t下标 i\n\t\t\t子数组\n\t\t\t和\n\n\t\t\t0\n\t\t\tnums[0] = [2]\n\t\t\t2\n\n\t\t\t1\n\t\t\tnums[0 ... 1] = [2, 3]\n\t\t\t5\n\n\t\t\t2\n\t\t\tnums[1 ... 2] = [3, 1]\n\t\t\t4\n\n\t\t\t总和\n\t\t\t&nbsp;\n\t\t\t11\n\n总和为 11 。因此，输出 11 。\n\n示例 2：\n\n输入：nums = [3,1,1,2]\n\n输出：13\n\n解释：\n\n\t\t\t下标 i\n\t\t\t子数组\n\t\t\t和\n\n\t\t\t0\n\t\t\tnums[0] = [3]\n\t\t\t3\n\n\t\t\t1\n\t\t\tnums[0 ... 1] = [3, 1]\n\t\t\t4\n\n\t\t\t2\n\t\t\tnums[1 ... 2] = [1, 1]\n\t\t\t2\n\n\t\t\t3\n\t\t\tnums[1 ... 3] = [1, 1, 2]\n\t\t\t4\n\n\t\t\t总和\n\t\t\t&nbsp;\n\t\t\t13\n\n总和为 13 。因此，输出为 13 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == nums.length <= 100\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "1 <= n == nums.length <= 100",
+    "1 <= nums[i] <= 1000"
+  ]
+}

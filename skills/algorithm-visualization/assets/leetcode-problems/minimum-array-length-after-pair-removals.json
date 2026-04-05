@@ -1,0 +1,13 @@
+{
+  "number": "2856",
+  "title_cn": "删除数对后的最小数组长度",
+  "title_en": "Minimum Array Length After Pair Removals",
+  "slug": "minimum-array-length-after-pair-removals",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的 非递减 整数数组&nbsp;nums&nbsp;。\n\n你可以执行以下操作任意次：\n\n\t选择 两个&nbsp;下标&nbsp;i 和&nbsp;j&nbsp;，满足&nbsp;nums[i] < nums[j]&nbsp;。\n\t将 nums&nbsp;中下标在&nbsp;i 和&nbsp;j&nbsp;处的元素删除。剩余元素按照原来的顺序组成新的数组，下标也重新从 0&nbsp;开始编号。\n\n请你返回一个整数，表示执行以上操作任意次后（可以执行 0 次），nums&nbsp;数组的 最小&nbsp;数组长度。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4]\n\n输出：0\n\n解释：\n\n示例 2：\n\n输入：nums = [1,1,2,2,3,3]\n\n输出：0\n\n解释：\n\n示例 3：\n\n输入：nums = [1000000000,1000000000]\n\n输出：2\n\n解释：\n\n由于两个数字相等，不能删除它们。\n\n示例 4：\n\n输入：nums = [2,3,4,4,4]\n\n输出：1\n\n解释：\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109\n\tnums&nbsp;是 非递减&nbsp;数组。",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "nums&nbsp;是 非递减&nbsp;数组。"
+  ]
+}

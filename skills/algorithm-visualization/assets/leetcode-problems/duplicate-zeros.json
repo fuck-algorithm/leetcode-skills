@@ -1,0 +1,12 @@
+{
+  "number": "1089",
+  "title_cn": "复写零",
+  "title_en": "Duplicate Zeros",
+  "slug": "duplicate-zeros",
+  "difficulty": "Easy",
+  "description": "给你一个长度固定的整数数组&nbsp;arr ，请你将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。\n\n注意：请不要在超过该数组长度的位置写入元素。请对输入的数组&nbsp;就地&nbsp;进行上述修改，不要从函数返回任何东西。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,0,2,3,0,4,5,0]\n输出：[1,0,0,2,3,0,0,4]\n解释：调用函数后，输入的数组将被修改为：[1,0,0,2,3,0,0,4]\n\n示例 2：\n\n输入：arr = [1,2,3]\n输出：[1,2,3]\n解释：调用函数后，输入的数组将被修改为：[1,2,3]\n\n&nbsp;\n\n提示：\n\n\t1 <= arr.length <= 104\n\t0 <= arr[i] <= 9",
+  "constraints": [
+    "1 <= arr.length <= 104",
+    "0 <= arr[i] <= 9"
+  ]
+}

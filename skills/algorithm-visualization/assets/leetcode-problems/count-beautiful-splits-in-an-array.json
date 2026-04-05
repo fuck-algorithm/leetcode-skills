@@ -1,0 +1,12 @@
+{
+  "number": "3388",
+  "title_cn": "统计数组中的美丽分割",
+  "title_en": "Count Beautiful Splits in an Array",
+  "slug": "count-beautiful-splits-in-an-array",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。\n\n如果数组&nbsp;nums&nbsp;的一个分割满足以下条件，我们称它是一个 美丽&nbsp;分割：\n\n\t数组&nbsp;nums&nbsp;分为三段 非空子数组：nums1&nbsp;，nums2&nbsp;和&nbsp;nums3&nbsp;，三个数组&nbsp;nums1&nbsp;，nums2&nbsp;和&nbsp;nums3&nbsp;按顺序连接可以得到 nums&nbsp;。\n\t子数组&nbsp;nums1&nbsp;是子数组&nbsp;nums2&nbsp;的 前缀 或者&nbsp;nums2&nbsp;是&nbsp;nums3&nbsp;的 前缀。\n\n请你返回满足以上条件的分割 数目&nbsp;。\n\n子数组&nbsp;指的是一个数组里一段连续 非空&nbsp;的元素。\n\n前缀&nbsp;指的是一个数组从头开始到中间某个元素结束的子数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,2,1]\n\n输出：2\n\n解释：\n\n美丽分割如下：\n\n\tnums1 = [1]&nbsp;，nums2 = [1,2]&nbsp;，nums3 = [1]&nbsp;。\n\tnums1 = [1]&nbsp;，nums2 = [1]&nbsp;，nums3 = [2,1]&nbsp;。\n\n示例 2：\n\n输入：nums = [1,2,3,4]\n\n输出：0\n\n解释：\n\n没有美丽分割。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 5000\n\t0 <= nums[i] <= 50",
+  "constraints": [
+    "1 <= nums.length <= 5000",
+    "0 <= nums[i] <= 50"
+  ]
+}

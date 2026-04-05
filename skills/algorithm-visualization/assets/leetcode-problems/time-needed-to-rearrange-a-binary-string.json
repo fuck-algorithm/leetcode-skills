@@ -1,0 +1,12 @@
+{
+  "number": "2380",
+  "title_cn": "二进制字符串重新安排顺序需要的时间",
+  "title_en": "Time Needed to Rearrange a Binary String",
+  "slug": "time-needed-to-rearrange-a-binary-string",
+  "difficulty": "Medium",
+  "description": "给你一个二进制字符串&nbsp;s&nbsp;。在一秒之中，所有&nbsp;子字符串&nbsp;\"01\" 同时&nbsp;被替换成&nbsp;\"10\"&nbsp;。这个过程持续进行到没有&nbsp;\"01\"&nbsp;存在。\n\n请你返回完成这个过程所需要的秒数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"0110101\"\n输出：4\n解释：\n一秒后，s 变成 \"1011010\" 。\n再过 1 秒后，s 变成 \"1101100\" 。\n第三秒过后，s 变成 \"1110100\" 。\n第四秒后，s 变成 \"1111000\" 。\n此时没有 \"01\" 存在，整个过程花费 4 秒。\n所以我们返回 4 。\n\n示例 2：\n\n输入：s = \"11100\"\n输出：0\n解释：\ns 中没有 \"01\" 存在，整个过程花费 0 秒。\n所以我们返回 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts[i]&nbsp;要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1' 。\n\n&nbsp;\n\n进阶：\n\n你能以 O(n) 的时间复杂度解决这个问题吗？",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s[i]&nbsp;要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1' 。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "LCR 093",
+  "title_cn": "最长的斐波那契子序列的长度",
+  "title_en": "最长的斐波那契子序列的长度",
+  "slug": "Q91FMA",
+  "difficulty": "Medium",
+  "description": "如果序列&nbsp;X_1, X_2, ..., X_n&nbsp;满足下列条件，就说它是&nbsp;斐波那契式&nbsp;的：\n\n\tn >= 3\n\t对于所有&nbsp;i + 2 <= n，都有&nbsp;X_i + X_{i+1} = X_{i+2}\n\n给定一个严格递增的正整数数组形成序列 arr&nbsp;，找到 arr 中最长的斐波那契式的子序列的长度。如果一个不存在，返回&nbsp;&nbsp;0 。\n\n（回想一下，子序列是从原序列&nbsp; arr 中派生出来的，它从 arr 中删掉任意数量的元素（也可以不删），而不改变其余元素的顺序。例如，&nbsp;[3, 5, 8]&nbsp;是&nbsp;[3, 4, 5, 6, 7, 8]&nbsp;的一个子序列）\n\n&nbsp;\n\n示例 1：\n\n输入: arr = [1,2,3,4,5,6,7,8]\n输出: 5\n解释: 最长的斐波那契式子序列为 [1,2,3,5,8] 。\n\n示例&nbsp;2：\n\n输入: arr = [1,3,7,11,12,14,18]\n输出: 3\n解释: 最长的斐波那契式子序列有 [1,11,12]、[3,11,14] 以及 [7,11,18] 。\n\n&nbsp;\n\n提示：\n\n\t3 <= arr.length <= 1000\n\n\t1 <= arr[i] < arr[i + 1] <= 10^9\n\n&nbsp;\n\n注意：本题与主站 873&nbsp;题相同：&nbsp;https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/",
+  "constraints": [
+    "3 <= arr.length <= 1000",
+    "1 <= arr[i] < arr[i + 1] <= 10^9",
+    "注意：本题与主站 873&nbsp;题相同：&nbsp;https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/"
+  ]
+}

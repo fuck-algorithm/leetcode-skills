@@ -1,0 +1,14 @@
+{
+  "number": "LCR 010",
+  "title_cn": "和为 K 的子数组",
+  "title_en": "和为 K 的子数组",
+  "slug": "QTMn0o",
+  "difficulty": "Medium",
+  "description": "给定一个整数数组和一个整数&nbsp;k ，请找到该数组中和为&nbsp;k&nbsp;的连续子数组的个数。\n\n&nbsp;\n\n示例 1：\n\n输入:nums = [1,1,1], k = 2\n输出: 2\n解释: 此题 [1,1] 与 [1,1] 为两种不同的情况\n\n示例 2：\n\n输入:nums = [1,2,3], k = 3\n输出: 2\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 2 * 104\n\t-1000 <= nums[i] <= 1000\n\n\t-107&nbsp;<= k <= 107\n\n&nbsp;\n\n注意：本题与主站 560&nbsp;题相同：&nbsp;https://leetcode.cn/problems/subarray-sum-equals-k/",
+  "constraints": [
+    "1 <= nums.length <= 2 * 104",
+    "-1000 <= nums[i] <= 1000",
+    "-107&nbsp;<= k <= 107",
+    "注意：本题与主站 560&nbsp;题相同：&nbsp;https://leetcode.cn/problems/subarray-sum-equals-k/"
+  ]
+}

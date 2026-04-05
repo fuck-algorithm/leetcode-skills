@@ -1,0 +1,14 @@
+{
+  "number": "1352",
+  "title_cn": "最后 K 个数的乘积",
+  "title_en": "Product of the Last K Numbers",
+  "slug": "product-of-the-last-k-numbers",
+  "difficulty": "Medium",
+  "description": "设计一个算法，该算法接受一个整数流并检索该流中最后 k 个整数的乘积。\n\n实现&nbsp;ProductOfNumbers&nbsp;类：\n\n\tProductOfNumbers()&nbsp;用一个空的流初始化对象。\n\tvoid add(int num)&nbsp;将数字&nbsp;num&nbsp;添加到当前数字列表的最后面。\n\tint getProduct(int k)&nbsp;返回当前数字列表中，最后&nbsp;k&nbsp;个数字的乘积。你可以假设当前列表中始终 至少 包含 k 个数字。\n\n题目数据保证：任何时候，任一连续数字序列的乘积都在 32 位整数范围内，不会溢出。\n\n&nbsp;\n\n示例：\n\n输入：\n[\"ProductOfNumbers\",\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]\n[[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]\n\n输出：\n[null,null,null,null,null,null,20,40,0,null,32]\n\n解释：\nProductOfNumbers productOfNumbers = new ProductOfNumbers();\nproductOfNumbers.add(3);        // [3]\nproductOfNumbers.add(0);        // [3,0]\nproductOfNumbers.add(2);        // [3,0,2]\nproductOfNumbers.add(5);        // [3,0,2,5]\nproductOfNumbers.add(4);        // [3,0,2,5,4]\nproductOfNumbers.getProduct(2); // 返回 20 。最后 2 个数字的乘积是 5 * 4 = 20\nproductOfNumbers.getProduct(3); // 返回 40 。最后 3 个数字的乘积是 2 * 5 * 4 = 40\nproductOfNumbers.getProduct(4); // 返回  0 。最后 4 个数字的乘积是 0 * 2 * 5 * 4 = 0\nproductOfNumbers.add(8);        // [3,0,2,5,4,8]\nproductOfNumbers.getProduct(2); // 返回 32 。最后 2 个数字的乘积是 4 * 8 = 32 \n\n&nbsp;\n\n提示：\n\n\t0 <= num&nbsp;<=&nbsp;100\n\t1 <= k <= 4 * 104\n\tadd 和 getProduct&nbsp;最多被调用&nbsp;4 * 104 次。\n\t在任何时间点流的乘积都在 32 位整数范围内。\n\n&nbsp;\n\n进阶：您能否 同时 将 GetProduct 和 Add 的实现改为 O(1) 时间复杂度，而不是 O(k) 时间复杂度？",
+  "constraints": [
+    "0 <= num&nbsp;<=&nbsp;100",
+    "1 <= k <= 4 * 104",
+    "add 和 getProduct&nbsp;最多被调用&nbsp;4 * 104 次。",
+    "在任何时间点流的乘积都在 32 位整数范围内。"
+  ]
+}

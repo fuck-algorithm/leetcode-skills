@@ -1,0 +1,12 @@
+{
+  "number": "2654",
+  "title_cn": "使数组所有元素变成 1 的最少操作次数",
+  "title_en": "Minimum Number of Operations to Make All Array Elements Equal to 1",
+  "slug": "minimum-number-of-operations-to-make-all-array-elements-equal-to-1",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的 正&nbsp;整数数组&nbsp;nums&nbsp;。你可以对数组执行以下操作 任意&nbsp;次：\n\n\t选择一个满足&nbsp;0 <= i < n - 1&nbsp;的下标 i&nbsp;，将&nbsp;nums[i] 或者&nbsp;nums[i+1]&nbsp;两者之一替换成它们的最大公约数。\n\n请你返回使数组 nums&nbsp;中所有元素都等于 1&nbsp;的 最少&nbsp;操作次数。如果无法让数组全部变成 1&nbsp;，请你返回 -1&nbsp;。\n\n两个正整数的最大公约数指的是能整除这两个数的最大正整数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,6,3,4]\n输出：4\n解释：我们可以执行以下操作：\n- 选择下标 i = 2 ，将 nums[2] 替换为 gcd(3,4) = 1 ，得到 nums = [2,6,1,4] 。\n- 选择下标 i = 1 ，将 nums[1] 替换为 gcd(6,1) = 1 ，得到 nums = [2,1,1,4] 。\n- 选择下标 i = 0 ，将 nums[0] 替换为 gcd(2,1) = 1 ，得到 nums = [1,1,1,4] 。\n- 选择下标 i = 2 ，将 nums[3] 替换为 gcd(1,4) = 1 ，得到 nums = [1,1,1,1] 。\n\n示例 2：\n\n输入：nums = [2,10,6,14]\n输出：-1\n解释：无法将所有元素都变成 1 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 50\n\t1 <= nums[i] <= 106",
+  "constraints": [
+    "2 <= nums.length <= 50",
+    "1 <= nums[i] <= 106"
+  ]
+}

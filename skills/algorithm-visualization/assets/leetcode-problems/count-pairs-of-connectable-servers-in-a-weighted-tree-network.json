@@ -1,0 +1,17 @@
+{
+  "number": "3067",
+  "title_cn": "在带权树网络中统计可连接服务器对数目",
+  "title_en": "Count Pairs of Connectable Servers in a Weighted Tree Network",
+  "slug": "count-pairs-of-connectable-servers-in-a-weighted-tree-network",
+  "difficulty": "Medium",
+  "description": "给你一棵无根带权树，树中总共有 n&nbsp;个节点，分别表示 n&nbsp;个服务器，服务器从 0&nbsp;到 n - 1&nbsp;编号。同时给你一个数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi, weighti]&nbsp;表示节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条双向边，边的权值为&nbsp;weighti&nbsp;。再给你一个整数&nbsp;signalSpeed&nbsp;。\n\n如果两台服务器 a&nbsp;和 b&nbsp;是通过服务器 c&nbsp;可连接的，则：\n\n\ta < b&nbsp;，a != c 且&nbsp;b != c&nbsp;。\n\t从&nbsp;c&nbsp;到&nbsp;a&nbsp;的距离是可以被&nbsp;signalSpeed&nbsp;整除的。\n\t从&nbsp;c&nbsp;到&nbsp;b&nbsp;的距离是可以被&nbsp;signalSpeed&nbsp;整除的。\n\t从&nbsp;c&nbsp;到&nbsp;b&nbsp;的路径与从&nbsp;c&nbsp;到&nbsp;a&nbsp;的路径没有任何公共边。\n\n请你返回一个长度为 n&nbsp;的整数数组&nbsp;count&nbsp;，其中&nbsp;count[i] 表示通过服务器&nbsp;i&nbsp;可连接&nbsp;的服务器对的&nbsp;数目&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [[0,1,1],[1,2,5],[2,3,13],[3,4,9],[4,5,2]], signalSpeed = 1\n输出：[0,4,6,6,4,0]\n解释：由于 signalSpeed 等于 1 ，count[c] 等于所有从 c 开始且没有公共边的路径对数目。\n在输入图中，count[c] 等于服务器 c 左边服务器数目乘以右边服务器数目。\n\n示例 2：\n\n输入：edges = [[0,6,3],[6,5,3],[0,3,1],[3,2,7],[3,1,6],[3,4,2]], signalSpeed = 3\n输出：[2,0,0,0,0,0,2]\n解释：通过服务器 0 ，有 2 个可连接服务器对(4, 5) 和 (4, 6) 。\n通过服务器 6 ，有 2 个可连接服务器对 (4, 5) 和 (0, 5) 。\n所有服务器对都必须通过服务器 0 或 6 才可连接，所以其他服务器对应的可连接服务器对数目都为 0 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 1000\n\tedges.length == n - 1\n\tedges[i].length == 3\n\t0 <= ai, bi < n\n\tedges[i] = [ai, bi, weighti]\n\t1 <= weighti <= 106\n\t1 <= signalSpeed <= 106\n\t输入保证&nbsp;edges&nbsp;构成一棵合法的树。",
+  "constraints": [
+    "2 <= n <= 1000",
+    "edges.length == n - 1",
+    "edges[i].length == 3",
+    "0 <= ai, bi < n",
+    "edges[i] = [ai, bi, weighti]",
+    "1 <= weighti <= 106",
+    "1 <= signalSpeed <= 106"
+  ]
+}

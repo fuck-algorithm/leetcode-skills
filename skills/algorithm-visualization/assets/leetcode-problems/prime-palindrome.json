@@ -1,0 +1,11 @@
+{
+  "number": "866",
+  "title_cn": "回文质数",
+  "title_en": "Prime Palindrome",
+  "slug": "prime-palindrome",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n ，返回大于或等于 n 的最小&nbsp;回文质数。\n\n一个整数如果恰好有两个除数：1 和它本身，那么它是 质数 。注意，1 不是质数。\n\n\t例如，2、3、5、7、11 和 13 都是质数。\n\n一个整数如果从左向右读和从右向左读是相同的，那么它是 回文数 。\n\n\t例如，101 和 12321 都是回文数。\n\n测试用例保证答案总是存在，并且在 [2, 2 * 108] 范围内。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 6\n输出：7\n\n示例 2：\n\n输入：n = 8\n输出：11\n\n示例 3：\n\n输入：n = 13\n输出：101\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 108",
+  "constraints": [
+    "1 <= n <= 108"
+  ]
+}

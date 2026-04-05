@@ -1,0 +1,9 @@
+{
+  "number": "193",
+  "title_cn": "有效电话号码",
+  "title_en": "Valid Phone Numbers",
+  "slug": "valid-phone-numbers",
+  "difficulty": "Easy",
+  "description": "给定一个包含电话号码列表（一行一个电话号码）的文本文件 file.txt，写一个单行 bash 脚本输出所有有效的电话号码。\n\n你可以假设一个有效的电话号码必须满足以下两种格式： (xxx) xxx-xxxx 或 xxx-xxx-xxxx。（x 表示一个数字）\n\n你也可以假设每行前后没有多余的空格字符。\n\n示例：\n\n假设 file.txt 内容如下：\n\n987-123-4567\n123 456 7890\n(123) 456-7890\n\n你的脚本应当输出下列有效的电话号码：\n\n987-123-4567\n(123) 456-7890",
+  "constraints": []
+}

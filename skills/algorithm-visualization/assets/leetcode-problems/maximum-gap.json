@@ -1,0 +1,12 @@
+{
+  "number": "164",
+  "title_cn": "最大间距",
+  "title_en": "Maximum Gap",
+  "slug": "maximum-gap",
+  "difficulty": "Medium",
+  "description": "给定一个无序的数组&nbsp;nums，返回 数组在排序之后，相邻元素之间最大的差值 。如果数组元素个数小于 2，则返回 0 。\n\n您必须编写一个在「线性时间」内运行并使用「线性额外空间」的算法。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: nums = [3,6,9,1]\n输出: 3\n解释: 排序后的数组是 [1,3,6,9], 其中相邻元素 (3,6) 和 (6,9) 之间都存在最大差值 3。\n\n示例&nbsp;2:\n\n输入: nums = [10]\n输出: 0\n解释: 数组元素个数小于 2，因此返回 0。\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i] <= 109"
+  ]
+}

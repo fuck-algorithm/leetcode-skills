@@ -1,0 +1,12 @@
+{
+  "number": "3265",
+  "title_cn": "统计近似相等数对 I",
+  "title_en": "Count Almost Equal Pairs I",
+  "slug": "count-almost-equal-pairs-i",
+  "difficulty": "Medium",
+  "description": "给你一个正整数数组&nbsp;nums&nbsp;。\n\n如果我们执行以下操作 至多一次&nbsp;可以让两个整数&nbsp;x 和&nbsp;y&nbsp;相等，那么我们称这个数对是 近似相等&nbsp;的：\n\n\t选择&nbsp;x 或者&nbsp;y &nbsp;之一，将这个数字中的两个数位交换。\n\n请你返回 nums&nbsp;中，下标 i&nbsp;和 j&nbsp;满足&nbsp;i < j&nbsp;且&nbsp;nums[i] 和&nbsp;nums[j] 近似相等&nbsp;的数对数目。\n\n注意&nbsp;，执行操作后一个整数可以有前导 0 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,12,30,17,21]\n\n输出：2\n\n解释：\n\n近似相等数对包括：\n\n\t3 和 30 。交换 30 中的数位 3 和 0 ，得到 3 。\n\t12 和 21 。交换12 中的数位 1 和 2 ，得到 21 。\n\n示例 2：\n\n输入：nums = [1,1,1,1,1]\n\n输出：10\n\n解释：\n\n数组中的任意两个元素都是近似相等的。\n\n示例 3：\n\n输入：nums = [123,231]\n\n输出：0\n\n解释：\n\n我们无法通过交换 123&nbsp;或者 231 中的两个数位得到另一个数。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 100\n\t1 <= nums[i] <= 106",
+  "constraints": [
+    "2 <= nums.length <= 100",
+    "1 <= nums[i] <= 106"
+  ]
+}

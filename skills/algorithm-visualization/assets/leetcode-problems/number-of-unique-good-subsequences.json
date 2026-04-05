@@ -1,0 +1,12 @@
+{
+  "number": "1987",
+  "title_cn": "不同的好子序列数目",
+  "title_en": "Number of Unique Good Subsequences",
+  "slug": "number-of-unique-good-subsequences",
+  "difficulty": "Hard",
+  "description": "给你一个二进制字符串&nbsp;binary&nbsp;。&nbsp;binary&nbsp;的一个 子序列&nbsp;如果是 非空&nbsp;的且没有 前导&nbsp;0&nbsp;（除非数字是 \"0\"&nbsp;本身），那么它就是一个 好&nbsp;的子序列。\n\n请你找到&nbsp;binary&nbsp;不同好子序列&nbsp;的数目。\n\n\t比方说，如果&nbsp;binary = \"001\"&nbsp;，那么所有 好&nbsp;子序列为&nbsp;[\"0\", \"0\", \"1\"]&nbsp;，所以 不同&nbsp;的好子序列为&nbsp;\"0\" 和&nbsp;\"1\"&nbsp;。 注意，子序列&nbsp;\"00\"&nbsp;，\"01\"&nbsp;和&nbsp;\"001\"&nbsp;不是好的，因为它们有前导 0 。\n\n请你返回&nbsp;binary&nbsp;中&nbsp;不同好子序列&nbsp;的数目。由于答案可能很大，请将它对&nbsp;109 + 7&nbsp;取余 后返回。\n\n一个 子序列&nbsp;指的是从原数组中删除若干个（可以一个也不删除）元素后，不改变剩余元素顺序得到的序列。\n\n&nbsp;\n\n示例 1：\n\n输入：binary = \"001\"\n输出：2\n解释：好的二进制子序列为 [\"0\", \"0\", \"1\"] 。\n不同的好子序列为 \"0\" 和 \"1\" 。\n\n示例 2：\n\n输入：binary = \"11\"\n输出：2\n解释：好的二进制子序列为 [\"1\", \"1\", \"11\"] 。\n不同的好子序列为 \"1\" 和 \"11\" 。\n\n示例 3：\n\n输入：binary = \"101\"\n输出：5\n解释：好的二进制子序列为 [\"1\", \"0\", \"1\", \"10\", \"11\", \"101\"] 。\n不同的好子序列为 \"0\" ，\"1\" ，\"10\" ，\"11\" 和 \"101\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= binary.length <= 105\n\tbinary&nbsp;只含有&nbsp;'0'&nbsp;和&nbsp;'1' 。",
+  "constraints": [
+    "1 <= binary.length <= 105",
+    "binary&nbsp;只含有&nbsp;'0'&nbsp;和&nbsp;'1' 。"
+  ]
+}

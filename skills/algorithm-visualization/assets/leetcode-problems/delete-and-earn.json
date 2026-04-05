@@ -1,0 +1,12 @@
+{
+  "number": "740",
+  "title_cn": "删除并获得点数",
+  "title_en": "Delete and Earn",
+  "slug": "delete-and-earn",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;，你可以对它进行一些操作。\n\n每次操作中，选择任意一个&nbsp;nums[i]&nbsp;，删除它并获得&nbsp;nums[i]&nbsp;的点数。之后，你必须删除 所有 等于&nbsp;nums[i] - 1 和 nums[i] + 1&nbsp;的元素。\n\n开始你拥有 0 个点数。返回你能通过这些操作获得的最大点数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,4,2]\n输出：6\n解释：\n你可以执行下列步骤：\n- 删除 4 获得 4 个点数，因此 3 也被删除。nums = [2]。\n- 之后，删除 2 获得 2 个点数。nums = []。\n总共获得 6 个点数。\n\n示例&nbsp;2：\n\n输入：nums = [2,2,3,3,3,4]\n输出：9\n解释：\n你可以执行下列步骤：\n- 删除 3 获得 3 个点数。所有的 2 和 4 也被删除。nums = [3,3]。\n- 之后，再次删除 3 获得 3 个点数。nums = [3]。\n- 再次删除 3 获得 3 个点数。nums = []。\n总共获得 9 个点数。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 2 * 104\n\t1 <= nums[i] <= 104",
+  "constraints": [
+    "1 <= nums.length <= 2 * 104",
+    "1 <= nums[i] <= 104"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3196",
+  "title_cn": "最大化子数组的总成本",
+  "title_en": "Maximize Total Cost of Alternating Subarrays",
+  "slug": "maximize-total-cost-of-alternating-subarrays",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的整数数组 nums。\n\n子数组 nums[l..r]（其中 0 <= l <= r < n）的 成本 定义为：\n\ncost(l, r) = nums[l] - nums[l + 1] + ... + nums[r] * (−1)r − l\n\n你的任务是将 nums 分割成若干子数组，使得所有子数组的成本之和 最大化，并确保每个元素 正好 属于一个子数组。\n\n具体来说，如果 nums 被分割成 k 个子数组，且分割点为索引 i1, i2, ..., ik − 1（其中 0 <= i1 < i2 < ... < ik - 1 < n - 1），则总成本为：\n\ncost(0, i1) + cost(i1 + 1, i2) + ... + cost(ik − 1 + 1, n − 1)\n\n返回在最优分割方式下的子数组成本之和的最大值。\n\n注意：如果 nums 没有被分割，即 k = 1，则总成本即为 cost(0, n - 1)。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,-2,3,4]\n\n输出： 10\n\n解释：\n\n一种总成本最大化的方法是将 [1, -2, 3, 4] 分割成子数组 [1, -2, 3] 和 [4]。总成本为 (1 + 2 + 3) + 4 = 10。\n\n示例 2：\n\n输入： nums = [1,-1,1,-1]\n\n输出： 4\n\n解释：\n\n一种总成本最大化的方法是将 [1, -1, 1, -1] 分割成子数组 [1, -1] 和 [1, -1]。总成本为 (1 + 1) + (1 + 1) = 4。\n\n示例 3：\n\n输入： nums = [0]\n\n输出： 0\n\n解释：\n\n无法进一步分割数组，因此答案为 0。\n\n示例 4：\n\n输入： nums = [1,-1]\n\n输出： 2\n\n解释：\n\n选择整个数组，总成本为 1 + 1 = 2，这是可能的最大成本。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-109 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "2806",
+  "title_cn": "取整购买后的账户余额",
+  "title_en": "Account Balance After Rounded Purchase",
+  "slug": "account-balance-after-rounded-purchase",
+  "difficulty": "Easy",
+  "description": "一开始，你的银行账户里有&nbsp;100&nbsp;块钱。\n\n给你一个整数purchaseAmount&nbsp;，它表示你在一次购买中愿意支出的金额。\n\n在一个商店里，你进行一次购买，实际支出的金额会向 最近&nbsp;的&nbsp;10&nbsp;的 倍数&nbsp;取整。换句话说，你实际会支付一个&nbsp;非负&nbsp;金额&nbsp;roundedAmount&nbsp;，满足&nbsp;roundedAmount&nbsp;是&nbsp;10&nbsp;的倍数且&nbsp;abs(roundedAmount - purchaseAmount)&nbsp;的值 最小&nbsp;。\n\n如果存在多于一个最接近的 10&nbsp;的倍数，较大的倍数&nbsp;是你的实际支出金额。\n\n请你返回一个整数，表示你在愿意支出金额为&nbsp;purchaseAmount&nbsp;块钱的前提下，购买之后剩下的余额。\n\n注意： 0&nbsp;也是&nbsp;10&nbsp;的倍数。\n\n&nbsp;\n\n示例 1：\n\n输入：purchaseAmount = 9\n输出：90\n解释：这个例子中，最接近 9 的 10 的倍数是 10 。所以你的账户余额为 100 - 10 = 90 。\n\n示例 2：\n\n输入：purchaseAmount = 15\n输出：80\n解释：这个例子中，有 2 个最接近 15 的 10 的倍数：10 和 20，较大的数 20 是你的实际开销。\n所以你的账户余额为 100 - 20 = 80 。\n\n&nbsp;\n\n提示：\n\n\t0 <= purchaseAmount <= 100",
+  "constraints": [
+    "0 <= purchaseAmount <= 100"
+  ]
+}

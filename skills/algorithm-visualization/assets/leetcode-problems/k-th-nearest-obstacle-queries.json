@@ -1,0 +1,14 @@
+{
+  "number": "3275",
+  "title_cn": "第 K 近障碍物查询",
+  "title_en": "K-th Nearest Obstacle Queries",
+  "slug": "k-th-nearest-obstacle-queries",
+  "difficulty": "Medium",
+  "description": "有一个无限大的二维平面。\n\n给你一个正整数&nbsp;k&nbsp;，同时给你一个二维数组&nbsp;queries&nbsp;，包含一系列查询：\n\n\tqueries[i] = [x, y]&nbsp;：在平面上坐标&nbsp;(x, y)&nbsp;处建一个障碍物，数据保证之前的查询 不会 在这个坐标处建立任何障碍物。\n\n每次查询后，你需要找到离原点第 k&nbsp;近&nbsp;障碍物到原点的 距离&nbsp;。\n\n请你返回一个整数数组&nbsp;results&nbsp;，其中&nbsp;results[i]&nbsp;表示建立第 i&nbsp;个障碍物以后，离原地第 k&nbsp;近障碍物距离原点的距离。如果少于 k&nbsp;个障碍物，results[i] == -1&nbsp;。\n\n注意，一开始&nbsp;没有&nbsp;任何障碍物。\n\n坐标在&nbsp;(x, y)&nbsp;处的点距离原点的距离定义为&nbsp;|x| + |y|&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：queries = [[1,2],[3,4],[2,3],[-3,0]], k = 2\n\n输出：[-1,7,5,3]\n\n解释：\n\n最初，不存在障碍物。\n\n\tqueries[0]&nbsp;之后，少于 2 个障碍物。\n\tqueries[1]&nbsp;之后，&nbsp;两个障碍物距离原点的距离分别为 3 和 7 。\n\tqueries[2]&nbsp;之后，障碍物距离原点的距离分别为 3 ，5 和 7 。\n\tqueries[3]&nbsp;之后，障碍物距离原点的距离分别为 3，3，5 和 7 。\n\n示例 2：\n\n输入：queries = [[5,5],[4,4],[3,3]], k = 1\n\n输出：[10,8,6]\n\n解释：\n\n\tqueries[0]&nbsp;之后，只有一个障碍物，距离原点距离为 10 。\n\tqueries[1]&nbsp;之后，障碍物距离原点距离分别为 8 和 10 。\n\tqueries[2]&nbsp;之后，障碍物距离原点的距离分别为 6， 8 和10 。\n\n&nbsp;\n\n提示：\n\n\t1 <= queries.length <= 2 * 105\n\t所有&nbsp;queries[i]&nbsp;互不相同。\n\t-109 <= queries[i][0], queries[i][1] <= 109\n\t1 <= k <= 105",
+  "constraints": [
+    "1 <= queries.length <= 2 * 105",
+    "所有&nbsp;queries[i]&nbsp;互不相同。",
+    "-109 <= queries[i][0], queries[i][1] <= 109",
+    "1 <= k <= 105"
+  ]
+}

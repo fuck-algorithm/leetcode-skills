@@ -1,0 +1,13 @@
+{
+  "number": "1546",
+  "title_cn": "和为目标值且不重叠的非空子数组的最大数目",
+  "title_en": "Maximum Number of Non-Overlapping Subarrays With Sum Equals Target",
+  "slug": "maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
+  "difficulty": "Medium",
+  "description": "给你一个数组&nbsp;nums&nbsp;和一个整数&nbsp;target&nbsp;。\n\n请你返回&nbsp;非空不重叠&nbsp;子数组的最大数目，且每个子数组中数字和都为 target&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,1,1,1], target = 2\n输出：2\n解释：总共有 2 个不重叠子数组（加粗数字表示） [1,1,1,1,1] ，它们的和为目标值 2 。\n\n示例 2：\n\n输入：nums = [-1,3,5,1,4,2,-9], target = 6\n输出：2\n解释：总共有 3 个子数组和为 6 。\n([5,1], [4,2], [3,5,1,4,2,-9]) 但只有前 2 个是不重叠的。\n\n示例 3：\n\n输入：nums = [-2,6,6,3,5,4,1,2,8], target = 10\n输出：3\n\n示例 4：\n\n输入：nums = [0,0,0], target = 0\n输出：3\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <=&nbsp;10^5\n\t-10^4 <= nums[i] <=&nbsp;10^4\n\t0 <= target <= 10^6",
+  "constraints": [
+    "1 <= nums.length <=&nbsp;10^5",
+    "-10^4 <= nums[i] <=&nbsp;10^4",
+    "0 <= target <= 10^6"
+  ]
+}

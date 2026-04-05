@@ -1,0 +1,14 @@
+{
+  "number": "3240",
+  "title_cn": "最少翻转次数使二进制矩阵回文 II",
+  "title_en": "Minimum Number of Flips to Make Binary Grid Palindromic II",
+  "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-ii",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;m x n&nbsp;的二进制矩阵&nbsp;grid&nbsp;。\n\n如果矩阵中一行或者一列从前往后与从后往前读是一样的，那么我们称这一行或者这一列是 回文&nbsp;的。\n\n你可以将 grid&nbsp;中任意格子的值 翻转&nbsp;，也就是将格子里的值从 0&nbsp;变成 1&nbsp;，或者从 1&nbsp;变成 0&nbsp;。\n\n请你返回 最少&nbsp;翻转次数，使得矩阵中 所有&nbsp;行和列都是 回文的&nbsp;，且矩阵中 1&nbsp;的数目可以被 4&nbsp;整除&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,0,0],[0,1,0],[0,0,1]]\n\n输出：3\n\n解释：\n\n示例 2：\n\n输入：grid = [[0,1],[0,1],[0,0]]\n\n输出：2\n\n解释：\n\n示例 3：\n\n输入：grid = [[1],[1]]\n\n输出：2\n\n解释：\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m * n <= 2 * 105\n\t0 <= grid[i][j] <= 1",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m * n <= 2 * 105",
+    "0 <= grid[i][j] <= 1"
+  ]
+}

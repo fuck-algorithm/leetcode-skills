@@ -1,0 +1,11 @@
+{
+  "number": "600",
+  "title_cn": "不含连续1的非负整数",
+  "title_en": "Non-negative Integers without Consecutive Ones",
+  "slug": "non-negative-integers-without-consecutive-ones",
+  "difficulty": "Hard",
+  "description": "给定一个正整数 n ，请你统计在&nbsp;[0, n] 范围的非负整数中，有多少个整数的二进制表示中不存在 连续的 1 。\n\n&nbsp;\n\n示例 1:\n\n输入: n = 5\n输出: 5\n解释: \n下面列出范围在 [0, 5] 的非负整数与其对应的二进制表示：\n0 : 0\n1 : 1\n2 : 10\n3 : 11\n4 : 100\n5 : 101\n其中，只有整数 3 违反规则（有两个连续的 1 ），其他 5 个满足规则。\n\n示例 2:\n\n输入: n = 1\n输出: 2\n\n示例 3:\n\n输入: n = 2\n输出: 3\n\n&nbsp;\n\n提示:\n\n\t1 <= n <= 109",
+  "constraints": [
+    "1 <= n <= 109"
+  ]
+}

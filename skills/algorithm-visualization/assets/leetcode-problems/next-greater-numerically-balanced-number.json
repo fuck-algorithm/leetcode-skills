@@ -1,0 +1,11 @@
+{
+  "number": "2048",
+  "title_cn": "下一个更大的数值平衡数",
+  "title_en": "Next Greater Numerically Balanced Number",
+  "slug": "next-greater-numerically-balanced-number",
+  "difficulty": "Medium",
+  "description": "如果整数&nbsp; x 满足：对于每个数位&nbsp;d ，这个数位&nbsp;恰好 在 x 中出现 d 次。那么整数 x 就是一个 数值平衡数 。\n\n给你一个整数 n ，请你返回 严格大于 n 的 最小数值平衡数 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1\n输出：22\n解释：\n22 是一个数值平衡数，因为：\n- 数字 2 出现 2 次 \n这也是严格大于 1 的最小数值平衡数。\n\n示例 2：\n\n输入：n = 1000\n输出：1333\n解释：\n1333 是一个数值平衡数，因为：\n- 数字 1 出现 1 次。\n- 数字 3 出现 3 次。 \n这也是严格大于 1000 的最小数值平衡数。\n注意，1022 不能作为本输入的答案，因为数字 0 的出现次数超过了 0 。\n\n示例 3：\n\n输入：n = 3000\n输出：3133\n解释：\n3133 是一个数值平衡数，因为：\n- 数字 1 出现 1 次。\n- 数字 3 出现 3 次。 \n这也是严格大于 3000 的最小数值平衡数。\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 106",
+  "constraints": [
+    "0 <= n <= 106"
+  ]
+}

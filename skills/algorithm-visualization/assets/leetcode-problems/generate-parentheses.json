@@ -1,0 +1,11 @@
+{
+  "number": "22",
+  "title_cn": "括号生成",
+  "title_en": "Generate Parentheses",
+  "slug": "generate-parentheses",
+  "difficulty": "Medium",
+  "description": "数字 n&nbsp;代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3\n输出：[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\n\n示例 2：\n\n输入：n = 1\n输出：[\"()\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 8",
+  "constraints": [
+    "1 <= n <= 8"
+  ]
+}

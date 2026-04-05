@@ -1,0 +1,13 @@
+{
+  "number": "3224",
+  "title_cn": "使差值相等的最少数组改动次数",
+  "title_en": "Minimum Array Changes to Make Differences Equal",
+  "slug": "minimum-array-changes-to-make-differences-equal",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;，n&nbsp;是 偶数&nbsp;，同时给你一个整数&nbsp;k&nbsp;。\n\n你可以对数组进行一些操作。每次操作中，你可以将数组中 任一&nbsp;元素替换为 0&nbsp;到 k&nbsp;之间的&nbsp;任一&nbsp;整数。\n\n执行完所有操作以后，你需要确保最后得到的数组满足以下条件：\n\n\t存在一个整数 X&nbsp;，满足对于所有的&nbsp;(0 <= i < n)&nbsp;都有&nbsp;abs(a[i] - a[n - i - 1]) = X&nbsp;。\n\n请你返回满足以上条件 最少&nbsp;修改次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,0,1,2,4,3], k = 4\n\n输出：2\n\n解释：\n我们可以执行以下操作：\n\n\t将&nbsp;nums[1]&nbsp;变为 2 ，结果数组为&nbsp;nums = [1,2,1,2,4,3]&nbsp;。\n\t将&nbsp;nums[3]&nbsp;变为 3 ，结果数组为&nbsp;nums = [1,2,1,3,4,3]&nbsp;。\n\n整数&nbsp;X&nbsp;为 2 。\n\n示例 2：\n\n输入：nums = [0,1,2,3,3,6,5,4], k = 6\n\n输出：2\n\n解释：\n我们可以执行以下操作：\n\n\t将&nbsp;nums[3]&nbsp;变为 0 ，结果数组为&nbsp;nums = [0,1,2,0,3,6,5,4]&nbsp;。\n\t将&nbsp;nums[4]&nbsp;变为 4 ，结果数组为&nbsp;nums = [0,1,2,0,4,6,5,4]&nbsp;。\n\n整数 X&nbsp;为 4 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n == nums.length <= 105\n\tn&nbsp;是偶数。\n\t0 <= nums[i] <= k <= 105",
+  "constraints": [
+    "2 <= n == nums.length <= 105",
+    "n&nbsp;是偶数。",
+    "0 <= nums[i] <= k <= 105"
+  ]
+}

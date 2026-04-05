@@ -1,0 +1,13 @@
+{
+  "number": "977",
+  "title_cn": "有序数组的平方",
+  "title_en": "Squares of a Sorted Array",
+  "slug": "squares-of-a-sorted-array",
+  "difficulty": "Easy",
+  "description": "给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [-4,-1,0,3,10]\n输出：[0,1,9,16,100]\n解释：平方后，数组变为 [16,1,0,9,100]\n排序后，数组变为 [0,1,9,16,100]\n\n示例 2：\n\n输入：nums = [-7,-3,2,3,11]\n输出：[4,9,9,49,121]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 104\n\t-104 <= nums[i] <= 104\n\tnums 已按 非递减顺序 排序\n\n&nbsp;\n\n进阶：\n\n\t请你设计时间复杂度为 O(n) 的算法解决本问题",
+  "constraints": [
+    "1 <= nums.length <= 104",
+    "-104 <= nums[i] <= 104",
+    "nums 已按 非递减顺序 排序"
+  ]
+}

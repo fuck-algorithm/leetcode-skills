@@ -1,0 +1,12 @@
+{
+  "number": "717",
+  "title_cn": "1 比特与 2 比特字符",
+  "title_en": "1-bit and 2-bit Characters",
+  "slug": "1-bit-and-2-bit-characters",
+  "difficulty": "Easy",
+  "description": "有两种特殊字符：\n\n\t第一种字符可以用一比特&nbsp;0 表示\n\t第二种字符可以用两比特（10&nbsp;或&nbsp;11）表示\n\n给你一个以 0 结尾的二进制数组&nbsp;bits&nbsp;，如果最后一个字符必须是一个一比特字符，则返回 true 。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: bits = [1, 0, 0]\n输出: true\n解释: 唯一的解码方式是将其解析为一个两比特字符和一个一比特字符。\n所以最后一个字符是一比特字符。\n\n示例&nbsp;2:\n\n输入：bits = [1,1,1,0]\n输出：false\n解释：唯一的解码方式是将其解析为两比特字符和两比特字符。\n所以最后一个字符不是一比特字符。\n\n&nbsp;\n\n提示:\n\n\t1 <= bits.length <= 1000\n\tbits[i] 为 0 或 1",
+  "constraints": [
+    "1 <= bits.length <= 1000",
+    "bits[i] 为 0 或 1"
+  ]
+}

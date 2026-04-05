@@ -1,0 +1,11 @@
+{
+  "number": "1954",
+  "title_cn": "收集足够苹果的最小花园周长",
+  "title_en": "Minimum Garden Perimeter to Collect Enough Apples",
+  "slug": "minimum-garden-perimeter-to-collect-enough-apples",
+  "difficulty": "Medium",
+  "description": "给你一个用无限二维网格表示的花园，每一个&nbsp;整数坐标处都有一棵苹果树。整数坐标&nbsp;(i, j)&nbsp;处的苹果树有 |i| + |j|&nbsp;个苹果。\n\n你将会买下正中心坐标是 (0, 0)&nbsp;的一块 正方形土地&nbsp;，且每条边都与两条坐标轴之一平行。\n\n给你一个整数&nbsp;neededApples&nbsp;，请你返回土地的&nbsp;最小周长&nbsp;，使得&nbsp;至少&nbsp;有&nbsp;neededApples&nbsp;个苹果在土地&nbsp;里面或者边缘上。\n\n|x|&nbsp;的值定义为：\n\n\t如果&nbsp;x >= 0&nbsp;，那么值为&nbsp;x\n\t如果&nbsp;x <&nbsp;0&nbsp;，那么值为&nbsp;-x\n\n&nbsp;\n\n示例 1：\n\n输入：neededApples = 1\n输出：8\n解释：边长长度为 1 的正方形不包含任何苹果。\n但是边长为 2 的正方形包含 12 个苹果（如上图所示）。\n周长为 2 * 4 = 8 。\n\n示例 2：\n\n输入：neededApples = 13\n输出：16\n\n示例 3：\n\n输入：neededApples = 1000000000\n输出：5040\n\n&nbsp;\n\n提示：\n\n\t1 <= neededApples <= 1015",
+  "constraints": [
+    "1 <= neededApples <= 1015"
+  ]
+}

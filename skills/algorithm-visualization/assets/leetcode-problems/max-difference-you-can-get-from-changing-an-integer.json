@@ -1,0 +1,11 @@
+{
+  "number": "1432",
+  "title_cn": "改变一个整数能得到的最大差值",
+  "title_en": "Max Difference You Can Get From Changing an Integer",
+  "slug": "max-difference-you-can-get-from-changing-an-integer",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;num&nbsp;。你可以对它进行以下步骤共计&nbsp;两次：\n\n\t选择一个数字&nbsp;x (0&nbsp;<= x <= 9).\n\t选择另一个数字&nbsp;y (0&nbsp;<= y <= 9)&nbsp;。数字&nbsp;y&nbsp;可以等于&nbsp;x&nbsp;。\n\t将 num&nbsp;中所有出现 x&nbsp;的数位都用 y&nbsp;替换。\n\n令两次对 num&nbsp;的操作得到的结果分别为&nbsp;a&nbsp;和&nbsp;b&nbsp;。\n\n请你返回&nbsp;a 和&nbsp;b&nbsp;的 最大差值 。\n\n注意，a&nbsp;和&nbsp;b&nbsp;必须不能 含有前导 0，并且 不为 0。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 555\n输出：888\n解释：第一次选择 x = 5 且 y = 9 ，并把得到的新数字保存在 a 中。\n第二次选择 x = 5 且 y = 1 ，并把得到的新数字保存在 b 中。\n现在，我们有 a = 999 和 b = 111 ，最大差值为 888\n\n示例 2：\n\n输入：num = 9\n输出：8\n解释：第一次选择 x = 9 且 y = 9 ，并把得到的新数字保存在 a 中。\n第二次选择 x = 9 且 y = 1 ，并把得到的新数字保存在 b 中。\n现在，我们有 a = 9 和 b = 1 ，最大差值为 8\n\n示例 3：\n\n输入：num = 123456\n输出：820000\n\n示例 4：\n\n输入：num = 10000\n输出：80000\n\n示例 5：\n\n输入：num = 9288\n输出：8700\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 10^8",
+  "constraints": [
+    "1 <= num <= 10^8"
+  ]
+}

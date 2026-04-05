@@ -1,0 +1,13 @@
+{
+  "number": "3066",
+  "title_cn": "超过阈值的最少操作数 II",
+  "title_en": "Minimum Operations to Exceed Threshold Value II",
+  "slug": "minimum-operations-to-exceed-threshold-value-ii",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;。\n\n你可以对&nbsp;nums&nbsp;执行一些操作，在一次操作中，你可以：\n\n\t选择 nums&nbsp;中 最小 的两个整数&nbsp;x 和&nbsp;y&nbsp;。\n\t将&nbsp;x 和&nbsp;y 从&nbsp;nums&nbsp;中删除。\n\t将&nbsp;min(x, y) * 2 + max(x, y)&nbsp;添加到数组中的任意位置。\n\n注意，只有当&nbsp;nums&nbsp;至少 包含两个元素时，你才可以执行以上操作。\n\n你需要使数组中的所有元素都 大于或等于&nbsp;k&nbsp;，请你返回需要的&nbsp;最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,11,10,1,3], k = 10\n\n输出：2\n\n解释：\n\n\t第一次操作中，我们删除元素 1 和 2 ，然后添加 1 * 2 + 2 到 nums 中，nums 变为 [4, 11, 10, 3] 。\n\t第二次操作中，我们删除元素 3 和 4 ，然后添加 3 * 2 + 4 到 nums 中，nums 变为 [10, 11, 10] 。\n\n此时，数组中的所有元素都大于等于 10 ，所以我们停止操作。\n\n可以证明使数组中所有元素都大于等于 10 需要的最少操作次数为 2 。\n\n&nbsp;\n\n示例 2：\n\n输入：nums = [1,1,2,4,9], k = 20\n\n输出：4\n\n解释：\n\n\t第一次操作后，nums 变为 [2, 4, 9, 3]。\n\t第二次操作后，nums 变为 [7, 4, 9]。\n\t第三次操作后，nums 变为 [15, 9]。\n\t第四次操作后，nums 变为 [33]。\n\n此时，nums 中的所有元素都大于等于 20 ，所以我们停止操作。\n\n可以证明使数组中所有元素都大于等于 20 需要的最少操作次数为 4 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 2 * 105\n\t1 <= nums[i] <= 109\n\t1 <= k <= 109\n\t输入保证答案一定存在，也就是说，在进行某些次数的操作后，数组中所有元素都大于等于&nbsp;k 。",
+  "constraints": [
+    "2 <= nums.length <= 2 * 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= 109"
+  ]
+}

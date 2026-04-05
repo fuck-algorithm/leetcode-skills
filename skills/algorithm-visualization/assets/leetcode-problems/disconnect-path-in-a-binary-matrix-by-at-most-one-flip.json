@@ -1,0 +1,15 @@
+{
+  "number": "2556",
+  "title_cn": "二进制矩阵中翻转最多一次使路径不连通",
+  "title_en": "Disconnect Path in a Binary Matrix by at Most One Flip",
+  "slug": "disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的&nbsp;m x n&nbsp;二进制 矩阵&nbsp;grid&nbsp;。你可以从一个格子&nbsp;(row, col)&nbsp;移动到格子&nbsp;(row + 1, col)&nbsp;或者&nbsp;(row, col + 1)&nbsp;，前提是前往的格子值为 1&nbsp;。如果从&nbsp;(0, 0)&nbsp;到&nbsp;(m - 1, n - 1)&nbsp;没有任何路径，我们称该矩阵是&nbsp;不连通&nbsp;的。\n\n你可以翻转 最多一个&nbsp;格子的值（也可以不翻转）。你 不能翻转&nbsp;格子&nbsp;(0, 0) 和&nbsp;(m - 1, n - 1)&nbsp;。\n\n如果可以使矩阵不连通，请你返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。\n\n注意&nbsp;，翻转一个格子的值，可以使它的值从&nbsp;0&nbsp;变&nbsp;1&nbsp;，或从&nbsp;1&nbsp;变&nbsp;0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,1,1],[1,0,0],[1,1,1]]\n输出：true\n解释：按照上图所示我们翻转蓝色格子里的值，翻转后从 (0, 0) 到 (2, 2) 没有路径。\n\n示例 2：\n\n输入：grid = [[1,1,1],[1,0,1],[1,1,1]]\n输出：false\n解释：无法翻转至多一个格子，使 (0, 0) 到 (2, 2) 没有路径。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 1000\n\t1 <= m * n <= 105\n\tgrid[0][0] == grid[m - 1][n - 1] == 1",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 1000",
+    "1 <= m * n <= 105",
+    "grid[0][0] == grid[m - 1][n - 1] == 1"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "5",
+  "title_cn": "最长回文子串",
+  "title_en": "Longest Palindromic Substring",
+  "slug": "longest-palindromic-substring",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s，找到 s 中最长的 回文 子串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"babad\"\n输出：\"bab\"\n解释：\"aba\" 同样是符合题意的答案。\n\n示例 2：\n\n输入：s = \"cbbd\"\n输出：\"bb\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 1000\n\ts 仅由数字和英文字母组成",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s 仅由数字和英文字母组成"
+  ]
+}

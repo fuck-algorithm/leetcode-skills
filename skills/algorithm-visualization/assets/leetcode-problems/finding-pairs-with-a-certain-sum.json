@@ -1,0 +1,18 @@
+{
+  "number": "1865",
+  "title_cn": "找出和为指定值的下标对",
+  "title_en": "Finding Pairs With a Certain Sum",
+  "slug": "finding-pairs-with-a-certain-sum",
+  "difficulty": "Medium",
+  "description": "给你两个整数数组 nums1 和 nums2 ，请你实现一个支持下述两类查询的数据结构：\n\n\t累加 ，将一个正整数加到 nums2 中指定下标对应元素上。\n\t计数 ，统计满足 nums1[i] + nums2[j] 等于指定值的下标对 (i, j) 数目（0  且 0 ）。\n\n实现 FindSumPairs 类：\n\n\tFindSumPairs(int[] nums1, int[] nums2) 使用整数数组 nums1 和 nums2 初始化 FindSumPairs 对象。\n\tvoid add(int index, int val) 将 val 加到 nums2[index] 上，即，执行 nums2[index] += val 。\n\tint count(int tot) 返回满足 nums1[i] + nums2[j] == tot 的下标对 (i, j) 数目。\n\n示例：\n\n输入：\n[\"FindSumPairs\", \"count\", \"add\", \"count\", \"count\", \"add\", \"add\", \"count\"]\n[[[1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]], [7], [3, 2], [8], [4], [0, 1], [1, 1], [7]]\n输出：\n[null, 8, null, 2, 1, null, null, 11]\n\n解释：\nFindSumPairs findSumPairs = new FindSumPairs([1, 1, 2, 2, 2, 3], [1, 4, 5, 2, 5, 4]);\nfindSumPairs.count(7);  // 返回 8 ; 下标对 (2,2), (3,2), (4,2), (2,4), (3,4), (4,4) 满足 2 + 5 = 7 ，下标对 (5,1), (5,5) 满足 3 + 4 = 7\nfindSumPairs.add(3, 2); // 此时 nums2 = [1,4,5,4,5,4]\nfindSumPairs.count(8);  // 返回 2 ；下标对 (5,2), (5,4) 满足 3 + 5 = 8\nfindSumPairs.count(4);  // 返回 1 ；下标对 (5,0) 满足 3 + 1 = 4\nfindSumPairs.add(0, 1); // 此时 nums2 = [2,4,5,4,5,4]\nfindSumPairs.add(1, 1); // 此时 nums2 = [2,5,5,4,5,4]\nfindSumPairs.count(7);  // 返回 11 ；下标对 (2,1), (2,2), (2,4), (3,1), (3,2), (3,4), (4,1), (4,2), (4,4) 满足 2 + 5 = 7 ，下标对 (5,3), (5,5) 满足 3 + 4 = 7\n\n提示：\n\n\t1 \n\t1 5\n\t1 9\n\t1 5\n\t0 \n\t1 5\n\t1 9\n\t最多调用 add 和 count 函数各 1000 次",
+  "constraints": [
+    "1",
+    "1 5",
+    "1 9",
+    "1 5",
+    "0",
+    "1 5",
+    "1 9",
+    "最多调用 add 和 count 函数各 1000 次"
+  ]
+}

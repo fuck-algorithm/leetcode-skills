@@ -1,0 +1,15 @@
+{
+  "number": "3193",
+  "title_cn": "统计逆序对的数目",
+  "title_en": "Count the Number of Inversions",
+  "slug": "count-the-number-of-inversions",
+  "difficulty": "Hard",
+  "description": "给你一个整数&nbsp;n&nbsp;和一个二维数组&nbsp;requirements&nbsp;，其中&nbsp;requirements[i] = [endi, cnti] 表示这个要求中的末尾下标和 逆序对 的数目。\n\n整数数组 nums&nbsp;中一个下标对&nbsp;(i, j)&nbsp;如果满足以下条件，那么它们被称为一个 逆序对&nbsp;：\n\n\ti < j&nbsp;且&nbsp;nums[i] > nums[j]\n\n请你返回&nbsp;[0, 1, 2, ..., n - 1]&nbsp;的&nbsp;排列 perm&nbsp;的数目，满足对 所有&nbsp;的&nbsp;requirements[i]&nbsp;都满足&nbsp;perm[0..endi]&nbsp;中恰好有&nbsp;cnti&nbsp;个逆序对。\n\n由于答案可能会很大，将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, requirements = [[2,2],[0,0]]\n\n输出：2\n\n解释：\n\n两个排列为：\n\n\t[2, 0, 1]\n\n\t\t前缀&nbsp;[2, 0, 1]&nbsp;的逆序对为&nbsp;(0, 1) 和&nbsp;(0, 2)&nbsp;。\n\t\t前缀&nbsp;[2]&nbsp;的逆序对数目为 0 个。\n\n\t[1, 2, 0]\n\n\t\t前缀&nbsp;[1, 2, 0]&nbsp;的逆序对为&nbsp;(0, 2) 和&nbsp;(1, 2)&nbsp;。\n\t\t前缀&nbsp;[1]&nbsp;的逆序对数目为 0 个。\n\n示例 2：\n\n输入：n = 3, requirements = [[2,2],[1,1],[0,0]]\n\n输出：1\n\n解释：\n\n唯一满足要求的排列是&nbsp;[2, 0, 1]&nbsp;：\n\n\t前缀&nbsp;[2, 0, 1]&nbsp;的逆序对为&nbsp;(0, 1) 和&nbsp;(0, 2)&nbsp;。\n\t前缀&nbsp;[2, 0]&nbsp;的逆序对为&nbsp;(0, 1)&nbsp;。\n\t前缀&nbsp;[2]&nbsp;的逆序对数目为 0 。\n\n示例 3：\n\n输入：n = 2, requirements = [[0,0],[1,0]]\n\n输出：1\n\n解释：\n\n唯一满足要求的排列为&nbsp;[0, 1]&nbsp;：\n\n\t前缀&nbsp;[0]&nbsp;的逆序对数目为 0 。\n\t前缀&nbsp;[0, 1]&nbsp;没有逆序对。\n\n&nbsp;\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 300\n\t1 <= requirements.length <= n\n\trequirements[i] = [endi, cnti]\n\t0 <= endi <= n - 1\n\t0 <= cnti <= 400\n\t输入保证至少有一个&nbsp;i&nbsp;满足&nbsp;endi == n - 1&nbsp;。\n\t输入保证所有的&nbsp;endi&nbsp;互不相同。",
+  "constraints": [
+    "2 <= n <= 300",
+    "1 <= requirements.length <= n",
+    "requirements[i] = [endi, cnti]",
+    "0 <= endi <= n - 1",
+    "0 <= cnti <= 400"
+  ]
+}

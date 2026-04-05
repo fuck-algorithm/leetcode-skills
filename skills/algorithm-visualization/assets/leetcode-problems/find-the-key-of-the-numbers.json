@@ -1,0 +1,11 @@
+{
+  "number": "3270",
+  "title_cn": "求出数字答案",
+  "title_en": "Find the Key of the Numbers",
+  "slug": "find-the-key-of-the-numbers",
+  "difficulty": "Easy",
+  "description": "给你三个 正&nbsp;整数&nbsp;num1&nbsp;，num2&nbsp;和&nbsp;num3&nbsp;。\n\n数字 num1&nbsp;，num2&nbsp;和 num3&nbsp;的数字答案 key&nbsp;是一个四位数，定义如下：\n\n\t一开始，如果有数字 少于&nbsp;四位数，给它补 前导 0 。\n\t答案 key&nbsp;的第&nbsp;i&nbsp;个数位（1 <= i <= 4）为&nbsp;num1&nbsp;，num2&nbsp;和&nbsp;num3&nbsp;第&nbsp;i&nbsp;个数位中的&nbsp;最小&nbsp;值。\n\n请你返回三个数字 没有&nbsp;前导 0 的数字答案。\n\n&nbsp;\n\n示例 1：\n\n输入：num1 = 1, num2 = 10, num3 = 1000\n\n输出：0\n\n解释：\n\n补前导 0 后，num1&nbsp;变为&nbsp;\"0001\"&nbsp;，num2 变为&nbsp;\"0010\"&nbsp;，num3&nbsp;保持不变，为&nbsp;\"1000\"&nbsp;。\n\n\t数字答案 key&nbsp;的第&nbsp;1&nbsp;个数位为&nbsp;min(0, 0, 1)&nbsp;。\n\t数字答案 key&nbsp;的第&nbsp;2&nbsp;个数位为&nbsp;min(0, 0, 0)&nbsp;。\n\t数字答案 key&nbsp;的第 3 个数位为&nbsp;min(0, 1, 0)&nbsp;。\n\t数字答案 key&nbsp;的第 4 个数位为&nbsp;min(1, 0, 0)&nbsp;。\n\n所以数字答案为&nbsp;\"0000\"&nbsp;，也就是 0 。\n\n示例 2：\n\n输入： num1 = 987, num2 = 879, num3 = 798\n\n输出：777\n\n示例 3：\n\n输入：num1 = 1, num2 = 2, num3 = 3\n\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= num1, num2, num3 <= 9999",
+  "constraints": [
+    "1 <= num1, num2, num3 <= 9999"
+  ]
+}

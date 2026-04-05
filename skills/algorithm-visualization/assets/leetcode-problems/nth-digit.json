@@ -1,0 +1,11 @@
+{
+  "number": "400",
+  "title_cn": "第 N 位数字",
+  "title_en": "Nth Digit",
+  "slug": "nth-digit",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n ，请你在无限的整数序列&nbsp;[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...] 中找出并返回第&nbsp;n 位上的数字。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3\n输出：3\n\n示例 2：\n\n输入：n = 11\n输出：0\n解释：第 11 位数字在序列 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... 里是 0 ，它是 10 的一部分。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 231 - 1",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ]
+}

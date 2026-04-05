@@ -1,0 +1,12 @@
+{
+  "number": "2957",
+  "title_cn": "消除相邻近似相等字符",
+  "title_en": "Remove Adjacent Almost-Equal Characters",
+  "slug": "remove-adjacent-almost-equal-characters",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;word&nbsp;。\n\n一次操作中，你可以选择&nbsp;word&nbsp;中任意一个下标 i&nbsp;，将&nbsp;word[i] 修改成任意一个小写英文字母。\n\n请你返回消除 word&nbsp;中所有相邻 近似相等&nbsp;字符的 最少&nbsp;操作次数。\n\n两个字符&nbsp;a 和&nbsp;b&nbsp;如果满足&nbsp;a == b&nbsp;或者&nbsp;a 和&nbsp;b&nbsp;在字母表中是相邻的，那么我们称它们是 近似相等&nbsp;字符。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"aaaaa\"\n输出：2\n解释：我们将 word 变为 \"acaca\" ，该字符串没有相邻近似相等字符。\n消除 word 中所有相邻近似相等字符最少需要 2 次操作。\n\n示例 2：\n\n输入：word = \"abddez\"\n输出：2\n解释：我们将 word 变为 \"ybdoez\" ，该字符串没有相邻近似相等字符。\n消除 word 中所有相邻近似相等字符最少需要 2 次操作。\n\n示例 3：\n\n输入：word = \"zyxyxyz\"\n输出：3\n解释：我们将 word 变为 \"zaxaxaz\" ，该字符串没有相邻近似相等字符。\n消除 word 中所有相邻近似相等字符最少需要 3 次操作\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 100\n\tword&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= word.length <= 100",
+    "word&nbsp;只包含小写英文字母。"
+  ]
+}

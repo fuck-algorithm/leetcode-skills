@@ -1,0 +1,13 @@
+{
+  "number": "2659",
+  "title_cn": "将数组清空",
+  "title_en": "Make Array Empty",
+  "slug": "make-array-empty",
+  "difficulty": "Hard",
+  "description": "给你一个包含若干 互不相同&nbsp;整数的数组&nbsp;nums&nbsp;，你需要执行以下操作 直到数组为空&nbsp;：\n\n\t如果数组中第一个元素是当前数组中的 最小值&nbsp;，则删除它。\n\t否则，将第一个元素移动到数组的 末尾&nbsp;。\n\n请你返回需要多少个操作使&nbsp;nums&nbsp;为空。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,4,-1]\n输出：5\n\n\t\t\tOperation\n\t\t\tArray\n\n\t\t\t1\n\t\t\t[4, -1, 3]\n\n\t\t\t2\n\t\t\t[-1, 3, 4]\n\n\t\t\t3\n\t\t\t[3, 4]\n\n\t\t\t4\n\t\t\t[4]\n\n\t\t\t5\n\t\t\t[]\n\n&nbsp;\n\n示例 2：\n\n输入：nums = [1,2,4,3]\n输出：5\n\n\t\t\tOperation\n\t\t\tArray\n\n\t\t\t1\n\t\t\t[2, 4, 3]\n\n\t\t\t2\n\t\t\t[4, 3]\n\n\t\t\t3\n\t\t\t[3, 4]\n\n\t\t\t4\n\t\t\t[4]\n\n\t\t\t5\n\t\t\t[]\n\n&nbsp;\n\n示例 3：\n\n输入：nums = [1,2,3]\n输出：3\n\n\t\t\tOperation\n\t\t\tArray\n\n\t\t\t1\n\t\t\t[2, 3]\n\n\t\t\t2\n\t\t\t[3]\n\n\t\t\t3\n\t\t\t[]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-109&nbsp;<= nums[i] <= 109\n\tnums&nbsp;中的元素 互不相同&nbsp;。",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109&nbsp;<= nums[i] <= 109",
+    "nums&nbsp;中的元素 互不相同&nbsp;。"
+  ]
+}

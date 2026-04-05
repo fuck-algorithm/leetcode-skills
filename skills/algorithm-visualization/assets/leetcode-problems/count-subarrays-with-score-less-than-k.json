@@ -1,0 +1,13 @@
+{
+  "number": "2302",
+  "title_cn": "统计得分小于 K 的子数组数目",
+  "title_en": "Count Subarrays With Score Less Than K",
+  "slug": "count-subarrays-with-score-less-than-k",
+  "difficulty": "Hard",
+  "description": "一个数组的 分数&nbsp;定义为数组之和 乘以&nbsp;数组的长度。\n\n\t比方说，[1, 2, 3, 4, 5]&nbsp;的分数为&nbsp;(1 + 2 + 3 + 4 + 5) * 5 = 75&nbsp;。\n\n给你一个正整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;，请你返回&nbsp;nums&nbsp;中分数&nbsp;严格小于&nbsp;k&nbsp;的&nbsp;非空整数子数组数目。\n\n子数组 是数组中的一个连续元素序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,4,3,5], k = 10\n输出：6\n解释：\n有 6 个子数组的分数小于 10 ：\n- [2] 分数为 2 * 1 = 2 。\n- [1] 分数为 1 * 1 = 1 。\n- [4] 分数为 4 * 1 = 4 。\n- [3] 分数为 3 * 1 = 3 。 \n- [5] 分数为 5 * 1 = 5 。\n- [2,1] 分数为 (2 + 1) * 2 = 6 。\n注意，子数组 [1,4] 和 [4,3,5] 不符合要求，因为它们的分数分别为 10 和 36，但我们要求子数组的分数严格小于 10 。\n\n示例 2：\n\n输入：nums = [1,1,1], k = 5\n输出：5\n解释：\n除了 [1,1,1] 以外每个子数组分数都小于 5 。\n[1,1,1] 分数为 (1 + 1 + 1) * 3 = 9 ，大于 5 。\n所以总共有 5 个子数组得分小于 5 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 105\n\t1 <= k <= 1015",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 105",
+    "1 <= k <= 1015"
+  ]
+}

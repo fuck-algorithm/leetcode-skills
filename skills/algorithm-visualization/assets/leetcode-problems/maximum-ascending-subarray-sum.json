@@ -1,0 +1,12 @@
+{
+  "number": "1800",
+  "title_cn": "最大升序子数组和",
+  "title_en": "Maximum Ascending Subarray Sum",
+  "slug": "maximum-ascending-subarray-sum",
+  "difficulty": "Easy",
+  "description": "给你一个正整数组成的数组 nums ，返回 nums 中一个 严格递增子数组 的最大可能元素和。\n\n子数组是数组中的一个连续数字序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [10,20,30,5,10,50]\n输出：65\n解释：[5,10,50] 是元素和最大的升序子数组，最大元素和为 65 。\n\n示例 2：\n\n输入：nums = [10,20,30,40,50]\n输出：150\n解释：[10,20,30,40,50] 是元素和最大的升序子数组，最大元素和为 150 。 \n\n示例 3：\n\n输入：nums = [12,17,15,13,10,11,12]\n输出：33\n解释：[10,11,12] 是元素和最大的升序子数组，最大元素和为 33 。 \n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ]
+}

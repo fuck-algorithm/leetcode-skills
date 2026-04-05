@@ -1,0 +1,15 @@
+{
+  "number": "3288",
+  "title_cn": "最长上升路径的长度",
+  "title_en": "Length of the Longest Increasing Path",
+  "slug": "length-of-the-longest-increasing-path",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n&nbsp;的二维整数数组&nbsp;coordinates&nbsp;和一个整数&nbsp;k&nbsp;，其中&nbsp;0 <= k < n&nbsp;。\n\ncoordinates[i] = [xi, yi]&nbsp;表示二维平面里一个点&nbsp;(xi, yi)&nbsp;。\n\n如果一个点序列&nbsp;(x1, y1), (x2, y2), (x3, y3), ..., (xm, ym)&nbsp;满足以下条件，那么我们称它是一个长度为 m&nbsp;的 上升序列&nbsp;：\n\n\t对于所有满足&nbsp;1 <= i < m 的&nbsp;i&nbsp;都有&nbsp;xi < xi + 1&nbsp;且&nbsp;yi < yi + 1&nbsp;。\n\t对于所有&nbsp;1 <= i <= m&nbsp;的&nbsp;i&nbsp;对应的点&nbsp;(xi, yi)&nbsp;都在给定的坐标数组里。\n\n请你返回包含坐标 coordinates[k]&nbsp;的 最长上升路径&nbsp;的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：coordinates = [[3,1],[2,2],[4,1],[0,0],[5,3]], k = 1\n\n输出：3\n\n解释：\n\n(0, 0)&nbsp;，(2, 2)&nbsp;，(5, 3)&nbsp;是包含坐标 (2, 2)&nbsp;的最长上升路径。\n\n示例 2：\n\n输入：coordinates = [[2,1],[7,0],[5,6]], k = 2\n\n输出：2\n\n解释：\n\n(2, 1)&nbsp;，(5, 6)&nbsp;是包含坐标 (5, 6)&nbsp;的最长上升路径。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == coordinates.length <= 105\n\tcoordinates[i].length == 2\n\t0 <= coordinates[i][0], coordinates[i][1] <= 109\n\tcoordinates&nbsp;中的元素 互不相同&nbsp;。\n\t0 <= k <= n - 1",
+  "constraints": [
+    "1 <= n == coordinates.length <= 105",
+    "coordinates[i].length == 2",
+    "0 <= coordinates[i][0], coordinates[i][1] <= 109",
+    "coordinates&nbsp;中的元素 互不相同&nbsp;。",
+    "0 <= k <= n - 1"
+  ]
+}

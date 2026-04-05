@@ -1,0 +1,11 @@
+{
+  "number": "3222",
+  "title_cn": "求出硬币游戏的赢家",
+  "title_en": "Find the Winning Player in Coin Game",
+  "slug": "find-the-winning-player-in-coin-game",
+  "difficulty": "Easy",
+  "description": "给你两个 正&nbsp;整数&nbsp;x&nbsp;和&nbsp;y&nbsp;，分别表示价值为 75 和 10 的硬币的数目。\n\nAlice 和 Bob 正在玩一个游戏。每一轮中，Alice&nbsp;先进行操作，Bob 后操作。每次操作中，玩家需要拿走价值 总和&nbsp;为 115 的硬币。如果一名玩家无法执行此操作，那么这名玩家 输掉&nbsp;游戏。\n\n两名玩家都采取 最优&nbsp;策略，请你返回游戏的赢家。\n\n&nbsp;\n\n示例 1：\n\n输入：x = 2, y = 7\n\n输出：\"Alice\"\n\n解释：\n\n游戏一次操作后结束：\n\n\tAlice 拿走 1 枚价值为 75 的硬币和 4 枚价值为 10 的硬币。\n\n示例 2：\n\n输入：x = 4, y = 11\n\n输出：\"Bob\"\n\n解释：\n\n游戏 2 次操作后结束：\n\n\tAlice 拿走&nbsp;1 枚价值为 75 的硬币和 4 枚价值为 10 的硬币。\n\tBob 拿走&nbsp;1 枚价值为 75 的硬币和 4 枚价值为 10 的硬币。\n\n&nbsp;\n\n提示：\n\n\t1 <= x, y <= 100",
+  "constraints": [
+    "1 <= x, y <= 100"
+  ]
+}

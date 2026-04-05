@@ -1,0 +1,12 @@
+{
+  "number": "881",
+  "title_cn": "救生艇",
+  "title_en": "Boats to Save People",
+  "slug": "boats-to-save-people",
+  "difficulty": "Medium",
+  "description": "给定数组&nbsp;people&nbsp;。people[i]表示第 i&nbsp;个人的体重&nbsp;，船的数量不限，每艘船可以承载的最大重量为&nbsp;limit。\n\n每艘船最多可同时载两人，但条件是这些人的重量之和最多为&nbsp;limit。\n\n返回 承载所有人所需的最小船数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：people = [1,2], limit = 3\n输出：1\n解释：1 艘船载 (1, 2)\n\n示例 2：\n\n输入：people = [3,2,2,1], limit = 3\n输出：3\n解释：3 艘船分别载 (1, 2), (2) 和 (3)\n\n示例 3：\n\n输入：people = [3,5,3,4], limit = 5\n输出：4\n解释：4 艘船分别载 (3), (3), (4), (5)\n\n&nbsp;\n\n提示：\n\n\t1 <= people.length <= 5 * 104\n\t1 <= people[i] <= limit <= 3 * 104",
+  "constraints": [
+    "1 <= people.length <= 5 * 104",
+    "1 <= people[i] <= limit <= 3 * 104"
+  ]
+}

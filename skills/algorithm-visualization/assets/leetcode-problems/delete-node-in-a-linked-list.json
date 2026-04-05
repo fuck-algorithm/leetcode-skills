@@ -1,0 +1,14 @@
+{
+  "number": "237",
+  "title_cn": "删除链表中的节点",
+  "title_en": "Delete Node in a Linked List",
+  "slug": "delete-node-in-a-linked-list",
+  "difficulty": "Medium",
+  "description": "有一个单链表的&nbsp;head，我们想删除它其中的一个节点&nbsp;node。\n\n给你一个需要删除的节点&nbsp;node&nbsp;。你将&nbsp;无法访问&nbsp;第一个节点&nbsp;&nbsp;head。\n\n链表的所有值都是 唯一的，并且保证给定的节点&nbsp;node&nbsp;不是链表中的最后一个节点。\n\n删除给定的节点。注意，删除节点并不是指从内存中删除它。这里的意思是：\n\n\t给定节点的值不应该存在于链表中。\n\t链表中的节点数应该减少 1。\n\tnode&nbsp;前面的所有值顺序相同。\n\tnode&nbsp;后面的所有值顺序相同。\n\n自定义测试：\n\n\t对于输入，你应该提供整个链表&nbsp;head&nbsp;和要给出的节点&nbsp;node。node&nbsp;不应该是链表的最后一个节点，而应该是链表中的一个实际节点。\n\t我们将构建链表，并将节点传递给你的函数。\n\t输出将是调用你函数后的整个链表。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [4,5,1,9], node = 5\n输出：[4,1,9]\n解释：指定链表中值为&nbsp;5&nbsp;的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -> 1 -> 9\n\n示例 2：\n\n输入：head = [4,5,1,9], node = 1\n输出：[4,5,9]\n解释：指定链表中值为&nbsp;1&nbsp;的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -> 5 -> 9\n\n&nbsp;\n\n提示：\n\n\t链表中节点的数目范围是 [2, 1000]\n\t-1000 <= Node.val <= 1000\n\t链表中每个节点的值都是 唯一 的\n\t需要删除的节点 node 是 链表中的节点 ，且 不是末尾节点",
+  "constraints": [
+    "链表中节点的数目范围是 [2, 1000]",
+    "-1000 <= Node.val <= 1000",
+    "链表中每个节点的值都是 唯一 的",
+    "需要删除的节点 node 是 链表中的节点 ，且 不是末尾节点"
+  ]
+}

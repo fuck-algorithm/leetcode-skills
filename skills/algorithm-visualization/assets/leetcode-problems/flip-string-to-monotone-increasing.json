@@ -1,0 +1,12 @@
+{
+  "number": "926",
+  "title_cn": "将字符串翻转到单调递增",
+  "title_en": "Flip String to Monotone Increasing",
+  "slug": "flip-string-to-monotone-increasing",
+  "difficulty": "Medium",
+  "description": "如果一个二进制字符串，是以一些 0（可能没有 0）后面跟着一些 1（也可能没有 1）的形式组成的，那么该字符串是 单调递增 的。\n\n给你一个二进制字符串 s，你可以将任何 0 翻转为 1 或者将 1 翻转为 0 。\n\n返回使 s 单调递增的最小翻转次数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"00110\"\n输出：1\n解释：翻转最后一位得到 00111.\n\n示例 2：\n\n输入：s = \"010110\"\n输出：2\n解释：翻转得到 011111，或者是 000111。\n\n示例 3：\n\n输入：s = \"00011000\"\n输出：2\n解释：翻转得到 00000000。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts[i] 为 '0' 或 '1'",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] 为 '0' 或 '1'"
+  ]
+}

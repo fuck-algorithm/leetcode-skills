@@ -1,0 +1,12 @@
+{
+  "number": "3301",
+  "title_cn": "高度互不相同的最大塔高和",
+  "title_en": "Maximize the Total Height of Unique Towers",
+  "slug": "maximize-the-total-height-of-unique-towers",
+  "difficulty": "Medium",
+  "description": "给你一个数组&nbsp;maximumHeight&nbsp;，其中&nbsp;maximumHeight[i]&nbsp;表示第 i&nbsp;座塔可以达到的 最大&nbsp;高度。\n\n你的任务是给每一座塔分别设置一个高度，使得：\n\n\t第 i&nbsp;座塔的高度是一个正整数，且不超过&nbsp;maximumHeight[i]&nbsp;。\n\t所有塔的高度互不相同。\n\n请你返回设置完所有塔的高度后，可以达到的 最大&nbsp;总高度。如果没有合法的设置，返回 -1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：maximumHeight = [2,3,4,3]\n\n输出：10\n\n解释：\n\n我们可以将塔的高度设置为：[1, 2, 4, 3]&nbsp;。\n\n示例 2：\n\n输入：maximumHeight = [15,10]\n\n输出：25\n\n解释：\n\n我们可以将塔的高度设置为：[15, 10]&nbsp;。\n\n示例 3：\n\n输入：maximumHeight = [2,2,1]\n\n输出：-1\n\n解释：\n\n无法设置塔的高度为正整数且高度互不相同。\n\n&nbsp;\n\n提示：\n\n\t1 <= maximumHeight.length&nbsp;<= 105\n\t1 <= maximumHeight[i] <= 109",
+  "constraints": [
+    "1 <= maximumHeight.length&nbsp;<= 105",
+    "1 <= maximumHeight[i] <= 109"
+  ]
+}

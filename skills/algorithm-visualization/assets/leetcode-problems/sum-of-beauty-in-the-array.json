@@ -1,0 +1,12 @@
+{
+  "number": "2012",
+  "title_cn": "数组美丽值求和",
+  "title_en": "Sum of Beauty in the Array",
+  "slug": "sum-of-beauty-in-the-array",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始的整数数组 nums 。对于每个下标 i（1 <= i <= nums.length - 2），nums[i] 的 美丽值 等于：\n\n\t2，对于所有 0 <= j < i 且 i < k <= nums.length - 1 ，满足 nums[j] < nums[i] < nums[k]\n\t1，如果满足 nums[i - 1] < nums[i] < nums[i + 1] ，且不满足前面的条件\n\t0，如果上述条件全部不满足\n\n返回符合 1 <= i <= nums.length - 2 的所有 nums[i] 的 美丽值的总和 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3]\n输出：2\n解释：对于每个符合范围 1 <= i <= 1 的下标 i :\n- nums[1] 的美丽值等于 2\n\n示例 2：\n\n输入：nums = [2,4,6,4]\n输出：1\n解释：对于每个符合范围 1 <= i <= 2 的下标 i :\n- nums[1] 的美丽值等于 1\n- nums[2] 的美丽值等于 0\n\n示例 3：\n\n输入：nums = [3,2,1]\n输出：0\n解释：对于每个符合范围 1 <= i <= 1 的下标 i :\n- nums[1] 的美丽值等于 0\n\n&nbsp;\n\n提示：\n\n\t3 <= nums.length <= 105\n\t1 <= nums[i] <= 105",
+  "constraints": [
+    "3 <= nums.length <= 105",
+    "1 <= nums[i] <= 105"
+  ]
+}

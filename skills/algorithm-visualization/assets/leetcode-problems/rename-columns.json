@@ -1,0 +1,9 @@
+{
+  "number": "2885",
+  "title_cn": "重命名列",
+  "title_en": "Rename Columns",
+  "slug": "rename-columns",
+  "difficulty": "Easy",
+  "description": "DataFrame students\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| id          | int    |\n| first       | object |\n| last        | object |\n| age         | int    |\n+-------------+--------+\n\n编写一个解决方案，按以下方式重命名列：\n\n\tid&nbsp;重命名为&nbsp;student_id\n\tfirst&nbsp;重命名为&nbsp;first_name\n\tlast&nbsp;重命名为&nbsp;last_name\n\tage&nbsp;重命名为&nbsp;age_in_years\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入：\n+----+---------+----------+-----+\n| id | first   | last     | age |\n+----+---------+----------+-----+\n| 1  | Mason   | King     | 6   |\n| 2  | Ava     | Wright   | 7   |\n| 3  | Taylor  | Hall     | 16  |\n| 4  | Georgia | Thompson | 18  |\n| 5  | Thomas  | Moore    | 10  |\n+----+---------+----------+-----+\n输出：\n+------------+------------+-----------+--------------+\n| student_id | first_name | last_name | age_in_years |\n+------------+------------+-----------+--------------+\n| 1          | Mason      | King      | 6            |\n| 2          | Ava        | Wright    | 7            |\n| 3          | Taylor     | Hall      | 16           |\n| 4          | Georgia    | Thompson  | 18           |\n| 5          | Thomas     | Moore     | 10           |\n+------------+------------+-----------+--------------+\n解释：\n列名已相应更换。",
+  "constraints": []
+}

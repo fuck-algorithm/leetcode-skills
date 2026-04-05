@@ -1,0 +1,12 @@
+{
+  "number": "1238",
+  "title_cn": "循环码排列",
+  "title_en": "Circular Permutation in Binary Representation",
+  "slug": "circular-permutation-in-binary-representation",
+  "difficulty": "Medium",
+  "description": "给你两个整数&nbsp;n 和 start。你的任务是返回任意 (0,1,2,,...,2^n-1) 的排列 p，并且满足：\n\n\tp[0] = start\n\tp[i] 和 p[i+1]&nbsp;的二进制表示形式只有一位不同\n\tp[0] 和 p[2^n -1]&nbsp;的二进制表示形式也只有一位不同\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2, start = 3\n输出：[3,2,0,1]\n解释：这个排列的二进制表示是 (11,10,00,01)\n     所有的相邻元素都有一位是不同的，另一个有效的排列是 [3,1,0,2]\n\n示例 2：\n\n输入：n = 3, start = 2\n输出：[2,6,7,5,4,0,1,3]\n解释：这个排列的二进制表示是 (010,110,111,101,100,000,001,011)\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 16\n\t0 <= start&nbsp;<&nbsp;2^n",
+  "constraints": [
+    "1 <= n <= 16",
+    "0 <= start&nbsp;<&nbsp;2^n"
+  ]
+}

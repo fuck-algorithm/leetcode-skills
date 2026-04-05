@@ -1,0 +1,23 @@
+{
+  "number": "1111",
+  "title_cn": "有效括号的嵌套深度",
+  "title_en": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+  "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "difficulty": "Medium",
+  "description": "如果一个字符串仅由字符 \"(\" 和 \")\" 组成，并且满足以下条件，则称为有效括号字符串（VPS）：\n\n\t它是空字符串，或\n\t它可以表示为 AB（A 连接 B），其中 A 和 B 都是VPS，或者\n\t它可以表示为 (A)，其中 A 是一个 VPS。\n\n我们可以类似地定义任何 VPS S 的嵌套深度 depth(S) 如下：\n\n\tdepth(\"\") = 0\n\tdepth(A + B) = max(depth(A), depth(B))，其中&nbsp;A 和&nbsp;B&nbsp;都是 VPS\n\tdepth(\"(\" + A + \")\") = 1 + depth(A)，其中&nbsp;A&nbsp;是一个 VPS。\n\n例如，\"\"，\"()()\"&nbsp;和&nbsp;\"()(()())\"&nbsp;都是 VPS（嵌套深度 0，1 和 2），并且&nbsp;\")(\" 和&nbsp;\"(()\"&nbsp;不是 VPS。\n\n给定一个 VPS 序列，将其拆分成两个不相交的子序列 A 和 B，使得 A 和 B 都是 VPS（且 A.length + B.length = seq.length）。这些子序列不一定是连续的。\n\n例如，对于序列&nbsp;123456789，一种可能的拆分是：\n\n\tA = {1, 3, 5, 7, 9}，\n\n\tB = {2, 4, 6, 8}。\n\n\t这对应于输出 [0, 1, 0, 1, 0, 1, 0, 1, 0]，其中 0 表示属于 A，1 表示属于 B。\n\n现在选择 任意 这样的 A 和 B，使得 max(depth(A), depth(B)) 的值是最小的。\n\n返回一个&nbsp;answer 数组（长度为 seq.length），该数组编码了 A 和 B 的选择：如果 seq[i] 是 A 的一部分则 answer[i] = 0，否则 answer[i] = 1。请注意，尽管可能存在多种答案，但你可以返回其中任意一种。\n\n&nbsp;\n\n示例 1：\n\n输入：seq = \"(()())\"\n输出：[0,1,1,1,1,0]\n\n示例 2：\n\n输入：seq = \"()(())()\"\n输出：[0,0,0,1,1,0,1,1]\n解释：本示例答案不唯一。\n按此输出 A = \"()()\", B = \"()()\", max(depth(A), depth(B)) = 1，它们的深度最小。\n像 [1,1,1,0,0,1,1,1]，也是正确结果，其中 A = \"()()()\", B = \"()\", max(depth(A), depth(B)) = 1 。 \n\n&nbsp;\n\n提示：\n\n\t1 <&nbsp;seq.size <= 10000\n\n&nbsp;\n\n有效括号字符串：\n\n仅由&nbsp;\"(\" 和&nbsp;\")\"&nbsp;构成的字符串，对于每个左括号，都能找到与之对应的右括号，反之亦然。\n下述几种情况同样属于有效括号字符串：\n\n  1. 空字符串\n  2. 连接，可以记作&nbsp;AB（A 与 B 连接），其中&nbsp;A&nbsp;和&nbsp;B&nbsp;都是有效括号字符串\n  3. 嵌套，可以记作&nbsp;(A)，其中&nbsp;A&nbsp;是有效括号字符串\n\n嵌套深度：\n\n类似地，我们可以定义任意有效括号字符串 s 的 嵌套深度&nbsp;depth(S)：\n\n  1. s 为空时，depth(\"\") = 0\n  2. s 为 A 与 B 连接时，depth(A + B) = max(depth(A), depth(B))，其中&nbsp;A 和&nbsp;B&nbsp;都是有效括号字符串\n  3. s 为嵌套情况，depth(\"(\" + A + \")\") = 1 + depth(A)，其中 A 是有效括号字符串\n\n例如：\"\"，\"()()\"，和&nbsp;\"()(()())\"&nbsp;都是有效括号字符串，嵌套深度分别为 0，1，2，而&nbsp;\")(\" 和&nbsp;\"(()\"&nbsp;都不是有效括号字符串。",
+  "constraints": [
+    "1 <&nbsp;seq.size <= 10000",
+    "有效括号字符串：",
+    "仅由&nbsp;\"(\" 和&nbsp;\")\"&nbsp;构成的字符串，对于每个左括号，都能找到与之对应的右括号，反之亦然。",
+    "下述几种情况同样属于有效括号字符串：",
+    "1. 空字符串",
+    "2. 连接，可以记作&nbsp;AB（A 与 B 连接），其中&nbsp;A&nbsp;和&nbsp;B&nbsp;都是有效括号字符串",
+    "3. 嵌套，可以记作&nbsp;(A)，其中&nbsp;A&nbsp;是有效括号字符串",
+    "嵌套深度：",
+    "类似地，我们可以定义任意有效括号字符串 s 的 嵌套深度&nbsp;depth(S)：",
+    "1. s 为空时，depth(\"\") = 0",
+    "2. s 为 A 与 B 连接时，depth(A + B) = max(depth(A), depth(B))，其中&nbsp;A 和&nbsp;B&nbsp;都是有效括号字符串",
+    "3. s 为嵌套情况，depth(\"(\" + A + \")\") = 1 + depth(A)，其中 A 是有效括号字符串",
+    "例如：\"\"，\"()()\"，和&nbsp;\"()(()())\"&nbsp;都是有效括号字符串，嵌套深度分别为 0，1，2，而&nbsp;\")(\" 和&nbsp;\"(()\"&nbsp;都不是有效括号字符串。"
+  ]
+}

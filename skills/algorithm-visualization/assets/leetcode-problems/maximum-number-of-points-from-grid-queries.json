@@ -1,0 +1,17 @@
+{
+  "number": "2503",
+  "title_cn": "矩阵查询可获得的最大分数",
+  "title_en": "Maximum Number of Points From Grid Queries",
+  "slug": "maximum-number-of-points-from-grid-queries",
+  "difficulty": "Hard",
+  "description": "给你一个大小为 m x n 的整数矩阵 grid 和一个大小为 k 的数组 queries 。\n\n找出一个大小为 k 的数组 answer ，且满足对于每个整数 queries[i] ，你从矩阵 左上角 单元格开始，重复以下过程：\n\n\t如果 queries[i] 严格 大于你当前所处位置单元格，如果该单元格是第一次访问，则获得 1 分，并且你可以移动到所有 4 个方向（上、下、左、右）上任一 相邻 单元格。\n\t否则，你不能获得任何分，并且结束这一过程。\n\n在过程结束后，answer[i] 是你可以获得的最大分数。注意，对于每个查询，你可以访问同一个单元格 多次 。\n\n返回结果数组 answer 。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,2,3],[2,5,7],[3,5,1]], queries = [5,6,2]\n输出：[5,8,1]\n解释：上图展示了每个查询中访问并获得分数的单元格。\n\n示例 2：\n\n输入：grid = [[5,2,1],[1,1,2]], queries = [3]\n输出：[0]\n解释：无法获得分数，因为左上角单元格的值大于等于 3 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t2 <= m, n <= 1000\n\t4 <= m * n <= 105\n\tk == queries.length\n\t1 <= k <= 104\n\t1 <= grid[i][j], queries[i] <= 106",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "2 <= m, n <= 1000",
+    "4 <= m * n <= 105",
+    "k == queries.length",
+    "1 <= k <= 104",
+    "1 <= grid[i][j], queries[i] <= 106"
+  ]
+}

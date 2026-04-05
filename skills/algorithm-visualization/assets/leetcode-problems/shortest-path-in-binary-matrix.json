@@ -1,0 +1,14 @@
+{
+  "number": "1091",
+  "title_cn": "二进制矩阵中的最短路径",
+  "title_en": "Shortest Path in Binary Matrix",
+  "slug": "shortest-path-in-binary-matrix",
+  "difficulty": "Medium",
+  "description": "给你一个 n x n 的二进制矩阵 grid 中，返回矩阵中最短 畅通路径 的长度。如果不存在这样的路径，返回 -1 。\n\n二进制矩阵中的 畅通路径 是一条从 左上角 单元格（即，(0, 0)）到 右下角 单元格（即，(n - 1, n - 1)）的路径，该路径同时满足下述要求：\n\n\t路径途经的所有单元格的值都是 0 。\n\t路径中所有相邻的单元格应当在 8 个方向之一 上连通（即，相邻两单元之间彼此不同且共享一条边或者一个角）。\n\n畅通路径的长度 是该路径途经的单元格总数。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,1],[1,0]]\n输出：2\n\n示例 2：\n\n输入：grid = [[0,0,0],[1,1,0],[1,1,0]]\n输出：4\n\n示例 3：\n\n输入：grid = [[1,0,0],[1,1,0],[1,1,0]]\n输出：-1\n\n&nbsp;\n\n提示：\n\n\tn == grid.length\n\tn == grid[i].length\n\t1 <= n <= 100\n\tgrid[i][j] 为 0 或 1",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "1 <= n <= 100",
+    "grid[i][j] 为 0 或 1"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "2420",
+  "title_cn": "找到所有好下标",
+  "title_en": "Find All Good Indices",
+  "slug": "find-all-good-indices",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个正整数&nbsp;k&nbsp;。\n\n对于&nbsp;k <= i < n - k&nbsp;之间的一个下标&nbsp;i&nbsp;，如果它满足以下条件，我们就称它为一个&nbsp;好&nbsp;下标：\n\n\t下标 i 之前 的 k&nbsp;个元素是 非递增的&nbsp;。\n\t下标 i 之后&nbsp;的 k&nbsp;个元素是 非递减的&nbsp;。\n\n按 升序&nbsp;返回所有好下标。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,1,1,3,4,1], k = 2\n输出：[2,3]\n解释：数组中有两个好下标：\n- 下标 2 。子数组 [2,1] 是非递增的，子数组 [1,3] 是非递减的。\n- 下标 3 。子数组 [1,1] 是非递增的，子数组 [3,4] 是非递减的。\n注意，下标 4 不是好下标，因为 [4,1] 不是非递减的。\n\n示例 2：\n\n输入：nums = [2,1,1,2], k = 2\n输出：[]\n解释：数组中没有好下标。\n\n&nbsp;\n\n提示：\n\n\tn == nums.length\n\t3 <= n <= 105\n\t1 <= nums[i] <= 106\n\t1 <= k <= n / 2",
+  "constraints": [
+    "n == nums.length",
+    "3 <= n <= 105",
+    "1 <= nums[i] <= 106",
+    "1 <= k <= n / 2"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "2580",
+  "title_cn": "统计将重叠区间合并成组的方案数",
+  "title_en": "Count Ways to Group Overlapping Ranges",
+  "slug": "count-ways-to-group-overlapping-ranges",
+  "difficulty": "Medium",
+  "description": "给你一个二维整数数组&nbsp;ranges&nbsp;，其中&nbsp;ranges[i] = [starti, endi]&nbsp;表示&nbsp;starti&nbsp;到&nbsp;endi&nbsp;之间（包括二者）的所有整数都包含在第&nbsp;i&nbsp;个区间中。\n\n你需要将&nbsp;ranges&nbsp;分成 两个&nbsp;组（可以为空），满足：\n\n\t每个区间只属于一个组。\n\t两个有 交集&nbsp;的区间必须在 同一个&nbsp;组内。\n\n如果两个区间有至少 一个&nbsp;公共整数，那么这两个区间是 有交集&nbsp;的。\n\n\t比方说，区间&nbsp;[1, 3] 和&nbsp;[2, 5]&nbsp;有交集，因为&nbsp;2&nbsp;和&nbsp;3&nbsp;在两个区间中都被包含。\n\n请你返回将 ranges&nbsp;划分成两个组的 总方案数&nbsp;。由于答案可能很大，将它对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：ranges = [[6,10],[5,15]]\n输出：2\n解释：\n两个区间有交集，所以它们必须在同一个组内。\n所以有两种方案：\n- 将两个区间都放在第 1 个组中。\n- 将两个区间都放在第 2 个组中。\n\n示例 2：\n\n输入：ranges = [[1,3],[10,20],[2,5],[4,8]]\n输出：4\n解释：\n区间 [1,3] 和 [2,5] 有交集，所以它们必须在同一个组中。\n同理，区间 [2,5] 和 [4,8] 也有交集，所以它们也必须在同一个组中。\n所以总共有 4 种分组方案：\n- 所有区间都在第 1 组。\n- 所有区间都在第 2 组。\n- 区间 [1,3] ，[2,5] 和 [4,8] 在第 1 个组中，[10,20] 在第 2 个组中。\n- 区间 [1,3] ，[2,5] 和 [4,8] 在第 2 个组中，[10,20] 在第 1 个组中。\n\n&nbsp;\n\n提示：\n\n\t1 <= ranges.length <= 105\n\tranges[i].length == 2\n\t0 <= starti <= endi <= 109",
+  "constraints": [
+    "1 <= ranges.length <= 105",
+    "ranges[i].length == 2",
+    "0 <= starti <= endi <= 109"
+  ]
+}

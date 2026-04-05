@@ -1,0 +1,15 @@
+{
+  "number": "632",
+  "title_cn": "最小区间",
+  "title_en": "Smallest Range Covering Elements from K Lists",
+  "slug": "smallest-range-covering-elements-from-k-lists",
+  "difficulty": "Hard",
+  "description": "你有&nbsp;k&nbsp;个 非递减排列 的整数列表。找到一个 最小 区间，使得&nbsp;k&nbsp;个列表中的每个列表至少有一个数包含在其中。\n\n我们定义如果&nbsp;b-a < d-c&nbsp;或者在&nbsp;b-a == d-c&nbsp;时&nbsp;a < c，则区间 [a,b] 比 [c,d] 小。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [[4,10,15,24,26], [0,9,12,20], [5,18,22,30]]\n输出：[20,24]\n解释： \n列表 1：[4, 10, 15, 24, 26]，24 在区间 [20,24] 中。\n列表 2：[0, 9, 12, 20]，20 在区间 [20,24] 中。\n列表 3：[5, 18, 22, 30]，22 在区间 [20,24] 中。\n\n示例 2：\n\n输入：nums = [[1,2,3],[1,2,3],[1,2,3]]\n输出：[1,1]\n\n&nbsp;\n\n提示：\n\n\tnums.length == k\n\t1 <= k <= 3500\n\t1 <= nums[i].length <= 50\n\t-105 <= nums[i][j] <= 105\n\tnums[i] 按非递减顺序排列\n\n&nbsp;",
+  "constraints": [
+    "nums.length == k",
+    "1 <= k <= 3500",
+    "1 <= nums[i].length <= 50",
+    "-105 <= nums[i][j] <= 105",
+    "nums[i] 按非递减顺序排列"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "number": "2033",
+  "title_cn": "获取单值网格的最小操作数",
+  "title_en": "Minimum Operations to Make a Uni-Value Grid",
+  "slug": "minimum-operations-to-make-a-uni-value-grid",
+  "difficulty": "Medium",
+  "description": "给你一个大小为&nbsp;m x n 的二维整数网格 grid 和一个整数 x 。每一次操作，你可以对 grid 中的任一元素 加 x 或 减 x 。\n\n单值网格 是全部元素都相等的网格。\n\n返回使网格化为单值网格所需的 最小 操作数。如果不能，返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[2,4],[6,8]], x = 2\n输出：4\n解释：可以执行下述操作使所有元素都等于 4 ： \n- 2 加 x 一次。\n- 6 减 x 一次。\n- 8 减 x 两次。\n共计 4 次操作。\n\n示例 2：\n\n输入：grid = [[1,5],[2,3]], x = 1\n输出：5\n解释：可以使所有元素都等于 3 。\n\n示例 3：\n\n输入：grid = [[1,2],[3,4]], x = 2\n输出：-1\n解释：无法使所有元素相等。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 105\n\t1 <= m * n <= 105\n\t1 <= x, grid[i][j] <= 104",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 105",
+    "1 <= m * n <= 105",
+    "1 <= x, grid[i][j] <= 104"
+  ]
+}

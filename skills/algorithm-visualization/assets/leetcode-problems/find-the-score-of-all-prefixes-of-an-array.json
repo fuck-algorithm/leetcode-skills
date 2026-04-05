@@ -1,0 +1,12 @@
+{
+  "number": "2640",
+  "title_cn": "一个数组所有前缀的分数",
+  "title_en": "Find the Score of All Prefixes of an Array",
+  "slug": "find-the-score-of-all-prefixes-of-an-array",
+  "difficulty": "Medium",
+  "description": "定义一个数组 arr&nbsp;的 转换数组&nbsp;conver&nbsp;为：\n\n\tconver[i] = arr[i] + max(arr[0..i])，其中&nbsp;max(arr[0..i])&nbsp;是满足 0 <= j <= i&nbsp;的所有&nbsp;arr[j]&nbsp;中的最大值。\n\n定义一个数组 arr&nbsp;的 分数&nbsp;为 arr&nbsp;转换数组中所有元素的和。\n\n给你一个下标从 0&nbsp;开始长度为 n&nbsp;的整数数组&nbsp;nums&nbsp;，请你返回一个长度为 n&nbsp;的数组&nbsp;ans&nbsp;，其中&nbsp;ans[i]是前缀&nbsp;nums[0..i]&nbsp;的分数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,7,5,10]\n输出：[4,10,24,36,56]\n解释：\n对于前缀 [2] ，转换数组为 [4] ，所以分数为 4 。\n对于前缀 [2, 3] ，转换数组为 [4, 6] ，所以分数为 10 。\n对于前缀 [2, 3, 7] ，转换数组为 [4, 6, 14] ，所以分数为 24 。\n对于前缀 [2, 3, 7, 5] ，转换数组为 [4, 6, 14, 12] ，所以分数为 36 。\n对于前缀 [2, 3, 7, 5, 10] ，转换数组为 [4, 6, 14, 12, 20] ，所以分数为 56 。\n\n示例 2：\n\n输入：nums = [1,1,2,4,8,16]\n输出：[2,4,8,16,32,64]\n解释：\n对于前缀 [1] ，转换数组为 [2] ，所以分数为 2 。\n对于前缀 [1, 1]，转换数组为 [2, 2] ，所以分数为 4 。\n对于前缀 [1, 1, 2]，转换数组为 [2, 2, 4] ，所以分数为 8 。\n对于前缀 [1, 1, 2, 4]，转换数组为 [2, 2, 4, 8] ，所以分数为 16 。\n对于前缀 [1, 1, 2, 4, 8]，转换数组为 [2, 2, 4, 8, 16] ，所以分数为 32 。\n对于前缀 [1, 1, 2, 4, 8, 16]，转换数组为 [2, 2, 4, 8, 16, 32] ，所以分数为 64 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

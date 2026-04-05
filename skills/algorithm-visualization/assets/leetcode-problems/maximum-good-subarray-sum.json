@@ -1,0 +1,13 @@
+{
+  "number": "3026",
+  "title_cn": "最大好子数组和",
+  "title_en": "Maximum Good Subarray Sum",
+  "slug": "maximum-good-subarray-sum",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n&nbsp;的数组&nbsp;nums&nbsp;和一个 正&nbsp;整数&nbsp;k&nbsp;。\n\n如果&nbsp;nums&nbsp;的一个子数组中，第一个元素和最后一个元素 差的绝对值恰好&nbsp;为&nbsp;k&nbsp;，我们称这个子数组为&nbsp;好&nbsp;的。换句话说，如果子数组&nbsp;nums[i..j]&nbsp;满足&nbsp;|nums[i] - nums[j]| == k&nbsp;，那么它是一个好子数组。\n\n请你返回&nbsp;nums&nbsp;中&nbsp;好&nbsp;子数组的&nbsp;最大&nbsp;和，如果没有好子数组，返回&nbsp;0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,3,4,5,6], k = 1\n输出：11\n解释：好子数组中第一个元素和最后一个元素的差的绝对值必须为 1 。好子数组有 [1,2] ，[2,3] ，[3,4] ，[4,5] 和 [5,6] 。最大子数组和为 11 ，对应的子数组为 [5,6] 。\n\n示例 2：\n\n输入：nums = [-1,3,2,4,5], k = 3\n输出：11\n解释：好子数组中第一个元素和最后一个元素的差的绝对值必须为 3 。好子数组有 [-1,3,2] 和 [2,4,5] 。最大子数组和为 11 ，对应的子数组为 [2,4,5] 。\n\n示例 3：\n\n输入：nums = [-1,-2,-3,-4], k = 2\n输出：-6\n解释：好子数组中第一个元素和最后一个元素的差的绝对值必须为 2 。好子数组有 [-1,-2,-3] 和 [-2,-3,-4] 。最大子数组和为 -6 ，对应的子数组为 [-1,-2,-3] 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t-109 <= nums[i] <= 109\n\t1 <= k <= 109",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109",
+    "1 <= k <= 109"
+  ]
+}

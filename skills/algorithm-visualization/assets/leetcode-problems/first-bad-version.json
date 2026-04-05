@@ -1,0 +1,11 @@
+{
+  "number": "278",
+  "title_cn": "第一个错误的版本",
+  "title_en": "First Bad Version",
+  "slug": "first-bad-version",
+  "difficulty": "Easy",
+  "description": "你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，你的产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。\n\n假设你有 n 个版本 [1, 2, ..., n]，你想找出导致之后所有版本出错的第一个错误的版本。\n\n你可以通过调用&nbsp;bool isBadVersion(version)&nbsp;接口来判断版本号 version 是否在单元测试中出错。实现一个函数来查找第一个错误的版本。你应该尽量减少对调用 API 的次数。\n&nbsp;\n\n示例 1：\n\n输入：n = 5, bad = 4\n输出：4\n解释：\n调用 isBadVersion(3) -> false \n调用 isBadVersion(5)&nbsp;-> true \n调用 isBadVersion(4)&nbsp;-> true\n所以，4 是第一个错误的版本。\n\n示例 2：\n\n输入：n = 1, bad = 1\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= bad <= n <= 231 - 1",
+  "constraints": [
+    "1 <= bad <= n <= 231 - 1"
+  ]
+}

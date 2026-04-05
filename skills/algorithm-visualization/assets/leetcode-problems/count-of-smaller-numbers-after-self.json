@@ -1,0 +1,12 @@
+{
+  "number": "315",
+  "title_cn": "计算右侧小于当前元素的个数",
+  "title_en": "Count of Smaller Numbers After Self",
+  "slug": "count-of-smaller-numbers-after-self",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 nums ，按要求返回一个新数组&nbsp;counts 。数组 counts 有该性质： counts[i] 的值是&nbsp; nums[i] 右侧小于&nbsp;nums[i] 的元素的数量。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [5,2,6,1]\n输出：[2,1,1,0] \n解释：\n5 的右侧有 2 个更小的元素 (2 和 1)\n2 的右侧仅有 1 个更小的元素 (1)\n6 的右侧有 1 个更小的元素 (1)\n1 的右侧有 0 个更小的元素\n\n示例 2：\n\n输入：nums = [-1]\n输出：[0]\n\n示例 3：\n\n输入：nums = [-1,-1]\n输出：[0,0]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-104 <= nums[i] <= 104",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-104 <= nums[i] <= 104"
+  ]
+}

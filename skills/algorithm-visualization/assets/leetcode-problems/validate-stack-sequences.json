@@ -1,0 +1,15 @@
+{
+  "number": "946",
+  "title_cn": "验证栈序列",
+  "title_en": "Validate Stack Sequences",
+  "slug": "validate-stack-sequences",
+  "difficulty": "Medium",
+  "description": "给定&nbsp;pushed&nbsp;和&nbsp;popped&nbsp;两个序列，每个序列中的 值都不重复，只有当它们可能是在最初空栈上进行的推入 push 和弹出 pop 操作序列的结果时，返回 true；否则，返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：pushed = [1,2,3,4,5], popped = [4,5,3,2,1]\n输出：true\n解释：我们可以按以下顺序执行：\npush(1), push(2), push(3), push(4), pop() -> 4,\npush(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1\n\n示例 2：\n\n输入：pushed = [1,2,3,4,5], popped = [4,3,5,1,2]\n输出：false\n解释：1 不能在 2 之前弹出。\n\n&nbsp;\n\n提示：\n\n\t1 <= pushed.length <= 1000\n\t0 <= pushed[i] <= 1000\n\tpushed 的所有元素 互不相同\n\tpopped.length == pushed.length\n\tpopped 是 pushed 的一个排列",
+  "constraints": [
+    "1 <= pushed.length <= 1000",
+    "0 <= pushed[i] <= 1000",
+    "pushed 的所有元素 互不相同",
+    "popped.length == pushed.length",
+    "popped 是 pushed 的一个排列"
+  ]
+}

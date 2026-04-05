@@ -1,0 +1,12 @@
+{
+  "number": "3122",
+  "title_cn": "使矩阵满足条件的最少操作次数",
+  "title_en": "Minimum Number of Operations to Satisfy Conditions",
+  "slug": "minimum-number-of-operations-to-satisfy-conditions",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 m x n&nbsp;的二维矩形&nbsp;grid&nbsp;。每次 操作&nbsp;中，你可以将 任一 格子的值修改为 任意&nbsp;非负整数。完成所有操作后，你需要确保每个格子&nbsp;grid[i][j]&nbsp;的值满足：\n\n\t如果下面相邻格子存在的话，它们的值相等，也就是&nbsp;grid[i][j] == grid[i + 1][j]（如果存在）。\n\t如果右边相邻格子存在的话，它们的值不相等，也就是&nbsp;grid[i][j] != grid[i][j + 1]（如果存在）。\n\n请你返回需要的 最少&nbsp;操作数目。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,0,2],[1,0,2]]\n\n输出：0\n\n解释：\n\n矩阵中所有格子已经满足要求。\n\n示例 2：\n\n输入：grid = [[1,1,1],[0,0,0]]\n\n输出：3\n\n解释：\n\n将矩阵变成&nbsp;[[1,0,1],[1,0,1]]&nbsp;，它满足所有要求，需要 3 次操作：\n\n\t将&nbsp;grid[1][0]&nbsp;变为 1 。\n\t将&nbsp;grid[0][1] 变为 0 。\n\t将&nbsp;grid[1][2]&nbsp;变为 1 。\n\n示例 3：\n\n输入：grid = [[1],[2],[3]]\n\n输出：2\n\n解释：\n\n这个矩阵只有一列，我们可以通过 2 次操作将所有格子里的值变为 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n, m <= 1000\n\t0 <= grid[i][j] <= 9",
+  "constraints": [
+    "1 <= n, m <= 1000",
+    "0 <= grid[i][j] <= 9"
+  ]
+}

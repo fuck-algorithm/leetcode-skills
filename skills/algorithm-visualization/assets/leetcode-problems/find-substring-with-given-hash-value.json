@@ -1,0 +1,15 @@
+{
+  "number": "2156",
+  "title_cn": "查找给定哈希值的子串",
+  "title_en": "Find Substring With Given Hash Value",
+  "slug": "find-substring-with-given-hash-value",
+  "difficulty": "Hard",
+  "description": "给定整数 p&nbsp;和 m&nbsp;，一个长度为 k&nbsp;且下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;的哈希值按照如下函数计算：\n\n\thash(s, p, m) = (val(s[0]) * p0 + val(s[1]) * p1 + ... + val(s[k-1]) * pk-1) mod m.\n\n其中&nbsp;val(s[i])&nbsp;表示&nbsp;s[i]&nbsp;在字母表中的下标，从&nbsp;val('a') = 1 到&nbsp;val('z') = 26&nbsp;。\n\n给你一个字符串&nbsp;s&nbsp;和整数&nbsp;power，modulo，k&nbsp;和&nbsp;hashValue&nbsp;。请你返回 s&nbsp;中 第一个 长度为 k&nbsp;的 子串&nbsp;sub&nbsp;，满足&nbsp;hash(sub, power, modulo) == hashValue&nbsp;。\n\n测试数据保证一定 存在&nbsp;至少一个这样的子串。\n\n子串 定义为一个字符串中连续非空字符组成的序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"leetcode\", power = 7, modulo = 20, k = 2, hashValue = 0\n输出：\"ee\"\n解释：\"ee\" 的哈希值为 hash(\"ee\", 7, 20) = (5 * 1 + 5 * 7) mod 20 = 40 mod 20 = 0 。\n\"ee\" 是长度为 2 的第一个哈希值为 0 的子串，所以我们返回 \"ee\" 。\n\n示例 2：\n\n输入：s = \"fbxzaad\", power = 31, modulo = 100, k = 3, hashValue = 32\n输出：\"fbx\"\n解释：\"fbx\" 的哈希值为 hash(\"fbx\", 31, 100) = (6 * 1 + 2 * 31 + 24 * 312) mod 100 = 23132 mod 100 = 32 。\n\"bxz\" 的哈希值为 hash(\"bxz\", 31, 100) = (2 * 1 + 24 * 31 + 26 * 312) mod 100 = 25732 mod 100 = 32 。\n\"fbx\" 是长度为 3 的第一个哈希值为 32 的子串，所以我们返回 \"fbx\" 。\n注意，\"bxz\" 的哈希值也为 32 ，但是它在字符串中比 \"fbx\" 更晚出现。\n\n&nbsp;\n\n提示：\n\n\t1 <= k <= s.length <= 2 * 104\n\t1 <= power, modulo <= 109\n\t0 <= hashValue < modulo\n\ts&nbsp;只包含小写英文字母。\n\t测试数据保证一定 存在&nbsp;满足条件的子串。",
+  "constraints": [
+    "1 <= k <= s.length <= 2 * 104",
+    "1 <= power, modulo <= 109",
+    "0 <= hashValue < modulo",
+    "s&nbsp;只包含小写英文字母。",
+    "测试数据保证一定 存在&nbsp;满足条件的子串。"
+  ]
+}

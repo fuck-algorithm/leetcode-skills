@@ -1,0 +1,12 @@
+{
+  "number": "345",
+  "title_cn": "反转字符串中的元音字母",
+  "title_en": "Reverse Vowels of a String",
+  "slug": "reverse-vowels-of-a-string",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s ，仅反转字符串中的所有元音字母，并返回结果字符串。\n\n元音字母包括 'a'、'e'、'i'、'o'、'u'，且可能以大小写两种形式出现不止一次。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"IceCreAm\"\n\n输出：\"AceCreIm\"\n\n解释：\n\ns&nbsp;中的元音是&nbsp;['I', 'e', 'e', 'A']。反转这些元音，s 变为&nbsp;\"AceCreIm\".\n\n示例 2：\n\n输入：s = \"leetcode\"\n\n输出：\"leotcede\"\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 3 * 105\n\ts 由 可打印的 ASCII 字符组成",
+  "constraints": [
+    "1 <= s.length <= 3 * 105",
+    "s 由 可打印的 ASCII 字符组成"
+  ]
+}

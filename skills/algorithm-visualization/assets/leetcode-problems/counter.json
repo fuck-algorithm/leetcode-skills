@@ -1,0 +1,13 @@
+{
+  "number": "2620",
+  "title_cn": "计数器",
+  "title_en": "Counter",
+  "slug": "counter",
+  "difficulty": "Easy",
+  "description": "给定一个整型参数 n，请你编写并返回一个 counter&nbsp;函数。这个&nbsp;counter&nbsp;函数最初返回 n，每次调用它时会返回前一个值加 1 的值 ( n ,&nbsp; n + 1 ,&nbsp; n + 2 ，等等)。\n\n&nbsp;\n\n示例 1：\n\n输入：\nn = 10 \n[\"call\",\"call\",\"call\"]\n输出：[10,11,12]\n解释：\ncounter() = 10 // 第一次调用 counter()，返回 n。\ncounter() = 11 // 返回上次调用的值加 1。\ncounter() = 12 // 返回上次调用的值加 1。\n\n示例 2：\n\n输入：\nn = -2\n[\"call\",\"call\",\"call\",\"call\",\"call\"]\n输出：[-2,-1,0,1,2]\n解释：counter() 最初返回 -2。然后在每个后续调用后增加 1。\n\n&nbsp;\n\n提示：\n\n\t-1000&nbsp;<= n <= 1000\n\t0 <= calls.length <= 1000\n\tcalls[i] === \"call\"",
+  "constraints": [
+    "-1000&nbsp;<= n <= 1000",
+    "0 <= calls.length <= 1000",
+    "calls[i] === \"call\""
+  ]
+}

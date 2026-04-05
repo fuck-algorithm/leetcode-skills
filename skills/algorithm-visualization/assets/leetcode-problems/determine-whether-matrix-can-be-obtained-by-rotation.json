@@ -1,0 +1,14 @@
+{
+  "number": "1886",
+  "title_cn": "判断矩阵经轮转后是否一致",
+  "title_en": "Determine Whether Matrix Can Be Obtained By Rotation",
+  "slug": "determine-whether-matrix-can-be-obtained-by-rotation",
+  "difficulty": "Easy",
+  "description": "给你两个大小为 n x n 的二进制矩阵 mat 和 target 。现 以 90 度顺时针轮转 矩阵 mat 中的元素 若干次 ，如果能够使 mat 与 target 一致，返回 true ；否则，返回 false 。\n\n示例 1：\n\n输入：mat = [[0,1],[1,0]], target = [[1,0],[0,1]]\n输出：true\n解释：顺时针轮转 90 度一次可以使 mat 和 target 一致。\n\n示例 2：\n\n输入：mat = [[0,1],[1,1]], target = [[1,0],[0,1]]\n输出：false\n解释：无法通过轮转矩阵中的元素使 equal 与 target 一致。\n\n示例 3：\n\n输入：mat = [[0,0,0],[0,1,0],[1,1,1]], target = [[1,1,1],[0,1,0],[0,0,0]]\n输出：true\n解释：顺时针轮转 90 度两次可以使 mat 和 target 一致。\n\n提示：\n\n\tn == mat.length == target.length\n\tn == mat[i].length == target[i].length\n\t1 \n\tmat[i][j] 和 target[i][j] 不是 0 就是 1",
+  "constraints": [
+    "n == mat.length == target.length",
+    "n == mat[i].length == target[i].length",
+    "1",
+    "mat[i][j] 和 target[i][j] 不是 0 就是 1"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "70",
+  "title_cn": "爬楼梯",
+  "title_en": "Climbing Stairs",
+  "slug": "climbing-stairs",
+  "difficulty": "Easy",
+  "description": "假设你正在爬楼梯。需要 n&nbsp;阶你才能到达楼顶。\n\n每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2\n输出：2\n解释：有两种方法可以爬到楼顶。\n1. 1 阶 + 1 阶\n2. 2 阶\n\n示例 2：\n\n输入：n = 3\n输出：3\n解释：有三种方法可以爬到楼顶。\n1. 1 阶 + 1 阶 + 1 阶\n2. 1 阶 + 2 阶\n3. 2 阶 + 1 阶\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 45",
+  "constraints": [
+    "1 <= n <= 45"
+  ]
+}

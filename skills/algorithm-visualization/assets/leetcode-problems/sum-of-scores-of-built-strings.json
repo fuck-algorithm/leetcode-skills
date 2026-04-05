@@ -1,0 +1,12 @@
+{
+  "number": "2223",
+  "title_cn": "构造字符串的总得分和",
+  "title_en": "Sum of Scores of Built Strings",
+  "slug": "sum-of-scores-of-built-strings",
+  "difficulty": "Hard",
+  "description": "你需要从空字符串开始&nbsp;构造 一个长度为 n&nbsp;的字符串 s&nbsp;，构造的过程为每次给当前字符串 前面&nbsp;添加 一个 字符。构造过程中得到的所有字符串编号为 1&nbsp;到 n&nbsp;，其中长度为 i&nbsp;的字符串编号为 si&nbsp;。\n\n\t比方说，s = \"abaca\"&nbsp;，s1 == \"a\"&nbsp;，s2 == \"ca\"&nbsp;，s3 == \"aca\"&nbsp;依次类推。\n\nsi&nbsp;的 得分&nbsp;为&nbsp;si 和&nbsp;sn&nbsp;的 最长公共前缀 的长度（注意&nbsp;s == sn&nbsp;）。\n\n给你最终的字符串&nbsp;s&nbsp;，请你返回每一个&nbsp;si&nbsp;的&nbsp;得分之和&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"babab\"\n输出：9\n解释：\ns1 == \"b\" ，最长公共前缀是 \"b\" ，得分为 1 。\ns2 == \"ab\" ，没有公共前缀，得分为 0 。\ns3 == \"bab\" ，最长公共前缀为 \"bab\" ，得分为 3 。\ns4 == \"abab\" ，没有公共前缀，得分为 0 。\ns5 == \"babab\" ，最长公共前缀为 \"babab\" ，得分为 5 。\n得分和为 1 + 0 + 3 + 0 + 5 = 9 ，所以我们返回 9 。\n\n示例 2 ：\n\n输入：s = \"azbazbzaz\"\n输出：14\n解释：\ns2 == \"az\" ，最长公共前缀为 \"az\" ，得分为 2 。\ns6 == \"azbzaz\" ，最长公共前缀为 \"azb\" ，得分为 3 。\ns9 == \"azbazbzaz\" ，最长公共前缀为 \"azbazbzaz\" ，得分为 9 。\n其他 si 得分均为 0 。\n得分和为 2 + 3 + 9 = 14 ，所以我们返回 14 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

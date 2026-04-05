@@ -1,0 +1,12 @@
+{
+  "number": "1624",
+  "title_cn": "两个相同字符之间的最长子字符串",
+  "title_en": "Largest Substring Between Two Equal Characters",
+  "slug": "largest-substring-between-two-equal-characters",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s，请你返回 两个相同字符之间的最长子字符串的长度 ，计算长度时不含这两个字符。如果不存在这样的子字符串，返回 -1 。\n\n子字符串 是字符串中的一个连续字符序列。\n\n示例 1：\n\n输入：s = \"aa\"\n输出：0\n解释：最优的子字符串是两个 'a' 之间的空子字符串。\n\n示例 2：\n\n输入：s = \"abca\"\n输出：2\n解释：最优的子字符串是 \"bc\" 。\n\n示例 3：\n\n输入：s = \"cbzxy\"\n输出：-1\n解释：s 中不存在出现出现两次的字符，所以返回 -1 。\n\n示例 4：\n\n输入：s = \"cabbac\"\n输出：4\n解释：最优的子字符串是 \"abba\" ，其他的非最优解包括 \"bb\" 和 \"\" 。\n\n提示：\n\n\t1 <= s.length <= 300\n\ts 只含小写英文字母",
+  "constraints": [
+    "1 <= s.length <= 300",
+    "s 只含小写英文字母"
+  ]
+}

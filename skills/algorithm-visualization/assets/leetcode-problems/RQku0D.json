@@ -1,0 +1,13 @@
+{
+  "number": "LCR 019",
+  "title_cn": "验证回文串 II",
+  "title_en": "验证回文串 II",
+  "slug": "RQku0D",
+  "difficulty": "Easy",
+  "description": "给定一个非空字符串&nbsp;s，请判断如果&nbsp;最多 从字符串中删除一个字符能否得到一个回文字符串。\n\n&nbsp;\n\n示例 1：\n\n输入: s = \"aba\"\n输出: true\n\n示例 2：\n\n输入: s = \"abca\"\n输出: true\n解释: 可以删除 \"c\" 字符 或者 \"b\" 字符\n\n示例 3：\n\n输入: s = \"abc\"\n输出: false\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts 由小写英文字母组成\n\n&nbsp;\n\n注意：本题与主站 680&nbsp;题相同：&nbsp;https://leetcode.cn/problems/valid-palindrome-ii/",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s 由小写英文字母组成",
+    "注意：本题与主站 680&nbsp;题相同：&nbsp;https://leetcode.cn/problems/valid-palindrome-ii/"
+  ]
+}

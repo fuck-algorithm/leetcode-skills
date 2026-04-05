@@ -1,0 +1,12 @@
+{
+  "number": "3209",
+  "title_cn": "子数组按位与值为 K 的数目",
+  "title_en": "Number of Subarrays With AND Value of K",
+  "slug": "number-of-subarrays-with-and-value-of-k",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个整数&nbsp;k&nbsp;，请你返回&nbsp;nums&nbsp;中有多少个子数组满足：子数组中所有元素按位&nbsp;AND&nbsp;的结果为 k&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,1,1], k = 1\n\n输出：6\n\n解释：\n\n所有子数组都只含有元素 1 。\n\n示例 2：\n\n输入：nums = [1,1,2], k = 1\n\n输出：3\n\n解释：\n\n按位&nbsp;AND&nbsp;值为 1 的子数组包括：[1,1,2], [1,1,2], [1,1,2]&nbsp;。\n\n示例 3：\n\n输入：nums = [1,2,3], k = 2\n\n输出：2\n\n解释：\n\n按位&nbsp;AND&nbsp;值为 2 的子数组包括：[1,2,3], [1,2,3]&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t0 <= nums[i], k <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "0 <= nums[i], k <= 109"
+  ]
+}

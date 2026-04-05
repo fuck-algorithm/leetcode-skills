@@ -1,0 +1,20 @@
+{
+  "number": "2039",
+  "title_cn": "网络空闲的时刻",
+  "title_en": "The Time When the Network Becomes Idle",
+  "slug": "the-time-when-the-network-becomes-idle",
+  "difficulty": "Medium",
+  "description": "给你一个有 n&nbsp;个服务器的计算机网络，服务器编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;。同时给你一个二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ui, vi]&nbsp;表示服务器&nbsp;ui 和&nbsp;vi&nbsp;之间有一条信息线路，在&nbsp;一秒&nbsp;内它们之间可以传输&nbsp;任意&nbsp;数目的信息。再给你一个长度为 n&nbsp;且下标从&nbsp;0&nbsp;开始的整数数组&nbsp;patience&nbsp;。\n\n题目保证所有服务器都是 相通&nbsp;的，也就是说一个信息从任意服务器出发，都可以通过这些信息线路直接或间接地到达任何其他服务器。\n\n编号为 0&nbsp;的服务器是 主&nbsp;服务器，其他服务器为 数据&nbsp;服务器。每个数据服务器都要向主服务器发送信息，并等待回复。信息在服务器之间按 最优&nbsp;线路传输，也就是说每个信息都会以 最少时间&nbsp;到达主服务器。主服务器会处理 所有&nbsp;新到达的信息并 立即&nbsp;按照每条信息来时的路线 反方向 发送回复信息。\n\n在 0&nbsp;秒的开始，所有数据服务器都会发送各自需要处理的信息。从第 1&nbsp;秒开始，每&nbsp;一秒最 开始&nbsp;时，每个数据服务器都会检查它是否收到了主服务器的回复信息（包括新发出信息的回复信息）：\n\n\t如果还没收到任何回复信息，那么该服务器会周期性&nbsp;重发&nbsp;信息。数据服务器&nbsp;i&nbsp;每&nbsp;patience[i]&nbsp;秒都会重发一条信息，也就是说，数据服务器&nbsp;i&nbsp;在上一次发送信息给主服务器后的 patience[i]&nbsp;秒 后&nbsp;会重发一条信息给主服务器。\n\t否则，该数据服务器&nbsp;不会重发&nbsp;信息。\n\n当没有任何信息在线路上传输或者到达某服务器时，该计算机网络变为 空闲&nbsp;状态。\n\n请返回计算机网络变为 空闲&nbsp;状态的&nbsp;最早秒数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [[0,1],[1,2]], patience = [0,2,1]\n输出：8\n解释：\n0 秒最开始时，\n- 数据服务器 1 给主服务器发出信息（用 1A 表示）。\n- 数据服务器 2 给主服务器发出信息（用 2A 表示）。\n\n1 秒时，\n- 信息 1A 到达主服务器，主服务器立刻处理信息 1A 并发出 1A 的回复信息。\n- 数据服务器 1 还没收到任何回复。距离上次发出信息过去了 1 秒（1 < patience[1] = 2），所以不会重发信息。\n- 数据服务器 2 还没收到任何回复。距离上次发出信息过去了 1 秒（1 == patience[2] = 1），所以它重发一条信息（用 2B 表示）。\n\n2 秒时，\n- 回复信息 1A 到达服务器 1 ，服务器 1 不会再重发信息。\n- 信息 2A 到达主服务器，主服务器立刻处理信息 2A 并发出 2A 的回复信息。\n- 服务器 2 重发一条信息（用 2C 表示）。\n...\n4 秒时，\n- 回复信息 2A 到达服务器 2 ，服务器 2 不会再重发信息。\n...\n7 秒时，回复信息 2D 到达服务器 2 。\n\n从第 8 秒开始，不再有任何信息在服务器之间传输，也不再有信息到达服务器。\n所以第 8 秒是网络变空闲的最早时刻。\n\n示例 2：\n\n输入：edges = [[0,1],[0,2],[1,2]], patience = [0,10,10]\n输出：3\n解释：数据服务器 1 和 2 第 2 秒初收到回复信息。\n从第 3 秒开始，网络变空闲。\n\n&nbsp;\n\n提示：\n\n\tn == patience.length\n\t2 <= n <= 105\n\tpatience[0] == 0\n\t对于&nbsp;1 <= i < n ，满足&nbsp;1 <= patience[i] <= 105\n\t1 <= edges.length <= min(105, n * (n - 1) / 2)\n\tedges[i].length == 2\n\t0 <= ui, vi < n\n\tui != vi\n\t不会有重边。\n\t每个服务器都直接或间接与别的服务器相连。",
+  "constraints": [
+    "n == patience.length",
+    "2 <= n <= 105",
+    "patience[0] == 0",
+    "对于&nbsp;1 <= i < n ，满足&nbsp;1 <= patience[i] <= 105",
+    "1 <= edges.length <= min(105, n * (n - 1) / 2)",
+    "edges[i].length == 2",
+    "0 <= ui, vi < n",
+    "ui != vi",
+    "不会有重边。",
+    "每个服务器都直接或间接与别的服务器相连。"
+  ]
+}

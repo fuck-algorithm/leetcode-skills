@@ -1,0 +1,12 @@
+{
+  "number": "383",
+  "title_cn": "赎金信",
+  "title_en": "Ransom Note",
+  "slug": "ransom-note",
+  "difficulty": "Easy",
+  "description": "给你两个字符串：ransomNote 和 magazine ，判断 ransomNote 能不能由 magazine 里面的字符构成。\n\n如果可以，返回 true ；否则返回 false 。\n\nmagazine 中的每个字符只能在 ransomNote 中使用一次。\n\n&nbsp;\n\n示例 1：\n\n输入：ransomNote = \"a\", magazine = \"b\"\n输出：false\n\n示例 2：\n\n输入：ransomNote = \"aa\", magazine = \"ab\"\n输出：false\n\n示例 3：\n\n输入：ransomNote = \"aa\", magazine = \"aab\"\n输出：true\n\n&nbsp;\n\n提示：\n\n\t1 <= ransomNote.length, magazine.length <= 105\n\transomNote 和 magazine 由小写英文字母组成",
+  "constraints": [
+    "1 <= ransomNote.length, magazine.length <= 105",
+    "ransomNote 和 magazine 由小写英文字母组成"
+  ]
+}

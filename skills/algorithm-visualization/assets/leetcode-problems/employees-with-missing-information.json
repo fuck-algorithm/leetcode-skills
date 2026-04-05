@@ -1,0 +1,9 @@
+{
+  "number": "1965",
+  "title_cn": "丢失信息的雇员",
+  "title_en": "Employees With Missing Information",
+  "slug": "employees-with-missing-information",
+  "difficulty": "Easy",
+  "description": "表: Employees\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| employee_id | int     |\n| name        | varchar |\n+-------------+---------+\nemployee_id 是该表中具有唯一值的列。\n每一行表示雇员的 id 和他的姓名。\n\n表: Salaries\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| employee_id | int     |\n| salary      | int     |\n+-------------+---------+\nemployee_id 是该表中具有唯一值的列。\n每一行表示雇员的 id 和他的薪水。\n\n&nbsp;\n\n编写解决方案，找到所有 丢失信息 的雇员 id。当满足下面一个条件时，就被认为是雇员的信息丢失：\n\n\t雇员的 姓名 丢失了，或者\n\t雇员的 薪水信息 丢失了\n\n返回这些雇员的 id &nbsp;employee_id&nbsp;，&nbsp;从小到大排序&nbsp;。\n\n查询结果格式如下面的例子所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\nEmployees table:\n+-------------+----------+\n| employee_id | name     |\n+-------------+----------+\n| 2           | Crew     |\n| 4           | Haven    |\n| 5           | Kristian |\n+-------------+----------+\nSalaries table:\n+-------------+--------+\n| employee_id | salary |\n+-------------+--------+\n| 5           | 76071  |\n| 1           | 22517  |\n| 4           | 63539  |\n+-------------+--------+\n输出：\n+-------------+\n| employee_id |\n+-------------+\n| 1           |\n| 2           |\n+-------------+\n解释：\n雇员 1，2，4，5 都在这个公司工作。\n1 号雇员的姓名丢失了。\n2 号雇员的薪水信息丢失了。",
+  "constraints": []
+}

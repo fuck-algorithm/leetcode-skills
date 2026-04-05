@@ -1,0 +1,12 @@
+{
+  "number": "3174",
+  "title_cn": "清除数字",
+  "title_en": "Clear Digits",
+  "slug": "clear-digits",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;s&nbsp;。\n\n你的任务是重复以下操作删除 所有&nbsp;数字字符：\n\n\t删除 第一个数字字符&nbsp;以及它左边 最近&nbsp;的 非数字&nbsp;字符。\n\n请你返回删除所有数字字符以后剩下的字符串。\n\n注意，该操作不能对左侧没有任何非数字字符的数字执行。\n\n示例 1：\n\n输入：s = \"abc\"\n\n输出：\"abc\"\n\n解释：\n\n字符串中没有数字。\n\n示例 2：\n\n输入：s = \"cb34\"\n\n输出：\"\"\n\n解释：\n\n一开始，我们对&nbsp;s[2]&nbsp;执行操作，s&nbsp;变为&nbsp;\"c4\"&nbsp;。\n\n然后对&nbsp;s[1]&nbsp;执行操作，s&nbsp;变为&nbsp;\"\"&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts&nbsp;只包含小写英文字母和数字字符。\n\t输入保证所有数字都可以按以上操作被删除。",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s&nbsp;只包含小写英文字母和数字字符。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "793",
+  "title_cn": "阶乘函数后 K 个零",
+  "title_en": "Preimage Size of Factorial Zeroes Function",
+  "slug": "preimage-size-of-factorial-zeroes-function",
+  "difficulty": "Hard",
+  "description": "&nbsp;f(x)&nbsp;是&nbsp;x!&nbsp;末尾是 0 的数量。回想一下&nbsp;x! = 1 * 2 * 3 * ... * x，且 0! = 1&nbsp;。\n\n\t例如，&nbsp;f(3) = 0&nbsp;，因为 3! = 6 的末尾没有 0 ；而 f(11) = 2&nbsp;，因为 11!= 39916800 末端有 2 个 0 。\n\n给定&nbsp;k，找出返回能满足 f(x) = k&nbsp;的非负整数 x&nbsp;的数量。\n\n&nbsp;\n\n示例 1： \n\n输入：k = 0\n输出：5\n解释：0!, 1!, 2!, 3!, 和 4!&nbsp;均符合 k = 0 的条件。\n\n示例 2：\n\n输入：k = 5\n输出：0\n解释：没有匹配到这样的 x!，符合 k = 5 的条件。\n\n示例 3:\n\n输入: k = 3\n输出: 5\n\n&nbsp;\n\n提示:\n\n\t0 <= k <= 109",
+  "constraints": [
+    "0 <= k <= 109"
+  ]
+}

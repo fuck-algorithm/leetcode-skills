@@ -1,0 +1,12 @@
+{
+  "number": "3389",
+  "title_cn": "使字符频率相等的最少操作次数",
+  "title_en": "Minimum Operations to Make Character Frequencies Equal",
+  "slug": "minimum-operations-to-make-character-frequencies-equal",
+  "difficulty": "Hard",
+  "description": "给你一个字符串&nbsp;s&nbsp;。\n\n如果字符串 t&nbsp;中的字符出现次数相等，那么我们称&nbsp;t&nbsp;为 好的&nbsp;。\n\n你可以执行以下操作 任意次&nbsp;：\n\n\t从&nbsp;s&nbsp;中删除一个字符。\n\t往&nbsp;s&nbsp;中添加一个字符。\n\t将&nbsp;s&nbsp;中一个字母变成字母表中下一个字母。\n\n注意&nbsp;，第三个操作不能将&nbsp;'z'&nbsp;变为&nbsp;'a'&nbsp;。\n\n请你返回将 s&nbsp;变 好&nbsp;的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"acab\"\n\n输出：1\n\n解释：\n\n删掉一个字符&nbsp;'a'&nbsp;，s&nbsp;变为好的。\n\n示例 2：\n\n输入：s = \"wddw\"\n\n输出：0\n\n解释：\n\ns&nbsp;一开始就是好的，所以不需要执行任何操作。\n\n示例 3：\n\n输入：s = \"aaabc\"\n\n输出：2\n\n解释：\n\n通过以下操作，将&nbsp;s&nbsp;变好：\n\n\t将一个&nbsp;'a'&nbsp;变为&nbsp;'b'&nbsp;。\n\t往 s&nbsp;中插入一个&nbsp;'c'&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 2&nbsp;* 104\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length <= 2&nbsp;* 104",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

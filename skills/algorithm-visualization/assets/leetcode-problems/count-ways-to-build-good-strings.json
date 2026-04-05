@@ -1,0 +1,12 @@
+{
+  "number": "2466",
+  "title_cn": "统计构造好字符串的方案数",
+  "title_en": "Count Ways To Build Good Strings",
+  "slug": "count-ways-to-build-good-strings",
+  "difficulty": "Medium",
+  "description": "给你整数&nbsp;zero&nbsp;，one&nbsp;，low&nbsp;和&nbsp;high&nbsp;，我们从空字符串开始构造一个字符串，每一步执行下面操作中的一种：\n\n\t将&nbsp;'0'&nbsp;在字符串末尾添加&nbsp;zero&nbsp; 次。\n\t将&nbsp;'1'&nbsp;在字符串末尾添加&nbsp;one&nbsp;次。\n\n以上操作可以执行任意次。\n\n如果通过以上过程得到一个 长度&nbsp;在&nbsp;low 和&nbsp;high&nbsp;之间（包含上下边界）的字符串，那么这个字符串我们称为&nbsp;好&nbsp;字符串。\n\n请你返回满足以上要求的 不同&nbsp;好字符串数目。由于答案可能很大，请将结果对&nbsp;109 + 7&nbsp;取余&nbsp;后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：low = 3, high = 3, zero = 1, one = 1\n输出：8\n解释：\n一个可能的好字符串是 \"011\" 。\n可以这样构造得到：\"\" -> \"0\" -> \"01\" -> \"011\" 。\n从 \"000\" 到 \"111\" 之间所有的二进制字符串都是好字符串。\n\n示例 2：\n\n输入：low = 2, high = 3, zero = 1, one = 2\n输出：5\n解释：好字符串为 \"00\" ，\"11\" ，\"000\" ，\"110\" 和 \"011\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= low&nbsp;<= high&nbsp;<= 105\n\t1 <= zero, one <= low",
+  "constraints": [
+    "1 <= low&nbsp;<= high&nbsp;<= 105",
+    "1 <= zero, one <= low"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "1568",
+  "title_cn": "使陆地分离的最少天数",
+  "title_en": "Minimum Number of Days to Disconnect Island",
+  "slug": "minimum-number-of-days-to-disconnect-island",
+  "difficulty": "Hard",
+  "description": "给你一个大小为 m x n ，由若干 0 和 1 组成的二维网格 grid ，其中 1 表示陆地， 0 表示水。岛屿 由水平方向或竖直方向上相邻的 1 （陆地）连接形成。\n\n如果 恰好只有一座岛屿 ，则认为陆地是 连通的 ；否则，陆地就是 分离的 。\n\n一天内，可以将 任何单个 陆地单元（1）更改为水单元（0）。\n\n返回使陆地分离的最少天数。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]\n输出：2\n解释：至少需要 2 天才能得到分离的陆地。\n将陆地 grid[1][1] 和 grid[0][2] 更改为水，得到两个分离的岛屿。\n\n示例 2：\n\n输入：grid = [[1,1]]\n输出：2\n解释：如果网格中都是水，也认为是分离的 ([[1,1]] -> [[0,0]])，0 岛屿。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 30\n\tgrid[i][j] 为 0 或 1",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 30",
+    "grid[i][j] 为 0 或 1"
+  ]
+}

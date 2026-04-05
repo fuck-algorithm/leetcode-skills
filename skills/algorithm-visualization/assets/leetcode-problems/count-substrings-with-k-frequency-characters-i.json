@@ -1,0 +1,13 @@
+{
+  "number": "3325",
+  "title_cn": "字符至少出现 K 次的子字符串 I",
+  "title_en": "Count Substrings With K-Frequency Characters I",
+  "slug": "count-substrings-with-k-frequency-characters-i",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s 和一个整数 k，在 s 的所有子字符串中，请你统计并返回 至少有一个 字符 至少出现 k 次的子字符串总数。\n\n子字符串 是字符串中的一个连续、 非空 的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"abacb\", k = 2\n\n输出： 4\n\n解释：\n\n符合条件的子字符串如下：\n\n\t\"aba\"（字符 'a' 出现 2 次）。\n\t\"abac\"（字符 'a' 出现 2 次）。\n\t\"abacb\"（字符 'a' 出现 2 次）。\n\t\"bacb\"（字符 'b' 出现 2 次）。\n\n示例 2：\n\n输入： s = \"abcde\", k = 1\n\n输出： 15\n\n解释：\n\n所有子字符串都有效，因为每个字符至少出现一次。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 3000\n\t1 <= k <= s.length\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 3000",
+    "1 <= k <= s.length",
+    "s 仅由小写英文字母组成。"
+  ]
+}

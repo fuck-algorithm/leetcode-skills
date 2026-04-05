@@ -1,0 +1,13 @@
+{
+  "number": "2665",
+  "title_cn": "计数器 II",
+  "title_en": "Counter II",
+  "slug": "counter-ii",
+  "difficulty": "Easy",
+  "description": "请你写一个函数&nbsp;createCounter。这个函数接收一个初始的整数值 init。并返回一个包含三个函数的对象。\n\n这三个函数是：\n\n\tincrement()&nbsp;将当前值加 1 并返回。\n\tdecrement()&nbsp;将当前值减 1 并返回。\n\treset()&nbsp;将当前值设置为 init 并返回。\n\n&nbsp;\n\n示例 1：\n\n输入：init = 5, calls = [\"increment\",\"reset\",\"decrement\"]\n输出：[6,5,4]\n解释：\nconst counter = createCounter(5);\ncounter.increment(); // 6\ncounter.reset(); // 5\ncounter.decrement(); // 4\n\n示例 2：\n\n输入：init = 0, calls = [\"increment\",\"increment\",\"decrement\",\"reset\",\"reset\"]\n输出：[1,2,1,0,0]\n解释：\nconst counter = createCounter(0);\ncounter.increment(); // 1\ncounter.increment(); // 2\ncounter.decrement(); // 1\ncounter.reset(); // 0\ncounter.reset(); // 0\n\n&nbsp;\n\n提示：\n\n\t-1000 <= init <= 1000\n\t0 <= calls.length <= 1000\n\tcalls[i] 是 “increment”、“decrement” 和 “reset” 中的一个",
+  "constraints": [
+    "-1000 <= init <= 1000",
+    "0 <= calls.length <= 1000",
+    "calls[i] 是 “increment”、“decrement” 和 “reset” 中的一个"
+  ]
+}

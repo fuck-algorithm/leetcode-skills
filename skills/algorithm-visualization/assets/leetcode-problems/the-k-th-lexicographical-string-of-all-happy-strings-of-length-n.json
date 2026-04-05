@@ -1,0 +1,12 @@
+{
+  "number": "1415",
+  "title_cn": "长度为 n 的开心字符串中字典序第 k 小的字符串",
+  "title_en": "The k-th Lexicographical String of All Happy Strings of Length n",
+  "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+  "difficulty": "Medium",
+  "description": "一个 「开心字符串」定义为：\n\n\t仅包含小写字母&nbsp;[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;].\n\t对所有在&nbsp;1&nbsp;到&nbsp;s.length - 1&nbsp;之间的&nbsp;i&nbsp;，满足&nbsp;s[i] != s[i + 1]&nbsp;（字符串的下标从 1 开始）。\n\n比方说，字符串&nbsp;\"abc\"，\"ac\"，\"b\" 和&nbsp;\"abcbabcbcb\"&nbsp;都是开心字符串，但是&nbsp;\"aa\"，\"baa\"&nbsp;和&nbsp;\"ababbc\"&nbsp;都不是开心字符串。\n\n给你两个整数 n&nbsp;和 k&nbsp;，你需要将长度为 n&nbsp;的所有开心字符串按字典序排序。\n\n请你返回排序后的第 k 个开心字符串，如果长度为 n&nbsp;的开心字符串少于 k&nbsp;个，那么请你返回 空字符串&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1, k = 3\n输出：\"c\"\n解释：列表 [\"a\", \"b\", \"c\"] 包含了所有长度为 1 的开心字符串。按照字典序排序后第三个字符串为 \"c\" 。\n\n示例 2：\n\n输入：n = 1, k = 4\n输出：\"\"\n解释：长度为 1 的开心字符串只有 3 个。\n\n示例 3：\n\n输入：n = 3, k = 9\n输出：\"cab\"\n解释：长度为 3 的开心字符串总共有 12 个 [\"aba\", \"abc\", \"aca\", \"acb\", \"bab\", \"bac\", \"bca\", \"bcb\", \"cab\", \"cac\", \"cba\", \"cbc\"] 。第 9 个字符串为 \"cab\"\n\n示例 4：\n\n输入：n = 2, k = 7\n输出：\"\"\n\n示例 5：\n\n输入：n = 10, k = 100\n输出：\"abacbabacb\"\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 10\n\t1 <= k <= 100\n\n&nbsp;",
+  "constraints": [
+    "1 <= n <= 10",
+    "1 <= k <= 100"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "40",
+  "title_cn": "组合总和 II",
+  "title_en": "Combination Sum II",
+  "slug": "combination-sum-ii",
+  "difficulty": "Medium",
+  "description": "给定一个候选人编号的集合&nbsp;candidates&nbsp;和一个目标数&nbsp;target&nbsp;，找出&nbsp;candidates&nbsp;中所有可以使数字和为&nbsp;target&nbsp;的组合。\n\ncandidates&nbsp;中的每个数字在每个组合中只能使用&nbsp;一次&nbsp;。\n\n注意：解集不能包含重复的组合。&nbsp;\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: candidates =&nbsp;[10,1,2,7,6,1,5], target =&nbsp;8,\n输出:\n[\n[1,1,6],\n[1,2,5],\n[1,7],\n[2,6]\n]\n\n示例&nbsp;2:\n\n输入: candidates =&nbsp;[2,5,2,1,2], target =&nbsp;5,\n输出:\n[\n[1,2,2],\n[5]\n]\n\n&nbsp;\n\n提示:\n\n\t1 <=&nbsp;candidates.length <= 100\n\t1 <=&nbsp;candidates[i] <= 50\n\t1 <= target <= 30",
+  "constraints": [
+    "1 <=&nbsp;candidates.length <= 100",
+    "1 <=&nbsp;candidates[i] <= 50",
+    "1 <= target <= 30"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1131",
+  "title_cn": "绝对值表达式的最大值",
+  "title_en": "Maximum of Absolute Value Expression",
+  "slug": "maximum-of-absolute-value-expression",
+  "difficulty": "Medium",
+  "description": "给你两个长度相等的整数数组，返回下面表达式的最大值：\n\n|arr1[i] - arr1[j]| + |arr2[i] - arr2[j]| + |i - j|\n\n其中下标 i，j 满足&nbsp;0 <= i, j < arr1.length。\n\n&nbsp;\n\n示例 1：\n\n输入：arr1 = [1,2,3,4], arr2 = [-1,4,5,6]\n输出：13\n\n示例 2：\n\n输入：arr1 = [1,-2,-5,0,10], arr2 = [0,-2,-1,-7,-4]\n输出：20\n\n&nbsp;\n\n提示：\n\n\t2 <= arr1.length == arr2.length <= 40000\n\t-10^6 <= arr1[i], arr2[i] <= 10^6",
+  "constraints": [
+    "2 <= arr1.length == arr2.length <= 40000",
+    "-10^6 <= arr1[i], arr2[i] <= 10^6"
+  ]
+}

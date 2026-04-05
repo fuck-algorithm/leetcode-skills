@@ -1,0 +1,12 @@
+{
+  "number": "2002",
+  "title_cn": "两个回文子序列长度的最大乘积",
+  "title_en": "Maximum Product of the Length of Two Palindromic Subsequences",
+  "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;，请你找到&nbsp;s&nbsp;中两个&nbsp;不相交回文子序列&nbsp;，使得它们长度的&nbsp;乘积最大&nbsp;。两个子序列在原字符串中如果没有任何相同下标的字符，则它们是&nbsp;不相交&nbsp;的。\n\n请你返回两个回文子序列长度可以达到的&nbsp;最大乘积&nbsp;。\n\n子序列&nbsp;指的是从原字符串中删除若干个字符（可以一个也不删除）后，剩余字符不改变顺序而得到的结果。如果一个字符串从前往后读和从后往前读一模一样，那么这个字符串是一个 回文字符串&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"leetcodecom\"\n输出：9\n解释：最优方案是选择 \"ete\" 作为第一个子序列，\"cdc\" 作为第二个子序列。\n它们的乘积为 3 * 3 = 9 。\n\n示例 2：\n\n输入：s = \"bb\"\n输出：1\n解释：最优方案为选择 \"b\" （第一个字符）作为第一个子序列，\"b\" （第二个字符）作为第二个子序列。\n它们的乘积为 1 * 1 = 1 。\n\n示例 3：\n\n输入：s = \"accbcaxxcxx\"\n输出：25\n解释：最优方案为选择 \"accca\" 作为第一个子序列，\"xxcxx\" 作为第二个子序列。\n它们的乘积为 5 * 5 = 25 。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 12\n\ts&nbsp;只含有小写英文字母。",
+  "constraints": [
+    "2 <= s.length <= 12",
+    "s&nbsp;只含有小写英文字母。"
+  ]
+}

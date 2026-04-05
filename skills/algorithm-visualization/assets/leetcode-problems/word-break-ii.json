@@ -1,0 +1,15 @@
+{
+  "number": "140",
+  "title_cn": "单词拆分 II",
+  "title_en": "Word Break II",
+  "slug": "word-break-ii",
+  "difficulty": "Hard",
+  "description": "给定一个字符串 s 和一个字符串字典&nbsp;wordDict&nbsp;，在字符串&nbsp;s&nbsp;中增加空格来构建一个句子，使得句子中所有的单词都在词典中。以任意顺序 返回所有这些可能的句子。\n\n注意：词典中的同一个单词可能在分段中被重复使用多次。\n\n&nbsp;\n\n示例 1：\n\n输入:s = \"catsanddog\", wordDict = [\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]\n输出:[\"cats and dog\",\"cat sand dog\"]\n\n示例 2：\n\n输入:s = \"pineapplepenapple\", wordDict = [\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]\n输出:[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]\n解释: 注意你可以重复使用字典中的单词。\n\n示例&nbsp;3：\n\n输入:s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]\n输出:[]\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 20\n\t1 <= wordDict.length <= 1000\n\t1 <= wordDict[i].length <= 10\n\ts&nbsp;和&nbsp;wordDict[i]&nbsp;仅有小写英文字母组成\n\twordDict&nbsp;中所有字符串都 不同",
+  "constraints": [
+    "1 <= s.length <= 20",
+    "1 <= wordDict.length <= 1000",
+    "1 <= wordDict[i].length <= 10",
+    "s&nbsp;和&nbsp;wordDict[i]&nbsp;仅有小写英文字母组成",
+    "wordDict&nbsp;中所有字符串都 不同"
+  ]
+}

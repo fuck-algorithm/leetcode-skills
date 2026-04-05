@@ -1,0 +1,9 @@
+{
+  "number": "面试题 16.07",
+  "title_cn": "最大数值",
+  "title_en": "Maximum LCCI",
+  "slug": "maximum-lcci",
+  "difficulty": "Easy",
+  "description": "编写一个方法，找出两个数字a和b中最大的那一个。不得使用if-else或其他比较运算符。\n示例：\n输入： a = 1, b = 2\n输出： 2",
+  "constraints": []
+}

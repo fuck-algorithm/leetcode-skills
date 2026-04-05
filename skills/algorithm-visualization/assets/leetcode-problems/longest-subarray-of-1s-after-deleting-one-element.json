@@ -1,0 +1,12 @@
+{
+  "number": "1493",
+  "title_cn": "删掉一个元素以后全为 1 的最长子数组",
+  "title_en": "Longest Subarray of 1's After Deleting One Element",
+  "slug": "longest-subarray-of-1s-after-deleting-one-element",
+  "difficulty": "Medium",
+  "description": "给你一个二进制数组&nbsp;nums&nbsp;，你需要从中删掉一个元素。\n\n请你在删掉元素的结果数组中，返回最长的且只包含 1 的非空子数组的长度。\n\n如果不存在这样的子数组，请返回 0 。\n\n&nbsp;\n\n提示 1：\n\n输入：nums = [1,1,0,1]\n输出：3\n解释：删掉位置 2 的数后，[1,1,1] 包含 3 个 1 。\n\n示例 2：\n\n输入：nums = [0,1,1,1,0,1,1,0,1]\n输出：5\n解释：删掉位置 4 的数字后，[0,1,1,1,1,1,0,1] 的最长全 1 子数组为 [1,1,1,1,1] 。\n\n示例 3：\n\n输入：nums = [1,1,1]\n输出：2\n解释：你必须要删除一个元素。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\tnums[i]&nbsp;要么是&nbsp;0&nbsp;要么是&nbsp;1 。",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "nums[i]&nbsp;要么是&nbsp;0&nbsp;要么是&nbsp;1 。"
+  ]
+}

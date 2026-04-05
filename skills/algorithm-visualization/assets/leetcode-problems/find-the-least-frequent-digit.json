@@ -1,0 +1,11 @@
+{
+  "number": "3663",
+  "title_cn": "出现频率最低的数字",
+  "title_en": "Find The Least Frequent Digit",
+  "slug": "find-the-least-frequent-digit",
+  "difficulty": "Easy",
+  "description": "给你一个整数 n，找出在其十进制表示中出现频率&nbsp;最低&nbsp;的数字。如果多个数字的出现频率相同，则选择&nbsp;最小&nbsp;的那个数字。\n\n以整数形式返回所选的数字。\n\n数字 x 的出现频率是指它在&nbsp;n 的十进制表示中的出现次数。\n\n&nbsp;\n\n示例 1:\n\n输入： n = 1553322\n\n输出： 1\n\n解释：\n\n在 n 中，出现频率最低的数字是 1，它只出现了一次。所有其他数字都出现了两次。\n\n示例 2:\n\n输入： n = 723344511\n\n输出： 2\n\n解释：\n\n在 n 中，出现频率最低的数字是 7、2 和 5，它们都只出现了一次。\n\n&nbsp;\n\n提示:\n\n\t1 <= n <= 231 - 1",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ]
+}

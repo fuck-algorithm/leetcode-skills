@@ -1,0 +1,13 @@
+{
+  "number": "LCR 144",
+  "title_cn": "翻转二叉树",
+  "title_en": "翻转二叉树",
+  "slug": "er-cha-shu-de-jing-xiang-lcof",
+  "difficulty": "Easy",
+  "description": "给定一棵二叉树的根节点 root，请左右翻转这棵二叉树，并返回其根节点。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [5,7,9,8,3,2,4]\n输出：[5,9,7,4,2,3,8]\n\n&nbsp;\n\n提示：\n\n\t树中节点数目范围在 [0, 100] 内\n\t-100 <= Node.val <= 100\n\n&nbsp;\n\n注意：本题与主站 226 题相同：https://leetcode.cn/problems/invert-binary-tree/\n\n&nbsp;",
+  "constraints": [
+    "树中节点数目范围在 [0, 100] 内",
+    "-100 <= Node.val <= 100",
+    "注意：本题与主站 226 题相同：https://leetcode.cn/problems/invert-binary-tree/"
+  ]
+}

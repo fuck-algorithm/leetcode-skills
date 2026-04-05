@@ -1,0 +1,15 @@
+{
+  "number": "2940",
+  "title_cn": "找到 Alice 和 Bob 可以相遇的建筑",
+  "title_en": "Find Building Where Alice and Bob Can Meet",
+  "slug": "find-building-where-alice-and-bob-can-meet",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的正整数数组&nbsp;heights&nbsp;，其中&nbsp;heights[i]&nbsp;表示第 i&nbsp;栋建筑的高度。\n\n如果一个人在建筑&nbsp;i&nbsp;，且存在&nbsp;i < j&nbsp;的建筑&nbsp;j&nbsp;满足&nbsp;heights[i] < heights[j]&nbsp;，那么这个人可以移动到建筑&nbsp;j&nbsp;。\n\n给你另外一个数组&nbsp;queries&nbsp;，其中&nbsp;queries[i] = [ai, bi]&nbsp;。第&nbsp;i&nbsp;个查询中，Alice 在建筑&nbsp;ai ，Bob 在建筑&nbsp;bi&nbsp;。\n\n请你能返回一个数组&nbsp;ans&nbsp;，其中&nbsp;ans[i]&nbsp;是第&nbsp;i&nbsp;个查询中，Alice 和 Bob 可以相遇的&nbsp;最左边的建筑&nbsp;。如果对于查询&nbsp;i&nbsp;，Alice 和 Bob 不能相遇，令&nbsp;ans[i] 为&nbsp;-1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：heights = [6,4,8,5,2,7], queries = [[0,1],[0,3],[2,4],[3,4],[2,2]]\n输出：[2,5,-1,5,2]\n解释：第一个查询中，Alice 和 Bob 可以移动到建筑 2 ，因为 heights[0] < heights[2] 且 heights[1] < heights[2] 。\n第二个查询中，Alice 和 Bob 可以移动到建筑 5 ，因为 heights[0] < heights[5] 且 heights[3] < heights[5] 。\n第三个查询中，Alice 无法与 Bob 相遇，因为 Alice 不能移动到任何其他建筑。\n第四个查询中，Alice 和 Bob 可以移动到建筑 5 ，因为 heights[3] < heights[5] 且 heights[4] < heights[5] 。\n第五个查询中，Alice 和 Bob 已经在同一栋建筑中。\n对于 ans[i] != -1 ，ans[i] 是 Alice 和 Bob 可以相遇的建筑中最左边建筑的下标。\n对于 ans[i] == -1 ，不存在 Alice 和 Bob 可以相遇的建筑。\n\n示例 2：\n\n输入：heights = [5,3,8,2,6,1,4,6], queries = [[0,7],[3,5],[5,2],[3,0],[1,6]]\n输出：[7,6,-1,4,6]\n解释：第一个查询中，Alice 可以直接移动到 Bob 的建筑，因为 heights[0] < heights[7] 。\n第二个查询中，Alice 和 Bob 可以移动到建筑 6 ，因为 heights[3] < heights[6] 且 heights[5] < heights[6] 。\n第三个查询中，Alice 无法与 Bob 相遇，因为 Bob 不能移动到任何其他建筑。\n第四个查询中，Alice 和 Bob 可以移动到建筑 4 ，因为 heights[3] < heights[4] 且 heights[0] < heights[4] 。\n第五个查询中，Alice 可以直接移动到 Bob 的建筑，因为 heights[1] < heights[6] 。\n对于 ans[i] != -1 ，ans[i] 是 Alice 和 Bob 可以相遇的建筑中最左边建筑的下标。\n对于 ans[i] == -1 ，不存在 Alice 和 Bob 可以相遇的建筑。\n\n&nbsp;\n\n提示：\n\n\t1 <= heights.length <= 5 * 104\n\t1 <= heights[i] <= 109\n\t1 <= queries.length <= 5 * 104\n\tqueries[i] = [ai, bi]\n\t0 <= ai, bi <= heights.length - 1",
+  "constraints": [
+    "1 <= heights.length <= 5 * 104",
+    "1 <= heights[i] <= 109",
+    "1 <= queries.length <= 5 * 104",
+    "queries[i] = [ai, bi]",
+    "0 <= ai, bi <= heights.length - 1"
+  ]
+}

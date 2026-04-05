@@ -1,0 +1,13 @@
+{
+  "number": "1486",
+  "title_cn": "数组异或操作",
+  "title_en": "XOR Operation in an Array",
+  "slug": "xor-operation-in-an-array",
+  "difficulty": "Easy",
+  "description": "给你两个整数，n 和 start 。\n\n数组 nums 定义为：nums[i] = start + 2*i（下标从 0 开始）且 n == nums.length 。\n\n请返回 nums 中所有元素按位异或（XOR）后得到的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5, start = 0\n输出：8\n解释：数组 nums 为 [0, 2, 4, 6, 8]，其中 (0 ^ 2 ^ 4 ^ 6 ^ 8) = 8 。\n     \"^\" 为按位异或 XOR 运算符。\n\n示例 2：\n\n输入：n = 4, start = 3\n输出：8\n解释：数组 nums 为 [3, 5, 7, 9]，其中 (3 ^ 5 ^ 7 ^ 9) = 8.\n\n示例 3：\n\n输入：n = 1, start = 7\n输出：7\n\n示例 4：\n\n输入：n = 10, start = 5\n输出：2\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1000\n\t0 <= start <= 1000\n\tn == nums.length",
+  "constraints": [
+    "1 <= n <= 1000",
+    "0 <= start <= 1000",
+    "n == nums.length"
+  ]
+}

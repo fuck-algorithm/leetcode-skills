@@ -1,0 +1,13 @@
+{
+  "number": "3075",
+  "title_cn": "幸福值最大化的选择方案",
+  "title_en": "Maximize Happiness of Selected Children",
+  "slug": "maximize-happiness-of-selected-children",
+  "difficulty": "Medium",
+  "description": "给你一个长度为 n 的数组 happiness ，以及一个 正整数 k 。\n\nn 个孩子站成一队，其中第 i 个孩子的 幸福值 是 happiness[i] 。你计划组织 k 轮筛选从这 n 个孩子中选出 k 个孩子。\n\n在每一轮选择一个孩子时，所有 尚未 被选中的孩子的 幸福值 将减少 1 。注意，幸福值 不能 变成负数，且只有在它是正数的情况下才会减少。\n\n选择 k 个孩子，并使你选中的孩子幸福值之和最大，返回你能够得到的 最大值 。\n\n&nbsp;\n\n示例 1：\n\n输入：happiness = [1,2,3], k = 2\n输出：4\n解释：按以下方式选择 2 个孩子：\n- 选择幸福值为 3 的孩子。剩余孩子的幸福值变为 [0,1] 。\n- 选择幸福值为 1 的孩子。剩余孩子的幸福值变为 [0] 。注意幸福值不能小于 0 。\n所选孩子的幸福值之和为 3 + 1 = 4 。\n\n示例 2：\n\n输入：happiness = [1,1,1,1], k = 2\n输出：1\n解释：按以下方式选择 2 个孩子：\n- 选择幸福值为 1 的任意一个孩子。剩余孩子的幸福值变为 [0,0,0] 。\n- 选择幸福值为 0 的孩子。剩余孩子的幸福值变为 [0,0] 。\n所选孩子的幸福值之和为 1 + 0 = 1 。\n\n示例 3：\n\n输入：happiness = [2,3,4,5], k = 1\n输出：5\n解释：按以下方式选择 1 个孩子：\n- 选择幸福值为 5 的孩子。剩余孩子的幸福值变为 [1,2,3] 。\n所选孩子的幸福值之和为 5 。\n\n&nbsp;\n\n提示：\n\n\t1 <= n == happiness.length <= 2 * 105\n\t1 <= happiness[i] <= 108\n\t1 <= k <= n",
+  "constraints": [
+    "1 <= n == happiness.length <= 2 * 105",
+    "1 <= happiness[i] <= 108",
+    "1 <= k <= n"
+  ]
+}

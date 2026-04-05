@@ -1,0 +1,14 @@
+{
+  "number": "1314",
+  "title_cn": "矩阵区域和",
+  "title_en": "Matrix Block Sum",
+  "slug": "matrix-block-sum",
+  "difficulty": "Medium",
+  "description": "给你一个 m x n 的矩阵 mat 和一个整数 k ，请你返回一个矩阵 answer ，其中每个 answer[i][j] 是所有满足下述条件的元素 mat[r][c] 的和： \n\n\ti - k \n\tj - k  且\n\t(r, c) 在矩阵内。\n\n示例 1：\n\n输入：mat = [[1,2,3],[4,5,6],[7,8,9]], k = 1\n输出：[[12,21,16],[27,45,33],[24,39,28]]\n\n示例 2：\n\n输入：mat = [[1,2,3],[4,5,6],[7,8,9]], k = 2\n输出：[[45,45,45],[45,45,45],[45,45,45]]\n\n提示：\n\n\tm == mat.length\n\tn == mat[i].length\n\t1 \n\t1",
+  "constraints": [
+    "m == mat.length",
+    "n == mat[i].length",
+    "1",
+    "1"
+  ]
+}

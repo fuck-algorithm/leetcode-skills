@@ -1,0 +1,15 @@
+{
+  "number": "447",
+  "title_cn": "回旋镖的数量",
+  "title_en": "Number of Boomerangs",
+  "slug": "number-of-boomerangs",
+  "difficulty": "Medium",
+  "description": "给定平面上&nbsp;n 对 互不相同 的点&nbsp;points ，其中 points[i] = [xi, yi] 。回旋镖 是由点&nbsp;(i, j, k) 表示的元组 ，其中&nbsp;i&nbsp;和&nbsp;j&nbsp;之间的欧式距离和&nbsp;i&nbsp;和&nbsp;k&nbsp;之间的欧式距离相等（需要考虑元组的顺序）。\n\n返回平面上所有回旋镖的数量。\n&nbsp;\n\n示例 1：\n\n输入：points = [[0,0],[1,0],[2,0]]\n输出：2\n解释：两个回旋镖为 [[1,0],[0,0],[2,0]] 和 [[1,0],[2,0],[0,0]]\n\n示例 2：\n\n输入：points = [[1,1],[2,2],[3,3]]\n输出：2\n\n示例 3：\n\n输入：points = [[1,1]]\n输出：0\n\n&nbsp;\n\n提示：\n\n\tn ==&nbsp;points.length\n\t1 <= n <= 500\n\tpoints[i].length == 2\n\t-104 <= xi, yi <= 104\n\t所有点都 互不相同",
+  "constraints": [
+    "n ==&nbsp;points.length",
+    "1 <= n <= 500",
+    "points[i].length == 2",
+    "-104 <= xi, yi <= 104",
+    "所有点都 互不相同"
+  ]
+}

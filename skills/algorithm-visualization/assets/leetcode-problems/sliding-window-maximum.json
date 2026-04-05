@@ -1,0 +1,13 @@
+{
+  "number": "239",
+  "title_cn": "滑动窗口最大值",
+  "title_en": "Sliding Window Maximum",
+  "slug": "sliding-window-maximum",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 nums，有一个大小为&nbsp;k&nbsp;的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k&nbsp;个数字。滑动窗口每次只向右移动一位。\n\n返回 滑动窗口中的最大值 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,3,-1,-3,5,3,6,7], k = 3\n输出：[3,3,5,5,6,7]\n解释：\n滑动窗口的位置                最大值\n---------------               -----\n[1  3  -1] -3  5  3  6  7       3\n 1 [3  -1  -3] 5  3  6  7       3\n 1  3 [-1  -3  5] 3  6  7       5\n 1  3  -1 [-3  5  3] 6  7       5\n 1  3  -1  -3 [5  3  6] 7       6\n 1  3  -1  -3  5 [3  6  7]      7\n\n示例 2：\n\n输入：nums = [1], k = 1\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-104&nbsp;<= nums[i] <= 104\n\t1 <= k <= nums.length",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-104&nbsp;<= nums[i] <= 104",
+    "1 <= k <= nums.length"
+  ]
+}

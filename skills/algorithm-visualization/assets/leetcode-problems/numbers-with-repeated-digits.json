@@ -1,0 +1,11 @@
+{
+  "number": "1012",
+  "title_cn": "至少有 1 位重复的数字",
+  "title_en": "Numbers With Repeated Digits",
+  "slug": "numbers-with-repeated-digits",
+  "difficulty": "Hard",
+  "description": "给定正整数&nbsp;n，返回在&nbsp;[1, n]&nbsp;范围内具有 至少 1 位 重复数字的正整数的个数。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 20\n输出：1\n解释：具有至少 1 位重复数字的正数（<= 20）只有 11 。\n\n示例 2：\n\n输入：n = 100\n输出：10\n解释：具有至少 1 位重复数字的正数（<= 100）有 11，22，33，44，55，66，77，88，99 和 100 。\n\n示例 3：\n\n输入：n = 1000\n输出：262\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 109",
+  "constraints": [
+    "1 <= n <= 109"
+  ]
+}

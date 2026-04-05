@@ -1,0 +1,15 @@
+{
+  "number": "68",
+  "title_cn": "文本左右对齐",
+  "title_en": "Text Justification",
+  "slug": "text-justification",
+  "difficulty": "Hard",
+  "description": "给定一个单词数组&nbsp;words 和一个长度&nbsp;maxWidth&nbsp;，重新排版单词，使其成为每行恰好有&nbsp;maxWidth&nbsp;个字符，且左右两端对齐的文本。\n\n你应该使用 “贪心算法” 来放置给定的单词；也就是说，尽可能多地往每行中放置单词。必要时可用空格&nbsp;' '&nbsp;填充，使得每行恰好有 maxWidth&nbsp;个字符。\n\n要求尽可能均匀分配单词间的空格数量。如果某一行单词间的空格不能均匀分配，则左侧放置的空格数要多于右侧的空格数。\n\n文本的最后一行应为左对齐，且单词之间不插入额外的空格。\n\n注意:\n\n\t单词是指由非空格字符组成的字符序列。\n\t每个单词的长度大于 0，小于等于&nbsp;maxWidth。\n\t输入单词数组 words&nbsp;至少包含一个单词。\n\n&nbsp;\n\n示例 1:\n\n输入: words = [\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"], maxWidth = 16\n输出:\n[\n&nbsp; &nbsp;\"This &nbsp; &nbsp;is &nbsp; &nbsp;an\",\n&nbsp; &nbsp;\"example &nbsp;of text\",\n&nbsp; &nbsp;\"justification. &nbsp;\"\n]\n\n示例&nbsp;2:\n\n输入:words = [\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"], maxWidth = 16\n输出:\n[\n&nbsp; \"What &nbsp; must &nbsp; be\",\n&nbsp; \"acknowledgment &nbsp;\",\n&nbsp; \"shall be &nbsp; &nbsp; &nbsp; &nbsp;\"\n]\n解释: 注意最后一行的格式应为 \"shall be    \" 而不是 \"shall     be\",\n&nbsp;    因为最后一行应为左对齐，而不是左右两端对齐。       \n     第二行同样为左对齐，这是因为这行只包含一个单词。\n\n示例&nbsp;3:\n\n输入:words = [\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]，maxWidth = 20\n输出:\n[\n&nbsp; \"Science &nbsp;is &nbsp;what we\",\n  \"understand &nbsp; &nbsp; &nbsp;well\",\n&nbsp; \"enough to explain to\",\n&nbsp; \"a &nbsp;computer. &nbsp;Art is\",\n&nbsp; \"everything &nbsp;else &nbsp;we\",\n&nbsp; \"do &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\"\n]\n\n&nbsp;\n\n提示:\n\n\t1 <= words.length <= 300\n\t1 <= words[i].length <= 20\n\twords[i]&nbsp;由小写英文字母和符号组成\n\t1 <= maxWidth <= 100\n\twords[i].length <= maxWidth",
+  "constraints": [
+    "1 <= words.length <= 300",
+    "1 <= words[i].length <= 20",
+    "words[i]&nbsp;由小写英文字母和符号组成",
+    "1 <= maxWidth <= 100",
+    "words[i].length <= maxWidth"
+  ]
+}

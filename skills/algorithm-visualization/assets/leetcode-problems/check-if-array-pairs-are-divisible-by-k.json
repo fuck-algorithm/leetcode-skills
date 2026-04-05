@@ -1,0 +1,15 @@
+{
+  "number": "1497",
+  "title_cn": "检查数组对是否可以被 k 整除",
+  "title_en": "Check If Array Pairs Are Divisible by k",
+  "slug": "check-if-array-pairs-are-divisible-by-k",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 arr 和一个整数 k ，其中数组长度是偶数，值为 n 。\n\n现在需要把数组恰好分成 n /&nbsp;2 对，以使每对数字的和都能够被 k 整除。\n\n如果存在这样的分法，请返回&nbsp;true ；否则，返回&nbsp;false。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [1,2,3,4,5,10,6,7,8,9], k = 5\n输出：true\n解释：划分后的数字对为 (1,9),(2,8),(3,7),(4,6) 以及 (5,10) 。\n\n示例 2：\n\n输入：arr = [1,2,3,4,5,6], k = 7\n输出：true\n解释：划分后的数字对为 (1,6),(2,5) 以及 (3,4) 。\n\n示例 3：\n\n输入：arr = [1,2,3,4,5,6], k = 10\n输出：false\n解释：无法在将数组中的数字分为三对的同时满足每对数字和能够被 10 整除的条件。\n\n&nbsp;\n\n提示：\n\n\tarr.length == n\n\t1 <= n <= 105\n\tn 为偶数\n\t-109&nbsp;<= arr[i] <= 109\n\t1 <= k <= 105",
+  "constraints": [
+    "arr.length == n",
+    "1 <= n <= 105",
+    "n 为偶数",
+    "-109&nbsp;<= arr[i] <= 109",
+    "1 <= k <= 105"
+  ]
+}

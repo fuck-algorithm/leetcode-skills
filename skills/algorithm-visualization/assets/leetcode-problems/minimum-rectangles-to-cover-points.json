@@ -1,0 +1,16 @@
+{
+  "number": "3111",
+  "title_cn": "覆盖所有点的最少矩形数目",
+  "title_en": "Minimum Rectangles to Cover Points",
+  "slug": "minimum-rectangles-to-cover-points",
+  "difficulty": "Medium",
+  "description": "给你一个二维整数数组&nbsp;point&nbsp;，其中&nbsp;points[i] = [xi, yi]&nbsp;表示二维平面内的一个点。同时给你一个整数&nbsp;w&nbsp;。你需要用矩形&nbsp;覆盖所有&nbsp;点。\n\n每个矩形的左下角在某个点&nbsp;(x1, 0)&nbsp;处，且右上角在某个点&nbsp;(x2, y2)&nbsp;处，其中&nbsp;x1 <= x2&nbsp;且&nbsp;y2 >= 0&nbsp;，同时对于每个矩形都&nbsp;必须&nbsp;满足&nbsp;x2 - x1 <= w&nbsp;。\n\n如果一个点在矩形内或者在边上，我们说这个点被矩形覆盖了。\n\n请你在确保每个点都 至少&nbsp;被一个矩形覆盖的前提下，最少&nbsp;需要多少个矩形。\n\n注意：一个点可以被多个矩形覆盖。\n\n&nbsp;\n\n示例 1：\n\n输入：points = [[2,1],[1,0],[1,4],[1,8],[3,5],[4,6]], w = 1\n\n输出：2\n\n解释：\n\n上图展示了一种可行的矩形放置方案：\n\n\t一个矩形的左下角在&nbsp;(1, 0)&nbsp;，右上角在&nbsp;(2, 8)&nbsp;。\n\t一个矩形的左下角在&nbsp;(3, 0)&nbsp;，右上角在&nbsp;(4, 8)&nbsp;。\n\n示例 2：\n\n输入：points = [[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]], w = 2\n\n输出：3\n\n解释：\n\n上图展示了一种可行的矩形放置方案：\n\n\t一个矩形的左下角在&nbsp;(0, 0)&nbsp;，右上角在&nbsp;(2, 2)&nbsp;。\n\t一个矩形的左下角在&nbsp;(3, 0)&nbsp;，右上角在&nbsp;(5, 5)&nbsp;。\n\t一个矩形的左下角在&nbsp;(6, 0)&nbsp;，右上角在&nbsp;(6, 6)&nbsp;。\n\n示例 3：\n\n输入：points = [[2,3],[1,2]], w = 0\n\n输出：2\n\n解释：\n\n上图展示了一种可行的矩形放置方案：\n\n\t一个矩形的左下角在&nbsp;(1, 0)&nbsp;，右上角在&nbsp;(1, 2)&nbsp;。\n\t一个矩形的左下角在&nbsp;(2, 0)&nbsp;，右上角在&nbsp;(2, 3)&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t1 <= points.length <= 105\n\tpoints[i].length == 2\n\t0 <= xi == points[i][0] <= 109\n\t0 <= yi == points[i][1] <= 109\n\t0 <= w <= 109\n\t所有点坐标&nbsp;(xi, yi)&nbsp;互不相同。",
+  "constraints": [
+    "1 <= points.length <= 105",
+    "points[i].length == 2",
+    "0 <= xi == points[i][0] <= 109",
+    "0 <= yi == points[i][1] <= 109",
+    "0 <= w <= 109",
+    "所有点坐标&nbsp;(xi, yi)&nbsp;互不相同。"
+  ]
+}

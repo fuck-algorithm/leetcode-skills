@@ -1,0 +1,9 @@
+{
+  "number": "340",
+  "title_cn": "至多包含 K 个不同字符的最长子串",
+  "title_en": "Longest Substring with At Most K Distinct Characters",
+  "slug": "longest-substring-with-at-most-k-distinct-characters",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

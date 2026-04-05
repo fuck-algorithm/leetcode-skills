@@ -1,0 +1,12 @@
+{
+  "number": "1155",
+  "title_cn": "掷骰子等于目标和的方法数",
+  "title_en": "Number of Dice Rolls With Target Sum",
+  "slug": "number-of-dice-rolls-with-target-sum",
+  "difficulty": "Medium",
+  "description": "这里有&nbsp;n&nbsp;个一样的骰子，每个骰子上都有&nbsp;k&nbsp;个面，分别标号为&nbsp;1&nbsp;到 k 。\n\n给定三个整数 n、k 和 target，请返回投掷骰子的所有可能得到的结果（共有 kn 种方式），使得骰子面朝上的数字总和等于 target。\n\n由于答案可能很大，你需要对 109 + 7 取模。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1, k = 6, target = 3\n输出：1\n解释：你掷了一个有 6 个面的骰子。\n得到总和为 3 的结果的方式只有一种。\n\n示例 2：\n\n输入：n = 2, k = 6, target = 7\n输出：6\n解释：你掷了两个骰子，每个骰子有 6 个面。\n有 6 种方式得到总和为 7 的结果: 1+6, 2+5, 3+4, 4+3, 5+2, 6+1。\n\n示例 3：\n\n输入：n = 30, k = 30, target = 500\n输出：222616187\n解释：返回的结果必须对 109 + 7 取模。\n\n&nbsp;\n\n提示：\n\n\t1 <= n, k <= 30\n\t1 <= target <= 1000",
+  "constraints": [
+    "1 <= n, k <= 30",
+    "1 <= target <= 1000"
+  ]
+}

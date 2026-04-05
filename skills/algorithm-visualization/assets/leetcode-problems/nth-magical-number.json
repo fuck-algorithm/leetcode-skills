@@ -1,0 +1,12 @@
+{
+  "number": "878",
+  "title_cn": "第 N 个神奇数字",
+  "title_en": "Nth Magical Number",
+  "slug": "nth-magical-number",
+  "difficulty": "Hard",
+  "description": "一个正整数如果能被 a 或 b 整除，那么它是神奇的。\n\n给定三个整数 n ,&nbsp;a , b ，返回第 n 个神奇的数字。因为答案可能很大，所以返回答案&nbsp;对&nbsp;109&nbsp;+ 7 取模&nbsp;后的值。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1, a = 2, b = 3\n输出：2\n\n示例&nbsp;2：\n\n输入：n = 4, a = 2, b = 3\n输出：6\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 109\n\t2 <= a, b <= 4 * 104\n\n&nbsp;",
+  "constraints": [
+    "1 <= n <= 109",
+    "2 <= a, b <= 4 * 104"
+  ]
+}

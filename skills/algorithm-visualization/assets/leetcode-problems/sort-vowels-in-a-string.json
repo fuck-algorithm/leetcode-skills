@@ -1,0 +1,12 @@
+{
+  "number": "2785",
+  "title_cn": "将字符串中的元音字母排序",
+  "title_en": "Sort Vowels in a String",
+  "slug": "sort-vowels-in-a-string",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的字符串&nbsp;s&nbsp;，将&nbsp;s&nbsp;中的元素重新 排列&nbsp;得到新的字符串&nbsp;t&nbsp;，它满足：\n\n\t所有辅音字母都在原来的位置上。更正式的，如果满足&nbsp;0 <= i < s.length&nbsp;的下标 i&nbsp;处的&nbsp;s[i]&nbsp;是个辅音字母，那么&nbsp;t[i] = s[i]&nbsp;。\n\t元音字母都必须以他们的 ASCII&nbsp;值按 非递减&nbsp;顺序排列。更正式的，对于满足&nbsp;0 <= i < j < s.length&nbsp;的下标 i&nbsp;和 j&nbsp; ，如果&nbsp;s[i] 和&nbsp;s[j]&nbsp;都是元音字母，那么&nbsp;t[i]&nbsp;的 ASCII 值不能大于&nbsp;t[j]&nbsp;的 ASCII 值。\n\n请你返回结果字母串。\n\n元音字母为&nbsp;'a'&nbsp;，'e'&nbsp;，'i'&nbsp;，'o'&nbsp;和&nbsp;'u'&nbsp;，它们可能是小写字母也可能是大写字母，辅音字母是除了这 5 个字母以外的所有字母。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"lEetcOde\"\n输出：\"lEOtcede\"\n解释：'E' ，'O' 和 'e' 是 s 中的元音字母，'l' ，'t' ，'c' 和 'd' 是所有的辅音。将元音字母按照 ASCII 值排序，辅音字母留在原地。\n\n示例 2：\n\n输入：s = \"lYmpH\"\n输出：\"lYmpH\"\n解释：s 中没有元音字母（s 中都为辅音字母），所以我们返回 \"lYmpH\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts&nbsp;只包含英语字母表中的 大写&nbsp;和 小写&nbsp;字母。",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;只包含英语字母表中的 大写&nbsp;和 小写&nbsp;字母。"
+  ]
+}

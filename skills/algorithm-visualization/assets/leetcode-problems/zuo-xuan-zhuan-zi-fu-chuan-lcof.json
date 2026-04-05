@@ -1,0 +1,11 @@
+{
+  "number": "LCR 182",
+  "title_cn": "动态口令",
+  "title_en": "动态口令",
+  "slug": "zuo-xuan-zhuan-zi-fu-chuan-lcof",
+  "difficulty": "Easy",
+  "description": "某公司门禁密码使用动态口令技术。初始密码为字符串 password，密码更新均遵循以下步骤：\n\n\t设定一个正整数目标值 target\n\t将 password 前 target 个字符按原顺序移动至字符串末尾\n\n请返回更新后的密码字符串。\n\n&nbsp;\n\n示例 1：\n\n输入: password = \"s3cur1tyC0d3\", target = 4\n输出: \"r1tyC0d3s3cu\"\n\n示例 2：\n\n输入: password = \"lrloseumgh\", target = 6\n输出:&nbsp;\"umghlrlose\"\n\n&nbsp;\n\n提示：\n\n\t1 <= target&nbsp;< password.length <= 10000\n\n&nbsp;",
+  "constraints": [
+    "1 <= target&nbsp;< password.length <= 10000"
+  ]
+}

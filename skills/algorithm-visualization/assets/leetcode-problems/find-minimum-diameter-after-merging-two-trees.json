@@ -1,0 +1,18 @@
+{
+  "number": "3203",
+  "title_cn": "合并两棵树后的最小直径",
+  "title_en": "Find Minimum Diameter After Merging Two Trees",
+  "slug": "find-minimum-diameter-after-merging-two-trees",
+  "difficulty": "Hard",
+  "description": "给你两棵 无向&nbsp;树，分别有&nbsp;n 和&nbsp;m&nbsp;个节点，节点编号分别为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;和&nbsp;0&nbsp;到&nbsp;m - 1&nbsp;。给你两个二维整数数组&nbsp;edges1 和&nbsp;edges2&nbsp;，长度分别为&nbsp;n - 1 和&nbsp;m - 1&nbsp;，其中&nbsp;edges1[i] = [ai, bi]&nbsp;表示在第一棵树中节点&nbsp;ai 和&nbsp;bi&nbsp;之间有一条边，edges2[i] = [ui, vi]&nbsp;表示在第二棵树中节点&nbsp;ui 和&nbsp;vi&nbsp;之间有一条边。\n\n你必须在第一棵树和第二棵树中分别选一个节点，并用一条边连接它们。\n\n请你返回添加边后得到的树中，最小直径&nbsp;为多少。\n\n一棵树的 直径&nbsp;指的是树中任意两个节点之间的最长路径长度。\n\n&nbsp;\n\n示例 1：\n\n输入：edges1 = [[0,1],[0,2],[0,3]], edges2 = [[0,1]]\n\n输出：3\n\n解释：\n\n将第一棵树中的节点 0 与第二棵树中的任意节点连接，得到一棵直径为 3 的树。\n\n示例 2：\n\n输入：edges1 = [[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]], edges2 = [[0,1],[0,2],[0,3],[2,4],[2,5],[3,6],[2,7]]\n\n输出：5\n\n解释：\n\n将第一棵树中的节点 0 和第二棵树中的节点 0 连接，可以得到一棵直径为 5 的树。\n\n&nbsp;\n\n提示：\n\n\t1 <= n, m <= 105\n\tedges1.length == n - 1\n\tedges2.length == m - 1\n\tedges1[i].length == edges2[i].length == 2\n\tedges1[i] = [ai, bi]\n\t0 <= ai, bi < n\n\tedges2[i] = [ui, vi]\n\t0 <= ui, vi < m\n\t输入保证&nbsp;edges1 和&nbsp;edges2&nbsp;分别表示一棵合法的树。",
+  "constraints": [
+    "1 <= n, m <= 105",
+    "edges1.length == n - 1",
+    "edges2.length == m - 1",
+    "edges1[i].length == edges2[i].length == 2",
+    "edges1[i] = [ai, bi]",
+    "0 <= ai, bi < n",
+    "edges2[i] = [ui, vi]",
+    "0 <= ui, vi < m"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1931",
+  "title_cn": "用三种不同颜色为网格涂色",
+  "title_en": "Painting a Grid With Three Different Colors",
+  "slug": "painting-a-grid-with-three-different-colors",
+  "difficulty": "Hard",
+  "description": "给你两个整数 m 和 n 。构造一个 m x n 的网格，其中每个单元格最开始是白色。请你用 红、绿、蓝 三种颜色为每个单元格涂色。所有单元格都需要被涂色。\n\n涂色方案需要满足：不存在相邻两个单元格颜色相同的情况 。返回网格涂色的方法数。因为答案可能非常大， 返回 对 109 + 7 取余 的结果。\n\n示例 1：\n\n输入：m = 1, n = 1\n输出：3\n解释：如上图所示，存在三种可能的涂色方案。\n\n示例 2：\n\n输入：m = 1, n = 2\n输出：6\n解释：如上图所示，存在六种可能的涂色方案。\n\n示例 3：\n\n输入：m = 5, n = 5\n输出：580986\n\n提示：\n\n\t1 \n\t1",
+  "constraints": [
+    "1",
+    "1"
+  ]
+}

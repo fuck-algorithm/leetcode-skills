@@ -1,0 +1,14 @@
+{
+  "number": "3365",
+  "title_cn": "重排子字符串以形成目标字符串",
+  "title_en": "Rearrange K Substrings to Form Target String",
+  "slug": "rearrange-k-substrings-to-form-target-string",
+  "difficulty": "Medium",
+  "description": "给你两个字符串 s 和 t（它们互为字母异位词），以及一个整数 k。\n\n你的任务是判断是否可以将字符串 s 分割成 k 个等长的子字符串，然后重新排列这些子字符串，并以任意顺序连接它们，使得最终得到的新字符串与给定的字符串 t 相匹配。\n\n如果可以做到，返回 true；否则，返回 false。\n\n字母异位词&nbsp;是指由另一个单词或短语的所有字母重新排列形成的单词或短语，使用所有原始字母恰好一次。\n\n子字符串&nbsp;是字符串中的一个连续&nbsp;非空&nbsp;字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"abcd\", t = \"cdab\", k = 2\n\n输出： true\n\n解释：\n\n\t将 s 分割成 2 个长度为 2 的子字符串：[\"ab\", \"cd\"]。\n\t重新排列这些子字符串为 [\"cd\", \"ab\"]，然后连接它们得到 \"cdab\"，与 t 相匹配。\n\n示例 2：\n\n输入： s = \"aabbcc\", t = \"bbaacc\", k = 3\n\n输出： true\n\n解释：\n\n\t将 s 分割成 3 个长度为 2 的子字符串：[\"aa\", \"bb\", \"cc\"]。\n\t重新排列这些子字符串为 [\"bb\", \"aa\", \"cc\"]，然后连接它们得到 \"bbaacc\"，与 t 相匹配。\n\n示例 3：\n\n输入： s = \"aabbcc\", t = \"bbaacc\", k = 2\n\n输出： false\n\n解释：\n\n\t将 s 分割成 2 个长度为 3 的子字符串：[\"aab\", \"bcc\"]。\n\t这些子字符串无法重新排列形成 t = \"bbaacc\"，所以输出 false。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length == t.length <= 2 * 105\n\t1 <= k <= s.length\n\ts.length 能被 k 整除。\n\ts 和 t 仅由小写英文字母组成。\n\t输入保证 s 和 t 互为字母异位词。",
+  "constraints": [
+    "1 <= s.length == t.length <= 2 * 105",
+    "1 <= k <= s.length",
+    "s.length 能被 k 整除。",
+    "s 和 t 仅由小写英文字母组成。"
+  ]
+}

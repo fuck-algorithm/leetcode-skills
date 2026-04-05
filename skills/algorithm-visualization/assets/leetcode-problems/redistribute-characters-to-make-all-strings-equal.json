@@ -1,0 +1,13 @@
+{
+  "number": "1897",
+  "title_cn": "重新分配字符使所有字符串都相等",
+  "title_en": "Redistribute Characters to Make All Strings Equal",
+  "slug": "redistribute-characters-to-make-all-strings-equal",
+  "difficulty": "Easy",
+  "description": "给你一个字符串数组 words（下标 从 0 开始 计数）。\n\n在一步操作中，需先选出两个 不同 下标 i 和 j，其中 words[i] 是一个非空字符串，接着将 words[i] 中的 任一 字符移动到 words[j] 中的 任一 位置上。\n\n如果执行任意步操作可以使 words 中的每个字符串都相等，返回 true ；否则，返回 false 。\n\n示例 1：\n\n输入：words = [\"abc\",\"aabc\",\"bc\"]\n输出：true\n解释：将 words[1] 中的第一个 'a' 移动到 words[2] 的最前面。\n使 words[1] = \"abc\" 且 words[2] = \"abc\" 。\n所有字符串都等于 \"abc\" ，所以返回 true 。\n\n示例 2：\n\n输入：words = [\"ab\",\"a\"]\n输出：false\n解释：执行操作无法使所有字符串都相等。\n\n提示：\n\n\t1 <= words.length <= 100\n\t1 <= words[i].length <= 100\n\twords[i] 由小写英文字母组成",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 100",
+    "words[i] 由小写英文字母组成"
+  ]
+}

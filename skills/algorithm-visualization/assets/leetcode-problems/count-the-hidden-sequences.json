@@ -1,0 +1,14 @@
+{
+  "number": "2145",
+  "title_cn": "统计隐藏数组数目",
+  "title_en": "Count the Hidden Sequences",
+  "slug": "count-the-hidden-sequences",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始且长度为 n&nbsp;的整数数组&nbsp;differences&nbsp;，它表示一个长度为&nbsp;n + 1&nbsp;的&nbsp;隐藏&nbsp;数组&nbsp;相邻&nbsp;元素之间的&nbsp;差值&nbsp;。更正式的表述为：我们将隐藏数组记作&nbsp;hidden&nbsp;，那么&nbsp;differences[i] = hidden[i + 1] - hidden[i]&nbsp;。\n\n同时给你两个整数&nbsp;lower 和&nbsp;upper&nbsp;，它们表示隐藏数组中所有数字的值都在 闭&nbsp;区间&nbsp;[lower, upper]&nbsp;之间。\n\n\t比方说，differences = [1, -3, 4]&nbsp;，lower = 1&nbsp;，upper = 6&nbsp;，那么隐藏数组是一个长度为 4&nbsp;且所有值都在&nbsp;1&nbsp;和&nbsp;6&nbsp;（包含两者）之间的数组。\n\n\t\t[3, 4, 1, 5] 和&nbsp;[4, 5, 2, 6]&nbsp;都是符合要求的隐藏数组。\n\t\t[5, 6, 3, 7]&nbsp;不符合要求，因为它包含大于 6&nbsp;的元素。\n\t\t[1, 2, 3, 4]&nbsp;不符合要求，因为相邻元素的差值不符合给定数据。\n\n请你返回 符合&nbsp;要求的隐藏数组的数目。如果没有符合要求的隐藏数组，请返回 0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：differences = [1,-3,4], lower = 1, upper = 6\n输出：2\n解释：符合要求的隐藏数组为：\n- [3, 4, 1, 5]\n- [4, 5, 2, 6]\n所以返回 2 。\n\n示例 2：\n\n输入：differences = [3,-4,5,1,-2], lower = -4, upper = 5\n输出：4\n解释：符合要求的隐藏数组为：\n- [-3, 0, -4, 1, 2, 0]\n- [-2, 1, -3, 2, 3, 1]\n- [-1, 2, -2, 3, 4, 2]\n- [0, 3, -1, 4, 5, 3]\n所以返回 4 。\n\n示例 3：\n\n输入：differences = [4,-7,2], lower = 3, upper = 6\n输出：0\n解释：没有符合要求的隐藏数组，所以返回 0 。\n\n&nbsp;\n\n提示：\n\n\tn == differences.length\n\t1 <= n <= 105\n\t-105 <= differences[i] <= 105\n\t-105 <= lower <= upper <= 105",
+  "constraints": [
+    "n == differences.length",
+    "1 <= n <= 105",
+    "-105 <= differences[i] <= 105",
+    "-105 <= lower <= upper <= 105"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "number": "LCR 041",
+  "title_cn": "数据流中的移动平均值",
+  "title_en": "数据流中的移动平均值",
+  "slug": "qIsx9U",
+  "difficulty": "Easy",
+  "description": "给定一个整数数据流和一个窗口大小，根据该滑动窗口的大小，计算滑动窗口里所有数字的平均值。\n\n实现 MovingAverage 类：\n\n\tMovingAverage(int size) 用窗口大小 size 初始化对象。\n\tdouble next(int val)&nbsp;成员函数 next&nbsp;每次调用的时候都会往滑动窗口增加一个整数，请计算并返回数据流中最后 size 个值的移动平均值，即滑动窗口里所有数字的平均值。\n\n&nbsp;\n\n示例：\n\n输入：\ninputs = [\"MovingAverage\", \"next\", \"next\", \"next\", \"next\"]\ninputs = [[3], [1], [10], [3], [5]]\n输出：\n[null, 1.0, 5.5, 4.66667, 6.0]\n\n解释：\nMovingAverage movingAverage = new MovingAverage(3);\nmovingAverage.next(1); // 返回 1.0 = 1 / 1\nmovingAverage.next(10); // 返回 5.5 = (1 + 10) / 2\nmovingAverage.next(3); // 返回 4.66667 = (1 + 10 + 3) / 3\nmovingAverage.next(5); // 返回 6.0 = (10 + 3 + 5) / 3\n\n&nbsp;\n\n提示：\n\n\t1 <= size <= 1000\n\t-105 <= val <= 105\n\t最多调用 next 方法 104 次\n\n&nbsp;\n\n注意：本题与主站 346&nbsp;题相同：&nbsp;https://leetcode.cn/problems/moving-average-from-data-stream/",
+  "constraints": [
+    "1 <= size <= 1000",
+    "-105 <= val <= 105",
+    "最多调用 next 方法 104 次",
+    "注意：本题与主站 346&nbsp;题相同：&nbsp;https://leetcode.cn/problems/moving-average-from-data-stream/"
+  ]
+}

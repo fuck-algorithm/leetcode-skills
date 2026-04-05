@@ -1,0 +1,14 @@
+{
+  "number": "1594",
+  "title_cn": "矩阵的最大非负积",
+  "title_en": "Maximum Non Negative Product in a Matrix",
+  "slug": "maximum-non-negative-product-in-a-matrix",
+  "difficulty": "Medium",
+  "description": "给你一个大小为 m x n 的矩阵 grid 。最初，你位于左上角 (0, 0) ，每一步，你可以在矩阵中 向右 或 向下 移动。\n\n在从左上角 (0, 0) 开始到右下角 (m - 1, n - 1) 结束的所有路径中，找出具有 最大非负积 的路径。路径的积是沿路径访问的单元格中所有整数的乘积。\n\n返回 最大非负积 对 109&nbsp;+ 7 取余 的结果。如果最大积为 负数 ，则返回 -1 。\n\n注意，取余是在得到最大积之后执行的。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[-1,-2,-3],[-2,-3,-3],[-3,-3,-2]]\n输出：-1\n解释：从 (0, 0) 到 (2, 2) 的路径中无法得到非负积，所以返回 -1 。\n\n示例 2：\n\n输入：grid = [[1,-2,1],[1,-2,1],[3,-4,1]]\n输出：8\n解释：最大非负积对应的路径如图所示 (1 * 1 * -2 * -4 * 1 = 8)\n\n示例 3：\n\n输入：grid = [[1,3],[0,-4]]\n输出：0\n解释：最大非负积对应的路径如图所示 (1 * 0 * -4 = 0)\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n <= 15\n\t-4 <= grid[i][j] <= 4",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 15",
+    "-4 <= grid[i][j] <= 4"
+  ]
+}

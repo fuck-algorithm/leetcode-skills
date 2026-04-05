@@ -1,0 +1,9 @@
+{
+  "number": "1440",
+  "title_cn": "计算布尔表达式的值",
+  "title_en": "Evaluate Boolean Expression",
+  "slug": "evaluate-boolean-expression",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

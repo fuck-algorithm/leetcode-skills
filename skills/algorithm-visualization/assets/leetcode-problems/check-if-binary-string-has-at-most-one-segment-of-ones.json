@@ -1,0 +1,13 @@
+{
+  "number": "1784",
+  "title_cn": "检查二进制字符串字段",
+  "title_en": "Check if Binary String Has at Most One Segment of Ones",
+  "slug": "check-if-binary-string-has-at-most-one-segment-of-ones",
+  "difficulty": "Easy",
+  "description": "给你一个二进制字符串 s ，该字符串 不含前导零 。\n\n如果 s 包含 零个或一个由连续的 '1' 组成的字段 ，返回 true​​​ 。否则，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"1001\"\n输出：false\n解释：由连续若干个&nbsp;'1' 组成的字段数量为 2，返回 false\n\n示例 2：\n\n输入：s = \"110\"\n输出：true\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts[i]​​​​ 为 '0' 或 '1'\n\ts[0] 为 '1'",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s[i]​​​​ 为 '0' 或 '1'",
+    "s[0] 为 '1'"
+  ]
+}

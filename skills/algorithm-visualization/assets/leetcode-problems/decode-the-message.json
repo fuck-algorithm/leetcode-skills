@@ -1,0 +1,15 @@
+{
+  "number": "2325",
+  "title_cn": "解密消息",
+  "title_en": "Decode the Message",
+  "slug": "decode-the-message",
+  "difficulty": "Easy",
+  "description": "给你字符串 key 和 message ，分别表示一个加密密钥和一段加密消息。解密 message 的步骤如下：\n\n\t使用 key 中 26 个英文小写字母第一次出现的顺序作为替换表中的字母 顺序 。\n\t将替换表与普通英文字母表对齐，形成对照表。\n\t按照对照表 替换 message 中的每个字母。\n\t空格 ' ' 保持不变。\n\n\t例如，key = \"happy boy\"（实际的加密密钥会包含字母表中每个字母 至少一次），据此，可以得到部分对照表（'h' -> 'a'、'a' -> 'b'、'p' -> 'c'、'y' -> 'd'、'b' -> 'e'、'o' -> 'f'）。\n\n返回解密后的消息。\n\n&nbsp;\n\n示例 1：\n\n输入：key = \"the quick brown fox jumps over the lazy dog\", message = \"vkbs bs t suepuv\"\n输出：\"this is a secret\"\n解释：对照表如上图所示。\n提取 \"the quick brown fox jumps over the lazy dog\" 中每个字母的首次出现可以得到替换表。\n\n示例 2：\n\n输入：key = \"eljuxhpwnyrdgtqkviszcfmabo\", message = \"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"\n输出：\"the five boxing wizards jump quickly\"\n解释：对照表如上图所示。\n提取 \"eljuxhpwnyrdgtqkviszcfmabo\" 中每个字母的首次出现可以得到替换表。\n\n&nbsp;\n\n提示：\n\n\t26 <= key.length <= 2000\n\tkey 由小写英文字母及 ' ' 组成\n\tkey 包含英文字母表中每个字符（'a' 到 'z'）至少一次\n\t1 <= message.length <= 2000\n\tmessage 由小写英文字母和 ' ' 组成",
+  "constraints": [
+    "26 <= key.length <= 2000",
+    "key 由小写英文字母及 ' ' 组成",
+    "key 包含英文字母表中每个字符（'a' 到 'z'）至少一次",
+    "1 <= message.length <= 2000",
+    "message 由小写英文字母和 ' ' 组成"
+  ]
+}

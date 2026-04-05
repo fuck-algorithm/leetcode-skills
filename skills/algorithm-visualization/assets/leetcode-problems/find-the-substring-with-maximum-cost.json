@@ -1,0 +1,16 @@
+{
+  "number": "2606",
+  "title_cn": "找到最大开销的子字符串",
+  "title_en": "Find the Substring With Maximum Cost",
+  "slug": "find-the-substring-with-maximum-cost",
+  "difficulty": "Medium",
+  "description": "给你一个字符串&nbsp;s&nbsp;，一个字符&nbsp;互不相同&nbsp;的字符串&nbsp;chars&nbsp;和一个长度与 chars&nbsp;相同的整数数组&nbsp;vals&nbsp;。\n\n子字符串的开销&nbsp;是一个子字符串中所有字符对应价值之和。空字符串的开销是 0&nbsp;。\n\n字符的价值&nbsp;定义如下：\n\n\t如果字符不在字符串&nbsp;chars&nbsp;中，那么它的价值是它在字母表中的位置（下标从 1&nbsp;开始）。\n\n\t\t比方说，'a'&nbsp;的价值为&nbsp;1&nbsp;，'b'&nbsp;的价值为&nbsp;2&nbsp;，以此类推，'z'&nbsp;的价值为&nbsp;26&nbsp;。\n\n\t否则，如果这个字符在 chars&nbsp;中的位置为 i&nbsp;，那么它的价值就是&nbsp;vals[i]&nbsp;。\n\n请你返回字符串 s&nbsp;的所有子字符串中的最大开销。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"adaa\", chars = \"d\", vals = [-1000]\n输出：2\n解释：字符 \"a\" 和 \"d\" 的价值分别为 1 和 -1000 。\n最大开销子字符串是 \"aa\" ，它的开销为 1 + 1 = 2 。\n2 是最大开销。\n\n示例 2：\n\n输入：s = \"abc\", chars = \"abc\", vals = [-1,-1,-1]\n输出：0\n解释：字符 \"a\" ，\"b\" 和 \"c\" 的价值分别为 -1 ，-1 和 -1 。\n最大开销子字符串是 \"\" ，它的开销为 0 。\n0 是最大开销。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts&nbsp;只包含小写英文字母。\n\t1 <= chars.length <= 26\n\tchars&nbsp;只包含小写英文字母，且 互不相同&nbsp;。\n\tvals.length == chars.length\n\t-1000 <= vals[i] <= 1000",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s&nbsp;只包含小写英文字母。",
+    "1 <= chars.length <= 26",
+    "chars&nbsp;只包含小写英文字母，且 互不相同&nbsp;。",
+    "vals.length == chars.length",
+    "-1000 <= vals[i] <= 1000"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "468",
+  "title_cn": "验证IP地址",
+  "title_en": "Validate IP Address",
+  "slug": "validate-ip-address",
+  "difficulty": "Medium",
+  "description": "给定一个字符串&nbsp;queryIP。如果是有效的 IPv4 地址，返回 \"IPv4\" ；如果是有效的 IPv6 地址，返回 \"IPv6\" ；如果不是上述类型的 IP 地址，返回 \"Neither\" 。\n\n有效的IPv4地址 是 “x1.x2.x3.x4” 形式的IP地址。 其中&nbsp;0 <= xi&nbsp;<= 255&nbsp;且&nbsp;xi&nbsp;不能包含 前导零。例如:&nbsp;“192.168.1.1”&nbsp;、 “192.168.1.0” 为有效IPv4地址， “192.168.01.1” 为无效IPv4地址; “192.168.1.00” 、 “192.168@1.1” 为无效IPv4地址。\n\n一个有效的IPv6地址&nbsp;是一个格式为“x1:x2:x3:x4:x5:x6:x7:x8” 的IP地址，其中:\n\n\t1 <= xi.length <= 4\n\txi&nbsp;是一个 十六进制字符串 ，可以包含数字、小写英文字母( 'a' 到 'f' )和大写英文字母( 'A' 到 'F' )。\n\t在&nbsp;xi&nbsp;中允许前导零。\n\n例如 \"2001:0db8:85a3:0000:0000:8a2e:0370:7334\" 和 \"2001:db8:85a3:0:0:8A2E:0370:7334\" 是有效的 IPv6 地址，而 \"2001:0db8:85a3::8A2E:037j:7334\" 和 \"02001:0db8:85a3:0000:0000:8a2e:0370:7334\" 是无效的 IPv6 地址。\n\n&nbsp;\n\n示例 1：\n\n输入：queryIP = \"172.16.254.1\"\n输出：\"IPv4\"\n解释：有效的 IPv4 地址，返回 \"IPv4\"\n\n示例 2：\n\n输入：queryIP = \"2001:0db8:85a3:0:0:8A2E:0370:7334\"\n输出：\"IPv6\"\n解释：有效的 IPv6 地址，返回 \"IPv6\"\n\n示例 3：\n\n输入：queryIP = \"256.256.256.256\"\n输出：\"Neither\"\n解释：既不是 IPv4 地址，又不是 IPv6 地址\n\n&nbsp;\n\n提示：\n\n\tqueryIP 仅由英文字母，数字，字符 '.' 和 ':' 组成。",
+  "constraints": [
+    "queryIP 仅由英文字母，数字，字符 '.' 和 ':' 组成。"
+  ]
+}

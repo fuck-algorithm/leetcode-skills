@@ -1,0 +1,12 @@
+{
+  "number": "1079",
+  "title_cn": "活字印刷",
+  "title_en": "Letter Tile Possibilities",
+  "slug": "letter-tile-possibilities",
+  "difficulty": "Medium",
+  "description": "你有一套活字字模&nbsp;tiles，其中每个字模上都刻有一个字母&nbsp;tiles[i]。返回你可以印出的非空字母序列的数目。\n\n注意：本题中，每个活字字模只能使用一次。\n\n&nbsp;\n\n示例 1：\n\n输入：\"AAB\"\n输出：8\n解释：可能的序列为 \"A\", \"B\", \"AA\", \"AB\", \"BA\", \"AAB\", \"ABA\", \"BAA\"。\n\n示例 2：\n\n输入：\"AAABBC\"\n输出：188\n\n示例 3：\n\n输入：\"V\"\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= tiles.length <= 7\n\ttiles 由大写英文字母组成",
+  "constraints": [
+    "1 <= tiles.length <= 7",
+    "tiles 由大写英文字母组成"
+  ]
+}

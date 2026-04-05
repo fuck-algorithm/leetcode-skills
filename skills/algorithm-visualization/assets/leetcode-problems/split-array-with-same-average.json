@@ -1,0 +1,12 @@
+{
+  "number": "805",
+  "title_cn": "数组的均值分割",
+  "title_en": "Split Array With Same Average",
+  "slug": "split-array-with-same-average",
+  "difficulty": "Hard",
+  "description": "给定你一个整数数组&nbsp;nums\n\n我们要将&nbsp;nums&nbsp;数组中的每个元素移动到&nbsp;A&nbsp;数组 或者&nbsp;B&nbsp;数组中，使得&nbsp;A&nbsp;数组和&nbsp;B&nbsp;数组不为空，并且&nbsp;average(A) == average(B)&nbsp;。\n\n如果可以完成则返回true&nbsp;， 否则返回 false&nbsp;&nbsp;。\n\n注意：对于数组&nbsp;arr&nbsp;, &nbsp;average(arr)&nbsp;是&nbsp;arr&nbsp;的所有元素的和除以&nbsp;arr&nbsp;长度。\n\n&nbsp;\n\n示例 1:\n\n输入: nums = [1,2,3,4,5,6,7,8]\n输出: true\n解释: 我们可以将数组分割为 [1,4,5,8] 和 [2,3,6,7], 他们的平均值都是4.5。\n\n示例 2:\n\n输入: nums = [3,1]\n输出: false\n\n&nbsp;\n\n提示:\n\n\t1 <= nums.length <= 30\n\t0 <= nums[i] <= 104",
+  "constraints": [
+    "1 <= nums.length <= 30",
+    "0 <= nums[i] <= 104"
+  ]
+}

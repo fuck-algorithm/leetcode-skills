@@ -1,0 +1,13 @@
+{
+  "number": "2836",
+  "title_cn": "在传球游戏中最大化函数值",
+  "title_en": "Maximize Value of Function in a Ball Passing Game",
+  "slug": "maximize-value-of-function-in-a-ball-passing-game",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;receiver&nbsp;和一个整数&nbsp;k&nbsp;。\n\n总共有&nbsp;n&nbsp;名玩家，玩家 编号&nbsp;互不相同，且为&nbsp;[0, n - 1]&nbsp;中的整数。这些玩家玩一个传球游戏，receiver[i]&nbsp;表示编号为 i&nbsp;的玩家会传球给编号为 receiver[i]&nbsp;的玩家。玩家可以传球给自己，也就是说&nbsp;receiver[i]&nbsp;可能等于&nbsp;i&nbsp;。\n\n你需要从 n&nbsp;名玩家中选择一名玩家作为游戏开始时唯一手中有球的玩家，球会被传 恰好&nbsp;k&nbsp;次。\n\n如果选择编号为 x&nbsp;的玩家作为开始玩家，定义函数&nbsp;f(x)&nbsp;表示从编号为&nbsp;x&nbsp;的玩家开始，k&nbsp;次传球内所有接触过球玩家的编号之&nbsp;和&nbsp;，如果有玩家多次触球，则 累加多次&nbsp;。换句话说，&nbsp;f(x) = x + receiver[x] + receiver[receiver[x]] + ... + receiver(k)[x]&nbsp;。\n\n你的任务时选择开始玩家 x&nbsp;，目的是&nbsp;最大化&nbsp;f(x)&nbsp;。\n\n请你返回函数的 最大值&nbsp;。\n\n注意：receiver&nbsp;可能含有重复元素。\n\n&nbsp;\n\n示例 1：\n\n\t\t\t传递次数\n\t\t\t传球者编号\n\t\t\t接球者编号\n\t\t\tx + 所有接球者编号\n\n\t\t\t&nbsp;\n\t\t\t&nbsp;\n\t\t\t&nbsp;\n\t\t\t2\n\n\t\t\t1\n\t\t\t2\n\t\t\t1\n\t\t\t3\n\n\t\t\t2\n\t\t\t1\n\t\t\t0\n\t\t\t3\n\n\t\t\t3\n\t\t\t0\n\t\t\t2\n\t\t\t5\n\n\t\t\t4\n\t\t\t2\n\t\t\t1\n\t\t\t6\n\n&nbsp;\n\n输入：receiver = [2,0,1], k = 4\n输出：6\n解释：上表展示了从编号为 x = 2 开始的游戏过程。\n从表中可知，f(2) 等于 6 。\n6 是能得到最大的函数值。\n所以输出为 6 。\n\n示例 2：\n\n\t\t\t传递次数\n\t\t\t传球者编号\n\t\t\t接球者编号\n\t\t\tx + 所有接球者编号\n\n\t\t\t&nbsp;\n\t\t\t&nbsp;\n\t\t\t&nbsp;\n\t\t\t4\n\n\t\t\t1\n\t\t\t4\n\t\t\t3\n\t\t\t7\n\n\t\t\t2\n\t\t\t3\n\t\t\t2\n\t\t\t9\n\n\t\t\t3\n\t\t\t2\n\t\t\t1\n\t\t\t10\n\n&nbsp;\n\n输入：receiver = [1,1,1,2,3], k = 3\n输出：10\n解释：上表展示了从编号为 x = 4 开始的游戏过程。\n从表中可知，f(4) 等于 10 。\n10 是能得到最大的函数值。\n所以输出为 10 。\n\n&nbsp;\n\n提示：\n\n\t1 <= receiver.length == n <= 105\n\t0 <= receiver[i] <= n - 1\n\t1 <= k <= 1010",
+  "constraints": [
+    "1 <= receiver.length == n <= 105",
+    "0 <= receiver[i] <= n - 1",
+    "1 <= k <= 1010"
+  ]
+}

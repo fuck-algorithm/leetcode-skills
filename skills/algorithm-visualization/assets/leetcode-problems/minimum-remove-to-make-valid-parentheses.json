@@ -1,0 +1,12 @@
+{
+  "number": "1249",
+  "title_cn": "移除无效的括号",
+  "title_en": "Minimum Remove to Make Valid Parentheses",
+  "slug": "minimum-remove-to-make-valid-parentheses",
+  "difficulty": "Medium",
+  "description": "给你一个由 '('、')' 和小写字母组成的字符串 s。\n\n你需要从字符串中删除最少数目的 '(' 或者 ')'&nbsp;（可以删除任意位置的括号)，使得剩下的「括号字符串」有效。\n\n请返回任意一个合法字符串。\n\n有效「括号字符串」应当符合以下&nbsp;任意一条&nbsp;要求：\n\n\t空字符串或只包含小写字母的字符串\n\t可以被写作&nbsp;AB（A&nbsp;连接&nbsp;B）的字符串，其中&nbsp;A&nbsp;和&nbsp;B&nbsp;都是有效「括号字符串」\n\t可以被写作&nbsp;(A)&nbsp;的字符串，其中&nbsp;A&nbsp;是一个有效的「括号字符串」\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"lee(t(c)o)de)\"\n输出：\"lee(t(c)o)de\"\n解释：\"lee(t(co)de)\" , \"lee(t(c)ode)\" 也是一个可行答案。\n\n示例 2：\n\n输入：s = \"a)b(c)d\"\n输出：\"ab(c)d\"\n\n示例 3：\n\n输入：s = \"))((\"\n输出：\"\"\n解释：空字符串也是有效的\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 105\n\ts[i]&nbsp;可能是&nbsp;'('、')'&nbsp;或英文小写字母",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i]&nbsp;可能是&nbsp;'('、')'&nbsp;或英文小写字母"
+  ]
+}

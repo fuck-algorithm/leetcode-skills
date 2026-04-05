@@ -1,0 +1,17 @@
+{
+  "number": "882",
+  "title_cn": "细分图中的可到达节点",
+  "title_en": "Reachable Nodes In Subdivided Graph",
+  "slug": "reachable-nodes-in-subdivided-graph",
+  "difficulty": "Hard",
+  "description": "给你一个无向图（原始图），图中有 n 个节点，编号从 0 到 n - 1 。你决定将图中的每条边 细分 为一条节点链，每条边之间的新节点数各不相同。\n\n图用由边组成的二维数组 edges 表示，其中&nbsp;edges[i] = [ui, vi, cnti] 表示原始图中节点&nbsp;ui 和&nbsp;vi 之间存在一条边，cnti 是将边 细分 后的新节点总数。注意，cnti == 0 表示边不可细分。\n\n要 细分 边 [ui, vi] ，需要将其替换为 (cnti + 1) 条新边，和&nbsp;cnti 个新节点。新节点为 x1, x2, ..., xcnti ，新边为 [ui, x1], [x1, x2], [x2, x3], ..., [xcnti-1, xcnti], [xcnti, vi] 。\n\n现在得到一个&nbsp;新的细分图 ，请你计算从节点 0 出发，可以到达多少个节点？如果节点间距离是 maxMoves 或更少，则视为 可以到达 。\n\n给你原始图和 maxMoves ，返回 新的细分图中从节点 0 出发 可到达的节点数&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [[0,1,10],[0,2,1],[1,2,2]], maxMoves = 6, n = 3\n输出：13\n解释：边的细分情况如上图所示。\n可以到达的节点已经用黄色标注出来。\n\n示例 2：\n\n输入：edges = [[0,1,4],[1,2,6],[0,2,8],[1,3,1]], maxMoves = 10, n = 4\n输出：23\n\n示例 3：\n\n输入：edges = [[1,2,4],[1,4,5],[1,3,1],[2,3,4],[3,4,5]], maxMoves = 17, n = 5\n输出：1\n解释：节点 0 与图的其余部分没有连通，所以只有节点 0 可以到达。\n\n&nbsp;\n\n提示：\n\n\t0 <= edges.length <= min(n * (n - 1) / 2, 104)\n\tedges[i].length == 3\n\t0 <= ui < vi < n\n\t图中 不存在平行边\n\t0 <= cnti <= 104\n\t0 <= maxMoves <= 109\n\t1 <= n <= 3000",
+  "constraints": [
+    "0 <= edges.length <= min(n * (n - 1) / 2, 104)",
+    "edges[i].length == 3",
+    "0 <= ui < vi < n",
+    "图中 不存在平行边",
+    "0 <= cnti <= 104",
+    "0 <= maxMoves <= 109",
+    "1 <= n <= 3000"
+  ]
+}

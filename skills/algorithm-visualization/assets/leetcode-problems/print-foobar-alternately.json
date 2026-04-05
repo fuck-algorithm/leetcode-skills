@@ -1,0 +1,11 @@
+{
+  "number": "1115",
+  "title_cn": "交替打印 FooBar",
+  "title_en": "Print FooBar Alternately",
+  "slug": "print-foobar-alternately",
+  "difficulty": "Medium",
+  "description": "给你一个类：\n\nclass FooBar {\n  public void foo() {\n&nbsp; &nbsp; for (int i = 0; i < n; i++) {\n&nbsp; &nbsp; &nbsp; print(\"foo\");\n&nbsp;   }\n  }\n\n  public void bar() {\n&nbsp; &nbsp; for (int i = 0; i < n; i++) {\n&nbsp; &nbsp; &nbsp; print(\"bar\");\n&nbsp; &nbsp; }\n  }\n}\n\n两个不同的线程将会共用一个 FooBar&nbsp;实例：\n\n\t线程 A 将会调用&nbsp;foo()&nbsp;方法，而\n\t线程 B 将会调用&nbsp;bar()&nbsp;方法\n\n请设计修改程序，以确保 \"foobar\" 被输出 n 次。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 1\n输出：\"foobar\"\n解释：这里有两个线程被异步启动。其中一个调用 foo() 方法, 另一个调用 bar() 方法，\"foobar\" 将被输出一次。\n\n示例 2：\n\n输入：n = 2\n输出：\"foobarfoobar\"\n解释：\"foobar\" 将被输出两次。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 1000",
+  "constraints": [
+    "1 <= n <= 1000"
+  ]
+}

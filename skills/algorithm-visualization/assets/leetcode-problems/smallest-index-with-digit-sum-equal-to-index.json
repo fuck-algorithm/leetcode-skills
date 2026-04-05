@@ -1,0 +1,12 @@
+{
+  "number": "3550",
+  "title_cn": "数位和等于下标的最小下标",
+  "title_en": "Smallest Index With Digit Sum Equal to Index",
+  "slug": "smallest-index-with-digit-sum-equal-to-index",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。\n\n返回满足 nums[i]&nbsp;的数位和（每一位数字相加求和）等于 i&nbsp;的 最小&nbsp;下标&nbsp;i 。\n\n如果不存在满足要求的下标，返回&nbsp;-1 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,3,2]\n\n输出：2\n\n解释：\n\n\tnums[2] = 2，其数位和等于&nbsp;2 ，与其下标&nbsp;i = 2&nbsp;相等。因此，输出为&nbsp;2 。\n\n示例 2：\n\n输入：nums = [1,10,11]\n\n输出：1\n\n解释：\n\n\tnums[1] = 10，其数位和等于&nbsp;1 + 0 = 1，与其下标 i = 1&nbsp;相等。\n\tnums[2] = 11，其数位和等于是 1 + 1 = 2，与其下标&nbsp;i = 2&nbsp;相等。\n\t由于下标 1 是满足要求的最小下标，输出为&nbsp;1 。\n\n示例 3：\n\n输入：nums = [1,2,3]\n\n输出：-1\n\n解释：\n\n\t由于不存在满足要求的下标，输出为&nbsp;-1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t0 <= nums[i] <= 1000",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 1000"
+  ]
+}

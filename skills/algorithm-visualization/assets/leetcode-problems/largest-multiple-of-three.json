@@ -1,0 +1,12 @@
+{
+  "number": "1363",
+  "title_cn": "形成三的最大倍数",
+  "title_en": "Largest Multiple of Three",
+  "slug": "largest-multiple-of-three",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;digits，你可以通过按 任意顺序 连接其中某些数字来形成 3 的倍数，请你返回所能得到的最大的 3 的倍数。\n\n由于答案可能不在整数数据类型范围内，请以字符串形式返回答案。如果无法得到答案，请返回一个空字符串。返回的结果不应包含不必要的前导零。\n\n&nbsp;\n\n示例 1：\n\n输入：digits = [8,1,9]\n输出：\"981\"\n\n示例 2：\n\n输入：digits = [8,6,7,1,0]\n输出：\"8760\"\n\n示例 3：\n\n输入：digits = [1]\n输出：\"\"\n\n示例 4：\n\n输入：digits = [0,0,0,0,0,0]\n输出：\"0\"\n\n&nbsp;\n\n提示：\n\n\t1 <= digits.length <= 10^4\n\t0 <= digits[i] <= 9",
+  "constraints": [
+    "1 <= digits.length <= 10^4",
+    "0 <= digits[i] <= 9"
+  ]
+}

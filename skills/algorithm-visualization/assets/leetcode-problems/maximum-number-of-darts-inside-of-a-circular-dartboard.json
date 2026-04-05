@@ -1,0 +1,15 @@
+{
+  "number": "1453",
+  "title_cn": "圆形靶内的最大飞镖数量",
+  "title_en": "Maximum Number of Darts Inside of a Circular Dartboard",
+  "slug": "maximum-number-of-darts-inside-of-a-circular-dartboard",
+  "difficulty": "Hard",
+  "description": "Alice 向一面非常大的墙上掷出 n 支飞镖。给你一个数组 darts ，其中 darts[i] = [xi, yi] 表示 Alice 掷出的第 i 支飞镖落在墙上的位置。\n\nBob 知道墙上所有 n 支飞镖的位置。他想要往墙上放置一个半径为 r 的圆形靶。使 Alice 掷出的飞镖尽可能多地落在靶上。\n\n给你整数 r ，请返回能够落在 任意 半径为 r 的圆形靶内或靶上的最大飞镖数。\n\n&nbsp;\n\n示例 1 ：\n\n输入：darts = [[-2,0],[2,0],[0,2],[0,-2]], r = 2\n输出：4\n解释：如果圆形靶的圆心为 (0,0) ，半径为 2 ，所有的飞镖都落在靶上，此时落在靶上的飞镖数最大，值为 4 。\n\n示例 2 ：\n\n输入：darts = [[-3,0],[3,0],[2,6],[5,4],[0,9],[7,8]], r = 5\n输出：5\n解释：如果圆形靶的圆心为 (0,4) ，半径为 5 ，则除了 (7,8) 之外的飞镖都落在靶上，此时落在靶上的飞镖数最大，值为 5 。\n\n&nbsp;\n\n提示：\n\n\t1 <= darts.length <= 100\n\tdarts[i].length == 2\n\t-104 <= xi, yi <= 104\n\tdarts 中的元素互不相同\n\t1 <= r <= 5000",
+  "constraints": [
+    "1 <= darts.length <= 100",
+    "darts[i].length == 2",
+    "-104 <= xi, yi <= 104",
+    "darts 中的元素互不相同",
+    "1 <= r <= 5000"
+  ]
+}

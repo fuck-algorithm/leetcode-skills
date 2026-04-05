@@ -1,0 +1,12 @@
+{
+  "number": "2800",
+  "title_cn": "包含三个字符串的最短字符串",
+  "title_en": "Shortest String That Contains Three Strings",
+  "slug": "shortest-string-that-contains-three-strings",
+  "difficulty": "Medium",
+  "description": "给你三个字符串&nbsp;a&nbsp;，b&nbsp;和&nbsp;c&nbsp;， 你的任务是找到长度&nbsp;最短&nbsp;的字符串，且这三个字符串都是它的 子字符串&nbsp;。\n如果有多个这样的字符串，请你返回 字典序最小&nbsp;的一个。\n\n请你返回满足题目要求的字符串。\n\n注意：\n\n\t两个长度相同的字符串 a&nbsp;和 b&nbsp;，如果在第一个不相同的字符处，a&nbsp;的字母在字母表中比 b&nbsp;的字母 靠前&nbsp;，那么字符串&nbsp;a&nbsp;比字符串&nbsp;b 字典序小&nbsp;。\n\t子字符串&nbsp;是一个字符串中一段连续的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：a = \"abc\", b = \"bca\", c = \"aaa\"\n输出：\"aaabca\"\n解释：字符串 \"aaabca\" 包含所有三个字符串：a = ans[2...4] ，b = ans[3..5] ，c = ans[0..2] 。结果字符串的长度至少为 6 ，且\"aaabca\" 是字典序最小的一个。\n\n示例 2：\n\n输入：a = \"ab\", b = \"ba\", c = \"aba\"\n输出：\"aba\"\n解释：字符串 \"aba\" 包含所有三个字符串：a = ans[0..1] ，b = ans[1..2] ，c = ans[0..2] 。由于 c 的长度为 3 ，结果字符串的长度至少为 3 。\"aba\" 是字典序最小的一个。\n\n&nbsp;\n\n提示：\n\n\t1 <= a.length, b.length, c.length <= 100\n\ta&nbsp;，b&nbsp;，c&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= a.length, b.length, c.length <= 100",
+    "a&nbsp;，b&nbsp;，c&nbsp;只包含小写英文字母。"
+  ]
+}

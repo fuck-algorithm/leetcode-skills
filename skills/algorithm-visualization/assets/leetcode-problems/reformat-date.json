@@ -1,0 +1,11 @@
+{
+  "number": "1507",
+  "title_cn": "转变日期格式",
+  "title_en": "Reformat Date",
+  "slug": "reformat-date",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;date&nbsp;，它的格式为&nbsp;Day Month Year&nbsp;，其中：\n\n\tDay&nbsp;是集合&nbsp;{\"1st\", \"2nd\", \"3rd\", \"4th\", ..., \"30th\", \"31st\"}&nbsp;中的一个元素。\n\tMonth&nbsp;是集合&nbsp;{\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"}&nbsp;中的一个元素。\n\tYear&nbsp;的范围在 ​[1900, 2100]&nbsp;之间。\n\n请你将字符串转变为&nbsp;YYYY-MM-DD&nbsp;的格式，其中：\n\n\tYYYY&nbsp;表示 4 位的年份。\n\tMM&nbsp;表示 2 位的月份。\n\tDD&nbsp;表示 2 位的天数。\n\n&nbsp;\n\n示例 1：\n\n输入：date = \"20th Oct 2052\"\n输出：\"2052-10-20\"\n\n示例 2：\n\n输入：date = \"6th Jun 1933\"\n输出：\"1933-06-06\"\n\n示例 3：\n\n输入：date = \"26th May 1960\"\n输出：\"1960-05-26\"\n\n&nbsp;\n\n提示：\n\n\t给定日期保证是合法的，所以不需要处理异常输入。",
+  "constraints": [
+    "给定日期保证是合法的，所以不需要处理异常输入。"
+  ]
+}

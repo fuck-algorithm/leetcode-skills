@@ -1,0 +1,12 @@
+{
+  "number": "3142",
+  "title_cn": "判断矩阵是否满足条件",
+  "title_en": "Check if Grid Satisfies Conditions",
+  "slug": "check-if-grid-satisfies-conditions",
+  "difficulty": "Easy",
+  "description": "给你一个大小为 m x n&nbsp;的二维矩阵&nbsp;grid&nbsp;。你需要判断每一个格子&nbsp;grid[i][j]&nbsp;是否满足：\n\n\t如果它下面的格子存在，那么它需要等于它下面的格子，也就是&nbsp;grid[i][j] == grid[i + 1][j]&nbsp;。\n\t如果它右边的格子存在，那么它需要不等于它右边的格子，也就是&nbsp;grid[i][j] != grid[i][j + 1]&nbsp;。\n\n如果 所有&nbsp;格子都满足以上条件，那么返回 true&nbsp;，否则返回 false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,0,2],[1,0,2]]\n\n输出：true\n\n解释：\n\n网格图中所有格子都符合条件。\n\n示例 2：\n\n输入：grid = [[1,1,1],[0,0,0]]\n\n输出：false\n\n解释：\n\n同一行中的格子值都相等。\n\n示例 3：\n\n输入：grid = [[1],[2],[3]]\n\n输出：false\n\n解释：\n\n同一列中的格子值不相等。\n\n&nbsp;\n\n提示：\n\n\t1 <= n, m <= 10\n\t0 <= grid[i][j] <= 9",
+  "constraints": [
+    "1 <= n, m <= 10",
+    "0 <= grid[i][j] <= 9"
+  ]
+}

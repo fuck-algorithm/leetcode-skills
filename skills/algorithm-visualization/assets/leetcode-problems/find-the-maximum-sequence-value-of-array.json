@@ -1,0 +1,13 @@
+{
+  "number": "3287",
+  "title_cn": "求出数组中最大序列值",
+  "title_en": "Find the Maximum Sequence Value of Array",
+  "slug": "find-the-maximum-sequence-value-of-array",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;和一个 正&nbsp;整数&nbsp;k&nbsp;。\n\n定义长度为 2 * x&nbsp;的序列 seq&nbsp;的 值&nbsp;为：\n\n\t(seq[0] OR seq[1] OR ... OR seq[x - 1]) XOR (seq[x] OR seq[x + 1] OR ... OR seq[2 * x - 1]).\n\n请你求出 nums&nbsp;中所有长度为 2 * k&nbsp;的 子序列 的 最大值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,6,7], k = 1\n\n输出：5\n\n解释：\n\n子序列&nbsp;[2, 7]&nbsp;的值最大，为&nbsp;2 XOR 7 = 5&nbsp;。\n\n示例 2：\n\n输入：nums = [4,2,5,6,7], k = 2\n\n输出：2\n\n解释：\n\n子序列&nbsp;[4, 5, 6, 7]&nbsp;的值最大，为&nbsp;(4 OR 5) XOR (6 OR 7) = 2&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 400\n\t1 <= nums[i] < 27\n\t1 <= k <= nums.length / 2",
+  "constraints": [
+    "2 <= nums.length <= 400",
+    "1 <= nums[i] < 27",
+    "1 <= k <= nums.length / 2"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "number": "1141",
+  "title_cn": "查询近30天活跃用户数",
+  "title_en": "User Activity for the Past 30 Days I",
+  "slug": "user-activity-for-the-past-30-days-i",
+  "difficulty": "Easy",
+  "description": "表：Activity\n\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| user_id       | int     |\n| session_id    | int     |\n| activity_date | date    |\n| activity_type | enum    |\n+---------------+---------+\n该表可能包含重复数据。\nactivity_type 列是 ENUM(category) 类型， 从 ('open_session'， 'end_session'， 'scroll_down'， 'send_message') 取值。\n该表记录社交媒体网站的用户活动。\n注意，每个会话只属于一个用户。\n\n&nbsp;\n\n编写解决方案，统计截至&nbsp;2019-07-27（包含2019-07-27），近&nbsp;30 天的每日活跃用户数（当天只要有一条活动记录，即为活跃用户）。\n\n以 任意顺序 返回结果表。\n\n结果示例如下。\n\n注意：（'open_session'，'end_session'，'scroll_down'，'send_message'）中的任何活动将被视为用户在某一天活跃的有效活动。\n\n&nbsp;\n\n示例 1:\n\n输入：\nActivity table:\n+---------+------------+---------------+---------------+\n| user_id | session_id | activity_date | activity_type |\n+---------+------------+---------------+---------------+\n| 1       | 1          | 2019-07-20    | open_session  |\n| 1       | 1          | 2019-07-20    | scroll_down   |\n| 1       | 1          | 2019-07-20    | end_session   |\n| 2       | 4          | 2019-07-20    | open_session  |\n| 2       | 4          | 2019-07-21    | send_message  |\n| 2       | 4          | 2019-07-21    | end_session   |\n| 3       | 2          | 2019-07-21    | open_session  |\n| 3       | 2          | 2019-07-21    | send_message  |\n| 3       | 2          | 2019-07-21    | end_session   |\n| 4       | 3          | 2019-06-25    | open_session  |\n| 4       | 3          | 2019-06-25    | end_session   |\n+---------+------------+---------------+---------------+\n输出：\n+------------+--------------+ \n| day        | active_users |\n+------------+--------------+ \n| 2019-07-20 | 2            |\n| 2019-07-21 | 2            |\n+------------+--------------+ \n解释：注意非活跃用户的记录不需要展示。",
+  "constraints": []
+}

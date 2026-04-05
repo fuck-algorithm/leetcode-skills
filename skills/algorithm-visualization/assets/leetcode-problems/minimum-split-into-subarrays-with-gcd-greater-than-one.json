@@ -1,0 +1,9 @@
+{
+  "number": "2436",
+  "title_cn": "使子数组最大公约数大于一的最小分割数",
+  "title_en": "Minimum Split Into Subarrays With GCD Greater Than One",
+  "slug": "minimum-split-into-subarrays-with-gcd-greater-than-one",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

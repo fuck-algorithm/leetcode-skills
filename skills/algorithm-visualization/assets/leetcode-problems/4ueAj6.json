@@ -1,0 +1,14 @@
+{
+  "number": "LCR 029",
+  "title_cn": "循环有序列表的插入",
+  "title_en": "循环有序列表的插入",
+  "slug": "4ueAj6",
+  "difficulty": "Medium",
+  "description": "给定循环单调非递减列表中的一个点，写一个函数向这个列表中插入一个新元素&nbsp;insertVal ，使这个列表仍然是循环升序的。\n\n给定的可以是这个列表中任意一个顶点的指针，并不一定是这个列表中最小元素的指针。\n\n如果有多个满足条件的插入位置，可以选择任意一个位置插入新的值，插入后整个列表仍然保持有序。\n\n如果列表为空（给定的节点是 null），需要创建一个循环有序列表并返回这个节点。否则。请返回原先给定的节点。\n\n&nbsp;\n\n示例 1：\n\n&nbsp;\n\n输入：head = [3,4,1], insertVal = 2\n输出：[3,4,1,2]\n解释：在上图中，有一个包含三个元素的循环有序列表，你获得值为 3 的节点的指针，我们需要向表中插入元素 2 。新插入的节点应该在 1 和 3 之间，插入之后，整个列表如上图所示，最后返回节点 3 。\n\n示例 2：\n\n输入：head = [], insertVal = 1\n输出：[1]\n解释：列表为空（给定的节点是 null），创建一个循环有序列表并返回这个节点。\n\n示例 3：\n\n输入：head = [1], insertVal = 0\n输出：[1,0]\n\n&nbsp;\n\n提示：\n\n\t0 <= Number of Nodes <= 5 * 10^4\n\t-10^6 <= Node.val <= 10^6\n\t-10^6 <=&nbsp;insertVal <= 10^6\n\n&nbsp;\n\n注意：本题与主站 708&nbsp;题相同：&nbsp;https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/",
+  "constraints": [
+    "0 <= Number of Nodes <= 5 * 10^4",
+    "-10^6 <= Node.val <= 10^6",
+    "-10^6 <=&nbsp;insertVal <= 10^6",
+    "注意：本题与主站 708&nbsp;题相同：&nbsp;https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/"
+  ]
+}

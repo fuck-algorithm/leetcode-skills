@@ -1,0 +1,12 @@
+{
+  "number": "LCR 131",
+  "title_cn": "砍竹子 I",
+  "title_en": "砍竹子 I",
+  "slug": "jian-sheng-zi-lcof",
+  "difficulty": "Medium",
+  "description": "现需要将一根长为正整数 bamboo_len 的竹子砍为若干段，每段长度均为正整数。请返回每段竹子长度的最大乘积是多少。\n\n&nbsp;\n\n示例 1：\n\n输入: bamboo_len = 12\n输出: 81\n\n提示：\n\n\t2 <= bamboo_len&nbsp;<= 58\n\n注意：本题与主站 343 题相同：https://leetcode.cn/problems/integer-break/",
+  "constraints": [
+    "2 <= bamboo_len&nbsp;<= 58",
+    "注意：本题与主站 343 题相同：https://leetcode.cn/problems/integer-break/"
+  ]
+}

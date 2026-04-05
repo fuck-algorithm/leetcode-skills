@@ -1,0 +1,18 @@
+{
+  "number": "2872",
+  "title_cn": "可以被 K 整除连通块的最大数目",
+  "title_en": "Maximum Number of K-Divisible Components",
+  "slug": "maximum-number-of-k-divisible-components",
+  "difficulty": "Hard",
+  "description": "给你一棵 n&nbsp;个节点的无向树，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;。给你整数&nbsp;n&nbsp;和一个长度为 n - 1&nbsp;的二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;表示树中节点&nbsp;ai 和&nbsp;bi&nbsp;有一条边。\n\n同时给你一个下标从 0&nbsp;开始长度为 n&nbsp;的整数数组&nbsp;values&nbsp;，其中&nbsp;values[i]&nbsp;是第 i&nbsp;个节点的 值&nbsp;。再给你一个整数&nbsp;k&nbsp;。\n\n你可以从树中删除一些边，也可以一条边也不删，得到若干连通块。一个 连通块的值 定义为连通块中所有节点值之和。如果所有连通块的值都可以被 k&nbsp;整除，那么我们说这是一个 合法分割&nbsp;。\n\n请你返回所有合法分割中，连通块数目的最大值&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5, edges = [[0,2],[1,2],[1,3],[2,4]], values = [1,8,1,4,4], k = 6\n输出：2\n解释：我们删除节点 1 和 2 之间的边。这是一个合法分割，因为：\n- 节点 1 和 3 所在连通块的值为 values[1] + values[3] = 12 。\n- 节点 0 ，2 和 4 所在连通块的值为 values[0] + values[2] + values[4] = 6 。\n最多可以得到 2 个连通块的合法分割。\n\n示例 2：\n\n输入：n = 7, edges = [[0,1],[0,2],[1,3],[1,4],[2,5],[2,6]], values = [3,0,6,1,5,2,1], k = 3\n输出：3\n解释：我们删除节点 0 和 2 ，以及节点 0 和 1 之间的边。这是一个合法分割，因为：\n- 节点 0 的连通块的值为 values[0] = 3 。\n- 节点 2 ，5 和 6 所在连通块的值为 values[2] + values[5] + values[6] = 9 。\n- 节点 1 ，3 和 4 的连通块的值为 values[1] + values[3] + values[4] = 6 。\n最多可以得到 3 个连通块的合法分割。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 3 * 104\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ai, bi < n\n\tvalues.length == n\n\t0 <= values[i] <= 109\n\t1 <= k <= 109\n\tvalues&nbsp;之和可以被 k&nbsp;整除。\n\t输入保证&nbsp;edges&nbsp;是一棵无向树。",
+  "constraints": [
+    "1 <= n <= 3 * 104",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ai, bi < n",
+    "values.length == n",
+    "0 <= values[i] <= 109",
+    "1 <= k <= 109",
+    "values&nbsp;之和可以被 k&nbsp;整除。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "面试题 05.06",
+  "title_cn": "整数转换",
+  "title_en": "Convert Integer LCCI",
+  "slug": "convert-integer-lcci",
+  "difficulty": "Easy",
+  "description": "整数转换。编写一个函数，确定需要改变几个位才能将整数 A 转成整数 B。\n\n示例 1：\n\n 输入：A = 29 （或者 0b11101）, B = 15（或者 0b01111）\n 输出：2\n\n示例 2：\n\n 输入：A = 1，B = 2\n 输出：2\n\n提示:\n\n\tA，B范围在[-2147483648, 2147483647]之间",
+  "constraints": [
+    "A，B范围在[-2147483648, 2147483647]之间"
+  ]
+}

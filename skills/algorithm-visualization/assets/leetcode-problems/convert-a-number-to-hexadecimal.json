@@ -1,0 +1,11 @@
+{
+  "number": "405",
+  "title_cn": "数字转换为十六进制数",
+  "title_en": "Convert a Number to Hexadecimal",
+  "slug": "convert-a-number-to-hexadecimal",
+  "difficulty": "Easy",
+  "description": "给定一个整数，编写一个算法将这个数转换为十六进制数。对于负整数，我们通常使用&nbsp;补码运算&nbsp;方法。\n\n答案字符串中的所有字母都应该是小写字符，并且除了 0 本身之外，答案中不应该有任何前置零。\n\n注意: 不允许使用任何由库提供的将数字直接转换或格式化为十六进制的方法来解决这个问题。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 26\n输出：\"1a\"\n\n示例 2：\n\n输入：num = -1\n输出：\"ffffffff\"\n\n&nbsp;\n\n提示：\n\n\t-231 <= num <= 231 - 1",
+  "constraints": [
+    "-231 <= num <= 231 - 1"
+  ]
+}

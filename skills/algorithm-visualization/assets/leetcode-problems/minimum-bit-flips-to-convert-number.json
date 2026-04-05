@@ -1,0 +1,12 @@
+{
+  "number": "2220",
+  "title_cn": "转换数字的最少位翻转次数",
+  "title_en": "Minimum Bit Flips to Convert Number",
+  "slug": "minimum-bit-flips-to-convert-number",
+  "difficulty": "Easy",
+  "description": "一次 位翻转&nbsp;定义为将数字&nbsp;x&nbsp;二进制中的一个位进行 翻转&nbsp;操作，即将&nbsp;0&nbsp;变成&nbsp;1&nbsp;，或者将&nbsp;1&nbsp;变成&nbsp;0&nbsp;。\n\n\t比方说，x = 7&nbsp;，二进制表示为&nbsp;111&nbsp;，我们可以选择任意一个位（包含没有显示的前导 0 ）并进行翻转。比方说我们可以翻转最右边一位得到&nbsp;110&nbsp;，或者翻转右边起第二位得到&nbsp;101&nbsp;，或者翻转右边起第五位（这一位是前导 0 ）得到&nbsp;10111&nbsp;等等。\n\n给你两个整数&nbsp;start 和&nbsp;goal&nbsp;，请你返回将&nbsp;start&nbsp;转变成&nbsp;goal&nbsp;的&nbsp;最少位翻转&nbsp;次数。\n\n&nbsp;\n\n示例 1：\n\n输入：start = 10, goal = 7\n输出：3\n解释：10 和 7 的二进制表示分别为 1010 和 0111 。我们可以通过 3 步将 10 转变成 7 ：\n- 翻转右边起第一位得到：1010 -> 1011 。\n- 翻转右边起第三位：1011 -> 1111 。\n- 翻转右边起第四位：1111 -> 0111 。\n我们无法在 3 步内将 10 转变成 7 。所以我们返回 3 。\n\n示例 2：\n\n输入：start = 3, goal = 4\n输出：3\n解释：3 和 4 的二进制表示分别为 011 和 100 。我们可以通过 3 步将 3 转变成 4 ：\n- 翻转右边起第一位：011 -> 010 。\n- 翻转右边起第二位：010 -> 000 。\n- 翻转右边起第三位：000 -> 100 。\n我们无法在 3 步内将 3 变成 4 。所以我们返回 3 。\n\n&nbsp;\n\n提示：\n\n\t0 <= start, goal <= 109\n\n&nbsp;\n\n注意：本题与&nbsp;461. 汉明距离&nbsp;相同。",
+  "constraints": [
+    "0 <= start, goal <= 109",
+    "注意：本题与&nbsp;461. 汉明距离&nbsp;相同。"
+  ]
+}

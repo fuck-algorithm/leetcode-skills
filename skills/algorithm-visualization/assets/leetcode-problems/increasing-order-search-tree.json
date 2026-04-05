@@ -1,0 +1,12 @@
+{
+  "number": "897",
+  "title_cn": "递增顺序搜索树",
+  "title_en": "Increasing Order Search Tree",
+  "slug": "increasing-order-search-tree",
+  "difficulty": "Easy",
+  "description": "给你一棵二叉搜索树的&nbsp;root&nbsp;，请你 按中序遍历 将其重新排列为一棵递增顺序搜索树，使树中最左边的节点成为树的根节点，并且每个节点没有左子节点，只有一个右子节点。\n\n&nbsp;\n\n示例 1：\n\n输入：root = [5,3,6,2,4,null,8,1,null,null,null,7,9]\n输出：[1,null,2,null,3,null,4,null,5,null,6,null,7,null,8,null,9]\n\n示例 2：\n\n输入：root = [5,1,7]\n输出：[1,null,5,null,7]\n\n&nbsp;\n\n提示：\n\n\t树中节点数的取值范围是 [1, 100]\n\t0 <= Node.val <= 1000",
+  "constraints": [
+    "树中节点数的取值范围是 [1, 100]",
+    "0 <= Node.val <= 1000"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "number": "273",
+  "title_cn": "整数转换英文表示",
+  "title_en": "Integer to English Words",
+  "slug": "integer-to-english-words",
+  "difficulty": "Hard",
+  "description": "将非负整数 num 转换为其对应的英文表示。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 123\n输出：\"One Hundred Twenty Three\"\n\n示例 2：\n\n输入：num = 12345\n输出：\"Twelve Thousand Three Hundred Forty Five\"\n\n示例 3：\n\n输入：num = 1234567\n输出：\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\"\n\n&nbsp;\n\n提示：\n\n\t0 <= num <= 231 - 1",
+  "constraints": [
+    "0 <= num <= 231 - 1"
+  ]
+}

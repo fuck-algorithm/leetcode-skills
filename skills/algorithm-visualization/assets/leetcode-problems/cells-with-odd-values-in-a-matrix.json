@@ -1,0 +1,14 @@
+{
+  "number": "1252",
+  "title_cn": "奇数值单元格的数目",
+  "title_en": "Cells with Odd Values in a Matrix",
+  "slug": "cells-with-odd-values-in-a-matrix",
+  "difficulty": "Easy",
+  "description": "给你一个 m x n 的矩阵，最开始的时候，每个单元格中的值都是 0。\n\n另有一个二维索引数组 indices，indices[i] = [ri, ci] 指向矩阵中的某个位置，其中 ri 和 ci 分别表示指定的行和列（从 0 开始编号）。\n\n对 indices[i] 所指向的每个位置，应同时执行下述增量操作：\n\n\tri 行上的所有单元格，加 1 。\n\tci 列上的所有单元格，加 1 。\n\n给你 m、n 和 indices 。请你在执行完所有 indices 指定的增量操作后，返回矩阵中 奇数值单元格 的数目。\n\n示例 1：\n\n输入：m = 2, n = 3, indices = [[0,1],[1,1]]\n输出：6\n解释：最开始的矩阵是 [[0,0,0],[0,0,0]]。\n第一次增量操作后得到 [[1,2,1],[0,1,0]]。\n最后的矩阵是 [[1,3,1],[1,3,1]]，里面有 6 个奇数。\n\n示例 2：\n\n输入：m = 2, n = 2, indices = [[1,1],[0,0]]\n输出：0\n解释：最后的矩阵是 [[2,2],[2,2]]，里面没有奇数。\n\n提示：\n\n\t1 \n\t1 \n\t0 i \n\t0 i \n\n进阶：你可以设计一个时间复杂度为 O(n + m + indices.length) 且仅用 O(n + m) 额外空间的算法来解决此问题吗？",
+  "constraints": [
+    "1",
+    "1",
+    "0 i",
+    "0 i"
+  ]
+}

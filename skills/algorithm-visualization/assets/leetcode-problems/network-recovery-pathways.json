@@ -1,0 +1,20 @@
+{
+  "number": "3620",
+  "title_cn": "恢复网络路径",
+  "title_en": "Network Recovery Pathways",
+  "slug": "network-recovery-pathways",
+  "difficulty": "Hard",
+  "description": "给你一个包含 n 个节点（编号从 0 到 n - 1）的有向无环图。图由长度为 m 的二维数组 edges 表示，其中 edges[i] = [ui, vi, costi] 表示从节点 ui 到节点 vi 的单向通信，恢复成本为 costi。\n\n一些节点可能处于离线状态。给定一个布尔数组 online，其中 online[i] = true 表示节点 i 在线。节点 0 和 n - 1 始终在线。\n\n从 0 到 n - 1 的路径如果满足以下条件，那么它是&nbsp;有效&nbsp;的：\n\n\t路径上的所有中间节点都在线。\n\t路径上所有边的总恢复成本不超过 k。\n\n对于每条有效路径，其&nbsp;分数&nbsp;定义为该路径上的最小边成本。\n\n返回所有有效路径中的&nbsp;最大&nbsp;路径分数（即最大&nbsp;最小&nbsp;边成本）。如果没有有效路径，则返回 -1。\n\n&nbsp;\n\n示例 1:\n\n输入: edges = [[0,1,5],[1,3,10],[0,2,3],[2,3,4]], online = [true,true,true,true], k = 10\n\n输出: 3\n\n解释:\n\n\t图中有两条从节点 0 到节点 3 的可能路线：\n\n\t\t路径 0 → 1 → 3\n\n\t\t\t总成本 = 5 + 10 = 15，超过了 k (15 > 10)，因此此路径无效。\n\n\t\t路径 0 → 2 → 3\n\n\t\t\t总成本 = 3 + 4 = 7 <= k，因此此路径有效。\n\n\t\t\t此路径上的最小边成本为 min(3, 4) = 3。\n\n\t没有其他有效路径。因此，所有有效路径分数中的最大值为 3。\n\n示例 2:\n\n输入: edges = [[0,1,7],[1,4,5],[0,2,6],[2,3,6],[3,4,2],[2,4,6]], online = [true,true,true,false,true], k = 12\n\n输出: 6\n\n解释:\n\n\t节点 3 离线，因此任何通过 3 的路径都是无效的。\n\n\t考虑从 0 到 4 的其余路线：\n\n\t\t路径 0 → 1 → 4\n\n\t\t\t总成本 = 7 + 5 = 12 <= k，因此此路径有效。\n\n\t\t\t此路径上的最小边成本为 min(7, 5) = 5。\n\n\t\t路径 0 → 2 → 3 → 4\n\n\t\t\t节点 3 离线，因此无论成本多少，此路径无效。\n\n\t\t路径 0 → 2 → 4\n\n\t\t\t总成本 = 6 + 6 = 12 <= k，因此此路径有效。\n\n\t\t\t此路径上的最小边成本为 min(6, 6) = 6。\n\n\t在两条有效路径中，它们的分数分别为 5 和 6。因此，答案是 6。\n\n&nbsp;\n\n提示:\n\n\tn == online.length\n\t2 <= n <= 5 * 104\n\t0 <= m == edges.length <= min(105, n * (n - 1) / 2)\n\tedges[i] = [ui, vi, costi]\n\t0 <= ui, vi < n\n\tui != vi\n\t0 <= costi <= 109\n\t0 <= k <= 5 * 1013\n\tonline[i] 是 true 或 false，且 online[0] 和 online[n - 1] 均为 true。\n\t给定的图是一个有向无环图。",
+  "constraints": [
+    "n == online.length",
+    "2 <= n <= 5 * 104",
+    "0 <= m == edges.length <= min(105, n * (n - 1) / 2)",
+    "edges[i] = [ui, vi, costi]",
+    "0 <= ui, vi < n",
+    "ui != vi",
+    "0 <= costi <= 109",
+    "0 <= k <= 5 * 1013",
+    "online[i] 是 true 或 false，且 online[0] 和 online[n - 1] 均为 true。",
+    "给定的图是一个有向无环图。"
+  ]
+}

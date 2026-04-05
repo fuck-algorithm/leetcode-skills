@@ -1,0 +1,12 @@
+{
+  "number": "3185",
+  "title_cn": "构成整天的下标对数目 II",
+  "title_en": "Count Pairs That Form a Complete Day II",
+  "slug": "count-pairs-that-form-a-complete-day-ii",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组 hours，表示以 小时 为单位的时间，返回一个整数，表示满足 i < j 且 hours[i] + hours[j] 构成 整天 的下标对&nbsp;i, j 的数目。\n\n整天 定义为时间持续时间是 24 小时的 整数倍 。\n\n例如，1 天是 24 小时，2 天是 48 小时，3 天是 72 小时，以此类推。\n\n&nbsp;\n\n示例 1：\n\n输入： hours = [12,12,30,24,24]\n\n输出： 2\n\n解释：\n\n构成整天的下标对分别是 (0, 1) 和 (3, 4)。\n\n示例 2：\n\n输入： hours = [72,48,24,3]\n\n输出： 3\n\n解释：\n\n构成整天的下标对分别是 (0, 1)、(0, 2) 和 (1, 2)。\n\n&nbsp;\n\n提示：\n\n\t1 <= hours.length <= 5 * 105\n\t1 <= hours[i] <= 109",
+  "constraints": [
+    "1 <= hours.length <= 5 * 105",
+    "1 <= hours[i] <= 109"
+  ]
+}

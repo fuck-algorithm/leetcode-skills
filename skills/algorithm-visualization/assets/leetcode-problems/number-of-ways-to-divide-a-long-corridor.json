@@ -1,0 +1,13 @@
+{
+  "number": "2147",
+  "title_cn": "分隔长廊的方案数",
+  "title_en": "Number of Ways to Divide a Long Corridor",
+  "slug": "number-of-ways-to-divide-a-long-corridor",
+  "difficulty": "Hard",
+  "description": "在一个图书馆的长廊里，有一些座位和装饰植物排成一列。给你一个下标从 0&nbsp;开始，长度为 n&nbsp;的字符串&nbsp;corridor&nbsp;，它包含字母&nbsp;'S' 和&nbsp;'P'&nbsp;，其中每个&nbsp;'S'&nbsp;表示一个座位，每个&nbsp;'P'&nbsp;表示一株植物。\n\n在下标 0&nbsp;的左边和下标 n - 1&nbsp;的右边 已经&nbsp;分别各放了一个屏风。你还需要额外放置一些屏风。每一个位置&nbsp;i - 1 和&nbsp;i&nbsp;之间（1 <= i <= n - 1），至多能放一个屏风。\n\n请你将走廊用屏风划分为若干段，且每一段内都 恰好有两个座位&nbsp;，而每一段内植物的数目没有要求。可能有多种划分方案，如果两个方案中有任何一个屏风的位置不同，那么它们被视为 不同 方案。\n\n请你返回划分走廊的方案数。由于答案可能很大，请你返回它对&nbsp;109 + 7&nbsp;取余&nbsp;的结果。如果没有任何方案，请返回&nbsp;0&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：corridor = \"SSPPSPS\"\n输出：3\n解释：总共有 3 种不同分隔走廊的方案。\n上图中黑色的竖线表示已经放置好的屏风。\n上图每种方案中，每一段都恰好有 两个&nbsp;座位。\n\n示例 2：\n\n输入：corridor = \"PPSPSP\"\n输出：1\n解释：只有 1 种分隔走廊的方案，就是不放置任何屏风。\n放置任何的屏风都会导致有一段无法恰好有 2 个座位。\n\n示例 3：\n\n输入：corridor = \"S\"\n输出：0\n解释：没有任何方案，因为总是有一段无法恰好有 2 个座位。\n\n&nbsp;\n\n提示：\n\n\tn == corridor.length\n\t1 <= n <= 105\n\tcorridor[i]&nbsp;要么是&nbsp;'S'&nbsp;，要么是&nbsp;'P' 。",
+  "constraints": [
+    "n == corridor.length",
+    "1 <= n <= 105",
+    "corridor[i]&nbsp;要么是&nbsp;'S'&nbsp;，要么是&nbsp;'P' 。"
+  ]
+}

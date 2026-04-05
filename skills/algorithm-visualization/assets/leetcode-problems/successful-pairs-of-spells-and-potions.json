@@ -1,0 +1,15 @@
+{
+  "number": "2300",
+  "title_cn": "咒语和药水的成功对数",
+  "title_en": "Successful Pairs of Spells and Potions",
+  "slug": "successful-pairs-of-spells-and-potions",
+  "difficulty": "Medium",
+  "description": "给你两个正整数数组&nbsp;spells 和&nbsp;potions&nbsp;，长度分别为&nbsp;n 和&nbsp;m&nbsp;，其中&nbsp;spells[i]&nbsp;表示第&nbsp;i&nbsp;个咒语的能量强度，potions[j]&nbsp;表示第&nbsp;j&nbsp;瓶药水的能量强度。\n\n同时给你一个整数&nbsp;success&nbsp;。一个咒语和药水的能量强度 相乘 如果&nbsp;大于等于&nbsp;success&nbsp;，那么它们视为一对&nbsp;成功&nbsp;的组合。\n\n请你返回一个长度为 n&nbsp;的整数数组&nbsp;pairs，其中&nbsp;pairs[i]&nbsp;是能跟第 i&nbsp;个咒语成功组合的 药水&nbsp;数目。\n\n&nbsp;\n\n示例 1：\n\n输入：spells = [5,1,3], potions = [1,2,3,4,5], success = 7\n输出：[4,0,3]\n解释：\n- 第 0 个咒语：5 * [1,2,3,4,5] = [5,10,15,20,25] 。总共 4 个成功组合。\n- 第 1 个咒语：1 * [1,2,3,4,5] = [1,2,3,4,5] 。总共 0 个成功组合。\n- 第 2 个咒语：3 * [1,2,3,4,5] = [3,6,9,12,15] 。总共 3 个成功组合。\n所以返回 [4,0,3] 。\n\n示例 2：\n\n输入：spells = [3,1,2], potions = [8,5,8], success = 16\n输出：[2,0,2]\n解释：\n- 第 0 个咒语：3 * [8,5,8] = [24,15,24] 。总共 2 个成功组合。\n- 第 1 个咒语：1 * [8,5,8] = [8,5,8] 。总共 0 个成功组合。\n- 第 2 个咒语：2 * [8,5,8] = [16,10,16] 。总共 2 个成功组合。\n所以返回 [2,0,2] 。\n\n&nbsp;\n\n提示：\n\n\tn == spells.length\n\tm == potions.length\n\t1 <= n, m <= 105\n\t1 <= spells[i], potions[i] <= 105\n\t1 <= success <= 1010",
+  "constraints": [
+    "n == spells.length",
+    "m == potions.length",
+    "1 <= n, m <= 105",
+    "1 <= spells[i], potions[i] <= 105",
+    "1 <= success <= 1010"
+  ]
+}

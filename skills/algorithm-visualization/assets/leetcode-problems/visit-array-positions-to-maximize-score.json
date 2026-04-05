@@ -1,0 +1,12 @@
+{
+  "number": "2786",
+  "title_cn": "访问数组中的位置使分数最大",
+  "title_en": "Visit Array Positions to Maximize Score",
+  "slug": "visit-array-positions-to-maximize-score",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;和一个正整数&nbsp;x&nbsp;。\n\n你 一开始&nbsp;在数组的位置 0&nbsp;处，你可以按照下述规则访问数组中的其他位置：\n\n\t如果你当前在位置&nbsp;i&nbsp;，那么你可以移动到满足&nbsp;i < j&nbsp;的&nbsp;任意&nbsp;位置&nbsp;j&nbsp;。\n\t对于你访问的位置 i&nbsp;，你可以获得分数&nbsp;nums[i]&nbsp;。\n\t如果你从位置 i&nbsp;移动到位置 j&nbsp;且&nbsp;nums[i] 和&nbsp;nums[j]&nbsp;的 奇偶性&nbsp;不同，那么你将失去分数&nbsp;x&nbsp;。\n\n请你返回你能得到的 最大&nbsp;得分之和。\n\n注意&nbsp;，你一开始的分数为&nbsp;nums[0]&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,6,1,9,2], x = 5\n输出：13\n解释：我们可以按顺序访问数组中的位置：0 -> 2 -> 3 -> 4 。\n对应位置的值为 2 ，6 ，1 和 9 。因为 6 和 1 的奇偶性不同，所以下标从 2 -> 3 让你失去 x = 5 分。\n总得分为：2 + 6 + 1 + 9 - 5 = 13 。\n\n示例 2：\n\n输入：nums = [2,4,6,8], x = 3\n输出：20\n解释：数组中的所有元素奇偶性都一样，所以我们可以将每个元素都访问一次，而且不会失去任何分数。\n总得分为：2 + 4 + 6 + 8 = 20 。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 105\n\t1 <= nums[i], x <= 106",
+  "constraints": [
+    "2 <= nums.length <= 105",
+    "1 <= nums[i], x <= 106"
+  ]
+}

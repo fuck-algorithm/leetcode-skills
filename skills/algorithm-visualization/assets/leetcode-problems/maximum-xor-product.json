@@ -1,0 +1,12 @@
+{
+  "number": "2939",
+  "title_cn": "最大异或乘积",
+  "title_en": "Maximum Xor Product",
+  "slug": "maximum-xor-product",
+  "difficulty": "Medium",
+  "description": "给你三个整数&nbsp;a&nbsp;，b&nbsp;和&nbsp;n&nbsp;，请你返回&nbsp;(a XOR x) * (b XOR x)&nbsp;的&nbsp;最大值&nbsp;且 x&nbsp;需要满足 0 <= x < 2n。\n\n由于答案可能会很大，返回它对&nbsp;109 + 7&nbsp;取余&nbsp;后的结果。\n\n注意，XOR&nbsp;是按位异或操作。\n\n&nbsp;\n\n示例 1：\n\n输入：a = 12, b = 5, n = 4\n输出：98\n解释：当 x = 2 时，(a XOR x) = 14 且 (b XOR x) = 7 。所以，(a XOR x) * (b XOR x) = 98 。\n98 是所有满足 0 <= x < 2n 中 (a XOR x) * (b XOR x) 的最大值。\n\n示例 2：\n\n输入：a = 6, b = 7 , n = 5\n输出：930\n解释：当 x = 25 时，(a XOR x) = 31 且 (b XOR x) = 30 。所以，(a XOR x) * (b XOR x) = 930 。\n930 是所有满足 0 <= x < 2n 中 (a XOR x) * (b XOR x) 的最大值。\n\n示例 3：\n\n输入：a = 1, b = 6, n = 3\n输出：12\n解释： 当 x = 5 时，(a XOR x) = 4 且 (b XOR x) = 3 。所以，(a XOR x) * (b XOR x) = 12 。\n12 是所有满足 0 <= x < 2n 中 (a XOR x) * (b XOR x) 的最大值。\n\n&nbsp;\n\n提示：\n\n\t0 <= a, b < 250\n\t0 <= n <= 50",
+  "constraints": [
+    "0 <= a, b < 250",
+    "0 <= n <= 50"
+  ]
+}

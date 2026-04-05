@@ -1,0 +1,13 @@
+{
+  "number": "2818",
+  "title_cn": "操作使得分最大",
+  "title_en": "Apply Operations to Maximize Score",
+  "slug": "apply-operations-to-maximize-score",
+  "difficulty": "Hard",
+  "description": "给你一个长度为 n&nbsp;的正整数数组&nbsp;nums&nbsp;和一个整数 k&nbsp;。\n\n一开始，你的分数为 1&nbsp;。你可以进行以下操作至多 k&nbsp;次，目标是使你的分数最大：\n\n\t选择一个之前没有选过的 非空&nbsp;子数组&nbsp;nums[l, ..., r]&nbsp;。\n\t从&nbsp;nums[l, ..., r]&nbsp;里面选择一个 质数分数&nbsp;最高的元素 x&nbsp;。如果多个元素质数分数相同且最高，选择下标最小的一个。\n\t将你的分数乘以&nbsp;x&nbsp;。\n\nnums[l, ..., r]&nbsp;表示&nbsp;nums&nbsp;中起始下标为&nbsp;l&nbsp;，结束下标为 r&nbsp;的子数组，两个端点都包含。\n\n一个整数的 质数分数&nbsp;等于&nbsp;x&nbsp;不同质因子的数目。比方说，&nbsp;300&nbsp;的质数分数为&nbsp;3&nbsp;，因为&nbsp;300 = 2 * 2 * 3 * 5 * 5&nbsp;。\n\n请你返回进行至多 k&nbsp;次操作后，可以得到的 最大分数&nbsp;。\n\n由于答案可能很大，请你将结果对&nbsp;109 + 7&nbsp;取余后返回。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [8,3,9,3,8], k = 2\n输出：81\n解释：进行以下操作可以得到分数 81 ：\n- 选择子数组 nums[2, ..., 2] 。nums[2] 是子数组中唯一的元素。所以我们将分数乘以 nums[2] ，分数变为 1 * 9 = 9 。\n- 选择子数组 nums[2, ..., 3] 。nums[2] 和 nums[3] 质数分数都为 1 ，但是 nums[2] 下标更小。所以我们将分数乘以 nums[2] ，分数变为 9 * 9 = 81 。\n81 是可以得到的最高得分。\n\n示例 2：\n\n输入：nums = [19,12,14,6,10,18], k = 3\n输出：4788\n解释：进行以下操作可以得到分数 4788 ：\n- 选择子数组 nums[0, ..., 0] 。nums[0] 是子数组中唯一的元素。所以我们将分数乘以 nums[0] ，分数变为 1 * 19 = 19 。\n- 选择子数组 nums[5, ..., 5] 。nums[5] 是子数组中唯一的元素。所以我们将分数乘以 nums[5] ，分数变为 19 * 18 = 342 。\n- 选择子数组 nums[2, ..., 3] 。nums[2] 和 nums[3] 质数分数都为 2，但是 nums[2] 下标更小。所以我们将分数乘以 nums[2] ，分数变为  342 * 14 = 4788 。\n4788 是可以得到的最高的分。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length == n <= 105\n\t1 <= nums[i] <= 105\n\t1 <= k <= min(n * (n + 1) / 2, 109)",
+  "constraints": [
+    "1 <= nums.length == n <= 105",
+    "1 <= nums[i] <= 105",
+    "1 <= k <= min(n * (n + 1) / 2, 109)"
+  ]
+}

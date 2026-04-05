@@ -1,0 +1,16 @@
+{
+  "number": "321",
+  "title_cn": "拼接最大数",
+  "title_en": "Create Maximum Number",
+  "slug": "create-maximum-number",
+  "difficulty": "Hard",
+  "description": "给你两个整数数组 nums1 和 nums2，它们的长度分别为 m 和 n。数组 nums1 和 nums2 分别代表两个数各位上的数字。同时你也会得到一个整数 k。\n\n请你利用这两个数组中的数字创建一个长度为 k <= m + n 的最大数。同一数组中数字的相对顺序必须保持不变。\n\n返回代表答案的长度为 k 的数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [3,4,6,5], nums2 = [9,1,2,5,8,3], k = 5\n输出：[9,8,6,5,3]\n\n示例 2：\n\n输入：nums1 = [6,7], nums2 = [6,0,4], k = 5\n输出：[6,7,6,0,4]\n\n示例 3：\n\n输入：nums1 = [3,9], nums2 = [8,9], k = 3\n输出：[9,8,9]\n\n&nbsp;\n\n提示：\n\n\tm == nums1.length\n\tn == nums2.length\n\t1 <= m, n <= 500\n\t0 <= nums1[i], nums2[i] <= 9\n\t1 <= k <= m + n\n\tnums1&nbsp;和&nbsp;nums2 没有前导 0。",
+  "constraints": [
+    "m == nums1.length",
+    "n == nums2.length",
+    "1 <= m, n <= 500",
+    "0 <= nums1[i], nums2[i] <= 9",
+    "1 <= k <= m + n",
+    "nums1&nbsp;和&nbsp;nums2 没有前导 0。"
+  ]
+}

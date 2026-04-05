@@ -1,0 +1,13 @@
+{
+  "number": "2540",
+  "title_cn": "最小公共值",
+  "title_en": "Minimum Common Value",
+  "slug": "minimum-common-value",
+  "difficulty": "Easy",
+  "description": "给你两个整数数组&nbsp;nums1 和&nbsp;nums2&nbsp;，它们已经按非降序排序，请你返回两个数组的 最小公共整数&nbsp;。如果两个数组&nbsp;nums1 和&nbsp;nums2&nbsp;没有公共整数，请你返回&nbsp;-1&nbsp;。\n\n如果一个整数在两个数组中都 至少出现一次&nbsp;，那么这个整数是数组&nbsp;nums1 和&nbsp;nums2&nbsp;公共&nbsp;的。\n\n&nbsp;\n\n示例 1：\n\n输入：nums1 = [1,2,3], nums2 = [2,4]\n输出：2\n解释：两个数组的最小公共元素是 2 ，所以我们返回 2 。\n\n示例 2：\n\n输入：nums1 = [1,2,3,6], nums2 = [2,3,4,5]\n输出：2\n解释：两个数组中的公共元素是 2 和 3 ，2 是较小值，所以返回 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums1.length, nums2.length <= 105\n\t1 <= nums1[i], nums2[j] <= 109\n\tnums1 和&nbsp;nums2&nbsp;都是 非降序&nbsp;的。",
+  "constraints": [
+    "1 <= nums1.length, nums2.length <= 105",
+    "1 <= nums1[i], nums2[j] <= 109",
+    "nums1 和&nbsp;nums2&nbsp;都是 非降序&nbsp;的。"
+  ]
+}

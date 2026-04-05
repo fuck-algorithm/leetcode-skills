@@ -1,0 +1,12 @@
+{
+  "number": "1413",
+  "title_cn": "逐步求和得到正数的最小值",
+  "title_en": "Minimum Value to Get Positive Step by Step Sum",
+  "slug": "minimum-value-to-get-positive-step-by-step-sum",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums&nbsp;。你可以选定任意的&nbsp;正数 startValue 作为初始值。\n\n你需要从左到右遍历 nums&nbsp;数组，并将 startValue 依次累加上&nbsp;nums&nbsp;数组中的值。\n\n请你在确保累加和始终大于等于 1 的前提下，选出一个最小的&nbsp;正数&nbsp;作为 startValue 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [-3,2,-3,4,2]\n输出：5\n解释：如果你选择 startValue = 4，在第三次累加时，和小于 1 。\n                累加求和\n&nbsp;               startValue = 4 | startValue = 5 | nums\n&nbsp;                 (4 -3 ) = 1  | (5 -3 ) = 2    |  -3\n&nbsp;                 (1 +2 ) = 3  | (2 +2 ) = 4    |   2\n&nbsp;                 (3 -3 ) = 0  | (4 -3 ) = 1    |  -3\n&nbsp;                 (0 +4 ) = 4  | (1 +4 ) = 5    |   4\n&nbsp;                 (4 +2 ) = 6  | (5 +2 ) = 7    |   2\n\n示例 2：\n\n输入：nums = [1,2]\n输出：1\n解释：最小的 startValue 需要是正数。\n\n示例 3：\n\n输入：nums = [1,-2,-3]\n输出：5\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t-100 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "-100 <= nums[i] <= 100"
+  ]
+}

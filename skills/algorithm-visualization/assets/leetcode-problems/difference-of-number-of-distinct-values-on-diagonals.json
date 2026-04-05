@@ -1,0 +1,13 @@
+{
+  "number": "2711",
+  "title_cn": "对角线上不同值的数量差",
+  "title_en": "Difference of Number of Distinct Values on Diagonals",
+  "slug": "difference-of-number-of-distinct-values-on-diagonals",
+  "difficulty": "Medium",
+  "description": "给你一个下标从 0 开始、大小为 m x n 的二维矩阵 grid ，请你求解大小同样为 m x n 的答案矩阵 answer 。\n\n矩阵 answer 中每个单元格 (r, c) 的值可以按下述方式进行计算：\n\n\t令 topLeft[r][c] 为矩阵 grid 中单元格 (r, c) 左上角对角线上 不同值 的数量。\n\t令 bottomRight[r][c] 为矩阵 grid 中单元格 (r, c) 右下角对角线上 不同值 的数量。\n\n然后 answer[r][c] = |topLeft[r][c] - bottomRight[r][c]| 。\n\n返回矩阵 answer 。\n\n矩阵对角线 是从最顶行或最左列的某个单元格开始，向右下方向走到矩阵末尾的对角线。\n\n如果单元格 (r1, c1) 和单元格 (r, c) 属于同一条对角线且 r1 < r ，则单元格 (r1, c1) 属于单元格 (r, c) 的左上对角线。类似地，可以定义右下对角线。\n\n&nbsp;\n\n示例 1：\n\n输入：grid = [[1,2,3],[3,1,5],[3,2,1]]\n输出：[[1,1,0],[1,0,1],[0,1,1]]\n解释：第 1 个图表示最初的矩阵 grid 。&nbsp;\n第 2 个图表示对单元格 (0,0) 计算，其中蓝色单元格是位于右下对角线的单元格。\n第 3 个图表示对单元格 (1,2) 计算，其中红色单元格是位于左上对角线的单元格。\n第 4 个图表示对单元格 (1,1) 计算，其中蓝色单元格是位于右下对角线的单元格，红色单元格是位于左上对角线的单元格。\n- 单元格 (0,0) 的右下对角线包含 [1,1] ，而左上对角线包含 [] 。对应答案是 |1 - 0| = 1 。\n- 单元格 (1,2) 的右下对角线包含 [] ，而左上对角线包含 [2] 。对应答案是 |0 - 1| = 1 。\n- 单元格 (1,1) 的右下对角线包含 [1] ，而左上对角线包含 [1] 。对应答案是 |1 - 1| = 0 。\n其他单元格的对应答案也可以按照这样的流程进行计算。\n\n示例 2：\n\n输入：grid = [[1]]\n输出：[[0]]\n解释：- 单元格 (0,0) 的右下对角线包含 [] ，左上对角线包含 [] 。对应答案是 |0 - 0| = 0 。\n\n&nbsp;\n\n提示：\n\n\tm == grid.length\n\tn == grid[i].length\n\t1 <= m, n, grid[i][j] <= 50",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n, grid[i][j] <= 50"
+  ]
+}

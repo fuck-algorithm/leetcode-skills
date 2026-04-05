@@ -1,0 +1,12 @@
+{
+  "number": "539",
+  "title_cn": "最小时间差",
+  "title_en": "Minimum Time Difference",
+  "slug": "minimum-time-difference",
+  "difficulty": "Medium",
+  "description": "给定一个 24 小时制（小时:分钟 \"HH:MM\"）的时间列表，找出列表中任意两个时间的最小时间差并以分钟数表示。\n\n&nbsp;\n\n示例 1：\n\n输入：timePoints = [\"23:59\",\"00:00\"]\n输出：1\n\n示例 2：\n\n输入：timePoints = [\"00:00\",\"23:59\",\"00:00\"]\n输出：0\n\n&nbsp;\n\n提示：\n\n\t2 <= timePoints.length <= 2 * 104\n\ttimePoints[i] 格式为 \"HH:MM\"",
+  "constraints": [
+    "2 <= timePoints.length <= 2 * 104",
+    "timePoints[i] 格式为 \"HH:MM\""
+  ]
+}

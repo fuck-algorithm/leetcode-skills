@@ -1,0 +1,15 @@
+{
+  "number": "363",
+  "title_cn": "矩形区域不超过 K 的最大数值和",
+  "title_en": "Max Sum of Rectangle No Larger Than K",
+  "slug": "max-sum-of-rectangle-no-larger-than-k",
+  "difficulty": "Hard",
+  "description": "给你一个 m x n 的矩阵 matrix 和一个整数 k ，找出并返回矩阵内部矩形区域的不超过 k 的最大数值和。\n\n题目数据保证总会存在一个数值和不超过 k 的矩形区域。\n\n示例 1：\n\n输入：matrix = [[1,0,1],[0,-2,3]], k = 2\n输出：2\n解释：蓝色边框圈出来的矩形区域 [[0, 1], [-2, 3]] 的数值和是 2，且 2 是不超过 k 的最大数字（k = 2）。\n\n示例 2：\n\n输入：matrix = [[2,2,-1]], k = 3\n输出：3\n\n提示：\n\n\tm == matrix.length\n\tn == matrix[i].length\n\t1 \n\t-100 \n\t-105 5\n\n进阶：如果行数远大于列数，该如何设计解决方案？",
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1",
+    "-100",
+    "-105 5"
+  ]
+}

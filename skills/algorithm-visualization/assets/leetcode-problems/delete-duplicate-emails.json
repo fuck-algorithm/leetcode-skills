@@ -1,0 +1,9 @@
+{
+  "number": "196",
+  "title_cn": "删除重复的电子邮箱",
+  "title_en": "Delete Duplicate Emails",
+  "slug": "delete-duplicate-emails",
+  "difficulty": "Easy",
+  "description": "表:&nbsp;Person\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| id          | int     |\n| email       | varchar |\n+-------------+---------+\nid 是该表的主键列(具有唯一值的列)。\n该表的每一行包含一封电子邮件。电子邮件将不包含大写字母。\n\n&nbsp;\n\n编写解决方案 删除 所有重复的电子邮件，只保留一个具有最小 id 的唯一电子邮件。\n\n（对于 SQL 用户，请注意你应该编写一个 DELETE 语句而不是 SELECT 语句。）\n\n（对于 Pandas 用户，请注意你应该直接修改 Person 表。）\n\n运行脚本后，显示的答案是 Person 表。驱动程序将首先编译并运行您的代码片段，然后再显示 Person 表。Person 表的最终顺序 无关紧要 。\n\n返回结果格式如下示例所示。\n\n&nbsp;\n\n示例 1:\n\n输入: \nPerson 表:\n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n| 3  | john@example.com |\n+----+------------------+\n输出: \n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n+----+------------------+\n解释: john@example.com重复两次。我们保留最小的Id = 1。",
+  "constraints": []
+}

@@ -1,0 +1,12 @@
+{
+  "number": "3409",
+  "title_cn": "最长相邻绝对差递减子序列",
+  "title_en": "Longest Subsequence With Decreasing Adjacent Difference",
+  "slug": "longest-subsequence-with-decreasing-adjacent-difference",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。\n\n你的任务是找到 nums&nbsp;中的 最长 子序列&nbsp;seq&nbsp;，这个子序列中相邻元素的 绝对差&nbsp;构成一个 非递增&nbsp;整数序列。换句话说，nums&nbsp;中的序列&nbsp;seq0, seq1, seq2, ..., seqm&nbsp;满足&nbsp;|seq1 - seq0| >= |seq2 - seq1| >= ... >= |seqm - seqm - 1|&nbsp;。\n\n请你返回这个子序列的长度。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [16,6,3]\n\n输出：3\n\n解释：\n\n最长子序列是&nbsp;[16, 6, 3]&nbsp;，相邻绝对差值为&nbsp;[10, 3]&nbsp;。\n\n示例 2：\n\n输入：nums = [6,5,3,4,2,1]\n\n输出：4\n\n解释：\n\n最长子序列是&nbsp;[6, 4, 2, 1]&nbsp;，相邻绝对差值为&nbsp;[2, 2, 1]&nbsp;。\n\n示例 3：\n\n输入：nums = [10,20,10,19,10,20]\n\n输出：5\n\n解释：\n\n最长子序列是&nbsp;[10, 20, 10, 19, 10]&nbsp;，相邻绝对差值为&nbsp;[10, 10, 9, 9]&nbsp;。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 104\n\t1 <= nums[i] <= 300",
+  "constraints": [
+    "2 <= nums.length <= 104",
+    "1 <= nums[i] <= 300"
+  ]
+}

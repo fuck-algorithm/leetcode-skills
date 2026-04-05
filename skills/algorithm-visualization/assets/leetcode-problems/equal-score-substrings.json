@@ -1,0 +1,12 @@
+{
+  "number": "3707",
+  "title_cn": "相等子字符串分数",
+  "title_en": "Equal Score Substrings",
+  "slug": "equal-score-substrings",
+  "difficulty": "Easy",
+  "description": "给你一个由小写英文字母组成的字符串 s。\n\n一个字符串的&nbsp;得分&nbsp;是其字符在字母表中的位置之和，其中 'a' = 1，'b' = 2，...，'z' = 26。\n\n请你判断是否存在一个下标&nbsp;i，使得该字符串可以被拆分成两个&nbsp;非空子字符串 s[0..i] 和 s[(i + 1)..(n - 1)]，且它们的得分&nbsp;相等&nbsp;。\n\n如果存在这样的拆分，则返回 true，否则返回 false。\n\n一个&nbsp;子字符串&nbsp;是字符串中&nbsp;非空&nbsp;的连续字符序列。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"adcb\"\n\n输出: true\n\n解释:\n\n在下标&nbsp;i = 1 处拆分：\n\n\t左子字符串 = s[0..1] = \"ad\"，得分 =&nbsp;1 + 4 = 5\n\t右子字符串 = s[2..3] = \"cb\"，得分 = 3 + 2 = 5\n\n两个子字符串的得分相等，因此输出为 true。\n\n示例 2:\n\n输入: s = \"bace\"\n\n输出: false\n\n解释:​​​​​​\n\n没有拆分能产生相等的得分，因此输出为 false。\n\n&nbsp;\n\n提示:\n\n\t2 <= s.length <= 100\n\ts 由小写英文字母组成。",
+  "constraints": [
+    "2 <= s.length <= 100",
+    "s 由小写英文字母组成。"
+  ]
+}

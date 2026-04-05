@@ -1,0 +1,12 @@
+{
+  "number": "2749",
+  "title_cn": "得到整数零需要执行的最少操作数",
+  "title_en": "Minimum Operations to Make the Integer Zero",
+  "slug": "minimum-operations-to-make-the-integer-zero",
+  "difficulty": "Medium",
+  "description": "给你两个整数：num1 和 num2 。\n\n在一步操作中，你需要从范围&nbsp;[0, 60] 中选出一个整数 i ，并从 num1 减去 2i + num2 。\n\n请你计算，要想使 num1 等于 0 需要执行的最少操作数，并以整数形式返回。\n\n如果无法使 num1 等于 0 ，返回 -1 。\n\n&nbsp;\n\n示例 1：\n\n输入：num1 = 3, num2 = -2\n输出：3\n解释：可以执行下述步骤使 3 等于 0 ：\n- 选择 i = 2 ，并从 3 减去 22 + (-2) ，num1 = 3 - (4 + (-2)) = 1 。\n- 选择 i = 2 ，并从 1 减去 22 + (-2) ，num1 = 1 - (4 + (-2)) = -1 。\n- 选择 i = 0 ，并从 -1 减去 20&nbsp;+ (-2) ，num1 = (-1) - (1 + (-2)) = 0 。\n可以证明 3 是需要执行的最少操作数。\n\n示例 2：\n\n输入：num1 = 5, num2 = 7\n输出：-1\n解释：可以证明，执行操作无法使 5 等于 0 。\n\n&nbsp;\n\n提示：\n\n\t1 <= num1 <= 109\n\t-109&nbsp;<= num2 <= 109",
+  "constraints": [
+    "1 <= num1 <= 109",
+    "-109&nbsp;<= num2 <= 109"
+  ]
+}

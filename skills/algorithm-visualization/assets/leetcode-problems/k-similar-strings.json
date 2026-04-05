@@ -1,0 +1,14 @@
+{
+  "number": "854",
+  "title_cn": "相似度为 K 的字符串",
+  "title_en": "K-Similar Strings",
+  "slug": "k-similar-strings",
+  "difficulty": "Hard",
+  "description": "对于某些非负整数 k ，如果交换 s1 中两个字母的位置恰好 k 次，能够使结果字符串等于 s2 ，则认为字符串 s1 和 s2 的 相似度为 k 。\n\n给你两个字母异位词 s1 和 s2 ，返回 s1 和 s2 的相似度 k 的最小值。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"ab\", s2 = \"ba\"\n输出：1\n\n示例 2：\n\n输入：s1 = \"abc\", s2 = \"bca\"\n输出：2\n\n&nbsp;\n\n提示：\n\n\t1 <= s1.length <= 20\n\ts2.length == s1.length\n\ts1&nbsp;和&nbsp;s2&nbsp;&nbsp;只包含集合&nbsp;{'a', 'b', 'c', 'd', 'e', 'f'}&nbsp;中的小写字母\n\ts2 是 s1 的一个字母异位词",
+  "constraints": [
+    "1 <= s1.length <= 20",
+    "s2.length == s1.length",
+    "s1&nbsp;和&nbsp;s2&nbsp;&nbsp;只包含集合&nbsp;{'a', 'b', 'c', 'd', 'e', 'f'}&nbsp;中的小写字母",
+    "s2 是 s1 的一个字母异位词"
+  ]
+}

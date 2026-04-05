@@ -1,0 +1,14 @@
+{
+  "number": "3598",
+  "title_cn": "相邻字符串之间的最长公共前缀",
+  "title_en": "Longest Common Prefix Between Adjacent Strings After Removals",
+  "slug": "longest-common-prefix-between-adjacent-strings-after-removals",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 words，对于范围 [0, words.length - 1] 内的每个下标&nbsp;i，执行以下步骤：\n\n\t从 words 数组中移除下标&nbsp;i 处的元素。\n\t计算修改后的数组中所有&nbsp;相邻对&nbsp;之间的&nbsp;最长公共前缀&nbsp;的长度。\n\n返回一个数组 answer，其中 answer[i] 是移除下标&nbsp;i 后，相邻对之间最长公共前缀的长度。如果 不存在&nbsp;相邻对，或者&nbsp;不存在&nbsp;公共前缀，则 answer[i] 应为 0。\n\n字符串的前缀是从字符串的开头开始延伸到任意位置的子字符串。\n\n&nbsp;\n\n示例 1：\n\n输入： words = [\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n\n输出： [3,0,0,3,3]\n\n解释：\n\n\t移除下标&nbsp;0：\n\n\t\twords 变为 [\"run\", \"run\", \"jump\", \"run\"]\n\t\t最长的相邻对是 [\"run\", \"run\"]，其公共前缀为 \"run\"（长度为 3）\n\n\t移除下标&nbsp;1：\n\n\t\twords 变为 [\"jump\", \"run\", \"jump\", \"run\"]\n\t\t没有相邻对有公共前缀（长度为 0）\n\n\t移除下标&nbsp;2：\n\n\t\twords 变为 [\"jump\", \"run\", \"jump\", \"run\"]\n\t\t没有相邻对有公共前缀（长度为 0）\n\n\t移除下标&nbsp;3：\n\n\t\twords 变为 [\"jump\", \"run\", \"run\", \"run\"]\n\t\t最长的相邻对是 [\"run\", \"run\"]，其公共前缀为 \"run\"（长度为 3）\n\n\t移除下标&nbsp;4：\n\n\t\twords 变为 [\"jump\", \"run\", \"run\", \"jump\"]\n\t\t最长的相邻对是 [\"run\", \"run\"]，其公共前缀为 \"run\"（长度为 3）\n\n示例 2：\n\n输入： words = [\"dog\",\"racer\",\"car\"]\n\n输出： [0,0,0]\n\n解释：\n\n\t移除任意下标都会导致答案为 0。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 105\n\t1 <= words[i].length <= 104\n\twords[i] 仅由小写英文字母组成。\n\twords[i] 的长度总和不超过 105。",
+  "constraints": [
+    "1 <= words.length <= 105",
+    "1 <= words[i].length <= 104",
+    "words[i] 仅由小写英文字母组成。",
+    "words[i] 的长度总和不超过 105。"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "number": "812",
+  "title_cn": "最大三角形面积",
+  "title_en": "Largest Triangle Area",
+  "slug": "largest-triangle-area",
+  "difficulty": "Easy",
+  "description": "给你一个由 X-Y 平面上的点组成的数组 points ，其中 points[i] = [xi, yi] 。从其中取任意三个不同的点组成三角形，返回能组成的最大三角形的面积。与真实值误差在 10-5 内的答案将会视为正确答案。\n\n&nbsp;\n\n示例 1：\n\n输入：points = [[0,0],[0,1],[1,0],[0,2],[2,0]]\n输出：2.00000\n解释：输入中的 5 个点如上图所示，红色的三角形面积最大。\n\n示例 2：\n\n输入：points = [[1,0],[0,0],[0,1]]\n输出：0.50000\n\n&nbsp;\n\n提示：\n\n\t3 <= points.length <= 50\n\t-50 <= xi, yi <= 50\n\t给出的所有点 互不相同",
+  "constraints": [
+    "3 <= points.length <= 50",
+    "-50 <= xi, yi <= 50",
+    "给出的所有点 互不相同"
+  ]
+}

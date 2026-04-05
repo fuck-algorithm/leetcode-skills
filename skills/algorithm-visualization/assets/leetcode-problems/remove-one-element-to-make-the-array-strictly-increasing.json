@@ -1,0 +1,12 @@
+{
+  "number": "1909",
+  "title_cn": "删除一个元素使数组严格递增",
+  "title_en": "Remove One Element to Make the Array Strictly Increasing",
+  "slug": "remove-one-element-to-make-the-array-strictly-increasing",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始的整数数组 nums ，如果 恰好 删除 一个 元素后，数组 严格递增 ，那么请你返回 true ，否则返回 false 。如果数组本身已经是严格递增的，请你也返回 true 。\n\n数组 nums 是 严格递增 的定义为：对于任意下标的 1 <= i < nums.length 都满足 nums[i - 1] < nums[i] 。\n\n示例 1：\n\n输入：nums = [1,2,10,5,7]\n输出：true\n解释：从 nums 中删除下标 2 处的 10 ，得到 [1,2,5,7] 。\n[1,2,5,7] 是严格递增的，所以返回 true 。\n\n示例 2：\n\n输入：nums = [2,3,1,2]\n输出：false\n解释：\n[3,1,2] 是删除下标 0 处元素后得到的结果。\n[2,1,2] 是删除下标 1 处元素后得到的结果。\n[2,3,2] 是删除下标 2 处元素后得到的结果。\n[2,3,1] 是删除下标 3 处元素后得到的结果。\n没有任何结果数组是严格递增的，所以返回 false 。\n\n示例 3：\n\n输入：nums = [1,1,1]\n输出：false\n解释：删除任意元素后的结果都是 [1,1] 。\n[1,1] 不是严格递增的，所以返回 false 。\n\n示例 4：\n\n输入：nums = [1,2,3]\n输出：true\n解释：[1,2,3] 已经是严格递增的，所以返回 true 。\n\n提示：\n\n\t2 <= nums.length <= 1000\n\t1 <= nums[i] <= 1000",
+  "constraints": [
+    "2 <= nums.length <= 1000",
+    "1 <= nums[i] <= 1000"
+  ]
+}

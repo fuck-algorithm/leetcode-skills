@@ -1,0 +1,12 @@
+{
+  "number": "2395",
+  "title_cn": "和相等的子数组",
+  "title_en": "Find Subarrays With Equal Sum",
+  "slug": "find-subarrays-with-equal-sum",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，判断是否存在&nbsp;两个&nbsp;长度为&nbsp;2&nbsp;的子数组且它们的&nbsp;和&nbsp;相等。注意，这两个子数组起始位置的下标必须&nbsp;不相同&nbsp;。\n\n如果这样的子数组存在，请返回&nbsp;true，否则返回&nbsp;false&nbsp;。\n\n子数组 是一个数组中一段连续非空的元素组成的序列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,2,4]\n输出：true\n解释：元素为 [4,2] 和 [2,4] 的子数组有相同的和 6 。\n\n示例 2：\n\n输入：nums = [1,2,3,4,5]\n输出：false\n解释：没有长度为 2 的两个子数组和相等。\n\n示例 3：\n\n输入：nums = [0,0,0]\n输出：true\n解释：子数组 [nums[0],nums[1]] 和 [nums[1],nums[2]] 的和相等，都为 0 。\n注意即使子数组的元素相同，这两个子数组也视为不相同的子数组，因为它们在原数组中的起始位置不同。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 1000\n\t-109 <= nums[i] <= 109",
+  "constraints": [
+    "2 <= nums.length <= 1000",
+    "-109 <= nums[i] <= 109"
+  ]
+}

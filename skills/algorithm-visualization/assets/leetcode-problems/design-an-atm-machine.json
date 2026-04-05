@@ -1,0 +1,15 @@
+{
+  "number": "2241",
+  "title_cn": "设计一个 ATM 机器",
+  "title_en": "Design an ATM Machine",
+  "slug": "design-an-atm-machine",
+  "difficulty": "Medium",
+  "description": "一个 ATM 机器，存有&nbsp;5&nbsp;种面值的钞票：20&nbsp;，50&nbsp;，100&nbsp;，200&nbsp;和&nbsp;500&nbsp;美元。初始时，ATM 机是空的。用户可以用它存或者取任意数目的钱。\n\n取款时，机器会优先取 较大&nbsp;数额的钱。\n\n\t比方说，你想取&nbsp;$300&nbsp;，并且机器里有&nbsp;2&nbsp;张 $50&nbsp;的钞票，1&nbsp;张&nbsp;$100&nbsp;的钞票和1&nbsp;张&nbsp;$200&nbsp;的钞票，那么机器会取出&nbsp;$100 和&nbsp;$200&nbsp;的钞票。\n\t但是，如果你想取&nbsp;$600&nbsp;，机器里有&nbsp;3&nbsp;张&nbsp;$200&nbsp;的钞票和1&nbsp;张&nbsp;$500&nbsp;的钞票，那么取款请求会被拒绝，因为机器会先取出&nbsp;$500&nbsp;的钞票，然后无法取出剩余的&nbsp;$100&nbsp;。注意，因为有&nbsp;$500&nbsp;钞票的存在，机器&nbsp;不能&nbsp;取&nbsp;$200&nbsp;的钞票。\n\n请你实现 ATM 类：\n\n\tATM()&nbsp;初始化 ATM 对象。\n\tvoid deposit(int[] banknotesCount)&nbsp;分别存入&nbsp;$20&nbsp;，$50，$100，$200&nbsp;和&nbsp;$500&nbsp;钞票的数目。\n\tint[] withdraw(int amount)&nbsp;返回一个长度为&nbsp;5&nbsp;的数组，分别表示&nbsp;$20&nbsp;，$50，$100&nbsp;，$200&nbsp;和&nbsp;$500&nbsp;钞票的数目，并且更新 ATM 机里取款后钞票的剩余数量。如果无法取出指定数额的钱，请返回&nbsp;[-1]&nbsp;（这种情况下 不&nbsp;取出任何钞票）。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"ATM\", \"deposit\", \"withdraw\", \"deposit\", \"withdraw\", \"withdraw\"]\n[[], [[0,0,1,2,1]], [600], [[0,1,0,1,1]], [600], [550]]\n输出：\n[null, null, [0,0,1,0,1], null, [-1], [0,1,0,0,1]]\n\n解释：\nATM atm = new ATM();\natm.deposit([0,0,1,2,1]); // 存入 1 张 $100 ，2 张 $200 和 1 张 $500 的钞票。\natm.withdraw(600);        // 返回 [0,0,1,0,1] 。机器返回 1 张 $100 和 1 张 $500 的钞票。机器里剩余钞票的数量为 [0,0,0,2,0] 。\natm.deposit([0,1,0,1,1]); // 存入 1 张 $50 ，1 张 $200 和 1 张 $500 的钞票。\n                          // 机器中剩余钞票数量为 [0,1,0,3,1] 。\natm.withdraw(600);        // 返回 [-1] 。机器会尝试取出 $500 的钞票，然后无法得到剩余的 $100 ，所以取款请求会被拒绝。\n                          // 由于请求被拒绝，机器中钞票的数量不会发生改变。\natm.withdraw(550);        // 返回 [0,1,0,0,1] ，机器会返回 1 张 $50 的钞票和 1 张 $500 的钞票。\n\n&nbsp;\n\n提示：\n\n\tbanknotesCount.length == 5\n\t0 <= banknotesCount[i] <= 109\n\t1 <= amount <= 109\n\t总共&nbsp;最多有&nbsp;5000&nbsp;次&nbsp;withdraw 和&nbsp;deposit&nbsp;的调用。\n\t函数 withdraw 和&nbsp;deposit&nbsp;至少各有 一次&nbsp;调用。",
+  "constraints": [
+    "banknotesCount.length == 5",
+    "0 <= banknotesCount[i] <= 109",
+    "1 <= amount <= 109",
+    "总共&nbsp;最多有&nbsp;5000&nbsp;次&nbsp;withdraw 和&nbsp;deposit&nbsp;的调用。",
+    "函数 withdraw 和&nbsp;deposit&nbsp;至少各有 一次&nbsp;调用。"
+  ]
+}

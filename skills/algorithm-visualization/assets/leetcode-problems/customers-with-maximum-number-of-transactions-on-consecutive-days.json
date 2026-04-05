@@ -1,0 +1,9 @@
+{
+  "number": "2752",
+  "title_cn": "在连续天数上进行了最多交易次数的顾客",
+  "title_en": "Customers with Maximum Number of Transactions on Consecutive Days",
+  "slug": "customers-with-maximum-number-of-transactions-on-consecutive-days",
+  "difficulty": "Hard",
+  "description": "",
+  "constraints": []
+}

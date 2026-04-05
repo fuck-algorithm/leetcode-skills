@@ -1,0 +1,12 @@
+{
+  "number": "101035",
+  "title_cn": "镜像频次距离",
+  "title_en": "Mirror Frequency Distance",
+  "slug": "mirror-frequency-distance",
+  "difficulty": "Medium",
+  "description": "给你一个由小写英文字母和数字组成的字符串 s。\n\n对于每个字符，其&nbsp;镜像字符&nbsp;根据逆序定义其字符集合：\n\n\t对于字母，某字符的镜像字符是字母表中从末尾与其位置相同的字母。\n\n\t\t例如，'a' 的镜像字符是 'z'，'b' 的镜像字符是 'y'，以此类推。\n\n\t对于数字，某字符的镜像字符是范围 '0' 到 '9' 中从末尾与其位置相同的数字。\n\n\t\t例如，'0' 的镜像字符是 '9'，'1' 的镜像字符是 '8'，以此类推。\n\n对于字符串中每个&nbsp;唯一&nbsp;字符 c：\n\n\t设 m 为其&nbsp;镜像字符&nbsp;。\n\t设 freq(x) 表示字符 x 在字符串中出现的次数。\n\t计算其与镜像字符出现次数之间的&nbsp;绝对差，定义为：|freq(c) - freq(m)|\n\n镜像对 (c, m) 和 (m, c) 被视为相同，只能被计算&nbsp;一次&nbsp;。\n\n返回一个整数，表示所有这些&nbsp;不同的镜像对&nbsp;的绝对差之和。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"ab1z9\"\n\n输出： 3\n\n解释：\n\n对于每个镜像对：\n\n\t\t\tc\n\t\t\tm\n\t\t\tfreq(c)\n\t\t\tfreq(m)\n\t\t\t|freq(c) - freq(m)|\n\n\t\t\ta\n\t\t\tz\n\t\t\t1\n\t\t\t1\n\t\t\t0\n\n\t\t\tb\n\t\t\ty\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t1\n\t\t\t8\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\t9\n\t\t\t0\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n因此，答案是 0 + 1 + 1 + 1 = 3。\n\n示例 2：\n\n输入： s = \"4m7n\"\n\n输出： 2\n\n解释：\n\n\t\t\tc\n\t\t\tm\n\t\t\tfreq(c)\n\t\t\tfreq(m)\n\t\t\t|freq(c) - freq(m)|\n\n\t\t\t4\n\t\t\t5\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n\t\t\tm\n\t\t\tn\n\t\t\t1\n\t\t\t1\n\t\t\t0\n\n\t\t\t7\n\t\t\t2\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\n因此，答案是 1 + 0 + 1 = 2。\n\n示例 3：\n\n输入：s = \"byby\"\n\n输出：0\n\n解释：\n\n\t\t\tc\n\t\t\tm\n\t\t\tfreq(c)\n\t\t\tfreq(m)\n\t\t\t|freq(c) - freq(m)|\n\n\t\t\tb\n\t\t\ty\n\t\t\t2\n\t\t\t2\n\t\t\t0\n\n因此，答案是 0 。\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 5 * 105\n\ts&nbsp;仅由小写英文字母和数字组成。",
+  "constraints": [
+    "1 <= s.length <= 5 * 105",
+    "s&nbsp;仅由小写英文字母和数字组成。"
+  ]
+}

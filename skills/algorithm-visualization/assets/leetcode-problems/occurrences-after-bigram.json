@@ -1,0 +1,16 @@
+{
+  "number": "1078",
+  "title_cn": "Bigram 分词",
+  "title_en": "Occurrences After Bigram",
+  "slug": "occurrences-after-bigram",
+  "difficulty": "Easy",
+  "description": "给出第一个词&nbsp;first 和第二个词&nbsp;second，考虑在某些文本&nbsp;text&nbsp;中可能以 \"first second third\" 形式出现的情况，其中&nbsp;second&nbsp;紧随&nbsp;first&nbsp;出现，third&nbsp;紧随&nbsp;second&nbsp;出现。\n\n对于每种这样的情况，将第三个词 \"third\" 添加到答案中，并返回答案。\n\n&nbsp;\n\n示例 1：\n\n输入：text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"\n输出：[\"girl\",\"student\"]\n\n示例 2：\n\n输入：text = \"we will we will rock you\", first = \"we\", second = \"will\"\n输出：[\"we\",\"rock\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= text.length <= 1000\n\ttext&nbsp;由小写英文字母和空格组成\n\ttext 中的所有单词之间都由 单个空格字符 分隔\n\t1 <= first.length, second.length <= 10\n\tfirst 和&nbsp;second&nbsp;由小写英文字母组成\n\ttext&nbsp;不包含任何前缀或尾随空格。",
+  "constraints": [
+    "1 <= text.length <= 1000",
+    "text&nbsp;由小写英文字母和空格组成",
+    "text 中的所有单词之间都由 单个空格字符 分隔",
+    "1 <= first.length, second.length <= 10",
+    "first 和&nbsp;second&nbsp;由小写英文字母组成",
+    "text&nbsp;不包含任何前缀或尾随空格。"
+  ]
+}

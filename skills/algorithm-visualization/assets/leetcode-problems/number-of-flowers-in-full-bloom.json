@@ -1,0 +1,15 @@
+{
+  "number": "2251",
+  "title_cn": "花期内花的数目",
+  "title_en": "Number of Flowers in Full Bloom",
+  "slug": "number-of-flowers-in-full-bloom",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的二维整数数组&nbsp;flowers&nbsp;，其中&nbsp;flowers[i] = [starti, endi]&nbsp;表示第&nbsp;i&nbsp;朵花的 花期&nbsp;从&nbsp;starti&nbsp;到&nbsp;endi&nbsp;（都 包含）。同时给你一个下标从 0&nbsp;开始大小为 n&nbsp;的整数数组&nbsp;people ，people[i]&nbsp;是第&nbsp;i&nbsp;个人来看花的时间。\n\n请你返回一个大小为 n&nbsp;的整数数组&nbsp;answer&nbsp;，其中&nbsp;answer[i]是第&nbsp;i&nbsp;个人到达时在花期内花的&nbsp;数目&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：flowers = [[1,6],[3,7],[9,12],[4,13]], people = [2,3,7,11]\n输出：[1,2,2,2]\n解释：上图展示了每朵花的花期时间，和每个人的到达时间。\n对每个人，我们返回他们到达时在花期内花的数目。\n\n示例 2：\n\n输入：flowers = [[1,10],[3,3]], people = [3,3,2]\n输出：[2,2,1]\n解释：上图展示了每朵花的花期时间，和每个人的到达时间。\n对每个人，我们返回他们到达时在花期内花的数目。\n\n&nbsp;\n\n提示：\n\n\t1 <= flowers.length <= 5 * 104\n\tflowers[i].length == 2\n\t1 <= starti <= endi <= 109\n\t1 <= people.length <= 5 * 104\n\t1 <= people[i] <= 109",
+  "constraints": [
+    "1 <= flowers.length <= 5 * 104",
+    "flowers[i].length == 2",
+    "1 <= starti <= endi <= 109",
+    "1 <= people.length <= 5 * 104",
+    "1 <= people[i] <= 109"
+  ]
+}

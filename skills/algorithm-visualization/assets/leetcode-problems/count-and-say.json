@@ -1,0 +1,11 @@
+{
+  "number": "38",
+  "title_cn": "外观数列",
+  "title_en": "Count and Say",
+  "slug": "count-and-say",
+  "difficulty": "Medium",
+  "description": "「外观数列」是一个数位字符串序列，由递归公式定义：\n\n\tcountAndSay(1) = \"1\"\n\tcountAndSay(n) 是&nbsp;countAndSay(n-1) 的行程长度编码。\n\n&nbsp;\n\n行程长度编码（RLE）是一种字符串压缩方法，其工作原理是通过将连续相同字符（重复两次或更多次）替换为字符重复次数（运行长度）和字符的串联。例如，要压缩字符串&nbsp;\"3322251\"&nbsp;，我们将&nbsp;\"33\"&nbsp;用&nbsp;\"23\"&nbsp;替换，将&nbsp;\"222\"&nbsp;用&nbsp;\"32\"&nbsp;替换，将&nbsp;\"5\"&nbsp;用&nbsp;\"15\"&nbsp;替换并将&nbsp;\"1\"&nbsp;用&nbsp;\"11\"&nbsp;替换。因此压缩后字符串变为 \"23321511\"。\n\n给定一个整数&nbsp;n&nbsp;，返回&nbsp;外观数列&nbsp;的第&nbsp;n&nbsp;个元素。\n\n示例 1：\n\n输入：n = 4\n\n输出：\"1211\"\n\n解释：\n\ncountAndSay(1) = \"1\"\n\ncountAndSay(2) = \"1\" 的行程长度编码 = \"11\"\n\ncountAndSay(3) = \"11\" 的行程长度编码 = \"21\"\n\ncountAndSay(4) = \"21\" 的行程长度编码 = \"1211\"\n\n示例 2：\n\n输入：n = 1\n\n输出：\"1\"\n\n解释：\n\n这是基本情况。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 30\n\n&nbsp;\n进阶：你能迭代解决该问题吗？",
+  "constraints": [
+    "1 <= n <= 30"
+  ]
+}

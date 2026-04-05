@@ -1,0 +1,12 @@
+{
+  "number": "1405",
+  "title_cn": "最长快乐字符串",
+  "title_en": "Longest Happy String",
+  "slug": "longest-happy-string",
+  "difficulty": "Medium",
+  "description": "如果字符串中不含有任何 &#39;aaa&#39;，&#39;bbb&#39; 或 &#39;ccc&#39; 这样的字符串作为子串，那么该字符串就是一个「快乐字符串」。\n\n给你三个整数 a，b ，c，请你返回 任意一个 满足下列全部条件的字符串 s：\n\n\ts 是一个尽可能长的快乐字符串。\n\ts 中 最多 有a 个字母 &#39;a&#39;、b&nbsp;个字母 &#39;b&#39;、c 个字母 &#39;c&#39; 。\n\ts 中只含有 &#39;a&#39;、&#39;b&#39; 、&#39;c&#39; 三种字母。\n\n如果不存在这样的字符串 s ，请返回一个空字符串 \"\"。\n\n&nbsp;\n\n示例 1：\n\n输入：a = 1, b = 1, c = 7\n输出：\"ccaccbcc\"\n解释：\"ccbccacc\" 也是一种正确答案。\n\n示例 2：\n\n输入：a = 2, b = 2, c = 1\n输出：\"aabbc\"\n\n示例 3：\n\n输入：a = 7, b = 1, c = 0\n输出：\"aabaa\"\n解释：这是该测试用例的唯一正确答案。\n\n&nbsp;\n\n提示：\n\n\t0 <= a, b, c <= 100\n\ta + b + c > 0",
+  "constraints": [
+    "0 <= a, b, c <= 100",
+    "a + b + c > 0"
+  ]
+}

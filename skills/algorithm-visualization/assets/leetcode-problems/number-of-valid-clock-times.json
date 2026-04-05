@@ -1,0 +1,14 @@
+{
+  "number": "2437",
+  "title_cn": "有效时间的数目",
+  "title_en": "Number of Valid Clock Times",
+  "slug": "number-of-valid-clock-times",
+  "difficulty": "Easy",
+  "description": "给你一个长度为&nbsp;5&nbsp;的字符串&nbsp;time&nbsp;，表示一个电子时钟当前的时间，格式为&nbsp;\"hh:mm\"&nbsp;。最早&nbsp;可能的时间是&nbsp;\"00:00\"&nbsp;，最晚&nbsp;可能的时间是&nbsp;\"23:59\"&nbsp;。\n\n在字符串&nbsp;time&nbsp;中，被字符&nbsp;?&nbsp;替换掉的数位是 未知的&nbsp;，被替换的数字可能是&nbsp;0&nbsp;到&nbsp;9&nbsp;中的任何一个。\n\n请你返回一个整数&nbsp;answer&nbsp;，将每一个 ?&nbsp;都用&nbsp;0&nbsp;到&nbsp;9&nbsp;中一个数字替换后，可以得到的有效时间的数目。\n\n&nbsp;\n\n示例 1：\n\n输入：time = \"?5:00\"\n输出：2\n解释：我们可以将 ? 替换成 0 或 1 ，得到 \"05:00\" 或者 \"15:00\" 。注意我们不能替换成 2 ，因为时间 \"25:00\" 是无效时间。所以我们有两个选择。\n\n示例 2：\n\n输入：time = \"0?:0?\"\n输出：100\n解释：两个 ? 都可以被 0 到 9 之间的任意数字替换，所以我们总共有 100 种选择。\n\n示例 3：\n\n输入：time = \"??:??\"\n输出：1440\n解释：小时总共有 24 种选择，分钟总共有 60 种选择。所以总共有 24 * 60 = 1440 种选择。\n\n&nbsp;\n\n提示：\n\n\ttime&nbsp;是一个长度为 5&nbsp;的有效字符串，格式为&nbsp;\"hh:mm\"&nbsp;。\n\t\"00\" <= hh <= \"23\"\n\t\"00\" <= mm <= \"59\"\n\t字符串中有的数位是&nbsp;'?'&nbsp;，需要用&nbsp;0&nbsp;到&nbsp;9&nbsp;之间的数字替换。",
+  "constraints": [
+    "time&nbsp;是一个长度为 5&nbsp;的有效字符串，格式为&nbsp;\"hh:mm\"&nbsp;。",
+    "\"00\" <= hh <= \"23\"",
+    "\"00\" <= mm <= \"59\"",
+    "字符串中有的数位是&nbsp;'?'&nbsp;，需要用&nbsp;0&nbsp;到&nbsp;9&nbsp;之间的数字替换。"
+  ]
+}

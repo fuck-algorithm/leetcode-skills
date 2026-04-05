@@ -1,0 +1,12 @@
+{
+  "number": "3083",
+  "title_cn": "字符串及其反转中是否存在同一子字符串",
+  "title_en": "Existence of a Substring in a String and Its Reverse",
+  "slug": "existence-of-a-substring-in-a-string-and-its-reverse",
+  "difficulty": "Easy",
+  "description": "给你一个字符串 s ，请你判断字符串 s 是否存在一个长度为 2 的子字符串，在 s 反转后的字符串中也出现。\n\n如果存在这样的子字符串，返回 true；如果不存在，返回 false 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"leetcode\"\n\n输出：true\n\n解释：子字符串 \"ee\" 的长度为 2，它也出现在 reverse(s) == \"edocteel\" 中。\n\n示例 2：\n\n输入：s = \"abcba\"\n\n输出：true\n\n解释：所有长度为 2 的子字符串 \"ab\"、\"bc\"、\"cb\"、\"ba\" 也都出现在 reverse(s) == \"abcba\" 中。\n\n示例 3：\n\n输入：s = \"abcd\"\n\n输出：false\n\n解释：字符串 s 中不存在满足「在其反转后的字符串中也出现」且长度为 2 的子字符串。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\t字符串 s 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "字符串 s 仅由小写英文字母组成。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "1027",
+  "title_cn": "最长等差数列",
+  "title_en": "Longest Arithmetic Subsequence",
+  "slug": "longest-arithmetic-subsequence",
+  "difficulty": "Medium",
+  "description": "给你一个整数数组&nbsp;nums，返回 nums&nbsp;中最长等差子序列的长度。\n\n回想一下，nums 的子序列是一个列表&nbsp;nums[i1], nums[i2], ..., nums[ik] ，且&nbsp;0 <= i1 < i2 < ... < ik <= nums.length - 1。并且如果&nbsp;seq[i+1] - seq[i](&nbsp;0 <= i < seq.length - 1) 的值都相同，那么序列&nbsp;seq&nbsp;是等差的。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,6,9,12]\n输出：4\n解释： \n整个数组是公差为 3 的等差数列。\n\n示例 2：\n\n输入：nums = [9,4,7,2,10]\n输出：3\n解释：\n最长的等差子序列是 [4,7,10]。\n\n示例 3：\n\n输入：nums = [20,1,15,3,10,5,8]\n输出：4\n解释：\n最长的等差子序列是 [20,15,10,5]。\n\n&nbsp;\n\n提示：\n\n\t2 <= nums.length <= 1000\n\t0 <= nums[i] <= 500",
+  "constraints": [
+    "2 <= nums.length <= 1000",
+    "0 <= nums[i] <= 500"
+  ]
+}

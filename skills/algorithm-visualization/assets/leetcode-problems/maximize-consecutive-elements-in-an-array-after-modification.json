@@ -1,0 +1,12 @@
+{
+  "number": "3041",
+  "title_cn": "修改数组后最大化数组中的连续元素数目",
+  "title_en": "Maximize Consecutive Elements in an Array After Modification",
+  "slug": "maximize-consecutive-elements-in-an-array-after-modification",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始只包含 正&nbsp;整数的数组&nbsp;nums&nbsp;。\n\n一开始，你可以将数组中 任意数量 元素增加 至多 1 。\n\n修改后，你可以从最终数组中选择 一个或者更多&nbsp;元素，并确保这些元素升序排序后是 连续&nbsp;的。比方说，[3, 4, 5] 是连续的，但是&nbsp;[3, 4, 6] 和&nbsp;[1, 1, 2, 3]&nbsp;不是连续的。\n\n请你返回 最多&nbsp;可以选出的元素数目。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,1,5,1,1]\n输出：3\n解释：我们将下标 0 和 3 处的元素增加 1 ，得到结果数组 nums = [3,1,5,2,1] 。\n我们选择元素 [3,1,5,2,1] 并将它们排序得到 [1,2,3] ，是连续元素。\n最多可以得到 3 个连续元素。\n\n示例 2：\n\n输入：nums = [1,4,7,10]\n输出：1\n解释：我们可以选择的最多元素数目是 1 。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 106",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 106"
+  ]
+}

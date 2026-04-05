@@ -1,0 +1,13 @@
+{
+  "number": "3295",
+  "title_cn": "举报垃圾信息",
+  "title_en": "Report Spam Message",
+  "slug": "report-spam-message",
+  "difficulty": "Medium",
+  "description": "给你一个字符串数组 message 和一个字符串数组 bannedWords。\n\n如果数组中 至少 存在两个单词与 bannedWords 中的任一单词 完全相同，则该数组被视为 垃圾信息。\n\n如果数组 message 是垃圾信息，则返回 true；否则返回 false。\n\n&nbsp;\n\n示例 1：\n\n输入： message = [\"hello\",\"world\",\"leetcode\"], bannedWords = [\"world\",\"hello\"]\n\n输出： true\n\n解释：\n\n数组 message 中的 \"hello\" 和 \"world\" 都出现在数组 bannedWords 中。\n\n示例 2：\n\n输入： message = [\"hello\",\"programming\",\"fun\"], bannedWords = [\"world\",\"programming\",\"leetcode\"]\n\n输出： false\n\n解释：\n\n数组 message 中只有一个单词（\"programming\"）出现在数组 bannedWords 中。\n\n&nbsp;\n\n提示：\n\n\t1 <= message.length, bannedWords.length <= 105\n\t1 <= message[i].length, bannedWords[i].length <= 15\n\tmessage[i] 和 bannedWords[i] 都只由小写英文字母组成。",
+  "constraints": [
+    "1 <= message.length, bannedWords.length <= 105",
+    "1 <= message[i].length, bannedWords[i].length <= 15",
+    "message[i] 和 bannedWords[i] 都只由小写英文字母组成。"
+  ]
+}

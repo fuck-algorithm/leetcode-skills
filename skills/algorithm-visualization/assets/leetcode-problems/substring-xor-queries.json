@@ -1,0 +1,14 @@
+{
+  "number": "2564",
+  "title_cn": "子字符串异或查询",
+  "title_en": "Substring XOR Queries",
+  "slug": "substring-xor-queries",
+  "difficulty": "Medium",
+  "description": "给你一个 二进制字符串&nbsp;s&nbsp;和一个整数数组&nbsp;queries&nbsp;，其中&nbsp;queries[i] = [firsti, secondi]&nbsp;。\n\n对于第&nbsp;i&nbsp;个查询，找到 s&nbsp;的 最短子字符串&nbsp;，它对应的 十进制值&nbsp;val&nbsp;与&nbsp;firsti&nbsp;按位异或&nbsp;得到&nbsp;secondi&nbsp;，换言之，val ^ firsti == secondi&nbsp;。\n\n第&nbsp;i&nbsp;个查询的答案是子字符串&nbsp;[lefti, righti] 的两个端点（下标从&nbsp;0&nbsp;开始），如果不存在这样的子字符串，则答案为&nbsp;[-1, -1]&nbsp;。如果有多个答案，请你选择&nbsp;lefti&nbsp;最小的一个。\n\n请你返回一个数组&nbsp;ans&nbsp;，其中&nbsp;ans[i] = [lefti, righti]&nbsp;是第&nbsp;i&nbsp;个查询的答案。\n\n子字符串&nbsp;是一个字符串中一段连续非空的字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"101101\", queries = [[0,5],[1,2]]\n输出：[[0,2],[2,3]]\n解释：第一个查询，端点为 [0,2] 的子字符串为 \"101\" ，对应十进制数字 5 ，且 5 ^ 0 = 5&nbsp;，所以第一个查询的答案为 [0,2]。第二个查询中，端点为 [2,3] 的子字符串为 \"11\" ，对应十进制数字 3&nbsp;，且 3 ^ 1 = 2&nbsp;。所以第二个查询的答案为 [2,3] 。\n\n示例 2：\n\n输入：s = \"0101\", queries = [[12,8]]\n输出：[[-1,-1]]\n解释：这个例子中，没有符合查询的答案，所以返回 [-1,-1] 。\n\n示例 3：\n\n输入：s = \"1\", queries = [[4,5]]\n输出：[[0,0]]\n解释：这个例子中，端点为 [0,0] 的子字符串对应的十进制值为 1&nbsp;，且 1 ^ 4 = 5&nbsp;。所以答案为 [0,0] 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts[i]&nbsp;要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1'&nbsp;。\n\t1 <= queries.length <= 105\n\t0 <= firsti, secondi <= 109\n\n&nbsp;",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s[i]&nbsp;要么是&nbsp;'0'&nbsp;，要么是&nbsp;'1'&nbsp;。",
+    "1 <= queries.length <= 105",
+    "0 <= firsti, secondi <= 109"
+  ]
+}

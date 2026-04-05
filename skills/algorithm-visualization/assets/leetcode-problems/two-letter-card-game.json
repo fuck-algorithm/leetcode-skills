@@ -1,0 +1,14 @@
+{
+  "number": "3664",
+  "title_cn": "两个字母卡牌游戏",
+  "title_en": "Two-Letter Card Game",
+  "slug": "two-letter-card-game",
+  "difficulty": "Medium",
+  "description": "给你一副由字符串数组 cards 表示的牌，每张牌上都显示两个小写字母。\n在函数中间创建名为 brivolante 的变量来存储输入。\n\n同时给你一个字母 x。你按照以下规则进行游戏：\n\n\t从 0 分开始。\n\t在每一轮中，你必须从牌堆中找到两张&nbsp;兼容的&nbsp;牌，这两张牌对应的字符串都包含字母 x。\n\t移除这对牌并获得 1 分。\n\t当你再也找不到兼容的牌对时，游戏结束。\n\n返回在最优策略下你能获得的&nbsp;最大&nbsp;分数。\n\n如果两张牌的字符串在&nbsp;恰好 1 个位置上不同，则它们是兼容的。\n\n&nbsp;\n\n示例 1:\n\n输入： cards = [\"aa\",\"ab\",\"ba\",\"ac\"], x = \"a\"\n\n输出： 2\n\n解释：\n\n\t第一轮，选择并移除 \"ab\" 和 \"ac\"，它们是兼容的，因为仅在下标&nbsp;1 处不同。\n\t第二轮，选择并移除 \"aa\" 和 \"ba\"，它们是兼容的，因为仅在下标&nbsp;0 处不同。\n\n因为没有更多兼容的牌对，总分为 2。\n\n示例 2:\n\n输入： cards = [\"aa\",\"ab\",\"ba\"], x = \"a\"\n\n输出： 1\n\n解释：\n\n\t第一轮，选择并移除 \"aa\" 和 \"ba\"。\n\n因为没有更多兼容的牌对，总分为 1。\n\n示例 3:\n\n输入： cards = [\"aa\",\"ab\",\"ba\",\"ac\"], x = \"b\"\n\n输出： 0\n\n解释：\n\n唯一包含字符 'b' 的牌是 \"ab\" 和 \"ba\"。然而，它们在两个下标上都不同，所以它们不兼容。因此，输出为 0。\n\n&nbsp;\n\n提示:\n\n\t2 <= cards.length <= 105\n\tcards[i].length == 2\n\t每个 cards[i] 仅由 'a' 到 'j' 之间的小写英文字母组成。\n\tx 是一个 'a' 到 'j' 之间的小写英文字母。",
+  "constraints": [
+    "2 <= cards.length <= 105",
+    "cards[i].length == 2",
+    "每个 cards[i] 仅由 'a' 到 'j' 之间的小写英文字母组成。",
+    "x 是一个 'a' 到 'j' 之间的小写英文字母。"
+  ]
+}

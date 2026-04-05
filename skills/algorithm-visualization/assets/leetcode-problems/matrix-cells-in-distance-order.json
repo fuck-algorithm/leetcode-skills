@@ -1,0 +1,13 @@
+{
+  "number": "1030",
+  "title_cn": "距离顺序排列矩阵单元格",
+  "title_en": "Matrix Cells in Distance Order",
+  "slug": "matrix-cells-in-distance-order",
+  "difficulty": "Easy",
+  "description": "给定四个整数 rows&nbsp;,&nbsp; &nbsp;cols ,&nbsp; rCenter 和 cCenter 。有一个&nbsp;rows x cols&nbsp;的矩阵，你在单元格上的坐标是&nbsp;(rCenter, cCenter) 。\n\n返回矩阵中的所有单元格的坐标，并按与&nbsp;(rCenter, cCenter)&nbsp;的 距离 从最小到最大的顺序排。你可以按 任何 满足此条件的顺序返回答案。\n\n单元格(r1, c1) 和 (r2, c2) 之间的距离为|r1 - r2| + |c1 - c2|。\n\n&nbsp;\n\n示例 1：\n\n输入：rows = 1, cols = 2, rCenter = 0, cCenter = 0\n输出：[[0,0],[0,1]]\n解释：从 (r0, c0) 到其他单元格的距离为：[0,1]\n\n示例 2：\n\n输入：rows = 2, cols = 2, rCenter = 0, cCenter = 1\n输出：[[0,1],[0,0],[1,1],[1,0]]\n解释：从 (r0, c0) 到其他单元格的距离为：[0,1,1,2]\n[[0,1],[1,1],[0,0],[1,0]] 也会被视作正确答案。\n\n示例 3：\n\n输入：rows = 2, cols = 3, rCenter = 1, cCenter = 2\n输出：[[1,2],[0,2],[1,1],[0,1],[1,0],[0,0]]\n解释：从 (r0, c0) 到其他单元格的距离为：[0,1,1,2,2,3]\n其他满足题目要求的答案也会被视为正确，例如 [[1,2],[1,1],[0,2],[1,0],[0,1],[0,0]]。\n\n&nbsp;\n\n提示：\n\n\t1 <= rows, cols <= 100\n\t0 <= rCenter < rows\n\t0 <= cCenter < cols",
+  "constraints": [
+    "1 <= rows, cols <= 100",
+    "0 <= rCenter < rows",
+    "0 <= cCenter < cols"
+  ]
+}

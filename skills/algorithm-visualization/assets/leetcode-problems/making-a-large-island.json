@@ -1,0 +1,14 @@
+{
+  "number": "827",
+  "title_cn": "最大人工岛",
+  "title_en": "Making A Large Island",
+  "slug": "making-a-large-island",
+  "difficulty": "Hard",
+  "description": "给你一个大小为 n x n 二进制矩阵 grid 。最多 只能将一格&nbsp;0 变成&nbsp;1 。\n\n返回执行此操作后，grid 中最大的岛屿面积是多少？\n\n岛屿 由一组上、下、左、右四个方向相连的&nbsp;1 形成。\n\n&nbsp;\n\n示例 1:\n\n输入: grid = [[1, 0], [0, 1]]\n输出: 3\n解释: 将一格0变成1，最终连通两个小岛得到面积为 3 的岛屿。\n\n示例 2:\n\n输入: grid = [[1, 1], [1, 0]]\n输出: 4\n解释: 将一格0变成1，岛屿的面积扩大为 4。\n\n示例 3:\n\n输入: grid = [[1, 1], [1, 1]]\n输出: 4\n解释: 没有0可以让我们变成1，面积依然为 4。\n\n&nbsp;\n\n提示：\n\n\tn == grid.length\n\tn == grid[i].length\n\t1 <= n <= 500\n\tgrid[i][j] 为 0 或 1",
+  "constraints": [
+    "n == grid.length",
+    "n == grid[i].length",
+    "1 <= n <= 500",
+    "grid[i][j] 为 0 或 1"
+  ]
+}

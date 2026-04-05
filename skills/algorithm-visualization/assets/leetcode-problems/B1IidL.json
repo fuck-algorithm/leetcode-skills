@@ -1,0 +1,13 @@
+{
+  "number": "LCR 069",
+  "title_cn": "山脉数组的峰顶索引",
+  "title_en": "山脉数组的峰顶索引",
+  "slug": "B1IidL",
+  "difficulty": "Easy",
+  "description": "符合下列属性的数组 arr 称为 山峰数组（山脉数组） ：\n\n\tarr.length >= 3\n\t存在 i（0 < i&nbsp;< arr.length - 1）使得：\n\n\t\tarr[0] < arr[1] < ... arr[i-1] < arr[i] \n\t\tarr[i] > arr[i+1] > ... > arr[arr.length - 1]\n\n给定由整数组成的山峰数组 arr ，返回任何满足 arr[0] < arr[1] < ... arr[i - 1] < arr[i] > arr[i + 1] > ... > arr[arr.length - 1] 的下标 i&nbsp;，即山峰顶部。\n\n&nbsp;\n\n示例 1：\n\n输入：arr = [0,1,0]\n输出：1\n\n示例 2：\n\n输入：arr = [1,3,5,4,2]\n输出：2\n\n示例 3：\n\n输入：arr = [0,10,5,2]\n输出：1\n\n示例 4：\n\n输入：arr = [3,4,5,1]\n输出：2\n\n示例 5：\n\n输入：arr = [24,69,100,99,79,78,67,36,26,19]\n输出：2\n\n&nbsp;\n\n提示：\n\n\t3 <= arr.length <= 104\n\t0 <= arr[i] <= 106\n\t题目数据保证 arr 是一个山脉数组\n\n&nbsp;\n\n进阶：很容易想到时间复杂度 O(n) 的解决方案，你可以设计一个 O(log(n)) 的解决方案吗？\n\n&nbsp;\n\n注意：本题与主站 852&nbsp;题相同：https://leetcode.cn/problems/peak-index-in-a-mountain-array/",
+  "constraints": [
+    "3 <= arr.length <= 104",
+    "0 <= arr[i] <= 106",
+    "题目数据保证 arr 是一个山脉数组"
+  ]
+}

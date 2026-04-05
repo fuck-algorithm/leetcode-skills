@@ -1,0 +1,12 @@
+{
+  "number": "1930",
+  "title_cn": "长度为 3 的不同回文子序列",
+  "title_en": "Unique Length-3 Palindromic Subsequences",
+  "slug": "unique-length-3-palindromic-subsequences",
+  "difficulty": "Medium",
+  "description": "给你一个字符串 s ，返回 s 中 长度为 3 的不同回文子序列 的个数。\n\n即便存在多种方法来构建相同的子序列，但相同的子序列只计数一次。\n\n回文 是正着读和反着读一样的字符串。\n\n子序列 是由原字符串删除其中部分字符（也可以不删除）且不改变剩余字符之间相对顺序形成的一个新字符串。\n\n\t例如，\"ace\" 是 \"abcde\" 的一个子序列。\n\n示例 1：\n\n输入：s = \"aabca\"\n输出：3\n解释：长度为 3 的 3 个回文子序列分别是：\n- \"aba\" (\"aabca\" 的子序列)\n- \"aaa\" (\"aabca\" 的子序列)\n- \"aca\" (\"aabca\" 的子序列)\n\n示例 2：\n\n输入：s = \"adc\"\n输出：0\n解释：\"adc\" 不存在长度为 3 的回文子序列。\n\n示例 3：\n\n输入：s = \"bbcbaba\"\n输出：4\n解释：长度为 3 的 4 个回文子序列分别是：\n- \"bbb\" (\"bbcbaba\" 的子序列)\n- \"bcb\" (\"bbcbaba\" 的子序列)\n- \"bab\" (\"bbcbaba\" 的子序列)\n- \"aba\" (\"bbcbaba\" 的子序列)\n\n提示：\n\n\t3 5\n\ts 仅由小写英文字母组成",
+  "constraints": [
+    "3 5",
+    "s 仅由小写英文字母组成"
+  ]
+}

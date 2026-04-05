@@ -1,0 +1,9 @@
+{
+  "number": "1179",
+  "title_cn": "重新格式化部门表",
+  "title_en": "Reformat Department Table",
+  "slug": "reformat-department-table",
+  "difficulty": "Easy",
+  "description": "表&nbsp;Department：\n\n+---------------+---------+\n| Column Name   | Type    |\n+---------------+---------+\n| id            | int     |\n| revenue       | int     |\n| month         | varchar |\n+---------------+---------+\n在 SQL 中，(id, month) 是表的联合主键。\n这个表格有关于每个部门每月收入的信息。\n月份（month）可以取下列值 [\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"]。\n\n&nbsp;\n\n重新格式化表格，使得&nbsp;每个月&nbsp;都有一个部门 id 列和一个收入列。\n\n以 任意顺序 返回结果表。\n\n结果格式如以下示例所示。\n\n&nbsp;\n\n示例 1：\n\n输入：\nDepartment table:\n+------+---------+-------+\n| id   | revenue | month |\n+------+---------+-------+\n| 1    | 8000    | Jan   |\n| 2    | 9000    | Jan   |\n| 3    | 10000   | Feb   |\n| 1    | 7000    | Feb   |\n| 1    | 6000    | Mar   |\n+------+---------+-------+\n输出：\n+------+-------------+-------------+-------------+-----+-------------+\n| id   | Jan_Revenue | Feb_Revenue | Mar_Revenue | ... | Dec_Revenue |\n+------+-------------+-------------+-------------+-----+-------------+\n| 1    | 8000        | 7000        | 6000        | ... | null        |\n| 2    | 9000        | null        | null        | ... | null        |\n| 3    | null        | 10000       | null        | ... | null        |\n+------+-------------+-------------+-------------+-----+-------------+\n解释：四月到十二月的收入为空。 \n请注意，结果表共有 13 列（1 列用于部门 ID，其余 12 列用于各个月份）。",
+  "constraints": []
+}

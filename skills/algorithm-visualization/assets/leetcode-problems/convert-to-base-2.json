@@ -1,0 +1,11 @@
+{
+  "number": "1017",
+  "title_cn": "负二进制转换",
+  "title_en": "Convert to Base -2",
+  "slug": "convert-to-base-2",
+  "difficulty": "Medium",
+  "description": "给你一个整数 n ，以二进制字符串的形式返回该整数的 负二进制（base -2）表示。\n\n注意，除非字符串就是&nbsp;\"0\"，否则返回的字符串中不能含有前导零。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 2\n输出：\"110\"\n解释：(-2)2 + (-2)1 = 2\n\n示例 2：\n\n输入：n = 3\n输出：\"111\"\n解释：(-2)2 + (-2)1 + (-2)0 = 3\n\n示例 3：\n\n输入：n = 4\n输出：\"100\"\n解释：(-2)2 = 4\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 109",
+  "constraints": [
+    "0 <= n <= 109"
+  ]
+}

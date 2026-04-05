@@ -1,0 +1,18 @@
+{
+  "number": "2747",
+  "title_cn": "统计没有收到请求的服务器数目",
+  "title_en": "Count Zero Request Servers",
+  "slug": "count-zero-request-servers",
+  "difficulty": "Medium",
+  "description": "给你一个整数&nbsp;n&nbsp;，表示服务器的总数目，再给你一个下标从 0&nbsp;开始的 二维&nbsp;整数数组&nbsp;logs&nbsp;，其中&nbsp;logs[i] = [server_id, time]&nbsp;表示 id 为&nbsp;server_id&nbsp;的服务器在&nbsp;time&nbsp;时收到了一个请求。\n\n同时给你一个整数&nbsp;x&nbsp;和一个下标从 0&nbsp;开始的整数数组&nbsp;queries&nbsp; 。\n\n请你返回一个长度等于&nbsp;queries.length&nbsp;的数组&nbsp;arr&nbsp;，其中&nbsp;arr[i]&nbsp;表示在时间区间&nbsp;[queries[i] - x, queries[i]]&nbsp;内没有收到请求的服务器数目。\n\n注意时间区间是个闭区间。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 3, logs = [[1,3],[2,6],[1,5]], x = 5, queries = [10,11]\n输出：[1,2]\n解释：\n对于 queries[0]：id 为 1 和 2 的服务器在区间 [5, 10] 内收到了请求，所以只有服务器 3 没有收到请求。\n对于 queries[1]：id 为 2 的服务器在区间 [6,11] 内收到了请求，所以 id 为 1 和 3 的服务器在这个时间段内没有收到请求。\n\n示例 2：\n\n输入：n = 3, logs = [[2,4],[2,1],[1,2],[3,1]], x = 2, queries = [3,4]\n输出：[0,1]\n解释：\n对于 queries[0]：区间 [1, 3] 内所有服务器都收到了请求。\n对于 queries[1]：只有 id 为 3 的服务器在区间 [2,4] 内没有收到请求。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 105\n\t1 <= logs.length <= 105\n\t1 <= queries.length <= 105\n\tlogs[i].length == 2\n\t1 <= logs[i][0] <= n\n\t1 <= logs[i][1] <= 106\n\t1 <= x <= 105\n\tx <&nbsp;queries[i]&nbsp;<= 106",
+  "constraints": [
+    "1 <= n <= 105",
+    "1 <= logs.length <= 105",
+    "1 <= queries.length <= 105",
+    "logs[i].length == 2",
+    "1 <= logs[i][0] <= n",
+    "1 <= logs[i][1] <= 106",
+    "1 <= x <= 105",
+    "x <&nbsp;queries[i]&nbsp;<= 106"
+  ]
+}

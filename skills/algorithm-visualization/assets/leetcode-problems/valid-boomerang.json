@@ -1,0 +1,13 @@
+{
+  "number": "1037",
+  "title_cn": "有效的回旋镖",
+  "title_en": "Valid Boomerang",
+  "slug": "valid-boomerang",
+  "difficulty": "Easy",
+  "description": "给定一个数组&nbsp;points&nbsp;，其中&nbsp;points[i] = [xi, yi]&nbsp;表示 X-Y 平面上的一个点，如果这些点构成一个&nbsp;回旋镖&nbsp;则返回&nbsp;true&nbsp;。\n\n回旋镖&nbsp;定义为一组三个点，这些点&nbsp;各不相同&nbsp;且&nbsp;不在一条直线上&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：points = [[1,1],[2,3],[3,2]]\n输出：true\n\n示例 2：\n\n输入：points = [[1,1],[2,2],[3,3]]\n输出：false\n\n&nbsp;\n\n提示：\n\n\tpoints.length == 3\n\tpoints[i].length == 2\n\t0 <= xi, yi&nbsp;<= 100",
+  "constraints": [
+    "points.length == 3",
+    "points[i].length == 2",
+    "0 <= xi, yi&nbsp;<= 100"
+  ]
+}

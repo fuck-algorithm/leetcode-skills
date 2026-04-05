@@ -1,0 +1,14 @@
+{
+  "number": "963",
+  "title_cn": "最小面积矩形 II",
+  "title_en": "Minimum Area Rectangle II",
+  "slug": "minimum-area-rectangle-ii",
+  "difficulty": "Medium",
+  "description": "给你一个&nbsp;X-Y&nbsp;平面上的点数组 points，其中 points[i] = [xi, yi]。\n\n返回由这些点形成的任意矩形的最小面积，矩形的边&nbsp;不一定 平行于 X 轴和 Y 轴。如果不存在这样的矩形，则返回 0。\n\n答案只需在10-5 的误差范围内即可被视作正确答案。\n\n&nbsp;\n\n示例 1：\n\n输入： points = [[1,2],[2,1],[1,0],[0,1]]\n输出： 2.00000\n解释： 最小面积矩形由 [1,2]、[2,1]、[1,0]、[0,1] 组成，其面积为 2。\n\n示例 2：\n\n输入： points = [[0,1],[2,1],[1,1],[1,0],[2,0]]\n输出： 1.00000\n解释： 最小面积矩形由 [1,0]、[1,1]、[2,1]、[2,0] 组成，其面积为 1。\n\n示例 3：\n\n输入： points = [[0,3],[1,2],[3,1],[1,3],[2,1]]\n输出： 0\n解释： 无法由这些点组成任何矩形。\n\n&nbsp;\n\n提示：\n\n\t1 <= points.length <= 50\n\tpoints[i].length == 2\n\t0 <= xi, yi <= 4 * 104\n\t所有给定的点都是&nbsp;唯一&nbsp;的。",
+  "constraints": [
+    "1 <= points.length <= 50",
+    "points[i].length == 2",
+    "0 <= xi, yi <= 4 * 104",
+    "所有给定的点都是&nbsp;唯一&nbsp;的。"
+  ]
+}

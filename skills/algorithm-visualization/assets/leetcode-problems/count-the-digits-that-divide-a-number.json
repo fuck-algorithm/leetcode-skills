@@ -1,0 +1,12 @@
+{
+  "number": "2520",
+  "title_cn": "统计能整除数字的位数",
+  "title_en": "Count the Digits That Divide a Number",
+  "slug": "count-the-digits-that-divide-a-number",
+  "difficulty": "Easy",
+  "description": "给你一个整数 num ，返回 num 中能整除 num 的数位的数目。\n\n如果满足&nbsp;nums % val == 0 ，则认为整数 val 可以整除 nums 。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 7\n输出：1\n解释：7 被自己整除，因此答案是 1 。\n\n示例 2：\n\n输入：num = 121\n输出：2\n解释：121 可以被 1 整除，但无法被 2 整除。由于 1 出现两次，所以返回 2 。\n\n示例 3：\n\n输入：num = 1248\n输出：4\n解释：1248 可以被它每一位上的数字整除，因此答案是 4 。\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 109\n\tnum 的数位中不含 0",
+  "constraints": [
+    "1 <= num <= 109",
+    "num 的数位中不含 0"
+  ]
+}

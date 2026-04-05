@@ -1,0 +1,9 @@
+{
+  "number": "1241",
+  "title_cn": "每个帖子的评论数",
+  "title_en": "Number of Comments per Post",
+  "slug": "number-of-comments-per-post",
+  "difficulty": "Easy",
+  "description": "",
+  "constraints": []
+}

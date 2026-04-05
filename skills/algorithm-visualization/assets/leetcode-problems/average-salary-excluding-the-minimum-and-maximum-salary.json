@@ -1,0 +1,14 @@
+{
+  "number": "1491",
+  "title_cn": "去掉最低工资和最高工资后的工资平均值",
+  "title_en": "Average Salary Excluding the Minimum and Maximum Salary",
+  "slug": "average-salary-excluding-the-minimum-and-maximum-salary",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组&nbsp;salary&nbsp;，数组里每个数都是 唯一&nbsp;的，其中&nbsp;salary[i] 是第&nbsp;i&nbsp;个员工的工资。\n\n请你返回去掉最低工资和最高工资以后，剩下员工工资的平均值。\n\n&nbsp;\n\n示例 1：\n\n输入：salary = [4000,3000,1000,2000]\n输出：2500.00000\n解释：最低工资和最高工资分别是 1000 和 4000 。\n去掉最低工资和最高工资以后的平均工资是 (2000+3000)/2= 2500\n\n示例 2：\n\n输入：salary = [1000,2000,3000]\n输出：2000.00000\n解释：最低工资和最高工资分别是 1000 和 3000 。\n去掉最低工资和最高工资以后的平均工资是 (2000)/1= 2000\n\n示例 3：\n\n输入：salary = [6000,5000,4000,3000,2000,1000]\n输出：3500.00000\n\n示例 4：\n\n输入：salary = [8000,9000,2000,3000,6000,1000]\n输出：4750.00000\n\n&nbsp;\n\n提示：\n\n\t3 <= salary.length <= 100\n\t10^3&nbsp;<= salary[i] <= 10^6\n\tsalary[i]&nbsp;是唯一的。\n\t与真实值误差在&nbsp;10^-5 以内的结果都将视为正确答案。",
+  "constraints": [
+    "3 <= salary.length <= 100",
+    "10^3&nbsp;<= salary[i] <= 10^6",
+    "salary[i]&nbsp;是唯一的。",
+    "与真实值误差在&nbsp;10^-5 以内的结果都将视为正确答案。"
+  ]
+}

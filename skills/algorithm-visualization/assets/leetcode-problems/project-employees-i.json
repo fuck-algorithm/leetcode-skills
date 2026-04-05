@@ -1,0 +1,9 @@
+{
+  "number": "1075",
+  "title_cn": "项目员工 I",
+  "title_en": "Project Employees I",
+  "slug": "project-employees-i",
+  "difficulty": "Easy",
+  "description": "项目表&nbsp;Project：&nbsp;\n\n+-------------+---------+\n| Column Name | Type    |\n+-------------+---------+\n| project_id  | int     |\n| employee_id | int     |\n+-------------+---------+\n主键为 (project_id, employee_id)。\nemployee_id 是员工表 Employee 表的外键。\n这张表的每一行表示 employee_id 的员工正在 project_id 的项目上工作。\n\n&nbsp;\n\n员工表&nbsp;Employee：\n\n+------------------+---------+\n| Column Name      | Type    |\n+------------------+---------+\n| employee_id      | int     |\n| name             | varchar |\n| experience_years | int     |\n+------------------+---------+\n主键是 employee_id。数据保证 experience_years 非空。\n这张表的每一行包含一个员工的信息。\n\n&nbsp;\n\n请写一个 SQL&nbsp;语句，查询每一个项目中员工的&nbsp;平均&nbsp;工作年限，精确到小数点后两位。\n\n以 任意 顺序返回结果表。\n\n查询结果的格式如下。\n\n&nbsp;\n\n示例 1:\n\n输入：\nProject 表：\n+-------------+-------------+\n| project_id  | employee_id |\n+-------------+-------------+\n| 1           | 1           |\n| 1           | 2           |\n| 1           | 3           |\n| 2           | 1           |\n| 2           | 4           |\n+-------------+-------------+\n\nEmployee 表：\n+-------------+--------+------------------+\n| employee_id | name   | experience_years |\n+-------------+--------+------------------+\n| 1           | Khaled | 3                |\n| 2           | Ali    | 2                |\n| 3           | John   | 1                |\n| 4           | Doe    | 2                |\n+-------------+--------+------------------+\n\n输出：\n+-------------+---------------+\n| project_id  | average_years |\n+-------------+---------------+\n| 1           | 2.00          |\n| 2           | 2.50          |\n+-------------+---------------+\n解释：第一个项目中，员工的平均工作年限是 (3 + 2 + 1) / 3 = 2.00；第二个项目中，员工的平均工作年限是 (3 + 2) / 2 = 2.50",
+  "constraints": []
+}

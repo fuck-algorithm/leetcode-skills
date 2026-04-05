@@ -1,0 +1,19 @@
+{
+  "number": "2467",
+  "title_cn": "树上最大得分和路径",
+  "title_en": "Most Profitable Path in a Tree",
+  "slug": "most-profitable-path-in-a-tree",
+  "difficulty": "Medium",
+  "description": "一个 n&nbsp;个节点的无向树，节点编号为&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;，树的根结点是&nbsp;0&nbsp;号节点。给你一个长度为 n - 1&nbsp;的二维整数数组&nbsp;edges&nbsp;，其中&nbsp;edges[i] = [ai, bi]&nbsp;，表示节点&nbsp;ai 和&nbsp;bi&nbsp;在树中有一条边。\n\n在每一个节点&nbsp;i&nbsp;处有一扇门。同时给你一个都是偶数的数组&nbsp;amount&nbsp;，其中&nbsp;amount[i]&nbsp;表示：\n\n\t如果 amount[i]&nbsp;的值是负数，那么它表示打开节点&nbsp;i&nbsp;处门扣除的分数。\n\t如果 amount[i]&nbsp;的值是正数，那么它表示打开节点 i&nbsp;处门加上的分数。\n\n游戏按照如下规则进行：\n\n\t一开始，Alice 在节点&nbsp;0&nbsp;处，Bob 在节点&nbsp;bob&nbsp;处。\n\t每一秒钟，Alice 和 Bob 分别&nbsp;移动到相邻的节点。Alice 朝着某个&nbsp;叶子结点&nbsp;移动，Bob 朝着节点&nbsp;0&nbsp;移动。\n\t对于他们之间路径上的 每一个&nbsp;节点，Alice 和 Bob 要么打开门并扣分，要么打开门并加分。注意：\n\n\t\t如果门 已经打开&nbsp;（被另一个人打开），不会有额外加分也不会扣分。\n\t\t如果&nbsp;Alice 和 Bob 同时&nbsp;到达一个节点，他们会共享这个节点的加分或者扣分。换言之，如果打开这扇门扣&nbsp;c&nbsp;分，那么&nbsp;Alice 和 Bob 分别扣&nbsp;c / 2&nbsp;分。如果这扇门的加分为&nbsp;c&nbsp;，那么他们分别加&nbsp;c / 2&nbsp;分。\n\n\t如果 Alice 到达了一个叶子结点，她会停止移动。类似的，如果&nbsp;Bob 到达了节点&nbsp;0&nbsp;，他也会停止移动。注意这些事件互相 独立&nbsp;，不会影响另一方移动。\n\n请你返回&nbsp;Alice 朝最优叶子结点移动的 最大&nbsp;净得分。\n\n&nbsp;\n\n示例 1：\n\n输入：edges = [[0,1],[1,2],[1,3],[3,4]], bob = 3, amount = [-2,4,2,-4,6]\n输出：6\n解释：\n上图展示了输入给出的一棵树。游戏进行如下：\n- Alice 一开始在节点 0 处，Bob 在节点 3 处。他们分别打开所在节点的门。\n  Alice 得分为 -2 。\n- Alice 和 Bob 都移动到节点 1 。\n&nbsp; 因为他们同时到达这个节点，他们一起打开门并平分得分。\n&nbsp; Alice 的得分变为 -2 + (4 / 2) = 0 。\n- Alice 移动到节点 3 。因为 Bob 已经打开了这扇门，Alice 得分不变。\n&nbsp; Bob 移动到节点 0 ，并停止移动。\n- Alice 移动到节点 4 并打开这个节点的门，她得分变为 0 + 6 = 6 。\n现在，Alice 和 Bob 都不能进行任何移动了，所以游戏结束。\nAlice 无法得到更高分数。\n\n示例 2：\n\n输入：edges = [[0,1]], bob = 1, amount = [-7280,2350]\n输出：-7280\n解释：\nAlice 按照路径 0->1 移动，同时 Bob 按照路径 1->0 移动。\n所以 Alice 只打开节点 0 处的门，她的得分为 -7280 。\n\n&nbsp;\n\n提示：\n\n\t2 <= n <= 105\n\tedges.length == n - 1\n\tedges[i].length == 2\n\t0 <= ai, bi < n\n\tai != bi\n\tedges&nbsp;表示一棵有效的树。\n\t1 <= bob < n\n\tamount.length == n\n\tamount[i]&nbsp;是范围&nbsp;[-104, 104]&nbsp;之间的一个&nbsp;偶数&nbsp;。",
+  "constraints": [
+    "2 <= n <= 105",
+    "edges.length == n - 1",
+    "edges[i].length == 2",
+    "0 <= ai, bi < n",
+    "ai != bi",
+    "edges&nbsp;表示一棵有效的树。",
+    "1 <= bob < n",
+    "amount.length == n",
+    "amount[i]&nbsp;是范围&nbsp;[-104, 104]&nbsp;之间的一个&nbsp;偶数&nbsp;。"
+  ]
+}

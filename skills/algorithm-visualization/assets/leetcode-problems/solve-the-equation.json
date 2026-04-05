@@ -1,0 +1,13 @@
+{
+  "number": "640",
+  "title_cn": "求解方程",
+  "title_en": "Solve the Equation",
+  "slug": "solve-the-equation",
+  "difficulty": "Medium",
+  "description": "求解一个给定的方程，将x以字符串 \"x=#value\"&nbsp;的形式返回。该方程仅包含 '+' ， '-' 操作，变量&nbsp;x&nbsp;和其对应系数。\n\n如果方程没有解或存在的解不为整数，请返回&nbsp;\"No solution\"&nbsp;。如果方程有无限解，则返回 “Infinite solutions” 。\n\n题目保证，如果方程中只有一个解，则 'x' 的值是一个整数。\n\n&nbsp;\n\n示例 1：\n\n输入: equation = \"x+5-3+x=6+x-2\"\n输出: \"x=2\"\n\n示例 2:\n\n输入: equation = \"x=x\"\n输出: \"Infinite solutions\"\n\n示例 3:\n\n输入: equation = \"2x=x\"\n输出: \"x=0\"\n\n&nbsp;\n\n提示:\n\n\t3 <= equation.length <= 1000\n\tequation&nbsp;只有一个&nbsp;'='.&nbsp;\n\t方程由绝对值在&nbsp;[0, 100]&nbsp; 范围内且无任何前导零的整数和变量 'x'&nbsp;组成。​​​",
+  "constraints": [
+    "3 <= equation.length <= 1000",
+    "equation&nbsp;只有一个&nbsp;'='.&nbsp;",
+    "方程由绝对值在&nbsp;[0, 100]&nbsp; 范围内且无任何前导零的整数和变量 'x'&nbsp;组成。​​​"
+  ]
+}

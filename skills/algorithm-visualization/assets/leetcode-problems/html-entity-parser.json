@@ -1,0 +1,12 @@
+{
+  "number": "1410",
+  "title_cn": "HTML 实体解析器",
+  "title_en": "HTML Entity Parser",
+  "slug": "html-entity-parser",
+  "difficulty": "Medium",
+  "description": "「HTML&nbsp;实体解析器」 是一种特殊的解析器，它将 HTML 代码作为输入，并用字符本身替换掉所有这些特殊的字符实体。\n\nHTML 里这些特殊字符和它们对应的字符实体包括：\n\n\t双引号：字符实体为&nbsp;&quot;&nbsp;，对应的字符是&nbsp;\"&nbsp;。\n\t单引号：字符实体为&nbsp;&apos;&nbsp;，对应的字符是&nbsp;&#39;&nbsp;。\n\t与符号：字符实体为&nbsp;&amp;&nbsp;，对应对的字符是&nbsp;&&nbsp;。\n\t大于号：字符实体为&nbsp;&gt;&nbsp;，对应的字符是&nbsp;>&nbsp;。\n\t小于号：字符实体为&nbsp;&lt;&nbsp;，对应的字符是&nbsp;<&nbsp;。\n\t斜线号：字符实体为&nbsp;&frasl;&nbsp;，对应的字符是&nbsp;/&nbsp;。\n\n给你输入字符串&nbsp;text&nbsp;，请你实现一个 HTML&nbsp;实体解析器，返回解析器解析后的结果。\n\n&nbsp;\n\n示例 1：\n\n输入：text = \"&amp; is an HTML entity but &ambassador; is not.\"\n输出：\"& is an HTML entity but &ambassador; is not.\"\n解释：解析器把字符实体 &amp; 用 & 替换\n\n示例&nbsp;2：\n\n输入：text = \"and I quote: &quot;...&quot;\"\n输出：\"and I quote: \\\"...\\\"\"\n\n示例 3：\n\n输入：text = \"Stay home! Practice on Leetcode :)\"\n输出：\"Stay home! Practice on Leetcode :)\"\n\n示例 4：\n\n输入：text = \"x &gt; y &amp;&amp; x &lt; y is always false\"\n输出：\"x > y && x < y is always false\"\n\n示例 5：\n\n输入：text = \"leetcode.com&frasl;problemset&frasl;all\"\n输出：\"leetcode.com/problemset/all\"\n\n&nbsp;\n\n提示：\n\n\t1 <= text.length <= 10^5\n\t字符串可能包含 256 个ASCII 字符中的任意字符。",
+  "constraints": [
+    "1 <= text.length <= 10^5",
+    "字符串可能包含 256 个ASCII 字符中的任意字符。"
+  ]
+}

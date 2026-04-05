@@ -1,0 +1,12 @@
+{
+  "number": "936",
+  "title_cn": "戳印序列",
+  "title_en": "Stamping The Sequence",
+  "slug": "stamping-the-sequence",
+  "difficulty": "Hard",
+  "description": "你想要用小写字母组成一个目标字符串&nbsp;target。&nbsp;\n\n开始的时候，序列由&nbsp;target.length&nbsp;个&nbsp;&#39;?&#39;&nbsp;记号组成。而你有一个小写字母印章&nbsp;stamp。\n\n在每个回合，你可以将印章放在序列上，并将序列中的每个字母替换为印章上的相应字母。你最多可以进行&nbsp;10 * target.length&nbsp; 个回合。\n\n举个例子，如果初始序列为 \"?????\"，而你的印章 stamp&nbsp;是&nbsp;\"abc\"，那么在第一回合，你可以得到&nbsp;\"abc??\"、\"?abc?\"、\"??abc\"。（请注意，印章必须完全包含在序列的边界内才能盖下去。）\n\n如果可以印出序列，那么返回一个数组，该数组由每个回合中被印下的最左边字母的索引组成。如果不能印出序列，就返回一个空数组。\n\n例如，如果序列是 \"ababc\"，印章是 \"abc\"，那么我们就可以返回与操作&nbsp;\"?????\" -> \"abc??\" -> \"ababc\" 相对应的答案 [0, 2]；\n\n另外，如果可以印出序列，那么需要保证可以在 10 * target.length&nbsp;个回合内完成。任何超过此数字的答案将不被接受。\n\n&nbsp;\n\n示例 1：\n\n输入：stamp = \"abc\", target = \"ababc\"\n输出：[0,2]\n（[1,0,2] 以及其他一些可能的结果也将作为答案被接受）\n\n示例 2：\n\n输入：stamp = \"abca\", target = \"aabcaca\"\n输出：[3,0,1]\n\n&nbsp;\n\n提示：\n\n\t1 <= stamp.length <= target.length <= 1000\n\tstamp 和&nbsp;target&nbsp;只包含小写字母。",
+  "constraints": [
+    "1 <= stamp.length <= target.length <= 1000",
+    "stamp 和&nbsp;target&nbsp;只包含小写字母。"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "number": "767",
+  "title_cn": "重构字符串",
+  "title_en": "Reorganize String",
+  "slug": "reorganize-string",
+  "difficulty": "Medium",
+  "description": "给定一个字符串&nbsp;s&nbsp;，检查是否能重新排布其中的字母，使得两相邻的字符不同。\n\n返回 s&nbsp;的任意可能的重新排列。若不可行，返回空字符串&nbsp;\"\"&nbsp;。\n\n&nbsp;\n\n示例&nbsp;1:\n\n输入: s = \"aab\"\n输出: \"aba\"\n\n示例 2:\n\n输入: s = \"aaab\"\n输出: \"\"\n\n&nbsp;\n\n提示:\n\n\t1 <= s.length <= 500\n\ts 只包含小写字母",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s 只包含小写字母"
+  ]
+}

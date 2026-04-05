@@ -1,0 +1,12 @@
+{
+  "number": "2009",
+  "title_cn": "使数组连续的最少操作数",
+  "title_en": "Minimum Number of Operations to Make Array Continuous",
+  "slug": "minimum-number-of-operations-to-make-array-continuous",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组&nbsp;nums&nbsp;。每一次操作中，你可以将&nbsp;nums&nbsp;中&nbsp;任意&nbsp;一个元素替换成 任意&nbsp;整数。\n\n如果&nbsp;nums&nbsp;满足以下条件，那么它是 连续的&nbsp;：\n\n\tnums&nbsp;中所有元素都是 互不相同&nbsp;的。\n\tnums&nbsp;中 最大&nbsp;元素与&nbsp;最小&nbsp;元素的差等于&nbsp;nums.length - 1&nbsp;。\n\n比方说，nums = [4, 2, 5, 3]&nbsp;是 连续的&nbsp;，但是&nbsp;nums = [1, 2, 3, 5, 6] 不是连续的&nbsp;。\n\n请你返回使 nums&nbsp;连续&nbsp;的 最少&nbsp;操作次数。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [4,2,5,3]\n输出：0\n解释：nums 已经是连续的了。\n\n示例 2：\n\n输入：nums = [1,2,3,5,6]\n输出：1\n解释：一个可能的解是将最后一个元素变为 4 。\n结果数组为 [1,2,3,5,4] ，是连续数组。\n\n示例 3：\n\n输入：nums = [1,10,100,1000]\n输出：3\n解释：一个可能的解是：\n- 将第二个元素变为 2 。\n- 将第三个元素变为 3 。\n- 将第四个元素变为 4 。\n结果数组为 [1,2,3,4] ，是连续数组。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109"
+  ]
+}

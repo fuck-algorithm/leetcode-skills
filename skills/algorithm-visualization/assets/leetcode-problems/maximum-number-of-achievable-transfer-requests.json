@@ -1,0 +1,14 @@
+{
+  "number": "1601",
+  "title_cn": "最多可达成的换楼请求数目",
+  "title_en": "Maximum Number of Achievable Transfer Requests",
+  "slug": "maximum-number-of-achievable-transfer-requests",
+  "difficulty": "Hard",
+  "description": "我们有&nbsp;n&nbsp;栋楼，编号从&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;。每栋楼有若干员工。由于现在是换楼的季节，部分员工想要换一栋楼居住。\n\n给你一个数组 requests&nbsp;，其中&nbsp;requests[i] = [fromi, toi]&nbsp;，表示一个员工请求从编号为&nbsp;fromi&nbsp;的楼搬到编号为&nbsp;toi&nbsp;的楼。\n\n一开始&nbsp;所有楼都是满的，所以从请求列表中选出的若干个请求是可行的需要满足 每栋楼员工净变化为 0&nbsp;。意思是每栋楼 离开&nbsp;的员工数目 等于&nbsp;该楼 搬入&nbsp;的员工数数目。比方说&nbsp;n = 3&nbsp;且两个员工要离开楼&nbsp;0&nbsp;，一个员工要离开楼&nbsp;1&nbsp;，一个员工要离开楼 2&nbsp;，如果该请求列表可行，应该要有两个员工搬入楼&nbsp;0&nbsp;，一个员工搬入楼&nbsp;1&nbsp;，一个员工搬入楼&nbsp;2&nbsp;。\n\n请你从原请求列表中选出若干个请求，使得它们是一个可行的请求列表，并返回所有可行列表中最大请求数目。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]\n输出：5\n解释：请求列表如下：\n从楼 0 离开的员工为 x 和 y ，且他们都想要搬到楼 1 。\n从楼 1 离开的员工为 a 和 b ，且他们分别想要搬到楼 2 和 0 。\n从楼 2 离开的员工为 z ，且他想要搬到楼 0 。\n从楼 3 离开的员工为 c ，且他想要搬到楼 4 。\n没有员工从楼 4 离开。\n我们可以让 x 和 b 交换他们的楼，以满足他们的请求。\n我们可以让 y，a 和 z 三人在三栋楼间交换位置，满足他们的要求。\n所以最多可以满足 5 个请求。\n\n示例 2：\n\n输入：n = 3, requests = [[0,0],[1,2],[2,1]]\n输出：3\n解释：请求列表如下：\n从楼 0 离开的员工为 x ，且他想要回到原来的楼 0 。\n从楼 1 离开的员工为 y ，且他想要搬到楼 2 。\n从楼 2 离开的员工为 z ，且他想要搬到楼 1 。\n我们可以满足所有的请求。\n\n示例 3：\n\n输入：n = 4, requests = [[0,3],[3,1],[1,2],[2,0]]\n输出：4\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 20\n\t1 <= requests.length <= 16\n\trequests[i].length == 2\n\t0 <= fromi, toi < n",
+  "constraints": [
+    "1 <= n <= 20",
+    "1 <= requests.length <= 16",
+    "requests[i].length == 2",
+    "0 <= fromi, toi < n"
+  ]
+}

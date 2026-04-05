@@ -1,0 +1,12 @@
+{
+  "number": "2926",
+  "title_cn": "平衡子序列的最大和",
+  "title_en": "Maximum Balanced Subsequence Sum",
+  "slug": "maximum-balanced-subsequence-sum",
+  "difficulty": "Hard",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;。\n\nnums&nbsp;一个长度为 k&nbsp;的 子序列&nbsp;指的是选出 k&nbsp;个 下标&nbsp;i0&nbsp;<&nbsp;i1 <&nbsp;... < ik-1&nbsp;，如果这个子序列满足以下条件，我们说它是 平衡的&nbsp;：\n\n\t对于范围&nbsp;[1, k - 1]&nbsp;内的所有&nbsp;j&nbsp;，nums[ij] - nums[ij-1] >= ij - ij-1&nbsp;都成立。\n\nnums&nbsp;长度为 1&nbsp;的 子序列&nbsp;是平衡的。\n\n请你返回一个整数，表示 nums&nbsp;平衡&nbsp;子序列里面的 最大元素和&nbsp;。\n\n一个数组的 子序列&nbsp;指的是从原数组中删除一些元素（也可能一个元素也不删除）后，剩余元素保持相对顺序得到的 非空&nbsp;新数组。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [3,3,5,6]\n输出：14\n解释：这个例子中，选择子序列 [3,5,6] ，下标为 0 ，2 和 3 的元素被选中。\nnums[2] - nums[0] >= 2 - 0 。\nnums[3] - nums[2] >= 3 - 2 。\n所以，这是一个平衡子序列，且它的和是所有平衡子序列里最大的。\n包含下标 1 ，2 和 3 的子序列也是一个平衡的子序列。\n最大平衡子序列和为 14 。\n\n示例 2：\n\n输入：nums = [5,-1,-3,8]\n输出：13\n解释：这个例子中，选择子序列 [5,8] ，下标为 0 和 3 的元素被选中。\nnums[3] - nums[0] >= 3 - 0 。\n所以，这是一个平衡子序列，且它的和是所有平衡子序列里最大的。\n最大平衡子序列和为 13 。\n\n示例 3：\n\n输入：nums = [-2,-1]\n输出：-1\n解释：这个例子中，选择子序列 [-1] 。\n这是一个平衡子序列，而且它的和是 nums 所有平衡子序列里最大的。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105\n\t-109 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "-109 <= nums[i] <= 109"
+  ]
+}

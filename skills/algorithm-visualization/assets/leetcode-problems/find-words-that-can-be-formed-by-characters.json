@@ -1,0 +1,13 @@
+{
+  "number": "1160",
+  "title_cn": "拼写单词",
+  "title_en": "Find Words That Can Be Formed by Characters",
+  "slug": "find-words-that-can-be-formed-by-characters",
+  "difficulty": "Easy",
+  "description": "给定一个字符串数组&nbsp;words&nbsp;和一个字符串 chars。\n\n如果字符串可以由 chars 中的字符组成（每个字符在 每个&nbsp;words 中只能使用一次），则认为它是好的。\n\n返回&nbsp;words&nbsp;中所有好的字符串的长度之和。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"\n输出：6\n解释： \n可以形成字符串 \"cat\" 和 \"hat\"，所以答案是 3 + 3 = 6。\n\n示例 2：\n\n输入：words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"\n输出：10\n解释：\n可以形成字符串 \"hello\" 和 \"world\"，所以答案是 5 + 5 = 10。\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 1000\n\t1 <= words[i].length, chars.length&nbsp;<= 100\n\twords[i]&nbsp;和&nbsp;chars 中都仅包含小写英文字母",
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length, chars.length&nbsp;<= 100",
+    "words[i]&nbsp;和&nbsp;chars 中都仅包含小写英文字母"
+  ]
+}

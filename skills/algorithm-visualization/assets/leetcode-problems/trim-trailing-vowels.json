@@ -1,0 +1,12 @@
+{
+  "number": "3856",
+  "title_cn": "移除尾部元音字母",
+  "title_en": "Trim Trailing Vowels",
+  "slug": "trim-trailing-vowels",
+  "difficulty": "Easy",
+  "description": "给定一个由小写英文字母组成的字符串 s。\n\n返回移除字符串 s 尾部&nbsp;所有元音字母&nbsp;后得到的字符串。\n\n元音字母包括字符 'a'、'e'、'i'、'o' 和 'u'。\n\n&nbsp;\n\n示例 1：\n\n输入： s = \"idea\"\n\n输出： \"id\"\n\n解释：\n\n移除 \"idea\" 后，得到字符串 \"id\"。\n\n示例 2：\n\n输入： s = \"day\"\n\n输出： \"day\"\n\n解释：\n\n字符串 \"day\"&nbsp;尾部没有元音字母。\n\n示例 3：\n\n输入： s = \"aeiou\"\n\n输出： \"\"\n\n解释：\n\n移除 \"aeiou\" 后，得到字符串 \"\"。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 100\n\ts 仅由小写英文字母组成。",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s 仅由小写英文字母组成。"
+  ]
+}

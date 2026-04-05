@@ -1,0 +1,12 @@
+{
+  "number": "2139",
+  "title_cn": "得到目标值的最少行动次数",
+  "title_en": "Minimum Moves to Reach Target Score",
+  "slug": "minimum-moves-to-reach-target-score",
+  "difficulty": "Medium",
+  "description": "你正在玩一个整数游戏。从整数 1 开始，期望得到整数 target 。\n\n在一次行动中，你可以做下述两种操作之一：\n\n\t递增，将当前整数的值加 1（即， x = x + 1）。\n\t加倍，使当前整数的值翻倍（即，x = 2 * x）。\n\n在整个游戏过程中，你可以使用 递增 操作 任意 次数。但是只能使用 加倍 操作 至多 maxDoubles 次。\n\n给你两个整数 target 和 maxDoubles ，返回从 1 开始得到 target 需要的最少行动次数。\n\n&nbsp;\n\n示例 1：\n\n输入：target = 5, maxDoubles = 0\n输出：4\n解释：一直递增 1 直到得到 target 。\n\n示例 2：\n\n输入：target = 19, maxDoubles = 2\n输出：7\n解释：最初，x = 1 。\n递增 3 次，x = 4 。\n加倍 1 次，x = 8 。\n递增 1 次，x = 9 。\n加倍 1 次，x = 18 。\n递增 1 次，x = 19 。\n\n示例 3：\n\n输入：target = 10, maxDoubles = 4\n输出：4\n解释：\n最初，x = 1 。 \n递增 1 次，x = 2 。 \n加倍 1 次，x = 4 。 \n递增 1 次，x = 5 。 \n加倍 1 次，x = 10 。 \n\n&nbsp;\n\n提示：\n\n\t1 <= target <= 109\n\t0 <= maxDoubles <= 100",
+  "constraints": [
+    "1 <= target <= 109",
+    "0 <= maxDoubles <= 100"
+  ]
+}

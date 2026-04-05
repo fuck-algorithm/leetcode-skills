@@ -1,0 +1,13 @@
+{
+  "number": "18",
+  "title_cn": "四数之和",
+  "title_en": "4Sum",
+  "slug": "4sum",
+  "difficulty": "Medium",
+  "description": "给你一个由 n 个整数组成的数组&nbsp;nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组&nbsp;[nums[a], nums[b], nums[c], nums[d]]&nbsp;（若两个四元组元素一一对应，则认为两个四元组重复）：\n\n\t0 <= a, b, c, d&nbsp;< n\n\ta、b、c 和 d 互不相同\n\tnums[a] + nums[b] + nums[c] + nums[d] == target\n\n你可以按 任意顺序 返回答案 。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,0,-1,0,-2,2], target = 0\n输出：[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]\n\n示例 2：\n\n输入：nums = [2,2,2,2,2], target = 8\n输出：[[2,2,2,2]]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 200\n\t-109 <= nums[i] <= 109\n\t-109 <= target <= 109",
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "-109 <= nums[i] <= 109",
+    "-109 <= target <= 109"
+  ]
+}

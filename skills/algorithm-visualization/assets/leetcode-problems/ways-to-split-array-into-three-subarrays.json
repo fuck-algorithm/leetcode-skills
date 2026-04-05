@@ -1,0 +1,12 @@
+{
+  "number": "1712",
+  "title_cn": "将数组分成三个子数组的方案数",
+  "title_en": "Ways to Split Array Into Three Subarrays",
+  "slug": "ways-to-split-array-into-three-subarrays",
+  "difficulty": "Medium",
+  "description": "我们称一个分割整数数组的方案是 好的 ，当它满足：\n\n\t数组被分成三个 非空 连续子数组，从左至右分别命名为 left ， mid ， right 。\n\tleft 中元素和小于等于 mid 中元素和，mid 中元素和小于等于 right 中元素和。\n\n给你一个 非负 整数数组 nums ，请你返回 好的 分割 nums 方案数目。由于答案可能会很大，请你将结果对 109 + 7 取余后返回。\n\n示例 1：\n\n输入：nums = [1,1,1]\n输出：1\n解释：唯一一种好的分割方案是将 nums 分成 [1] [1] [1] 。\n\n示例 2：\n\n输入：nums = [1,2,2,2,5,0]\n输出：3\n解释：nums 总共有 3 种好的分割方案：\n[1] [2] [2,2,5,0]\n[1] [2,2] [2,5,0]\n[1,2] [2,2] [5,0]\n\n示例 3：\n\n输入：nums = [3,2,1]\n输出：0\n解释：没有好的分割方案。\n\n提示：\n\n\t3 5\n\t0 4",
+  "constraints": [
+    "3 5",
+    "0 4"
+  ]
+}

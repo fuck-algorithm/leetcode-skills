@@ -1,0 +1,12 @@
+{
+  "number": "3688",
+  "title_cn": "偶数的按位或运算",
+  "title_en": "Bitwise OR of Even Numbers in an Array",
+  "slug": "bitwise-or-of-even-numbers-in-an-array",
+  "difficulty": "Easy",
+  "description": "给你一个整数数组 nums。\n\n返回数组中所有&nbsp;偶数&nbsp;的按位 或 运算结果。\n\n如果 nums 中没有偶数，返回 0。\n\n&nbsp;\n\n示例 1：\n\n输入： nums = [1,2,3,4,5,6]\n\n输出： 6\n\n解释：\n\n偶数为 2、4 和 6。它们的按位或运算结果是 6。\n\n示例 2：\n\n输入： nums = [7,9,11]\n\n输出： 0\n\n解释：\n\n数组中没有偶数，因此结果为 0。\n\n示例 3：\n\n输入： nums = [1,8,16]\n\n输出： 24\n\n解释：\n\n偶数为 8 和 16。它们的按位或运算结果是 24。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i] <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 100"
+  ]
+}

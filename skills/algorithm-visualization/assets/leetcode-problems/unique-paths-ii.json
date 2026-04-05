@@ -1,0 +1,14 @@
+{
+  "number": "63",
+  "title_cn": "不同路径 II",
+  "title_en": "Unique Paths II",
+  "slug": "unique-paths-ii",
+  "difficulty": "Medium",
+  "description": "给定一个&nbsp;m x n&nbsp;的整数数组&nbsp;grid。一个机器人初始位于 左上角（即 grid[0][0]）。机器人尝试移动到 右下角（即 grid[m - 1][n - 1]）。机器人每次只能向下或者向右移动一步。\n\n网格中的障碍物和空位置分别用 1 和 0 来表示。机器人的移动路径中不能包含 任何&nbsp;有障碍物的方格。\n\n返回机器人能够到达右下角的不同路径数量。\n\n测试用例保证答案小于等于 2 * 109。\n\n&nbsp;\n\n示例 1：\n\n输入：obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]\n输出：2\n解释：3x3 网格的正中间有一个障碍物。\n从左上角到右下角一共有 2 条不同的路径：\n1. 向右 -> 向右 -> 向下 -> 向下\n2. 向下 -> 向下 -> 向右 -> 向右\n\n示例 2：\n\n输入：obstacleGrid = [[0,1],[0,0]]\n输出：1\n\n&nbsp;\n\n提示：\n\n\tm ==&nbsp;obstacleGrid.length\n\tn ==&nbsp;obstacleGrid[i].length\n\t1 <= m, n <= 100\n\tobstacleGrid[i][j] 为 0 或 1",
+  "constraints": [
+    "m ==&nbsp;obstacleGrid.length",
+    "n ==&nbsp;obstacleGrid[i].length",
+    "1 <= m, n <= 100",
+    "obstacleGrid[i][j] 为 0 或 1"
+  ]
+}

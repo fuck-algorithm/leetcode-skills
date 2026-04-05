@@ -1,0 +1,12 @@
+{
+  "number": "1137",
+  "title_cn": "第 N 个泰波那契数",
+  "title_en": "N-th Tribonacci Number",
+  "slug": "n-th-tribonacci-number",
+  "difficulty": "Easy",
+  "description": "泰波那契序列&nbsp;Tn&nbsp;定义如下：&nbsp;\n\nT0 = 0, T1 = 1, T2 = 1, 且在 n >= 0&nbsp;的条件下 Tn+3 = Tn + Tn+1 + Tn+2\n\n给你整数&nbsp;n，请返回第 n 个泰波那契数&nbsp;Tn 的值。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 4\n输出：4\n解释：\nT_3 = 0 + 1 + 1 = 2\nT_4 = 1 + 1 + 2 = 4\n\n示例 2：\n\n输入：n = 25\n输出：1389537\n\n&nbsp;\n\n提示：\n\n\t0 <= n <= 37\n\t答案保证是一个 32 位整数，即&nbsp;answer <= 2^31 - 1。",
+  "constraints": [
+    "0 <= n <= 37",
+    "答案保证是一个 32 位整数，即&nbsp;answer <= 2^31 - 1。"
+  ]
+}

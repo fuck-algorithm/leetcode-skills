@@ -1,0 +1,12 @@
+{
+  "number": "2269",
+  "title_cn": "找到一个数字的 K 美丽值",
+  "title_en": "Find the K-Beauty of a Number",
+  "slug": "find-the-k-beauty-of-a-number",
+  "difficulty": "Easy",
+  "description": "一个整数 num&nbsp;的&nbsp;k&nbsp;美丽值定义为&nbsp;num&nbsp;中符合以下条件的&nbsp;子字符串&nbsp;数目：\n\n\t子字符串长度为&nbsp;k&nbsp;。\n\t子字符串能整除 num 。\n\n给你整数&nbsp;num 和&nbsp;k&nbsp;，请你返回&nbsp;num&nbsp;的 k 美丽值。\n\n注意：\n\n\t允许有&nbsp;前缀&nbsp;0&nbsp;。\n\t0&nbsp;不能整除任何值。\n\n一个 子字符串&nbsp;是一个字符串里的连续一段字符序列。\n\n&nbsp;\n\n示例 1：\n\n输入：num = 240, k = 2\n输出：2\n解释：以下是 num 里长度为 k 的子字符串：\n- \"240\" 中的 \"24\" ：24 能整除 240 。\n- \"240\" 中的 \"40\" ：40 能整除 240 。\n所以，k 美丽值为 2 。\n\n示例 2：\n\n输入：num = 430043, k = 2\n输出：2\n解释：以下是 num 里长度为 k 的子字符串：\n- \"430043\" 中的 \"43\" ：43 能整除 430043 。\n- \"430043\" 中的 \"30\" ：30 不能整除 430043 。\n- \"430043\" 中的 \"00\" ：0 不能整除 430043 。\n- \"430043\" 中的 \"04\" ：4 不能整除 430043 。\n- \"430043\" 中的 \"43\" ：43 能整除 430043 。\n所以，k 美丽值为 2 。\n\n&nbsp;\n\n提示：\n\n\t1 <= num <= 109\n\t1 <= k <= num.length&nbsp;（将&nbsp;num&nbsp;视为字符串）",
+  "constraints": [
+    "1 <= num <= 109",
+    "1 <= k <= num.length&nbsp;（将&nbsp;num&nbsp;视为字符串）"
+  ]
+}

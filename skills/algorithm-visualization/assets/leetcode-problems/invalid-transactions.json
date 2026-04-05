@@ -1,0 +1,15 @@
+{
+  "number": "1169",
+  "title_cn": "查询无效交易",
+  "title_en": "Invalid Transactions",
+  "slug": "invalid-transactions",
+  "difficulty": "Medium",
+  "description": "如果出现下述两种情况，交易 可能无效：\n\n\t交易金额超过&nbsp;$1000\n\t或者，它和&nbsp;另一个城市&nbsp;中 同名 的另一笔交易相隔不超过 60 分钟（包含 60 分钟整）\n\n给定字符串数组交易清单&nbsp;transaction&nbsp;。每个交易字符串&nbsp;transactions[i]&nbsp;由一些用逗号分隔的值组成，这些值分别表示交易的名称，时间（以分钟计），金额以及城市。\n\n返回&nbsp;transactions，返回可能无效的交易列表。你可以按 任何顺序 返回答案。\n\n&nbsp;\n\n示例 1：\n\n输入：transactions = [\"alice,20,800,mtv\",\"alice,50,100,beijing\"]\n输出：[\"alice,20,800,mtv\",\"alice,50,100,beijing\"]\n解释：第一笔交易是无效的，因为第二笔交易和它间隔不超过 60 分钟、名称相同且发生在不同的城市。同样，第二笔交易也是无效的。\n\n示例 2：\n\n输入：transactions = [\"alice,20,800,mtv\",\"alice,50,1200,mtv\"]\n输出：[\"alice,50,1200,mtv\"]\n\n示例 3：\n\n输入：transactions = [\"alice,20,800,mtv\",\"bob,50,1200,mtv\"]\n输出：[\"bob,50,1200,mtv\"]\n\n&nbsp;\n\n提示：\n\n\ttransactions.length <= 1000\n\t每笔交易&nbsp;transactions[i]&nbsp;按&nbsp;\"{name},{time},{amount},{city}\"&nbsp;的格式进行记录\n\t每个交易名称&nbsp;{name}&nbsp;和城市&nbsp;{city}&nbsp;都由小写英文字母组成，长度在&nbsp;1&nbsp;到&nbsp;10&nbsp;之间\n\t每个交易时间&nbsp;{time}&nbsp;由一些数字组成，表示一个&nbsp;0&nbsp;到&nbsp;1000&nbsp;之间的整数\n\t每笔交易金额&nbsp;{amount}&nbsp;由一些数字组成，表示一个&nbsp;0 到&nbsp;2000&nbsp;之间的整数",
+  "constraints": [
+    "transactions.length <= 1000",
+    "每笔交易&nbsp;transactions[i]&nbsp;按&nbsp;\"{name},{time},{amount},{city}\"&nbsp;的格式进行记录",
+    "每个交易名称&nbsp;{name}&nbsp;和城市&nbsp;{city}&nbsp;都由小写英文字母组成，长度在&nbsp;1&nbsp;到&nbsp;10&nbsp;之间",
+    "每个交易时间&nbsp;{time}&nbsp;由一些数字组成，表示一个&nbsp;0&nbsp;到&nbsp;1000&nbsp;之间的整数",
+    "每笔交易金额&nbsp;{amount}&nbsp;由一些数字组成，表示一个&nbsp;0 到&nbsp;2000&nbsp;之间的整数"
+  ]
+}

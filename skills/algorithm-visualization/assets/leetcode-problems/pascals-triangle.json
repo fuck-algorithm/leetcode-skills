@@ -1,0 +1,11 @@
+{
+  "number": "118",
+  "title_cn": "杨辉三角",
+  "title_en": "Pascal's Triangle",
+  "slug": "pascals-triangle",
+  "difficulty": "Easy",
+  "description": "给定一个非负整数&nbsp;numRows，生成「杨辉三角」的前&nbsp;numRows&nbsp;行。\n\n在「杨辉三角」中，每个数是它左上方和右上方的数的和。\n\n&nbsp;\n\n示例 1:\n\n输入: numRows = 5\n输出: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]\n\n示例&nbsp;2:\n\n输入: numRows = 1\n输出: [[1]]\n\n&nbsp;\n\n提示:\n\n\t1 <= numRows <= 30",
+  "constraints": [
+    "1 <= numRows <= 30"
+  ]
+}

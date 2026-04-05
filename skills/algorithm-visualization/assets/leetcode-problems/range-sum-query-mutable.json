@@ -1,0 +1,16 @@
+{
+  "number": "307",
+  "title_cn": "区域和检索 - 数组可修改",
+  "title_en": "Range Sum Query - Mutable",
+  "slug": "range-sum-query-mutable",
+  "difficulty": "Medium",
+  "description": "给你一个数组 nums ，请你完成两类查询。\n\n\t其中一类查询要求 更新 数组&nbsp;nums&nbsp;下标对应的值\n\t另一类查询要求返回数组&nbsp;nums&nbsp;中索引&nbsp;left&nbsp;和索引&nbsp;right&nbsp;之间（&nbsp;包含&nbsp;）的nums元素的 和&nbsp;，其中&nbsp;left <= right\n\n实现 NumArray 类：\n\n\tNumArray(int[] nums) 用整数数组 nums 初始化对象\n\tvoid update(int index, int val) 将 nums[index] 的值 更新 为 val\n\tint sumRange(int left, int right) 返回数组&nbsp;nums&nbsp;中索引&nbsp;left&nbsp;和索引&nbsp;right&nbsp;之间（&nbsp;包含&nbsp;）的nums元素的 和&nbsp;（即，nums[left] + nums[left + 1], ..., nums[right]）\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"NumArray\", \"sumRange\", \"update\", \"sumRange\"]\n[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]\n输出：\n[null, 9, null, 8]\n\n解释：\nNumArray numArray = new NumArray([1, 3, 5]);\nnumArray.sumRange(0, 2); // 返回 1 + 3 + 5 = 9\nnumArray.update(1, 2);   // nums = [1,2,5]\nnumArray.sumRange(0, 2); // 返回 1 + 2 + 5 = 8\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 3 *&nbsp;104\n\t-100 <= nums[i] <= 100\n\t0 <= index < nums.length\n\t-100 <= val <= 100\n\t0 <= left <= right < nums.length\n\t调用 update 和 sumRange 方法次数不大于&nbsp;3 * 104&nbsp;",
+  "constraints": [
+    "1 <= nums.length <= 3 *&nbsp;104",
+    "-100 <= nums[i] <= 100",
+    "0 <= index < nums.length",
+    "-100 <= val <= 100",
+    "0 <= left <= right < nums.length",
+    "调用 update 和 sumRange 方法次数不大于&nbsp;3 * 104&nbsp;"
+  ]
+}

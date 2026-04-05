@@ -1,0 +1,9 @@
+{
+  "number": "面试题 16.05",
+  "title_cn": "阶乘尾数",
+  "title_en": "Factorial Zeros LCCI",
+  "slug": "factorial-zeros-lcci",
+  "difficulty": "Easy",
+  "description": "设计一个算法，算出 n 阶乘有多少个尾随零。\n\n示例 1：\n\n输入：3\n输出：0\n解释：3! = 6, 尾数中没有零。\n\n示例&nbsp;2：\n\n输入：5\n输出：1\n解释：5! = 120, 尾数中有 1 个零.\n\n说明: 你算法的时间复杂度应为&nbsp;O(log&nbsp;n)&nbsp;。",
+  "constraints": []
+}

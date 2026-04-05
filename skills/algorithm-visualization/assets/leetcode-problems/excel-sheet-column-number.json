@@ -1,0 +1,13 @@
+{
+  "number": "171",
+  "title_cn": "Excel 表列序号",
+  "title_en": "Excel Sheet Column Number",
+  "slug": "excel-sheet-column-number",
+  "difficulty": "Easy",
+  "description": "给你一个字符串&nbsp;columnTitle ，表示 Excel 表格中的列名称。返回 该列名称对应的列序号&nbsp;。\n\n例如：\n\nA -> 1\nB -> 2\nC -> 3\n...\nZ -> 26\nAA -> 27\nAB -> 28 \n...\n\n&nbsp;\n\n示例 1:\n\n输入: columnTitle = \"A\"\n输出: 1\n\n示例&nbsp;2:\n\n输入: columnTitle = \"AB\"\n输出: 28\n\n示例&nbsp;3:\n\n输入: columnTitle = \"ZY\"\n输出: 701\n\n&nbsp;\n\n提示：\n\n\t1 <= columnTitle.length <= 7\n\tcolumnTitle 仅由大写英文组成\n\tcolumnTitle 在范围 [\"A\", \"FXSHRXW\"] 内",
+  "constraints": [
+    "1 <= columnTitle.length <= 7",
+    "columnTitle 仅由大写英文组成",
+    "columnTitle 在范围 [\"A\", \"FXSHRXW\"] 内"
+  ]
+}

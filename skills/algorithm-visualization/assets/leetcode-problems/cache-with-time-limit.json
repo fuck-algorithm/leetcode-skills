@@ -1,0 +1,18 @@
+{
+  "number": "2622",
+  "title_cn": "有时间限制的缓存",
+  "title_en": "Cache With Time Limit",
+  "slug": "cache-with-time-limit",
+  "difficulty": "Medium",
+  "description": "编写一个类，它允许获取和设置键-值对，并且每个键都有一个&nbsp;过期时间&nbsp;。\n\n该类有三个公共方法：\n\nset(key, value, duration)&nbsp;：接收参数为整型键 key 、整型值 value 和以毫秒为单位的持续时间 duration 。一旦 duration&nbsp;到期后，这个键就无法访问。如果相同的未过期键已经存在，该方法将返回&nbsp;true&nbsp;，否则返回&nbsp;false&nbsp;。如果该键已经存在，则它的值和持续时间都应该被覆盖。\n\nget(key)&nbsp;：如果存在一个未过期的键，它应该返回这个键相关的值。否则返回&nbsp;-1&nbsp;。\n\ncount()&nbsp;：返回未过期键的总数。\n\n&nbsp;\n\n示例 1：\n\n输入： \nactions = [\"TimeLimitedCache\", \"set\", \"get\", \"count\", \"get\"]\nvalues = [[], [1, 42, 100], [1], [], [1]]\ntimeDelays = [0, 0, 50, 50, 150]\n输出： [null, false, 42, 1, -1]\n解释：\n在 t=0 时，缓存被构造。\n在 t=0 时，添加一个键值对 (1: 42) ，过期时间为 100ms 。因为该值不存在，因此返回false。\n在 t=50 时，请求 key=1 并返回值 42。\n在 t=50 时，调用 count() ，缓存中有一个未过期的键。\n在 t=100 时，key=1 到期。\n在 t=150 时，调用 get(1) ，返回 -1，因为缓存是空的。\n\n示例 2：\n\n输入：\nactions = [\"TimeLimitedCache\", \"set\", \"set\", \"get\", \"get\", \"get\", \"count\"]\nvalues = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\ntimeDelays = [0, 0, 40, 50, 120, 200, 250]\n输出： [null, false, true, 50, 50, -1]\n解释：\n在 t=0 时，缓存被构造。\n在 t=0 时，添加一个键值对 (1: 42) ，过期时间为 50ms。因为该值不存在，因此返回false。\n当 t=40 时，添加一个键值对 (1: 50) ，过期时间为 100ms。因为一个未过期的键已经存在，返回 true 并覆盖这个键的旧值。\n在 t=50 时，调用 get(1) ，返回 50。\n在 t=120 时，调用 get(1) ，返回 50。\n在 t=140 时，key=1 过期。\n在 t=200 时，调用 get(1) ，但缓存为空，因此返回 -1。\n在 t=250 时，count() 返回0 ，因为缓存是空的，没有未过期的键。\n\n&nbsp;\n\n提示：\n\n\t0 <= key, value <= 109\n\t0 <= duration <= 1000\n\t1 <= actions.length <= 100\n\tactions.length === values.length\n\tactions.length === timeDelays.length\n\t0 <= timeDelays[i] <= 1450\n\tactions[i] 是 \"TimeLimitedCache\"、\"set\"、\"get\" 和 \"count\" 中的一个。\n\t第一个操作始终是 \"TimeLimitedCache\" 而且一定会以 0 毫秒的延迟立即执行",
+  "constraints": [
+    "0 <= key, value <= 109",
+    "0 <= duration <= 1000",
+    "1 <= actions.length <= 100",
+    "actions.length === values.length",
+    "actions.length === timeDelays.length",
+    "0 <= timeDelays[i] <= 1450",
+    "actions[i] 是 \"TimeLimitedCache\"、\"set\"、\"get\" 和 \"count\" 中的一个。",
+    "第一个操作始终是 \"TimeLimitedCache\" 而且一定会以 0 毫秒的延迟立即执行"
+  ]
+}

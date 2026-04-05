@@ -1,0 +1,15 @@
+{
+  "number": "2381",
+  "title_cn": "字母移位 II",
+  "title_en": "Shifting Letters II",
+  "slug": "shifting-letters-ii",
+  "difficulty": "Medium",
+  "description": "给你一个小写英文字母组成的字符串&nbsp;s&nbsp;和一个二维整数数组&nbsp;shifts&nbsp;，其中&nbsp;shifts[i] = [starti, endi, directioni]&nbsp;。对于每个&nbsp;i&nbsp;，将&nbsp;s&nbsp;中从下标&nbsp;starti&nbsp;到下标&nbsp;endi&nbsp;（两者都包含）所有字符都进行移位运算，如果&nbsp;directioni = 1&nbsp;将字符向后移位，如果&nbsp;directioni = 0&nbsp;将字符向前移位。\n\n将一个字符 向后&nbsp;移位的意思是将这个字符用字母表中 下一个&nbsp;字母替换（字母表视为环绕的，所以&nbsp;'z'&nbsp;变成&nbsp;'a'）。类似的，将一个字符 向前&nbsp;移位的意思是将这个字符用字母表中 前一个&nbsp;字母替换（字母表是环绕的，所以&nbsp;'a'&nbsp;变成&nbsp;'z'&nbsp;）。\n\n请你返回对 s&nbsp;进行所有移位操作以后得到的最终字符串。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"abc\", shifts = [[0,1,0],[1,2,1],[0,2,1]]\n输出：\"ace\"\n解释：首先，将下标从 0 到 1 的字母向前移位，得到 s = \"zac\" 。\n然后，将下标从 1 到 2 的字母向后移位，得到 s = \"zbd\" 。\n最后，将下标从 0 到 2 的字符向后移位，得到 s = \"ace\" 。\n\n示例 2:\n\n输入：s = \"dztz\", shifts = [[0,0,0],[1,1,1]]\n输出：\"catz\"\n解释：首先，将下标从 0 到 0 的字母向前移位，得到 s = \"cztz\" 。\n最后，将下标从 1 到 1 的字符向后移位，得到 s = \"catz\" 。\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length, shifts.length <= 5 * 104\n\tshifts[i].length == 3\n\t0 <= starti <= endi < s.length\n\t0 <= directioni <= 1\n\ts&nbsp;只包含小写英文字母。",
+  "constraints": [
+    "1 <= s.length, shifts.length <= 5 * 104",
+    "shifts[i].length == 3",
+    "0 <= starti <= endi < s.length",
+    "0 <= directioni <= 1",
+    "s&nbsp;只包含小写英文字母。"
+  ]
+}

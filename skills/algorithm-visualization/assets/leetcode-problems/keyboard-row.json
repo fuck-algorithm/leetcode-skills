@@ -1,0 +1,13 @@
+{
+  "number": "500",
+  "title_cn": "键盘行",
+  "title_en": "Keyboard Row",
+  "slug": "keyboard-row",
+  "difficulty": "Easy",
+  "description": "给你一个字符串数组 words ，只返回可以使用在 美式键盘 同一行的字母打印出来的单词。键盘如下图所示。\n\n请注意，字符串&nbsp;不区分大小写，相同字母的大小写形式都被视为在同一行。\n\n美式键盘 中：\n\n\t第一行由字符 \"qwertyuiop\" 组成。\n\t第二行由字符 \"asdfghjkl\" 组成。\n\t第三行由字符 \"zxcvbnm\" 组成。\n\n&nbsp;\n\n示例 1：\n\n输入：words = [\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]\n\n输出：[\"Alaska\",\"Dad\"]\n\n解释：\n\n由于不区分大小写，\"a\" 和&nbsp;\"A\" 都在美式键盘的第二行。\n\n示例 2：\n\n输入：words = [\"omk\"]\n\n输出：[]\n\n示例 3：\n\n输入：words = [\"adsdf\",\"sfd\"]\n\n输出：[\"adsdf\",\"sfd\"]\n\n&nbsp;\n\n提示：\n\n\t1 <= words.length <= 20\n\t1 <= words[i].length <= 100\n\twords[i] 由英文字母（小写和大写字母）组成",
+  "constraints": [
+    "1 <= words.length <= 20",
+    "1 <= words[i].length <= 100",
+    "words[i] 由英文字母（小写和大写字母）组成"
+  ]
+}

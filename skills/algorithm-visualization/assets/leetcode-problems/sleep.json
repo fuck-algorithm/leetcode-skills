@@ -1,0 +1,11 @@
+{
+  "number": "2621",
+  "title_cn": "睡眠函数",
+  "title_en": "Sleep",
+  "slug": "sleep",
+  "difficulty": "Easy",
+  "description": "请你编写一个异步函数，它接收一个正整数参数 millis&nbsp;，并休眠 millis 毫秒。要求此函数可以解析任何值。\n\n请注意，实际睡眠持续时间与&nbsp;millis 之间的微小偏差是可以接受的。\n\n&nbsp;\n\n示例 1：\n\n输入：millis = 100\n输出：100\n解释：\n在 100ms 后此异步函数执行完时返回一个 Promise 对象\nlet t = Date.now();\nsleep(100).then(() => {\n  console.log(Date.now() - t); // 100\n});\n\n示例 2：\n\n输入：millis = 200\n输出：200\n解释：在 200ms 后函数执行完时返回一个 Promise 对象\n\n&nbsp;\n\n提示：\n\n\t1 <= millis <= 1000",
+  "constraints": [
+    "1 <= millis <= 1000"
+  ]
+}

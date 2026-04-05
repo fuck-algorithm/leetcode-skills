@@ -1,0 +1,12 @@
+{
+  "number": "LCR 027",
+  "title_cn": "回文链表",
+  "title_en": "回文链表",
+  "slug": "aMhZSa",
+  "difficulty": "Easy",
+  "description": "给定一个链表的 头节点&nbsp;head&nbsp;，请判断其是否为回文链表。\n\n如果一个链表是回文，那么链表节点序列从前往后看和从后往前看是相同的。\n\n&nbsp;\n\n示例 1：\n\n输入: head = [1,2,3,3,2,1]\n输出: true\n\n示例 2：\n\n输入: head = [1,2]\n输出: false\n\n&nbsp;\n\n提示：\n\n\t链表 L 的长度范围为 [1, 105]\n\t0&nbsp;<= node.val <= 9\n\n&nbsp;\n\n进阶：能否用&nbsp;O(n) 时间复杂度和 O(1) 空间复杂度解决此题？\n\n&nbsp;\n\n注意：本题与主站 234&nbsp;题相同：https://leetcode.cn/problems/palindrome-linked-list/",
+  "constraints": [
+    "链表 L 的长度范围为 [1, 105]",
+    "0&nbsp;<= node.val <= 9"
+  ]
+}

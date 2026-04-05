@@ -1,0 +1,12 @@
+{
+  "number": "2089",
+  "title_cn": "找出数组排序后的目标下标",
+  "title_en": "Find Target Indices After Sorting Array",
+  "slug": "find-target-indices-after-sorting-array",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0 开始的整数数组 nums 以及一个目标元素 target 。\n\n目标下标 是一个满足&nbsp;nums[i] == target 的下标 i 。\n\n将 nums 按 非递减 顺序排序后，返回由 nums 中目标下标组成的列表。如果不存在目标下标，返回一个 空 列表。返回的列表必须按 递增 顺序排列。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,2,5,2,3], target = 2\n输出：[1,2]\n解释：排序后，nums 变为 [1,2,2,3,5] 。\n满足 nums[i] == 2 的下标是 1 和 2 。\n\n示例 2：\n\n输入：nums = [1,2,5,2,3], target = 3\n输出：[3]\n解释：排序后，nums 变为 [1,2,2,3,5] 。\n满足 nums[i] == 3 的下标是 3 。\n\n示例 3：\n\n输入：nums = [1,2,5,2,3], target = 5\n输出：[4]\n解释：排序后，nums 变为 [1,2,2,3,5] 。\n满足 nums[i] == 5 的下标是 4 。\n\n示例 4：\n\n输入：nums = [1,2,5,2,3], target = 4\n输出：[]\n解释：nums 中不含值为 4 的元素。\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t1 <= nums[i], target <= 100",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i], target <= 100"
+  ]
+}

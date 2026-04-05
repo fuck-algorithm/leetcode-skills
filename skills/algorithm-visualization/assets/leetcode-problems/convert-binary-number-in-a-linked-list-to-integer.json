@@ -1,0 +1,13 @@
+{
+  "number": "1290",
+  "title_cn": "二进制链表转整数",
+  "title_en": "Convert Binary Number in a Linked List to Integer",
+  "slug": "convert-binary-number-in-a-linked-list-to-integer",
+  "difficulty": "Easy",
+  "description": "给你一个单链表的引用结点&nbsp;head。链表中每个结点的值不是 0 就是 1。已知此链表是一个整数数字的二进制表示形式。\n\n请你返回该链表所表示数字的 十进制值 。\n\n最高位 在链表的头部。\n\n&nbsp;\n\n示例 1：\n\n输入：head = [1,0,1]\n输出：5\n解释：二进制数 (101) 转化为十进制数 (5)\n\n示例 2：\n\n输入：head = [0]\n输出：0\n\n&nbsp;\n\n提示：\n\n\t链表不为空。\n\t链表的结点总数不超过&nbsp;30。\n\t每个结点的值不是&nbsp;0 就是 1。",
+  "constraints": [
+    "链表不为空。",
+    "链表的结点总数不超过&nbsp;30。",
+    "每个结点的值不是&nbsp;0 就是 1。"
+  ]
+}

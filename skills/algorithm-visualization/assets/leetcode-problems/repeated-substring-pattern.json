@@ -1,0 +1,12 @@
+{
+  "number": "459",
+  "title_cn": "重复的子字符串",
+  "title_en": "Repeated Substring Pattern",
+  "slug": "repeated-substring-pattern",
+  "difficulty": "Easy",
+  "description": "给定一个非空的字符串&nbsp;s&nbsp;，检查是否可以通过由它的一个子串重复多次构成。\n\n&nbsp;\n\n示例 1:\n\n输入: s = \"abab\"\n输出: true\n解释: 可由子串 \"ab\" 重复两次构成。\n\n示例 2:\n\n输入: s = \"aba\"\n输出: false\n\n示例 3:\n\n输入: s = \"abcabcabcabc\"\n输出: true\n解释: 可由子串 \"abc\" 重复四次构成。 (或子串 \"abcabc\" 重复两次构成。)\n\n&nbsp;\n\n提示：\n\n\t1 <= s.length <= 104\n\ts&nbsp;由小写英文字母组成",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s&nbsp;由小写英文字母组成"
+  ]
+}

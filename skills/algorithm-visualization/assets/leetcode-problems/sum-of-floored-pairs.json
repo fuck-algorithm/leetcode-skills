@@ -1,0 +1,12 @@
+{
+  "number": "1862",
+  "title_cn": "向下取整数对和",
+  "title_en": "Sum of Floored Pairs",
+  "slug": "sum-of-floored-pairs",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 nums ，请你返回所有下标对 0 <= i, j < nums.length 的 floor(nums[i] / nums[j]) 结果之和。由于答案可能会很大，请你返回答案对109 + 7 取余 的结果。\n\n函数 floor() 返回输入数字的整数部分。\n\n示例 1：\n\n输入：nums = [2,5,9]\n输出：10\n解释：\nfloor(2 / 5) = floor(2 / 9) = floor(5 / 9) = 0\nfloor(2 / 2) = floor(5 / 5) = floor(9 / 9) = 1\nfloor(5 / 2) = 2\nfloor(9 / 2) = 4\nfloor(9 / 5) = 1\n我们计算每一个数对商向下取整的结果并求和得到 10 。\n\n示例 2：\n\n输入：nums = [7,7,7,7,7,7,7]\n输出：49\n\n提示：\n\n\t1 <= nums.length <= 105\n\t1 <= nums[i] <= 105",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 105"
+  ]
+}

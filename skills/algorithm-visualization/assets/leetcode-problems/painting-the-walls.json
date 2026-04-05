@@ -1,0 +1,14 @@
+{
+  "number": "2742",
+  "title_cn": "给墙壁刷油漆",
+  "title_en": "Painting the Walls",
+  "slug": "painting-the-walls",
+  "difficulty": "Hard",
+  "description": "给你两个长度为 n&nbsp;下标从 0&nbsp;开始的整数数组&nbsp;cost 和&nbsp;time&nbsp;，分别表示给&nbsp;n&nbsp;堵不同的墙刷油漆需要的开销和时间。你有两名油漆匠：\n\n\t一位需要 付费&nbsp;的油漆匠，刷第&nbsp;i&nbsp;堵墙需要花费&nbsp;time[i]&nbsp;单位的时间，开销为&nbsp;cost[i]&nbsp;单位的钱。\n\t一位 免费&nbsp;的油漆匠，刷 任意&nbsp;一堵墙的时间为&nbsp;1&nbsp;单位，开销为&nbsp;0&nbsp;。但是必须在付费油漆匠&nbsp;工作&nbsp;时，免费油漆匠才会工作。\n\n请你返回刷完 n&nbsp;堵墙最少开销为多少。\n\n&nbsp;\n\n示例 1：\n\n输入：cost = [1,2,3,2], time = [1,2,3,2]\n输出：3\n解释：下标为 0 和 1 的墙由付费油漆匠来刷，需要 3 单位时间。同时，免费油漆匠刷下标为 2 和 3 的墙，需要 2 单位时间，开销为 0 。总开销为 1 + 2 = 3 。\n\n示例 2：\n\n输入：cost = [2,3,4,2], time = [1,1,1,1]\n输出：4\n解释：下标为 0 和 3 的墙由付费油漆匠来刷，需要 2 单位时间。同时，免费油漆匠刷下标为 1 和 2 的墙，需要 2 单位时间，开销为 0 。总开销为 2 + 2 = 4 。\n\n&nbsp;\n\n提示：\n\n\t1 <= cost.length <= 500\n\tcost.length == time.length\n\t1 <= cost[i] <= 106\n\t1 <= time[i] <= 500",
+  "constraints": [
+    "1 <= cost.length <= 500",
+    "cost.length == time.length",
+    "1 <= cost[i] <= 106",
+    "1 <= time[i] <= 500"
+  ]
+}

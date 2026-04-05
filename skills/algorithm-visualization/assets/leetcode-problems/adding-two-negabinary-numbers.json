@@ -1,0 +1,13 @@
+{
+  "number": "1073",
+  "title_cn": "负二进制数相加",
+  "title_en": "Adding Two Negabinary Numbers",
+  "slug": "adding-two-negabinary-numbers",
+  "difficulty": "Medium",
+  "description": "给出基数为 -2&nbsp;的两个数&nbsp;arr1 和&nbsp;arr2，返回两数相加的结果。\n\n数字以&nbsp;数组形式&nbsp;给出：数组由若干 0 和 1 组成，按最高有效位到最低有效位的顺序排列。例如，arr&nbsp;= [1,1,0,1]&nbsp;表示数字&nbsp;(-2)^3&nbsp;+ (-2)^2 + (-2)^0 = -3。数组形式&nbsp;中的数字 arr 也同样不含前导零：即&nbsp;arr == [0]&nbsp;或&nbsp;arr[0] == 1。\n\n返回相同表示形式的 arr1 和 arr2 相加的结果。两数的表示形式为：不含前导零、由若干 0 和 1 组成的数组。\n\n&nbsp;\n\n示例 1：\n\n输入：arr1 = [1,1,1,1,1], arr2 = [1,0,1]\n输出：[1,0,0,0,0]\n解释：arr1 表示 11，arr2 表示 5，输出表示 16 。\n\n示例 2：\n\n输入：arr1 = [0], arr2 = [0]\n输出：[0]\n\n示例 3：\n\n输入：arr1 = [0], arr2 = [1]\n输出：[1]\n\n&nbsp;\n\n提示：\n\n\t1 <= arr1.length,&nbsp;arr2.length <= 1000\n\tarr1[i]&nbsp;和&nbsp;arr2[i]&nbsp;都是&nbsp;0&nbsp;或&nbsp;1\n\tarr1&nbsp;和&nbsp;arr2&nbsp;都没有前导0",
+  "constraints": [
+    "1 <= arr1.length,&nbsp;arr2.length <= 1000",
+    "arr1[i]&nbsp;和&nbsp;arr2[i]&nbsp;都是&nbsp;0&nbsp;或&nbsp;1",
+    "arr1&nbsp;和&nbsp;arr2&nbsp;都没有前导0"
+  ]
+}

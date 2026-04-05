@@ -1,0 +1,13 @@
+{
+  "number": "1221",
+  "title_cn": "分割平衡字符串",
+  "title_en": "Split a String in Balanced Strings",
+  "slug": "split-a-string-in-balanced-strings",
+  "difficulty": "Easy",
+  "description": "平衡字符串 中，'L' 和 'R' 字符的数量是相同的。\n\n给你一个平衡字符串&nbsp;s，请你将它分割成尽可能多的子字符串，并满足：\n\n\t每个子字符串都是平衡字符串。\n\n返回可以通过分割得到的平衡字符串的 最大数量 。\n\n&nbsp;\n\n示例 1：\n\n输入：s = \"RLRRLLRLRL\"\n输出：4\n解释：s 可以分割为 \"RL\"、\"RRLL\"、\"RL\"、\"RL\" ，每个子字符串中都包含相同数量的 'L' 和 'R' 。\n\n示例 2：\n\n输入：s = \"RLRRRLLRLL\"\n输出：2\n解释：s 可以分割为 \"RL\"、\"RRRLLRLL\"，每个子字符串中都包含相同数量的 'L' 和 'R' 。\n注意，s 无法分割为 \"RL\"、\"RR\"、\"RL\"、\"LR\"、\"LL\" 因为第 2 个和第 5 个子字符串不是平衡字符串。\n\n示例 3：\n\n输入：s = \"LLLLRRRR\"\n输出：1\n解释：s 只能保持原样 \"LLLLRRRR\" 。\n\n&nbsp;\n\n提示：\n\n\t2 <= s.length <= 1000\n\ts[i] = 'L' 或 'R'\n\ts 是一个 平衡 字符串",
+  "constraints": [
+    "2 <= s.length <= 1000",
+    "s[i] = 'L' 或 'R'",
+    "s 是一个 平衡 字符串"
+  ]
+}

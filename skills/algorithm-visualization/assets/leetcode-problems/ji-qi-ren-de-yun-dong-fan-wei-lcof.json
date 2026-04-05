@@ -1,0 +1,12 @@
+{
+  "number": "LCR 130",
+  "title_cn": "衣橱整理",
+  "title_en": "衣橱整理",
+  "slug": "ji-qi-ren-de-yun-dong-fan-wei-lcof",
+  "difficulty": "Medium",
+  "description": "家居整理师将待整理衣橱划分为 m x n 的二维矩阵 grid，其中 grid[i][j] 代表一个需要整理的格子。整理师自 grid[0][0] 开始 逐行逐列 地整理每个格子。\n\n整理规则为：在整理过程中，可以选择&nbsp;向右移动一格&nbsp;或&nbsp;向下移动一格，但不能移动到衣柜之外。同时，不需要整理 digit(i)&nbsp;+ digit(j)&nbsp;> cnt 的格子，其中 digit(x)&nbsp;表示数字&nbsp;x 的各数位之和。\n\n请返回整理师&nbsp;总共需要整理多少个格子。\n\n&nbsp;\n\n示例 1：\n\n输入：m = 4, n = 7, cnt = 5\n输出：18\n\n&nbsp;\n\n提示：\n\n\t1 <= n, m <= 100\n\t0 <= cnt <= 20\n\n&nbsp;",
+  "constraints": [
+    "1 <= n, m <= 100",
+    "0 <= cnt <= 20"
+  ]
+}

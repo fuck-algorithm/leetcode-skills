@@ -1,0 +1,12 @@
+{
+  "number": "996",
+  "title_cn": "平方数组的数目",
+  "title_en": "Number of Squareful Arrays",
+  "slug": "number-of-squareful-arrays",
+  "difficulty": "Hard",
+  "description": "如果一个数组的任意两个相邻元素之和都是 完全平方数 ，则该数组称为 平方数组 。\n\n给定一个整数数组 nums，返回所有属于 平方数组 的 nums 的排列数量。\n\n如果存在某个索引 i 使得 perm1[i] != perm2[i]，则认为两个排列 perm1 和 perm2 不同。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [1,17,8]\n输出：2\n解释：[1,8,17] 和 [17,8,1] 是有效的排列。\n\n示例 2：\n\n输入：nums = [2,2,2]\n输出：1\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 12\n\t0 <= nums[i] <= 109",
+  "constraints": [
+    "1 <= nums.length <= 12",
+    "0 <= nums[i] <= 109"
+  ]
+}

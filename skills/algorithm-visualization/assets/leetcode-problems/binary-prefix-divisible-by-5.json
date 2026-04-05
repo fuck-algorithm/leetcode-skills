@@ -1,0 +1,12 @@
+{
+  "number": "1018",
+  "title_cn": "可被 5 整除的二进制前缀",
+  "title_en": "Binary Prefix Divisible By 5",
+  "slug": "binary-prefix-divisible-by-5",
+  "difficulty": "Easy",
+  "description": "给定一个二进制数组 nums (&nbsp;索引从0开始&nbsp;)。\n\n我们将xi&nbsp;定义为其二进制表示形式为子数组&nbsp;nums[0..i]&nbsp;(从最高有效位到最低有效位)。\n\n\t例如，如果 nums =[1,0,1] ，那么&nbsp;x0&nbsp;= 1,&nbsp;x1&nbsp;= 2, 和&nbsp;x2&nbsp;= 5。\n\n返回布尔值列表&nbsp;answer，只有当&nbsp;xi&nbsp;可以被 5&nbsp;整除时，答案&nbsp;answer[i] 为&nbsp;true，否则为 false。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [0,1,1]\n输出：[true,false,false]\n解释：\n输入数字为 0, 01, 011；也就是十进制中的 0, 1, 3 。只有第一个数可以被 5 整除，因此 answer[0] 为 true 。\n\n示例 2：\n\n输入：nums = [1,1,1]\n输出：[false,false,false]\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 105&nbsp;\n\tnums[i]&nbsp;仅为&nbsp;0&nbsp;或&nbsp;1",
+  "constraints": [
+    "1 <= nums.length <= 105&nbsp;",
+    "nums[i]&nbsp;仅为&nbsp;0&nbsp;或&nbsp;1"
+  ]
+}

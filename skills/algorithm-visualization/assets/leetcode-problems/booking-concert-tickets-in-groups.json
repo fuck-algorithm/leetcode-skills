@@ -1,0 +1,14 @@
+{
+  "number": "2286",
+  "title_cn": "以组为单位订音乐会的门票",
+  "title_en": "Booking Concert Tickets in Groups",
+  "slug": "booking-concert-tickets-in-groups",
+  "difficulty": "Hard",
+  "description": "一个音乐会总共有&nbsp;n&nbsp;排座位，编号从&nbsp;0&nbsp;到&nbsp;n - 1&nbsp;，每一排有&nbsp;m&nbsp;个座椅，编号为&nbsp;0&nbsp;到&nbsp;m - 1&nbsp;。你需要设计一个买票系统，针对以下情况进行座位安排：\n\n\t同一组的 k&nbsp;位观众坐在 同一排座位，且座位连续 。\n\tk&nbsp;位观众中 每一位&nbsp;都有座位坐，但他们 不一定&nbsp;坐在一起。\n\n由于观众非常挑剔，所以：\n\n\t只有当一个组里所有成员座位的排数都 小于等于&nbsp;maxRow&nbsp;，这个组才能订座位。每一组的&nbsp;maxRow&nbsp;可能 不同&nbsp;。\n\t如果有多排座位可以选择，优先选择 最小&nbsp;的排数。如果同一排中有多个座位可以坐，优先选择号码 最小&nbsp;的。\n\n请你实现&nbsp;BookMyShow&nbsp;类：\n\n\tBookMyShow(int n, int m)&nbsp;，初始化对象，n&nbsp;是排数，m&nbsp;是每一排的座位数。\n\tint[] gather(int k, int maxRow)&nbsp;返回长度为 2&nbsp;的数组，表示 k&nbsp;个成员中 第一个座位&nbsp;的排数和座位编号，这 k&nbsp;位成员必须坐在 同一排座位，且座位连续 。换言之，返回最小可能的&nbsp;r 和&nbsp;c&nbsp;满足第&nbsp;r&nbsp;排中&nbsp;[c, c + k - 1]&nbsp;的座位都是空的，且&nbsp;r <= maxRow&nbsp;。如果&nbsp;无法&nbsp;安排座位，返回&nbsp;[]&nbsp;。\n\tboolean scatter(int k, int maxRow)&nbsp;如果组里所有&nbsp;k&nbsp;个成员&nbsp;不一定&nbsp;要坐在一起的前提下，都能在第&nbsp;0 排到第&nbsp;maxRow&nbsp;排之间找到座位，那么请返回&nbsp;true&nbsp;。这种情况下，每个成员都优先找排数&nbsp;最小&nbsp;，然后是座位编号最小的座位。如果不能安排所有&nbsp;k&nbsp;个成员的座位，请返回&nbsp;false&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：\n[\"BookMyShow\", \"gather\", \"gather\", \"scatter\", \"scatter\"]\n[[2, 5], [4, 0], [2, 0], [5, 1], [5, 1]]\n输出：\n[null, [0, 0], [], true, false]\n\n解释：\nBookMyShow bms = new BookMyShow(2, 5); // 总共有 2 排，每排 5 个座位。\nbms.gather(4, 0); // 返回 [0, 0]\n                  // 这一组安排第 0 排 [0, 3] 的座位。\nbms.gather(2, 0); // 返回 []\n                  // 第 0 排只剩下 1 个座位。\n                  // 所以无法安排 2 个连续座位。\nbms.scatter(5, 1); // 返回 True\n                   // 这一组安排第 0 排第 4 个座位和第 1 排 [0, 3] 的座位。\nbms.scatter(5, 1); // 返回 False\n                   // 总共只剩下 1 个座位。\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 5 * 104\n\t1 <= m, k <= 109\n\t0 <= maxRow <= n - 1\n\tgather 和&nbsp;scatter&nbsp;总 调用次数不超过&nbsp;5 * 104 次。",
+  "constraints": [
+    "1 <= n <= 5 * 104",
+    "1 <= m, k <= 109",
+    "0 <= maxRow <= n - 1",
+    "gather 和&nbsp;scatter&nbsp;总 调用次数不超过&nbsp;5 * 104 次。"
+  ]
+}

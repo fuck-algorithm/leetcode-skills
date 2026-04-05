@@ -1,0 +1,9 @@
+{
+  "number": "3460",
+  "title_cn": "最多删除一次后的最长公共前缀",
+  "title_en": "Longest Common Prefix After at Most One Removal",
+  "slug": "longest-common-prefix-after-at-most-one-removal",
+  "difficulty": "Medium",
+  "description": "",
+  "constraints": []
+}

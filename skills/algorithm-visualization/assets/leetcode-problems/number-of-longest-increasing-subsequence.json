@@ -1,0 +1,12 @@
+{
+  "number": "673",
+  "title_cn": "最长递增子序列的个数",
+  "title_en": "Number of Longest Increasing Subsequence",
+  "slug": "number-of-longest-increasing-subsequence",
+  "difficulty": "Medium",
+  "description": "给定一个未排序的整数数组&nbsp;nums&nbsp;，&nbsp;返回最长递增子序列的个数&nbsp;。\n\n注意&nbsp;这个数列必须是 严格 递增的。\n\n&nbsp;\n\n示例 1:\n\n输入: [1,3,5,4,7]\n输出: 2\n解释: 有两个最长递增子序列，分别是 [1, 3, 4, 7] 和[1, 3, 5, 7]。\n\n示例 2:\n\n输入: [2,2,2,2,2]\n输出: 5\n解释: 最长递增子序列的长度是1，并且存在5个子序列的长度为1，因此输出5。\n\n&nbsp;\n\n提示:&nbsp;\n\n\t1 <= nums.length <= 2000\n\t-106&nbsp;<= nums[i] <= 106",
+  "constraints": [
+    "1 <= nums.length <= 2000",
+    "-106&nbsp;<= nums[i] <= 106"
+  ]
+}

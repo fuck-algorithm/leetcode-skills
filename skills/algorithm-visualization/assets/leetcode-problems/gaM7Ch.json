@@ -1,0 +1,14 @@
+{
+  "number": "LCR 103",
+  "title_cn": "零钱兑换",
+  "title_en": "零钱兑换",
+  "slug": "gaM7Ch",
+  "difficulty": "Medium",
+  "description": "给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回&nbsp;-1。\n\n你可以认为每种硬币的数量是无限的。\n\n&nbsp;\n\n示例&nbsp;1：\n\n输入：coins = [1, 2, 5], amount = 11\n输出：3 \n解释：11 = 5 + 5 + 1\n\n示例 2：\n\n输入：coins = [2], amount = 3\n输出：-1\n\n示例 3：\n\n输入：coins = [1], amount = 0\n输出：0\n\n示例 4：\n\n输入：coins = [1], amount = 1\n输出：1\n\n示例 5：\n\n输入：coins = [1], amount = 2\n输出：2\n\n&nbsp;\n\n提示：\n\n\t1 <= coins.length <= 12\n\t1 <= coins[i] <= 231 - 1\n\t0 <= amount <= 104\n\n&nbsp;\n\n注意：本题与主站 322&nbsp;题相同：&nbsp;https://leetcode.cn/problems/coin-change/",
+  "constraints": [
+    "1 <= coins.length <= 12",
+    "1 <= coins[i] <= 231 - 1",
+    "0 <= amount <= 104",
+    "注意：本题与主站 322&nbsp;题相同：&nbsp;https://leetcode.cn/problems/coin-change/"
+  ]
+}

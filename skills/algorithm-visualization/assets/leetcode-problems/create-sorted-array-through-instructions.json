@@ -1,0 +1,12 @@
+{
+  "number": "1649",
+  "title_cn": "通过指令创建有序数组",
+  "title_en": "Create Sorted Array through Instructions",
+  "slug": "create-sorted-array-through-instructions",
+  "difficulty": "Hard",
+  "description": "给你一个整数数组 instructions ，你需要根据 instructions 中的元素创建一个有序数组。一开始你有一个空的数组 nums ，你需要 从左到右 遍历 instructions 中的元素，将它们依次插入 nums 数组中。每一次插入操作的 代价 是以下两者的 较小值 ：\n\n\tnums 中 严格小于  instructions[i] 的数字数目。\n\tnums 中 严格大于  instructions[i] 的数字数目。\n\n比方说，如果要将 3 插入到 nums = [1,2,3,5] ，那么插入操作的 代价 为 min(2, 1) (元素 1 和  2 小于 3 ，元素 5 大于 3 ），插入后 nums 变成 [1,2,3,3,5] 。\n\n请你返回将 instructions 中所有元素依次插入 nums 后的 总最小代价 。由于答案会很大，请将它对 109 + 7 取余 后返回。\n\n示例 1：\n\n输入：instructions = [1,5,6,2]\n输出：1\n解释：一开始 nums = [] 。\n插入 1 ，代价为 min(0, 0) = 0 ，现在 nums = [1] 。\n插入 5 ，代价为 min(1, 0) = 0 ，现在 nums = [1,5] 。\n插入 6 ，代价为 min(2, 0) = 0 ，现在 nums = [1,5,6] 。\n插入 2 ，代价为 min(1, 2) = 1 ，现在 nums = [1,2,5,6] 。\n总代价为 0 + 0 + 0 + 1 = 1 。\n\n示例 2:\n\n输入：instructions = [1,2,3,6,5,4]\n输出：3\n解释：一开始 nums = [] 。\n插入 1 ，代价为 min(0, 0) = 0 ，现在 nums = [1] 。\n插入 2 ，代价为 min(1, 0) = 0 ，现在 nums = [1,2] 。\n插入 3 ，代价为 min(2, 0) = 0 ，现在 nums = [1,2,3] 。\n插入 6 ，代价为 min(3, 0) = 0 ，现在 nums = [1,2,3,6] 。\n插入 5 ，代价为 min(3, 1) = 1 ，现在 nums = [1,2,3,5,6] 。\n插入 4 ，代价为 min(3, 2) = 2 ，现在 nums = [1,2,3,4,5,6] 。\n总代价为 0 + 0 + 0 + 0 + 1 + 2 = 3 。\n\n示例 3：\n\n输入：instructions = [1,3,3,3,2,4,2,1,2]\n输出：4\n解释：一开始 nums = [] 。\n插入 1 ，代价为 min(0, 0) = 0 ，现在 nums = [1] 。\n插入 3 ，代价为 min(1, 0) = 0 ，现在 nums = [1,3] 。\n插入 3 ，代价为 min(1, 0) = 0 ，现在 nums = [1,3,3] 。\n插入 3 ，代价为 min(1, 0) = 0 ，现在 nums = [1,3,3,3] 。\n插入 2 ，代价为 min(1, 3) = 1 ，现在 nums = [1,2,3,3,3] 。\n插入 4 ，代价为 min(5, 0) = 0 ，现在 nums = [1,2,3,3,3,4] 。\n​​​​​插入 2 ，代价为 min(1, 4) = 1 ，现在 nums = [1,2,2,3,3,3,4] 。\n插入 1 ，代价为 min(0, 6) = 0 ，现在 nums = [1,1,2,2,3,3,3,4] 。\n插入 2 ，代价为 min(2, 4) = 2 ，现在 nums = [1,1,2,2,2,3,3,3,4] 。\n总代价为 0 + 0 + 0 + 0 + 1 + 0 + 1 + 0 + 2 = 4 。\n\n提示：\n\n\t1 <= instructions.length <= 105\n\t1 <= instructions[i] <= 105",
+  "constraints": [
+    "1 <= instructions.length <= 105",
+    "1 <= instructions[i] <= 105"
+  ]
+}

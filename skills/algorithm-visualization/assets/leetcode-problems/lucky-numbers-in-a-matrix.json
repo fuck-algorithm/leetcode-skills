@@ -1,0 +1,15 @@
+{
+  "number": "1380",
+  "title_cn": "矩阵中的幸运数",
+  "title_en": "Lucky Numbers in a Matrix",
+  "slug": "lucky-numbers-in-a-matrix",
+  "difficulty": "Easy",
+  "description": "给你一个 m x&nbsp;n 的矩阵，矩阵中的数字 各不相同 。请你按 任意 顺序返回矩阵中的所有幸运数。\n\n幸运数 是指矩阵中满足同时下列两个条件的元素：\n\n\t在同一行的所有元素中最小\n\t在同一列的所有元素中最大\n\n&nbsp;\n\n示例 1：\n\n输入：matrix = [[3,7,8],[9,11,13],[15,16,17]]\n输出：[15]\n解释：15 是唯一的幸运数，因为它是其所在行中的最小值，也是所在列中的最大值。\n\n示例 2：\n\n输入：matrix = [[1,10,4,2],[9,3,8,7],[15,16,17,12]]\n输出：[12]\n解释：12 是唯一的幸运数，因为它是其所在行中的最小值，也是所在列中的最大值。\n\n示例 3：\n\n输入：matrix = [[7,8],[1,2]]\n输出：[7]\n解释：7 是唯一的幸运数字，因为它是行中的最小值，列中的最大值。\n\n&nbsp;\n\n提示：\n\n\tm == mat.length\n\tn == mat[i].length\n\t1 <= n, m <= 50\n\t1 <=&nbsp;matrix[i][j]&nbsp;<= 105\n\t矩阵中的所有元素都是不同的",
+  "constraints": [
+    "m == mat.length",
+    "n == mat[i].length",
+    "1 <= n, m <= 50",
+    "1 <=&nbsp;matrix[i][j]&nbsp;<= 105",
+    "矩阵中的所有元素都是不同的"
+  ]
+}

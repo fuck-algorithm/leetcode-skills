@@ -1,0 +1,14 @@
+{
+  "number": "LCR 096",
+  "title_cn": "交错字符串",
+  "title_en": "交错字符串",
+  "slug": "IY6buf",
+  "difficulty": "Medium",
+  "description": "给定三个字符串&nbsp;s1、s2、s3，请判断&nbsp;s3&nbsp;能不能由&nbsp;s1&nbsp;和&nbsp;s2&nbsp;交织（交错）&nbsp;组成。\n\n两个字符串 s 和 t 交织&nbsp;的定义与过程如下，其中每个字符串都会被分割成若干 非空 子字符串：\n\n\ts = s1 + s2 + ... + sn\n\tt = t1 + t2 + ... + tm\n\t|n - m| <= 1\n\t交织 是 s1 + t1 + s2 + t2 + s3 + t3 + ... 或者 t1 + s1 + t2 + s2 + t3 + s3 + ...\n\n提示：a + b 意味着字符串 a 和 b 连接。\n\n&nbsp;\n\n示例 1：\n\n输入：s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbcbcac\"\n输出：true\n\n示例 2：\n\n输入：s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbbaccc\"\n输出：false\n\n示例 3：\n\n输入：s1 = \"\", s2 = \"\", s3 = \"\"\n输出：true\n\n&nbsp;\n\n提示：\n\n\t0 <= s1.length, s2.length <= 100\n\t0 <= s3.length <= 200\n\ts1、s2、和 s3 都由小写英文字母组成\n\n&nbsp;\n\n注意：本题与主站 97&nbsp;题相同：&nbsp;https://leetcode.cn/problems/interleaving-string/",
+  "constraints": [
+    "0 <= s1.length, s2.length <= 100",
+    "0 <= s3.length <= 200",
+    "s1、s2、和 s3 都由小写英文字母组成",
+    "注意：本题与主站 97&nbsp;题相同：&nbsp;https://leetcode.cn/problems/interleaving-string/"
+  ]
+}

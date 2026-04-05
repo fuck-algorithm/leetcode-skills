@@ -1,0 +1,13 @@
+{
+  "number": "1991",
+  "title_cn": "找到数组的中间位置",
+  "title_en": "Find the Middle Index in Array",
+  "slug": "find-the-middle-index-in-array",
+  "difficulty": "Easy",
+  "description": "给你一个下标从 0&nbsp;开始的整数数组&nbsp;nums&nbsp;，请你找到 最左边&nbsp;的中间位置&nbsp;middleIndex&nbsp;（也就是所有可能中间位置下标最小的一个）。\n\n中间位置&nbsp;middleIndex&nbsp;是满足&nbsp;nums[0] + nums[1] + ... + nums[middleIndex-1] == nums[middleIndex+1] + nums[middleIndex+2] + ... + nums[nums.length-1]&nbsp;的数组下标。\n\n如果&nbsp;middleIndex == 0&nbsp;，左边部分的和定义为 0&nbsp;。类似的，如果&nbsp;middleIndex == nums.length - 1&nbsp;，右边部分的和定义为&nbsp;0&nbsp;。\n\n请你返回满足上述条件 最左边&nbsp;的&nbsp;middleIndex&nbsp;，如果不存在这样的中间位置，请你返回&nbsp;-1&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：nums = [2,3,-1,8,4]\n输出：3\n解释：\n下标 3 之前的数字和为：2 + 3 + -1 = 4\n下标 3 之后的数字和为：4 = 4\n\n示例 2：\n\n输入：nums = [1,-1,4]\n输出：2\n解释：\n下标 2 之前的数字和为：1 + -1 = 0\n下标 2 之后的数字和为：0\n\n示例 3：\n\n输入：nums = [2,5]\n输出：-1\n解释：\n不存在符合要求的 middleIndex 。\n\n示例 4：\n\n输入：nums = [1]\n输出：0\n解释：\n下标 0 之前的数字和为：0\n下标 0 之后的数字和为：0\n\n&nbsp;\n\n提示：\n\n\t1 <= nums.length <= 100\n\t-1000 <= nums[i] <= 1000\n\n&nbsp;\n\n注意：本题与主站 724 题相同：https://leetcode.cn/problems/find-pivot-index/",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "-1000 <= nums[i] <= 1000",
+    "注意：本题与主站 724 题相同：https://leetcode.cn/problems/find-pivot-index/"
+  ]
+}

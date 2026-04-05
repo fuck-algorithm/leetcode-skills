@@ -1,0 +1,12 @@
+{
+  "number": "3136",
+  "title_cn": "有效单词",
+  "title_en": "Valid Word",
+  "slug": "valid-word",
+  "difficulty": "Easy",
+  "description": "有效单词 需要满足以下几个条件：\n\n\t至少 包含 3 个字符。\n\t由数字 0-9 和英文大小写字母组成。（不必包含所有这类字符。）\n\t至少 包含一个 元音字母 。\n\t至少 包含一个 辅音字母 。\n\n给你一个字符串 word 。如果 word 是一个有效单词，则返回 true ，否则返回 false 。\n\n注意：\n\n\t'a'、'e'、'i'、'o'、'u' 及其大写形式都属于 元音字母 。\n\t英文中的 辅音字母 是指那些除元音字母之外的字母。\n\n&nbsp;\n\n示例 1：\n\n输入：word = \"234Adas\"\n\n输出：true\n\n解释：\n\n这个单词满足所有条件。\n\n示例 2：\n\n输入：word = \"b3\"\n\n输出：false\n\n解释：\n\n这个单词的长度少于 3 且没有包含元音字母。\n\n示例 3：\n\n输入：word = \"a3$e\"\n\n输出：false\n\n解释：\n\n这个单词包含了 '$' 字符且没有包含辅音字母。\n\n&nbsp;\n\n提示：\n\n\t1 <= word.length <= 20\n\tword 由英文大写和小写字母、数字、'@'、'#' 和 '$' 组成。",
+  "constraints": [
+    "1 <= word.length <= 20",
+    "word 由英文大写和小写字母、数字、'@'、'#' 和 '$' 组成。"
+  ]
+}

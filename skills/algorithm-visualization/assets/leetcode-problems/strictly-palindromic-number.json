@@ -1,0 +1,11 @@
+{
+  "number": "2396",
+  "title_cn": "严格回文的数字",
+  "title_en": "Strictly Palindromic Number",
+  "slug": "strictly-palindromic-number",
+  "difficulty": "Medium",
+  "description": "如果一个整数 n&nbsp;在 b&nbsp;进制下（b&nbsp;为 2&nbsp;到 n - 2&nbsp;之间的所有整数）对应的字符串&nbsp;全部&nbsp;都是 回文的&nbsp;，那么我们称这个数&nbsp;n&nbsp;是 严格回文&nbsp;的。\n\n给你一个整数&nbsp;n&nbsp;，如果 n&nbsp;是 严格回文&nbsp;的，请返回&nbsp;true ，否则返回&nbsp;false&nbsp;。\n\n如果一个字符串从前往后读和从后往前读完全相同，那么这个字符串是 回文的&nbsp;。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 9\n输出：false\n解释：在 2 进制下：9 = 1001 ，是回文的。\n在 3 进制下：9 = 100 ，不是回文的。\n所以，9 不是严格回文数字，我们返回 false 。\n注意在 4, 5, 6 和 7 进制下，n = 9 都不是回文的。\n\n示例 2：\n\n输入：n = 4\n输出：false\n解释：我们只考虑 2 进制：4 = 100 ，不是回文的。\n所以我们返回 false 。\n\n&nbsp;\n\n提示：\n\n\t4 <= n <= 105",
+  "constraints": [
+    "4 <= n <= 105"
+  ]
+}

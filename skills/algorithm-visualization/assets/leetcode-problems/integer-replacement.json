@@ -1,0 +1,11 @@
+{
+  "number": "397",
+  "title_cn": "整数替换",
+  "title_en": "Integer Replacement",
+  "slug": "integer-replacement",
+  "difficulty": "Medium",
+  "description": "给定一个正整数&nbsp;n ，你可以做如下操作：\n\n\t如果&nbsp;n&nbsp;是偶数，则用&nbsp;n / 2替换&nbsp;n 。\n\t如果&nbsp;n&nbsp;是奇数，则可以用&nbsp;n + 1或n - 1替换&nbsp;n 。\n\n返回 n&nbsp;变为 1 所需的 最小替换次数 。\n\n&nbsp;\n\n示例 1：\n\n输入：n = 8\n输出：3\n解释：8 -> 4 -> 2 -> 1\n\n示例 2：\n\n输入：n = 7\n输出：4\n解释：7 -> 8 -> 4 -> 2 -> 1\n或 7 -> 6 -> 3 -> 2 -> 1\n\n示例 3：\n\n输入：n = 4\n输出：2\n\n&nbsp;\n\n提示：\n\n\t1 <= n <= 231 - 1",
+  "constraints": [
+    "1 <= n <= 231 - 1"
+  ]
+}

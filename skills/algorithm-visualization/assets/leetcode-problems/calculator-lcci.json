@@ -1,0 +1,9 @@
+{
+  "number": "面试题 16.26",
+  "title_cn": "计算器",
+  "title_en": "Calculator LCCI",
+  "slug": "calculator-lcci",
+  "difficulty": "Medium",
+  "description": "给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。\n\n表达式仅包含非负整数，+， - ，*，/ 四种运算符和空格&nbsp;&nbsp;。 整数除法仅保留整数部分。\n\n示例 1：\n\n输入：\"3+2*2\"\n输出：7\n\n示例 2：\n\n输入：\" 3/2 \"\n输出：1\n\n示例 3：\n\n输入：\" 3+5 / 2 \"\n输出：5\n\n说明：\n\n\t你可以假设所给定的表达式都是有效的。\n\t请不要使用内置的库函数 eval。",
+  "constraints": []
+}
