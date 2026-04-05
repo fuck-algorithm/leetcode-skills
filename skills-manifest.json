@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "defaultInstallPath": ".windsurf/skills",
+  "skills": [
+    {
+      "id": "algorithm-visualization",
+      "path": "skills/algorithm-visualization",
+      "entry": "SKILL.md",
+      "description": "创建交互式算法可视化教学网站，支持 LeetCode 风格代码演示和动画展示",
+      "tags": [
+        "algorithm",
+        "visualization",
+        "leetcode",
+        "react",
+        "d3"
+      ]
+    }
+  ]
+}
