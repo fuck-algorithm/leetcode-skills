@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# Windsurf Skills Installer
+# Development Installer for Claude Code Plugin
 # Usage: ./install.sh [target-project-path]
+#
+# For production use:
+#   claude --plugin-dir ./leetcode-skills
+#   or /plugin install leetcode-skills
 
 set -e
 
@@ -10,11 +14,16 @@ SKILLS_SOURCE="${SCRIPT_DIR}/skills"
 
 # Default to current directory if no target specified
 TARGET_PROJECT="${1:-.}"
-TARGET_SKILLS_DIR="${TARGET_PROJECT}/.windsurf/skills"
+TARGET_SKILLS_DIR="${TARGET_PROJECT}/.claude/skills"
 
-echo "🚀 Installing Windsurf Skills..."
+echo "🚀 Installing Claude Code Plugin (Development Mode)..."
 echo "   Source: ${SKILLS_SOURCE}"
 echo "   Target: ${TARGET_SKILLS_DIR}"
+echo ""
+echo "💡 For production use:"
+echo "   /plugin install leetcode-skills"
+echo "   or: claude --plugin-dir ./leetcode-skills"
+echo ""
 
 # Check if source exists
 if [ ! -d "${SKILLS_SOURCE}" ]; then
@@ -33,7 +42,7 @@ for skill_dir in "${SKILLS_SOURCE}"/*/; do
     if [ -d "${skill_dir}" ]; then
         skill_name=$(basename "${skill_dir}")
         target_skill_dir="${TARGET_SKILLS_DIR}/${skill_name}"
-        
+
         # Remove existing skill if present
         if [ -d "${target_skill_dir}" ]; then
             echo "📝 Updating: ${skill_name}"
@@ -41,15 +50,15 @@ for skill_dir in "${SKILLS_SOURCE}"/*/; do
         else
             echo "📦 Installing: ${skill_name}"
         fi
-        
+
         # Copy skill files
         cp -r "${skill_dir}" "${target_skill_dir}"
-        
+
         # Verify SKILL.md exists
         if [ ! -f "${target_skill_dir}/SKILL.md" ]; then
             echo "⚠️  Warning: ${skill_name} missing SKILL.md"
         fi
-        
+
         ((SKILL_COUNT++)) || true
     fi
 done
@@ -60,6 +69,6 @@ echo ""
 echo "Installed skills:"
 ls -1 "${TARGET_SKILLS_DIR}"
 echo ""
-echo "💡 You can now use these skills in Windsurf by:"
-echo "   1. Mentioning @skill-name in Cascade chat"
-echo "   2. Or letting Cascade auto-detect based on your request"
+echo "💡 You can now use these skills in Claude Code by:"
+echo "   1. Using /leetcode-skills:algorithm-visualization"
+echo "   2. Or letting Claude auto-detect based on your request"

@@ -1,0 +1,23 @@
+{
+  "name": "leetcode-skills",
+  "description": "Claude Code plugin for creating interactive algorithm visualization websites for LeetCode problems",
+  "version": "1.0.0",
+  "author": {
+    "name": "fuck-algorithm",
+    "url": "https://github.com/fuck-algorithm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuck-algorithm/leetcode-skills.git"
+  },
+  "homepage": "https://github.com/fuck-algorithm/leetcode-skills",
+  "license": "MIT",
+  "keywords": [
+    "leetcode",
+    "algorithm",
+    "visualization",
+    "education",
+    "react",
+    "d3"
+  ]
+}

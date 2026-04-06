@@ -6,6 +6,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **leetcode-skills** repository, a collection of Claude Code Skills for creating interactive algorithm visualization websites for LeetCode problems. Each skill generates complete TypeScript/React projects with D3.js animations.
 
+This repository is published as a **Claude Code Plugin**. Users install it via `/plugin install leetcode-skills` and invoke skills via `/leetcode-skills:algorithm-visualization`.
+
+## Plugin Development
+
+### Testing the Plugin Locally
+
+```bash
+# Load plugin in development mode
+claude --plugin-dir .
+
+# In Claude Code, test the skill
+/leetcode-skills:algorithm-visualization 帮我创建两数之和的可视化
+```
+
+### Plugin Manifest
+- `.claude-plugin/plugin.json` defines the plugin identity (`name`: `leetcode-skills`)
+- Skills under `skills/` are automatically discovered by Claude Code
+
 ## Architecture
 
 ### Skills System
@@ -18,10 +36,12 @@ This is the **leetcode-skills** repository, a collection of Claude Code Skills f
 ### Directory Structure
 
 ```
+.claude-plugin/
+└── plugin.json                 # Plugin manifest (name, version, metadata)
+
 skills/
 └── algorithm-visualization/    # Main skill for LeetCode visualization
     ├── SKILL.md                # Skill definition and execution spec
-    ├── agents/                 # Claude Code agent metadata
     ├── assets/                 # Static assets (leetcode-problems cache)
     ├── references/             # 7 detailed reference docs
     ├── scripts/                # Helper scripts (fetch-leetcode-problem.py, check-quality-gates.mjs)
@@ -39,7 +59,7 @@ scripts/
 ├── validate-skills.js         # Validate manifest and structure
 └── skill-repo.js              # Core skill management functions
 
-install.js / install.sh        # Install skills to target project
+install.js / install.sh        # Development install scripts
 ```
 
 ## Common Commands
@@ -53,9 +73,12 @@ node scripts/create-skill.js <skill-id> -d "description"
 # Validate skill repository structure
 node scripts/validate-skills.js
 
-# Install skills to target project (default: current dir)
+# Development install to target project (legacy fallback)
 node install.js [target-project-path]
 ./install.sh [target-project-path]
+
+# Load plugin in development mode (preferred)
+claude --plugin-dir .
 ```
 
 ### Generated Projects (from algorithm-visualization)

@@ -24,18 +24,31 @@
 
 ## 快速开始
 
-### 5 分钟快速上手
+### 方法 1：从 Claude Code Marketplace 安装（推荐）
+
+在 Claude Code 中直接运行：
+
+```
+/plugin install leetcode-skills
+```
+
+然后使用：
+```
+/leetcode-skills:algorithm-visualization 帮我为 LeetCode 第 1 题两数之和创建算法演示网站
+```
+
+### 方法 2：开发模式
 
 ```bash
 # 1. 克隆本仓库
 git clone https://github.com/fuck-algorithm/leetcode-skills.git
 cd leetcode-skills
 
-# 2. 安装 Skills 到你的算法项目
-./install.sh /path/to/your/leetcode-solutions
+# 2. 用开发模式加载插件
+claude --plugin-dir .
 
-# 3. 在 Claude Code 中打开项目，直接使用 Skill
-/algorithm-visualization 帮我为 LeetCode 第 1 题两数之和创建算法演示网站
+# 3. 在 Claude Code 中直接使用 Skill
+/leetcode-skills:algorithm-visualization 帮我为 LeetCode 第 1 题两数之和创建算法演示网站
 ```
 
 ---
@@ -63,52 +76,38 @@ cd leetcode-skills
 
 ## 安装方法
 
-### 方法 1: npm 安装（推荐，适合团队协作）
+### 方法 1: 从 Claude Code Marketplace 安装（推荐）
 
-```bash
-# 在你的算法项目中安装
-npm install --save-dev @fuck-algorithm/skills
+作为 Claude Code 官方插件安装：
 
-# 安装脚本会自动将 Skills 复制到 .claude/skills/
+```
+/plugin install leetcode-skills
 ```
 
-### 方法 2: 脚本安装（适合快速试用）
+安装后即可使用 `/leetcode-skills:algorithm-visualization` 调用技能。
+
+### 方法 2: 开发模式（本地测试）
 
 ```bash
 # 克隆本仓库
 git clone https://github.com/fuck-algorithm/leetcode-skills.git
 cd leetcode-skills
 
-# 安装到指定项目
-./install.sh /path/to/your/project
+# 用开发模式加载插件
+claude --plugin-dir .
 
-# 或安装到当前目录（如果当前就是目标项目）
-./install.sh
+# 或者在另一个项目中引用本仓库
+./install.sh /path/to/your/project
 ```
 
-### 方法 3: 手动复制（最简单直接）
+### 方法 3: 手动复制（兼容旧方式）
 
 ```bash
 # 克隆仓库
 git clone https://github.com/fuck-algorithm/leetcode-skills.git
 
-# 复制 skills 到你的算法项目
-cp -r skills/skills/* /path/to/your/project/.claude/skills/
-```
-
-### 方法 4: Git Submodule（适合版本控制）
-
-```bash
-# 在你的算法项目中添加 submodule
-git submodule add https://github.com/fuck-algorithm/leetcode-skills.git .skills
-git submodule update --init
-
-# 安装 Skills
-.skills/install.sh
-
-# 添加自动更新 hook
-echo '#!/bin/bash\n.skills/install.sh' > .git/hooks/post-checkout
-chmod +x .git/hooks/post-checkout
+# 复制 skill 到你的算法项目
+cp -r skills/algorithm-visualization /path/to/your/project/.claude/skills/
 ```
 
 ---
@@ -127,7 +126,7 @@ chmod +x .git/hooks/post-checkout
 
 **方式 2: 手动调用**（明确指定）
 ```
-/algorithm-visualization 帮我创建第 3 题无重复字符的最长子串的演示
+/leetcode-skills:algorithm-visualization 帮我创建第 3 题无重复字符的最长子串的演示
 ```
 
 ### 需要提供的信息
@@ -167,7 +166,7 @@ npm install --save-dev @fuck-algorithm/skills
 在 Claude Code 对话中输入：
 
 ```
-/algorithm-visualization 帮我创建 LeetCode 第 1 题"两数之和"的算法演示网站
+/leetcode-skills:algorithm-visualization 帮我创建 LeetCode 第 1 题"两数之和"的算法演示网站
 
 题目信息：
 - 题号: 1
@@ -377,10 +376,10 @@ touch skills/your-skill-name/templates/template-file.tsx
 
 ### 步骤 4: 测试
 
-安装到你的测试项目：
+在开发模式下加载插件：
 
 ```bash
-./install.sh /path/to/test-project
+claude --plugin-dir .
 ```
 
 ### 步骤 5: 提交 PR
@@ -396,11 +395,15 @@ git push origin your-branch
 ## 目录结构
 
 ```
+.claude-plugin/
+└── plugin.json                  # 插件元数据（name, version, description）
+
 skills/                          # Skills 源代码目录
 └── algorithm-visualization/     # 算法可视化 Skill
     ├── SKILL.md                 # Skill 定义和使用指南
-    ├── agents/                  # Claude Code 元数据
+    ├── assets/                  # 本地缓存（LeetCode 题目数据）
     ├── references/              # 详细参考文档
+    ├── scripts/                 # Skill 辅助脚本
     └── templates/               # 模板文件目录
         ├── App.tsx              # 主应用组件模板
         ├── main.tsx             # 入口文件模板
@@ -411,10 +414,11 @@ skills/                          # Skills 源代码目录
         ├── deploy.yml           # GitHub Actions 部署配置
         └── gitignore            # .gitignore 模板
 
-install.sh                       # Bash 安装脚本
+install.sh                       # 开发模式安装脚本
 install.js                       # Node.js 安装脚本
 package.json                     # npm 包配置
 README.md                        # 本文件
+CLAUDE.md                        # Claude Code 开发指南
 ```
 
 ---
@@ -427,7 +431,7 @@ README.md                        # 本文件
 1. Skills 是否安装在 `.claude/skills/` 目录
 2. `SKILL.md` 文件是否存在
 3. 重启 Claude Code
-4. 尝试手动调用: `/algorithm-visualization`
+4. 尝试手动调用: `/leetcode-skills:algorithm-visualization`
 
 ### Q: 如何更新已安装的 Skill？
 

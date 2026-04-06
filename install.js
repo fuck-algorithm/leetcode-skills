@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Windsurf Skills Installer
- * 
- * This script installs skills from this package to the target project's
- * .windsurf/skills/ directory.
+ * Development Installer for Claude Code Plugin
+ *
+ * This script is for development use only.
+ * For production, use: claude --plugin-dir ./leetcode-skills
+ * or install from marketplace: /plugin install leetcode-skills
  */
 
 const fs = require('fs');
@@ -16,11 +17,16 @@ const skillsSource = path.join(packageRoot, 'skills');
 
 // Get target project path (default to current working directory)
 const targetProject = process.argv[2] || process.cwd();
-const targetSkillsDir = path.join(targetProject, '.windsurf', 'skills');
+const targetSkillsDir = path.join(targetProject, '.claude', 'skills');
 
-console.log('🚀 Installing Windsurf Skills...');
+console.log('🚀 Installing Claude Code Plugin (Development Mode)...');
 console.log(`   Source: ${skillsSource}`);
 console.log(`   Target: ${targetSkillsDir}`);
+console.log('');
+console.log('💡 For production use:');
+console.log('   /plugin install leetcode-skills');
+console.log('   or: claude --plugin-dir ./leetcode-skills');
+console.log('');
 
 // Check if source exists
 if (!fs.existsSync(skillsSource)) {
@@ -74,9 +80,9 @@ const installedSkills = fs.readdirSync(targetSkillsDir, { withFileTypes: true })
   .map(dirent => `   - ${dirent.name}`);
 installedSkills.forEach(skill => console.log(skill));
 console.log('');
-console.log('💡 You can now use these skills in Windsurf by:');
-console.log('   1. Mentioning @skill-name in Cascade chat');
-console.log('   2. Or letting Cascade auto-detect based on your request');
+console.log('💡 You can now use these skills in Claude Code by:');
+console.log('   1. Using /leetcode-skills:algorithm-visualization');
+console.log('   2. Or letting Claude auto-detect based on your request');
 
 /**
  * Recursively copy directory contents

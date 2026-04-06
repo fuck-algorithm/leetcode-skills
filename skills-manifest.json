@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "defaultInstallPath": ".windsurf/skills",
+  "defaultInstallPath": ".claude/skills",
   "skills": [
     {
       "id": "algorithm-visualization",
