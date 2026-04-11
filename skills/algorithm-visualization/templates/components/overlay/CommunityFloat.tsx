@@ -23,7 +23,7 @@ export function CommunityFloat() {
           onMouseLeave={() => setOpen(false)}
         >
           <img
-            src="/assets/community-wechat.png"
+            src="./assets/qrcode-community.png"
             alt="算法交流群二维码"
             data-testid="community-qr"
             className="community-qr"

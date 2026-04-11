@@ -1,6 +1,7 @@
 {
   "name": "leetcode-{题号}-{slug}-visualization",
   "private": true,
+  "description": "Interactive algorithm visualization website for LeetCode problems",
   "version": "1.0.0",
   "type": "module",
   "scripts": {

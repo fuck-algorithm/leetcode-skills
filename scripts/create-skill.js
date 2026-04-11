@@ -46,7 +46,7 @@ function ensureManifest(manifestPath) {
   if (!fs.existsSync(manifestPath)) {
     const initial = {
       version: 1,
-      defaultInstallPath: ".windsurf/skills",
+      defaultInstallPath: ".claude/skills",
       skills: []
     };
     fs.writeFileSync(manifestPath, JSON.stringify(initial, null, 2) + "\n", "utf8");

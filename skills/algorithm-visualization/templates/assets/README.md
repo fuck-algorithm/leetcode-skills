@@ -1,9 +1,10 @@
-将算法交流群二维码下载为 community-wechat.png 放在本目录。
+将你的微信群二维码图片放在此目录下。
 
-建议命令：
-curl -L "https://camo.githubusercontent.com/8da8cd61e3f9da0574b58bab96daeddcfbbecde5e4da9478c256f6a710749aa5/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f4a535245492f2e6769746875622f70726f66696c652f524541444d452e6173736574732f696d6167652d32303233313033303133323032363534312d373631343036352e706e67" -o community-wechat.png
+### 交流群二维码
 
-要求：
-- 保持原图比例
-- 不得拉伸变形
-- 页面中使用路径 /assets/community-wechat.png
+- 文件名：`qrcode-community.png`
+- 建议尺寸：400x400px，PNG 格式
+- 要求：保持原图比例，不得拉伸变形
+- 生成项目后，确保 `components/overlay/CommunityFloat.tsx` 中的图片路径指向 `./assets/qrcode-community.png`
+
+> 注意：模板中使用 `./assets/qrcode-community.png` 作为占位路径，生成项目时需替换为实际图片文件。

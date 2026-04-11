@@ -1,7 +1,7 @@
 {
   "name": "@fuck-algorithm/skills",
   "version": "1.0.0",
-  "description": "Windsurf Skills for algorithm visualization and problem solving",
+  "description": "Claude Code plugin for creating interactive algorithm visualization websites for LeetCode problems",
   "main": "index.js",
   "bin": {
     "install-skills": "./install.js"
@@ -12,6 +12,8 @@
   },
   "files": [
     "skills/",
+    ".claude-plugin/",
+    "skills-manifest.json",
     "install.sh",
     "install.js",
     "README.md"
@@ -20,13 +22,13 @@
     "type": "git",
     "url": "https://github.com/fuck-algorithm/leetcode-skills.git"
   },
+  "author": "fuck-algorithm",
+  "license": "MIT",
   "keywords": [
-    "windsurf",
-    "skills",
+    "claude-code",
+    "plugin",
     "algorithm",
     "visualization",
     "leetcode"
-  ],
-  "author": "fuck-algorithm",
-  "license": "MIT"
+  ]
 }

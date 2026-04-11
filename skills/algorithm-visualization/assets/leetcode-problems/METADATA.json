@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-04-12T00:00:00Z",
+  "totalProblems": 4280,
+  "source": "leetcode.cn",
+  "note": "Rebuild with: python3 skills/algorithm-visualization/scripts/build-problem-cache.py"
+}

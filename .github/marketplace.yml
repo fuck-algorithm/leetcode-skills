@@ -1,0 +1,16 @@
+version: 1
+name: leetcode-skills
+description: Claude Code plugin for creating interactive algorithm visualization websites for LeetCode problems
+tagline: Create interactive algorithm visualization websites for LeetCode problems
+categories:
+  - developer-tools
+  - education
+supported-languages:
+  - typescript
+  - javascript
+  - python
+  - java
+  - go
+versions:
+  semantic:
+    enabled: true

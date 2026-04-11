@@ -4,7 +4,7 @@ const path = require("path");
 const MANIFEST_FILE_NAME = "skills-manifest.json";
 const STATE_FILE_NAME = ".skills-repo-state.json";
 const REQUIRED_ENTRY_FILE = "SKILL.md";
-const DEFAULT_INSTALL_PATH = ".windsurf/skills";
+const DEFAULT_INSTALL_PATH = ".claude/skills";
 const SKILL_ID_PATTERN = /^[a-z0-9][a-z0-9-]*$/;
 
 function toPosixPath(value) {

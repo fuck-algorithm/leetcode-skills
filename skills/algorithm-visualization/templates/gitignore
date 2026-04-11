@@ -5,6 +5,9 @@ node_modules
 dist
 dist-ssr
 
+# template-specific: do not commit pre-built artifacts from placeholder data
+templates/dist
+
 # local env
 .env
 .env.*

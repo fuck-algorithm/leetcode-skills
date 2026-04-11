@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@fuck-algorithm/skills.svg)](https://www.npmjs.com/package/@fuck-algorithm/skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Marketplace](https://img.shields.io/badge/GitHub%20Marketplace-leetcode--skills-blue?logo=github)](https://github.com/marketplace/leetcode-skills)
 
 专为 **Claude Code** 设计的 Skills 集合，用于创建交互式算法可视化教学网站。
 
