@@ -46,7 +46,7 @@ skills/
 └── algorithm-visualization/    # Main skill for LeetCode visualization
     ├── SKILL.md                # Skill definition and execution spec
     ├── assets/                 # slim problem index + cache manifest (problems fetched on demand from a GitHub Release)
-    ├── references/             # 8 detailed reference docs (08 = motion design)
+    ├── references/             # 9 detailed reference docs (08 = motion, 09 = layout)
     ├── scripts/                # fetch/build-cache/leetcode_text/scaffold-project
     └── templates/              # Runnable project templates
         ├── App.tsx, main.tsx   # React app templates
@@ -198,7 +198,8 @@ Final state: `PASS` or `FAIL` only. Any B failure means FAIL.
 - `skills-manifest.json` - Central registry of all skills
 - `skills/algorithm-visualization/SKILL.md` - Main execution spec with 35 blocking constraints
 - `skills/algorithm-visualization/references/08-animation-motion-design.md` - Motion grammar, per-structure recipes, D3 implementation path
-- `skills/algorithm-visualization/references/` - 8 detailed specification documents
+- `skills/algorithm-visualization/references/09-layout-visual-design.md` - Canvas-first space budget, spacing scale, compact header/controls, responsive rules
+- `skills/algorithm-visualization/references/` - 9 detailed specification documents
 - `skills/algorithm-visualization/scripts/scaffold-project.mjs` - Deterministic template-to-project generator (mandatory flow)
 - `skills/algorithm-visualization/assets/leetcode-problems/` - Slim problem index + cache manifest; full problem data is downloaded from the `problem-cache-v1` release
 - `.github/workflows/ci.yml` - Validates manifests/vendor paths and smoke-tests a scaffolded project (guard/lint/type-check/build/coverage/15 E2E)

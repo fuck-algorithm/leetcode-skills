@@ -109,7 +109,7 @@ npm run qa:full            # guard + lint + type-check + build + 覆盖率 + E2E
 skills/algorithm-visualization/
 ├── SKILL.md                  # Skill 执行规范
 ├── assets/leetcode-problems/ # 索引 + 缓存清单（题目数据由 Release 按需下载）
-├── references/               # 8 份详细规范文档（08 = 动画与运动设计）
+├── references/               # 9 份详细规范文档（08 = 动画，09 = 布局与空间）
 ├── scripts/                  # 抓题、缓存构建、脚手架
 │   ├── fetch-leetcode-problem.py
 │   ├── build-problem-cache.py

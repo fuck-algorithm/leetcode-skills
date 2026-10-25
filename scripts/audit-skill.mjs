@@ -192,6 +192,12 @@ if (skillMd) {
   if (!/AC-001\s*[~-]\s*AC-023/.test(skillMd) || !skillMd.includes("AC-023")) {
     fail("SKILL.md 验收范围必须覆盖 AC-001 ~ AC-023");
   }
+  if (!skillMd.includes("references/09-layout-visual-design.md")) {
+    fail("SKILL.md 必须引用 references/09-layout-visual-design.md（空间预算与画布优先）");
+  }
+  if (!skillMd.includes("画布优先")) {
+    fail("SKILL.md 必须写明画布优先的布局约束");
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -297,6 +303,9 @@ if (exists(gateFile)) {
     "data-container-kind",
     "fadeOutAndRemove",
     "container-box",
+    "--header-height",
+    "--code-panel-width",
+    "空间预算",
   ]) {
     if (!gate.includes(token)) fail(`check-quality-gates.mjs 未检查 ${token}`);
   }

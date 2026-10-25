@@ -109,7 +109,8 @@ allowed-tools:
    npm run test:e2e
    ```
    基线必须全绿；若模板本身失败，先修模板，不得把失败带入业务实现。
-4. **动画方案设计（写代码前必须完成）**：
+4. **动画与布局方案设计（写代码前必须完成）**：
+   - 先阅读 `references/09-layout-visual-design.md` §2–§8，按空间预算确定 header / 输入 / 页签 / 控制栏 / 画布 / 代码栏尺寸；**画布优先**，不允许先排标题和边距再分配剩余空间
    - 阅读 `references/08-animation-motion-design.md` 的 §2、§3、§8
    - 列出可观察状态，按“一步一个语义动作”切步，给每步分配 `operation`、焦点、`narration`、`anchorIds`
    - 按 §5 规划稳定坐标与 ID 规则，按 §3 选定动效时长
@@ -120,7 +121,7 @@ allowed-tools:
    - `features/animation/` 的状态/时间/图例纯函数必须有单测
    - 所有测试跑红（预期失败）后再开始实现
    - 运行 `npm run test:unit`，确保全部变绿后才进入下一步
-6. **核心交互与动效实现**：完成头部、输入栏、代码面板、可视化画布、控制面板；画布必须按 08 §6 使用分层 keyed join + enter/update/exit 过渡，并渲染操作徽标、解说、固定图例与指标。
+6. **核心交互与动效实现**：完成头部、输入栏、代码面板、可视化画布、控制面板；布局按 09 的空间预算与间距系统落地（单行标题、无大留白、画布占主体），画布按 08 §6 使用分层 keyed join + enter/update/exit 过渡，并渲染操作徽标、解说、固定图例与指标。
 7. **多解法隔离实现**（如适用）：每种解法独立步骤、独立代码映射、独立画布上下文。
 8. **工程化与部署**：lint/type-check/build + GitHub Pages Action。
 9. **Playwright 自测验收**：按验收矩阵执行并留存证据（含 1x 录屏、相邻步骤截图、reduced motion 截图）。
@@ -265,6 +266,12 @@ allowed-tools:
 33. 栈/队列必须作为**容器**绘制：使用 `features/animation/structures.ts` 的 `createStack/createQueue` 生成 `CanvasContainer`，由 `render/containers.ts` 渲染固定槽位、占用计数（`n/capacity`）、栈底→栈顶 / 队首→队尾方向指针与空状态文案；禁止只用一排无容器节点表示栈或队列。`npm run qa:guard` 会检查 `structures.ts`、`render/containers.ts`、`.layer-containers` 与 `data-container-kind`。
 34. 箭头与标注必须自解释：每条 `CanvasArrow` 必须有 `text`（动作 + 对象，如“入队 3”“pop 6”）或明确的 `kind: 'pointer'`；`CanvasLabel` 必须有 `text`，解释“这是什么/下一步做什么”时补 `detail` 第二行。标签偏移必须按标签尺寸与节点半径计算，引导线不得压住节点、箭头或其它标签。
 35. 退场元素必须可靠清理：统一使用 `render/common.ts` 的 `fadeOutAndRemove`；禁止在过渡链上直接 `.remove()`（同元素存在其它命名过渡时 d3 会静默跳过删除，快速切帧会残留透明元素）。
+
+### 视觉布局与空间分配（Blocking）
+
+36. **画布优先**：在 1366×768 下，header + 输入条 + 解法页签 + 控制栏合计不得超过视口高度的 26%；画布卡片高度不得低于视口高度的 62%，实际 SVG 绘图区不得低于 50%。1920×1080 下对应上限为 22%，画布卡片不低于 76%，SVG 不低于 66%。E2E-001 会实测，超限即 FAIL。
+37. **标题与间距**：顶部栏高度 44–52px，标题只允许单行（16px、超出省略），禁止副标题/工具按钮另起一行或使用 banner 式大头部；页面外层 padding/gap 只允许 4/8/12/16px，禁止 20px 以上的连续留白。输入条、页签、控制栏都必须单行；控制栏按“按钮组 | 进度条 | 步数”一行排布。
+38. **主次比例**：工作区画布宽度不得低于 68%，代码栏宽度限定在 320–400px（`clamp(320px, 24vw, 400px)`）；画布卡片高度必须为 100% 自适应，禁止写死像素高度。`< 1100px` 时代码栏可下移，但高度限定 180–240px，页面仍不得出现纵向滚动。SVG 必须按容器比例扩展 viewBox，不得留下黑边或让内容缩在角落（内容应占绘图区 ≥60% 宽、≥50% 高）。
 
 ---
 

@@ -44,7 +44,9 @@ const docRequiredSnippets = {
     'prefers-reduced-motion',
     '操作徽标',
     '辅助结构容器',
-    '箭头与标注规范'
+    '箭头与标注规范',
+    '空间预算',
+    '画布优先'
   ]
 };
 
@@ -71,6 +73,73 @@ if (!fs.existsSync(cssPath)) {
   const css = read('index.css').toLowerCase();
   if (css.includes('purple') || css.includes('#800080') || css.includes('#7e22ce')) {
     fail('index.css 中出现紫色系 token');
+  }
+}
+
+// 2.1 空间预算与布局基线（空间画布优先，AC-001）
+if (fs.existsSync(cssPath)) {
+  const css = read('index.css');
+  const block = (selector) => {
+    const start = css.indexOf(selector);
+    if (start < 0) {
+      return '';
+    }
+    const open = css.indexOf('{', start + selector.length);
+    if (open < 0) {
+      return '';
+    }
+    let depth = 0;
+    for (let i = open; i < css.length; i += 1) {
+      if (css[i] === '{') depth += 1;
+      if (css[i] === '}') {
+        depth -= 1;
+        if (depth === 0) return css.slice(open + 1, i);
+      }
+    }
+    return '';
+  };
+
+  for (const token of ['--space-1', '--space-2', '--space-3', '--header-height', '--code-panel-width']) {
+    if (!css.includes(token)) {
+      fail(`index.css 缺少布局 token: ${token}（画布优先与间距系统未落实）`);
+    }
+  }
+
+  const headerHeight = css.match(/--header-height:\s*(\d+)px/);
+  if (!headerHeight || Number(headerHeight[1]) > 52) {
+    fail('--header-height 必须 ≤52px（顶部标题不得挤占画布）');
+  }
+
+  const codeWidth = css.match(/--code-panel-width:\s*clamp\((\d+)px,\s*[\d.]+vw,\s*(\d+)px\)/);
+  if (!codeWidth || Number(codeWidth[1]) < 300 || Number(codeWidth[2]) > 420) {
+    fail('--code-panel-width 必须为 clamp(320px, 24vw, 400px) 一类的受限宽度');
+  }
+
+  if (!block('.problem-header').includes('var(--header-height)')) {
+    fail('.problem-header 必须使用 --header-height（固定紧凑头部）');
+  }
+  if (!/white-space:\s*nowrap/.test(block('.problem-title-link'))) {
+    fail('.problem-title-link 必须单行省略（white-space: nowrap），禁止标题换行撑高');
+  }
+  if (!block('.workspace').includes('var(--code-panel-width)')) {
+    fail('.workspace 必须用 --code-panel-width 限制代码栏宽度，保证画布 ≥68%');
+  }
+  if (!block('.workspace').includes('var(--space-2)')) {
+    fail('.workspace 必须使用 var(--space-2) 的紧凑 padding/gap');
+  }
+  if (!block('.canvas-card').includes('height: 100%')) {
+    fail('.canvas-card 必须 height: 100%，禁止写死画布高度');
+  }
+  if (!/grid-template-columns/.test(block('.playback-footer'))) {
+    fail('.playback-footer 必须单行网格布局（按钮组 | 进度条 | 步数）');
+  }
+
+  for (const selector of ['.problem-header', '.data-input-bar', '.solution-tabs', '.workspace', '.playback-footer']) {
+    for (const match of block(selector).matchAll(/(?:padding|gap)(?:-[\w-]+)?:\s*(\d+)px/g)) {
+      if (Number(match[1]) > 16) {
+        fail(`${selector} 出现 ${match[1]}px 的 padding/gap：外层间距不得超过 16px`);
+      }
+    }
   }
 }
 

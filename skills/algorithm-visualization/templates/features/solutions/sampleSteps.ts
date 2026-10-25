@@ -1,8 +1,9 @@
 import type { AlgorithmStep } from '../../types';
 
-const ARRAY_Y = 380;
-const ARRAY_X = [220, 320, 420];
-const ANS_POS = { x: 640, y: 180 };
+// 示例布局刻意铺开：核心结构占据画布中部，避免所有元素挤在左上角
+const ARRAY_Y = 560;
+const ARRAY_X = [280, 600, 920];
+const ANS_POS = { x: 1080, y: 180 };
 
 function arrayNodes(currentIndex: number | null, visitedBefore: number): AlgorithmStep['frame']['nodes'] {
   return [0, 1, 2].map((index) => ({

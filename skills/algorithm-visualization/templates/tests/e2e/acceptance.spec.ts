@@ -34,10 +34,51 @@ test.describe('Algorithm Visualization Acceptance', () => {
     await expect(page.getByTestId('code-panel')).toBeVisible();
     await expect(page.getByTestId('playback-controls')).toBeVisible();
 
-    const noVerticalScroll = await page.evaluate(() => {
-      return document.documentElement.scrollHeight <= window.innerHeight + 4;
-    });
-    expect(noVerticalScroll).toBeTruthy();
+    // 空间预算：画布优先。1920×1080 与 1366×768 都必须成立。
+    const measureLayout = () =>
+      page.evaluate(() => {
+        const rect = (id: string) => {
+          const node = document.querySelector(`[data-testid="${id}"]`);
+          return node ? node.getBoundingClientRect() : null;
+        };
+        const header = rect('problem-header');
+        const input = rect('data-input-bar');
+        const tabs = rect('solution-tabs');
+        const footer = rect('playback-controls');
+        const canvas = rect('visualization-canvas');
+        const svg = rect('canvas-svg');
+        const code = rect('code-panel');
+        const chromeHeight =
+          (header?.height ?? 0) + (input?.height ?? 0) + (tabs?.height ?? 0) + (footer?.height ?? 0);
+        return {
+          innerHeight: window.innerHeight,
+          headerHeight: header?.height ?? 0,
+          chromeRatio: chromeHeight / window.innerHeight,
+          canvasHeightRatio: (canvas?.height ?? 0) / window.innerHeight,
+          svgHeightRatio: (svg?.height ?? 0) / window.innerHeight,
+          canvasWidthShare: (canvas?.width ?? 0) / ((canvas?.width ?? 0) + (code?.width ?? 0)),
+          scrollHeight: document.documentElement.scrollHeight
+        };
+      });
+
+    const viewports = [
+      { width: 1920, height: 1080, chrome: 0.22, canvas: 0.76, svg: 0.66, share: 0.7 },
+      { width: 1366, height: 768, chrome: 0.26, canvas: 0.62, svg: 0.5, share: 0.68 }
+    ];
+
+    for (const viewport of viewports) {
+      await page.setViewportSize({ width: viewport.width, height: viewport.height });
+      await page.waitForTimeout(250);
+      const layout = await measureLayout();
+      const tag = `${viewport.width}x${viewport.height}`;
+
+      expect(layout.scrollHeight, `${tag} 出现纵向滚动`).toBeLessThanOrEqual(viewport.height + 4);
+      expect(layout.headerHeight, `${tag} 顶部标题栏过高`).toBeLessThanOrEqual(52);
+      expect(layout.chromeRatio, `${tag} 非画布区域占比过高`).toBeLessThanOrEqual(viewport.chrome + 0.005);
+      expect(layout.canvasHeightRatio, `${tag} 画布高度占比不足`).toBeGreaterThanOrEqual(viewport.canvas);
+      expect(layout.svgHeightRatio, `${tag} 绘图区高度占比不足`).toBeGreaterThanOrEqual(viewport.svg);
+      expect(layout.canvasWidthShare, `${tag} 画布宽度占比不足`).toBeGreaterThanOrEqual(viewport.share);
+    }
   });
 
   test('E2E-002 顶部三类外链具备新标签行为', async ({ page }) => {
