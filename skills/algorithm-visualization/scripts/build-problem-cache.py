@@ -4,6 +4,7 @@
 支持断点续传、限速、错误重试。
 """
 
+import argparse
 import json
 import os
 import re
@@ -12,10 +13,13 @@ import time
 import urllib.request
 from pathlib import Path
 
+import problem_cache
 from leetcode_text import clean_html, extract_constraints, normalize_problem
 
-CACHE_DIR = Path(__file__).resolve().parent.parent / "assets" / "leetcode-problems"
+# main() 会根据参数覆盖这两个路径；默认写入用户缓存，避免把大缓存重新塞进 git。
+CACHE_DIR = problem_cache.primary_cache_dir()
 PROGRESS_FILE = CACHE_DIR / ".progress.json"
+INDEX_PATH = problem_cache.BUNDLED_DIR / "index.json"
 LIST_API_URL = "https://leetcode.cn/graphql/"
 SINGLE_API_URL = "https://leetcode.cn/graphql/"
 REQUEST_DELAY = 0.2
@@ -138,10 +142,10 @@ def build_index(slugs_meta: list[dict]):
         if number:
             by_number[number] = slug
     index = {"bySlug": by_slug, "byNumber": by_number}
-    index_path = CACHE_DIR / "index.json"
-    with open(index_path, "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
-    print(f"Index written: {index_path}")
+    with open(INDEX_PATH, "w", encoding="utf-8") as f:
+        # 索引随插件分发，紧凑写出可少占约 250KB 克隆体积。
+        json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"Index written: {INDEX_PATH}")
 
 
 def fetch_and_cache_problem(slug: str, title_cn_fallback: str = "", title_fallback: str = "", number_fallback: str = "", difficulty_fallback: str = "") -> dict:
@@ -177,6 +181,27 @@ def fetch_and_cache_problem(slug: str, title_cn_fallback: str = "", title_fallba
 
 
 def main():
+    global CACHE_DIR, PROGRESS_FILE, INDEX_PATH
+
+    parser = argparse.ArgumentParser(description="Pre-fetch all LeetCode CN problems")
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=problem_cache.primary_cache_dir(),
+        help="题目缓存输出目录（默认用户缓存 ~/.cache/leetcode-skills/problems）",
+    )
+    parser.add_argument(
+        "--index-out",
+        type=Path,
+        default=problem_cache.BUNDLED_DIR / "index.json",
+        help="随插件分发的索引输出路径",
+    )
+    args = parser.parse_args()
+    CACHE_DIR = args.out.expanduser()
+    PROGRESS_FILE = CACHE_DIR / ".progress.json"
+    INDEX_PATH = args.index_out.expanduser()
+    print(f"Cache dir: {CACHE_DIR}")
+
     print("Step 1: Fetching problem list...")
     slugs_meta = fetch_all_slugs()
     print(f"Collected {len(slugs_meta)} problems.")

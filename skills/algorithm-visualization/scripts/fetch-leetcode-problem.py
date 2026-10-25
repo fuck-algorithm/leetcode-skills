@@ -1,30 +1,32 @@
 #!/usr/bin/env python3
-"""从 LeetCode 中文站抓取题目信息（支持本地缓存优先）。
+"""获取 LeetCode 中文站题目信息（本地缓存优先）。
 
 用法：
-  python3 fetch-leetcode-problem.py two-sum   # 按 slug
-  python3 fetch-leetcode-problem.py 1          # 按题号
+  python3 fetch-leetcode-problem.py two-sum        # 按 slug
+  python3 fetch-leetcode-problem.py 1              # 按题号
+  python3 fetch-leetcode-problem.py --prefetch     # 预下载全量题库缓存（推荐首次执行）
+
+题目缓存按以下顺序查找：
+  1. $LEETCODE_SKILL_CACHE_DIR（若设置）
+  2. ~/.cache/leetcode-skills/problems（首次使用 --prefetch 下载）
+  3. 插件目录 assets/leetcode-problems（开发仓库兜底）
+
+未命中缓存时会联网抓取单题并写入用户缓存；联网失败则尝试下载全量缓存。
+下载地址可用 $LEETCODE_SKILL_CACHE_URL 覆盖为镜像。
 """
 
 import argparse
 import json
-import os
 import re
 import sys
 import urllib.request
-from pathlib import Path
 
+import problem_cache as cache
 from leetcode_text import clean_html, extract_constraints, normalize_problem
-
-CACHE_DIR = Path(__file__).resolve().parent.parent / "assets" / "leetcode-problems"
-INDEX_FILE = CACHE_DIR / "index.json"
 
 
 def load_index():
-    if INDEX_FILE.exists():
-        with open(INDEX_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"bySlug": {}, "byNumber": {}}
+    return cache.load_index()
 
 
 def get_slug_from_input(inp: str) -> str:
@@ -35,8 +37,8 @@ def get_slug_from_input(inp: str) -> str:
 
 
 def load_from_cache(slug: str):
-    path = CACHE_DIR / f"{slug}.json"
-    if not path.exists():
+    path = cache.find_cached_problem(slug)
+    if not path:
         return None
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -46,10 +48,7 @@ def load_from_cache(slug: str):
 
 
 def save_to_cache(slug: str, data: dict):
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    path = CACHE_DIR / f"{slug}.json"
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    cache.save_problem(slug, data)
 
 
 def fetch_graphql(slug: str) -> dict:
@@ -118,10 +117,34 @@ def fetch_online(slug: str):
     })
 
 
+def prefetch(refresh: bool) -> int:
+    try:
+        directory = cache.ensure_full_cache(force=refresh)
+    except Exception as exc:
+        print(json.dumps({"error": str(exc), "cacheDir": str(cache.primary_cache_dir())}, ensure_ascii=False))
+        return 1
+    manifest = cache.load_manifest()
+    print(json.dumps({
+        "status": "ok",
+        "cacheDir": str(directory),
+        "version": manifest.get("version"),
+        "fileCount": manifest.get("fileCount"),
+        "sha256": manifest.get("sha256"),
+    }, ensure_ascii=False, indent=2))
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch LeetCode CN problem info (cache-first)")
-    parser.add_argument("input", help="Problem slug or number, e.g. 'two-sum' or '1'")
+    parser.add_argument("input", nargs="?", help="Problem slug or number, e.g. 'two-sum' or '1'")
+    parser.add_argument("--prefetch", action="store_true", help="Download the full problem cache and exit")
+    parser.add_argument("--refresh-cache", action="store_true", help="Re-download the full cache even if present")
     args = parser.parse_args()
+
+    if args.prefetch:
+        sys.exit(prefetch(args.refresh_cache))
+    if not args.input:
+        parser.error("需要题号或 slug（或使用 --prefetch）")
 
     raw_input = args.input.strip()
     slug = get_slug_from_input(raw_input)
@@ -141,8 +164,19 @@ def main():
         data = fetch_online(slug)
         save_to_cache(slug, data)
         print(json.dumps(data, ensure_ascii=False, indent=2))
-    except Exception as e:
-        print(json.dumps({"error": str(e)}, ensure_ascii=False))
+        sys.exit(0)
+    except Exception as online_error:
+        # 单题抓取失败时，退回全量缓存（可能需要下载）
+        try:
+            cache.ensure_full_cache()
+        except Exception:
+            print(json.dumps({"error": str(online_error)}, ensure_ascii=False))
+            sys.exit(1)
+        cached = load_from_cache(slug)
+        if cached:
+            print(json.dumps(normalize_problem(cached), ensure_ascii=False, indent=2))
+            sys.exit(0)
+        print(json.dumps({"error": str(online_error)}, ensure_ascii=False))
         sys.exit(1)
 
 

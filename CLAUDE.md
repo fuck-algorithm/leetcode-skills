@@ -45,7 +45,7 @@ claude --plugin-dir .
 skills/
 └── algorithm-visualization/    # Main skill for LeetCode visualization
     ├── SKILL.md                # Skill definition and execution spec
-    ├── assets/                 # leetcode-problems cache (4280 problems + index.json)
+    ├── assets/                 # slim problem index + cache manifest (problems fetched on demand from a GitHub Release)
     ├── references/             # 8 detailed reference docs (08 = motion design)
     ├── scripts/                # fetch/build-cache/leetcode_text/scaffold-project
     └── templates/              # Runnable project templates
@@ -131,15 +131,24 @@ npm run qa:full        # guard + lint + type-check + build + test:coverage + tes
 ### LeetCode Data Cache
 
 ```bash
-# Fetch single problem (uses local cache first)
+# Fetch single problem (cache-first; falls back to leetcode.cn)
 python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py <slug-or-number>
 
-# Rebuild full cache (4280 problems) - only needed for updates
+# Pre-download the full cache (~1.7MB) into ~/.cache/leetcode-skills/problems
+python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py --prefetch
+
+# Rebuild the cache and bundled index - only needed when the problem set changes
 python3 skills/algorithm-visualization/scripts/build-problem-cache.py
 
-# Normalization/constraint-extraction regression tests
+# Pack the cache into a deterministic release asset + update cache-manifest.json
+python3 skills/algorithm-visualization/scripts/pack-problem-cache.py --out /tmp/leetcode-problems-v1.tar.gz
+gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
+
+# Normalization/cache regression tests
 python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_*.py'
 ```
+
+**Why the cache is not in git:** `claude plugin marketplace add` shallow-clones the whole repo. Shipping ~4300 problem JSONs made the clone large enough to time out on slow networks. Only `assets/leetcode-problems/index.json` (~1MB) and `cache-manifest.json` stay in the repo; problem data lives in the `problem-cache-v1` GitHub Release and is downloaded on demand (`LEETCODE_SKILL_CACHE_DIR` / `LEETCODE_SKILL_CACHE_URL` override location and mirror).
 
 Cache reads are normalized by `scripts/leetcode_text.py`: HTML entities are decoded, Markdown emphasis stripped, constraints re-extracted when missing, and `10<sup>4</sup>`-style exponents repaired. Old cache files are not rewritten on read.
 
@@ -185,5 +194,5 @@ Final state: `PASS` or `FAIL` only. Any B failure means FAIL.
 - `skills/algorithm-visualization/references/08-animation-motion-design.md` - Motion grammar, per-structure recipes, D3 implementation path
 - `skills/algorithm-visualization/references/` - 8 detailed specification documents
 - `skills/algorithm-visualization/scripts/scaffold-project.mjs` - Deterministic template-to-project generator (mandatory flow)
-- `skills/algorithm-visualization/assets/leetcode-problems/` - Cached LeetCode data (4280 problems + index.json)
+- `skills/algorithm-visualization/assets/leetcode-problems/` - Slim problem index + cache manifest; full problem data is downloaded from the `problem-cache-v1` release
 - `.github/workflows/ci.yml` - Validates manifests/vendor paths and smoke-tests a scaffolded project (guard/lint/type-check/build/coverage/15 E2E)

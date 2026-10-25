@@ -24,7 +24,7 @@ python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py 1
 }
 ```
 
-**获取顺序**：`本地缓存` → `远程抓取` → `用户输入 fallback`。本地缓存未命中时才会联网。
+**获取顺序**：`用户/插件缓存` → `远程抓取` → `用户输入 fallback`。缓存未命中时才会联网。
 
 > 路径说明：`${CLAUDE_SKILL_DIR}` 由 Claude Code 在插件/Skill 环境下替换为当前 skill 目录。不要改写成仓库根相对路径 `skills/algorithm-visualization/...`，否则插件安装后必然找不到文件。
 
@@ -43,14 +43,24 @@ python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py 1
 脚本位置：`${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py`
 
 **工作原理（缓存优先）：**
-1. 读取 `assets/leetcode-problems/index.json`：若输入是纯数字题号，则解析为 slug
-2. 检查本地缓存 `assets/leetcode-problems/{slug}.json`，命中则直接返回 JSON
+1. 读取插件内的 `assets/leetcode-problems/index.json`：若输入是纯数字题号，则解析为 slug
+2. 按顺序查找单题缓存：`$LEETCODE_SKILL_CACHE_DIR` → `~/.cache/leetcode-skills/problems` → 插件内开发缓存；命中则直接返回 JSON
 3. 缓存未命中时，调用 GraphQL API 获取描述、难度等；如需要再抓取 HTML 标题获取中文标题
-4. 从描述文本中提取约束条件，并将结果回写本地缓存
+4. 从描述文本中提取约束条件，并将结果回写用户缓存
+5. 单题联网抓取失败时，自动下载全量缓存包后重试
 
 **缓存相关文件：**
-- `assets/leetcode-problems/index.json`：由 `build-problem-cache.py` 生成，包含 `bySlug`（slug → 元信息）和 `byNumber`（题号 → slug）两张映射表
-- `assets/leetcode-problems/{slug}.json`：单题完整数据结构，作为运行时优先读取的缓存
+- `assets/leetcode-problems/index.json`：随插件分发（约 1MB），包含 `bySlug`（slug → 元信息）和 `byNumber`（题号 → slug）两张映射表
+- `assets/leetcode-problems/cache-manifest.json`：全量缓存包的 Release 地址、sha256、文件数与版本
+- `~/.cache/leetcode-skills/problems/{slug}.json`：运行时缓存；可用 `--prefetch` 一次性下载全量题库（约 1.7MB）
+
+**首次使用建议：**
+
+```bash
+python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py --prefetch
+```
+
+**网络受限时**：用 `LEETCODE_SKILL_CACHE_URL` 指向镜像地址；用 `LEETCODE_SKILL_CACHE_DIR` 指定缓存目录（适合共享/只读环境）。
 
 **注意：**
 - leetcode.cn 的 GraphQL 没有 `titleCn` 字段，中文标题通常从 HTML 抓取（全量预抓取时已存入缓存，日常使用无需再抓）
@@ -106,11 +116,11 @@ curl -s 'https://leetcode.cn/graphql/' \
 
 | 字段 | 自动获取来源 | 用户输入 fallback |
 |------|-------------|------------------|
-| 题号 | 本地缓存 `number` 字段 / API `questionFrontendId` | 必需 |
-| 中文标题 | 本地缓存 `title_cn` 字段 / HTML 页面 title | 必需 |
+| 题号 | 缓存 `number` 字段 / API `questionFrontendId` | 必需 |
+| 中文标题 | 缓存 `title_cn` 字段 / HTML 页面 title | 必需 |
 | slug | 本地 `index.json`（byNumber 映射）/ 用户输入 | 必需 |
-| 题目描述 | 本地缓存 `description` 字段 / API `translatedContent` | 可选 |
-| 输入约束 | 本地缓存 `constraints` 字段 / 描述中的 "提示:" | 可选 |
+| 题目描述 | 缓存 `description` 字段 / API `translatedContent` | 可选 |
+| 输入约束 | 缓存 `constraints` 字段 / 描述中的 "提示:" | 可选 |
 | 示例 | 描述中的示例部分 | 可选 |
 
 ## 使用流程
@@ -118,7 +128,7 @@ curl -s 'https://leetcode.cn/graphql/' \
 1. **识别题目标识**：从用户输入中提取题号或 slug
 2. **执行抓取脚本（本地优先）**：运行 `fetch-leetcode-problem.py`
    - 脚本自动读取 `index.json` 解析 slug
-   - 命中本地缓存则直接返回，无需联网
+   - 命中缓存则直接返回，无需联网
 3. **解析并填充**：提取字段，填入模板变量
 4. **确认缺失项**：如有字段缺失，一次性向用户确认
 5. **继续后续流程**：信息完整后进入项目骨架初始化
@@ -170,7 +180,21 @@ match = re.search(r"<title[^>]*>(.*?)</title>", html)
 
 ## 全量预抓取与索引生成
 
-为了提升稳定性和速度，skill 已预抓取全部 ~4280 道题目到 `assets/leetcode-problems/` 并生成 `index.json`。
+全量题库（~4280 道）**不放进 git 仓库**：plugin marketplace 安装需要浅克隆整个仓库，几万行题目 JSON 会让慢网络机器克隆超时。题库改为发布在 GitHub Release，运行时按需下载到 `~/.cache/leetcode-skills/problems`。
+
+**维护题库（仅题库更新时）：**
+
+```bash
+# 1. 抓取全量题库到用户缓存，并更新插件内的紧凑索引
+python3 ${CLAUDE_SKILL_DIR}/scripts/build-problem-cache.py
+
+# 2. 打包为确定性 Release 资产，并更新 cache-manifest.json
+python3 ${CLAUDE_SKILL_DIR}/scripts/pack-problem-cache.py \
+  --out /tmp/leetcode-problems-v1.tar.gz
+
+# 3. 上传资产（版本不变时上传覆盖，版本变化时换 tag 并同步清单）
+gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
+```
 
 **项目骨架生成**：拿到题目信息后，使用脚手架脚本生成项目，不要手工复制 `templates/`：
 

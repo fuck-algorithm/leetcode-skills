@@ -1,9 +1,0 @@
-{
-  "number": "2821",
-  "title_cn": "延迟每个 Promise 对象的解析",
-  "title_en": "Delay the Resolution of Each Promise",
-  "slug": "delay-the-resolution-of-each-promise",
-  "difficulty": "Medium",
-  "description": "",
-  "constraints": []
-}

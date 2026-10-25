@@ -313,8 +313,41 @@ if (exists(deployFile)) {
 // ---------------------------------------------------------------------------
 // 5. 脚手架占位符与验收口径
 // ---------------------------------------------------------------------------
-for (const file of ["scripts/fetch-leetcode-problem.py", "scripts/build-problem-cache.py", "scripts/leetcode_text.py", "scripts/test_leetcode_text.py", "scripts/scaffold-project.mjs"]) {
+for (const file of ["scripts/fetch-leetcode-problem.py", "scripts/build-problem-cache.py", "scripts/pack-problem-cache.py", "scripts/problem_cache.py", "scripts/leetcode_text.py", "scripts/test_leetcode_text.py", "scripts/test_problem_cache.py", "scripts/scaffold-project.mjs"]) {
   requireFile(path.join(SKILL_DIR, file), `skills/${SKILL_ID}/${file}`);
+}
+
+// 题库缓存必须留在 Release 里。仓库内只允许索引与清单两个 json，
+// 否则 marketplace 浅克隆会重新变大，慢网络机器安装再次超时。
+const assetDir = path.join(SKILL_DIR, "assets", "leetcode-problems");
+const cacheManifestFile = path.join(assetDir, "cache-manifest.json");
+const indexFile = path.join(assetDir, "index.json");
+if (requireFile(indexFile, "assets/leetcode-problems/index.json")) {
+  try {
+    const index = JSON.parse(read(indexFile));
+    if (!index.bySlug || !index.byNumber) fail("index.json 缺少 bySlug/byNumber");
+  } catch (error) {
+    fail(`index.json 不是合法 JSON：${error.message}`);
+  }
+}
+if (requireFile(cacheManifestFile, "assets/leetcode-problems/cache-manifest.json")) {
+  try {
+    const manifest = JSON.parse(read(cacheManifestFile));
+    for (const key of ["version", "url", "sha256", "fileCount"]) {
+      if (!manifest[key]) fail(`cache-manifest.json 缺少 ${key}`);
+    }
+    if (manifest.url && !/^https:\/\/github\.com\/.+\/releases\/download\//.test(manifest.url)) {
+      fail("cache-manifest.json 的 url 必须指向 GitHub Release 资产");
+    }
+  } catch (error) {
+    fail(`cache-manifest.json 不是合法 JSON：${error.message}`);
+  }
+}
+if (exists(assetDir)) {
+  const jsonFiles = fs.readdirSync(assetDir).filter((name) => name.endsWith(".json"));
+  if (jsonFiles.length > 2) {
+    fail(`assets/leetcode-problems 下不应提交题目缓存（发现 ${jsonFiles.length} 个 json，仅允许 index.json 与 cache-manifest.json）`);
+  }
 }
 
 const scaffoldFile = path.join(SKILL_DIR, "scripts", "scaffold-project.mjs");

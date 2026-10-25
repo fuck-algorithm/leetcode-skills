@@ -1,9 +1,0 @@
-{
-  "number": "2204",
-  "title_cn": "无向图中到环的距离",
-  "title_en": "Distance to a Cycle in Undirected Graph",
-  "slug": "distance-to-a-cycle-in-undirected-graph",
-  "difficulty": "Hard",
-  "description": "",
-  "constraints": []
-}

@@ -44,11 +44,11 @@ allowed-tools:
 
 当用户提供了题号或 slug 后，必须按以下顺序执行：
 
-1. **运行抓取脚本（本地缓存优先）**：执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" {slug_or_number}`，脚本内部会先查本地缓存 `assets/leetcode-problems/{slug}.json`，命中则直接返回，无需联网。`${CLAUDE_SKILL_DIR}` 由 Claude Code 在插件环境下替换为当前 skill 目录，**不要**写死仓库相对路径 `skills/algorithm-visualization/...`。
+1. **运行抓取脚本（本地缓存优先）**：执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" {slug_or_number}`。脚本用随插件分发的 `assets/leetcode-problems/index.json` 把题号解析为 slug，再查用户缓存 `~/.cache/leetcode-skills/problems/{slug}.json`；命中则直接返回，未命中才联网抓取并回写缓存。`${CLAUDE_SKILL_DIR}` 由 Claude Code 在插件环境下替换为当前 skill 目录，**不要**写死仓库相对路径 `skills/algorithm-visualization/...`。
 2. **解析 JSON 输出**：提取 `number`, `title_cn`, `description`, `constraints`
 3. **缺失项确认**：若脚本失败或返回空字段，一次性向用户确认缺少的信息，不要逐条追问
 
-说明：脚本会自动读取 `assets/leetcode-problems/index.json` 将题号解析为 slug；如果本地缓存未命中，才会联网抓取 leetcode.cn。抓取成功后自动回写缓存。
+说明：全量题库（约 4300 道）不随仓库克隆，首次使用可先执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" --prefetch`，从 GitHub Release 下载约 1.7MB 缓存到 `~/.cache/leetcode-skills/problems`，之后完全离线可用。未预取时脚本按题联网抓取；单题抓取失败会自动回退到全量缓存下载。网络受限可用 `LEETCODE_SKILL_CACHE_DIR` 改缓存目录、`LEETCODE_SKILL_CACHE_URL` 指向镜像。
 
 ### 必需（无法自动推断）
 1. **题号** 或 **slug**（如：1 或 "two-sum"）— 用户必须提供，或通过对话上下文推断

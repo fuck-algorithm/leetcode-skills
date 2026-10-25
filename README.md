@@ -43,7 +43,7 @@ cp -r skills/algorithm-visualization /path/to/your/project/.claude/skills/
 
 直接描述题目与要求即可，Skill 会自动完成：
 
-1. 读取本地题库缓存（约 4280 道题，含中文描述与约束）
+1. 自动获取题目数据：优先查本地缓存；首次可一键预下载约 1.7MB 全量题库（4280 道题，含中文描述与约束），未预取时按题联网抓取
 2. 调用脚手架生成完整项目（不是手工复制模板）
 3. 实现语义化分镜、稳定布局动效、代码高亮、变量旁注、步骤解说与播放控制
 4. 跑通单元测试、覆盖率与 Playwright 验收后交付
@@ -108,7 +108,7 @@ npm run qa:full            # guard + lint + type-check + build + 覆盖率 + E2E
 └── marketplace.json          # Marketplace 清单
 skills/algorithm-visualization/
 ├── SKILL.md                  # Skill 执行规范
-├── assets/leetcode-problems/ # 4280 道题缓存 + index.json
+├── assets/leetcode-problems/ # 索引 + 缓存清单（题目数据由 Release 按需下载）
 ├── references/               # 8 份详细规范文档（08 = 动画与运动设计）
 ├── scripts/                  # 抓题、缓存构建、脚手架
 │   ├── fetch-leetcode-problem.py
@@ -134,7 +134,21 @@ npm run scaffold -- --out /tmp/demo --number 1 --title "两数之和" \
 更新题库缓存（仅题库变化时需要）：
 
 ```bash
+# 抓取全量题库到 ~/.cache/leetcode-skills/problems，并更新插件内索引
 python3 skills/algorithm-visualization/scripts/build-problem-cache.py
+
+# 打包确定性缓存包并更新 assets/leetcode-problems/cache-manifest.json
+python3 skills/algorithm-visualization/scripts/pack-problem-cache.py \
+  --out /tmp/leetcode-problems-v1.tar.gz
+
+# 上传到 GitHub Release（清单中的 sha256 用于客户端校验）
+gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
+```
+
+用户侧预下载：
+
+```bash
+python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py --prefetch
 ```
 
 ## 常见问题
