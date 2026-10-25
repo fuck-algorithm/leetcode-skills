@@ -126,24 +126,15 @@ def save_progress(progress: dict):
 
 
 def build_index(slugs_meta: list[dict]):
-    by_slug = {}
+    # 只保留题号 → slug：它随插件分发，必须尽量小；题目标题/难度在题目文件里。
     by_number = {}
     for meta in slugs_meta:
         slug = meta["titleSlug"]
         number = meta.get("frontendQuestionId", "")
-        entry = {
-            "number": number,
-            "slug": slug,
-            "title_cn": meta.get("titleCn", ""),
-            "title_en": meta.get("title", ""),
-            "difficulty": meta.get("difficulty", ""),
-        }
-        by_slug[slug] = entry
         if number:
             by_number[number] = slug
-    index = {"bySlug": by_slug, "byNumber": by_number}
+    index = {"byNumber": by_number}
     with open(INDEX_PATH, "w", encoding="utf-8") as f:
-        # 索引随插件分发，紧凑写出可少占约 250KB 克隆体积。
         json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
     print(f"Index written: {INDEX_PATH}")
 

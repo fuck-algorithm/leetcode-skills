@@ -325,7 +325,9 @@ const indexFile = path.join(assetDir, "index.json");
 if (requireFile(indexFile, "assets/leetcode-problems/index.json")) {
   try {
     const index = JSON.parse(read(indexFile));
-    if (!index.bySlug || !index.byNumber) fail("index.json 缺少 bySlug/byNumber");
+    if (!index.byNumber) fail("index.json 缺少 byNumber");
+    if (index.bySlug) fail("index.json 不应包含 bySlug（会重新撑大 marketplace 克隆体积）");
+    if (fs.statSync(indexFile).size > 512 * 1024) fail("index.json 超过 512KB，随插件分发的索引必须保持精简");
   } catch (error) {
     fail(`index.json 不是合法 JSON：${error.message}`);
   }

@@ -148,7 +148,7 @@ gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
 python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_*.py'
 ```
 
-**Why the cache is not in git:** `claude plugin marketplace add` shallow-clones the whole repo. Shipping ~4300 problem JSONs made the clone large enough to time out on slow networks. Only `assets/leetcode-problems/index.json` (~1MB) and `cache-manifest.json` stay in the repo; problem data lives in the `problem-cache-v1` GitHub Release and is downloaded on demand (`LEETCODE_SKILL_CACHE_DIR` / `LEETCODE_SKILL_CACHE_URL` override location and mirror).
+**Why the cache is not in git:** `claude plugin marketplace add` shallow-clones the whole repo. Shipping ~4300 problem JSONs made the clone large enough to time out on slow networks. Only `assets/leetcode-problems/index.json` (~170KB, `byNumber` only) and `cache-manifest.json` stay in the repo; problem data lives in the `problem-cache-v1` GitHub Release and is downloaded on demand (`LEETCODE_SKILL_CACHE_DIR` / `LEETCODE_SKILL_CACHE_URL` override location and mirror). `_bmad/` and `.windsurf/` development tooling live on the `bmad-tooling` branch and are intentionally absent from `main` to keep marketplace clones small; restore them with `git checkout bmad-tooling -- _bmad .windsurf` when needed.
 
 Cache reads are normalized by `scripts/leetcode_text.py`: HTML entities are decoded, Markdown emphasis stripped, constraints re-extracted when missing, and `10<sup>4</sup>`-style exponents repaired. Old cache files are not rewritten on read.
 

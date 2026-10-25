@@ -124,7 +124,8 @@ class IndexTests(unittest.TestCase):
     def test_index_resolves_numbers(self):
         index = problem_cache.load_index()
         self.assertEqual(index.get("byNumber", {}).get("1"), "two-sum")
-        self.assertEqual(index.get("bySlug", {}).get("two-sum", {}).get("title_cn"), "两数之和")
+        # 随插件分发的索引必须保持精简，避免重新撑大克隆体积。
+        self.assertNotIn("bySlug", index)
 
 
 if __name__ == "__main__":

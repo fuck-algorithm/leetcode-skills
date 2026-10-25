@@ -20,6 +20,7 @@ import shutil
 import sys
 import tarfile
 import tempfile
+import time
 import urllib.request
 from pathlib import Path
 
@@ -84,12 +85,12 @@ def load_manifest() -> dict:
 
 
 def load_index() -> dict:
-    """读取随仓库分发的精简索引（bySlug / byNumber）。"""
+    """读取随仓库分发的精简索引（byNumber：题号 → slug）。"""
     index_file = BUNDLED_DIR / "index.json"
     if index_file.is_file():
         with open(index_file, "r", encoding="utf-8") as f:
             return json.load(f)
-    return {"bySlug": {}, "byNumber": {}}
+    return {"byNumber": {}}
 
 
 def _sha256(path: Path) -> str:
@@ -140,17 +141,31 @@ def _safe_extract(archive: Path, dest: Path) -> None:
         tar.extractall(dest, **kwargs)
 
 
-def _download(url: str, dest: Path, timeout: float) -> None:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as resp, open(dest, "wb") as f:
-        shutil.copyfileobj(resp, f, length=1 << 20)
+def _download(url: str, dest: Path, timeout: float, attempts: int = 3) -> None:
+    """下载到 dest，失败重试；慢网络可用超时环境变量放宽。"""
+    last_error: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(request, timeout=timeout) as resp, open(dest, "wb") as f:
+                shutil.copyfileobj(resp, f, length=1 << 20)
+            return
+        except Exception as exc:  # 网络抖动/超时：清理半成品后重试
+            last_error = exc
+            dest.unlink(missing_ok=True)
+            if attempt < attempts - 1:
+                time.sleep(2 * (attempt + 1))
+    raise CacheError(
+        f"缓存下载失败：{last_error}。可用 LEETCODE_SKILL_CACHE_URL 指向镜像，"
+        f"或用 LEETCODE_SKILL_CACHE_TIMEOUT 放宽超时（当前 {timeout:g}s）"
+    ) from last_error
 
 
 def ensure_full_cache(
     force: bool = False,
     manifest: dict | None = None,
     cache_dir: Path | None = None,
-    timeout: float = 120,
+    timeout: float | None = None,
     quiet: bool = False,
 ) -> Path:
     """确保全量缓存已解包到用户缓存目录，返回该目录。
@@ -167,6 +182,8 @@ def ensure_full_cache(
     url = os.environ.get("LEETCODE_SKILL_CACHE_URL") or manifest.get("url")
     if not url:
         raise CacheError("缓存清单缺少下载地址")
+    if timeout is None:
+        timeout = float(os.environ.get("LEETCODE_SKILL_CACHE_TIMEOUT", "300"))
 
     directory.mkdir(parents=True, exist_ok=True)
     if not quiet:

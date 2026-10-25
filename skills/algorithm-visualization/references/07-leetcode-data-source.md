@@ -50,7 +50,7 @@ python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py 1
 5. 单题联网抓取失败时，自动下载全量缓存包后重试
 
 **缓存相关文件：**
-- `assets/leetcode-problems/index.json`：随插件分发（约 1MB），包含 `bySlug`（slug → 元信息）和 `byNumber`（题号 → slug）两张映射表
+- `assets/leetcode-problems/index.json`：随插件分发（约 170KB），只含 `byNumber`（题号 → slug）映射；题目标题、难度、描述都在题目文件里
 - `assets/leetcode-problems/cache-manifest.json`：全量缓存包的 Release 地址、sha256、文件数与版本
 - `~/.cache/leetcode-skills/problems/{slug}.json`：运行时缓存；可用 `--prefetch` 一次性下载全量题库（约 1.7MB）
 
@@ -208,22 +208,15 @@ node "${CLAUDE_SKILL_DIR}/scripts/scaffold-project.mjs" \
 **索引文件结构** (`index.json`)：
 ```json
 {
-  "bySlug": {
-    "two-sum": {
-      "number": "1",
-      "slug": "two-sum",
-      "title_cn": "两数之和",
-      "title_en": "Two Sum",
-      "difficulty": "Easy"
-    },
-    ...
-  },
   "byNumber": {
     "1": "two-sum",
+    "2": "add-two-numbers",
     ...
   }
 }
 ```
+
+索引只用于题号 → slug 解析。标题、难度、描述、约束都在题目文件（Release 缓存）里，避免把元信息重复存两份。
 
 **重新生成索引**（如有新题）：
 ```bash
