@@ -8,6 +8,8 @@ This is the **leetcode-skills** repository, a collection of Claude Code Skills f
 
 This repository is published as a **Claude Code Plugin**. Users add the marketplace with `/plugin marketplace add fuck-algorithm/leetcode-skills`, install with `/plugin install leetcode-skills@leetcode-skills`, and invoke skills via `/leetcode-skills:algorithm-visualization`.
 
+The README is bilingual: `README.md` is the English default, `README.zh-CN.md` is Simplified Chinese. Keep the two structurally identical, start both with the copy-paste install prompt, and keep the language switch at the top. `npm run audit` enforces the install commands, language links, and matching section counts.
+
 ## Plugin Development
 
 ### Testing the Plugin Locally

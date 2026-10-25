@@ -18,7 +18,8 @@
     "skills-manifest.json",
     "install.sh",
     "install.js",
-    "README.md"
+    "README.md",
+    "README.zh-CN.md"
   ],
   "engines": {
     "node": ">=20"

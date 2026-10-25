@@ -417,11 +417,41 @@ for (const doc of ["docs/QUALITY_GATE.md", "docs/TEST_PLAN.md", "docs/ACCEPTANCE
 // 6. README 安装说明
 // ---------------------------------------------------------------------------
 const readmeFile = path.join(ROOT, "README.md");
-if (exists(readmeFile)) {
-  const readme = read(readmeFile);
-  if (!readme.includes("/plugin marketplace add")) warn("README 未说明 /plugin marketplace add 安装方式");
-  if (/\/plugin install leetcode-skills(?![@\w-])/.test(readme)) {
-    fail("README 使用了无效的 /plugin install leetcode-skills，应带 @marketplace");
+const readmeZhFile = path.join(ROOT, "README.zh-CN.md");
+if (!exists(readmeZhFile)) {
+  fail("缺少 README.zh-CN.md（简体中文 README）");
+}
+if (exists(readmeFile) && exists(readmeZhFile)) {
+  const readmes = [
+    ["README.md", read(readmeFile)],
+    ["README.zh-CN.md", read(readmeZhFile)]
+  ];
+  for (const [name, text] of readmes) {
+    if (!text.includes("/plugin marketplace add")) {
+      fail(`${name} 未说明 /plugin marketplace add 安装方式`);
+    }
+    if (!text.includes("/plugin install leetcode-skills@leetcode-skills")) {
+      fail(`${name} 未说明带 @marketplace 的安装命令`);
+    }
+    if (/\/plugin install leetcode-skills(?![@\w-])/.test(text)) {
+      fail(`${name} 使用了无效的 /plugin install leetcode-skills，应带 @marketplace`);
+    }
+    if (!text.includes("claude plugin install leetcode-skills@leetcode-skills")) {
+      fail(`${name} 缺少可直接复制给 Claude 执行的安装提示词`);
+    }
+    if (!/Install in one prompt|一键安装提示词/.test(text)) {
+      fail(`${name} 缺少顶部一键安装提示词小节`);
+    }
+  }
+  if (!readmes[0][1].includes("README.zh-CN.md")) {
+    fail("README.md 缺少切换到简体中文的链接");
+  }
+  if (!readmes[1][1].includes("README.md")) {
+    fail("README.zh-CN.md 缺少切换回 English 的链接");
+  }
+  const sectionCount = (text) => [...text.matchAll(/^##\s+/gm)].length;
+  if (sectionCount(readmes[0][1]) !== sectionCount(readmes[1][1])) {
+    fail("README.md 与 README.zh-CN.md 的二级标题数量不一致，内容结构需保持同步");
   }
 }
 

@@ -1,179 +1,145 @@
-# LeetCode 算法可视化 Skills
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# LeetCode Skills for Claude Code
 
-面向 **Claude Code** 的插件，提供 `algorithm-visualization` Skill：输入 LeetCode 题号或 slug，自动获取题目数据并生成一个可交互、可部署的算法可视化教学网站（TypeScript + React + D3.js，单屏应用）。
+**Turn any LeetCode problem into an interactive, animated algorithm visualization website.**
 
-## 环境要求
+English | [简体中文](README.zh-CN.md)
 
-- Claude Code（支持 Plugin / Skill）
-- Node.js >= 20、npm
-- Python 3（仅用于按需联网抓取题库；日常使用命中内置缓存，无需联网）
+[![CI](https://github.com/fuck-algorithm/leetcode-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/fuck-algorithm/leetcode-skills/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-339933.svg)](https://nodejs.org/)
 
-## 安装
+</div>
 
-### 从 Marketplace 安装（推荐）
+## Install in one prompt
+
+Copy the prompt below into Claude Code. Claude will install the plugin and verify it for you:
+
+```text
+Install the leetcode-skills plugin for Claude Code:
+1. Run `claude plugin marketplace add fuck-algorithm/leetcode-skills`
+2. Run `claude plugin install leetcode-skills@leetcode-skills`
+3. Run `claude plugin list` and confirm `leetcode-skills` is installed.
+If any command fails, stop and show me the exact error.
+```
+
+Restart Claude Code if it asks you to. Prefer doing it manually?
 
 ```text
 /plugin marketplace add fuck-algorithm/leetcode-skills
 /plugin install leetcode-skills@leetcode-skills
 ```
 
-安装后即可调用：
+Then create your first visualization:
 
 ```text
-/leetcode-skills:algorithm-visualization 帮我创建第 1 题两数之和的可视化
+/leetcode-skills:algorithm-visualization Create an interactive visualization for LeetCode 206, Reverse Linked List.
 ```
 
-### 开发模式
+## What it does
 
-```bash
-git clone https://github.com/fuck-algorithm/leetcode-skills.git
-cd leetcode-skills
-claude --plugin-dir .
-```
+`leetcode-skills` is a Claude Code plugin. Its `algorithm-visualization` skill takes a LeetCode number or slug, fetches the problem statement from leetcode.cn, scaffolds a complete Vite + React + TypeScript + D3.js project, and implements an animated teaching site — then runs lint, type checks, coverage, and Playwright acceptance tests before handing it over.
 
-### 手动复制（兜底）
+It is built for one job: **make the execution of an algorithm understandable step by step**, not just display code and data.
 
-```bash
-cp -r skills/algorithm-visualization /path/to/your/project/.claude/skills/
-```
+## What you get
 
-## 使用方式
+- **Single-screen, canvas-first layout** — the visualization owns the viewport; title, input, and controls stay compact at both 1366×768 and 1080p.
+- **Semantic animation** — one operation and one narration per step, stable node IDs and positions, keyed D3 transitions, no full-canvas redraws.
+- **Readable state** — fixed color legend (`current / compare / visited / done / path / error`), focus rings, visited traces, and cursor/metric annotations.
+- **Stacks and queues as real containers** — fixed slots, capacity count, direction pointers, and explicit empty states.
+- **Four languages** — Java, Python, Go, and JavaScript with line highlighting and a live variable watch panel.
+- **Multiple solutions** — each solution gets its own steps, code, and canvas state.
+- **Full playback control** — play/pause, previous/next, draggable timeline, speed presets with memory, and keyboard shortcuts.
+- **Accessible motion** — respects `prefers-reduced-motion` without hiding any state or explanation.
+- **Production-ready output** — quality gates, unit tests with coverage thresholds, 15 Playwright acceptance checks, and a GitHub Pages deployment workflow.
 
-直接描述题目与要求即可，Skill 会自动完成：
+Live example: [LeetCode Hot 100 visualizations](https://fuck-algorithm.github.io/leetcode-hot-100/)
 
-1. 自动获取题目数据：优先查本地缓存；首次可一键预下载约 1.7MB 全量题库（4280 道题，含中文描述与约束），未预取时按题联网抓取
-2. 调用脚手架生成完整项目（不是手工复制模板）
-3. 实现语义化分镜、稳定布局动效、代码高亮、变量旁注、步骤解说与播放控制
-4. 跑通单元测试、覆盖率与 Playwright 验收后交付
+## Requirements
 
-示例：
+- Claude Code with plugin support
+- Node.js 20+ and npm (for generated projects)
+- Python 3 (only for fetching problem data; cached data is downloaded automatically)
+
+Problem data is not stored in this repository. The first use downloads a ~1.7 MB cache from a GitHub Release, with jsDelivr mirrors as fallback, so slow or restricted networks still work.
+
+## Generated project
 
 ```text
-帮我为 LeetCode 第 206 题反转链表创建算法演示网站，
-需要支持迭代和递归两种解法，并部署到 GitHub Pages。
-```
-
-题目信息不完整时，Skill 会先尝试从缓存/网络补全，只有确实拿不到时才向你确认。
-
-## 生成的网站
-
-- 单屏布局：输入、画布、代码、控制面板首屏可见
-- 四种语言代码：Java / Python / Go / JavaScript，行号与当前行高亮
-- 多解法独立分镜，切换时重置播放状态
-- 播放/暂停、步进、快捷键、可拖拽进度条、速度记忆
-- 输入校验、样例按钮、随机合法数据
-- D3 画布平移缩放，节点/数组/哈希/栈队列等可视化
-- 语义化动效：每步一个操作、唯一焦点、稳定 ID 过渡、状态留痕，不整屏重绘
-- 教学层常驻：操作徽标、步骤解说、固定状态图例、访问/累计指标
-- 支持 `prefers-reduced-motion` 降级，动画关闭后信息仍完整
-- GitHub Star 徽标、算法思路弹窗、交流群二维码
-- GitHub Actions 自动部署 Pages
-
-生成项目的核心结构：
-
-```text
-leetcode-{题号}-{slug}-visualization/
+leetcode-{number}-{slug}-visualization/
 ├── App.tsx / main.tsx / index.css
-├── features/                 # 解题、播放、输入等业务模块
-├── components/               # 页面组件与可视化组件
-├── services/                 # 存储、题库、GitHub API 等
+├── components/                 # header, input, canvas, code, controls
+├── features/                   # solutions, playback, animation renderers
+├── services/                   # storage, problem fetching
 ├── tests/
-│   ├── unit/                 # Vitest 单元测试
-│   └── e2e/acceptance.spec.ts# Playwright 15 条验收用例
-├── docs/                     # 质量门禁、测试计划、验收清单、动画规格
-├── public/assets/            # 二维码等静态资源
+│   ├── unit/                   # Vitest
+│   └── e2e/acceptance.spec.ts  # 15 Playwright checks
+├── docs/                       # quality gate, test plan, animation spec
+├── public/assets/              # community QR code
 ├── scripts/check-quality-gates.mjs
 └── .github/workflows/deploy.yml
 ```
 
-## 生成项目的常用命令
+Common commands inside a generated project:
 
 ```bash
 npm install
-npm run test:e2e:install   # 首次运行，安装 Chromium
-npm run dev                # 随机高位端口（30000-65535）
-npm run qa:guard           # 文档/配色/依赖/配置检查
-npm run test:coverage      # Vitest + 覆盖率门槛 60/60/50
-npm run test:e2e           # Playwright 15 条必过用例
-npm run qa:full            # guard + lint + type-check + build + 覆盖率 + E2E
+npm run dev                # random high port (30000-65535)
+npm run qa:guard           # docs, color, layout, animation checks
+npm run test:coverage      # Vitest with 60/60/50 thresholds
+npm run test:e2e:install   # first Playwright run: install Chromium
+npm run test:e2e           # 15 acceptance checks
+npm run qa:full            # guard + lint + type-check + build + coverage + e2e
 ```
 
-## 仓库结构
+## Repository layout
 
 ```text
-.claude-plugin/
-├── plugin.json               # 插件元数据
-└── marketplace.json          # Marketplace 清单
+.claude-plugin/               # plugin and marketplace manifests
 skills/algorithm-visualization/
-├── SKILL.md                  # Skill 执行规范
-├── assets/leetcode-problems/ # 索引 + 缓存清单（题目数据由 Release 按需下载）
-├── references/               # 9 份详细规范文档（08 = 动画，09 = 布局与空间）
-├── scripts/                  # 抓题、缓存构建、脚手架
-│   ├── fetch-leetcode-problem.py
-│   ├── build-problem-cache.py
-│   ├── leetcode_text.py
-│   └── scaffold-project.mjs
-└── templates/                # 可直接跑通门禁的项目模板
-scripts/
-├── validate-skills.js        # 仓库结构校验
-└── audit-skill.mjs           # 插件/Skill/模板/验收口径交叉自检
+├── SKILL.md                  # execution spec and blocking constraints
+├── assets/leetcode-problems/ # slim problem index + cache manifest
+├── references/               # 9 design and acceptance guides
+├── scripts/                  # fetch, cache, scaffold
+└── templates/                # runnable project baseline
+scripts/                      # repository validation and audit
 ```
 
-## 仓库维护
+## Development
 
 ```bash
-node scripts/validate-skills.js   # manifest 与目录结构
-npm run audit                     # 插件、文档、模板、AC/E2E 一致性
+# Validate plugin manifests, docs, templates, and acceptance rules
+npm run validate
+
+# Python cache/normalization tests
 python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_*.py'
+
+# Scaffold a project from the templates
 npm run scaffold -- --out /tmp/demo --number 1 --title "两数之和" \
   --slug two-sum --repo https://github.com/example/demo
+
+# Load the plugin locally while developing
+claude --plugin-dir .
 ```
 
-更新题库缓存（仅题库变化时需要）：
+The full problem cache lives in the `problem-cache-v1` GitHub Release and a same-named mirror branch. Maintenance steps are documented in [`references/07-leetcode-data-source.md`](skills/algorithm-visualization/references/07-leetcode-data-source.md).
 
-```bash
-# 抓取全量题库到 ~/.cache/leetcode-skills/problems，并更新插件内索引
-python3 skills/algorithm-visualization/scripts/build-problem-cache.py
+## FAQ
 
-# 打包确定性缓存包并更新 assets/leetcode-problems/cache-manifest.json
-python3 skills/algorithm-visualization/scripts/pack-problem-cache.py \
-  --out /tmp/leetcode-problems-v1.tar.gz
+**The skill doesn't show up after installation.**
+Restart Claude Code, then run `claude plugin list` and confirm `leetcode-skills` is installed. Invoke it explicitly with `/leetcode-skills:algorithm-visualization`.
 
-# 上传到 GitHub Release（清单中的 sha256 用于客户端校验）
-gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
+**Marketplace installation timed out.**
+The repository is kept small (under 1 MB) so the shallow clone stays fast. If GitHub is unreachable from your machine, add the repository as a local marketplace or use a mirror.
 
-# 同步到同名分支，供 jsDelivr 镜像（清单 mirrors 会自动指向这里）
-git worktree add -B problem-cache-v1 /tmp/cache-branch HEAD
-cp /tmp/leetcode-problems-v1.tar.gz /tmp/cache-branch/
-git -C /tmp/cache-branch add -A
-git -C /tmp/cache-branch commit -m "chore(cache): update problem cache archive"
-git -C /tmp/cache-branch push origin problem-cache-v1
-```
+**`npm run test:e2e` fails on the first run.**
+Install the browser once with `npm run test:e2e:install`.
 
-用户侧预下载（GitHub 慢时自动切换 jsDelivr 镜像，可用 `LEETCODE_SKILL_CACHE_URL` 指定源）：
+**Can generated sites be deployed?**
+Yes. Every generated project includes a GitHub Actions workflow that deploys to GitHub Pages.
 
-```bash
-python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py --prefetch
-```
+## License
 
-## 常见问题
-
-**安装后找不到 Skill？** 确认 Marketplace 已添加、插件名为 `leetcode-skills@leetcode-skills`，然后重启 Claude Code；用 `/leetcode-skills:algorithm-visualization` 显式调用排查。
-
-**生成项目首次 `npm run test:e2e` 失败？** 先执行 `npm run test:e2e:install` 安装 Chromium。
-
-**能否同时安装多个版本？** 不建议，Skill 名称需要唯一。
-
-**如何自定义域名？** 在生成的 `vite.config.ts` 中配置 `base`，并在 GitHub Pages 设置中添加 `CNAME`。
-
-## 相关链接
-
-- [Claude Code Skills 文档](https://docs.anthropic.com/en/docs/claude-code/skills)
-- [LeetCode Hot 100 可视化](https://fuck-algorithm.github.io/leetcode-hot-100/)
-- [Issues & PRs](https://github.com/fuck-algorithm/leetcode-skills/issues)
-
-## 许可证
-
-MIT License，详见 [LICENSE](LICENSE)。
+MIT License. See [LICENSE](LICENSE).
