@@ -71,6 +71,12 @@ def main() -> int:
         help="校验清单输出路径（默认仓库内 assets/leetcode-problems/cache-manifest.json）",
     )
     parser.add_argument("--base-url", help="覆盖下载地址（默认 GitHub Release）")
+    parser.add_argument(
+        "--mirror",
+        action="append",
+        default=[],
+        help="备用下载地址（可重复）；客户端会在主地址失败时依次尝试",
+    )
     args = parser.parse_args()
 
     source = args.source.expanduser()
@@ -86,6 +92,7 @@ def main() -> int:
     manifest = {
         "version": args.tag,
         "url": url,
+        "mirrors": list(dict.fromkeys(args.mirror)),
         "sha256": sha256(args.out),
         "bytes": args.out.stat().st_size,
         "fileCount": len(files),

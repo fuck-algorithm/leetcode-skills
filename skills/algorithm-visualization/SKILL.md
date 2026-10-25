@@ -48,7 +48,7 @@ allowed-tools:
 2. **解析 JSON 输出**：提取 `number`, `title_cn`, `description`, `constraints`
 3. **缺失项确认**：若脚本失败或返回空字段，一次性向用户确认缺少的信息，不要逐条追问
 
-说明：全量题库（约 4300 道）不随仓库克隆，首次使用可先执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" --prefetch`，从 GitHub Release 下载约 1.7MB 缓存到 `~/.cache/leetcode-skills/problems`，之后完全离线可用。未预取时脚本按题联网抓取；单题抓取失败会自动回退到全量缓存下载。网络受限可用 `LEETCODE_SKILL_CACHE_DIR` 改缓存目录、`LEETCODE_SKILL_CACHE_URL` 指向镜像。
+说明：全量题库（约 4300 道）不随仓库克隆，首次使用可先执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" --prefetch`，从 GitHub Release 下载约 1.7MB 缓存到 `~/.cache/leetcode-skills/problems`，之后完全离线可用。未预取时脚本按题联网抓取；单题抓取失败会自动回退到全量缓存下载。下载先走 GitHub Release，失败会自动切换 jsDelivr 镜像；也可用 `LEETCODE_SKILL_CACHE_DIR` 改缓存目录、`LEETCODE_SKILL_CACHE_URL` 指定下载源、`LEETCODE_SKILL_CACHE_TIMEOUT` 放宽超时（默认 300s）。
 
 ### 必需（无法自动推断）
 1. **题号** 或 **slug**（如：1 或 "two-sum"）— 用户必须提供，或通过对话上下文推断

@@ -145,7 +145,7 @@ python3 skills/algorithm-visualization/scripts/pack-problem-cache.py \
 gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
 ```
 
-用户侧预下载：
+用户侧预下载（GitHub 慢时自动切换 jsDelivr 镜像，可用 `LEETCODE_SKILL_CACHE_URL` 指定源）：
 
 ```bash
 python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py --prefetch

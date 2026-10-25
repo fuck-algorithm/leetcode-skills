@@ -60,7 +60,7 @@ python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py 1
 python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py --prefetch
 ```
 
-**网络受限时**：用 `LEETCODE_SKILL_CACHE_URL` 指向镜像地址；用 `LEETCODE_SKILL_CACHE_DIR` 指定缓存目录（适合共享/只读环境）。
+**网络受限时**：`cache-manifest.json` 里的 `mirrors` 提供 jsDelivr 镜像，GitHub 主地址失败会自动切换；也可用 `LEETCODE_SKILL_CACHE_URL` 强制指定源、`LEETCODE_SKILL_CACHE_DIR` 指定缓存目录（适合共享/只读环境）、`LEETCODE_SKILL_CACHE_TIMEOUT` 放宽超时（默认 300s）。
 
 **注意：**
 - leetcode.cn 的 GraphQL 没有 `titleCn` 字段，中文标题通常从 HTML 抓取（全量预抓取时已存入缓存，日常使用无需再抓）

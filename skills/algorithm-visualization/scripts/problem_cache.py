@@ -93,6 +93,18 @@ def load_index() -> dict:
     return {"byNumber": {}}
 
 
+def _sources(manifest: dict) -> list[str]:
+    """下载源顺序：显式环境变量 → 主地址 → 镜像。"""
+    override = os.environ.get("LEETCODE_SKILL_CACHE_URL")
+    if override:
+        return [override]
+    sources: list[str] = []
+    for item in [manifest.get("url"), *(manifest.get("mirrors") or [])]:
+        if item and item not in sources:
+            sources.append(item)
+    return sources
+
+
 def _sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with open(path, "rb") as f:
@@ -179,27 +191,37 @@ def ensure_full_cache(
     if not force and cache_ready(directory, expected_sha):
         return directory
 
-    url = os.environ.get("LEETCODE_SKILL_CACHE_URL") or manifest.get("url")
-    if not url:
+    sources = _sources(manifest)
+    if not sources:
         raise CacheError("缓存清单缺少下载地址")
     if timeout is None:
         timeout = float(os.environ.get("LEETCODE_SKILL_CACHE_TIMEOUT", "300"))
 
     directory.mkdir(parents=True, exist_ok=True)
-    if not quiet:
-        print(f"正在下载题库缓存：{url}", file=sys.stderr)
 
     handle, temp_name = tempfile.mkstemp(suffix=".tar.gz")
     os.close(handle)
     archive = Path(temp_name)
     staging = Path(tempfile.mkdtemp(prefix=".staging-", dir=directory))
     try:
-        _download(url, archive, timeout)
-        actual_sha = _sha256(archive)
-        if expected_sha and actual_sha != expected_sha:
-            raise CacheError(
-                f"缓存校验失败（期望 {expected_sha[:12]}…，实际 {actual_sha[:12]}…）"
-            )
+        actual_sha = ""
+        failures: list[str] = []
+        for url in sources:
+            if not quiet:
+                print(f"正在下载题库缓存：{url}", file=sys.stderr)
+            try:
+                _download(url, archive, timeout, attempts=2)
+                actual_sha = _sha256(archive)
+                if expected_sha and actual_sha != expected_sha:
+                    raise CacheError(
+                        f"校验失败（期望 {expected_sha[:12]}…，实际 {actual_sha[:12]}…）"
+                    )
+                break
+            except Exception as exc:  # 换下一个镜像
+                failures.append(f"{url}: {exc}")
+                archive.unlink(missing_ok=True)
+        else:
+            raise CacheError("所有缓存下载源都失败：" + "；".join(failures))
 
         _safe_extract(archive, staging)
         files = [item for item in staging.glob("*.json") if item.name != "index.json"]

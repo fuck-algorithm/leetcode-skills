@@ -108,6 +108,30 @@ class EnsureFullCacheTests(unittest.TestCase):
             problem_cache.ensure_full_cache(manifest=broken, cache_dir=dest, quiet=True)
             self.assertTrue((dest / "two-sum.json").is_file())
 
+    def test_falls_back_to_mirror(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            archive = Path(tmp) / "cache.tar.gz"
+            sha = build_archive(archive, {"two-sum.json": {"slug": "two-sum"}})
+            dest = Path(tmp) / "problems"
+            manifest = self._manifest(archive, sha)
+            manifest["url"] = "file:///nonexistent/cache.tar.gz"
+            manifest["mirrors"] = [archive.as_uri()]
+            problem_cache.ensure_full_cache(manifest=manifest, cache_dir=dest, quiet=True)
+            self.assertTrue((dest / "two-sum.json").is_file())
+
+    def test_all_sources_failing_raises(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = {
+                "version": "test",
+                "url": "file:///nonexistent/a.tar.gz",
+                "mirrors": ["file:///nonexistent/b.tar.gz"],
+                "fileCount": 1,
+            }
+            with self.assertRaises(problem_cache.CacheError):
+                problem_cache.ensure_full_cache(
+                    manifest=manifest, cache_dir=Path(tmp) / "problems", quiet=True
+                )
+
     def test_checksum_mismatch_raises(self):
         with tempfile.TemporaryDirectory() as tmp:
             archive = Path(tmp) / "cache.tar.gz"
@@ -118,6 +142,20 @@ class EnsureFullCacheTests(unittest.TestCase):
                     manifest=manifest, cache_dir=Path(tmp) / "problems", quiet=True
                 )
             self.assertFalse((Path(tmp) / "problems" / problem_cache.MARKER_FILE).exists())
+
+
+class SourceOrderTests(unittest.TestCase):
+    def test_env_override_wins(self):
+        with mock.patch.dict(os.environ, {"LEETCODE_SKILL_CACHE_URL": "file:///custom.tar.gz"}):
+            sources = problem_cache._sources({"url": "https://a", "mirrors": ["https://b"]})
+            self.assertEqual(sources, ["file:///custom.tar.gz"])
+
+    def test_url_then_mirrors_without_duplicates(self):
+        with mock.patch.dict(os.environ, {}, clear=True):
+            sources = problem_cache._sources(
+                {"url": "https://a", "mirrors": ["https://b", "https://a"]}
+            )
+            self.assertEqual(sources, ["https://a", "https://b"])
 
 
 class IndexTests(unittest.TestCase):
