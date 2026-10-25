@@ -1,7 +1,7 @@
 {
   "name": "leetcode-skills",
   "description": "Claude Code plugin for creating interactive algorithm visualization websites for LeetCode problems",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "fuck-algorithm",
     "url": "https://github.com/fuck-algorithm"
