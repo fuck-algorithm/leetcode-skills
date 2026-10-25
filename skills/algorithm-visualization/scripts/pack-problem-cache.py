@@ -37,7 +37,8 @@ def problem_files(source: Path) -> list[Path]:
 def pack(files: list[Path], out: Path) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "wb") as raw:
-        with gzip.GzipFile(fileobj=raw, mode="wb", compresslevel=9, mtime=0) as gz:
+        # filename="" 防止 gzip 头写入输出文件名，否则换个 --out 名字 sha256 就变
+        with gzip.GzipFile(filename="", fileobj=raw, mode="wb", compresslevel=9, mtime=0) as gz:
             with tarfile.open(fileobj=gz, mode="w", format=tarfile.GNU_FORMAT) as tar:
                 for path in files:
                     info = tarfile.TarInfo(path.name)
@@ -89,10 +90,14 @@ def main() -> int:
     url = args.base_url or (
         f"https://github.com/{args.repo}/releases/download/{args.tag}/{args.out.name}"
     )
+    mirrors = args.mirror or [
+        f"https://cdn.jsdelivr.net/gh/{args.repo}@{args.tag}/{args.out.name}",
+        f"https://gcore.jsdelivr.net/gh/{args.repo}@{args.tag}/{args.out.name}",
+    ]
     manifest = {
         "version": args.tag,
         "url": url,
-        "mirrors": list(dict.fromkeys(args.mirror)),
+        "mirrors": list(dict.fromkeys(mirrors)),
         "sha256": sha256(args.out),
         "bytes": args.out.stat().st_size,
         "fileCount": len(files),

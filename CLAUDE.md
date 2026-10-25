@@ -144,6 +144,12 @@ python3 skills/algorithm-visualization/scripts/build-problem-cache.py
 python3 skills/algorithm-visualization/scripts/pack-problem-cache.py --out /tmp/leetcode-problems-v1.tar.gz
 gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
 
+# jsDelivr mirrors read from the same-named branch, not from release assets
+git worktree add -B problem-cache-v1 /tmp/cache-branch HEAD
+cp /tmp/leetcode-problems-v1.tar.gz /tmp/cache-branch/
+git -C /tmp/cache-branch add -A && git -C /tmp/cache-branch commit -m "chore(cache): update archive"
+git -C /tmp/cache-branch push origin problem-cache-v1
+
 # Normalization/cache regression tests
 python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_*.py'
 ```

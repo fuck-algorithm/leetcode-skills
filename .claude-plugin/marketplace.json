@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "leetcode-skills",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "description": "Create interactive, single-screen algorithm visualization websites for LeetCode problems with TypeScript, React, and D3.js.",
       "source": "./",
       "author": {

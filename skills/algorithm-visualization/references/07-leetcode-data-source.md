@@ -194,6 +194,13 @@ python3 ${CLAUDE_SKILL_DIR}/scripts/pack-problem-cache.py \
 
 # 3. 上传资产（版本不变时上传覆盖，版本变化时换 tag 并同步清单）
 gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
+
+# 4. 同步到同名分支，jsDelivr 镜像从这里取文件
+git worktree add -B problem-cache-v1 /tmp/cache-branch HEAD
+cp /tmp/leetcode-problems-v1.tar.gz /tmp/cache-branch/
+git -C /tmp/cache-branch add -A
+git -C /tmp/cache-branch commit -m "chore(cache): update problem cache archive"
+git -C /tmp/cache-branch push origin problem-cache-v1
 ```
 
 **项目骨架生成**：拿到题目信息后，使用脚手架脚本生成项目，不要手工复制 `templates/`：

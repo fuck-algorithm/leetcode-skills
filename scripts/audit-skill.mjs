@@ -313,7 +313,7 @@ if (exists(deployFile)) {
 // ---------------------------------------------------------------------------
 // 5. 脚手架占位符与验收口径
 // ---------------------------------------------------------------------------
-for (const file of ["scripts/fetch-leetcode-problem.py", "scripts/build-problem-cache.py", "scripts/pack-problem-cache.py", "scripts/problem_cache.py", "scripts/leetcode_text.py", "scripts/test_leetcode_text.py", "scripts/test_problem_cache.py", "scripts/scaffold-project.mjs"]) {
+for (const file of ["scripts/fetch-leetcode-problem.py", "scripts/build-problem-cache.py", "scripts/pack-problem-cache.py", "scripts/problem_cache.py", "scripts/leetcode_text.py", "scripts/test_leetcode_text.py", "scripts/test_problem_cache.py", "scripts/test_pack_problem_cache.py", "scripts/scaffold-project.mjs"]) {
   requireFile(path.join(SKILL_DIR, file), `skills/${SKILL_ID}/${file}`);
 }
 

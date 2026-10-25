@@ -143,6 +143,13 @@ python3 skills/algorithm-visualization/scripts/pack-problem-cache.py \
 
 # 上传到 GitHub Release（清单中的 sha256 用于客户端校验）
 gh release create problem-cache-v1 /tmp/leetcode-problems-v1.tar.gz
+
+# 同步到同名分支，供 jsDelivr 镜像（清单 mirrors 会自动指向这里）
+git worktree add -B problem-cache-v1 /tmp/cache-branch HEAD
+cp /tmp/leetcode-problems-v1.tar.gz /tmp/cache-branch/
+git -C /tmp/cache-branch add -A
+git -C /tmp/cache-branch commit -m "chore(cache): update problem cache archive"
+git -C /tmp/cache-branch push origin problem-cache-v1
 ```
 
 用户侧预下载（GitHub 慢时自动切换 jsDelivr 镜像，可用 `LEETCODE_SKILL_CACHE_URL` 指定源）：
