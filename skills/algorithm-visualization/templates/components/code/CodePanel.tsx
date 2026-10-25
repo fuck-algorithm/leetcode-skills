@@ -82,11 +82,15 @@ export function CodePanel({ language, onLanguageChange, codeArtifacts, step }: P
   }, [artifact.code, language]);
 
   useEffect(() => {
-    void getSetting<Language>(LANGUAGE_KEY, language).then((saved) => {
-      if (saved && codeArtifacts[saved]) {
-        onLanguageChange(saved);
-      }
-    });
+    void getSetting<Language>(LANGUAGE_KEY, language)
+      .then((saved) => {
+        if (saved && codeArtifacts[saved]) {
+          onLanguageChange(saved);
+        }
+      })
+      .catch(() => {
+        // 存储不可用时保持当前语言。
+      });
   }, [codeArtifacts, language, onLanguageChange]);
 
   function handleLanguageChange(next: Language) {

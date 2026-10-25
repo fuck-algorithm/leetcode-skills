@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { getSetting, setSetting } from '../../services/storage/indexedDbStore';
+import { MOTION } from '../animation/motion';
 
 type UsePlaybackOptions = {
   totalSteps: number;
@@ -27,9 +28,13 @@ export function usePlayback(options: UsePlaybackOptions): UsePlaybackResult {
   const [speed, setSpeedState] = useState(initialSpeed);
 
   useEffect(() => {
-    void getSetting<number>(SPEED_KEY, initialSpeed).then((saved) => {
-      setSpeedState(saved);
-    });
+    void getSetting<number>(SPEED_KEY, initialSpeed)
+      .then((saved) => {
+        setSpeedState(saved);
+      })
+      .catch(() => {
+        // 存储不可用时保持默认速度。
+      });
   }, [initialSpeed]);
 
   useEffect(() => {
@@ -44,7 +49,7 @@ export function usePlayback(options: UsePlaybackOptions): UsePlaybackResult {
         }
         return prev + 1;
       });
-    }, 1000 / Math.max(speed, 0.25));
+    }, Math.max(MOTION.minDurationMs, MOTION.dwellMs / Math.max(speed, 0.25)));
     return () => window.clearInterval(timer);
   }, [isPlaying, speed, totalSteps]);
 

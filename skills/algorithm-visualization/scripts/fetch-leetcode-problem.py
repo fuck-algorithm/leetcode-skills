@@ -14,6 +14,8 @@ import sys
 import urllib.request
 from pathlib import Path
 
+from leetcode_text import clean_html, extract_constraints, normalize_problem
+
 CACHE_DIR = Path(__file__).resolve().parent.parent / "assets" / "leetcode-problems"
 INDEX_FILE = CACHE_DIR / "index.json"
 
@@ -34,10 +36,13 @@ def get_slug_from_input(inp: str) -> str:
 
 def load_from_cache(slug: str):
     path = CACHE_DIR / f"{slug}.json"
-    if path.exists():
+    if not path.exists():
+        return None
+    try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    return None
+    except (OSError, json.JSONDecodeError):
+        return None
 
 
 def save_to_cache(slug: str, data: dict):
@@ -93,33 +98,6 @@ def fetch_html_title(slug: str):
     return None
 
 
-def clean_html(raw: str) -> str:
-    if not raw:
-        return ""
-    text = re.sub(r"<[^>]+>", "", raw)
-    text = text.replace("&quot;", '"').replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")
-    text = re.sub(r"\n\s*\n", "\n\n", text)
-    return text.strip()
-
-
-def extract_constraints(description: str) -> list[str]:
-    lines = description.splitlines()
-    constraints = []
-    in_constraints = False
-    for line in lines:
-        stripped = line.strip()
-        lower = stripped.lower()
-        if stripped.startswith("约束") or stripped.startswith("限制") or lower.startswith("constraints") or lower.startswith("提示"):
-            in_constraints = True
-            continue
-        if in_constraints:
-            if stripped.startswith("示例") or stripped.startswith("输入") or stripped.startswith("Output") or stripped.startswith("Follow") or stripped.startswith("进阶"):
-                in_constraints = False
-            elif stripped != "" and stripped != "&nbsp;":
-                constraints.append(stripped.lstrip("* \t"))
-    return constraints
-
-
 def fetch_online(slug: str):
     result = fetch_graphql(slug)
     question = result.get("data", {}).get("question")
@@ -129,7 +107,7 @@ def fetch_online(slug: str):
     description = clean_html(raw_desc)
     constraints = extract_constraints(description)
     title_cn = fetch_html_title(slug) or question.get("title")
-    return {
+    return normalize_problem({
         "number": question.get("questionFrontendId"),
         "title_cn": title_cn,
         "title_en": question.get("title"),
@@ -137,7 +115,7 @@ def fetch_online(slug: str):
         "difficulty": question.get("difficulty"),
         "description": description,
         "constraints": constraints,
-    }
+    })
 
 
 def main():
@@ -155,7 +133,7 @@ def main():
     # Try cache first
     cached = load_from_cache(slug)
     if cached:
-        print(json.dumps(cached, ensure_ascii=False, indent=2))
+        print(json.dumps(normalize_problem(cached), ensure_ascii=False, indent=2))
         sys.exit(0)
 
     # Fetch online and cache

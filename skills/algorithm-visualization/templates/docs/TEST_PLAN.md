@@ -8,24 +8,29 @@
 
 ### 2.1 单元测试（Vitest）
 
-范围：`features/`、`services/`、`components/`（纯逻辑部分）
+范围：`features/`、`services/`（纯逻辑层）；UI 组件由 E2E 覆盖。
 
 必测项：
 - `usePlayback`：播放状态、步进边界、seek 范围、reset 行为
-- `solutionRegistry`：步骤结构、输入校验、随机生成、多语言代码存在性
+- `solutionRegistry`：步骤结构、操作语义、稳定 ID、输入校验、随机生成、多语言代码存在性
 - `validateInput`：每种解法的非法输入拒绝 + 合法输入解析
+- `indexedDbStore`：偏好持久化、TTL 过期、过期值回退
+- `animation/motion`：状态归一化、图例解析、指标推导、倍速/降级时长
+- `animation/render`：节点/边/箭头/标签分层渲染、keyed join 复用、非法引用过滤、降级模式
+- `animation/structures`：栈底→栈顶 / 队首→队尾顺序、固定容量、空容器、出队后补位与 ID 稳定
+- `animation/exit`：切帧后旧节点/边/箭头/标签被移除；快速连续切换无残留；退场中同 ID 回归可复用
 
-运行命令：`npm run test:unit`
-通过标准：exit code = 0
+运行命令：`npm run test:coverage`
+通过标准：exit code = 0，且 lines >= 60%、functions >= 60%、branches >= 50%
 
 ### 2.2 E2E 测试（Playwright）
 
-- E2E-001: 首屏单屏布局与关键元素可见
+- E2E-001: 首屏单屏布局与关键元素可见（含解说、图例、操作徽标）
 - E2E-002: 顶部外链（题目/Hot100/GitHub）新标签行为
 - E2E-003: 输入合法性（非法不重算、合法重算）
 - E2E-004: 样例与随机输入
 - E2E-005: 语言切换与刷新记忆
-- E2E-006: 代码高亮与变量旁注同步
+- E2E-006: 代码高亮、变量旁注、解说与焦点同步
 - E2E-007: 快捷键 Left/Right/Space/R
 - E2E-008: 进度条拖拽跳步
 - E2E-009: 画布缩放与平移
@@ -42,7 +47,7 @@
 - lint
 - type-check
 - build
-- test:unit
+- test:coverage
 - test:e2e
 - GitHub Action
 
@@ -50,10 +55,11 @@
 
 以下修改触发全量回归：
 
-1. 画布渲染结构变更
+1. 画布渲染结构变更（含新增/修改 `render/*` 层）
 2. 分镜绑定机制变更
 3. 输入规则变更
 4. 控制交互变更
+5. 栈/队列容器、箭头文字、标签偏移规则变更
 
 ## 3. 测试环境
 
@@ -66,7 +72,7 @@
 1. P0/P1 缺陷为 0
 2. 核心 e2e 用例通过率 100%
 3. 质量门禁命令全部通过
-4. AC-001~AC-022 全部通过（仅 AC-006 可在无多解法时 N/A）
+4. AC-001~AC-023 全部通过（仅 AC-006 可在无多解法时 N/A）
 5. 最终判定模型 B1-B7 全部满足
 
 ## 5. 失败分流与回归策略（强制）
@@ -82,5 +88,6 @@
 
 - 单元测试失败必须优先修复，才能进入 E2E 测试
 - 新增 feature 未补单元测试视为 P1 缺陷
+- E2E 通用用例不得写死具体题目的样例值或变量名；题目专属断言应新增用例
 
 未完成上述流程，不得给出 PASS 结论。

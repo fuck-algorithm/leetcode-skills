@@ -10,7 +10,8 @@ export default defineConfig({
     include: ['tests/unit/**/*.{test,spec}.{ts,tsx}'],
     coverage: {
       reporter: ['text', 'json'],
-      include: ['features/**/*', 'services/**/*', 'components/**/*'],
+      // 覆盖率约束聚焦纯逻辑层；UI 组件由 Playwright 验收用例覆盖。
+      include: ['features/**/*', 'services/**/*'],
       thresholds: {
         lines: 60,
         functions: 60,

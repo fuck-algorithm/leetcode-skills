@@ -38,6 +38,12 @@
 4. 状态迁移必须有箭头和文字说明
 5. 空节点必须显式绘制（null）
 6. 数据流（赋值、比较、指针移动）必须可视化
+7. 每步必须有 `operation` 操作徽标与一句 `narration` 解说
+8. 状态使用固定语义色板（current/compare/visited/done/path/error），图例始终可见且跨步骤稳定
+9. 同一元素跨步骤复用稳定 ID 与坐标；使用 data join + 过渡，禁止整屏重建
+10. 每帧唯一焦点，旧焦点转 visited 留痕；最终结果转 done/path
+11. 动画时长使用统一 motion token，且短于播放停留时间；跳步先中断过渡
+12. 支持 `prefers-reduced-motion`：关闭过渡但保留全部状态与信息
 
 ## F. 控制系统
 
@@ -52,11 +58,13 @@
 
 1. 右下角交流群悬浮球
 2. hover 显示二维码，比例不变形
-3. 提示文案：扫码发送 leetcode 加入
+3. 二维码必须位于 `public/assets/qrcode-community.png`，构建后仍可访问
+4. 提示文案：扫码发送 leetcode 加入
 
 ## H. 工程与发布
 
 1. 端口使用 30000-65535（避免默认冲突）
-2. CI 必须执行 lint/type-check/build
-3. GitHub Actions 发布 Pages
-4. README 极简且准确
+2. CI 必须执行 lint/type-check/build/test:coverage/test:e2e
+3. GitHub Actions 发布 Pages，工作流位于 `.github/workflows/deploy.yml`
+4. 构建时通过 `VITE_APP_BASE` 自动适配仓库名
+5. README 极简且准确

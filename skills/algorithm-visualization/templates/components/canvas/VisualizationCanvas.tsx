@@ -1,17 +1,32 @@
 import { useEffect, useMemo, useRef } from 'react';
 import * as d3 from 'd3';
 import type { AlgorithmStep, ProblemData, SolutionDefinition } from '../../types';
+import {
+  deriveMetrics,
+  operationLabel,
+  prefersReducedMotion,
+  resolveLegend
+} from '../../features/animation/motion';
+import { renderFrame } from '../../features/animation/render/renderFrame';
 
 type Props = {
   data: ProblemData | null;
   step: AlgorithmStep;
   solution: SolutionDefinition;
+  speed?: number;
 };
 
 const WIDTH = 1200;
 const HEIGHT = 720;
 
-export function VisualizationCanvas({ data, step, solution }: Props) {
+const MARKERS = [
+  { id: 'flow-arrow', color: '#2f9e7d' },
+  { id: 'transfer-arrow', color: '#b07a12' },
+  { id: 'return-arrow', color: '#18765a' },
+  { id: 'pointer-arrow', color: '#6b7f79' }
+] as const;
+
+export function VisualizationCanvas({ data, step, solution, speed = 1 }: Props) {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const zoomLayerRef = useRef<SVGGElement | null>(null);
 
@@ -19,6 +34,10 @@ export function VisualizationCanvas({ data, step, solution }: Props) {
     () => `${solution.name} - Step ${step.id + 1}: ${step.title}`,
     [solution.name, step.id, step.title]
   );
+  const legend = useMemo(() => resolveLegend(step.frame), [step.frame]);
+  const metrics = useMemo(() => deriveMetrics(step.frame), [step.frame]);
+  const operation = operationLabel(step.operation);
+  const narration = step.narration ?? step.description;
 
   useEffect(() => {
     if (!svgRef.current || !zoomLayerRef.current) {
@@ -41,135 +60,94 @@ export function VisualizationCanvas({ data, step, solution }: Props) {
       return;
     }
 
-    const layer = d3.select(zoomLayerRef.current);
-    layer.selectAll('*').remove();
-
-    const nodeById = new Map(step.frame.nodes.map((node) => [node.id, node]));
-
-    layer
-      .append('rect')
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr('width', WIDTH)
-      .attr('height', HEIGHT)
-      .attr('fill', 'rgba(255,255,255,0.02)');
-
-    for (const edge of step.frame.edges) {
-      const from = nodeById.get(edge.from);
-      const to = nodeById.get(edge.to);
-      if (!from || !to) {
-        continue;
-      }
-      layer
-        .append('line')
-        .attr('x1', from.x)
-        .attr('y1', from.y)
-        .attr('x2', to.x)
-        .attr('y2', to.y)
-        .attr('stroke', '#8fb3ad')
-        .attr('stroke-width', 2);
-
-      if (edge.label) {
-        layer
-          .append('text')
-          .attr('x', (from.x + to.x) / 2)
-          .attr('y', (from.y + to.y) / 2 - 8)
-          .attr('text-anchor', 'middle')
-          .attr('fill', '#5a6e69')
-          .attr('font-size', 12)
-          .text(edge.label);
-      }
-    }
-
-    for (const node of step.frame.nodes) {
-      const isNull = node.kind === 'null';
-      layer
-        .append('circle')
-        .attr('cx', node.x)
-        .attr('cy', node.y)
-        .attr('r', 24)
-        .attr('fill', isNull ? 'transparent' : node.kind === 'highlight' ? '#2f9e7d' : '#dde9e6')
-        .attr('stroke', isNull ? '#8f8f8f' : '#31554d')
-        .attr('stroke-width', 2)
-        .attr('stroke-dasharray', isNull ? '4 4' : null);
-
-      layer
-        .append('text')
-        .attr('x', node.x)
-        .attr('y', node.y + 5)
-        .attr('text-anchor', 'middle')
-        .attr('fill', isNull ? '#7b7b7b' : '#0f1f1b')
-        .attr('font-size', 12)
-        .text(node.label);
-    }
-
-    for (const arrow of step.frame.arrows) {
-      layer
-        .append('line')
-        .attr('x1', arrow.from.x)
-        .attr('y1', arrow.from.y)
-        .attr('x2', arrow.to.x)
-        .attr('y2', arrow.to.y)
-        .attr('stroke', '#2f9e7d')
-        .attr('stroke-width', 2)
-        .attr('marker-end', 'url(#flow-arrow)');
-
-      if (arrow.text) {
-        layer
-          .append('text')
-          .attr('x', (arrow.from.x + arrow.to.x) / 2)
-          .attr('y', (arrow.from.y + arrow.to.y) / 2 - 10)
-          .attr('text-anchor', 'middle')
-          .attr('fill', '#2f9e7d')
-          .attr('font-size', 11)
-          .text(arrow.text);
-      }
-    }
-
-    for (const label of step.frame.labels) {
-      const target = nodeById.get(label.targetId);
-      if (!target) {
-        continue;
-      }
-      const dx = label.position === 'left' ? -40 : label.position === 'right' ? 40 : 0;
-      const dy = label.position === 'top' ? -34 : label.position === 'bottom' ? 34 : 0;
-      layer
-        .append('text')
-        .attr('x', target.x + dx)
-        .attr('y', target.y + dy)
-        .attr('text-anchor', 'middle')
-        .attr('fill', '#40524d')
-        .attr('font-size', 11)
-        .text(label.text);
-    }
-  }, [step]);
+    renderFrame(
+      d3.select(zoomLayerRef.current),
+      step.frame,
+      speed,
+      prefersReducedMotion()
+    );
+  }, [step, speed]);
 
   return (
-    <div className="canvas-card" data-testid="visualization-canvas">
-      <div className="canvas-title" data-testid="canvas-title">{summary}</div>
+    <div
+      className="canvas-card"
+      data-testid="visualization-canvas"
+      data-step-id={step.id}
+      data-operation={step.operation ?? ''}
+    >
+      <div className="canvas-title" data-testid="canvas-title">
+        <span className="canvas-title-text">{summary}</span>
+        {step.operation ? (
+          <span className="operation-badge" data-testid="operation-badge" data-operation={step.operation}>
+            {operation}
+          </span>
+        ) : null}
+      </div>
+
       <svg ref={svgRef} data-testid="canvas-svg" className="viz-canvas" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
         <defs>
-          <marker
-            id="flow-arrow"
-            markerWidth="8"
-            markerHeight="8"
-            refX="7"
-            refY="4"
-            orient="auto"
-          >
-            <path d="M0,0 L8,4 L0,8 z" fill="#2f9e7d" />
-          </marker>
+          {MARKERS.map((marker) => (
+            <marker
+              key={marker.id}
+              id={marker.id}
+              markerWidth="8"
+              markerHeight="8"
+              refX="7"
+              refY="4"
+              orient="auto"
+            >
+              <path d="M0,0 L8,4 L0,8 z" fill={marker.color} />
+            </marker>
+          ))}
         </defs>
-        <g ref={zoomLayerRef} />
+        <g ref={zoomLayerRef}>
+          <rect className="canvas-backdrop" x="0" y="0" width={WIDTH} height={HEIGHT} />
+          <g className="layer-containers" />
+          <g className="layer-edges" />
+          <g className="layer-arrows" />
+          <g className="layer-nodes" />
+          <g className="layer-labels" />
+        </g>
       </svg>
-      <div className="canvas-notes" data-testid="canvas-notes">
-        {step.frame.notes.map((note, idx) => (
-          <span key={idx} className="note-item">
-            {note}
-          </span>
-        ))}
+
+      <div className="canvas-caption">
+        <p className="caption-text" data-testid="step-narration">
+          {narration}
+        </p>
+        <div className="canvas-notes" data-testid="canvas-notes">
+          {step.frame.notes.map((note, index) => (
+            <span key={`${index}-${note}`} className="note-item">
+              {note}
+            </span>
+          ))}
+        </div>
       </div>
-      {data ? <div className="canvas-input-echo" data-testid="canvas-input-echo">当前输入: {data.raw}</div> : null}
+
+      <div className="canvas-meta-row">
+        <div className="canvas-legend" data-testid="canvas-legend">
+          <span className="legend-title">图例</span>
+          {legend.map((item) => (
+            <span key={item.status} className="legend-chip" data-testid={`legend-item-${item.status}`}>
+              <i className={`legend-dot state-${item.status}`} aria-hidden="true" />
+              {item.label}
+            </span>
+          ))}
+        </div>
+        <div className="canvas-metrics" data-testid="canvas-metrics">
+          {metrics.map((metric) => (
+            <span key={metric.label} className="metric-chip">
+              <b>{metric.value}</b>
+              {metric.label}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {data ? (
+        <div className="canvas-input-echo" data-testid="canvas-input-echo">
+          当前输入: {data.raw}
+        </div>
+      ) : null}
     </div>
   );
 }

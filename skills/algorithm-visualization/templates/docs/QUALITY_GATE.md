@@ -7,9 +7,9 @@
 必须按以下 Blocking Gate 判定：
 
 - B1：一票否决项为 0
-- B2：`npm run lint`、`npm run type-check`、`npm run build`、`npm run test:e2e` 全部 exit code = 0
-- B3：Playwright 必过集合 100% 通过
-- B4：`ACCEPTANCE_CHECKLIST.md` 中 AC-001~AC-018 全部 PASS（仅 AC-006 可在无多解法时标注 N/A）
+- B2：`npm run lint`、`npm run type-check`、`npm run build`、`npm run test:coverage`、`npm run test:e2e` 全部 exit code = 0
+- B3：Playwright 必过集合（全部 15 条 E2E）100% 通过
+- B4：`ACCEPTANCE_CHECKLIST.md` 中 AC-001~AC-023 全部 PASS（仅 AC-006 可在无多解法时标注 N/A）
 - B5：P0/P1 缺陷数为 0
 - B6：Rubric 综合分 >= 80
 - B7：证据完整（命令输出、关键截图、缺陷闭环记录）
@@ -28,6 +28,10 @@
 3. 进度条无法拖拽
 4. 快捷键（Left/Right/Space/R）失效
 5. lint/type-check/build 任一失败
+6. 单元测试或覆盖率阈值失败
+7. 交流群二维码缺失或构建后 404
+8. 画布每步整屏重建（`selectAll('*').remove()`）导致闪烁/跳变
+9. 缺少步骤操作徽标、解说或固定图例
 
 ## 强制命令
 
@@ -38,6 +42,7 @@ npm run qa:guard
 npm run lint
 npm run type-check
 npm run build
+npm run test:coverage
 npm run test:e2e
 ```
 

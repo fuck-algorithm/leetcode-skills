@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Validate skills
+      - name: Validate skill structure
         run: node scripts/validate-skills.js
+
+      - name: Audit plugin, docs and template consistency
+        run: node scripts/audit-skill.mjs
 
       - name: Extract version from tag
         id: version

@@ -106,6 +106,7 @@ function App() {
             data={inputData}
             step={activeSolution.steps[playback.currentStep]}
             solution={activeSolution}
+            speed={playback.speed}
           />
         </section>
 

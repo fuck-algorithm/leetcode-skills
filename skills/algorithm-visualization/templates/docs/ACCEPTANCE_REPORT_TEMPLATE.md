@@ -18,9 +18,9 @@
 | Gate | 说明 | 结果（PASS/FAIL） | 证据 |
 | --- | --- | --- | --- |
 | B1 | 一票否决项为 0 |  |  |
-| B2 | lint/type-check/build/test:e2e 全通过 |  |  |
-| B3 | Playwright 必过集合 100% 通过 |  |  |
-| B4 | AC-001~AC-018 全部通过 |  |  |
+| B2 | lint/type-check/build/test:coverage/test:e2e 全通过 |  |  |
+| B3 | Playwright 必过集合（15 条）100% 通过 |  |  |
+| B4 | AC-001~AC-023 全部通过 |  |  |
 | B5 | P0/P1 缺陷为 0 |  |  |
 | B6 | Rubric 综合分 >= 80 |  |  |
 | B7 | 证据完整（命令/截图/闭环记录） |  |  |
@@ -47,6 +47,11 @@
 | AC-016 |  |  |  |
 | AC-017 |  |  |  |
 | AC-018 |  |  |  |
+| AC-019 |  |  |  |
+| AC-020 |  |  |  |
+| AC-021 |  |  |  |
+| AC-022 |  |  |  |
+| AC-023 |  |  |  |
 
 ## 验收轮次记录（Round N）
 
@@ -60,6 +65,7 @@
 | --- | --- | --- |
 | 首屏信息架构 |  |  |
 | 分镜清晰度 |  |  |
+| 动效与运动语法 |  |  |
 | 代码同步准确性 |  |  |
 | 画布信息密度 |  |  |
 | 交互可控性 |  |  |
@@ -77,6 +83,7 @@ npm run qa:guard
 npm run lint
 npm run type-check
 npm run build
+npm run test:coverage
 npm run test:e2e
 ```
 

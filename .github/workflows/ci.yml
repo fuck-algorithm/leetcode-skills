@@ -16,22 +16,79 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          registry-url: 'https://registry.npmjs.org'
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Validate skills structure
+      - name: Validate skill structure
         run: node scripts/validate-skills.js
 
-      - name: Validate skills manifest
+      - name: Audit plugin, docs and template consistency
+        run: node scripts/audit-skill.mjs
+
+      - name: Test LeetCode text normalization
+        run: python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_*.py'
+
+  template-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Scaffold a project from templates
         run: |
-          node -e "
-            const fs = require('fs');
-            const manifest = JSON.parse(fs.readFileSync('skills-manifest.json', 'utf8'));
-            if (!manifest.skills || manifest.skills.length === 0) {
-              console.error('No skills found in manifest');
-              process.exit(1);
-            }
-            console.log('Manifest valid:', manifest.skills.length, 'skills');
-          "
+          node skills/algorithm-visualization/scripts/scaffold-project.mjs \
+            --out "$RUNNER_TEMP/visualization-smoke" \
+            --number 1 \
+            --title "两数之和" \
+            --slug two-sum \
+            --repo https://github.com/example/visualization-smoke
+
+      - name: Install dependencies
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm install --no-audit --no-fund
+
+      - name: Install Playwright browser
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npx playwright install --with-deps chromium
+
+      - name: Quality guard
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm run qa:guard
+
+      - name: Lint
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm run lint
+
+      - name: Type check
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm run type-check
+
+      - name: Build
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm run build
+
+      - name: Unit tests with coverage
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm run test:coverage
+
+      - name: E2E acceptance tests
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: npm run test:e2e
+
+      - name: Verify qrcode asset is published
+        working-directory: ${{ runner.temp }}/visualization-smoke
+        run: test -f dist/assets/qrcode-community.png
+
+      - name: Upload test evidence on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: template-smoke-evidence
+          path: |
+            ${{ runner.temp }}/visualization-smoke/playwright-report
+            ${{ runner.temp }}/visualization-smoke/test-results
+            ${{ runner.temp }}/visualization-smoke/coverage
+          if-no-files-found: ignore

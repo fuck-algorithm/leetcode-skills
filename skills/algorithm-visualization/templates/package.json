@@ -17,7 +17,8 @@
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "qa:full": "npm run qa:guard && npm run lint && npm run type-check && npm run build && npm run test:unit && npm run test:e2e",
+    "test:e2e:install": "playwright install chromium",
+    "qa:full": "npm run qa:guard && npm run lint && npm run type-check && npm run build && npm run test:coverage && npm run test:e2e",
     "qa:guard": "node scripts/check-quality-gates.mjs"
   },
   "dependencies": {
@@ -40,6 +41,7 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "fake-indexeddb": "^6.2.6",
     "jsdom": "^26.0.0",
     "typescript": "^5.7.3",
     "vite": "^6.2.0",

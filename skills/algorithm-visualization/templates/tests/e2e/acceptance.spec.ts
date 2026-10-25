@@ -1,5 +1,10 @@
 import { expect, test, type Page } from '@playwright/test';
 
+/**
+ * 通用验收用例：不得写死某道题的样例值或变量名。
+ * 题目专属断言请新增用例，不要删除或弱化这里的通用用例。
+ */
+
 async function gotoHome(page: Page) {
   await page.goto('');
   await expect(page.getByTestId('app-root')).toBeVisible();
@@ -23,6 +28,9 @@ test.describe('Algorithm Visualization Acceptance', () => {
     await expect(page.getByTestId('problem-header')).toBeVisible();
     await expect(page.getByTestId('data-input-bar')).toBeVisible();
     await expect(page.getByTestId('visualization-canvas')).toBeVisible();
+    await expect(page.getByTestId('step-narration')).toBeVisible();
+    await expect(page.getByTestId('canvas-legend')).toBeVisible();
+    await expect(page.getByTestId('operation-badge')).toBeVisible();
     await expect(page.getByTestId('code-panel')).toBeVisible();
     await expect(page.getByTestId('playback-controls')).toBeVisible();
 
@@ -54,31 +62,38 @@ test.describe('Algorithm Visualization Acceptance', () => {
     const before = await meta.innerText();
 
     const input = page.getByTestId('algo-input');
+    const validRaw = await input.inputValue();
+
     await input.fill('abc');
     await input.blur();
 
     await expect(page.getByTestId('input-error')).toBeVisible();
     await expect(meta).toHaveText(before);
 
-    await input.fill('[1,2,3]');
-    await input.blur();
+    // 使用题目自带的样例提交合法输入，避免 E2E 与具体题目的输入格式耦合。
+    await page.getByTestId('sample-s1').click();
 
     await expect(page.getByTestId('input-error')).toHaveCount(0);
-    await expect(page.getByTestId('canvas-input-echo')).toContainText('[1,2,3]');
+    await expect(page.getByTestId('canvas-input-echo')).toContainText(validRaw);
     await expect(meta).toContainText('Step 1');
   });
 
   test('E2E-004 样例按钮与随机数据可用', async ({ page }) => {
     await gotoHome(page);
 
+    const input = page.getByTestId('algo-input');
+    const echo = page.getByTestId('canvas-input-echo');
+
     await page.getByTestId('sample-s2').click();
-    await expect(page.getByTestId('canvas-input-echo')).toContainText('[5,5,5]');
+    const sampleValue = await input.inputValue();
+    expect(sampleValue.length).toBeGreaterThan(0);
+    await expect(echo).toContainText(sampleValue);
 
     await page.getByTestId('random-input-btn').click();
-    const randomRaw = await page.getByTestId('algo-input').inputValue();
-    const parsed = JSON.parse(randomRaw) as unknown;
-    expect(Array.isArray(parsed)).toBeTruthy();
-    expect((parsed as unknown[]).length).toBeGreaterThan(0);
+    const randomRaw = await input.inputValue();
+    expect(randomRaw.length).toBeGreaterThan(0);
+    await expect(page.getByTestId('input-error')).toHaveCount(0);
+    await expect(echo).toContainText(randomRaw);
   });
 
   test('E2E-005 语言切换与刷新记忆', async ({ page }) => {
@@ -95,13 +110,34 @@ test.describe('Algorithm Visualization Acceptance', () => {
   test('E2E-006 代码高亮与变量旁注随步骤变化', async ({ page }) => {
     await gotoHome(page);
 
-    await expect(page.locator('.code-line.active')).toHaveCount(2);
-    await expect(page.getByTestId('variable-watch')).toContainText('ans');
+    const activeLines = page.locator('.code-line.active');
+    const watch = page.getByTestId('variable-watch');
+    const narration = page.getByTestId('step-narration');
+    const operation = page.getByTestId('operation-badge');
+
+    const activeBefore = await activeLines.count();
+    const watchBefore = await watch.innerText();
+    const narrationBefore = await narration.innerText();
+    const operationBefore = await operation.getAttribute('data-operation');
+    expect(activeBefore).toBeGreaterThan(0);
+    expect(watchBefore.trim().length).toBeGreaterThan(0);
+    expect(narrationBefore.trim().length).toBeGreaterThan(0);
+    expect(operationBefore).toBeTruthy();
+    expect(await page.locator('.canvas-node[data-status="current"]').count()).toBeGreaterThan(0);
 
     await page.getByTestId('next-step-btn').click();
     await expect(page.getByTestId('timeline-meta')).toContainText('Step 2');
-    await expect(page.locator('.code-line.active')).toHaveCount(1);
-    await expect(page.getByTestId('variable-watch')).toContainText('x');
+
+    const activeAfter = await activeLines.count();
+    const watchAfter = await watch.innerText();
+    const narrationAfter = await narration.innerText();
+    expect(activeAfter).toBeGreaterThan(0);
+    // 允许题目自定义变量名与高亮行数，只要求“切换步骤后有可见同步变化”。
+    expect(watchAfter !== watchBefore || activeAfter !== activeBefore).toBeTruthy();
+    // 每一步都必须有独立解说与操作徽标，且画布仍保留一个当前焦点。
+    expect(narrationAfter).not.toBe(narrationBefore);
+    expect(await operation.getAttribute('data-operation')).toBeTruthy();
+    expect(await page.locator('.canvas-node[data-status="current"]').count()).toBeGreaterThan(0);
   });
 
   test('E2E-007 快捷键控制可用（Left/Right/Space/R）', async ({ page }) => {

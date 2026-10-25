@@ -3,13 +3,13 @@
 ## 快速使用（Claude Code 可执行）
 
 ```bash
-python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py {slug_or_number}
+python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py {slug_or_number}
 ```
 
 **示例：**
 ```bash
-python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py two-sum
-python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py 1
+python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py two-sum
+python3 ${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py 1
 ```
 
 **输出格式：**
@@ -26,6 +26,10 @@ python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py 1
 
 **获取顺序**：`本地缓存` → `远程抓取` → `用户输入 fallback`。本地缓存未命中时才会联网。
 
+> 路径说明：`${CLAUDE_SKILL_DIR}` 由 Claude Code 在插件/Skill 环境下替换为当前 skill 目录。不要改写成仓库根相对路径 `skills/algorithm-visualization/...`，否则插件安装后必然找不到文件。
+
+> 数据质量：缓存读取时会统一做 HTML 实体解码（`&nbsp;` 等）并补全缺失的 `constraints`；旧缓存无需重新全量抓取。
+
 ---
 
 ## 目标
@@ -36,7 +40,7 @@ python3 skills/algorithm-visualization/scripts/fetch-leetcode-problem.py 1
 
 ### 方式 1: 执行抓取脚本（推荐，已实现）
 
-脚本位置：`skills/algorithm-visualization/scripts/fetch-leetcode-problem.py`
+脚本位置：`${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py`
 
 **工作原理（缓存优先）：**
 1. 读取 `assets/leetcode-problems/index.json`：若输入是纯数字题号，则解析为 slug
@@ -168,6 +172,15 @@ match = re.search(r"<title[^>]*>(.*?)</title>", html)
 
 为了提升稳定性和速度，skill 已预抓取全部 ~4280 道题目到 `assets/leetcode-problems/` 并生成 `index.json`。
 
+**项目骨架生成**：拿到题目信息后，使用脚手架脚本生成项目，不要手工复制 `templates/`：
+
+```bash
+node "${CLAUDE_SKILL_DIR}/scripts/scaffold-project.mjs" \
+  --out ./leetcode-{题号}-{slug}-visualization \
+  --number {题号} --title "{中文标题}" --slug {slug} \
+  --repo "$(git remote get-url origin)"
+```
+
 **索引文件结构** (`index.json`)：
 ```json
 {
@@ -190,5 +203,5 @@ match = re.search(r"<title[^>]*>(.*?)</title>", html)
 
 **重新生成索引**（如有新题）：
 ```bash
-python3 skills/algorithm-visualization/scripts/build-problem-cache.py
+python3 ${CLAUDE_SKILL_DIR}/scripts/build-problem-cache.py
 ```

@@ -12,6 +12,8 @@ import time
 import urllib.request
 from pathlib import Path
 
+from leetcode_text import clean_html, extract_constraints, normalize_problem
+
 CACHE_DIR = Path(__file__).resolve().parent.parent / "assets" / "leetcode-problems"
 PROGRESS_FILE = CACHE_DIR / ".progress.json"
 LIST_API_URL = "https://leetcode.cn/graphql/"
@@ -100,33 +102,6 @@ def fetch_html_title(slug: str):
     return None
 
 
-def clean_html(raw: str) -> str:
-    if not raw:
-        return ""
-    text = re.sub(r"<[^>]+>", "", raw)
-    text = text.replace("&quot;", '"').replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")
-    text = re.sub(r"\n\s*\n", "\n\n", text)
-    return text.strip()
-
-
-def extract_constraints(description: str) -> list[str]:
-    lines = description.splitlines()
-    constraints = []
-    in_constraints = False
-    for line in lines:
-        stripped = line.strip()
-        lower = stripped.lower()
-        if stripped.startswith("约束") or stripped.startswith("限制") or lower.startswith("constraints") or lower.startswith("提示"):
-            in_constraints = True
-            continue
-        if in_constraints:
-            if stripped.startswith("示例") or stripped.startswith("输入") or stripped.startswith("Output") or stripped.startswith("Follow") or stripped.startswith("进阶"):
-                in_constraints = False
-            elif stripped != "" and stripped != "&nbsp;":
-                constraints.append(stripped.lstrip("* \t"))
-    return constraints
-
-
 def save_problem(slug: str, data: dict):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     path = CACHE_DIR / f"{slug}.json"
@@ -183,7 +158,7 @@ def fetch_and_cache_problem(slug: str, title_cn_fallback: str = "", title_fallba
 
             title_cn = title_cn_fallback or question.get("title") or title_fallback
 
-            output = {
+            output = normalize_problem({
                 "number": question.get("questionFrontendId") or number_fallback,
                 "title_cn": title_cn,
                 "title_en": question.get("title") or title_fallback,
@@ -191,7 +166,7 @@ def fetch_and_cache_problem(slug: str, title_cn_fallback: str = "", title_fallba
                 "difficulty": question.get("difficulty") or difficulty_fallback,
                 "description": description,
                 "constraints": constraints,
-            }
+            })
             save_problem(slug, output)
             return {"status": "ok", "slug": slug}
         except Exception as e:

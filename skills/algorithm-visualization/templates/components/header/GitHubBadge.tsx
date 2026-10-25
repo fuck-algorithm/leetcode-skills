@@ -8,7 +8,7 @@ type Props = {
 const STAR_TTL_SECONDS = 3600;
 
 function parseRepo(repoUrl: string): { owner: string; repo: string } | null {
-  const match = repoUrl.match(/github\.com[/:]([^/]+)\/([^/.]+)(?:\.git)?$/i);
+  const match = repoUrl.match(/github\.com[/:]([^/]+)\/([^/?#]+?)(?:\.git)?\/?$/i);
   if (!match) {
     return null;
   }

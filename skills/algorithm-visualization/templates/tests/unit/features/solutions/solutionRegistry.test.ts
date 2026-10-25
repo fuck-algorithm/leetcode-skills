@@ -15,9 +15,46 @@ describe('createSolutionRegistry', () => {
     for (const step of sol.steps) {
       expect(step.id).toBeDefined();
       expect(step.title).toBeDefined();
+      expect(step.operation).toBeDefined();
       expect(step.binding.anchorIds).toBeDefined();
       expect(Array.isArray(step.frame.nodes)).toBe(true);
     }
+  });
+
+  it('should use unique stable node ids and valid references in every frame', () => {
+    const registry = createSolutionRegistry();
+    const sol = registry[0];
+
+    for (const step of sol.steps) {
+      const ids = step.frame.nodes.map((node) => node.id);
+      expect(new Set(ids).size).toBe(ids.length);
+
+      const idSet = new Set(ids);
+      for (const edge of step.frame.edges) {
+        expect(idSet.has(edge.from)).toBe(true);
+        expect(idSet.has(edge.to)).toBe(true);
+      }
+      for (const label of step.frame.labels) {
+        expect(idSet.has(label.targetId)).toBe(true);
+      }
+      for (const arrow of step.frame.arrows) {
+        expect(arrow.id.length).toBeGreaterThan(0);
+      }
+
+      const focused = step.frame.nodes.filter(
+        (node) => node.status === 'current' || (!node.status && node.kind === 'highlight')
+      );
+      expect(focused.length).toBeLessThanOrEqual(1);
+    }
+  });
+
+  it('should keep node ids stable across animation steps', () => {
+    const registry = createSolutionRegistry();
+    const sol = registry[0];
+    const first = new Set(sol.steps[0].frame.nodes.map((node) => node.id));
+    const reused = sol.steps[1].frame.nodes.filter((node) => first.has(node.id));
+
+    expect(reused.length).toBeGreaterThan(0);
   });
 
   it('should contain all four language code artifacts', () => {

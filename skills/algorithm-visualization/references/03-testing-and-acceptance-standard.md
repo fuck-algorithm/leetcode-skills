@@ -8,7 +8,13 @@
 - 目录：`tests/unit/`
 - 目标：验证 hooks、输入校验、数据转换等纯逻辑
 - 覆盖率门槛：lines >= 60%, functions >= 60%, branches >= 50%
+- 覆盖率统计范围：`features/` 与 `services/`（UI 组件由 E2E 覆盖）
+- 实测命令：`npm run test:coverage`（`qa:full` 已包含）
 - 规则：新增 `features/` 或 `services/` 模块必须配套单元测试
+- 动效层必须覆盖 `features/animation/motion.ts`：状态归一化、图例解析、指标推导、倍速/降级时长
+- 渲染层必须覆盖 `features/animation/render/`：keyed join 复用、非法边/标签过滤、状态类名、箭头类型、降级模式
+- 容器层必须覆盖 `features/animation/structures.ts`：栈底→栈顶 / 队首→队尾顺序、固定容量、空容器、出队补位与 ID 稳定
+- 退场清理必须覆盖：切帧后旧节点/边/箭头/标签被移除、快速连续切换无残留、退场中同 ID 回归可复用（`fadeOutAndRemove`）
 
 ### 1.2 逻辑层（集成）
 
@@ -47,8 +53,9 @@
 
 1. P0/P1 缺陷为 0
 2. 核心 e2e 用例通过率 100%
-3. 验收清单 AC-001~AC-018 全部通过或有明确豁免
+3. 验收清单 AC-001~AC-023 全部通过或有明确豁免
 4. 最终判定模型 B1-B7 全部通过
+5. `npm run test:coverage` 与 `npm run test:e2e` 均 exit code = 0
 
 ## 4. 缺陷分级
 
@@ -62,15 +69,16 @@
 每次验收结果必须带证据：
 
 1. 命令执行输出（lint/type-check/build/e2e）
-2. 关键页面截图（首屏、播放中、切语言、切解法）
-3. 缺陷记录与修复说明
-4. 验收轮次记录（Round N）及本轮结论（PASS/FAIL）
+2. 关键页面截图（首屏、播放中、切语言、切解法；相邻步骤叠加对比位置稳定性）
+3. 动效证据（1x 播放录屏、reduced motion 截图、`docs/ANIMATION_SPEC.md`）
+4. 缺陷记录与修复说明
+5. 验收轮次记录（Round N）及本轮结论（PASS/FAIL）
 
 ## 6. 强制回归触发条件
 
 以下变更触发全量回归：
 
-1. 画布渲染器改动
+1. 画布渲染器改动（含容器、箭头、标签层）
 2. 分镜绑定机制改动
 3. 控制面板交互改动
 4. 缓存策略改动
