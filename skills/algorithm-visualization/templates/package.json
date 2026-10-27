@@ -19,7 +19,8 @@
     "test:coverage": "vitest run --coverage",
     "test:e2e:install": "playwright install chromium",
     "qa:full": "npm run qa:guard && npm run lint && npm run type-check && npm run build && npm run test:coverage && npm run test:e2e",
-    "qa:guard": "node scripts/check-quality-gates.mjs"
+    "qa:guard": "node scripts/check-quality-gates.mjs",
+    "qa:repo": "node scripts/check-repo-metadata.mjs"
   },
   "dependencies": {
     "d3": "^7.9.0",

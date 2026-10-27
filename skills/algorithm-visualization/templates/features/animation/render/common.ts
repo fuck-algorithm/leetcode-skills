@@ -1,5 +1,6 @@
 import type { BaseType, Selection } from 'd3';
-import type { CanvasNode } from '../../../types';
+
+export { NODE_RADIUS, nodeRadius } from '../layout';
 
 export type LayerSelection = Selection<SVGGElement, unknown, null, undefined>;
 
@@ -10,12 +11,6 @@ export type RenderTiming = {
   arrowMs: number;
   reduced: boolean;
 };
-
-export const NODE_RADIUS = 24;
-
-export function nodeRadius(node: CanvasNode): number {
-  return node.radius ?? NODE_RADIUS;
-}
 
 /**
  * 退场淡出并在结束后自行移除。

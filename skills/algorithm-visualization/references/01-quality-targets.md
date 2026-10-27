@@ -36,6 +36,7 @@
 10. 箭头/标注无文字或互相遮挡，观众无法判断“发生了什么/下一步做什么”
 11. 快速切帧或切换解法后残留透明节点/旧标签
 12. 空间分配失衡：1366×768 下画布卡片 <62% 视口高、SVG <50%，或顶部栏 >52px、页面外层出现 20px 以上无信息留白、控制栏堆成多行
+13. README 不是英文默认的双语版本（`README.md` 英文 + `README.zh-CN.md` 中文），或 GitHub 仓库缺少英文描述 / 必需 Topics
 
 ## 4. 最低交付定义（Definition of Done）
 
@@ -44,7 +45,7 @@
 1. 功能实现：符合 SKILL.md 中硬约束
 2. 测试通过：`test:coverage` 达标且 Playwright 15 条用例全部通过
 3. 工程通过：lint/type-check/build 全绿
-4. 文档齐全：README + TEST_PLAN + 验收报告
+4. 文档与仓库展示齐全：双语 README（英文默认 + 简体中文）+ TEST_PLAN + 验收报告；GitHub 仓库有英文描述与必需 Topics（`npm run qa:repo` 通过）
 5. 证据完整：输出命令、截图、结果记录
 6. 模板基线：生成项目后先跑通 `qa:guard`/`test:coverage`/`test:e2e`，再改业务代码
 

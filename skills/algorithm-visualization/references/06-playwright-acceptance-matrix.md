@@ -41,12 +41,13 @@
 | AC-015 | Pages 部署配置有效 | 无（人工） | workflow + CI 结果 | 是 |
 | AC-016 | lint/type-check/build 全通过 | 无（人工） | 命令输出 | 是 |
 | AC-017 | Playwright 核心流程通过 | E2E-001 ~ E2E-015 | 测试报告 | 是 |
-| AC-018 | README 极简符合规范 | 无（人工） | README 截图 | 是 |
+| AC-018 | README 双语且默认英文 | 无（人工） | README.md / README.zh-CN.md 截图 + qa:guard 输出 | 是 |
 | AC-019 | 单元测试与覆盖率通过 | 无（人工） | `npm run test:coverage` 输出 | 是 |
 | AC-020 | 单元测试目录存在 | 无（人工） | `tests/unit/` 检查 | 是 |
 | AC-021 | Vitest 配置完整 | 无（人工） | package.json + vitest.config.ts | 是 |
 | AC-022 | validateInput 有单元测试 | 无（人工） | 单元测试源码 + qa:guard 输出 | 是 |
 | AC-023 | 动效语法与教学层完整 | E2E-001/006 + 人工 | 1x 录屏、相邻步骤截图、栈/队列与标签截图、快速切解法后 DOM 检查、reduced motion 截图 | 是 |
+| AC-024 | GitHub 仓库描述与 Topics 合规 | 无（人工） | `npm run qa:repo` 输出 + 仓库首页截图 | 是 |
 
 ## 3. 必过集合（Blocking E2E）
 
@@ -63,4 +64,4 @@
 - 核心链路默认不重试；仅 flaky 场景允许最多 2 次重跑并留痕。
 - 最终结论规则：
   - 15 条 E2E 任一失败 => AC-017 = FAIL => 总结论 FAIL
-  - 15 条 E2E 全通过，且 AC-001~AC-023 都 PASS => 总结论 PASS
+  - 15 条 E2E 全通过，且 AC-001~AC-024 都 PASS => 总结论 PASS

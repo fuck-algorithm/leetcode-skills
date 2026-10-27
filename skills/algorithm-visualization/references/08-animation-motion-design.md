@@ -286,24 +286,31 @@ nodes.select('circle')
 
 - 颜色交给 CSS 类（`.node--current` 等），D3 只切类名；这样 reduced-motion 可以在 CSS 层整体关闭过渡。
 - 文本标签用 `.text()` 更新，位置随父级 `g` 自动移动。
+- 节点文字必须留在圆内：用 `fitNodeLabel(text, radius)`（`features/animation/layout.ts`）先 12px → 9px 缩小，仍超宽再截断加 `…`；完整文字写进 SVG `<title>` 和 `aria-label`，截断不丢信息。
+- 入场是 0.6 → 1.0 的半径缩放（220ms），退场是 1.0 → 0.6 + 淡出（180ms）；已在画布上的节点只做 `updateMs` 半径更新，两类过渡用不同 transition 名，避免互相抢占。
 
 ### 6.3 边的更新
 
 ```ts
 const nodeById = new Map(step.frame.nodes.map((n) => [n.id, n]));
 
+// trimSegment：从圆心连线裁到两个节点的外沿，并留 2px 间隙。
+const geometry = trimSegment(from, to, nodeRadius(from), nodeRadius(to));
+
 edges.select('line')
   .transition('edge')
   .duration(updateMs)
-  .attr('x1', (d) => nodeById.get(d.from)!.x)
-  .attr('y1', (d) => nodeById.get(d.from)!.y)
-  .attr('x2', (d) => nodeById.get(d.to)!.x)
-  .attr('y2', (d) => nodeById.get(d.to)!.y);
+  .attr('x1', geometry.from.x)
+  .attr('y1', geometry.from.y)
+  .attr('x2', geometry.to.x)
+  .attr('y2', geometry.to.y);
 ```
 
 - 端点缺失的边直接过滤掉，不要画到 `(0,0)`。
+- 线的两端要裁到节点外沿（`features/animation/layout.ts` 的 `trimSegment`），不要从圆心画到圆心：否则线头和箭头会被节点圆盖住，看起来像“穿模”。
+- 两节点相切或重叠时 `trimSegment` 返回 `null`，该边不渲染；不要硬画一条零长度线。
 - 有向边用 `marker-end`；无向边不加箭头。
-- 边标签位置取中点，并在节点移动时同步过渡。
+- 边标签位置取裁剪后线段的中点，并在节点移动时同步过渡。
 
 ### 6.4 箭头“生长”动画与文字
 
@@ -365,20 +372,26 @@ CSS 用 `paint-order: stroke` + 与背景同色的粗描边给文字做光晕，
 - `variant: 'pointer'` 时画引导线指向目标节点；`callout` 只做带底色的说明卡；
 - `tone` 只用 `neutral / accent / warning`，不要引入新色系。
 
-偏移必须按**标签实际尺寸 + 节点半径 + 间距**计算，不能写死 60/80px：
+偏移必须按**标签实际尺寸 + 节点半径 + 间距**计算，不能写死 60/80px。模板已提供 `placeLabels()`（`features/animation/layout.ts`），不要在每个解法里手写偏移：
 
 ```ts
-const size = labelSize(label);            // 估算文字宽度、高度
-const gap = 14;
-const offset = {
-  left:  { dx: -(size.width / 2 + radius + gap), dy: 0 },
-  right: { dx:  (size.width / 2 + radius + gap), dy: 0 },
-  top:   { dx: 0, dy: -(size.height / 2 + radius + gap) },
-  bottom:{ dx: 0, dy:  (size.height / 2 + radius + gap) }
-}[label.position];
+const placements = placeLabels(
+  step.frame.labels,
+  new Map(step.frame.nodes.map((node) => [node.id, node])),
+  { containers: step.frame.containers ?? [] }
+);
+// placements.get(label.id) → { x, y, width, height, position, leader }
 ```
 
-引导线从背景框边缘连到节点外沿；标签层必须位于节点、箭头之上。同一目标不要同时放容器指针（如“队首”）和重复语义的标注，选一种表达。
+布局规则（顺序固定，保证同一帧重复渲染结果一致）：
+
+1. 先按 `label.position` 计算候选；
+2. 若与已放标签、任何节点圆、容器框冲突，依次尝试 `top → bottom → left → right`；
+3. 找到零重叠候选立即采用；全部冲突时选重叠面积最小的，标签不能被丢弃；
+4. 标签框钳制在逻辑画布 `1200×720` 的安全区内（边距 8px），避免贴边被裁；
+5. 引导线沿“标签中心 → 节点中心”方向，从标签框边缘连到节点外沿；标签被换向或钳制后仍然正确，不要按 `position` 写死上下端点。
+
+标签层必须位于节点、箭头之上。同一目标不要同时放容器指针（如“队首”）和重复语义的标注，选一种表达。
 
 ### 6.6 栈/队列容器
 
@@ -406,7 +419,9 @@ const stack = createStack({
 - 固定容量：`capacity` 至少 4，空容器仍要画出槽位，并显示 `空栈` / `空队列`；
 - 容器必须带标题、占用计数 `n/capacity`、槽位序号；
 - 栈画 `栈顶`/`栈底` 指针；非空队列画 `队首`/`队尾` 指针，空队列不画指针；
-- 入栈/入队从容器外侧飞入，出栈/出队向容器外飞出，用 `CanvasArrow` 标出动作方向，不要凭空消失。
+- 队列指针必须指向**占用槽位**：`队首` 指第一个占用槽位，`队尾` 指下一个可入队槽位（满队时指最后一个槽位），不能简单指向容器左右边框，否则部分占用时指针语义错误；指针从标题区垂直指向槽位，避免横穿空槽；
+- 入栈/入队从容器外侧飞入，出栈/出队向容器外飞出，用 `CanvasArrow` 标出动作方向，不要凭空消失；
+- 坏数据防御：实际 `items.length` 超过 `capacity` 时，渲染层自动扩槽到 `max(capacity, items.length)`，计数保持 `n/capacity` 自洽，节点不会画到容器外。
 
 ### 6.7 reduced motion
 
@@ -547,8 +562,11 @@ const updateMs = reduced ? 0 : 360;
 | 代码与画布不同步 | 无法建立“代码→画面”映射 | 每步绑定 anchor |
 | 栈/队列只画一排裸节点 | 看不出 LIFO/FIFO、边界与容量 | 用容器 + 槽位 + 指针 |
 | 箭头没有文字或指向不明 | 观众不知道发生了什么 | `text` 写动作 + 对象 |
-| 标签固定偏移、压住节点/箭头 | 信息互相遮挡 | 按标签尺寸 + 节点半径计算偏移 |
-| 退场直接 `transition().remove()` | 快速切帧后残留透明元素/旧标签 | 统一 `fadeOutAndRemove` |
+| 标签固定偏移、压住节点/箭头 | 信息互相遮挡 | `placeLabels` 计算尺寸、避让并钳制边界 |
+| 边从圆心画到圆心 | 线头/箭头被节点盖住，像穿模 | `trimSegment` 裁到节点外沿 |
+| 队列指针永远指向容器左右边框 | 部分占用时队尾位置错误 | 指向占用槽位/下一个入队槽位 |
+| 长节点文字溢出圆外 | 与边、标签、相邻节点粘连 | `fitNodeLabel` 缩小/截断，完整文字进 `<title>` |
+| 退场直接 `transition().remove()` | 快速切帧后残留透明元素/旧标签 | 统一 `fadeOutAndRemove` / 节点专用退场 |
 | 标签与容器指针重复表达同一语义 | 画面拥挤且互相遮挡 | 同一目标只保留一种标注 |
 
 ---

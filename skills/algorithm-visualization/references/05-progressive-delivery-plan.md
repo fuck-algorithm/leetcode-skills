@@ -56,11 +56,14 @@
 交付：
 - CI 绿灯
 - Pages 发布
+- 双语 README（`README.md` 英文默认 + `README.zh-CN.md` 简体中文）
+- GitHub 仓库英文描述与必需 Topics（`gh repo edit`）
 - 验收报告与分数
 
 通过条件：
 - Rubric >= 80
 - 无 P0/P1
+- `npm run qa:repo` 通过
 
 ## 使用建议
 

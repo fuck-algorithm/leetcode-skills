@@ -54,8 +54,9 @@
 - AC-010（数据结构联动可视化）
 - AC-015（Pages 部署配置有效）
 - AC-016（lint/type-check/build 命令全绿）
-- AC-018（README 极简）
+- AC-018（README 双语且默认英文）
 - AC-019 ~ AC-023（单元测试、覆盖率与动效人工检查）
+- AC-024（GitHub 仓库描述与 Topics，`npm run qa:repo`）
 
 ## 建议输出
 

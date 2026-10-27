@@ -54,6 +54,7 @@ It is built for one job: **make the execution of an algorithm understandable ste
 - **Full playback control** — play/pause, previous/next, draggable timeline, speed presets with memory, and keyboard shortcuts.
 - **Accessible motion** — respects `prefers-reduced-motion` without hiding any state or explanation.
 - **Production-ready output** — quality gates, unit tests with coverage thresholds, 15 Playwright acceptance checks, and a GitHub Pages deployment workflow.
+- **Discoverable repositories** — an English-default `README.md` with a linked `README.zh-CN.md`, plus an English GitHub description and required topics, all enforced by the quality gates.
 
 Live example: [LeetCode Hot 100 visualizations](https://fuck-algorithm.github.io/leetcode-hot-100/)
 
@@ -78,7 +79,9 @@ leetcode-{number}-{slug}-visualization/
 │   └── e2e/acceptance.spec.ts  # 15 Playwright checks
 ├── docs/                       # quality gate, test plan, animation spec
 ├── public/assets/              # community QR code
-├── scripts/check-quality-gates.mjs
+├── scripts/                    # quality gates + GitHub metadata check
+├── README.md                   # English default
+├── README.zh-CN.md             # Simplified Chinese
 └── .github/workflows/deploy.yml
 ```
 
@@ -87,7 +90,8 @@ Common commands inside a generated project:
 ```bash
 npm install
 npm run dev                # random high port (30000-65535)
-npm run qa:guard           # docs, color, layout, animation checks
+npm run qa:guard           # docs, bilingual README, color, layout, animation checks
+npm run qa:repo            # GitHub description + topics (requires logged-in gh)
 npm run test:coverage      # Vitest with 60/60/50 thresholds
 npm run test:e2e:install   # first Playwright run: install Chromium
 npm run test:e2e           # 15 acceptance checks
@@ -117,8 +121,8 @@ npm run validate
 python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_*.py'
 
 # Scaffold a project from the templates
-npm run scaffold -- --out /tmp/demo --number 1 --title "两数之和" \
-  --slug two-sum --repo https://github.com/example/demo
+npm run scaffold -- --out /tmp/demo --number 1 --title "Two Sum" \
+  --title-en "Two Sum" --slug two-sum --repo https://github.com/example/demo
 
 # Load the plugin locally while developing
 claude --plugin-dir .

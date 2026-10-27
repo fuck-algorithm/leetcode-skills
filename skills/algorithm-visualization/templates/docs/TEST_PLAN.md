@@ -44,6 +44,7 @@
 ### 2.3 工程测试
 
 - qa:guard
+- qa:repo（GitHub 仓库描述与 Topics）
 - lint
 - type-check
 - build
@@ -72,7 +73,7 @@
 1. P0/P1 缺陷为 0
 2. 核心 e2e 用例通过率 100%
 3. 质量门禁命令全部通过
-4. AC-001~AC-023 全部通过（仅 AC-006 可在无多解法时 N/A）
+4. AC-001~AC-024 全部通过（仅 AC-006 可在无多解法时 N/A；AC-023 动效证据见 `docs/ANIMATION_SPEC.md`，AC-024 见 `npm run qa:repo` 输出）
 5. 最终判定模型 B1-B7 全部满足
 
 ## 5. 失败分流与回归策略（强制）

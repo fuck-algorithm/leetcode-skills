@@ -60,7 +60,9 @@ skills/
         │   └── render/         # nodes/edges/arrows/labels/containers layer renderers
         ├── docs/               # Required docs (incl. ANIMATION_SPEC.md)
         ├── public/assets/      # QR code and static assets (copied to dist)
-        ├── scripts/            # check-quality-gates.mjs
+        ├── scripts/            # check-quality-gates.mjs + check-repo-metadata.mjs
+        ├── README.md           # English default (GitHub displays this)
+        ├── README.zh-CN.md     # Simplified Chinese translation
         ├── .github/workflows/  # deploy.yml template
         ├── .gitignore
         └── *.config.ts, *.json # Build configs
@@ -126,7 +128,8 @@ npm run test:e2e:headed        # Playwright with UI
 npm run lint           # ESLint . --ext ts,tsx --max-warnings 0
 
 # Quality Gates (enforced)
-npm run qa:guard       # Check docs, no purple, QR, workflow, animation gates, AC-023
+npm run qa:guard       # Check docs, bilingual README, no purple, QR, workflow, animation gates, AC-023
+npm run qa:repo        # Check GitHub description + topics via gh (AC-024)
 npm run qa:full        # guard + lint + type-check + build + test:coverage + test:e2e
 ```
 
@@ -174,9 +177,10 @@ Cache reads are normalized by `scripts/leetcode_text.py`: HTML entities are deco
 4. **Coverage Thresholds**: lines >= 60%, functions >= 60%, branches >= 50%
 5. **Required Docs** (in `docs/`): QUALITY_GATE.md, TEST_PLAN.md, ACCEPTANCE_CHECKLIST.md, ACCEPTANCE_REPORT_TEMPLATE.md, PROGRESSIVE_DELIVERY.md, PLAYWRIGHT_CASES.md, ANIMATION_SPEC.md
 6. **Animation Model**: semantic `AlgorithmStep.operation` + `narration`, stable node IDs, keyed D3 joins/transitions (no full redraw), fixed status legend, motion tokens in `features/animation/motion.ts`, reduced-motion fallback; enforced by AC-023 and `qa:guard`
-7. **Deployment**: GitHub Actions at `.github/workflows/deploy.yml` running guard, lint, type-check, build, coverage, E2E, then deploy-pages; `VITE_APP_BASE` derives the repo subpath
-8. **Color Constraint**: No purple (enforced by check-quality-gates.mjs)
-9. **Port Range**: 30000-65535 for dev server
+7. **Deployment**: GitHub Actions at `.github/workflows/deploy.yml` running guard, repo metadata, lint, type-check, build, coverage, E2E, then deploy-pages; `VITE_APP_BASE` derives the repo subpath
+8. **Repository Presentation**: `README.md` is English (default) and `README.zh-CN.md` is Simplified Chinese, linked both ways with matching structure; the GitHub repo has an English description and at least the topics `leetcode`, `algorithm`, `visualization`, `typescript`, `react`, `d3` (AC-024, `npm run qa:repo`)
+9. **Color Constraint**: No purple (enforced by check-quality-gates.mjs)
+10. **Port Range**: 30000-65535 for dev server
 
 ### Acceptance Model (B1-B7)
 
@@ -184,7 +188,7 @@ Projects are evaluated on B1-B7 criteria:
 - B1: No veto items
 - B2: lint/type-check/build/test:coverage/test:e2e all pass (exit 0)
 - B3: Playwright blocking suite 100%
-- B4: AC-001 ~ AC-023 all pass
+- B4: AC-001 ~ AC-024 all pass
 - B5: No P0/P1 defects
 - B6: Rubric score >= 80
 - B7: Evidence complete

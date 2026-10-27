@@ -25,18 +25,19 @@ const requiredDocs = [
 ];
 
 const docRequiredSnippets = {
-  'docs/QUALITY_GATE.md': ['最终判定模型', 'B1', 'B7', '失败闭环', 'AC-001~AC-023'],
-  'docs/TEST_PLAN.md': ['失败分流与回归策略', 'AC-001~AC-023', 'B1-B7', 'test:coverage'],
-  'docs/ACCEPTANCE_CHECKLIST.md': ['AC-001', 'AC-023', '必过规则'],
+  'docs/QUALITY_GATE.md': ['最终判定模型', 'B1', 'B7', '失败闭环', 'AC-001~AC-024', 'qa:repo'],
+  'docs/TEST_PLAN.md': ['失败分流与回归策略', 'AC-001~AC-024', 'B1-B7', 'test:coverage', 'qa:repo'],
+  'docs/ACCEPTANCE_CHECKLIST.md': ['AC-001', 'AC-023', 'AC-024', '必过规则'],
   'docs/ACCEPTANCE_REPORT_TEMPLATE.md': [
     '最终判定模型（B1-B7）',
     '验收轮次记录',
     'AC-023',
+    'AC-024',
     'PASS',
     'FAIL'
   ],
   'docs/PROGRESSIVE_DELIVERY.md': ['阶段与最终通过关系', 'B1-B7'],
-  'docs/PLAYWRIGHT_CASES.md': ['E2E-001', 'E2E-015', '必过集合'],
+  'docs/PLAYWRIGHT_CASES.md': ['E2E-001', 'E2E-015', '必过集合', 'AC-024'],
   'docs/ANIMATION_SPEC.md': [
     '运动语法',
     '状态图例',
@@ -304,8 +305,8 @@ if (!fs.existsSync(pkgPath)) {
 }
 
 // 7. 生成项目不允许残留模板占位符
-const placeholderPattern = /\{(题号|中文标题|slug|github_repo|github_username)\}/;
-for (const rel of ['App.tsx', 'index.html', 'package.json', 'vite.config.ts', 'README.md']) {
+const placeholderPattern = /\{(题号|中文标题|英文标题|slug|github_repo|github_username)\}/;
+for (const rel of ['App.tsx', 'index.html', 'package.json', 'vite.config.ts', 'README.md', 'README.zh-CN.md']) {
   const full = path.join(root, rel);
   if (fs.existsSync(full) && placeholderPattern.test(fs.readFileSync(full, 'utf8'))) {
     fail(`${rel} 仍包含未替换的模板占位符（请使用 scaffold-project.mjs 生成项目）`);
@@ -323,6 +324,52 @@ if (!fs.existsSync(qrPath)) {
 // 9. 基础工程文件
 if (!fs.existsSync(path.join(root, '.gitignore'))) {
   fail('缺少 .gitignore');
+}
+
+// 10. README 双语且默认英文（AC-018）
+const readmeEnFile = path.join(root, 'README.md');
+const readmeZhFile = path.join(root, 'README.zh-CN.md');
+const cjkPattern = /[㐀-䶿一-鿿豈-﫿]/;
+if (!fs.existsSync(readmeEnFile)) {
+  fail('缺少 README.md（默认英文 README，AC-018）');
+}
+if (!fs.existsSync(readmeZhFile)) {
+  fail('缺少 README.zh-CN.md（简体中文 README，AC-018）');
+}
+if (fs.existsSync(readmeEnFile) && fs.existsSync(readmeZhFile)) {
+  const en = read('README.md');
+  const zh = read('README.zh-CN.md');
+  if (!en.includes('README.zh-CN.md')) {
+    fail('README.md 缺少切换到简体中文的链接（README.zh-CN.md）');
+  }
+  if (!zh.includes('README.md')) {
+    fail('README.zh-CN.md 缺少切换回 English 的链接（README.md）');
+  }
+  // 语言切换行允许出现“简体中文”字样，其余正文必须为英文
+  const enBody = en.replace(/^.*README\.zh-CN\.md.*$/gm, '');
+  if (cjkPattern.test(enBody)) {
+    fail('README.md 必须为英文（默认展示），除语言切换链接外不得包含中文字符；中文内容请写入 README.zh-CN.md');
+  }
+  if (!cjkPattern.test(zh)) {
+    fail('README.zh-CN.md 必须为简体中文内容');
+  }
+  const sectionCount = (text) => [...text.matchAll(/^##\s+/gm)].length;
+  if (sectionCount(en) !== sectionCount(zh)) {
+    fail('README.md 与 README.zh-CN.md 的二级标题数量不一致，双语结构需保持同步');
+  }
+  for (const [name, text] of [['README.md', en], ['README.zh-CN.md', zh]]) {
+    if (!text.includes('leetcode.cn/problems/')) {
+      fail(`${name} 缺少题目链接`);
+    }
+    if (!text.includes('github.io/')) {
+      fail(`${name} 缺少 Pages 在线演示链接`);
+    }
+  }
+}
+
+// 11. 仓库描述与 Topics 校验脚本（AC-024）
+if (!fs.existsSync(path.join(root, 'scripts', 'check-repo-metadata.mjs'))) {
+  fail('缺少 scripts/check-repo-metadata.mjs（GitHub 仓库描述与 Topics 校验，AC-024）');
 }
 
 if (!ok) {

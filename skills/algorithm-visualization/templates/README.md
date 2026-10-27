@@ -1,6 +1,8 @@
-# LeetCode {题号}. {中文标题} 可视化题解
+# LeetCode {题号}. {英文标题} — Algorithm Visualization
 
-这是 LeetCode {题号}《{中文标题}》的算法可视化动画项目。
+[简体中文](README.zh-CN.md) | **English**
 
-- 题目链接: https://leetcode.cn/problems/{slug}/
-- 在线演示: https://{github_username}.github.io/leetcode-{题号}-{slug}-visualization/
+An interactive, step-by-step visualization of how the algorithm for LeetCode {题号}. {英文标题} runs.
+
+- Problem: https://leetcode.cn/problems/{slug}/
+- Live demo: https://{github_username}.github.io/leetcode-{题号}-{slug}-visualization/

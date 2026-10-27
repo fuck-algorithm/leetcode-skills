@@ -9,7 +9,7 @@
 - B1：一票否决项为 0
 - B2：`npm run lint`、`npm run type-check`、`npm run build`、`npm run test:coverage`、`npm run test:e2e` 全部 exit code = 0
 - B3：Playwright 必过集合（全部 15 条 E2E）100% 通过
-- B4：`ACCEPTANCE_CHECKLIST.md` 中 AC-001~AC-023 全部 PASS（仅 AC-006 可在无多解法时标注 N/A）
+- B4：`ACCEPTANCE_CHECKLIST.md` 中 AC-001~AC-024 全部 PASS（仅 AC-006 可在无多解法时标注 N/A；AC-023 动效证据见 `docs/ANIMATION_SPEC.md`，AC-024 证据见 `npm run qa:repo` 输出）
 - B5：P0/P1 缺陷数为 0
 - B6：Rubric 综合分 >= 80
 - B7：证据完整（命令输出、关键截图、缺陷闭环记录）
@@ -33,6 +33,7 @@
 8. 画布每步整屏重建（`selectAll('*').remove()`）导致闪烁/跳变
 9. 缺少步骤操作徽标、解说或固定图例
 10. 空间分配失衡：1366×768 下画布卡片 <62% 视口高、SVG <50%，或顶部栏 >52px、页面外层存在 20px 以上无信息留白、控制栏堆成多行（E2E-001 实测）
+11. README 不是英文默认的双语版本，或 GitHub 仓库缺少英文描述 / 必需 Topics（AC-018、AC-024）
 
 ## 强制命令
 
@@ -45,12 +46,16 @@ npm run type-check
 npm run build
 npm run test:coverage
 npm run test:e2e
+npm run qa:repo
 ```
+
+`npm run qa:repo` 需要已登录的 `gh` CLI（CI 使用 `GH_TOKEN`），用于校验 GitHub 仓库描述与 Topics（AC-024）。
 
 或统一执行：
 
 ```bash
 npm run qa:full
+npm run qa:repo
 ```
 
 ## 失败闭环（FAIL 后必须循环）

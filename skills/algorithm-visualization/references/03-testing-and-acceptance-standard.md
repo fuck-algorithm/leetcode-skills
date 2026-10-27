@@ -53,9 +53,10 @@
 
 1. P0/P1 缺陷为 0
 2. 核心 e2e 用例通过率 100%
-3. 验收清单 AC-001~AC-023 全部通过或有明确豁免
+3. 验收清单 AC-001~AC-024 全部通过或有明确豁免
 4. 最终判定模型 B1-B7 全部通过
 5. `npm run test:coverage` 与 `npm run test:e2e` 均 exit code = 0
+6. `npm run qa:repo` exit code = 0（GitHub 仓库英文描述与必需 Topics 已配置）
 
 ## 4. 缺陷分级
 
@@ -71,8 +72,9 @@
 1. 命令执行输出（lint/type-check/build/e2e）
 2. 关键页面截图（首屏、播放中、切语言、切解法；相邻步骤叠加对比位置稳定性）
 3. 动效证据（1x 播放录屏、reduced motion 截图、`docs/ANIMATION_SPEC.md`）
-4. 缺陷记录与修复说明
-5. 验收轮次记录（Round N）及本轮结论（PASS/FAIL）
+4. 仓库展示证据（英文默认 README 截图、语言切换、`npm run qa:repo` 输出）
+5. 缺陷记录与修复说明
+6. 验收轮次记录（Round N）及本轮结论（PASS/FAIL）
 
 ## 6. 强制回归触发条件
 

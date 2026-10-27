@@ -24,6 +24,8 @@
 
 - CI 全绿
 - Pages 可访问
+- 双语 README 就绪（`README.md` 英文默认 + `README.zh-CN.md` 简体中文）
+- GitHub 仓库英文描述与必需 Topics 已配置（`npm run qa:repo` 通过）
 - 验收报告完整
 
 ## 阶段与最终通过关系（强制）

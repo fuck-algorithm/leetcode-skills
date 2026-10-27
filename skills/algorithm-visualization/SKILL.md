@@ -10,6 +10,7 @@ allowed-tools:
   - WebFetch
   - AskUserQuestion
   - Bash(git *)
+  - Bash(gh repo *)
   - Bash(npm *)
   - Bash(npx *)
   - Bash(node *)
@@ -45,7 +46,7 @@ allowed-tools:
 当用户提供了题号或 slug 后，必须按以下顺序执行：
 
 1. **运行抓取脚本（本地缓存优先）**：执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" {slug_or_number}`。脚本用随插件分发的 `assets/leetcode-problems/index.json` 把题号解析为 slug，再查用户缓存 `~/.cache/leetcode-skills/problems/{slug}.json`；命中则直接返回，未命中才联网抓取并回写缓存。`${CLAUDE_SKILL_DIR}` 由 Claude Code 在插件环境下替换为当前 skill 目录，**不要**写死仓库相对路径 `skills/algorithm-visualization/...`。
-2. **解析 JSON 输出**：提取 `number`, `title_cn`, `description`, `constraints`
+2. **解析 JSON 输出**：提取 `number`, `title_cn`, `title_en`, `description`, `constraints`（`title_en` 用于英文 README 与仓库描述）
 3. **缺失项确认**：若脚本失败或返回空字段，一次性向用户确认缺少的信息，不要逐条追问
 
 说明：全量题库（约 4300 道）不随仓库克隆，首次使用可先执行 `python3 "${CLAUDE_SKILL_DIR}/scripts/fetch-leetcode-problem.py" --prefetch`，从 GitHub Release 下载约 1.7MB 缓存到 `~/.cache/leetcode-skills/problems`，之后完全离线可用。未预取时脚本按题联网抓取；单题抓取失败会自动回退到全量缓存下载。下载先走 GitHub Release，失败会自动切换 jsDelivr 镜像；也可用 `LEETCODE_SKILL_CACHE_DIR` 改缓存目录、`LEETCODE_SKILL_CACHE_URL` 指定下载源、`LEETCODE_SKILL_CACHE_TIMEOUT` 放宽超时（默认 300s）。
@@ -95,10 +96,10 @@ allowed-tools:
    ```bash
    node "${CLAUDE_SKILL_DIR}/scripts/scaffold-project.mjs" \
      --out ./leetcode-{题号}-{slug}-visualization \
-     --number {题号} --title "{中文标题}" --slug {slug} \
+     --number {题号} --title "{中文标题}" --title-en "{英文标题}" --slug {slug} \
      --repo "$(git remote get-url origin)"
    ```
-   脚本会自动处理 `.gitignore`、`.github/workflows/deploy.yml`、`public/assets/qrcode-community.png` 与全部占位符替换。
+   脚本会自动处理 `.gitignore`、`.github/workflows/deploy.yml`、`public/assets/qrcode-community.png`、双语 README 与全部占位符替换；未提供 `--title-en` 时按 slug 生成确定性英文标题。
 3.5. **模板基线自检（改动业务代码前必须做）**：
    ```bash
    cd leetcode-{题号}-{slug}-visualization
@@ -123,9 +124,9 @@ allowed-tools:
    - 运行 `npm run test:unit`，确保全部变绿后才进入下一步
 6. **核心交互与动效实现**：完成头部、输入栏、代码面板、可视化画布、控制面板；布局按 09 的空间预算与间距系统落地（单行标题、无大留白、画布占主体），画布按 08 §6 使用分层 keyed join + enter/update/exit 过渡，并渲染操作徽标、解说、固定图例与指标。
 7. **多解法隔离实现**（如适用）：每种解法独立步骤、独立代码映射、独立画布上下文。
-8. **工程化与部署**：lint/type-check/build + GitHub Pages Action。
+8. **工程化、仓库元数据与部署**：lint/type-check/build + GitHub Pages Action；仓库创建并推送后，用 `gh repo edit` 设置英文描述与 Topics，再执行 `npm run qa:repo` 验证。若因未登录失败，请用户先执行 `gh auth login`（凭据只能由用户提供）后重试。
 9. **Playwright 自测验收**：按验收矩阵执行并留存证据（含 1x 录屏、相邻步骤截图、reduced motion 截图）。
-10. **逐条核对并出报告**：按 AC（含 AC-023）与 Rubric 生成验收结论。
+10. **逐条核对并出报告**：按 AC（含 AC-018、AC-023、AC-024）与 Rubric 生成验收结论。
 
 未完成第 9、10 步，不得宣称完成。
 
@@ -150,7 +151,7 @@ allowed-tools:
    ```bash
    node "${CLAUDE_SKILL_DIR}/scripts/scaffold-project.mjs" \
      --out ./leetcode-1-two-sum-visualization \
-     --number 1 --title "两数之和" --slug two-sum \
+     --number 1 --title "两数之和" --title-en "Two Sum" --slug two-sum \
      --repo "$(git remote get-url origin)"
    ```
 2. 运行 `npm install`
@@ -201,8 +202,16 @@ allowed-tools:
 
 1. 运行 `npm run qa:full`，全部通过（含覆盖率与 E2E）
 2. 运行 `npm run test:e2e`，15 条 Playwright 用例 100% 通过
-3. 按 B1-B7 验收口径逐项核对
-4. 生成验收报告写入 `docs/ACCEPTANCE_REPORT_TEMPLATE.md`
+3. 配置仓库展示（若仓库尚未创建，先创建并推送）：
+   ```bash
+   gh repo edit {owner}/{repo} \
+     --description "Interactive step-by-step algorithm visualization for LeetCode 1. Two Sum — React + TypeScript + D3.js." \
+     --add-topic leetcode --add-topic algorithm --add-topic visualization \
+     --add-topic typescript --add-topic react --add-topic d3
+   npm run qa:repo
+   ```
+4. 按 B1-B7 验收口径逐项核对
+5. 生成验收报告写入 `docs/ACCEPTANCE_REPORT_TEMPLATE.md`
 
 ---
 
@@ -234,11 +243,12 @@ allowed-tools:
    - `npm run lint`
    - `npm run type-check`
    - `npm run build`
+   - `npm run qa:repo`（校验仓库英文描述与 Topics，使用 `GH_TOKEN`）
    - `configure-pages`
    - `upload-pages-artifact`
    - `deploy-pages`
 17. 提交前必须通过 lint、type-check、build、`test:coverage`、`test:e2e`，禁止吞失败。
-18. 产出项目必须包含 `docs/` 七个文件，且根目录不得残留 `{题号}`、`{中文标题}`、`{slug}`、`{github_repo}`、`{github_username}` 等模板占位符：
+18. 产出项目必须包含 `docs/` 七个文件，且根目录不得残留 `{题号}`、`{中文标题}`、`{英文标题}`、`{slug}`、`{github_repo}`、`{github_username}` 等模板占位符：
    - `QUALITY_GATE.md`
    - `TEST_PLAN.md`
    - `ACCEPTANCE_CHECKLIST.md`
@@ -246,7 +256,7 @@ allowed-tools:
    - `PROGRESSIVE_DELIVERY.md`
    - `PLAYWRIGHT_CASES.md`
    - `ANIMATION_SPEC.md`
-19. README 必须精简为三项：题目标题、一句话说明、线上链接。
+19. README 必须精简为四项：题目标题、一句话说明、题目链接、线上演示链接；内容不得出现教程、开发细节或无关章节。
 20. 每个新增 `features/` 模块必须配套至少 1 个 `tests/unit/features/**/*.test.ts(x)` 文件。
 21. 覆盖率必须由 `npm run test:coverage` 实测：lines >= 60%，functions >= 60%，branches >= 50%（统计范围 `features/` 与 `services/`）；未达标需写豁免说明并由审批人签字。
 22. `npm run test:unit`（或 `test:coverage`）必须在本地通过后才能提交；禁止跳过单元测试直接执行 E2E。
@@ -264,7 +274,7 @@ allowed-tools:
 31. 画布必须常驻渲染操作徽标、步骤解说、固定图例与 2–3 个指标；`step.description` 或 `narration` 不得只写“处理中/继续”。
 32. 实现画布前必须填写 `docs/ANIMATION_SPEC.md`；`npm run qa:guard` 会检查该文件、动效标记、分层节点与 reduced motion，缺失即 FAIL。
 33. 栈/队列必须作为**容器**绘制：使用 `features/animation/structures.ts` 的 `createStack/createQueue` 生成 `CanvasContainer`，由 `render/containers.ts` 渲染固定槽位、占用计数（`n/capacity`）、栈底→栈顶 / 队首→队尾方向指针与空状态文案；禁止只用一排无容器节点表示栈或队列。`npm run qa:guard` 会检查 `structures.ts`、`render/containers.ts`、`.layer-containers` 与 `data-container-kind`。
-34. 箭头与标注必须自解释：每条 `CanvasArrow` 必须有 `text`（动作 + 对象，如“入队 3”“pop 6”）或明确的 `kind: 'pointer'`；`CanvasLabel` 必须有 `text`，解释“这是什么/下一步做什么”时补 `detail` 第二行。标签偏移必须按标签尺寸与节点半径计算，引导线不得压住节点、箭头或其它标签。
+34. 箭头与标注必须自解释：每条 `CanvasArrow` 必须有 `text`（动作 + 对象，如“入队 3”“pop 6”）或明确的 `kind: 'pointer'`；`CanvasLabel` 必须有 `text`，解释“这是什么/下一步做什么”时补 `detail` 第二行。标签偏移必须按标签尺寸与节点半径计算；优先使用 `features/animation/layout.ts` 的 `placeLabels`，它会避开节点/容器/已放标签、按 `top→bottom→left→right` 换向并钳制在 1200×720 安全区。引导线不得压住节点、箭头或其它标签。节点文字用 `fitNodeLabel` 保证不溢出圆外；边线用 `trimSegment` 裁到节点外沿。
 35. 退场元素必须可靠清理：统一使用 `render/common.ts` 的 `fadeOutAndRemove`；禁止在过渡链上直接 `.remove()`（同元素存在其它命名过渡时 d3 会静默跳过删除，快速切帧会残留透明元素）。
 
 ### 视觉布局与空间分配（Blocking）
@@ -272,6 +282,11 @@ allowed-tools:
 36. **画布优先**：在 1366×768 下，header + 输入条 + 解法页签 + 控制栏合计不得超过视口高度的 26%；画布卡片高度不得低于视口高度的 62%，实际 SVG 绘图区不得低于 50%。1920×1080 下对应上限为 22%，画布卡片不低于 76%，SVG 不低于 66%。E2E-001 会实测，超限即 FAIL。
 37. **标题与间距**：顶部栏高度 44–52px，标题只允许单行（16px、超出省略），禁止副标题/工具按钮另起一行或使用 banner 式大头部；页面外层 padding/gap 只允许 4/8/12/16px，禁止 20px 以上的连续留白。输入条、页签、控制栏都必须单行；控制栏按“按钮组 | 进度条 | 步数”一行排布。
 38. **主次比例**：工作区画布宽度不得低于 68%，代码栏宽度限定在 320–400px（`clamp(320px, 24vw, 400px)`）；画布卡片高度必须为 100% 自适应，禁止写死像素高度。`< 1100px` 时代码栏可下移，但高度限定 180–240px，页面仍不得出现纵向滚动。SVG 必须按容器比例扩展 viewBox，不得留下黑边或让内容缩在角落（内容应占绘图区 ≥60% 宽、≥50% 高）。
+
+### 仓库展示与元数据（Blocking）
+
+39. **双语 README，默认英文**：根目录必须同时存在 `README.md`（全英文，GitHub 默认展示）与 `README.zh-CN.md`（简体中文）；两份文件顶部互相提供语言切换链接，二级标题数量一致且结构同步。除语言切换链接外，`README.md` 不得出现中文字符；`README.zh-CN.md` 不得缺少中文内容。`npm run qa:guard` 会校验文件存在、切换链接、英文默认、结构一致性与题目/演示链接。
+40. **英文仓库描述与 Topics**：GitHub 仓库描述必须为英文（无中文字符、至少 20 字符，说明题目与演示定位）；Topics 至少 6 个，且必须包含 `leetcode`、`algorithm`、`visualization`、`typescript`、`react`、`d3`。使用 `gh repo edit <owner>/<repo> --description "..." --add-topic ...` 落地，并用 `npm run qa:repo` 验证（需已登录 gh CLI 或 `GH_TOKEN`）；`deploy.yml` 也会在发布前执行该校验，缺失即 AC-024 FAIL。
 
 ---
 
@@ -284,7 +299,7 @@ allowed-tools:
 - **B1**：一票否决项为 0
 - **B2**：`lint`、`type-check`、`build`、`test:coverage`、`test:e2e` 全部 exit code = 0
 - **B3**：Playwright 必过集合（全部 15 条 E2E）通过率 100%（见 `references/06-playwright-acceptance-matrix.md`）
-- **B4**：AC-001 ~ AC-023 全通过（N/A 需写豁免依据与审批人）；AC-023 的动效证据见 `docs/ANIMATION_SPEC.md`
+- **B4**：AC-001 ~ AC-024 全通过（N/A 需写豁免依据与审批人）；AC-023 的动效证据见 `docs/ANIMATION_SPEC.md`，AC-024 的证据为 `npm run qa:repo` 输出
 - **B5**：P0/P1 缺陷为 0
 - **B6**：Rubric 综合分 >= 80（见 `references/04-acceptance-rubric.md`）
 - **B7**：证据完整（命令输出、关键截图、缺陷闭环记录）

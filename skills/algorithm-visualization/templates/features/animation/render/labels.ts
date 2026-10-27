@@ -1,65 +1,26 @@
 import * as d3 from 'd3';
-import type { CanvasLabel, CanvasNode } from '../../../types';
-import { fadeOutAndRemove, nodeRadius } from './common';
+import type { CanvasContainer, CanvasLabel, CanvasNode } from '../../../types';
+import { placeLabels, type LabelPlacement } from '../layout';
+import { fadeOutAndRemove } from './common';
 import type { LayerSelection, RenderTiming } from './common';
 
-/** 标签背景与目标节点之间保留的呼吸间距。 */
-const LABEL_GAP = 14;
-
-function labelSize(label: CanvasLabel): { width: number; height: number } {
-  const mainWidth = label.text.length * 12;
-  const detailWidth = label.detail ? label.detail.length * 10 : 0;
-  return {
-    width: Math.max(52, mainWidth, detailWidth) + 20,
-    height: label.detail ? 40 : 24
-  };
-}
-
-/** 按标签实际尺寸与节点半径计算偏移，避免长文案压住节点。 */
-function labelOffset(label: CanvasLabel, radius: number): { dx: number; dy: number } {
-  const size = labelSize(label);
-  switch (label.position) {
-    case 'left':
-      return { dx: -(size.width / 2 + radius + LABEL_GAP), dy: 0 };
-    case 'right':
-      return { dx: size.width / 2 + radius + LABEL_GAP, dy: 0 };
-    case 'top':
-      return { dx: 0, dy: -(size.height / 2 + radius + LABEL_GAP) };
-    default:
-      return { dx: 0, dy: size.height / 2 + radius + LABEL_GAP };
-  }
-}
-
-/** pointer/callout 标签到目标节点的引导线，坐标相对标签组。 */
-function leaderLine(label: CanvasLabel, target: CanvasNode): { x1: number; y1: number; x2: number; y2: number } {
-  const size = labelSize(label);
-  const radius = nodeRadius(target);
-  const offset = labelOffset(label, radius);
-  const edge = radius + 4;
-  if (label.position === 'top') {
-    return { x1: 0, y1: size.height / 2, x2: 0, y2: -offset.dy - edge };
-  }
-  if (label.position === 'bottom') {
-    return { x1: 0, y1: -size.height / 2, x2: 0, y2: -offset.dy + edge };
-  }
-  if (label.position === 'left') {
-    return { x1: size.width / 2, y1: 0, x2: -offset.dx - edge, y2: 0 };
-  }
-  return { x1: -size.width / 2, y1: 0, x2: -offset.dx + edge, y2: 0 };
-}
-
+/**
+ * 标签位置不是固定上下左右偏移，而是每帧做一次轻量布局：
+ * 先按首选方向计算，再依次尝试其它方向，避开节点、容器和已放好的标签。
+ */
 export function renderLabels(
   layer: LayerSelection,
   labelsData: CanvasLabel[],
   nodeById: Map<string, CanvasNode>,
-  timing: RenderTiming
+  timing: RenderTiming,
+  containers: CanvasContainer[] = []
 ): void {
   const valid = labelsData.filter((label) => nodeById.has(label.targetId));
-  const nodeOf = (id: string) => nodeById.get(id) ?? { id, label: id, x: 0, y: 0 };
+  const placements = placeLabels(valid, nodeById, { containers });
+  const placementOf = (label: CanvasLabel): LabelPlacement | undefined => placements.get(label.id);
   const position = (label: CanvasLabel) => {
-    const target = nodeOf(label.targetId);
-    const offset = labelOffset(label, nodeRadius(target));
-    return `translate(${target.x + offset.dx},${target.y + offset.dy})`;
+    const placement = placementOf(label);
+    return placement ? `translate(${placement.x},${placement.y})` : 'translate(0,0)';
   };
 
   const join = layer.selectAll<SVGGElement, CanvasLabel>('g.canvas-label').data(valid, (label) => label.id);
@@ -81,14 +42,15 @@ export function renderLabels(
   labels
     .attr('class', (label) => `canvas-label label--${label.variant ?? 'callout'} label-tone--${label.tone ?? 'neutral'}`)
     .attr('data-label-id', (label) => label.id)
-    .attr('data-label-variant', (label) => label.variant ?? 'callout');
+    .attr('data-label-variant', (label) => label.variant ?? 'callout')
+    .attr('data-label-position', (label) => placementOf(label)?.position ?? label.position);
 
   const bg = labels
     .select<SVGRectElement>('rect.label-bg')
-    .attr('x', (label) => -labelSize(label).width / 2)
-    .attr('y', (label) => -labelSize(label).height / 2)
-    .attr('width', (label) => labelSize(label).width)
-    .attr('height', (label) => labelSize(label).height);
+    .attr('x', (label) => -(placementOf(label)?.width ?? 0) / 2)
+    .attr('y', (label) => -(placementOf(label)?.height ?? 0) / 2)
+    .attr('width', (label) => placementOf(label)?.width ?? 0)
+    .attr('height', (label) => placementOf(label)?.height ?? 0);
 
   labels
     .select<SVGTextElement>('text.label-text')
@@ -103,10 +65,10 @@ export function renderLabels(
 
   labels
     .select<SVGLineElement>('line.label-leader')
-    .attr('x1', (label) => leaderLine(label, nodeOf(label.targetId)).x1)
-    .attr('y1', (label) => leaderLine(label, nodeOf(label.targetId)).y1)
-    .attr('x2', (label) => leaderLine(label, nodeOf(label.targetId)).x2)
-    .attr('y2', (label) => leaderLine(label, nodeOf(label.targetId)).y2)
+    .attr('x1', (label) => placementOf(label)?.leader.x1 ?? 0)
+    .attr('y1', (label) => placementOf(label)?.leader.y1 ?? 0)
+    .attr('x2', (label) => placementOf(label)?.leader.x2 ?? 0)
+    .attr('y2', (label) => placementOf(label)?.leader.y2 ?? 0)
     .attr('opacity', (label) => (label.variant === 'pointer' ? 1 : 0));
 
   if (timing.reduced) {

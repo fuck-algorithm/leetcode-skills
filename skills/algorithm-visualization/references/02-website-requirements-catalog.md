@@ -72,4 +72,6 @@
 2. CI 必须执行 lint/type-check/build/test:coverage/test:e2e
 3. GitHub Actions 发布 Pages，工作流位于 `.github/workflows/deploy.yml`
 4. 构建时通过 `VITE_APP_BASE` 自动适配仓库名
-5. README 极简且准确
+5. README 双语且默认英文：`README.md` 为英文（GitHub 默认展示），`README.zh-CN.md` 为简体中文；两份结构一致、顶部互相链接，且只保留题目标题、一句话说明、题目链接、Pages 演示链接
+6. GitHub 仓库描述必须为英文，说明题目与演示定位
+7. GitHub 仓库必须配置 Topics，至少 6 个，且包含 `leetcode`、`algorithm`、`visualization`、`typescript`、`react`、`d3`

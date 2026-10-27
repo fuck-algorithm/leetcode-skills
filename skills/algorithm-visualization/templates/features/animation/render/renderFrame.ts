@@ -30,5 +30,11 @@ export function renderFrame(
   renderEdges(layer.select<SVGGElement>('.layer-edges'), frame.edges, nodeById, timing);
   renderArrows(layer.select<SVGGElement>('.layer-arrows'), frame.arrows, timing);
   renderNodes(layer.select<SVGGElement>('.layer-nodes'), frame.nodes, timing);
-  renderLabels(layer.select<SVGGElement>('.layer-labels'), frame.labels, nodeById, timing);
+  renderLabels(
+    layer.select<SVGGElement>('.layer-labels'),
+    frame.labels,
+    nodeById,
+    timing,
+    frame.containers ?? []
+  );
 }

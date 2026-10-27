@@ -189,8 +189,14 @@ if (skillMd) {
   if (!skillMd.includes("${CLAUDE_SKILL_DIR}/scripts/scaffold-project.mjs")) {
     fail("SKILL.md 必须通过 ${CLAUDE_SKILL_DIR}/scripts/scaffold-project.mjs 生成项目");
   }
-  if (!/AC-001\s*[~-]\s*AC-023/.test(skillMd) || !skillMd.includes("AC-023")) {
-    fail("SKILL.md 验收范围必须覆盖 AC-001 ~ AC-023");
+  if (!/AC-001\s*[~-]\s*AC-024/.test(skillMd) || !skillMd.includes("AC-024")) {
+    fail("SKILL.md 验收范围必须覆盖 AC-001 ~ AC-024");
+  }
+  if (!skillMd.includes("README.zh-CN.md") || !skillMd.includes("默认英文")) {
+    fail("SKILL.md 必须写明双语 README 且默认英文");
+  }
+  if (!skillMd.includes("gh repo edit") || !skillMd.includes("qa:repo")) {
+    fail("SKILL.md 必须写明用 gh repo edit 配置描述/Topics，并用 npm run qa:repo 验证");
   }
   if (!skillMd.includes("references/09-layout-visual-design.md")) {
     fail("SKILL.md 必须引用 references/09-layout-visual-design.md（空间预算与画布优先）");
@@ -206,6 +212,9 @@ if (skillMd) {
 const requiredTemplateFiles = [
   "package.json",
   "index.html",
+  "README.md",
+  "README.zh-CN.md",
+  "scripts/check-repo-metadata.mjs",
   "vite.config.ts",
   "vitest.config.ts",
   "playwright.config.ts",
@@ -267,7 +276,7 @@ const templatePkgFile = path.join(TEMPLATE_DIR, "package.json");
 const templatePkg = exists(templatePkgFile) ? readJson(templatePkgFile) : null;
 if (templatePkg) {
   const scripts = templatePkg.scripts || {};
-  for (const name of ["qa:guard", "qa:full", "lint", "type-check", "build", "test:unit", "test:coverage", "test:e2e", "test:e2e:install"]) {
+  for (const name of ["qa:guard", "qa:repo", "qa:full", "lint", "type-check", "build", "test:unit", "test:coverage", "test:e2e", "test:e2e:install"]) {
     if (!scripts[name]) fail(`templates/package.json 缺少脚本 ${name}`);
   }
   const qaFull = scripts["qa:full"] || "";
@@ -297,6 +306,10 @@ if (exists(gateFile)) {
     ".github/workflows/deploy.yml",
     "AC-022",
     "AC-023",
+    "AC-024",
+    "README.zh-CN.md",
+    "check-repo-metadata.mjs",
+    "qa:repo",
     "test:coverage",
     "validateInput",
     "prefers-reduced-motion",
@@ -314,8 +327,44 @@ if (exists(gateFile)) {
 const deployFile = path.join(TEMPLATE_DIR, ".github/workflows/deploy.yml");
 if (exists(deployFile)) {
   const deploy = read(deployFile);
-  for (const token of ["npm run lint", "npm run type-check", "npm run build", "test:coverage", "test:e2e", "VITE_APP_BASE", "actions/deploy-pages"]) {
+  for (const token of ["npm run lint", "npm run type-check", "npm run build", "test:coverage", "test:e2e", "qa:repo", "GH_TOKEN", "VITE_APP_BASE", "actions/deploy-pages"]) {
     if (!deploy.includes(token)) fail(`deploy.yml 缺少：${token}`);
+  }
+}
+
+// 模板 README 必须英文默认 + 简体中文，且结构同步
+const templateReadmeEn = path.join(TEMPLATE_DIR, "README.md");
+const templateReadmeZh = path.join(TEMPLATE_DIR, "README.zh-CN.md");
+if (exists(templateReadmeEn) && exists(templateReadmeZh)) {
+  const en = read(templateReadmeEn);
+  const zh = read(templateReadmeZh);
+  if (!en.includes("README.zh-CN.md")) fail("templates/README.md 缺少切换到简体中文的链接");
+  if (!zh.includes("README.md")) fail("templates/README.zh-CN.md 缺少切换回 English 的链接");
+  const enBody = en
+    .replace(/^.*README\.zh-CN\.md.*$/gm, "")
+    .replace(/\{(?:题号|中文标题|英文标题|slug|github_repo|github_username)\}/g, "");
+  if (/[㐀-䶿一-鿿豈-﫿]/.test(enBody)) {
+    fail("templates/README.md 必须为英文，除语言切换链接外不得包含中文字符");
+  }
+  if (!/[一-鿿]/.test(zh)) fail("templates/README.zh-CN.md 必须为简体中文内容");
+  const templateSectionCount = (text) => [...text.matchAll(/^##\s+/gm)].length;
+  if (templateSectionCount(en) !== templateSectionCount(zh)) {
+    fail("templates/README.md 与 README.zh-CN.md 的二级标题数量不一致");
+  }
+  for (const [name, text] of [["templates/README.md", en], ["templates/README.zh-CN.md", zh]]) {
+    for (const token of ["leetcode.cn/problems/", "github.io/"]) {
+      if (!text.includes(token)) fail(`${name} 缺少 ${token}`);
+    }
+  }
+  if (!en.includes("{英文标题}")) fail("templates/README.md 必须使用 {英文标题} 占位符");
+  if (!zh.includes("{中文标题}")) fail("templates/README.zh-CN.md 必须使用 {中文标题} 占位符");
+}
+
+const repoMetadataScript = path.join(TEMPLATE_DIR, "scripts/check-repo-metadata.mjs");
+if (exists(repoMetadataScript)) {
+  const script = read(repoMetadataScript);
+  for (const token of ["gh", "repositoryTopics", "description", "leetcode", "algorithm", "visualization", "typescript", "react", "d3"]) {
+    if (!script.includes(token)) fail(`check-repo-metadata.mjs 未覆盖：${token}`);
   }
 }
 
@@ -364,7 +413,7 @@ if (exists(assetDir)) {
 const scaffoldFile = path.join(SKILL_DIR, "scripts", "scaffold-project.mjs");
 if (requireFile(scaffoldFile)) {
   const scaffold = read(scaffoldFile);
-  for (const token of ["{题号}", "{中文标题}", "{slug}", "{github_repo}", "{github_username}"]) {
+  for (const token of ["{题号}", "{中文标题}", "{英文标题}", "{slug}", "{github_repo}", "{github_username}"]) {
     if (!scaffold.includes(token)) fail(`scaffold-project.mjs 未处理占位符 ${token}`);
   }
 }
@@ -389,7 +438,7 @@ if (exists(matrixFile)) {
     const id = `E2E-${String(i).padStart(3, "0")}`;
     if (!matrix.includes(id)) fail(`验收矩阵缺少 ${id}`);
   }
-  for (let i = 1; i <= 23; i += 1) {
+  for (let i = 1; i <= 24; i += 1) {
     const id = `AC-${String(i).padStart(3, "0")}`;
     if (!matrix.includes(id)) fail(`验收矩阵缺少 ${id}`);
   }
@@ -407,6 +456,10 @@ for (const doc of docsToCheck) {
   if (!exists(file)) continue;
   const text = read(file);
   if (!text.includes("AC-023")) fail(`${doc} 未覆盖 AC-023`);
+}
+for (const doc of ["docs/QUALITY_GATE.md", "docs/TEST_PLAN.md", "docs/PLAYWRIGHT_CASES.md", "docs/ACCEPTANCE_REPORT_TEMPLATE.md"]) {
+  const file = path.join(TEMPLATE_DIR, doc);
+  if (exists(file) && !read(file).includes("AC-024")) fail(`${doc} 未覆盖 AC-024`);
 }
 for (const doc of ["docs/QUALITY_GATE.md", "docs/TEST_PLAN.md", "docs/ACCEPTANCE_REPORT_TEMPLATE.md"]) {
   const file = path.join(TEMPLATE_DIR, doc);
@@ -448,6 +501,14 @@ if (exists(readmeFile) && exists(readmeZhFile)) {
   }
   if (!readmes[1][1].includes("README.md")) {
     fail("README.zh-CN.md 缺少切换回 English 的链接");
+  }
+  // 与模板 README 同一规则：去掉指向中文文件的语言切换行后再拒绝中文
+  const enBody = readmes[0][1].replace(/^.*README\.zh-CN\.md.*$/gm, "");
+  if (/[㐀-䶿一-鿿豈-﫿]/.test(enBody)) {
+    fail("README.md 必须为英文，除语言切换链接外不得包含中文字符");
+  }
+  if (!/[一-鿿]/.test(readmes[1][1])) {
+    fail("README.zh-CN.md 必须为简体中文内容");
   }
   const sectionCount = (text) => [...text.matchAll(/^##\s+/gm)].length;
   if (sectionCount(readmes[0][1]) !== sectionCount(readmes[1][1])) {

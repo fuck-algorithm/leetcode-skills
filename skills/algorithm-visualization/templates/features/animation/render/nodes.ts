@@ -1,7 +1,8 @@
 import * as d3 from 'd3';
 import type { CanvasNode } from '../../../types';
+import { fitNodeLabel } from '../text';
 import { normalizeNodeStatus } from '../motion';
-import { fadeOutAndRemove, nodeRadius, type LayerSelection, type RenderTiming } from './common';
+import { nodeRadius, type LayerSelection, type RenderTiming } from './common';
 
 /**
  * 按稳定 id 复用节点，位置只动 transform；
@@ -18,8 +19,16 @@ export function renderNodes(layer: LayerSelection, nodesData: CanvasNode[], timi
     .attr('class', 'canvas-node')
     .attr('transform', (node) => `translate(${node.x},${node.y})`)
     .attr('opacity', 0)
-    .call((group) => group.append('circle').attr('class', 'node-ring').attr('r', 0))
-    .call((group) => group.append('circle').attr('class', 'node-core').attr('r', 0))
+    .call((group) => group.append('title'))
+    .call((group) =>
+      group
+        .append('circle')
+        .attr('class', 'node-ring')
+        .attr('r', (node) => (nodeRadius(node) + 7) * 0.6)
+    )
+    .call((group) =>
+      group.append('circle').attr('class', 'node-core').attr('r', (node) => nodeRadius(node) * 0.6)
+    )
     .call((group) =>
       group.append('text').attr('class', 'node-label').attr('text-anchor', 'middle').attr('dy', '0.35em')
     )
@@ -37,15 +46,16 @@ export function renderNodes(layer: LayerSelection, nodesData: CanvasNode[], timi
       return `canvas-node node--${status}${node.kind === 'null' ? ' is-null' : ''}`;
     })
     .attr('data-node-id', (node) => node.id)
-    .attr('data-status', (node) => normalizeNodeStatus(node));
+    .attr('data-status', (node) => normalizeNodeStatus(node))
+    .attr('role', 'img');
 
   if (timing.reduced) {
-    fadeOutAndRemove(join.exit<CanvasNode>(), timing);
+    join.exit<CanvasNode>().remove();
     nodes.attr('transform', position).attr('opacity', 1);
     nodes.select<SVGCircleElement>('circle.node-core').attr('r', nodeRadius);
     nodes.select<SVGCircleElement>('circle.node-ring').attr('r', (node) => nodeRadius(node) + 7);
   } else {
-    fadeOutAndRemove(join.exit<CanvasNode>(), timing);
+    exitNodes(join.exit<CanvasNode>(), timing);
 
     // 同一 id 重新出现时取消退场，避免被上一轮 exit 过渡删掉。
     nodes.interrupt('exit');
@@ -65,16 +75,35 @@ export function renderNodes(layer: LayerSelection, nodesData: CanvasNode[], timi
       .ease(d3.easeBackOut)
       .attr('opacity', 1);
 
-    nodes
+    // 入场用 0.6 → 1.0 的半径缩放，时长跟随 enterMs；
+    // 已在画布上的节点只做 updateMs 的半径更新，两类过渡互不抢占。
+    enter
       .select<SVGCircleElement>('circle.node-core')
+      .interrupt('enter-radius')
+      .transition('enter-radius')
+      .duration(timing.enterMs)
+      .ease(d3.easeBackOut)
+      .attr('r', nodeRadius);
+    enter
+      .select<SVGCircleElement>('circle.node-ring')
+      .interrupt('enter-ring')
+      .transition('enter-ring')
+      .duration(timing.enterMs)
+      .ease(d3.easeBackOut)
+      .attr('r', (node) => nodeRadius(node) + 7);
+
+    join
+      .select<SVGCircleElement>('circle.node-core')
+      .interrupt('exit-radius')
       .interrupt('radius')
       .transition('radius')
       .duration(timing.updateMs)
       .ease(d3.easeCubicOut)
       .attr('r', nodeRadius);
 
-    nodes
+    join
       .select<SVGCircleElement>('circle.node-ring')
+      .interrupt('exit-ring')
       .interrupt('ring')
       .transition('ring')
       .duration(timing.updateMs)
@@ -82,7 +111,22 @@ export function renderNodes(layer: LayerSelection, nodesData: CanvasNode[], timi
       .attr('r', (node) => nodeRadius(node) + 7);
   }
 
-  nodes.select<SVGTextElement>('text.node-label').text((node) => node.label);
+  nodes.each(function (node) {
+    const group = d3.select(this);
+    const radius = nodeRadius(node);
+    const fitted = fitNodeLabel(node.label, radius);
+    group.attr('aria-label', node.badge ? `${node.label}，${node.badge}` : node.label);
+    group
+      .selectAll<SVGTitleElement, CanvasNode>('title')
+      .data([node])
+      .join('title')
+      .text(node.label);
+    group
+      .select<SVGTextElement>('text.node-label')
+      .text(fitted.text)
+      .style('font-size', `${fitted.fontSize}px`)
+      .attr('data-truncated', fitted.truncated ? 'true' : 'false');
+  });
 
   nodes
     .select<SVGTextElement>('text.node-badge')
@@ -95,4 +139,41 @@ export function renderNodes(layer: LayerSelection, nodesData: CanvasNode[], timi
     .text((node) => node.sublabel ?? '')
     .attr('y', (node) => nodeRadius(node) + 15)
     .attr('opacity', (node) => (node.sublabel ? 1 : 0));
+}
+
+/**
+ * 节点退场：透明度淡出的同时把圆缩到 0.6 倍，和入场形成对称的“呼吸”语法。
+ * 仍用 end 回调自行 remove，避免 transition.remove() 在命名过渡并存时静默跳过。
+ */
+function exitNodes(
+  exit: d3.Selection<SVGGElement, CanvasNode, SVGGElement, unknown>,
+  timing: RenderTiming
+): void {
+  exit
+    .interrupt('exit')
+    .transition('exit')
+    .duration(timing.exitMs)
+    .ease(d3.easeCubicIn)
+    .attr('opacity', 0)
+    .on('end.exit-remove', function () {
+      this.remove();
+    });
+
+  exit
+    .select<SVGCircleElement>('circle.node-core')
+    .interrupt('enter-radius')
+    .interrupt('radius')
+    .transition('exit-radius')
+    .duration(timing.exitMs)
+    .ease(d3.easeCubicIn)
+    .attr('r', (node) => nodeRadius(node) * 0.6);
+
+  exit
+    .select<SVGCircleElement>('circle.node-ring')
+    .interrupt('enter-ring')
+    .interrupt('ring')
+    .transition('exit-ring')
+    .duration(timing.exitMs)
+    .ease(d3.easeCubicIn)
+    .attr('r', (node) => (nodeRadius(node) + 7) * 0.6);
 }

@@ -54,6 +54,7 @@
 - **完整播放控制**——播放/暂停、上一步/下一步、可拖拽进度条、速度记忆和键盘快捷键。
 - **无障碍动效**——支持 `prefers-reduced-motion`，关闭动画后状态与解说仍然完整。
 - **可发布的成品**——质量门禁、带覆盖率阈值的单元测试、15 条 Playwright 验收用例，以及 GitHub Pages 部署工作流。
+- **可被发现的仓库**——英文默认的 `README.md` 与互链的 `README.zh-CN.md`，外加英文 GitHub 描述和必需 Topics，全部由质量门禁强制校验。
 
 在线示例：[LeetCode Hot 100 可视化](https://fuck-algorithm.github.io/leetcode-hot-100/)
 
@@ -78,7 +79,9 @@ leetcode-{题号}-{slug}-visualization/
 │   └── e2e/acceptance.spec.ts  # 15 条 Playwright 验收用例
 ├── docs/                       # 质量门禁、测试计划、动画规格
 ├── public/assets/              # 交流群二维码
-├── scripts/check-quality-gates.mjs
+├── scripts/                    # 质量门禁 + GitHub 元数据校验
+├── README.md                   # 英文（GitHub 默认展示）
+├── README.zh-CN.md             # 简体中文
 └── .github/workflows/deploy.yml
 ```
 
@@ -87,7 +90,8 @@ leetcode-{题号}-{slug}-visualization/
 ```bash
 npm install
 npm run dev                # 随机高位端口（30000-65535）
-npm run qa:guard           # 文档、配色、布局、动效检查
+npm run qa:guard           # 文档、双语 README、配色、布局、动效检查
+npm run qa:repo            # GitHub 描述与 Topics（需已登录 gh）
 npm run test:coverage      # Vitest，覆盖率门槛 60/60/50
 npm run test:e2e:install   # 首次运行 Playwright 前安装 Chromium
 npm run test:e2e           # 15 条验收用例
@@ -118,7 +122,7 @@ python3 -m unittest discover -s skills/algorithm-visualization/scripts -p 'test_
 
 # 从模板生成项目
 npm run scaffold -- --out /tmp/demo --number 1 --title "两数之和" \
-  --slug two-sum --repo https://github.com/example/demo
+  --title-en "Two Sum" --slug two-sum --repo https://github.com/example/demo
 
 # 本地加载插件进行开发
 claude --plugin-dir .

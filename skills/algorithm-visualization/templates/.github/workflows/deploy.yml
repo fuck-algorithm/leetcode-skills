@@ -41,6 +41,11 @@ jobs:
       - name: Quality Guard
         run: npm run qa:guard
 
+      - name: Repository Metadata
+        run: npm run qa:repo
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Lint
         run: npm run lint
 

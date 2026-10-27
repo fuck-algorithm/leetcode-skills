@@ -7,9 +7,18 @@ const PADDING = 8;
 
 type Slot = { index: number; x: number; y: number; width: number; height: number };
 
+/**
+ * 渲染容量必须同时覆盖配置值与实际元素数，避免坏数据导致槽位数为 0、
+ * 或者节点被画到容器外。计数展示也使用这个值，保证 `n/capacity` 自洽。
+ */
+export function effectiveCapacity(container: CanvasContainer): number {
+  return Math.max(1, Math.floor(container.capacity) || 0, container.items.length);
+}
+
 function stackSlots(container: CanvasContainer): Slot[] {
-  const slotHeight = (container.height - HEADER.stack - PADDING) / container.capacity;
-  return Array.from({ length: container.capacity }, (_, index) => ({
+  const capacity = effectiveCapacity(container);
+  const slotHeight = (container.height - HEADER.stack - PADDING) / capacity;
+  return Array.from({ length: capacity }, (_, index) => ({
     index,
     x: container.x + 6,
     y: container.y + container.height - PADDING - slotHeight * (index + 1) + 2,
@@ -19,8 +28,9 @@ function stackSlots(container: CanvasContainer): Slot[] {
 }
 
 function queueSlots(container: CanvasContainer): Slot[] {
-  const slotWidth = (container.width - PADDING * 2) / container.capacity;
-  return Array.from({ length: container.capacity }, (_, index) => ({
+  const capacity = effectiveCapacity(container);
+  const slotWidth = (container.width - PADDING * 2) / capacity;
+  return Array.from({ length: capacity }, (_, index) => ({
     index,
     x: container.x + PADDING + slotWidth * index + 1,
     y: container.y + HEADER.queue + 4,
@@ -74,7 +84,7 @@ export function renderContainers(
     .attr('class', (container) => `canvas-container container--${container.kind}`)
     .attr('data-container-id', (container) => container.id)
     .attr('data-container-kind', (container) => container.kind)
-    .attr('data-capacity', (container) => container.capacity)
+    .attr('data-capacity', effectiveCapacity)
     .attr('data-item-count', (container) => container.items.length);
 
   containers
@@ -89,7 +99,7 @@ export function renderContainers(
   containers
     .select<SVGTextElement>('text.container-count')
     .attr('x', (container) => container.width - 12)
-    .text((container) => `${container.items.length}/${container.capacity}`);
+    .text((container) => `${container.items.length}/${effectiveCapacity(container)}`);
   containers
     .select<SVGTextElement>('text.container-empty')
     .attr('x', (container) => container.width / 2)
@@ -249,31 +259,46 @@ function stackPointers(container: CanvasContainer) {
   ];
 }
 
+/**
+ * 队首/队尾指针必须指向“占用槽位”，而不是容器左右边框：
+ * - 队首 = 第一个占用槽位中心；
+ * - 队尾 = 下一个可入队槽位中心（满队时 = 最后一个槽位中心）。
+ * 指针从顶部标题区垂直指向槽位，部分占用时不会横穿空槽。
+ */
 function queuePointers(container: CanvasContainer) {
-  if (container.items.length === 0) {
+  const occupied = Math.min(container.items.length, effectiveCapacity(container));
+  if (occupied === 0) {
     return [];
   }
-  const y = container.y + HEADER.queue + (container.height - HEADER.queue) / 2;
+  const slots = queueSlots(container);
+  const headSlot = slots[0];
+  const tailSlot = slots[Math.min(occupied, slots.length - 1)];
+  const headX = headSlot.x + headSlot.width / 2;
+  const tailX = tailSlot.x + tailSlot.width / 2;
+  const sameSlot = Math.abs(headX - tailX) < 1;
+  const y1 = container.y + HEADER.queue - 12;
+  const y2 = container.y + HEADER.queue + 2;
+  const labelY = container.y + HEADER.queue - 14;
   return [
     {
       id: 'head',
-      x1: container.x - 30,
-      y1: y,
-      x2: container.x - 2,
-      y2: y,
+      x1: headX - (sameSlot ? 4 : 0),
+      y1,
+      x2: headX - (sameSlot ? 4 : 0),
+      y2,
       label: '队首',
-      lx: container.x - 30,
-      ly: y - 8
+      lx: headX - (sameSlot ? 22 : 0),
+      ly: labelY
     },
     {
       id: 'tail',
-      x1: container.x + container.width + 30,
-      y1: y,
-      x2: container.x + container.width + 2,
-      y2: y,
+      x1: tailX + (sameSlot ? 4 : 0),
+      y1,
+      x2: tailX + (sameSlot ? 4 : 0),
+      y2,
       label: '队尾',
-      lx: container.x + container.width + 30,
-      ly: y - 8
+      lx: tailX + (sameSlot ? 22 : 0),
+      ly: labelY
     }
   ];
 }

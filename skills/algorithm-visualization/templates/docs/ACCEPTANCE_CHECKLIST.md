@@ -22,12 +22,13 @@
 | AC-015 | Pages 部署配置有效 | 检查 `.github/workflows/deploy.yml` | 包含 `npm ci/lint/type-check/build/configure-pages/upload-pages-artifact/deploy-pages` 全步骤 | 缺任一步骤或 workflow 文件不存在 |
 | AC-016 | lint/type-check/build 全通过 | 运行 `npm run lint && npm run type-check && npm run build` | 三条命令 exit code 都为 0 | 任一命令失败 |
 | AC-017 | 核心 E2E 全通过 | 运行 `npm run test:e2e` | 必过集合 `E2E-001/002/003/006/007/008/009/010` 全部通过（多解法题加 E2E-011） | 必过集合任一失败 |
-| AC-018 | README 极简 | 打开 README 逐项核对 | 仅保留：题号标题 + 一句话说明 + Pages 链接（可接受最小必要标题） | 出现大段教程、开发细节、无关章节 |
+| AC-018 | README 双语且默认英文 | 打开仓库首页（README.md）与 README.zh-CN.md，检查语言切换链接与内容结构 | README.md 为英文（GitHub 默认展示，无中文字符），README.zh-CN.md 为简体中文；两份互相链接、二级标题数量一致；仅保留题目标题、一句话说明、题目链接、Pages 演示链接 | 缺少任一语言版本、默认不是英文、无切换链接、结构不一致、出现大段教程或开发细节 |
 | AC-019 | 单元测试与覆盖率全通过 | 运行 `npm run test:coverage` | exit code = 0，且 lines >= 60%、functions >= 60%、branches >= 50% | 任一单元测试失败或覆盖率低于阈值 |
 | AC-020 | 单元测试目录存在 | 检查 `tests/unit/` 目录 | 存在且至少包含 1 个 `.test.ts(x)` 文件 | 目录缺失或无单元测试 |
 | AC-021 | Vitest 配置完整 | 检查 `package.json` | 包含 `test:unit` script 和 `vitest` devDependency | 任一缺失 |
 | AC-022 | validateInput 有单元测试覆盖 | 检查 `tests/unit/features/solutions/` | 每种解法的 `validateInput` 均有正负向单元测试 | 任一解法缺失测试 |
 | AC-023 | 动效语法与教学层完整 | 以 1x 播放并步进 3 步；检查解说/操作徽标/图例/焦点；检查栈/队列容器、箭头文字与标注；快速切换解法 3 次；开启系统 reduced motion 再播放 | 每步有 `operation` 徽标与独立解说；图例固定可见；每帧唯一 `current`；相邻步骤位置稳定无整屏重绘；栈/队列有槽位/计数/指针/空状态；箭头有语义文字；切帧后无残留 DOM；reduced motion 下无过渡但状态/解说完整 | 缺徽标/解说/图例、每步 `selectAll('*').remove()`、焦点丢失、栈/队列裸节点、无文字箭头、标签遮挡、切换后残留元素或 reduced motion 丢信息 |
+| AC-024 | GitHub 仓库描述与 Topics 合规 | 运行 `npm run qa:repo`（或 `gh repo view <owner>/<repo> --json description,repositoryTopics`） | 描述非空、为英文（无中文字符）且不少于 20 字符；Topics 至少 6 个，并包含 `leetcode`、`algorithm`、`visualization`、`typescript`、`react`、`d3` | 描述缺失或为中文、Topics 数量不足、缺少任一必需标签 |
 
 ## 必过规则（Blocking）
 

@@ -43,6 +43,7 @@ jobs:
             --out "$RUNNER_TEMP/visualization-smoke" \
             --number 1 \
             --title "两数之和" \
+            --title-en "Two Sum" \
             --slug two-sum \
             --repo https://github.com/example/visualization-smoke
 

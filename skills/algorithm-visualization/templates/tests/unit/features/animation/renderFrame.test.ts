@@ -71,7 +71,7 @@ describe('renderFrame', () => {
     renderFrame(
       layer,
       frame({
-        nodes: [node('a0'), node('a1')],
+        nodes: [node('a0', { x: 100, y: 100 }), node('a1', { x: 300, y: 100 })],
         edges: [
           { id: 'e0', from: 'a0', to: 'a1', status: 'active', directed: true },
           { id: 'e-bad', from: 'a0', to: 'ghost' }
@@ -86,6 +86,9 @@ describe('renderFrame', () => {
     expect(edge.attr('data-edge-id')).toBe('e0');
     expect(edge.attr('data-status')).toBe('active');
     expect(edge.select('line').attr('marker-end')).toBe('url(#flow-arrow)');
+    // 线从节点外沿出发：100 + 24 + 2，300 - 24 - 2。
+    expect(edge.select('line').attr('x1')).toBe('126');
+    expect(edge.select('line').attr('x2')).toBe('274');
   });
 
   it('箭头按 kind 选择 marker，用 pathLength 做生长动画', () => {
@@ -213,6 +216,78 @@ describe('renderFrame', () => {
       '栈顶',
       '栈底'
     ]);
+  });
+
+  it('节点文字过长时缩小并截断，完整内容保留在 title/aria-label', () => {
+    const layer = setup();
+    renderFrame(layer, frame({ nodes: [node('long', { label: '1234567890' })] }), 1, true);
+
+    const group = layer.select('g.canvas-node');
+    const label = group.select('text.node-label');
+    expect(label.text()).toBe('12345…');
+    expect(label.attr('data-truncated')).toBe('true');
+    expect(label.style('font-size')).toBe('9px');
+    expect(group.select('title').text()).toBe('1234567890');
+    expect(group.attr('aria-label')).toBe('1234567890');
+  });
+
+  it('部分占用队列的队尾指针指向下一个可入队槽位，而不是容器右边框', () => {
+    const layer = setup();
+    renderFrame(
+      layer,
+      frame({
+        containers: [
+          {
+            id: 'queue',
+            kind: 'queue',
+            x: 200,
+            y: 40,
+            width: 272,
+            height: 92,
+            capacity: 4,
+            items: ['q0', 'q1']
+          }
+        ]
+      }),
+      1,
+      true
+    );
+
+    const head = layer.select('g.container-pointer[data-pointer="head"]');
+    const tail = layer.select('g.container-pointer[data-pointer="tail"]');
+    // 4 槽、宽 272：槽宽 64；队首槽中心相对 40，队尾（第 3 槽）中心相对 168。
+    expect(head.select('line').attr('x1')).toBe('40');
+    expect(tail.select('line').attr('x1')).toBe('168');
+    expect(tail.select('line').attr('x2')).toBe('168');
+    expect(tail.select('text').text()).toBe('队尾');
+  });
+
+  it('元素数超过配置容量时自动扩槽，计数保持自洽', () => {
+    const layer = setup();
+    renderFrame(
+      layer,
+      frame({
+        containers: [
+          {
+            id: 'stack',
+            kind: 'stack',
+            x: 0,
+            y: 0,
+            width: 100,
+            height: 200,
+            capacity: 2,
+            items: ['s0', 's1', 's2']
+          }
+        ]
+      }),
+      1,
+      true
+    );
+
+    const container = layer.select('g.canvas-container');
+    expect(container.attr('data-capacity')).toBe('3');
+    expect(container.selectAll('g.container-slot').size()).toBe(3);
+    expect(container.select('text.container-count').text()).toBe('3/3');
   });
 
   it('空队列显示空状态且不画队首/队尾指针', () => {
